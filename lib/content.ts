@@ -215,22 +215,34 @@ function mapSeoPage(row: SeoPageRow): SeoNote {
 }
 
 export async function getTopics() {
-  const rows = await readSupabase<TopicRow>("/rest/v1/topics?select=*&order=sort_order.asc");
-  return rows?.map(mapTopic) || topics;
+  const rows = await readSupabase<TopicRow>(
+    "/rest/v1/topics?select=*&order=sort_order.asc",
+  );
+  if (!rows?.length) return topics;
+
+  return rows.map(mapTopic);
 }
 
 export async function getQuestions() {
   const [topicList, rows] = await Promise.all([
     getTopics(),
-    readSupabase<QuestionRow>("/rest/v1/questions?select=*&status=eq.approved&order=published_at.asc"),
+    readSupabase<QuestionRow>(
+      "/rest/v1/questions?select=*&status=eq.approved&order=published_at.asc",
+    ),
   ]);
+  if (!rows?.length) return questions;
+
   const topicNames = new Map(topicList.map((topic) => [topic.slug, topic.name]));
-  return rows?.map((row) => mapQuestion(row, topicNames)) || questions;
+  return rows.map((row) => mapQuestion(row, topicNames));
 }
 
 export async function getSeoNotes() {
-  const rows = await readSupabase<SeoPageRow>("/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc");
-  return rows?.map(mapSeoPage) || seoNotes;
+  const rows = await readSupabase<SeoPageRow>(
+    "/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc",
+  );
+  if (!rows?.length) return seoNotes;
+
+  return rows.map(mapSeoPage);
 }
 
 export async function findTopic(slug: string) {
