@@ -1,0 +1,97 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getQuestion, getQuestionPath, getQuestionsByTopic, getTopic, questions } from "@/lib/content";
+
+interface Props {
+  params: Promise<{ topicSlug: string; questionId: string }>;
+}
+
+export function generateStaticParams() {
+  return questions.map((question) => ({ topicSlug: question.topicSlug, questionId: question.id }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { questionId } = await params;
+  const question = getQuestion(questionId);
+  if (!question) return {};
+
+  return {
+    title: `${question.topic} NEET-UG Biology MCQ`,
+    description: question.stem.slice(0, 150),
+    alternates: { canonical: getQuestionPath(question) },
+  };
+}
+
+export default async function QuestionPage({ params }: Props) {
+  const { topicSlug, questionId } = await params;
+  const question = getQuestion(questionId);
+  const topic = getTopic(topicSlug);
+  if (!question || !topic || question.topicSlug !== topicSlug) notFound();
+
+  const related = getQuestionsByTopic(topicSlug).filter((item) => item.id !== question.id).slice(0, 5);
+  const answerText = question.options[question.correctOption];
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://medqgo.com/" },
+        { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: "https://medqgo.com/neet-ug/biology" },
+        { "@type": "ListItem", position: 3, name: topic.name, item: `https://medqgo.com/neet-ug/biology/${topic.slug}` },
+        { "@type": "ListItem", position: 4, name: "Question" },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      name: `${question.topic} NEET-UG Biology MCQ`,
+      educationalLevel: "Higher secondary",
+      assesses: "NEET-UG Biology",
+      hasPart: {
+        "@type": "Question",
+        text: question.stem,
+        suggestedAnswer: Object.values(question.options).map((text) => ({ "@type": "Answer", text })),
+        acceptedAnswer: { "@type": "Answer", text: answerText },
+      },
+    },
+  ];
+
+  return (
+    <main className="page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <header className="pageHeader compact">
+        <Link href={`/neet-ug/biology/${topic.slug}`} className="backLink">{topic.name}</Link>
+        <p className="eyebrow">{question.ncertRef}</p>
+        <h1>{question.topic} NEET-UG Biology MCQ</h1>
+      </header>
+
+      <article className="mcqCard">
+        <p className="stem">{question.stem}</p>
+        <div className="options">
+          {(["A", "B", "C", "D"] as const).map((key) => (
+            <div className={key === question.correctOption ? "option correct" : "option"} key={key}>
+              <strong>{key}</strong>
+              <span>{question.options[key]}</span>
+            </div>
+          ))}
+        </div>
+        <div className="answerBox">
+          <h2>Correct answer: {question.correctOption}. {answerText}</h2>
+          <p>{question.explanation}</p>
+        </div>
+      </article>
+
+      {related.length > 0 && (
+        <section className="contentBand">
+          <h2>More {topic.name} MCQs</h2>
+          <div className="miniLinks">
+            {related.map((item) => (
+              <Link href={getQuestionPath(item)} key={item.id}>{item.stem}</Link>
+            ))}
+          </div>
+        </section>
+      )}
+    </main>
+  );
+}

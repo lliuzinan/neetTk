@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cell-theory-and-cell-organelles",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Cell theory and cell organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "questionCount": 17,
+    "sortOrder": 1
+  },
+  {
+    "id": "excretion-and-kidney-function",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Excretion and kidney function",
+    "slug": "excretion-and-kidney-function",
+    "ncertRef": "NCERT Biology Class 11, Chapter 16",
+    "questionCount": 1,
+    "sortOrder": 2
+  },
+  {
+    "id": "neuron-nerve-impulse-synapse",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Neuron nerve impulse synapse",
+    "slug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "questionCount": 1,
+    "sortOrder": 3
+  },
+  {
+    "id": "endocrine-system-and-hormones",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Endocrine system and hormones",
+    "slug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "questionCount": 11,
+    "sortOrder": 4
+  },
+  {
+    "id": "plant-respiration",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Plant respiration",
+    "slug": "plant-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 12",
+    "questionCount": 6,
+    "sortOrder": 5
+  },
+  {
+    "id": "dna-rna-replication-transcription-translation",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "DNA RNA replication transcription translation",
+    "slug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "questionCount": 5,
+    "sortOrder": 6
+  },
+  {
+    "id": "recombinant-dna-technology",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Recombinant DNA technology",
+    "slug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "questionCount": 1,
+    "sortOrder": 7
+  },
+  {
+    "id": "mutation-and-gene-expression",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Mutation and gene expression",
+    "slug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "questionCount": 4,
+    "sortOrder": 8
+  },
+  {
+    "id": "pedigree-analysis-and-inheritance-patterns",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Pedigree analysis and inheritance patterns",
+    "slug": "pedigree-analysis-and-inheritance-patterns",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "questionCount": 6,
+    "sortOrder": 9
+  },
+  {
+    "id": "human-reproductive-system-and-gametogenesis",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Human reproductive system and gametogenesis",
+    "slug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "questionCount": 1,
+    "sortOrder": 10
+  },
+  {
+    "id": "basic-genetic-diseases-as-inheritance-examples",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Basic genetic diseases as inheritance examples",
+    "slug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 1,
+    "sortOrder": 11
+  },
+  {
+    "id": "immunity-pathogens-vaccines",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Immunity pathogens vaccines",
+    "slug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 1,
+    "sortOrder": 12
+  }
+]
