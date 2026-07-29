@@ -55,7 +55,7 @@ export const siteConfig = {
   exam: "NEET-UG",
   subject: "Biology",
   description:
-    "NCERT-aligned NEET-UG Biology question bank with free MCQs, answer explanations, topic pages, and revision notes.",
+    "Free NEET-UG Biology MCQs with answers, NCERT-aligned explanations, topic-wise practice pages, and revision notes for Indian students.",
 };
 
 export function getTopic(slug: string) {

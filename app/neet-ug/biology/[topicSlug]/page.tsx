@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { findQuestionsByTopic, findTopic, getQuestionPath, getTopicPath, getTopics } from "@/lib/content";
+import { absoluteUrl, findQuestionsByTopic, findTopic, getQuestionPath, getTopics } from "@/lib/content";
+import { topicMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ topicSlug: string }>;
@@ -17,11 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const topic = await findTopic(topicSlug);
   if (!topic) return {};
 
-  return {
-    title: `${topic.name} MCQs for NEET-UG Biology`,
-    description: `Practice ${topic.name} NEET-UG Biology questions with NCERT-aligned explanations. ${topic.ncertRef}.`,
-    alternates: { canonical: getTopicPath(topic) },
-  };
+  return topicMetadata(topic);
 }
 
 export default async function TopicPage({ params }: Props) {
@@ -34,9 +31,9 @@ export default async function TopicPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://medqgo.com/" },
-      { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: "https://medqgo.com/neet-ug/biology" },
-      { "@type": "ListItem", position: 3, name: topic.name },
+      { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+      { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") },
+      { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) },
     ],
   };
 

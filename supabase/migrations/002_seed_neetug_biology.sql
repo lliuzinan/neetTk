@@ -1,27 +1,27 @@
 -- Seed NEET-UG Biology topics, questions, and SEO pages.
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 17, 1)
+VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 16, 1)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 2)
+VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 6, 2)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 3)
+VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 3)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('endocrine-system-and-hormones', 'NEET-UG', 'Biology', 'Endocrine system and hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Endocrine system and hormones MCQs for NEET-UG Biology', 'Practice Endocrine system and hormones NEET-UG Biology questions with NCERT explanations.', 11, 4)
+VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 4)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 6, 5)
+VALUES ('endocrine-system-and-hormones', 'NEET-UG', 'Biology', 'Endocrine system and hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Endocrine system and hormones MCQs for NEET-UG Biology', 'Practice Endocrine system and hormones NEET-UG Biology questions with NCERT explanations.', 11, 5)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 5, 6)
+VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 6, 6)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
@@ -54,6 +54,34 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588344', 588344, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles are present in both prokaryotic and eukaryotic cells?', 'cell wall', 'mitochondria', 'golgi apparatus', 'ribosomes', 'D', 'Ribosomes are found in both prokaryotic and eukaryotic cells. Cell walls, mitochondria, and golgi apparatus are typically present in eukaryotic cells but not necessarily in prokaryotic cells.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588742', 588742, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Where is the genetic material DNA found in animal cells?', 'only in the nucleus', 'only in the mitochondria', 'in the nucleus and mitochondria', 'in the nucleus and endoplasmic reticulum', 'C', 'DNA is primarily located in the nucleus of animal cells. However, a small amount of DNA is also found in mitochondria.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588802', 588802, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Gene expression regulation cannot occur at the stage of', 'DNA replication', 'transcription initiation', 'post-transcriptional regulation', 'translation initiation', 'A', 'Gene expression regulation primarily occurs during transcription and translation. It does not directly involve DNA replication or post-translation modifications.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588809', 588809, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Transcription in eukaryotic cells occurs in the', 'nucleus', 'cytoplasm', 'mitochondria', 'endoplasmic reticulum', 'A', 'Transcription primarily takes place in the nucleus of eukaryotic cells.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588820', 588820, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Wobble in genetic code refers to', 'one anticodon can pair with several codons', 'a mechanism for extending peptide bonds in the ribosomal large subunit', 'the mechanism for forming peptide bonds during translation', 'the movement of ribosome along mRNA from its 5'' end to 3'' end', 'A', 'Wobble in genetic code refers to one anticodon can pair with several codons.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588825', 588825, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'At which level is gene expression regulated in the lactose operon model?', 'replication level', 'transcription level', 'post-transcriptional level', 'translation level', 'B', 'In the lactose operon model, gene expression is primarily regulated at the transcription level.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588848', 588848, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'DNA replication occurs in the', 'endoplasmic reticulum', 'golgi apparatus', 'ribosome', 'nucleus', 'D', 'DNA replication primarily takes place in the nucleus of eukaryotic cells.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588773', 588773, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cellular structures has enzymes similar to those found in the nuclear membrane?', 'mitochondria', 'Golgi apparatus', 'endoplasmic reticulum', 'lysosomes', 'C', 'The nuclear envelope contains enzymes involved in lipid synthesis and other metabolic processes, which are also found in the endoplasmic reticulum.', 100, 92, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -117,22 +145,6 @@ VALUES ('neetug-bio-520897', 520897, 'NEET-UG', 'Biology', 'cell-theory-and-cell
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-520976', 520976, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Transcription in eukaryotic cells occurs in the', 'mitochondria', 'cytoplasm', 'nucleus', 'endoplasmic reticulum', 'C', 'Transcription in eukaryotic cells primarily takes place in the nucleus.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-520982', 520982, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Transcription in eukaryotic cells occurs in the', 'cytoplasm', 'nucleus', 'mitochondria', 'endoplasmic reticulum', 'B', 'Transcription is a process where RNA is synthesized from a DNA template. In eukaryotic cells, this primarily occurs in the nucleus.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-521007', 521007, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Wobble in genetic code refers to', 'one anticodon can pair with several codons', 'a mechanism for extending peptide bonds in the ribosomal large subunit', 'the mechanism for forming peptide bonds during translation', 'ribosome movement along mRNA from its 5'' end to 3'' end', 'A', 'Wobble in genetic code refers to one anticodon can pair with several codons.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-521065', 521065, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'At which level is gene expression regulated in the lactose operon model?', 'replication level', 'transcription level', 'post-transcriptional level', 'translation level', 'B', 'The lactose operon model regulates gene expression at the transcription level.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-521093', 521093, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following is correct regarding the regulation of tryptophan operon?', 'Only primer RNA is synthesized when tryptophan is present', 'Transcription is terminated prematurely when tryptophan is absent', 'It involves translational control', 'It has an anti-termination function', 'B', 'The regulation of the tryptophan operon occurs at the transcriptional level. Tryptophan acts as a repressor, binding to the repressor protein which then binds to the operator region preventing transcription. When tryptophan levels are low, the repressor is less effective, allowing transcription to proceed.', 100, 90, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
@@ -189,7 +201,7 @@ VALUES ('neetug-bio-588535', 588535, 'NEET-UG', 'Biology', 'cell-theory-and-cell
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-588536', 588536, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles is involved in Ca<sup>2+</sup> uptake and release, as well as the conduction of excitation in muscle cells?', 'microtubules and microfilaments', 'lysosomes', 'rough endoplasmic reticulum', 'smooth endoplasmic reticulum', 'D', 'Smooth endoplasmic reticulum (SER) is involved in Ca<sup>2+</sup> storage and release, which plays a crucial role in muscle cell excitation-contraction coupling.', 100, 90, 'approved', true)
+VALUES ('neetug-bio-588536', 588536, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles is involved in Ca^2+ uptake and release, as well as the conduction of excitation in muscle cells?', 'microtubules and microfilaments', 'lysosomes', 'rough endoplasmic reticulum', 'smooth endoplasmic reticulum', 'D', 'Smooth endoplasmic reticulum (SER) is involved in Ca^2+ storage and release, which plays a crucial role in muscle cell excitation-contraction coupling.', 100, 90, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -202,10 +214,6 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588558', 588558, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles has polarity?', 'mitochondria', 'endoplasmic reticulum', 'lysosomes', 'golgi apparatus', 'D', 'Golgi apparatus has a polarized structure with cis and trans faces, making it the only cell organelle listed that exhibits polarity.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-588560', 588560, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles has protein sorting function?', 'lysosome', 'smooth endoplasmic reticulum', 'golgi apparatus', 'rough endoplasmic reticulum', 'C', 'The Golgi apparatus is responsible for modifying, packaging, and sorting proteins before they are sent to their final destinations.', 100, 90, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -222,10 +230,6 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-589057', 589057, 'NEET-UG', 'Biology', 'human-reproductive-system-and-gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'The determinant of gender is', 'mature division in spermatogenesis', 'mature division in oogenesis', 'chromosome pattern in the egg at fertilization', 'chromosome pattern in the sperm at fertilization', 'D', 'The determinant of gender is determined by the chromosome pattern in the sperm at fertilization, as it determines whether the zygote receives an X or Y chromosome.', 100, 90, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-589168', 589168, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles is involved in microautophagy?', 'mitochondria', 'endoplasmic reticulum', 'golgi apparatus', 'lysosome', 'D', 'Microautophagy involves the direct engulfment of cytoplasm by the lysosomal membrane.', 100, 90, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -261,10 +265,6 @@ VALUES ('neetug-bio-588084', 588084, 'NEET-UG', 'Biology', 'immunity-pathogens-v
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
-VALUES ('neetug-bio-588567', 588567, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'The removal of the signal peptide from secretory proteins occurs in', 'cytoplasm', 'golgi apparatus', 'endoplasmic reticulum', 'lysosome', 'B', 'Signal peptides are removed during protein processing in the Golgi apparatus.', 100, 85, 'approved', true)
-ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
-
-INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588615', 588615, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles contains the highest amount of enzymes?', 'mitochondria', 'endoplasmic reticulum', 'golgi apparatus', 'peroxisomes', 'A', 'Mitochondria are known for their high enzyme content, which is essential for cellular respiration and energy production.', 100, 85, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
@@ -273,11 +273,7 @@ VALUES ('note-cell-theory-and-cell-organelles', 'topic_note', 'cell-theory-and-c
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-excretion-and-kidney-function', 'topic_note', 'excretion-and-kidney-function', 'Excretion and kidney function: NEET-UG Biology NCERT Revision Notes', 'Revise Excretion and kidney function for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Excretion and kidney function NEET UG Biology questions', 'excretion-and-kidney-function', 'published')
-ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
-
-INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-neuron-nerve-impulse-synapse', 'topic_note', 'neuron-nerve-impulse-synapse', 'Neuron nerve impulse synapse: NEET-UG Biology NCERT Revision Notes', 'Revise Neuron nerve impulse synapse for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Neuron nerve impulse synapse NEET UG Biology questions', 'neuron-nerve-impulse-synapse', 'published')
+VALUES ('note-dna-rna-replication-transcription-translation', 'topic_note', 'dna-rna-replication-transcription-translation', 'DNA RNA replication transcription translation: NEET-UG Biology NCERT Revision Notes', 'Revise DNA RNA replication transcription translation for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'DNA RNA replication transcription translation NEET UG Biology questions', 'dna-rna-replication-transcription-translation', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
@@ -289,13 +285,5 @@ VALUES ('note-plant-respiration', 'topic_note', 'plant-respiration', 'Plant resp
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-dna-rna-replication-transcription-translation', 'topic_note', 'dna-rna-replication-transcription-translation', 'DNA RNA replication transcription translation: NEET-UG Biology NCERT Revision Notes', 'Revise DNA RNA replication transcription translation for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'DNA RNA replication transcription translation NEET UG Biology questions', 'dna-rna-replication-transcription-translation', 'published')
-ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
-
-INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-recombinant-dna-technology', 'topic_note', 'recombinant-dna-technology', 'Recombinant DNA technology: NEET-UG Biology NCERT Revision Notes', 'Revise Recombinant DNA technology for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Recombinant DNA technology NEET UG Biology questions', 'recombinant-dna-technology', 'published')
-ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
-
-INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-mutation-and-gene-expression', 'topic_note', 'mutation-and-gene-expression', 'Mutation and gene expression: NEET-UG Biology NCERT Revision Notes', 'Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Mutation and gene expression NEET UG Biology questions', 'mutation-and-gene-expression', 'published')
+VALUES ('note-pedigree-analysis-and-inheritance-patterns', 'topic_note', 'pedigree-analysis-and-inheritance-patterns', 'Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes', 'Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Pedigree analysis and inheritance patterns NEET UG Biology questions', 'pedigree-analysis-and-inheritance-patterns', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();

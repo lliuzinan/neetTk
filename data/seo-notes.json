@@ -18,31 +18,13 @@
     "sortOrder": 2
   },
   {
-    "id": "note-excretion-and-kidney-function",
-    "slug": "excretion-and-kidney-function",
-    "title": "Excretion and kidney function: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Excretion and kidney function for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "excretion-and-kidney-function",
-    "targetKeyword": "Excretion and kidney function NEET UG Biology questions",
-    "sortOrder": 3
-  },
-  {
-    "id": "note-neuron-nerve-impulse-synapse",
-    "slug": "neuron-nerve-impulse-synapse",
-    "title": "Neuron nerve impulse synapse: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Neuron nerve impulse synapse for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "neuron-nerve-impulse-synapse",
-    "targetKeyword": "Neuron nerve impulse synapse NEET UG Biology questions",
-    "sortOrder": 4
-  },
-  {
     "id": "note-endocrine-system-and-hormones",
     "slug": "endocrine-system-and-hormones",
     "title": "Endocrine system and hormones: NEET-UG Biology NCERT Revision Notes",
     "description": "Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "endocrine-system-and-hormones",
     "targetKeyword": "Endocrine system and hormones NEET UG Biology questions",
-    "sortOrder": 5
+    "sortOrder": 3
   },
   {
     "id": "note-plant-respiration",
@@ -51,24 +33,15 @@
     "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "plant-respiration",
     "targetKeyword": "Plant respiration NEET UG Biology questions",
-    "sortOrder": 6
+    "sortOrder": 4
   },
   {
-    "id": "note-recombinant-dna-technology",
-    "slug": "recombinant-dna-technology",
-    "title": "Recombinant DNA technology: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Recombinant DNA technology for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "recombinant-dna-technology",
-    "targetKeyword": "Recombinant DNA technology NEET UG Biology questions",
-    "sortOrder": 7
-  },
-  {
-    "id": "note-mutation-and-gene-expression",
-    "slug": "mutation-and-gene-expression",
-    "title": "Mutation and gene expression: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "mutation-and-gene-expression",
-    "targetKeyword": "Mutation and gene expression NEET UG Biology questions",
-    "sortOrder": 8
+    "id": "note-pedigree-analysis-and-inheritance-patterns",
+    "slug": "pedigree-analysis-and-inheritance-patterns",
+    "title": "Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "pedigree-analysis-and-inheritance-patterns",
+    "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
+    "sortOrder": 5
   }
 ]

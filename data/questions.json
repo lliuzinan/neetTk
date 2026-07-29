@@ -552,98 +552,6 @@
     "sortOrder": 24
   },
   {
-    "id": "neetug-bio-520976",
-    "sourceId": 520976,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Transcription in eukaryotic cells occurs in the",
-    "options": {
-      "A": "mitochondria",
-      "B": "cytoplasm",
-      "C": "nucleus",
-      "D": "endoplasmic reticulum"
-    },
-    "correctOption": "C",
-    "explanation": "Transcription in eukaryotic cells primarily takes place in the nucleus.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 25
-  },
-  {
-    "id": "neetug-bio-520982",
-    "sourceId": 520982,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Transcription in eukaryotic cells occurs in the",
-    "options": {
-      "A": "cytoplasm",
-      "B": "nucleus",
-      "C": "mitochondria",
-      "D": "endoplasmic reticulum"
-    },
-    "correctOption": "B",
-    "explanation": "Transcription is a process where RNA is synthesized from a DNA template. In eukaryotic cells, this primarily occurs in the nucleus.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 26
-  },
-  {
-    "id": "neetug-bio-521007",
-    "sourceId": 521007,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "DNA RNA replication transcription translation",
-    "topicSlug": "dna-rna-replication-transcription-translation",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "stem": "Wobble in genetic code refers to",
-    "options": {
-      "A": "one anticodon can pair with several codons",
-      "B": "a mechanism for extending peptide bonds in the ribosomal large subunit",
-      "C": "the mechanism for forming peptide bonds during translation",
-      "D": "ribosome movement along mRNA from its 5' end to 3' end"
-    },
-    "correctOption": "A",
-    "explanation": "Wobble in genetic code refers to one anticodon can pair with several codons.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 27
-  },
-  {
-    "id": "neetug-bio-521065",
-    "sourceId": 521065,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "DNA RNA replication transcription translation",
-    "topicSlug": "dna-rna-replication-transcription-translation",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "stem": "At which level is gene expression regulated in the lactose operon model?",
-    "options": {
-      "A": "replication level",
-      "B": "transcription level",
-      "C": "post-transcriptional level",
-      "D": "translation level"
-    },
-    "correctOption": "B",
-    "explanation": "The lactose operon model regulates gene expression at the transcription level.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 28
-  },
-  {
     "id": "neetug-bio-521093",
     "sourceId": 521093,
     "exam": "NEET-UG",
@@ -664,7 +572,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 25
   },
   {
     "id": "neetug-bio-521273",
@@ -687,7 +595,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 26
   },
   {
     "id": "neetug-bio-521384",
@@ -710,7 +618,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 27
   },
   {
     "id": "neetug-bio-579017",
@@ -733,7 +641,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 28
   },
   {
     "id": "neetug-bio-579035",
@@ -756,7 +664,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 29
   },
   {
     "id": "neetug-bio-579057",
@@ -779,7 +687,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 30
   },
   {
     "id": "neetug-bio-579069",
@@ -802,7 +710,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 31
   },
   {
     "id": "neetug-bio-579101",
@@ -825,7 +733,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 32
   },
   {
     "id": "neetug-bio-579532",
@@ -848,7 +756,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 33
   },
   {
     "id": "neetug-bio-579543",
@@ -871,7 +779,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 34
   },
   {
     "id": "neetug-bio-579546",
@@ -894,7 +802,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 35
   },
   {
     "id": "neetug-bio-579957",
@@ -917,7 +825,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 36
   },
   {
     "id": "neetug-bio-588339",
@@ -940,7 +848,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 37
   },
   {
     "id": "neetug-bio-588535",
@@ -963,7 +871,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 38
   },
   {
     "id": "neetug-bio-588536",
@@ -973,7 +881,7 @@
     "topic": "Cell theory and cell organelles",
     "topicSlug": "cell-theory-and-cell-organelles",
     "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Which of the following cell organelles is involved in Ca<sup>2+</sup> uptake and release, as well as the conduction of excitation in muscle cells?",
+    "stem": "Which of the following cell organelles is involved in Ca^2+ uptake and release, as well as the conduction of excitation in muscle cells?",
     "options": {
       "A": "microtubules and microfilaments",
       "B": "lysosomes",
@@ -981,12 +889,12 @@
       "D": "smooth endoplasmic reticulum"
     },
     "correctOption": "D",
-    "explanation": "Smooth endoplasmic reticulum (SER) is involved in Ca<sup>2+</sup> storage and release, which plays a crucial role in muscle cell excitation-contraction coupling.",
+    "explanation": "Smooth endoplasmic reticulum (SER) is involved in Ca^2+ storage and release, which plays a crucial role in muscle cell excitation-contraction coupling.",
     "qwenmaxReviewScore": 90,
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 39
   },
   {
     "id": "neetug-bio-588548",
@@ -1009,7 +917,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 40
   },
   {
     "id": "neetug-bio-588556",
@@ -1032,7 +940,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-588558",
@@ -1055,30 +963,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
-  },
-  {
-    "id": "neetug-bio-588560",
-    "sourceId": 588560,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Which of the following cell organelles has protein sorting function?",
-    "options": {
-      "A": "lysosome",
-      "B": "smooth endoplasmic reticulum",
-      "C": "golgi apparatus",
-      "D": "rough endoplasmic reticulum"
-    },
-    "correctOption": "C",
-    "explanation": "The Golgi apparatus is responsible for modifying, packaging, and sorting proteins before they are sent to their final destinations.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 42
   },
   {
     "id": "neetug-bio-588573",
@@ -1101,7 +986,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 43
   },
   {
     "id": "neetug-bio-588601",
@@ -1124,7 +1009,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 44
   },
   {
     "id": "neetug-bio-588609",
@@ -1147,7 +1032,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-589057",
@@ -1170,30 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
-  },
-  {
-    "id": "neetug-bio-589168",
-    "sourceId": 589168,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Which of the following cell organelles is involved in microautophagy?",
-    "options": {
-      "A": "mitochondria",
-      "B": "endoplasmic reticulum",
-      "C": "golgi apparatus",
-      "D": "lysosome"
-    },
-    "correctOption": "D",
-    "explanation": "Microautophagy involves the direct engulfment of cytoplasm by the lysosomal membrane.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-516588",
@@ -1216,7 +1078,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 47
   },
   {
     "id": "neetug-bio-516628",
@@ -1239,7 +1101,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-520587",
@@ -1262,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-521092",
@@ -1285,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 56
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-521391",
@@ -1308,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-578586",
@@ -1331,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-579914",
@@ -1354,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-588084",
@@ -1377,30 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
-  },
-  {
-    "id": "neetug-bio-588567",
-    "sourceId": 588567,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "The removal of the signal peptide from secretory proteins occurs in",
-    "options": {
-      "A": "cytoplasm",
-      "B": "golgi apparatus",
-      "C": "endoplasmic reticulum",
-      "D": "lysosome"
-    },
-    "correctOption": "B",
-    "explanation": "Signal peptides are removed during protein processing in the Golgi apparatus.",
-    "qwenmaxReviewScore": 85,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-588615",
@@ -1423,6 +1262,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 55
   }
 ]

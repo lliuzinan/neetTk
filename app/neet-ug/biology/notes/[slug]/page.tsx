@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { findNote, findQuestionsByTopic, findTopic, getNotePath, getSeoNotes } from "@/lib/content";
+import { findNote, findQuestionsByTopic, findTopic, getSeoNotes } from "@/lib/content";
+import { noteMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -17,11 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const note = await findNote(slug);
   if (!note) return {};
 
-  return {
-    title: note.title,
-    description: note.description,
-    alternates: { canonical: getNotePath(note) },
-  };
+  const topic = await findTopic(note.topicSlug);
+  return noteMetadata(note, topic);
 }
 
 export default async function NotePage({ params }: Props) {

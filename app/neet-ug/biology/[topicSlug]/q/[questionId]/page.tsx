@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { findQuestion, findQuestionsByTopic, findTopic, getQuestionPath, getQuestions } from "@/lib/content";
+import { absoluteUrl, findQuestion, findQuestionsByTopic, findTopic, getQuestionPath, getQuestions } from "@/lib/content";
+import { questionMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ topicSlug: string; questionId: string }>;
@@ -17,11 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const question = await findQuestion(questionId);
   if (!question) return {};
 
-  return {
-    title: `${question.topic} NEET-UG Biology MCQ`,
-    description: question.stem.slice(0, 150),
-    alternates: { canonical: getQuestionPath(question) },
-  };
+  return questionMetadata(question);
 }
 
 export default async function QuestionPage({ params }: Props) {
@@ -37,10 +34,10 @@ export default async function QuestionPage({ params }: Props) {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://medqgo.com/" },
-        { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: "https://medqgo.com/neet-ug/biology" },
-        { "@type": "ListItem", position: 3, name: topic.name, item: `https://medqgo.com/neet-ug/biology/${topic.slug}` },
-        { "@type": "ListItem", position: 4, name: "Question" },
+        { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+        { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") },
+        { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) },
+        { "@type": "ListItem", position: 4, name: "Question", item: absoluteUrl(getQuestionPath(question)) },
       ],
     },
     {
@@ -49,8 +46,23 @@ export default async function QuestionPage({ params }: Props) {
       name: `${question.topic} NEET-UG Biology MCQ`,
       educationalLevel: "Higher secondary",
       assesses: "NEET-UG Biology",
+      about: {
+        "@type": "Thing",
+        name: question.topic,
+      },
+      educationalAlignment: {
+        "@type": "AlignmentObject",
+        alignmentType: "educationalSubject",
+        targetName: "NCERT Biology",
+        educationalFramework: "NEET-UG",
+      },
       hasPart: {
         "@type": "Question",
+        eduQuestionType: "Flashcard",
+        about: {
+          "@type": "Thing",
+          name: question.topic,
+        },
         text: question.stem,
         suggestedAnswer: Object.values(question.options).map((text) => ({ "@type": "Answer", text })),
         acceptedAnswer: { "@type": "Answer", text: answerText },

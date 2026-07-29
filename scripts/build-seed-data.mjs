@@ -45,15 +45,62 @@ function slugify(value) {
     .replace(/^-|-$/g, "");
 }
 
+const htmlEntities = new Map([
+  ["amp", "&"],
+  ["lt", "<"],
+  ["gt", ">"],
+  ["quot", '"'],
+  ["apos", "'"],
+  ["nbsp", " "],
+]);
+
+const advancedPattern = /\b(microautophagy|signal peptide|protein sorting)\b/i;
+const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
+
+function decodeHtmlEntities(value) {
+  return String(value || "")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&([a-z]+);/gi, (match, entity) => htmlEntities.get(entity.toLowerCase()) || match)
+    .replace(/<\s*sup\s*>(.*?)<\s*\/\s*sup\s*>/gi, "^$1")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizedStem(value) {
+  return decodeHtmlEntities(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
 const csv = readFileSync("data/neetug_ready_answer_verified_4options.csv", "utf8").replace(/^\uFEFF/, "");
 const rows = parseCsv(csv.trim());
 const header = rows.shift();
 
-const questions = rows.map((row, index) => {
+const dedupe = new Set();
+const removed = { duplicate: 0, advanced: 0 };
+const questions = rows.flatMap((row) => {
   const item = Object.fromEntries(header.map((key, columnIndex) => [key, row[columnIndex] || ""]));
   const topicSlug = slugify(item.matched_topic);
+  const stem = decodeHtmlEntities(item.question_en);
+  const options = [item.option_a, item.option_b, item.option_c, item.option_d].map(decodeHtmlEntities);
+  const explanation = decodeHtmlEntities(item.explanation_en);
+  const combinedText = [stem, ...options, explanation].join(" ");
+  const stemKey = normalizedStem(stem);
 
-  return {
+  if (advancedPattern.test(combinedText)) {
+    removed.advanced += 1;
+    return [];
+  }
+  if (dedupe.has(stemKey)) {
+    removed.duplicate += 1;
+    return [];
+  }
+  dedupe.add(stemKey);
+
+  return [{
     id: `neetug-bio-${item.source_problem_id}`,
     sourceId: Number(item.source_problem_id),
     exam: "NEET-UG",
@@ -61,22 +108,22 @@ const questions = rows.map((row, index) => {
     topic: item.matched_topic,
     topicSlug,
     ncertRef: item.ncert_ref,
-    stem: item.question_en,
+    stem,
     options: {
-      A: item.option_a,
-      B: item.option_b,
-      C: item.option_c,
-      D: item.option_d,
+      A: options[0],
+      B: options[1],
+      C: options[2],
+      D: options[3],
     },
     correctOption: item.answer,
-    explanation: item.explanation_en,
+    explanation,
     qwenmaxReviewScore: Number(item.qwenmax_review_score),
     qualityScore: Number(item.quality_score),
     status: "approved",
     isFree: true,
-    sortOrder: index + 1,
-  };
-});
+    sortOrder: 0,
+  }];
+}).map((question, index) => ({ ...question, sortOrder: index + 1 }));
 
 const topicMap = new Map();
 for (const question of questions) {
@@ -101,7 +148,7 @@ for (const question of questions) {
 }
 
 const topics = [...topicMap.values()];
-const notes = topics.slice(0, 8).map((topic, index) => ({
+const notes = topics.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).slice(0, 8).map((topic, index) => ({
   id: `note-${topic.slug}`,
   slug: topic.slug,
   title: `${topic.name}: NEET-UG Biology NCERT Revision Notes`,
@@ -115,4 +162,4 @@ writeFileSync("data/questions.json", `${JSON.stringify(questions, null, 2)}\n`);
 writeFileSync("data/topics.json", `${JSON.stringify(topics, null, 2)}\n`);
 writeFileSync("data/seo-notes.json", `${JSON.stringify(notes, null, 2)}\n`);
 
-console.log(JSON.stringify({ questions: questions.length, topics: topics.length, notes: notes.length }, null, 2));
+console.log(JSON.stringify({ questions: questions.length, topics: topics.length, notes: notes.length, removed }, null, 2));

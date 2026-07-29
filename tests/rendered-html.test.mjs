@@ -15,9 +15,13 @@ test("renders seeded qbank content on public index pages", async () => {
   assert.match(homeHtml, /verified MCQs live/);
   assert.match(homeHtml, /Protein synthesis occurs in the/);
   assert.match(homeHtml, /neetug-bio-520996/);
+  assert.match(homeHtml, /Free chapter-wise NEET Biology MCQs for Indian students/);
+  assert.doesNotMatch(homeHtml, /SEO content pipeline/);
+  assert.doesNotMatch(homeHtml, /generated from the same publishing pipeline/);
 
   assert.match(biologyHtml, /55<!-- --> verified 4-option questions/);
   assert.match(biologyHtml, /Cell theory and cell organelles/);
+  assert.match(biologyHtml, /Growing topics/);
   assert.doesNotMatch(homeHtml, />0<\/span><p>verified MCQs live/);
   assert.doesNotMatch(biologyHtml, /Start with <!-- -->0<!-- --> verified/);
 });

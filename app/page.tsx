@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrackedLink } from "@/components/TrackedLink";
 import { getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
+import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "NEET-UG Biology Question Bank",
-  description: "Practice NCERT-aligned NEET-UG Biology MCQs with answer explanations, topic pages, and revision notes.",
+  title: "Free NEET Biology MCQs with Answers",
+  description: "Practice free NEET-UG Biology MCQs with answers, NCERT-aligned explanations, topic-wise pages, and revision notes for Indian students.",
   alternates: { canonical: "/" },
 };
 
@@ -31,11 +33,19 @@ export default async function Home() {
             <p className="eyebrow">NEET-UG Biology • NCERT aligned</p>
             <h1>Build your Biology score with focused MCQs and explanations.</h1>
             <p className="lede">
-              A clean question bank rebuilt for NEET-UG Biology from verified 4-option MCQs. Topic pages, single-question SEO pages, and revision notes are generated from the same publishing pipeline.
+              Free chapter-wise NEET Biology MCQs for Indian students, aligned with NCERT Class 11 and 12. Practice four-option questions with visible answers and concise explanations.
             </p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
               {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}
+              <TrackedLink
+                href="/neet-ug/biology"
+                className="secondaryButton"
+                eventName="join_waitlist_click"
+                eventParams={{ source: "home_hero", offer: "neet_biology_updates" }}
+              >
+                Join free NEET updates
+              </TrackedLink>
             </div>
           </div>
           <div className="heroPanel" aria-label="Question bank status">
@@ -49,7 +59,7 @@ export default async function Home() {
             </div>
             <div className="metricRow">
               <span>{noteList.length}</span>
-              <p>SEO revision notes seeded</p>
+              <p>NCERT revision notes</p>
             </div>
           </div>
         </div>
@@ -58,10 +68,10 @@ export default async function Home() {
       <section className="section">
         <div className="sectionHeader">
           <p className="eyebrow">Question bank</p>
-          <h2>Biology topics ready for indexing and practice</h2>
+          <h2>Chapter-wise NEET Biology MCQs with answers</h2>
         </div>
         <div className="topicGrid">
-          {topicList.map((topic) => (
+          {topicList.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).map((topic) => (
             <Link href={getTopicPath(topic)} className="topicCard" key={topic.id}>
               <span>{topic.questionCount} MCQs</span>
               <h3>{topic.name}</h3>
@@ -73,10 +83,10 @@ export default async function Home() {
 
       <section className="section split">
         <div>
-          <p className="eyebrow">SEO content pipeline</p>
-          <h2>Every batch can publish topics, MCQs, notes, sitemap updates, and analytics events.</h2>
+          <p className="eyebrow">NCERT revision</p>
+          <h2>Revise high-yield Biology concepts before solving topic-wise MCQs.</h2>
           <p className="muted">
-            The new build treats content as structured data first. New question batches flow into topic pages and single-question pages without touching old NEET-PG medicine logic.
+            Use these short notes to review definitions, examples, and common distractors from NCERT before practicing questions for NEET-UG Biology.
           </p>
         </div>
         <div className="listPanel">
