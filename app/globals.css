@@ -260,6 +260,35 @@ h3 {
   gap: 12px;
 }
 
+.seoList {
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+  line-height: 1.65;
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.splitContent {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+}
+
+.faqBlock {
+  display: grid;
+  gap: 16px;
+}
+
+.faqItem {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.faqItem h3 {
+  font-size: 1.05rem;
+}
+
 .pageHeader {
   margin-bottom: 36px;
   max-width: 840px;
@@ -372,7 +401,8 @@ h3 {
 
 @media (max-width: 760px) {
   .heroGrid,
-  .split {
+  .split,
+  .splitContent {
     grid-template-columns: 1fr;
   }
 

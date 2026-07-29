@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { absoluteUrl, findQuestionsByTopic, findTopic, getQuestionPath, getTopics } from "@/lib/content";
 import { topicMetadata } from "@/lib/seo";
+import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props {
   params: Promise<{ topicSlug: string }>;
@@ -27,6 +28,7 @@ export default async function TopicPage({ params }: Props) {
   if (!topic) notFound();
 
   const topicQuestions = await findQuestionsByTopic(topic.slug);
+  const seoContent = getTopicSeoContent(topic.slug);
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -36,10 +38,22 @@ export default async function TopicPage({ params }: Props) {
       { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) },
     ],
   };
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: seoContent.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
   return (
     <main className="page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbLd, faqLd]) }} />
       <header className="pageHeader">
         <Link href="/neet-ug/biology" className="backLink">All Biology topics</Link>
         <p className="eyebrow">{topic.ncertRef}</p>
@@ -50,10 +64,37 @@ export default async function TopicPage({ params }: Props) {
       </header>
 
       <section className="contentBand">
-        <h2>What to revise before practicing</h2>
-        <p>
-          Focus on NCERT definitions, process order, examples, and common distractors. For NEET-UG, this topic should be practiced through direct concept checks and short reasoning questions rather than postgraduate clinical case framing.
-        </p>
+        <h2>High-yield NCERT focus</h2>
+        <ul className="seoList">
+          {seoContent.focus.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="contentBand splitContent">
+        <div>
+          <h2>Common NEET traps</h2>
+          <ul className="seoList">
+            {seoContent.traps.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2>Practice plan</h2>
+          <p>{seoContent.practicePlan}</p>
+        </div>
+      </section>
+
+      <section className="contentBand faqBlock">
+        <h2>{topic.name} FAQs</h2>
+        {seoContent.faqs.map((faq) => (
+          <div className="faqItem" key={faq.question}>
+            <h3>{faq.question}</h3>
+            <p>{faq.answer}</p>
+          </div>
+        ))}
       </section>
 
       <div className="questionList">

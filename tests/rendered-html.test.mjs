@@ -42,3 +42,15 @@ test("renders HTML sitemap and question SEO metadata", async () => {
   assert.match(questionHead, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
   assert.match(questionHead, /og:url/);
 });
+
+test("renders topic-specific SEO content", async () => {
+  const topicHtml = await readFile(
+    new URL("../.next/server/app/neet-ug/biology/cell-theory-and-cell-organelles.html", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(topicHtml, /High-yield NCERT focus/);
+  assert.match(topicHtml, /Common NEET traps/);
+  assert.match(topicHtml, /Which cell organelles are most important for NEET Biology/);
+  assert.match(topicHtml, /FAQPage/);
+});
