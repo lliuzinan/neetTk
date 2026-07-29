@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getTopicPath, questions, topics } from "@/lib/content";
+import { getQuestions, getTopicPath, getTopics } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "NEET-UG Biology Topics",
@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/neet-ug/biology" },
 };
 
-export default function BiologyTopicsPage() {
+export default async function BiologyTopicsPage() {
+  const [questionList, topicList] = await Promise.all([getQuestions(), getTopics()]);
+
   return (
     <main className="page">
       <header className="pageHeader">
@@ -16,12 +18,12 @@ export default function BiologyTopicsPage() {
         <p className="eyebrow">NEET-UG Biology</p>
         <h1>NCERT topic-wise Biology MCQs</h1>
         <p>
-          Start with {questions.length} verified 4-option questions across {topics.length} topic clusters. Each topic page is built for practice and Google indexing.
+          Start with {questionList.length} verified 4-option questions across {topicList.length} topic clusters. Each topic page is built for practice and Google indexing.
         </p>
       </header>
 
       <div className="topicGrid">
-        {topics.map((topic) => (
+        {topicList.map((topic) => (
           <Link href={getTopicPath(topic)} className="topicCard" key={topic.id}>
             <span>{topic.questionCount} MCQs</span>
             <h2>{topic.name}</h2>

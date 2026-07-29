@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getQuestion, getQuestionPath, getQuestionsByTopic, getTopic, questions } from "@/lib/content";
+import { findQuestion, findQuestionsByTopic, findTopic, getQuestionPath, getQuestions } from "@/lib/content";
 
 interface Props {
   params: Promise<{ topicSlug: string; questionId: string }>;
 }
 
-export function generateStaticParams() {
-  return questions.map((question) => ({ topicSlug: question.topicSlug, questionId: question.id }));
+export async function generateStaticParams() {
+  const questionList = await getQuestions();
+  return questionList.map((question) => ({ topicSlug: question.topicSlug, questionId: question.id }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { questionId } = await params;
-  const question = getQuestion(questionId);
+  const question = await findQuestion(questionId);
   if (!question) return {};
 
   return {
@@ -25,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function QuestionPage({ params }: Props) {
   const { topicSlug, questionId } = await params;
-  const question = getQuestion(questionId);
-  const topic = getTopic(topicSlug);
+  const question = await findQuestion(questionId);
+  const topic = await findTopic(topicSlug);
   if (!question || !topic || question.topicSlug !== topicSlug) notFound();
 
-  const related = getQuestionsByTopic(topicSlug).filter((item) => item.id !== question.id).slice(0, 5);
+  const related = (await findQuestionsByTopic(topicSlug)).filter((item) => item.id !== question.id).slice(0, 5);
   const answerText = question.options[question.correctOption];
   const jsonLd = [
     {

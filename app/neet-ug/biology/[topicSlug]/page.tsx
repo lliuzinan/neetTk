@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getQuestionPath, getQuestionsByTopic, getTopic, getTopicPath, topics } from "@/lib/content";
+import { findQuestionsByTopic, findTopic, getQuestionPath, getTopicPath, getTopics } from "@/lib/content";
 
 interface Props {
   params: Promise<{ topicSlug: string }>;
 }
 
-export function generateStaticParams() {
-  return topics.map((topic) => ({ topicSlug: topic.slug }));
+export async function generateStaticParams() {
+  const topicList = await getTopics();
+  return topicList.map((topic) => ({ topicSlug: topic.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topicSlug } = await params;
-  const topic = getTopic(topicSlug);
+  const topic = await findTopic(topicSlug);
   if (!topic) return {};
 
   return {
@@ -25,10 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TopicPage({ params }: Props) {
   const { topicSlug } = await params;
-  const topic = getTopic(topicSlug);
+  const topic = await findTopic(topicSlug);
   if (!topic) notFound();
 
-  const topicQuestions = getQuestionsByTopic(topic.slug);
+  const topicQuestions = await findQuestionsByTopic(topic.slug);
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

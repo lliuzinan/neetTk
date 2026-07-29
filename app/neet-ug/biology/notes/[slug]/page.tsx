@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getNote, getNotePath, getQuestionsByTopic, getTopic, seoNotes } from "@/lib/content";
+import { findNote, findQuestionsByTopic, findTopic, getNotePath, getSeoNotes } from "@/lib/content";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return seoNotes.map((note) => ({ slug: note.slug }));
+export async function generateStaticParams() {
+  const noteList = await getSeoNotes();
+  return noteList.map((note) => ({ slug: note.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const note = getNote(slug);
+  const note = await findNote(slug);
   if (!note) return {};
 
   return {
@@ -25,13 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function NotePage({ params }: Props) {
   const { slug } = await params;
-  const note = getNote(slug);
+  const note = await findNote(slug);
   if (!note) notFound();
 
-  const topic = getTopic(note.topicSlug);
+  const topic = await findTopic(note.topicSlug);
   if (!topic) notFound();
 
-  const topicQuestions = getQuestionsByTopic(topic.slug).slice(0, 6);
+  const topicQuestions = (await findQuestionsByTopic(topic.slug)).slice(0, 6);
 
   return (
     <main className="page articlePage">

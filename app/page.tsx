@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getNotePath, getQuestionPath, getTopicPath, questions, seoNotes, topics } from "@/lib/content";
+import { getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "NEET-UG Biology Question Bank",
@@ -8,8 +8,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export default function Home() {
-  const firstQuestions = questions.slice(0, 6);
+export default async function Home() {
+  const [questionList, topicList, noteList] = await Promise.all([
+    getQuestions(),
+    getTopics(),
+    getSeoNotes(),
+  ]);
+  const firstQuestions = questionList.slice(0, 6);
 
   return (
     <main>
@@ -30,20 +35,20 @@ export default function Home() {
             </p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
-              <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>
+              {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}
             </div>
           </div>
           <div className="heroPanel" aria-label="Question bank status">
             <div className="metricRow">
-              <span>{questions.length}</span>
+              <span>{questionList.length}</span>
               <p>verified MCQs live</p>
             </div>
             <div className="metricRow">
-              <span>{topics.length}</span>
+              <span>{topicList.length}</span>
               <p>NCERT topic clusters</p>
             </div>
             <div className="metricRow">
-              <span>{seoNotes.length}</span>
+              <span>{noteList.length}</span>
               <p>SEO revision notes seeded</p>
             </div>
           </div>
@@ -56,7 +61,7 @@ export default function Home() {
           <h2>Biology topics ready for indexing and practice</h2>
         </div>
         <div className="topicGrid">
-          {topics.map((topic) => (
+          {topicList.map((topic) => (
             <Link href={getTopicPath(topic)} className="topicCard" key={topic.id}>
               <span>{topic.questionCount} MCQs</span>
               <h3>{topic.name}</h3>
@@ -75,7 +80,7 @@ export default function Home() {
           </p>
         </div>
         <div className="listPanel">
-          {seoNotes.slice(0, 5).map((note) => (
+          {noteList.slice(0, 5).map((note) => (
             <Link href={getNotePath(note)} key={note.id}>
               {note.title}
             </Link>
