@@ -337,6 +337,26 @@ h3 {
   margin-top: 14px;
 }
 
+.questionNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.questionNav a {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--brand);
+  font-weight: 750;
+  padding: 12px 14px;
+}
+
+.sitemapQuestions {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .articlePage {
   max-width: 900px;
 }

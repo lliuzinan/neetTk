@@ -26,6 +26,7 @@ export default async function Home() {
           <div className="navLinks">
             <Link href="/neet-ug/biology">Topics</Link>
             <Link href="/neet-ug/biology/notes/cell-theory-and-cell-organelles">Notes</Link>
+            <Link href="/site-map">Sitemap</Link>
           </div>
         </nav>
         <div className="heroGrid">

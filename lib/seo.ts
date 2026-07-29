@@ -18,8 +18,13 @@ function truncate(value: string, maxLength: number) {
 }
 
 export function questionTitle(question: Question) {
-  const stem = stripHtml(question.stem).replace(/\?*$/, "?");
-  if (stem.length <= 72) return `${stem} NEET Biology MCQ`;
+  const answerText = question.options[question.correctOption];
+  const stem = stripHtml(question.stem);
+  const incompletePattern = /\b(in the|of the|to|by|is|are|was|were|for|at|from|with)$/i;
+  if (stem.length <= 58 && incompletePattern.test(stem)) {
+    return `${stem} ${answerText}: NEET Biology MCQ`;
+  }
+  if (stem.length <= 72) return `${stem.replace(/\?*$/, "?")} NEET Biology MCQ`;
   return `${question.topic} NEET Biology MCQ`;
 }
 

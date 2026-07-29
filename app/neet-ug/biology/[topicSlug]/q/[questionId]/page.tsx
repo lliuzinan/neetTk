@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { absoluteUrl, findQuestion, findQuestionsByTopic, findTopic, getQuestionPath, getQuestions } from "@/lib/content";
+import {
+  absoluteUrl,
+  findQuestion,
+  findQuestionsByTopic,
+  findTopic,
+  getNotePath,
+  getQuestionPath,
+  getQuestions,
+  getSeoNotes,
+  getTopicPath,
+} from "@/lib/content";
 import { questionMetadata } from "@/lib/seo";
 
 interface Props {
@@ -28,6 +38,11 @@ export default async function QuestionPage({ params }: Props) {
   if (!question || !topic || question.topicSlug !== topicSlug) notFound();
 
   const related = (await findQuestionsByTopic(topicSlug)).filter((item) => item.id !== question.id).slice(0, 5);
+  const topicQuestions = await findQuestionsByTopic(topicSlug);
+  const currentIndex = topicQuestions.findIndex((item) => item.id === question.id);
+  const previousQuestion = currentIndex > 0 ? topicQuestions[currentIndex - 1] : null;
+  const nextQuestion = currentIndex >= 0 && currentIndex < topicQuestions.length - 1 ? topicQuestions[currentIndex + 1] : null;
+  const topicNote = (await getSeoNotes()).find((note) => note.topicSlug === topic.slug);
   const answerText = question.options[question.correctOption];
   const jsonLd = [
     {
@@ -105,6 +120,13 @@ export default async function QuestionPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <nav className="questionNav" aria-label="Question navigation">
+        <Link href={getTopicPath(topic)}>All {topic.name} questions</Link>
+        {topicNote && <Link href={getNotePath(topicNote)}>Revise {topic.name}</Link>}
+        {previousQuestion && <Link href={getQuestionPath(previousQuestion)}>Previous MCQ</Link>}
+        {nextQuestion && <Link href={getQuestionPath(nextQuestion)}>Next MCQ</Link>}
+      </nav>
     </main>
   );
 }
