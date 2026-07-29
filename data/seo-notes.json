@@ -9,13 +9,22 @@
     "sortOrder": 1
   },
   {
+    "id": "note-dna-rna-replication-transcription-translation",
+    "slug": "dna-rna-replication-transcription-translation",
+    "title": "DNA RNA replication transcription translation: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise DNA RNA replication transcription translation for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "targetKeyword": "DNA RNA replication transcription translation NEET UG Biology questions",
+    "sortOrder": 2
+  },
+  {
     "id": "note-excretion-and-kidney-function",
     "slug": "excretion-and-kidney-function",
     "title": "Excretion and kidney function: NEET-UG Biology NCERT Revision Notes",
     "description": "Revise Excretion and kidney function for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "excretion-and-kidney-function",
     "targetKeyword": "Excretion and kidney function NEET UG Biology questions",
-    "sortOrder": 2
+    "sortOrder": 3
   },
   {
     "id": "note-neuron-nerve-impulse-synapse",
@@ -24,7 +33,7 @@
     "description": "Revise Neuron nerve impulse synapse for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "neuron-nerve-impulse-synapse",
     "targetKeyword": "Neuron nerve impulse synapse NEET UG Biology questions",
-    "sortOrder": 3
+    "sortOrder": 4
   },
   {
     "id": "note-endocrine-system-and-hormones",
@@ -33,7 +42,7 @@
     "description": "Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "endocrine-system-and-hormones",
     "targetKeyword": "Endocrine system and hormones NEET UG Biology questions",
-    "sortOrder": 4
+    "sortOrder": 5
   },
   {
     "id": "note-plant-respiration",
@@ -42,15 +51,6 @@
     "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "plant-respiration",
     "targetKeyword": "Plant respiration NEET UG Biology questions",
-    "sortOrder": 5
-  },
-  {
-    "id": "note-dna-rna-replication-transcription-translation",
-    "slug": "dna-rna-replication-transcription-translation",
-    "title": "DNA RNA replication transcription translation: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise DNA RNA replication transcription translation for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "dna-rna-replication-transcription-translation",
-    "targetKeyword": "DNA RNA replication transcription translation NEET UG Biology questions",
     "sortOrder": 6
   },
   {

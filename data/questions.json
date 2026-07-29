@@ -46,6 +46,167 @@
     "sortOrder": 2
   },
   {
+    "id": "neetug-bio-588742",
+    "sourceId": 588742,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Where is the genetic material DNA found in animal cells?",
+    "options": {
+      "A": "only in the nucleus",
+      "B": "only in the mitochondria",
+      "C": "in the nucleus and mitochondria",
+      "D": "in the nucleus and endoplasmic reticulum"
+    },
+    "correctOption": "C",
+    "explanation": "DNA is primarily located in the nucleus of animal cells. However, a small amount of DNA is also found in mitochondria.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "neetug-bio-588802",
+    "sourceId": 588802,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Gene expression regulation cannot occur at the stage of",
+    "options": {
+      "A": "DNA replication",
+      "B": "transcription initiation",
+      "C": "post-transcriptional regulation",
+      "D": "translation initiation"
+    },
+    "correctOption": "A",
+    "explanation": "Gene expression regulation primarily occurs during transcription and translation. It does not directly involve DNA replication or post-translation modifications.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "neetug-bio-588809",
+    "sourceId": 588809,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Transcription in eukaryotic cells occurs in the",
+    "options": {
+      "A": "nucleus",
+      "B": "cytoplasm",
+      "C": "mitochondria",
+      "D": "endoplasmic reticulum"
+    },
+    "correctOption": "A",
+    "explanation": "Transcription primarily takes place in the nucleus of eukaryotic cells.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "neetug-bio-588820",
+    "sourceId": 588820,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Wobble in genetic code refers to",
+    "options": {
+      "A": "one anticodon can pair with several codons",
+      "B": "a mechanism for extending peptide bonds in the ribosomal large subunit",
+      "C": "the mechanism for forming peptide bonds during translation",
+      "D": "the movement of ribosome along mRNA from its 5' end to 3' end"
+    },
+    "correctOption": "A",
+    "explanation": "Wobble in genetic code refers to one anticodon can pair with several codons.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "neetug-bio-588825",
+    "sourceId": 588825,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "At which level is gene expression regulated in the lactose operon model?",
+    "options": {
+      "A": "replication level",
+      "B": "transcription level",
+      "C": "post-transcriptional level",
+      "D": "translation level"
+    },
+    "correctOption": "B",
+    "explanation": "In the lactose operon model, gene expression is primarily regulated at the transcription level.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "neetug-bio-588848",
+    "sourceId": 588848,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "DNA replication occurs in the",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "golgi apparatus",
+      "C": "ribosome",
+      "D": "nucleus"
+    },
+    "correctOption": "D",
+    "explanation": "DNA replication primarily takes place in the nucleus of eukaryotic cells.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "neetug-bio-588773",
+    "sourceId": 588773,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following cellular structures has enzymes similar to those found in the nuclear membrane?",
+    "options": {
+      "A": "mitochondria",
+      "B": "Golgi apparatus",
+      "C": "endoplasmic reticulum",
+      "D": "lysosomes"
+    },
+    "correctOption": "C",
+    "explanation": "The nuclear envelope contains enzymes involved in lipid synthesis and other metabolic processes, which are also found in the endoplasmic reticulum.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 9
+  },
+  {
     "id": "neetug-bio-516300",
     "sourceId": 516300,
     "exam": "NEET-UG",
@@ -66,7 +227,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 3
+    "sortOrder": 10
   },
   {
     "id": "neetug-bio-516430",
@@ -89,7 +250,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 4
+    "sortOrder": 11
   },
   {
     "id": "neetug-bio-516615",
@@ -112,7 +273,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 5
+    "sortOrder": 12
   },
   {
     "id": "neetug-bio-516616",
@@ -135,7 +296,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 6
+    "sortOrder": 13
   },
   {
     "id": "neetug-bio-516625",
@@ -158,7 +319,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 7
+    "sortOrder": 14
   },
   {
     "id": "neetug-bio-516658",
@@ -181,7 +342,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 8
+    "sortOrder": 15
   },
   {
     "id": "neetug-bio-516661",
@@ -204,7 +365,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 9
+    "sortOrder": 16
   },
   {
     "id": "neetug-bio-516698",
@@ -227,7 +388,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 10
+    "sortOrder": 17
   },
   {
     "id": "neetug-bio-516716",
@@ -250,7 +411,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 11
+    "sortOrder": 18
   },
   {
     "id": "neetug-bio-520545",
@@ -273,7 +434,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 12
+    "sortOrder": 19
   },
   {
     "id": "neetug-bio-520555",
@@ -296,7 +457,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 13
+    "sortOrder": 20
   },
   {
     "id": "neetug-bio-520570",
@@ -319,7 +480,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 14
+    "sortOrder": 21
   },
   {
     "id": "neetug-bio-520571",
@@ -342,7 +503,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 15
+    "sortOrder": 22
   },
   {
     "id": "neetug-bio-520843",
@@ -365,7 +526,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 16
+    "sortOrder": 23
   },
   {
     "id": "neetug-bio-520897",
@@ -388,7 +549,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 17
+    "sortOrder": 24
   },
   {
     "id": "neetug-bio-520976",
@@ -411,7 +572,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 18
+    "sortOrder": 25
   },
   {
     "id": "neetug-bio-520982",
@@ -434,7 +595,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 19
+    "sortOrder": 26
   },
   {
     "id": "neetug-bio-521007",
@@ -457,7 +618,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 20
+    "sortOrder": 27
   },
   {
     "id": "neetug-bio-521065",
@@ -480,7 +641,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 21
+    "sortOrder": 28
   },
   {
     "id": "neetug-bio-521093",
@@ -503,7 +664,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 22
+    "sortOrder": 29
   },
   {
     "id": "neetug-bio-521273",
@@ -526,7 +687,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 23
+    "sortOrder": 30
   },
   {
     "id": "neetug-bio-521384",
@@ -549,7 +710,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 24
+    "sortOrder": 31
   },
   {
     "id": "neetug-bio-579017",
@@ -572,7 +733,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 25
+    "sortOrder": 32
   },
   {
     "id": "neetug-bio-579035",
@@ -595,7 +756,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 26
+    "sortOrder": 33
   },
   {
     "id": "neetug-bio-579057",
@@ -618,7 +779,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 27
+    "sortOrder": 34
   },
   {
     "id": "neetug-bio-579069",
@@ -641,7 +802,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 28
+    "sortOrder": 35
   },
   {
     "id": "neetug-bio-579101",
@@ -664,7 +825,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 36
   },
   {
     "id": "neetug-bio-579532",
@@ -687,7 +848,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 37
   },
   {
     "id": "neetug-bio-579543",
@@ -710,7 +871,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 38
   },
   {
     "id": "neetug-bio-579546",
@@ -733,7 +894,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 39
   },
   {
     "id": "neetug-bio-579957",
@@ -756,7 +917,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 40
   },
   {
     "id": "neetug-bio-588339",
@@ -779,7 +940,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-588535",
@@ -802,7 +963,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 42
   },
   {
     "id": "neetug-bio-588536",
@@ -825,7 +986,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 43
   },
   {
     "id": "neetug-bio-588548",
@@ -848,7 +1009,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 44
   },
   {
     "id": "neetug-bio-588556",
@@ -871,7 +1032,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-588558",
@@ -894,7 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-588560",
@@ -917,7 +1078,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 47
   },
   {
     "id": "neetug-bio-588573",
@@ -940,7 +1101,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-588601",
@@ -963,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-588609",
@@ -986,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-589057",
@@ -1009,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-589168",
@@ -1032,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-516588",
@@ -1055,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-516628",
@@ -1078,7 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-520587",
@@ -1101,7 +1262,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-521092",
@@ -1124,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-521391",
@@ -1147,7 +1308,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 57
   },
   {
     "id": "neetug-bio-578586",
@@ -1170,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-579914",
@@ -1193,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-588084",
@@ -1216,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-588567",
@@ -1239,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-588615",
@@ -1262,6 +1423,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 62
   }
 ]
