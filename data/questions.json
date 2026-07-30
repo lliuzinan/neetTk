@@ -138,6 +138,29 @@
     "sortOrder": 6
   },
   {
+    "id": "neetug-bio-516056",
+    "sourceId": 516056,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human respiration",
+    "topicSlug": "human-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 14",
+    "stem": "The oxygen dissociation curve represents the relationship between",
+    "options": {
+      "A": "oxygen content and hemoglobin concentration",
+      "B": "hemoglobin oxygen saturation and blood oxygen pressure",
+      "C": "hemoglobin oxygen saturation and hemoglobin oxygen content",
+      "D": "hemoglobin concentration and hemoglobin oxygen capacity"
+    },
+    "correctOption": "B",
+    "explanation": "The oxygen dissociation curve illustrates the relationship between hemoglobin oxygen saturation and blood oxygen pressure.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 7
+  },
+  {
     "id": "neetug-bio-516060",
     "sourceId": 516060,
     "exam": "NEET-UG",
@@ -158,7 +181,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 7
+    "sortOrder": 8
   },
   {
     "id": "neetug-bio-516220",
@@ -181,7 +204,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 8
+    "sortOrder": 9
   },
   {
     "id": "neetug-bio-516237",
@@ -204,7 +227,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 9
+    "sortOrder": 10
   },
   {
     "id": "neetug-bio-516580",
@@ -227,7 +250,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 10
+    "sortOrder": 11
   },
   {
     "id": "neetug-bio-516660",
@@ -250,7 +273,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 11
+    "sortOrder": 12
   },
   {
     "id": "neetug-bio-516729",
@@ -273,7 +296,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 12
+    "sortOrder": 13
   },
   {
     "id": "neetug-bio-520377",
@@ -296,7 +319,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 13
+    "sortOrder": 14
   },
   {
     "id": "neetug-bio-520500",
@@ -319,7 +342,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 14
+    "sortOrder": 15
   },
   {
     "id": "neetug-bio-520558",
@@ -342,7 +365,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 15
+    "sortOrder": 16
   },
   {
     "id": "neetug-bio-520569",
@@ -365,7 +388,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 16
+    "sortOrder": 17
   },
   {
     "id": "neetug-bio-520614",
@@ -388,7 +411,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 17
+    "sortOrder": 18
   },
   {
     "id": "neetug-bio-520743",
@@ -411,7 +434,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 18
+    "sortOrder": 19
   },
   {
     "id": "neetug-bio-520827",
@@ -434,7 +457,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 19
+    "sortOrder": 20
   },
   {
     "id": "neetug-bio-520900",
@@ -457,7 +480,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 20
+    "sortOrder": 21
   },
   {
     "id": "neetug-bio-520906",
@@ -480,7 +503,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 21
+    "sortOrder": 22
   },
   {
     "id": "neetug-bio-520924",
@@ -503,7 +526,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 22
+    "sortOrder": 23
   },
   {
     "id": "neetug-bio-520926",
@@ -526,7 +549,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 23
+    "sortOrder": 24
   },
   {
     "id": "neetug-bio-520941",
@@ -549,7 +572,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 24
+    "sortOrder": 25
   },
   {
     "id": "neetug-bio-520950",
@@ -572,7 +595,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 25
+    "sortOrder": 26
   },
   {
     "id": "neetug-bio-520963",
@@ -595,7 +618,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 26
+    "sortOrder": 27
   },
   {
     "id": "neetug-bio-520996",
@@ -618,7 +641,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 27
+    "sortOrder": 28
   },
   {
     "id": "neetug-bio-521061",
@@ -641,7 +664,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 28
+    "sortOrder": 29
   },
   {
     "id": "neetug-bio-521063",
@@ -664,7 +687,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 30
   },
   {
     "id": "neetug-bio-521076",
@@ -687,7 +710,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 31
+  },
+  {
+    "id": "neetug-bio-521077",
+    "sourceId": 521077,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In the lac operon, cAMP can regulate transcription by first binding to",
+    "options": {
+      "A": "CAP",
+      "B": "RNA polymerase",
+      "C": "a repressor protein",
+      "D": "an operator"
+    },
+    "correctOption": "A",
+    "explanation": "cAMP binds to CAP (Catabolite Activator Protein) to form a cAMP-CAP complex, which then enhances the binding of RNA polymerase to the promoter.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 32
   },
   {
     "id": "neetug-bio-521095",
@@ -710,7 +756,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 33
   },
   {
     "id": "neetug-bio-521139",
@@ -733,7 +779,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 34
+  },
+  {
+    "id": "neetug-bio-521191",
+    "sourceId": 521191,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about signal transduction networks is incorrect?",
+    "options": {
+      "A": "Different signaling pathways can synergistically regulate gene expression",
+      "B": "Different signaling pathways can antagonize each other's effects on gene expression regulation",
+      "C": "A single signaling pathway only regulates the activity of one transcription factor",
+      "D": "Different signaling pathways can activate the same transcription factor"
+    },
+    "correctOption": "C",
+    "explanation": "Signal transduction networks often involve multiple pathways that can either synergistically or antagonize each other to regulate gene expression. A single signaling pathway typically affects more than one transcription factor.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 35
   },
   {
     "id": "neetug-bio-521261",
@@ -756,7 +825,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 36
   },
   {
     "id": "neetug-bio-579528",
@@ -779,7 +848,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 37
   },
   {
     "id": "neetug-bio-588344",
@@ -802,7 +871,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 38
   },
   {
     "id": "neetug-bio-588348",
@@ -825,7 +894,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 39
   },
   {
     "id": "neetug-bio-588362",
@@ -848,7 +917,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 40
   },
   {
     "id": "neetug-bio-588624",
@@ -871,7 +940,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-588742",
@@ -894,7 +963,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 42
   },
   {
     "id": "neetug-bio-588795",
@@ -917,7 +986,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 43
   },
   {
     "id": "neetug-bio-588802",
@@ -940,7 +1009,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 44
   },
   {
     "id": "neetug-bio-588809",
@@ -963,7 +1032,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-588820",
@@ -986,7 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-588825",
@@ -1009,7 +1078,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 47
   },
   {
     "id": "neetug-bio-588830",
@@ -1032,7 +1101,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-588848",
@@ -1055,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-589004",
@@ -1078,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-589104",
@@ -1101,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-589135",
@@ -1124,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-589160",
@@ -1147,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-520527",
@@ -1170,7 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-588773",
@@ -1193,7 +1262,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-589163",
@@ -1216,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-516300",
@@ -1239,7 +1308,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 57
   },
   {
     "id": "neetug-bio-516430",
@@ -1262,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-516615",
@@ -1285,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 56
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-516616",
@@ -1308,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-516625",
@@ -1331,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-516658",
@@ -1354,7 +1423,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 62
   },
   {
     "id": "neetug-bio-516661",
@@ -1377,7 +1446,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
+    "sortOrder": 63
   },
   {
     "id": "neetug-bio-516698",
@@ -1400,7 +1469,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 64
   },
   {
     "id": "neetug-bio-516716",
@@ -1423,7 +1492,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-520545",
@@ -1446,7 +1515,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 63
+    "sortOrder": 66
   },
   {
     "id": "neetug-bio-520555",
@@ -1469,7 +1538,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 64
+    "sortOrder": 67
   },
   {
     "id": "neetug-bio-520570",
@@ -1492,7 +1561,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 65
+    "sortOrder": 68
   },
   {
     "id": "neetug-bio-520571",
@@ -1515,7 +1584,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 66
+    "sortOrder": 69
   },
   {
     "id": "neetug-bio-520843",
@@ -1538,7 +1607,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 67
+    "sortOrder": 70
   },
   {
     "id": "neetug-bio-520897",
@@ -1561,7 +1630,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 68
+    "sortOrder": 71
+  },
+  {
+    "id": "neetug-bio-521078",
+    "sourceId": 521078,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In prokaryotic gene expression regulation, which of the following correctly represents the products of regulatory genes in negative and positive transcriptional control systems?",
+    "options": {
+      "A": "repressor, repressor",
+      "B": "repressor, activator",
+      "C": "activator, repressor",
+      "D": "activator, activator"
+    },
+    "correctOption": "B",
+    "explanation": "In prokaryotes, regulatory genes in negative and positive transcriptional control systems produce repressors and activators respectively.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-521093",
@@ -1584,7 +1676,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 69
+    "sortOrder": 73
+  },
+  {
+    "id": "neetug-bio-521106",
+    "sourceId": 521106,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Trans-acting factors refer to",
+    "options": {
+      "A": "regulatory proteins that have inhibitory functions",
+      "B": "proteins that activate their own genes",
+      "C": "proteins that regulate the expression of another gene",
+      "D": "enzymes that recognize and bind to DNA sequences"
+    },
+    "correctOption": "C",
+    "explanation": "Trans-acting factors are regulatory proteins that can affect the expression of other genes, not necessarily by activating them. They do not refer to RNA polymerase or enzymes that directly interact with DNA.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 74
+  },
+  {
+    "id": "neetug-bio-521118",
+    "sourceId": 521118,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "RNA polymerase recognizes and binds to which DNA segment?",
+    "options": {
+      "A": "promoter",
+      "B": "insulator",
+      "C": "silencer",
+      "D": "DNA binding domain"
+    },
+    "correctOption": "A",
+    "explanation": "Promoters are specific DNA sequences where RNA polymerase binds to initiate transcription.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 75
+  },
+  {
+    "id": "neetug-bio-521131",
+    "sourceId": 521131,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In the absence of lacY permease, which strain cannot grow on a medium containing lactose as the sole carbon source at 42°C?",
+    "options": {
+      "A": "lac Z-",
+      "B": "lac A-",
+      "C": "lac O-",
+      "D": "I gene"
+    },
+    "correctOption": "A",
+    "explanation": "The lacZ gene encodes β-galactosidase, which is necessary for the breakdown of lactose. Without lacY permease, lactose cannot enter the cell and thus, cells lacking lacZ will not be able to utilize lactose as a carbon source at 42°C.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 76
+  },
+  {
+    "id": "neetug-bio-521137",
+    "sourceId": 521137,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following is not a known cell-to-cell communication molecule?",
+    "options": {
+      "A": "steroid hormones",
+      "B": "proteins/peptides",
+      "C": "lipid derivatives",
+      "D": "deoxyribonucleic acid"
+    },
+    "correctOption": "D",
+    "explanation": "Steroid hormones, proteins/peptides, and lipid derivatives are known cell-to-cell communication molecules. Deoxyribonucleic acid (DNA) is not a direct cell-to-cell communication molecule but plays a role in genetic information transfer.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 77
   },
   {
     "id": "neetug-bio-521273",
@@ -1607,7 +1791,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 70
+    "sortOrder": 78
+  },
+  {
+    "id": "neetug-bio-521290",
+    "sourceId": 521290,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is not a mechanism for activating proto-oncogenes?",
+    "options": {
+      "A": "Loss of heterozygosity",
+      "B": "Promoter region hypermethylation",
+      "C": "Gene mutation",
+      "D": "Chromosomal translocation"
+    },
+    "correctOption": "B",
+    "explanation": "Proto-oncogenes can be activated through gene mutations, chromosomal translocations, or loss of heterozygosity. However, promoter region hypermethylation typically silences genes rather than activates them.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 79
+  },
+  {
+    "id": "neetug-bio-521329",
+    "sourceId": 521329,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "DNA recombination does not include",
+    "options": {
+      "A": "gene mutation",
+      "B": "site-specific recombination",
+      "C": "bacterial conjugation, transformation, transduction",
+      "D": "transposon transposition"
+    },
+    "correctOption": "A",
+    "explanation": "Gene mutation is a change in the DNA sequence but not a form of recombination. Site-specific recombination, bacterial conjugation, transformation, and transduction are all types of genetic recombination.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 80
+  },
+  {
+    "id": "neetug-bio-521366",
+    "sourceId": 521366,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which technique is commonly used for high-throughput studies of overall gene expression profiles at the RNA level in cells?",
+    "options": {
+      "A": "proteomics chips",
+      "B": "RT-PCR",
+      "C": "cDNA chips",
+      "D": "ChIP-on-chip"
+    },
+    "correctOption": "C",
+    "explanation": "cDNA chips are used for high-throughput studies of overall gene expression profiles at the RNA level in cells. RT-PCR is a technique used to amplify specific DNA sequences, not directly related to profiling gene expression.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 81
   },
   {
     "id": "neetug-bio-521384",
@@ -1630,7 +1883,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 71
+    "sortOrder": 82
+  },
+  {
+    "id": "neetug-bio-521454",
+    "sourceId": 521454,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The essence of an EST sequence is",
+    "options": {
+      "A": "cDNA sequences",
+      "B": "mRNA sequences",
+      "C": "protein sequences",
+      "D": "peptide sequences"
+    },
+    "correctOption": "B",
+    "explanation": "EST (Expressed Sequence Tag) refers to a short DNA sequence representing a unique part of the mRNA. Therefore, EST sequences are essentially cDNA sequences.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 83
+  },
+  {
+    "id": "neetug-bio-579014",
+    "sourceId": 579014,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In a mutation where all codons after the mutation point are shifted, it is known as",
+    "options": {
+      "A": "frameshift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment mutation",
+      "D": "transition"
+    },
+    "correctOption": "A",
+    "explanation": "Frameshift mutations involve a change in the reading frame of the genetic code due to insertions or deletions that are not multiples of three nucleotides, causing all subsequent codons to be shifted.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 84
+  },
+  {
+    "id": "neetug-bio-579015",
+    "sourceId": 579015,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The mutation involving the substitution of one heterologous base for another is called",
+    "options": {
+      "A": "frameshift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment mutation",
+      "D": "transversion"
+    },
+    "correctOption": "D",
+    "explanation": "Transversion refers to the substitution of one purine with a pyrimidine or vice versa, which involves heterologous bases.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 85
+  },
+  {
+    "id": "neetug-bio-579016",
+    "sourceId": 579016,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following refers to chromosomal structural aberrations?",
+    "options": {
+      "A": "frame shift mutations",
+      "B": "dynamic mutations",
+      "C": "segmental mutations",
+      "D": "transversions"
+    },
+    "correctOption": "C",
+    "explanation": "Chromosomal structural aberrations refer to changes in the structure of chromosomes, which can be categorized as segmental mutations.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 86
   },
   {
     "id": "neetug-bio-579017",
@@ -1653,7 +1998,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 72
+    "sortOrder": 87
+  },
+  {
+    "id": "neetug-bio-579034",
+    "sourceId": 579034,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The primary damage caused by a gene mutation refers to",
+    "options": {
+      "A": "alteration in the primary structure of proteins leading to loss of normal function",
+      "B": "change in glycogen structure resulting in impaired utilization",
+      "C": "modification in fat molecular structure causing fatty acid mobilization blockage",
+      "D": "change in nucleic acid molecular structure preventing transmission to the next generation"
+    },
+    "correctOption": "A",
+    "explanation": "Gene mutations primarily affect proteins by altering their primary structure, which can lead to loss of normal function. Other options describe secondary effects or are unrelated to gene mutation's direct impact.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 88
   },
   {
     "id": "neetug-bio-579035",
@@ -1676,7 +2044,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 73
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-579057",
@@ -1699,7 +2067,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 74
+    "sortOrder": 90
   },
   {
     "id": "neetug-bio-579069",
@@ -1722,7 +2090,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 75
+    "sortOrder": 91
   },
   {
     "id": "neetug-bio-579101",
@@ -1745,7 +2113,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 76
+    "sortOrder": 92
+  },
+  {
+    "id": "neetug-bio-579160",
+    "sourceId": 579160,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "The mechanism for chromosomal aneuploidy could be",
+    "options": {
+      "A": "chromosome breakage and subsequent abnormal rearrangement",
+      "B": "chromosome translocation",
+      "C": "chromosome inversion",
+      "D": "chromosome non-separation or loss"
+    },
+    "correctOption": "D",
+    "explanation": "Chromosome non-separation or loss can lead to aneuploidy, which is a condition where there are abnormal numbers of chromosomes in cells. This can occur during cell division if the chromosomes fail to separate properly.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 93
   },
   {
     "id": "neetug-bio-579532",
@@ -1768,7 +2159,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 77
+    "sortOrder": 94
   },
   {
     "id": "neetug-bio-579543",
@@ -1791,7 +2182,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 78
+    "sortOrder": 95
   },
   {
     "id": "neetug-bio-579546",
@@ -1814,7 +2205,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 79
+    "sortOrder": 96
   },
   {
     "id": "neetug-bio-579957",
@@ -1837,7 +2228,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 80
+    "sortOrder": 97
+  },
+  {
+    "id": "neetug-bio-588319",
+    "sourceId": 588319,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Feulgen staining technique is used to show DNA in the cell.",
+    "options": {
+      "A": "DNA",
+      "B": "RNA",
+      "C": "proteins",
+      "D": "membrane components"
+    },
+    "correctOption": "A",
+    "explanation": "Feulgen staining is a histological method that specifically stains DNA within cells, making it visible under a microscope. It does not stain RNA or other cellular components like proteins or membrane structures.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 98
   },
   {
     "id": "neetug-bio-588339",
@@ -1860,7 +2274,145 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 81
+    "sortOrder": 99
+  },
+  {
+    "id": "neetug-bio-588343",
+    "sourceId": 588343,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The main distinguishing feature between prokaryotic and eukaryotic cells is",
+    "options": {
+      "A": "cell membrane",
+      "B": "nucleus",
+      "C": "genome",
+      "D": "cell wall"
+    },
+    "correctOption": "B",
+    "explanation": "Prokaryotic cells lack a true nucleus, whereas eukaryotic cells have one. This is the primary distinction between these two types of cells.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 100
+  },
+  {
+    "id": "neetug-bio-588359",
+    "sourceId": 588359,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following are considered small molecules within cells?",
+    "options": {
+      "A": "proteins",
+      "B": "enzymes",
+      "C": "nucleic acids",
+      "D": "amino acids"
+    },
+    "correctOption": "D",
+    "explanation": "Amino acids are considered small molecules and play a crucial role in protein synthesis. Proteins, enzymes, and nucleic acids are macromolecules.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 101
+  },
+  {
+    "id": "neetug-bio-588366",
+    "sourceId": 588366,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about ribozymes is correct?",
+    "options": {
+      "A": "consists of RNA and proteins",
+      "B": "is an RNA molecule with catalytic functions",
+      "C": "exists only in the cell nucleus",
+      "D": "consists of DNA and proteins"
+    },
+    "correctOption": "B",
+    "explanation": "Ribozymes are RNA molecules that can catalyze biochemical reactions, hence they possess enzymatic functions.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 102
+  },
+  {
+    "id": "neetug-bio-588446",
+    "sourceId": 588446,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which method can be used to study the interaction between DNA and proteins and capture transient events in gene expression regulation?",
+    "options": {
+      "A": "ChIP",
+      "B": "EMSA",
+      "C": "yeast one-hybrid system",
+      "D": "CLIP"
+    },
+    "correctOption": "A",
+    "explanation": "ChIP (Chromatin Immunoprecipitation) is a technique used to study the interaction between DNA and proteins, capturing transient events in gene expression regulation. EMSA (Electrophoretic Mobility Shift Assay), yeast one-hybrid system, and CLIP (Cross-linking and ImmunoPrecipitation) are not primarily used for studying these interactions.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 103
+  },
+  {
+    "id": "neetug-bio-588459",
+    "sourceId": 588459,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The main chemical components of biological membranes are",
+    "options": {
+      "A": "proteins and nucleic acids",
+      "B": "proteins and lipids",
+      "C": "proteins and carbohydrates",
+      "D": "glycolipids"
+    },
+    "correctOption": "B",
+    "explanation": "Biological membranes primarily consist of proteins and lipids.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 104
+  },
+  {
+    "id": "neetug-bio-588508",
+    "sourceId": 588508,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is not related to familial hypercholesterolemia?",
+    "options": {
+      "A": "LDL receptor can bind with LDL",
+      "B": "Mutations in the LDL receptor gene",
+      "C": "LDL cannot be degraded after entering the cell",
+      "D": "Absence of LDL receptor"
+    },
+    "correctOption": "A",
+    "explanation": "Familial hypercholesterolemia is caused by mutations in the LDL receptor gene, absence or dysfunction of the LDL receptor, and inability to degrade LDL post-entry into cells. The LDL receptor can bind with LDL is not a characteristic feature of this condition.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 105
   },
   {
     "id": "neetug-bio-588535",
@@ -1883,7 +2435,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 82
+    "sortOrder": 106
   },
   {
     "id": "neetug-bio-588536",
@@ -1906,7 +2458,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 83
+    "sortOrder": 107
+  },
+  {
+    "id": "neetug-bio-588538",
+    "sourceId": 588538,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The small vesicles of the Golgi apparatus mainly originate from",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "nucleus",
+      "C": "lysosomes",
+      "D": "phagosomes"
+    },
+    "correctOption": "A",
+    "explanation": "Small vesicles in the Golgi apparatus primarily originate from the endoplasmic reticulum.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 108
   },
   {
     "id": "neetug-bio-588548",
@@ -1929,7 +2504,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 84
+    "sortOrder": 109
   },
   {
     "id": "neetug-bio-588556",
@@ -1952,7 +2527,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 85
+    "sortOrder": 110
   },
   {
     "id": "neetug-bio-588558",
@@ -1975,7 +2550,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 86
+    "sortOrder": 111
   },
   {
     "id": "neetug-bio-588573",
@@ -1998,7 +2573,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 87
+    "sortOrder": 112
   },
   {
     "id": "neetug-bio-588601",
@@ -2021,7 +2596,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 88
+    "sortOrder": 113
   },
   {
     "id": "neetug-bio-588609",
@@ -2044,7 +2619,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 89
+    "sortOrder": 114
+  },
+  {
+    "id": "neetug-bio-588824",
+    "sourceId": 588824,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Gene expression regulation involves multiple levels, with the primary steps being",
+    "options": {
+      "A": "translation",
+      "B": "gene activation",
+      "C": "transcription",
+      "D": "post-transcriptional processing"
+    },
+    "correctOption": "C",
+    "explanation": "Transcription is a key step in gene expression regulation. Gene activation and post-transcriptional processing are also important but not the primary steps.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 115
   },
   {
     "id": "neetug-bio-589057",
@@ -2067,7 +2665,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 90
+    "sortOrder": 116
   },
   {
     "id": "neetug-bio-516588",
@@ -2090,7 +2688,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 91
+    "sortOrder": 117
   },
   {
     "id": "neetug-bio-516628",
@@ -2113,7 +2711,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 92
+    "sortOrder": 118
+  },
+  {
+    "id": "neetug-bio-520291",
+    "sourceId": 520291,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following statements about structural domains is correct?",
+    "options": {
+      "A": "Structural domains are local folded regions at the tertiary structure level based on secondary or supersecondary structures in polypeptide chains",
+      "B": "Structural domains are independent, three-dimensional units of folding in globular proteins, fibrous and loosely packed",
+      "C": "After protease hydrolysis, structural domains change their conformation once separated from the overall protein structure",
+      "D": "Most structural domains contain more than 200 consecutive amino acid residues, with an average diameter of 2.5nm"
+    },
+    "correctOption": "A",
+    "explanation": "Structural domains are local folded regions at the tertiary structure level based on secondary or supersecondary structures in polypeptide chains.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 119
   },
   {
     "id": "neetug-bio-520587",
@@ -2136,7 +2757,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 93
+    "sortOrder": 120
   },
   {
     "id": "neetug-bio-521092",
@@ -2159,7 +2780,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 94
+    "sortOrder": 121
+  },
+  {
+    "id": "neetug-bio-521308",
+    "sourceId": 521308,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In genetic engineering, molecular cloning refers to",
+    "options": {
+      "A": "bacterial cloning",
+      "B": "plant cloning",
+      "C": "animal cloning",
+      "D": "DNA cloning"
+    },
+    "correctOption": "D",
+    "explanation": "Molecular cloning in genetic engineering involves the replication of DNA segments. It does not refer to bacterial, plant, or animal cloning.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 122
+  },
+  {
+    "id": "neetug-bio-521321",
+    "sourceId": 521321,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In molecular biology, transformation refers to",
+    "options": {
+      "A": "uptake of foreign DNA leading to a change in cell phenotype",
+      "B": "gene transposition",
+      "C": "production of frameshift mutations",
+      "D": "DNA transfer mediated by viruses between donor and recipient cells"
+    },
+    "correctOption": "A",
+    "explanation": "Transformation is the process by which bacteria take up free DNA from their environment, leading to changes in cellular characteristics.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 123
+  },
+  {
+    "id": "neetug-bio-521345",
+    "sourceId": 521345,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is not required during PCR amplification of DNA?",
+    "options": {
+      "A": "RNA polymerase",
+      "B": "dNTPs",
+      "C": "DNA template",
+      "D": "Taq DNA polymerase"
+    },
+    "correctOption": "A",
+    "explanation": "PCR requires dNTPs, a DNA template, and Taq DNA polymerase. RNA polymerase is not used in PCR as it is involved in transcription of DNA to RNA.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 124
   },
   {
     "id": "neetug-bio-521391",
@@ -2182,7 +2872,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 95
+    "sortOrder": 125
   },
   {
     "id": "neetug-bio-578586",
@@ -2205,7 +2895,122 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 96
+    "sortOrder": 126
+  },
+  {
+    "id": "neetug-bio-579009",
+    "sourceId": 579009,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following can cause a frameshift mutation in DNA?",
+    "options": {
+      "A": "acridines",
+      "B": "hydroxylamine",
+      "C": "formaldehyde",
+      "D": "nitrous acid"
+    },
+    "correctOption": "D",
+    "explanation": "Nitrous acid can cause a frameshift mutation by altering the base sequence of DNA, leading to a shift in the reading frame.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 127
+  },
+  {
+    "id": "neetug-bio-579013",
+    "sourceId": 579013,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Mutation caused by the expansion of trinucleotide tandem repeats is known as",
+    "options": {
+      "A": "frame shift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment deletion mutation",
+      "D": "transition"
+    },
+    "correctOption": "B",
+    "explanation": "Dynamic mutations are characterized by the expansion or contraction of trinucleotide repeat sequences, leading to various genetic disorders.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 128
+  },
+  {
+    "id": "neetug-bio-579032",
+    "sourceId": 579032,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about molecular and cellular biological effects caused by gene mutations and chromosomal abnormalities is incorrect?",
+    "options": {
+      "A": "Gene mutation alters the quantity and quality of the encoded polypeptide chain",
+      "B": "Chromosomal abnormality alters the quantity and quality of the encoded polypeptide chain",
+      "C": "The molecular and cellular biological effects caused by gene mutations and chromosomal abnormalities are completely identical",
+      "D": "The molecular and cellular biological effects caused by gene mutations involve a relatively smaller scope"
+    },
+    "correctOption": "C",
+    "explanation": "Gene mutations and chromosomal abnormalities can both affect the quantity and quality of polypeptide chains, but their effects are not entirely identical. Gene mutations typically have more localized impacts compared to broader changes caused by chromosomal abnormalities.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 129
+  },
+  {
+    "id": "neetug-bio-579107",
+    "sourceId": 579107,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In a family from the Middle East with a history of congenital deafness and muteness due to GJB2 gene mutation, which is an autosomal recessive condition, the population incidence is 4/10000. The frequency of carriers in this population is",
+    "options": {
+      "A": "0.01",
+      "B": "0.02",
+      "C": "0.04",
+      "D": "0.0002"
+    },
+    "correctOption": "B",
+    "explanation": "The frequency of carriers can be calculated using the formula: q = √(p), where p is the incidence rate (4/10000 or 0.0004). Therefore, q = √(0.0004) = 0.02.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 130
+  },
+  {
+    "id": "neetug-bio-579187",
+    "sourceId": 579187,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The mechanism of formation of Hb Lepore δβ gene is",
+    "options": {
+      "A": "base substitution",
+      "B": "frameshift mutation",
+      "C": "rearrangement",
+      "D": "deletion"
+    },
+    "correctOption": "B",
+    "explanation": "Hb Lepore δβ is formed due to a frameshift mutation where an extra base is inserted between the β-globin gene and the δ-globin gene, leading to a fusion of these two genes.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 131
   },
   {
     "id": "neetug-bio-579914",
@@ -2228,7 +3033,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 97
+    "sortOrder": 132
   },
   {
     "id": "neetug-bio-588084",
@@ -2251,7 +3056,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 98
+    "sortOrder": 133
+  },
+  {
+    "id": "neetug-bio-588342",
+    "sourceId": 588342,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In prokaryotic cells, the genetic material exists as",
+    "options": {
+      "A": "a ring of naked DNA",
+      "B": "a linear structure of DNA",
+      "C": "multiple naked DNA strands",
+      "D": "DNA with RNA and histones"
+    },
+    "correctOption": "A",
+    "explanation": "Prokaryotic cells contain a single circular molecule of DNA that is not associated with histones or other proteins, making option A the correct choice.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 134
   },
   {
     "id": "neetug-bio-588346",
@@ -2274,7 +3102,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 99
+    "sortOrder": 135
+  },
+  {
+    "id": "neetug-bio-588433",
+    "sourceId": 588433,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is commonly used to downregulate gene expression?",
+    "options": {
+      "A": "cDNA cloning",
+      "B": "RNA interference",
+      "C": "homologous recombination",
+      "D": "ChIP"
+    },
+    "correctOption": "B",
+    "explanation": "RNA interference (RNAI) is a common technique used for downregulating gene expression by causing the degradation of specific mRNA molecules.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 136
   },
   {
     "id": "neetug-bio-588615",
@@ -2297,6 +3148,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 100
+    "sortOrder": 137
   }
 ]

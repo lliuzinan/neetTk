@@ -16,7 +16,7 @@
     "name": "DNA RNA replication transcription translation",
     "slug": "dna-rna-replication-transcription-translation",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 26,
+    "questionCount": 37,
     "sortOrder": 2
   },
   {
@@ -26,7 +26,7 @@
     "name": "Human respiration",
     "slug": "human-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 14",
-    "questionCount": 1,
+    "questionCount": 2,
     "sortOrder": 3
   },
   {
@@ -46,7 +46,7 @@
     "name": "Cell theory and cell organelles",
     "slug": "cell-theory-and-cell-organelles",
     "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "questionCount": 22,
+    "questionCount": 24,
     "sortOrder": 5
   },
   {
@@ -56,7 +56,7 @@
     "name": "Mutation and gene expression",
     "slug": "mutation-and-gene-expression",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 5,
+    "questionCount": 23,
     "sortOrder": 6
   },
   {
@@ -90,6 +90,16 @@
     "sortOrder": 9
   },
   {
+    "id": "carbohydrates-proteins-lipids-nucleic-acids",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Carbohydrates proteins lipids nucleic acids",
+    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "questionCount": 4,
+    "sortOrder": 10
+  },
+  {
     "id": "recombinant-dna-technology",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -97,7 +107,17 @@
     "slug": "recombinant-dna-technology",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 1,
-    "sortOrder": 10
+    "sortOrder": 11
+  },
+  {
+    "id": "mitosis-and-meiosis",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Mitosis and meiosis",
+    "slug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "questionCount": 1,
+    "sortOrder": 12
   },
   {
     "id": "human-reproductive-system-and-gametogenesis",
@@ -107,7 +127,7 @@
     "slug": "human-reproductive-system-and-gametogenesis",
     "ncertRef": "NCERT Biology Class 12, Chapter 2",
     "questionCount": 1,
-    "sortOrder": 11
+    "sortOrder": 13
   },
   {
     "id": "basic-genetic-diseases-as-inheritance-examples",
@@ -117,7 +137,7 @@
     "slug": "basic-genetic-diseases-as-inheritance-examples",
     "ncertRef": "NCERT Biology Class 12, Chapter 7",
     "questionCount": 1,
-    "sortOrder": 12
+    "sortOrder": 14
   },
   {
     "id": "immunity-pathogens-vaccines",
@@ -127,6 +147,6 @@
     "slug": "immunity-pathogens-vaccines",
     "ncertRef": "NCERT Biology Class 12, Chapter 7",
     "questionCount": 1,
-    "sortOrder": 13
+    "sortOrder": 15
   }
 ]

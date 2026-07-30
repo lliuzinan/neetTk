@@ -216,7 +216,7 @@ function mapSeoPage(row: SeoPageRow): SeoNote {
 
 export async function getTopics() {
   const rows = await readSupabase<TopicRow>(
-    "/rest/v1/topics?select=*&order=sort_order.asc",
+    "/rest/v1/topics?select=*&order=sort_order.asc&limit=1000",
   );
   if (!rows?.length) return topics;
 
@@ -227,7 +227,7 @@ export async function getQuestions() {
   const [topicList, rows] = await Promise.all([
     getTopics(),
     readSupabase<QuestionRow>(
-      "/rest/v1/questions?select=*&status=eq.approved&order=published_at.asc",
+      "/rest/v1/questions?select=*&status=eq.approved&order=published_at.asc&limit=1000",
     ),
   ]);
   if (!rows?.length) return questions;
@@ -238,7 +238,7 @@ export async function getQuestions() {
 
 export async function getSeoNotes() {
   const rows = await readSupabase<SeoPageRow>(
-    "/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc",
+    "/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc&limit=1000",
   );
   if (!rows?.length) return seoNotes;
 
