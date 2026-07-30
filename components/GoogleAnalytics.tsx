@@ -10,7 +10,7 @@ export function GoogleAnalytics() {
       <Script id="ga4-config" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          window.gtag = function(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${siteConfig.gaId}');
         `}
