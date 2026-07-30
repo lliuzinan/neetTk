@@ -70,6 +70,16 @@
     "sortOrder": 7
   },
   {
+    "id": "carbohydrates-proteins-lipids-nucleic-acids",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Carbohydrates proteins lipids nucleic acids",
+    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "questionCount": 23,
+    "sortOrder": 8
+  },
+  {
     "id": "excretion-and-kidney-function",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -77,7 +87,7 @@
     "slug": "excretion-and-kidney-function",
     "ncertRef": "NCERT Biology Class 11, Chapter 16",
     "questionCount": 1,
-    "sortOrder": 8
+    "sortOrder": 9
   },
   {
     "id": "neuron-nerve-impulse-synapse",
@@ -87,16 +97,6 @@
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 1,
-    "sortOrder": 9
-  },
-  {
-    "id": "carbohydrates-proteins-lipids-nucleic-acids",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Carbohydrates proteins lipids nucleic acids",
-    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
-    "ncertRef": "NCERT Biology Class 11, Chapter 9",
-    "questionCount": 4,
     "sortOrder": 10
   },
   {

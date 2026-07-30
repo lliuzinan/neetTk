@@ -1288,6 +1288,29 @@
     "sortOrder": 56
   },
   {
+    "id": "neetug-bio-516216",
+    "sourceId": 516216,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following are primarily used for energy supply in the body?",
+    "options": {
+      "A": "carbohydrates, fats",
+      "B": "carbohydrates, proteins",
+      "C": "fats, proteins",
+      "D": "fats, nucleic acids"
+    },
+    "correctOption": "A",
+    "explanation": "Carbohydrates and fats are primarily used for energy supply in the body. Proteins can also provide some energy but their main function is structural and regulatory roles.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 57
+  },
+  {
     "id": "neetug-bio-516300",
     "sourceId": 516300,
     "exam": "NEET-UG",
@@ -1308,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-516430",
@@ -1331,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-516615",
@@ -1354,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-516616",
@@ -1377,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-516625",
@@ -1400,7 +1423,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 62
   },
   {
     "id": "neetug-bio-516658",
@@ -1423,7 +1446,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 63
   },
   {
     "id": "neetug-bio-516661",
@@ -1446,7 +1469,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 63
+    "sortOrder": 64
   },
   {
     "id": "neetug-bio-516698",
@@ -1469,7 +1492,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 64
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-516716",
@@ -1492,7 +1515,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 65
+    "sortOrder": 66
+  },
+  {
+    "id": "neetug-bio-520307",
+    "sourceId": 520307,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The spatial structure of proteins mainly depends on the sequence of amino acids in the peptide chain.",
+    "options": {
+      "A": "secondary structures like α-helix and β-sheet",
+      "B": "amino acid sequence",
+      "C": "disulfide bonds positions",
+      "D": "hydrogen bond positions"
+    },
+    "correctOption": "B",
+    "explanation": "The spatial structure of proteins is primarily determined by the amino acid sequence, as it dictates how the polypeptide chain folds into its three-dimensional form.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 67
+  },
+  {
+    "id": "neetug-bio-520332",
+    "sourceId": 520332,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Ribonuclease is composed of a single polypeptide chain, and its spatial structure is maintained by four intramolecular disulfide bonds. When urea and β-mercaptoethanol are added to the enzyme solution, enzyme activity is lost; when urea and β-mercaptoethanol are removed through dialysis, the enzyme regains its original biological activity. This phenomenon indicates",
+    "options": {
+      "A": "denatured proteins can sometimes renature",
+      "B": "the spatial structure of a protein is unrelated to its primary structure",
+      "C": "enzyme activity is independent of spatial structure",
+      "D": "urea and β-mercaptoethanol cause irreversible damage to the enzyme's primary structure"
+    },
+    "correctOption": "A",
+    "explanation": "The phenomenon described indicates that denatured ribonuclease can sometimes renature, meaning it can regain its original biological activity after removal of denaturing agents.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 68
+  },
+  {
+    "id": "neetug-bio-520370",
+    "sourceId": 520370,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following statements about the interaction between nucleic acids and proteins is incorrect?",
+    "options": {
+      "A": "The major groove of DNA double helix can accommodate protein alpha-helices",
+      "B": "DNA bases and pentose sugars can form hydrophobic interactions with proteins",
+      "C": "DNA phosphate groups can form ionic bonds with protein side chain -NH3+",
+      "D": "DNA bases cannot form hydrogen bonds with proteins"
+    },
+    "correctOption": "D",
+    "explanation": "Nucleic acids, such as DNA, can indeed interact with proteins through various mechanisms. The major groove of DNA can accommodate alpha-helices, DNA bases and pentose sugars can engage in hydrophobic interactions, and phosphate groups can form ionic bonds with protein side chains. However, nucleic acid bases do have the ability to form hydrogen bonds with proteins under certain conditions.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 69
   },
   {
     "id": "neetug-bio-520545",
@@ -1515,7 +1607,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 66
+    "sortOrder": 70
   },
   {
     "id": "neetug-bio-520555",
@@ -1538,7 +1630,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 67
+    "sortOrder": 71
   },
   {
     "id": "neetug-bio-520570",
@@ -1561,7 +1653,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 68
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-520571",
@@ -1584,7 +1676,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 69
+    "sortOrder": 73
+  },
+  {
+    "id": "neetug-bio-520678",
+    "sourceId": 520678,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The nutritional value of proteins mainly depends on",
+    "options": {
+      "A": "amino acid quantity",
+      "B": "amino acid types",
+      "C": "essential amino acid quantity",
+      "D": "essential amino acid types and proportion"
+    },
+    "correctOption": "D",
+    "explanation": "The nutritional value of proteins is primarily determined by the presence, variety, and proportion of essential amino acids.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 74
   },
   {
     "id": "neetug-bio-520843",
@@ -1607,7 +1722,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 70
+    "sortOrder": 75
   },
   {
     "id": "neetug-bio-520897",
@@ -1630,7 +1745,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 71
+    "sortOrder": 76
+  },
+  {
+    "id": "neetug-bio-521005",
+    "sourceId": 521005,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following statements about genetic codes is incorrect?",
+    "options": {
+      "A": "Genetic codes have species specificity, so different organisms synthesize different proteins",
+      "B": "The reading frame of genetic codes has directionality, starting from the 5' end and ending at the 3' end",
+      "C": "One amino acid can have more than one codon",
+      "D": "The third base (i.e., 3' end) of a codon is less important in determining the specificity of the incorporated amino acid"
+    },
+    "correctOption": "A",
+    "explanation": "Genetic codes are universal and not specific to species, hence different organisms synthesize similar proteins based on the same genetic code.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 77
+  },
+  {
+    "id": "neetug-bio-521009",
+    "sourceId": 521009,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following amino acids is a potential site for protein phosphorylation?",
+    "options": {
+      "A": "glycine",
+      "B": "tyrosine",
+      "C": "phenylalanine",
+      "D": "aspartic acid"
+    },
+    "correctOption": "B",
+    "explanation": "Tyrosine contains a phenolic hydroxyl group which can be phosphorylated.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 78
+  },
+  {
+    "id": "neetug-bio-521010",
+    "sourceId": 521010,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following amino acids does not participate in protein composition?",
+    "options": {
+      "A": "homocysteine",
+      "B": "cystine",
+      "C": "cysteine",
+      "D": "threonine"
+    },
+    "correctOption": "A",
+    "explanation": "Homocysteine is a sulfur-containing compound that can be converted to cysteine but does not directly participate in protein composition. Cystine, cysteine, and threonine are all involved in the formation of proteins.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 79
+  },
+  {
+    "id": "neetug-bio-521015",
+    "sourceId": 521015,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following does not directly participate in protein synthesis?",
+    "options": {
+      "A": "mRNA",
+      "B": "amino acids",
+      "C": "DNA",
+      "D": "IF"
+    },
+    "correctOption": "C",
+    "explanation": "Protein synthesis involves mRNA, amino acids, and tRNA. DNA is the genetic material that codes for proteins but does not directly participate in protein synthesis.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 80
   },
   {
     "id": "neetug-bio-521078",
@@ -1653,7 +1860,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 72
+    "sortOrder": 81
   },
   {
     "id": "neetug-bio-521093",
@@ -1676,7 +1883,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 73
+    "sortOrder": 82
   },
   {
     "id": "neetug-bio-521106",
@@ -1699,7 +1906,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 74
+    "sortOrder": 83
   },
   {
     "id": "neetug-bio-521118",
@@ -1722,7 +1929,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 75
+    "sortOrder": 84
   },
   {
     "id": "neetug-bio-521131",
@@ -1745,7 +1952,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 76
+    "sortOrder": 85
   },
   {
     "id": "neetug-bio-521137",
@@ -1768,7 +1975,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 77
+    "sortOrder": 86
   },
   {
     "id": "neetug-bio-521273",
@@ -1791,7 +1998,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 78
+    "sortOrder": 87
   },
   {
     "id": "neetug-bio-521290",
@@ -1814,7 +2021,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 79
+    "sortOrder": 88
+  },
+  {
+    "id": "neetug-bio-521307",
+    "sourceId": 521307,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following can be used to obtain the target gene?",
+    "options": {
+      "A": "nuclease degradation",
+      "B": "plasmid degradation",
+      "C": "nucleic acid degradation",
+      "D": "reverse transcription"
+    },
+    "correctOption": "D",
+    "explanation": "Reverse transcription is a method to obtain the target gene by converting RNA into DNA using reverse transcriptase.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-521329",
@@ -1837,7 +2067,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 80
+    "sortOrder": 90
   },
   {
     "id": "neetug-bio-521366",
@@ -1860,7 +2090,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 81
+    "sortOrder": 91
   },
   {
     "id": "neetug-bio-521384",
@@ -1883,7 +2113,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 82
+    "sortOrder": 92
   },
   {
     "id": "neetug-bio-521454",
@@ -1906,7 +2136,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 83
+    "sortOrder": 93
   },
   {
     "id": "neetug-bio-579014",
@@ -1929,7 +2159,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 84
+    "sortOrder": 94
   },
   {
     "id": "neetug-bio-579015",
@@ -1952,7 +2182,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 85
+    "sortOrder": 95
   },
   {
     "id": "neetug-bio-579016",
@@ -1975,7 +2205,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 86
+    "sortOrder": 96
   },
   {
     "id": "neetug-bio-579017",
@@ -1998,7 +2228,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 87
+    "sortOrder": 97
   },
   {
     "id": "neetug-bio-579034",
@@ -2021,7 +2251,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 88
+    "sortOrder": 98
   },
   {
     "id": "neetug-bio-579035",
@@ -2044,7 +2274,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 89
+    "sortOrder": 99
   },
   {
     "id": "neetug-bio-579057",
@@ -2067,7 +2297,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 90
+    "sortOrder": 100
   },
   {
     "id": "neetug-bio-579069",
@@ -2090,7 +2320,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 91
+    "sortOrder": 101
   },
   {
     "id": "neetug-bio-579101",
@@ -2113,7 +2343,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 92
+    "sortOrder": 102
   },
   {
     "id": "neetug-bio-579160",
@@ -2136,7 +2366,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 93
+    "sortOrder": 103
   },
   {
     "id": "neetug-bio-579532",
@@ -2159,7 +2389,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 94
+    "sortOrder": 104
   },
   {
     "id": "neetug-bio-579543",
@@ -2182,7 +2412,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 95
+    "sortOrder": 105
   },
   {
     "id": "neetug-bio-579546",
@@ -2205,7 +2435,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 96
+    "sortOrder": 106
   },
   {
     "id": "neetug-bio-579957",
@@ -2228,7 +2458,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 97
+    "sortOrder": 107
   },
   {
     "id": "neetug-bio-588319",
@@ -2251,7 +2481,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 98
+    "sortOrder": 108
   },
   {
     "id": "neetug-bio-588339",
@@ -2274,7 +2504,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 99
+    "sortOrder": 109
   },
   {
     "id": "neetug-bio-588343",
@@ -2297,7 +2527,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 100
+    "sortOrder": 110
   },
   {
     "id": "neetug-bio-588359",
@@ -2320,7 +2550,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 101
+    "sortOrder": 111
   },
   {
     "id": "neetug-bio-588366",
@@ -2343,7 +2573,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 102
+    "sortOrder": 112
+  },
+  {
+    "id": "neetug-bio-588370",
+    "sourceId": 588370,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following is composed of nitrogen bases, pentose sugar, and phosphate?",
+    "options": {
+      "A": "lipids",
+      "B": "nucleotides",
+      "C": "glucose",
+      "D": "nucleic acids"
+    },
+    "correctOption": "B",
+    "explanation": "Nucleotides are composed of nitrogen bases, a pentose sugar (ribose or deoxyribose), and a phosphate group. Glucose is a simple sugar; lipids include fats and oils; nucleic acids consist of nucleotides linked together.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 113
+  },
+  {
+    "id": "neetug-bio-588375",
+    "sourceId": 588375,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The basic structural unit of a nucleic acid molecule is",
+    "options": {
+      "A": "phosphate",
+      "B": "pentose sugar",
+      "C": "nucleotide",
+      "D": "amino acid"
+    },
+    "correctOption": "C",
+    "explanation": "Nucleotides are the building blocks of nucleic acids such as DNA and RNA.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 114
   },
   {
     "id": "neetug-bio-588446",
@@ -2366,7 +2642,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 103
+    "sortOrder": 115
   },
   {
     "id": "neetug-bio-588459",
@@ -2389,7 +2665,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 104
+    "sortOrder": 116
   },
   {
     "id": "neetug-bio-588508",
@@ -2412,7 +2688,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 105
+    "sortOrder": 117
   },
   {
     "id": "neetug-bio-588535",
@@ -2435,7 +2711,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 106
+    "sortOrder": 118
   },
   {
     "id": "neetug-bio-588536",
@@ -2458,7 +2734,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 107
+    "sortOrder": 119
   },
   {
     "id": "neetug-bio-588538",
@@ -2481,7 +2757,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 108
+    "sortOrder": 120
   },
   {
     "id": "neetug-bio-588548",
@@ -2504,7 +2780,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 109
+    "sortOrder": 121
   },
   {
     "id": "neetug-bio-588556",
@@ -2527,7 +2803,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 110
+    "sortOrder": 122
   },
   {
     "id": "neetug-bio-588558",
@@ -2550,7 +2826,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 111
+    "sortOrder": 123
   },
   {
     "id": "neetug-bio-588573",
@@ -2573,7 +2849,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 112
+    "sortOrder": 124
   },
   {
     "id": "neetug-bio-588601",
@@ -2596,7 +2872,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 113
+    "sortOrder": 125
   },
   {
     "id": "neetug-bio-588609",
@@ -2619,7 +2895,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 114
+    "sortOrder": 126
   },
   {
     "id": "neetug-bio-588824",
@@ -2642,7 +2918,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 115
+    "sortOrder": 127
   },
   {
     "id": "neetug-bio-589057",
@@ -2665,7 +2941,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 116
+    "sortOrder": 128
+  },
+  {
+    "id": "neetug-bio-516139",
+    "sourceId": 516139,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The order of gastric emptying speed from fastest to slowest for the three major nutrients is",
+    "options": {
+      "A": "carbohydrates, proteins, lipids",
+      "B": "proteins, lipids, carbohydrates",
+      "C": "lipids, carbohydrates, proteins",
+      "D": "proteins, carbohydrates, lipids"
+    },
+    "correctOption": "A",
+    "explanation": "Carbohydrates are absorbed quickly and have the fastest gastric emptying speed. Proteins take longer to be emptied from the stomach compared to carbohydrates but faster than lipids. Lipids or fats have the slowest gastric emptying rate.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 129
   },
   {
     "id": "neetug-bio-516588",
@@ -2688,7 +2987,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 117
+    "sortOrder": 130
   },
   {
     "id": "neetug-bio-516628",
@@ -2711,7 +3010,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 118
+    "sortOrder": 131
+  },
+  {
+    "id": "neetug-bio-520277",
+    "sourceId": 520277,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "In protein secondary structure, which of the following amino acid residues cannot form an α-helix due to its presence?",
+    "options": {
+      "A": "Pro",
+      "B": "Ile",
+      "C": "Phe",
+      "D": "Tyr"
+    },
+    "correctOption": "A",
+    "explanation": "Proline has a cyclic structure that disrupts the regular hydrogen bonding required for α-helical formation.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 132
   },
   {
     "id": "neetug-bio-520291",
@@ -2734,7 +3056,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 119
+    "sortOrder": 133
+  },
+  {
+    "id": "neetug-bio-520340",
+    "sourceId": 520340,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "In protein quantification, the absorbance value at 280nm (A 280 ) is often used for calculation. The ability of proteins to absorb ultraviolet light mainly depends on",
+    "options": {
+      "A": "sulfur-containing amino acids",
+      "B": "peptide bonds in peptide chains",
+      "C": "basic amino acid content",
+      "D": "aromatic amino acid content"
+    },
+    "correctOption": "D",
+    "explanation": "The absorption of UV light by proteins at 280nm is primarily due to the presence of aromatic amino acids, particularly tryptophan and tyrosine.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 134
   },
   {
     "id": "neetug-bio-520587",
@@ -2757,7 +3102,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 120
+    "sortOrder": 135
+  },
+  {
+    "id": "neetug-bio-521024",
+    "sourceId": 521024,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following statements about protein biosynthesis is incorrect?",
+    "options": {
+      "A": "Amino acids must be activated",
+      "B": "Initiator factors must participate",
+      "C": "GTP must participate",
+      "D": "Can start at any AUG"
+    },
+    "correctOption": "D",
+    "explanation": "Protein synthesis typically starts with a specific initiator tRNA recognizing the start codon (AUG) on mRNA. It does not occur randomly at any AUG.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 136
   },
   {
     "id": "neetug-bio-521092",
@@ -2780,7 +3148,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 121
+    "sortOrder": 137
   },
   {
     "id": "neetug-bio-521308",
@@ -2803,7 +3171,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 122
+    "sortOrder": 138
   },
   {
     "id": "neetug-bio-521321",
@@ -2826,7 +3194,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 123
+    "sortOrder": 139
   },
   {
     "id": "neetug-bio-521345",
@@ -2849,7 +3217,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 124
+    "sortOrder": 140
   },
   {
     "id": "neetug-bio-521391",
@@ -2872,7 +3240,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 125
+    "sortOrder": 141
   },
   {
     "id": "neetug-bio-578586",
@@ -2895,7 +3263,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 126
+    "sortOrder": 142
   },
   {
     "id": "neetug-bio-579009",
@@ -2918,7 +3286,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 127
+    "sortOrder": 143
   },
   {
     "id": "neetug-bio-579013",
@@ -2941,7 +3309,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 128
+    "sortOrder": 144
   },
   {
     "id": "neetug-bio-579032",
@@ -2964,7 +3332,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 129
+    "sortOrder": 145
   },
   {
     "id": "neetug-bio-579107",
@@ -2987,7 +3355,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 130
+    "sortOrder": 146
   },
   {
     "id": "neetug-bio-579187",
@@ -3010,7 +3378,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 131
+    "sortOrder": 147
   },
   {
     "id": "neetug-bio-579914",
@@ -3033,7 +3401,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 132
+    "sortOrder": 148
   },
   {
     "id": "neetug-bio-588084",
@@ -3056,7 +3424,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 133
+    "sortOrder": 149
   },
   {
     "id": "neetug-bio-588342",
@@ -3079,7 +3447,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 134
+    "sortOrder": 150
   },
   {
     "id": "neetug-bio-588346",
@@ -3102,7 +3470,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 135
+    "sortOrder": 151
+  },
+  {
+    "id": "neetug-bio-588358",
+    "sourceId": 588358,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which of the following compounds in a cell is a biological macromolecule?",
+    "options": {
+      "A": "water",
+      "B": "cholesterol",
+      "C": "inorganic salts",
+      "D": "glycosyltransferase"
+    },
+    "correctOption": "D",
+    "explanation": "Glycosyltransferases are enzymes that catalyze the transfer of sugar groups to acceptor molecules, making them biological macromolecules. Water, cholesterol, and inorganic salts are not considered biological macromolecules.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 152
   },
   {
     "id": "neetug-bio-588433",
@@ -3125,7 +3516,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 136
+    "sortOrder": 153
+  },
+  {
+    "id": "neetug-bio-588534",
+    "sourceId": 588534,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The main function of the Golgi apparatus is",
+    "options": {
+      "A": "to synthesize proteins",
+      "B": "to synthesize lipids",
+      "C": "to synthesize carbohydrates",
+      "D": "to synthesize steroid hormones"
+    },
+    "correctOption": "A",
+    "explanation": "The Golgi apparatus primarily functions in modifying, sorting, and packaging proteins for secretion or transport to other cellular compartments.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 154
   },
   {
     "id": "neetug-bio-588615",
@@ -3148,6 +3562,29 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 137
+    "sortOrder": 155
+  },
+  {
+    "id": "neetug-bio-588831",
+    "sourceId": 588831,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "Which amino acid in proteins can potentially undergo phosphorylation?",
+    "options": {
+      "A": "glycine",
+      "B": "tyrosine",
+      "C": "phenylalanine",
+      "D": "aspartic acid"
+    },
+    "correctOption": "B",
+    "explanation": "Tyrosine contains a hydroxyl group that can be phosphorylated, making it a potential site for post-translational modification in proteins.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 156
   }
 ]
