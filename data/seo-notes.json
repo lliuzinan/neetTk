@@ -18,21 +18,21 @@
     "sortOrder": 2
   },
   {
-    "id": "note-cell-theory-and-cell-organelles",
-    "slug": "cell-theory-and-cell-organelles",
-    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
-    "sortOrder": 3
-  },
-  {
     "id": "note-plant-respiration",
     "slug": "plant-respiration",
     "title": "Plant respiration: NEET-UG Biology NCERT Revision Notes",
     "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "plant-respiration",
     "targetKeyword": "Plant respiration NEET UG Biology questions",
+    "sortOrder": 3
+  },
+  {
+    "id": "note-cell-theory-and-cell-organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
     "sortOrder": 4
   },
   {

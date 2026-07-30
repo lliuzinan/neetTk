@@ -20,6 +20,16 @@
     "sortOrder": 2
   },
   {
+    "id": "plant-respiration",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Plant respiration",
+    "slug": "plant-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 12",
+    "questionCount": 13,
+    "sortOrder": 3
+  },
+  {
     "id": "cell-theory-and-cell-organelles",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -27,17 +37,17 @@
     "slug": "cell-theory-and-cell-organelles",
     "ncertRef": "NCERT Biology Class 11, Chapter 8",
     "questionCount": 22,
-    "sortOrder": 3
+    "sortOrder": 4
   },
   {
-    "id": "plant-respiration",
+    "id": "pedigree-analysis-and-inheritance-patterns",
     "exam": "NEET-UG",
     "subject": "Biology",
-    "name": "Plant respiration",
-    "slug": "plant-respiration",
-    "ncertRef": "NCERT Biology Class 11, Chapter 12",
+    "name": "Pedigree analysis and inheritance patterns",
+    "slug": "pedigree-analysis-and-inheritance-patterns",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 7,
-    "sortOrder": 4
+    "sortOrder": 5
   },
   {
     "id": "excretion-and-kidney-function",
@@ -47,7 +57,7 @@
     "slug": "excretion-and-kidney-function",
     "ncertRef": "NCERT Biology Class 11, Chapter 16",
     "questionCount": 1,
-    "sortOrder": 5
+    "sortOrder": 6
   },
   {
     "id": "neuron-nerve-impulse-synapse",
@@ -57,7 +67,7 @@
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 1,
-    "sortOrder": 6
+    "sortOrder": 7
   },
   {
     "id": "recombinant-dna-technology",
@@ -67,7 +77,7 @@
     "slug": "recombinant-dna-technology",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 1,
-    "sortOrder": 7
+    "sortOrder": 8
   },
   {
     "id": "mutation-and-gene-expression",
@@ -77,16 +87,6 @@
     "slug": "mutation-and-gene-expression",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 4,
-    "sortOrder": 8
-  },
-  {
-    "id": "pedigree-analysis-and-inheritance-patterns",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Pedigree analysis and inheritance patterns",
-    "slug": "pedigree-analysis-and-inheritance-patterns",
-    "ncertRef": "NCERT Biology Class 12, Chapter 4",
-    "questionCount": 6,
     "sortOrder": 9
   },
   {

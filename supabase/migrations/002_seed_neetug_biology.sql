@@ -1,27 +1,27 @@
 -- Seed NEET-UG Biology topics, questions, and SEO pages.
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 16, 1)
+VALUES ('endocrine-system-and-hormones', 'NEET-UG', 'Biology', 'Endocrine system and hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Endocrine system and hormones MCQs for NEET-UG Biology', 'Practice Endocrine system and hormones NEET-UG Biology questions with NCERT explanations.', 20, 1)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 6, 2)
+VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 25, 2)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 3)
+VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 22, 3)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 4)
+VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 7, 4)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('endocrine-system-and-hormones', 'NEET-UG', 'Biology', 'Endocrine system and hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Endocrine system and hormones MCQs for NEET-UG Biology', 'Practice Endocrine system and hormones NEET-UG Biology questions with NCERT explanations.', 11, 5)
+VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 5)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 6, 6)
+VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 6)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
@@ -49,7 +49,107 @@ VALUES ('immunity-pathogens-vaccines', 'NEET-UG', 'Biology', 'Immunity pathogens
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516662', 516662, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'The disease in children due to iodine deficiency or hypothyroidism during embryonic development is', 'Addison''s disease', 'Dwarfism', 'Acromegaly', 'Cretinism', 'D', 'Addison''s disease is due to adrenal cortex dysfunction. Dwarfism results from growth hormone deficiency or inadequate secretion. Acromegaly occurs due to excessive growth hormone in adults. Cretinism involves intellectual disability and developmental delay in children due to iodine deficiency or hypothyroidism during embryonic development.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516664', 516664, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Long-term iodine deficiency in food can lead to', 'cretinism', 'acromegaly', 'goiter', 'rickets', 'C', 'Long-term iodine deficiency leads to insufficient synthesis of thyroid hormones, which results in feedback stimulation of the adenohypophysis to secrete more TSH, leading to thyroid hyperplasia and enlargement.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520895', 520895, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'The chromosomal genome in eukaryotes is', 'linear double-stranded DNA molecule', 'circular double-stranded DNA molecule', 'linear single-stranded DNA molecule', 'linear single-stranded RNA molecule', 'A', 'The chromosomal genome in eukaryotes is typically linear and double-stranded, whereas prokaryotes often have a circular chromosome.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520922', 520922, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'What is the role of RNA primer during DNA replication?', 'Provides a 3''OH end for dNTP addition', 'Extends Okazaki fragments', 'Participates in forming the primosome', 'Assists helicase action', 'A', 'The RNA primer provides a 3''OH end where DNA polymerase can add dNTPs during DNA replication.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521057', 521057, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements about gene expression is incorrect?', 'Some genes express their products as proteins', 'Some genes express their products as RNA', 'Some genes undergo processes like transcription and translation', 'Always involves processes like transcription and translation', 'D', 'Gene expression does not always involve both transcription and translation. Some genes can be expressed through only the process of transcription, such as in the case of RNA genes.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516220', 516220, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which of the following conditions can lead to an increase in Basal Metabolic Rate (BMR)?', 'renal syndrome', 'pathological fasting', 'adrenal cortex dysfunction', 'hyperthyroidism', 'D', 'In hyperthyroidism, BMR can be up to 25%-80% higher than normal. In the other conditions, BMR is generally lower.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516237', 516237, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which hormone has the greatest impact on body heat production?', 'noradrenaline', 'adrenaline', 'thyroid hormone', 'parathyroid hormone', 'C', 'Thyroid hormone plays a crucial role in regulating metabolic rate and heat production in the body.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516580', 516580, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which of the following hormones has a lipophilic characteristic?', 'growth hormone', 'insulin', 'aldosterone', 'adrenaline', 'C', 'Aldosterone is a steroid hormone, which is lipophilic and can easily pass through the cell membrane. Growth hormone, insulin, and adrenaline are mostly hydrophilic and require receptors on the cell surface for action.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516660', 516660, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'In a state of rest, the most important humoral factor regulating heat production in the human body is', 'thyroxine', 'adrenaline', 'noradrenaline', 'acetylcholine', 'A', 'Thyroxine, produced by the thyroid gland, plays a crucial role in regulating basal metabolic rate and heat production during rest. Adrenaline, noradrenaline, and acetylcholine are primarily involved in stress responses and other physiological functions but are not the most important humoral factors for heat production at rest.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516729', 516729, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'The secretion is regulated by the body''s fat storage and participates in weight regulation. Which hormone is involved?', 'leptin', 'thyroxine', 'adrenaline', 'insulin', 'A', 'Leptin, secreted by adipose tissue, regulates body weight by signaling to the brain about fat stores.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520377', 520377, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which technique does not involve nucleic acid hybridization?', 'protein blotting', 'gene chip', 'DNA blotting', 'PCR', 'A', 'Protein blotting involves the detection of proteins, whereas gene chip, DNA blotting, and PCR involve nucleic acid hybridization.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520569', 520569, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Respiratory chain in eukaryotic cells is present in', 'cytoplasm', 'nucleus', 'mitochondria', 'peroxisomes', 'C', 'The respiratory chain in eukaryotic cells is primarily located in the mitochondria.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520614', 520614, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which of the following hormones can inhibit fat mobilization and breakdown?', 'adrenaline', 'noradrenaline', 'insulin', 'glucagon', 'C', 'Insulin is known to inhibit lipolysis in adipose tissue, whereas adrenaline, noradrenaline, and glucagon promote fat mobilization.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520827', 520827, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Which of the following pathways is most closely related to nucleic acid synthesis?', 'glycolysis', 'gluconeogenesis', 'urea cycle', 'pentose phosphate pathway', 'D', 'The pentose phosphate pathway produces ribose-5-phosphate, which is a precursor for nucleic acid synthesis.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520900', 520900, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'The main chemical component of genetic material in chromatin is', 'proteins', 'non-proteins', 'DNA', 'RNA', 'C', 'Genetic material in chromatin primarily consists of DNA, which carries the hereditary information.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520906', 520906, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which factor is involved in maintaining the fidelity of DNA replication?', 'anticodon''s degeneracy', 'SOS repair mechanism of DNA', 'nuclease activity of DNA polymerase', 'high specificity of aminoacyl-tRNA synthetase', 'C', 'Nuclease activity of DNA polymerase helps in proofreading and removing incorrect nucleotides during replication, thus maintaining the fidelity of DNA replication.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520924', 520924, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following is incorrect about DNA replication in eukaryotes?', 'RNA primers are shorter', 'Okazaki fragments are longer', 'Multiple replication origins', 'Bidirectional replication, forming replication forks', 'B', 'In eukaryotes, Okazaki fragments are indeed longer compared to prokaryotes due to the larger size of their DNA molecules and the presence of multiple replication origins.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520926', 520926, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements about telomerase is incorrect?', 'is an RNA-protein complex', 'contains an RNA template', 'has reverse transcriptase activity', 'catalyzes the extension of the template strand DNA', 'D', 'Telomerase has reverse transcriptase activity and functions to extend the telomere sequence on the DNA, not directly catalyze the extension of the template strand DNA.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520941', 520941, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which component is part of telomerase?', 'DNA polymerase + substrate', 'reverse transcriptase + RNA', 'RNA polymerase + co-factor', 'DNA repair enzyme + primer', 'B', 'Telomerase consists of reverse transcriptase and RNA.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520950', 520950, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Thymine dimers interfere with DNA synthesis by', 'causing a break in the DNA template strand', 'forming apurinic/apyrimidic sites in DNA strands', 'causing bends and kinks, affecting the DNA double helix, thereby hindering replication and transcription', 'forming negative supercoils between the two DNA strands', 'C', 'Thymine dimers cause structural distortions in the DNA molecule by creating bends and kinks. These distortions interfere with the normal processes of DNA replication and transcription, making option C the correct answer.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-520996', 520996, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Protein synthesis occurs in the', 'nucleosome', 'mitochondria', 'ribosomes', 'nucleus', 'C', 'Protein synthesis primarily takes place on ribosomes. Nucleosomes are structures within chromosomes, mitochondria are involved in energy production, and the nucleus houses DNA but does not directly synthesize proteins.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521061', 521061, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'In prokaryotes, several enzymes related to a particular metabolic pathway are often coordinately expressed through which mechanism?', 'transcription factor', 'operon', 'enhancer', 'attenuator', 'B', 'Coordinately expressed enzymes in prokaryotes are typically regulated by an operon, where a single promoter controls the transcription of multiple structural genes.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521063', 521063, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements about operons is correct?', 'Several structural genes in series are controlled by one promoter', 'Each of several structural genes in series has a different promoter', 'A single structural gene has multiple promoters', 'Transcription produces monocistronic RNA', 'A', 'In operons, several structural genes are transcribed together under the control of one promoter.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521076', 521076, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'In the lac operon model of E. coli, what binds to the operator sequence to regulate transcription?', 'repressor protein', 'RNA polymerase', 'regulatory gene', 'cAMP-CAP', 'A', 'The repressor protein binds to the operator sequence in the lac operon of E. coli to regulate transcription.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521095', 521095, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'In E. coli, the function of the SD sequence in the efficient expression of an exogenous gene is to provide', 'a mRNA transcription terminator', 'a ribosome binding site', 'a translation termination site', 'a selective splicing site', 'B', 'The SD sequence provides a ribosome binding site, which enhances the efficiency of protein synthesis by facilitating the initiation of translation.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521139', 521139, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which of the following is not an extracellular signal molecule received by intracellular receptors?', 'steroid hormones', 'nitric oxide', 'thyroxine', 'insulin', 'D', 'Insulin acts through cell surface receptors and not intracellular receptors.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -57,7 +157,19 @@ VALUES ('neetug-bio-588344', 588344, 'NEET-UG', 'Biology', 'cell-theory-and-cell
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588348', 588348, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements is incorrect about prokaryotic genetic material?', 'distributed in the cell nucleus', 'usually a circular DNA molecule', 'DNA is naked and does not combine with histones', 'controls cellular metabolism, growth, and reproduction', 'A', 'Prokaryotic cells do not have a distinct nucleus. The genetic material (DNA) is located in the cytoplasm. It can exist as circular DNA molecules and does not combine with histones. It controls cellular functions such as metabolism, growth, and reproduction.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588362', 588362, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements is incorrect about eukaryotic cells?', 'Contain chromatin formed by multiple DNA molecules and histones', 'Transcription and translation of gene expression occur simultaneously', 'Have a complete nuclear structure', 'Are larger in size with diameters ranging from 10 to 100 μm', 'B', 'In eukaryotic cells, transcription and translation do not occur simultaneously; they are separated by a short interval due to the presence of nuclear membrane.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588742', 588742, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Where is the genetic material DNA found in animal cells?', 'only in the nucleus', 'only in the mitochondria', 'in the nucleus and mitochondria', 'in the nucleus and endoplasmic reticulum', 'C', 'DNA is primarily located in the nucleus of animal cells. However, a small amount of DNA is also found in mitochondria.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588795', 588795, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following is synthesized directly from DNA as a template?', 'transcription factors', 'regulatory proteins', 'primase', 'hnRNA', 'D', 'hnRNA (heterogeneous nuclear RNA) is transcribed directly from DNA. Transcription factors, regulatory proteins, and primase are involved in the process but are not direct products of DNA replication.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -77,11 +189,35 @@ VALUES ('neetug-bio-588825', 588825, 'NEET-UG', 'Biology', 'dna-rna-replication-
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588830', 588830, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'In E. coli, the efficient expression of an exogenous gene is influenced by several factors. Among these, what role does the SD sequence play?', 'provides a mRNA transcription termination site', 'provides a ribosome binding site', 'provides a translation stop codon', 'provides a selective splicing site', 'B', 'The SD sequence provides a ribosome binding site, facilitating the initiation of protein synthesis during translation.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588848', 588848, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'DNA replication occurs in the', 'endoplasmic reticulum', 'golgi apparatus', 'ribosome', 'nucleus', 'D', 'DNA replication primarily takes place in the nucleus of eukaryotic cells.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589004', 589004, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Calcium ions are stored within the', 'endoplasmic reticulum', 'nucleus', 'cytoplasm', 'plasma membrane', 'A', 'The endoplasmic reticulum is involved in storing calcium ions, which are crucial for various cellular processes.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589104', 589104, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Gene expression regulation during cell differentiation mainly occurs at the level of', 'translation', 'post-translation', 'DNA replication', 'transcription', 'D', 'During cell differentiation, gene expression is primarily regulated at the transcriptional level. This involves the initiation and regulation of RNA synthesis from DNA templates.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589135', 589135, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'In non-selective autophagy, the area where proteins or organelles are randomly transported and degraded is', 'lysosome', 'mitochondria', 'cytoplasm', 'peroxisome', 'A', 'Lysosomes are responsible for degrading proteins and organelles in non-selective autophagy. Mitochondria, cytoplasm, and peroxisomes do not primarily function in the degradation of random proteins or organelles.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589160', 589160, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following is formed by lysosomes and contains insoluble lipoprotein particles?', 'nucleolus', 'cell nucleus', 'chromosomes', 'lipofuscin', 'D', 'Lipofuscin, also known as residual bodies, is formed by lysosomes and contains insoluble lipoprotein particles.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588773', 588773, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cellular structures has enzymes similar to those found in the nuclear membrane?', 'mitochondria', 'Golgi apparatus', 'endoplasmic reticulum', 'lysosomes', 'C', 'The nuclear envelope contains enzymes involved in lipid synthesis and other metabolic processes, which are also found in the endoplasmic reticulum.', 100, 92, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589163', 589163, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following is not a change observed in cell aging?', 'cell nucleus enlargement', 'endoplasmic reticulum becomes diffuse', 'mitochondria number decreases', 'mitochondria volume decreases', 'A', 'Cell nucleus enlargement is not typically associated with the changes observed in cell aging. Other options are correct as they represent typical changes seen during cellular senescence.', 100, 92, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -265,11 +401,15 @@ VALUES ('neetug-bio-588084', 588084, 'NEET-UG', 'Biology', 'immunity-pathogens-v
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588346', 588346, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles enables eukaryotic cells to survive in an oxygen-rich environment on Earth?', 'Golgi apparatus', 'Mitochondria', 'Lysosomes', 'Endoplasmic reticulum', 'B', 'Mitochondria are the powerhouses of the cell, producing energy through cellular respiration. This process is crucial for eukaryotic cells to survive in an oxygen-rich environment.', 100, 85, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588615', 588615, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles contains the highest amount of enzymes?', 'mitochondria', 'endoplasmic reticulum', 'golgi apparatus', 'peroxisomes', 'A', 'Mitochondria are known for their high enzyme content, which is essential for cellular respiration and energy production.', 100, 85, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-cell-theory-and-cell-organelles', 'topic_note', 'cell-theory-and-cell-organelles', 'Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes', 'Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Cell theory and cell organelles NEET UG Biology questions', 'cell-theory-and-cell-organelles', 'published')
+VALUES ('note-endocrine-system-and-hormones', 'topic_note', 'endocrine-system-and-hormones', 'Endocrine system and hormones: NEET-UG Biology NCERT Revision Notes', 'Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Endocrine system and hormones NEET UG Biology questions', 'endocrine-system-and-hormones', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
@@ -277,7 +417,7 @@ VALUES ('note-dna-rna-replication-transcription-translation', 'topic_note', 'dna
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-endocrine-system-and-hormones', 'topic_note', 'endocrine-system-and-hormones', 'Endocrine system and hormones: NEET-UG Biology NCERT Revision Notes', 'Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Endocrine system and hormones NEET UG Biology questions', 'endocrine-system-and-hormones', 'published')
+VALUES ('note-cell-theory-and-cell-organelles', 'topic_note', 'cell-theory-and-cell-organelles', 'Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes', 'Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Cell theory and cell organelles NEET UG Biology questions', 'cell-theory-and-cell-organelles', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
