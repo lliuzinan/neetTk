@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PdfCta } from "@/components/PdfCta";
 import { getQuestions, getTopicPath, getTopics } from "@/lib/content";
 import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
 
@@ -24,6 +25,8 @@ export default async function BiologyTopicsPage() {
           Start with {questionList.length} verified 4-option questions across NCERT-aligned Biology topics. Stronger chapters are listed first for practice and indexing.
         </p>
       </header>
+
+      <PdfCta source="biology_index" />
 
       <div className="topicGrid">
         {primaryTopics.map((topic) => (

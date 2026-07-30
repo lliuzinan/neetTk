@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PdfCta } from "@/components/PdfCta";
 import {
   absoluteUrl,
   findQuestion,
@@ -109,6 +110,8 @@ export default async function QuestionPage({ params }: Props) {
           <p>{question.explanation}</p>
         </div>
       </article>
+
+      <PdfCta source="question_answer" topicSlug={topic.slug} questionId={question.id} />
 
       {related.length > 0 && (
         <section className="contentBand">

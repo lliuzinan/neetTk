@@ -315,6 +315,38 @@ h3 {
   margin-bottom: 28px;
 }
 
+.pdfCta {
+  align-items: center;
+  background: #0f2f24;
+  border: 1px solid #245b47;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 28px 0;
+  padding: 24px;
+}
+
+.pdfCta h2 {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.pdfCta p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+  margin: 12px 0 0;
+}
+
+.ctaButton {
+  background: var(--accent);
+  border-radius: 8px;
+  color: #172019;
+  flex: 0 0 auto;
+  font-weight: 850;
+  padding: 14px 18px;
+}
+
 .mcqCard {
   padding: 28px;
 }
@@ -386,6 +418,64 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.pdfLanding {
+  max-width: 1000px;
+}
+
+.waitlistForm {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.waitlistForm label {
+  color: var(--foreground);
+  display: grid;
+  font-weight: 750;
+  gap: 8px;
+}
+
+.waitlistForm input {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  padding: 12px 14px;
+}
+
+.waitlistForm button {
+  background: var(--brand);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 850;
+  padding: 14px 18px;
+}
+
+.waitlistForm button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.formSuccess,
+.formError {
+  border-radius: 8px;
+  line-height: 1.55;
+  margin: 0;
+  padding: 12px 14px;
+}
+
+.formSuccess {
+  background: var(--soft);
+  color: var(--brand-dark);
+}
+
+.formError {
+  background: #fff0f0;
+  color: #9f2020;
+}
+
 .articlePage {
   max-width: 900px;
 }
@@ -404,6 +494,11 @@ h3 {
   .split,
   .splitContent {
     grid-template-columns: 1fr;
+  }
+
+  .pdfCta {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .nav {

@@ -33,6 +33,7 @@ export default async function SiteMapPage() {
         <div className="miniLinks">
           <Link href="/">Free NEET Biology MCQs with Answers</Link>
           <Link href="/neet-ug/biology">NEET Biology chapter-wise MCQs</Link>
+          <Link href="/neet-biology-pdf">Free NEET Biology MCQ PDF</Link>
         </div>
       </section>
 

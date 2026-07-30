@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findQuestionsByTopic, findTopic, getQuestionPath, getTopics } from "@/lib/content";
 import { topicMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
@@ -96,6 +97,8 @@ export default async function TopicPage({ params }: Props) {
           </div>
         ))}
       </section>
+
+      <PdfCta source="topic_page" topicSlug={topic.slug} />
 
       <div className="questionList">
         {topicQuestions.map((question, index) => (

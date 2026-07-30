@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PdfCta } from "@/components/PdfCta";
 import { TrackedLink } from "@/components/TrackedLink";
 import { getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
 import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
@@ -25,6 +26,7 @@ export default async function Home() {
           <Link href="/" className="brand">MedQGo</Link>
           <div className="navLinks">
             <Link href="/neet-ug/biology">Topics</Link>
+            <Link href="/neet-biology-pdf">Free PDF</Link>
             <Link href="/neet-ug/biology/notes/cell-theory-and-cell-organelles">Notes</Link>
             <Link href="/site-map">Sitemap</Link>
           </div>
@@ -40,12 +42,12 @@ export default async function Home() {
               <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
               {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}
               <TrackedLink
-                href="/neet-ug/biology"
+                href="/neet-biology-pdf?source=home_hero"
                 className="secondaryButton"
-                eventName="join_waitlist_click"
-                eventParams={{ source: "home_hero", offer: "neet_biology_updates" }}
+                eventName="pdf_cta_click"
+                eventParams={{ source: "home_hero", offer: "neet_biology_pdf" }}
               >
-                Join free NEET updates
+                Get free PDF
               </TrackedLink>
             </div>
           </div>
@@ -64,6 +66,10 @@ export default async function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section">
+        <PdfCta source="home_midpage" />
       </section>
 
       <section className="section">

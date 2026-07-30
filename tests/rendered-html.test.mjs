@@ -17,6 +17,8 @@ test("renders seeded qbank content on public index pages", async () => {
   assert.match(homeHtml, /neetug-bio-520996/);
   assert.match(homeHtml, /Free chapter-wise NEET Biology MCQs for Indian students/);
   assert.match(homeHtml, /href="\/site-map"/);
+  assert.match(homeHtml, /href="\/neet-biology-pdf/);
+  assert.match(homeHtml, /Get free PDF/);
   assert.doesNotMatch(homeHtml, /SEO content pipeline/);
   assert.doesNotMatch(homeHtml, /generated from the same publishing pipeline/);
 
@@ -37,10 +39,23 @@ test("renders HTML sitemap and question SEO metadata", async () => {
   ]);
 
   assert.match(sitemapHtml, /NEET Biology HTML sitemap/);
+  assert.match(sitemapHtml, /Free NEET Biology MCQ PDF/);
   assert.match(sitemapHtml, /All MCQ pages/);
   assert.match(sitemapHtml, /neetug-bio-520996/);
   assert.match(questionHead, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
   assert.match(questionHead, /og:url/);
+});
+
+test("renders PDF waitlist landing page", async () => {
+  const pdfHtml = await readFile(
+    new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(pdfHtml, /Free NEET Biology MCQ PDF/);
+  assert.match(pdfHtml, /Join early access/);
+  assert.match(pdfHtml, /WhatsApp number/);
+  assert.doesNotMatch(pdfHtml, /Telegram/);
 });
 
 test("renders topic-specific SEO content", async () => {
@@ -52,5 +67,6 @@ test("renders topic-specific SEO content", async () => {
   assert.match(topicHtml, /High-yield NCERT focus/);
   assert.match(topicHtml, /Common NEET traps/);
   assert.match(topicHtml, /Which cell organelles are most important for NEET Biology/);
+  assert.match(topicHtml, /Get NEET Biology MCQs as a chapter-wise PDF/);
   assert.match(topicHtml, /FAQPage/);
 });
