@@ -36,12 +36,21 @@
     "sortOrder": 4
   },
   {
+    "id": "note-mutation-and-gene-expression",
+    "slug": "mutation-and-gene-expression",
+    "title": "Mutation and gene expression: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "mutation-and-gene-expression",
+    "targetKeyword": "Mutation and gene expression NEET UG Biology questions",
+    "sortOrder": 5
+  },
+  {
     "id": "note-pedigree-analysis-and-inheritance-patterns",
     "slug": "pedigree-analysis-and-inheritance-patterns",
     "title": "Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes",
     "description": "Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "pedigree-analysis-and-inheritance-patterns",
     "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
-    "sortOrder": 5
+    "sortOrder": 6
   }
 ]

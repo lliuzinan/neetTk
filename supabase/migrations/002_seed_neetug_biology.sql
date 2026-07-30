@@ -5,47 +5,51 @@ VALUES ('endocrine-system-and-hormones', 'NEET-UG', 'Biology', 'Endocrine system
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 25, 2)
+VALUES ('dna-rna-replication-transcription-translation', 'NEET-UG', 'Biology', 'DNA RNA replication transcription translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'DNA RNA replication transcription translation MCQs for NEET-UG Biology', 'Practice DNA RNA replication transcription translation NEET-UG Biology questions with NCERT explanations.', 26, 2)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 22, 3)
+VALUES ('human-respiration', 'NEET-UG', 'Biology', 'Human respiration', 'human-respiration', 'NCERT Biology Class 11, Chapter 14', 'Human respiration MCQs for NEET-UG Biology', 'Practice Human respiration NEET-UG Biology questions with NCERT explanations.', 1, 3)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 7, 4)
+VALUES ('plant-respiration', 'NEET-UG', 'Biology', 'Plant respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Plant respiration MCQs for NEET-UG Biology', 'Practice Plant respiration NEET-UG Biology questions with NCERT explanations.', 13, 4)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 5)
+VALUES ('cell-theory-and-cell-organelles', 'NEET-UG', 'Biology', 'Cell theory and cell organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Cell theory and cell organelles MCQs for NEET-UG Biology', 'Practice Cell theory and cell organelles NEET-UG Biology questions with NCERT explanations.', 22, 5)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 6)
+VALUES ('mutation-and-gene-expression', 'NEET-UG', 'Biology', 'Mutation and gene expression', 'mutation-and-gene-expression', 'NCERT Biology Class 12, Chapter 5', 'Mutation and gene expression MCQs for NEET-UG Biology', 'Practice Mutation and gene expression NEET-UG Biology questions with NCERT explanations.', 5, 6)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('recombinant-dna-technology', 'NEET-UG', 'Biology', 'Recombinant DNA technology', 'recombinant-dna-technology', 'NCERT Biology Class 12, Chapter 9', 'Recombinant DNA technology MCQs for NEET-UG Biology', 'Practice Recombinant DNA technology NEET-UG Biology questions with NCERT explanations.', 1, 7)
+VALUES ('pedigree-analysis-and-inheritance-patterns', 'NEET-UG', 'Biology', 'Pedigree analysis and inheritance patterns', 'pedigree-analysis-and-inheritance-patterns', 'NCERT Biology Class 12, Chapter 4', 'Pedigree analysis and inheritance patterns MCQs for NEET-UG Biology', 'Practice Pedigree analysis and inheritance patterns NEET-UG Biology questions with NCERT explanations.', 7, 7)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('mutation-and-gene-expression', 'NEET-UG', 'Biology', 'Mutation and gene expression', 'mutation-and-gene-expression', 'NCERT Biology Class 12, Chapter 5', 'Mutation and gene expression MCQs for NEET-UG Biology', 'Practice Mutation and gene expression NEET-UG Biology questions with NCERT explanations.', 4, 8)
+VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and kidney function', 'excretion-and-kidney-function', 'NCERT Biology Class 11, Chapter 16', 'Excretion and kidney function MCQs for NEET-UG Biology', 'Practice Excretion and kidney function NEET-UG Biology questions with NCERT explanations.', 1, 8)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('pedigree-analysis-and-inheritance-patterns', 'NEET-UG', 'Biology', 'Pedigree analysis and inheritance patterns', 'pedigree-analysis-and-inheritance-patterns', 'NCERT Biology Class 12, Chapter 4', 'Pedigree analysis and inheritance patterns MCQs for NEET-UG Biology', 'Practice Pedigree analysis and inheritance patterns NEET-UG Biology questions with NCERT explanations.', 6, 9)
+VALUES ('neuron-nerve-impulse-synapse', 'NEET-UG', 'Biology', 'Neuron nerve impulse synapse', 'neuron-nerve-impulse-synapse', 'NCERT Biology Class 11, Chapter 18', 'Neuron nerve impulse synapse MCQs for NEET-UG Biology', 'Practice Neuron nerve impulse synapse NEET-UG Biology questions with NCERT explanations.', 1, 9)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('human-reproductive-system-and-gametogenesis', 'NEET-UG', 'Biology', 'Human reproductive system and gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'Human reproductive system and gametogenesis MCQs for NEET-UG Biology', 'Practice Human reproductive system and gametogenesis NEET-UG Biology questions with NCERT explanations.', 1, 10)
+VALUES ('recombinant-dna-technology', 'NEET-UG', 'Biology', 'Recombinant DNA technology', 'recombinant-dna-technology', 'NCERT Biology Class 12, Chapter 9', 'Recombinant DNA technology MCQs for NEET-UG Biology', 'Practice Recombinant DNA technology NEET-UG Biology questions with NCERT explanations.', 1, 10)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('basic-genetic-diseases-as-inheritance-examples', 'NEET-UG', 'Biology', 'Basic genetic diseases as inheritance examples', 'basic-genetic-diseases-as-inheritance-examples', 'NCERT Biology Class 12, Chapter 7', 'Basic genetic diseases as inheritance examples MCQs for NEET-UG Biology', 'Practice Basic genetic diseases as inheritance examples NEET-UG Biology questions with NCERT explanations.', 1, 11)
+VALUES ('human-reproductive-system-and-gametogenesis', 'NEET-UG', 'Biology', 'Human reproductive system and gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'Human reproductive system and gametogenesis MCQs for NEET-UG Biology', 'Practice Human reproductive system and gametogenesis NEET-UG Biology questions with NCERT explanations.', 1, 11)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('immunity-pathogens-vaccines', 'NEET-UG', 'Biology', 'Immunity pathogens vaccines', 'immunity-pathogens-vaccines', 'NCERT Biology Class 12, Chapter 7', 'Immunity pathogens vaccines MCQs for NEET-UG Biology', 'Practice Immunity pathogens vaccines NEET-UG Biology questions with NCERT explanations.', 1, 12)
+VALUES ('basic-genetic-diseases-as-inheritance-examples', 'NEET-UG', 'Biology', 'Basic genetic diseases as inheritance examples', 'basic-genetic-diseases-as-inheritance-examples', 'NCERT Biology Class 12, Chapter 7', 'Basic genetic diseases as inheritance examples MCQs for NEET-UG Biology', 'Practice Basic genetic diseases as inheritance examples NEET-UG Biology questions with NCERT explanations.', 1, 12)
+ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
+
+INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
+VALUES ('immunity-pathogens-vaccines', 'NEET-UG', 'Biology', 'Immunity pathogens vaccines', 'immunity-pathogens-vaccines', 'NCERT Biology Class 12, Chapter 7', 'Immunity pathogens vaccines MCQs for NEET-UG Biology', 'Practice Immunity pathogens vaccines NEET-UG Biology questions with NCERT explanations.', 1, 13)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -66,6 +70,14 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-521057', 521057, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements about gene expression is incorrect?', 'Some genes express their products as proteins', 'Some genes express their products as RNA', 'Some genes undergo processes like transcription and translation', 'Always involves processes like transcription and translation', 'D', 'Gene expression does not always involve both transcription and translation. Some genes can be expressed through only the process of transcription, such as in the case of RNA genes.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521108', 521108, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following correctly describes a promoter?', 'It is a DNA sequence where RNA polymerase recognizes and binds during transcription.', 'It is a DNA sequence that can generate mRNA after transcription.', 'It is a DNA sequence that inhibits or represses gene transcription.', 'It is a protein that promotes gene transcription.', 'A', 'Promoters are specific DNA sequences where RNA polymerase binds to initiate transcription. They do not generate mRNA directly, nor do they inhibit or promote gene transcription as proteins; rather, they act as binding sites for the enzyme.', 100, 98, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-516060', 516060, 'NEET-UG', 'Biology', 'human-respiration', 'human-respiration', 'NCERT Biology Class 11, Chapter 14', 'The Bohr effect is the influence of which factor on the oxygen dissociation curve?', 'temperature', 'pH and PCO 2', '2,3-DPG', 'CO', 'B', 'Bohr effect refers to the shift in the oxygen dissociation curve due to changes in pH and partial pressure of CO₂.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -93,11 +105,23 @@ VALUES ('neetug-bio-520377', 520377, 'NEET-UG', 'Biology', 'dna-rna-replication-
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520500', 520500, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'In the citric acid cycle, which high-energy compound is directly generated through substrate-level phosphorylation?', 'TTP', 'ATP', 'GTP', 'UTP', 'B', 'Substrate-level phosphorylation in the citric acid cycle does not produce ATP; it occurs during glycolysis and oxidative phosphorylation. The other options are nucleoside triphosphates but not directly generated through substrate-level phosphorylation in the citric acid cycle.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520558', 520558, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Which enzyme of the citric acid cycle is located on the inner mitochondrial membrane?', 'succinate dehydrogenase', 'malate dehydrogenase', 'isocitrate dehydrogenase', 'citrate synthase', 'A', 'Succinate dehydrogenase is the only enzyme of the citric acid cycle that is located on the inner mitochondrial membrane.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-520569', 520569, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Respiratory chain in eukaryotic cells is present in', 'cytoplasm', 'nucleus', 'mitochondria', 'peroxisomes', 'C', 'The respiratory chain in eukaryotic cells is primarily located in the mitochondria.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-520614', 520614, 'NEET-UG', 'Biology', 'endocrine-system-and-hormones', 'endocrine-system-and-hormones', 'NCERT Biology Class 11, Chapter 19', 'Which of the following hormones can inhibit fat mobilization and breakdown?', 'adrenaline', 'noradrenaline', 'insulin', 'glucagon', 'C', 'Insulin is known to inhibit lipolysis in adipose tissue, whereas adrenaline, noradrenaline, and glucagon promote fat mobilization.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520743', 520743, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Which of the following is a common intermediate in both the citric acid cycle and urea cycle?', 'oxaloacetate', 'α-ketoglutarate', 'fumarate', 'aspartate', 'C', 'Fumarate is present in both the citric acid cycle and the urea cycle as an intermediate product.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -129,6 +153,10 @@ VALUES ('neetug-bio-520950', 520950, 'NEET-UG', 'Biology', 'dna-rna-replication-
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520963', 520963, 'NEET-UG', 'Biology', 'mutation-and-gene-expression', 'mutation-and-gene-expression', 'NCERT Biology Class 12, Chapter 5', 'Which of the following can cause a frameshift mutation?', 'point mutation', 'transition substitution', 'transversion substitution', 'deletion', 'D', 'A frameshift mutation is caused by the addition or deletion of nucleotides that are not multiples of three, thus altering the reading frame of the genetic code.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-520996', 520996, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Protein synthesis occurs in the', 'nucleosome', 'mitochondria', 'ribosomes', 'nucleus', 'C', 'Protein synthesis primarily takes place on ribosomes. Nucleosomes are structures within chromosomes, mitochondria are involved in energy production, and the nucleus houses DNA but does not directly synthesize proteins.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
@@ -153,6 +181,14 @@ VALUES ('neetug-bio-521139', 521139, 'NEET-UG', 'Biology', 'endocrine-system-and
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-521261', 521261, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Which vitamin is involved in the respiratory chain and oxidative phosphorylation?', 'biotin', 'riboflavin', 'thiamine', 'cobalamin', 'B', 'Riboflavin (vitamin B2) is a component of flavoproteins, which are involved in the electron transport chain and oxidative phosphorylation.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-579528', 579528, 'NEET-UG', 'Biology', 'pedigree-analysis-and-inheritance-patterns', 'pedigree-analysis-and-inheritance-patterns', 'NCERT Biology Class 12, Chapter 4', 'Familial hypercholesterolemia is inherited through', 'autosomal recessive', 'autosomal dominant', 'X-linked recessive', 'X-linked dominant', 'B', 'Familial hypercholesterolemia is typically an autosomal dominant disorder, meaning it can be inherited from one affected parent.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588344', 588344, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following cell organelles are present in both prokaryotic and eukaryotic cells?', 'cell wall', 'mitochondria', 'golgi apparatus', 'ribosomes', 'D', 'Ribosomes are found in both prokaryotic and eukaryotic cells. Cell walls, mitochondria, and golgi apparatus are typically present in eukaryotic cells but not necessarily in prokaryotic cells.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
@@ -162,6 +198,10 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-588362', 588362, 'NEET-UG', 'Biology', 'dna-rna-replication-transcription-translation', 'dna-rna-replication-transcription-translation', 'NCERT Biology Class 12, Chapter 5', 'Which of the following statements is incorrect about eukaryotic cells?', 'Contain chromatin formed by multiple DNA molecules and histones', 'Transcription and translation of gene expression occur simultaneously', 'Have a complete nuclear structure', 'Are larger in size with diameters ranging from 10 to 100 μm', 'B', 'In eukaryotic cells, transcription and translation do not occur simultaneously; they are separated by a short interval due to the presence of nuclear membrane.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-588624', 588624, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'The main way of ATP production is', 'substrate-level phosphorylation', 'oxidative phosphorylation', 'sugar phosphorylation', 'organic acid decarboxylation', 'B', 'Oxidative phosphorylation is the primary method by which cells produce ATP in plant respiration.', 100, 95, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -210,6 +250,10 @@ ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUD
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-589160', 589160, 'NEET-UG', 'Biology', 'cell-theory-and-cell-organelles', 'cell-theory-and-cell-organelles', 'NCERT Biology Class 11, Chapter 8', 'Which of the following is formed by lysosomes and contains insoluble lipoprotein particles?', 'nucleolus', 'cell nucleus', 'chromosomes', 'lipofuscin', 'D', 'Lipofuscin, also known as residual bodies, is formed by lysosomes and contains insoluble lipoprotein particles.', 100, 95, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-520527', 520527, 'NEET-UG', 'Biology', 'plant-respiration', 'plant-respiration', 'NCERT Biology Class 11, Chapter 12', 'Which of the following is incorrect about pyruvate oxidation and decarboxylation?', 'It occurs with dehydrogenation to form acetyl-CoA', 'The reaction is catalyzed by pyruvate dehydrogenase complex, which is irreversible', 'The co-factors required for the reaction include TPP, FAD, lipoic acid, NAD^+, and CoASH', 'Acetyl-CoA generated is further oxidized via the citric acid cycle', 'A', 'ATP does not have an activating role in pyruvate dehydrogenase complex; it is a product of this reaction.', 100, 92, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
@@ -417,11 +461,15 @@ VALUES ('note-dna-rna-replication-transcription-translation', 'topic_note', 'dna
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
+VALUES ('note-plant-respiration', 'topic_note', 'plant-respiration', 'Plant respiration: NEET-UG Biology NCERT Revision Notes', 'Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Plant respiration NEET UG Biology questions', 'plant-respiration', 'published')
+ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
+
+INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
 VALUES ('note-cell-theory-and-cell-organelles', 'topic_note', 'cell-theory-and-cell-organelles', 'Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes', 'Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Cell theory and cell organelles NEET UG Biology questions', 'cell-theory-and-cell-organelles', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
-VALUES ('note-plant-respiration', 'topic_note', 'plant-respiration', 'Plant respiration: NEET-UG Biology NCERT Revision Notes', 'Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Plant respiration NEET UG Biology questions', 'plant-respiration', 'published')
+VALUES ('note-mutation-and-gene-expression', 'topic_note', 'mutation-and-gene-expression', 'Mutation and gene expression: NEET-UG Biology NCERT Revision Notes', 'Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Mutation and gene expression NEET UG Biology questions', 'mutation-and-gene-expression', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)

@@ -3,15 +3,17 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("renders seeded qbank content on public index pages", async () => {
-  const [homeHtml, biologyHtml] = await Promise.all([
+  const [homeHtml, biologyHtml, questionsJson] = await Promise.all([
     readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
     readFile(
       new URL("../.next/server/app/neet-ug/biology.html", import.meta.url),
       "utf8",
     ),
+    readFile(new URL("../data/questions.json", import.meta.url), "utf8"),
   ]);
+  const questionCount = JSON.parse(questionsJson).length;
 
-  assert.match(homeHtml, />97</);
+  assert.match(homeHtml, new RegExp(`>${questionCount}<`));
   assert.match(homeHtml, /verified MCQs live/);
   assert.match(homeHtml, /Protein synthesis occurs in the/);
   assert.match(homeHtml, /neetug-bio-520996/);
@@ -27,7 +29,7 @@ test("renders seeded qbank content on public index pages", async () => {
   assert.doesNotMatch(homeHtml, /SEO content pipeline/);
   assert.doesNotMatch(homeHtml, /generated from the same publishing pipeline/);
 
-  assert.match(biologyHtml, /97<!-- --> verified 4-option questions/);
+  assert.match(biologyHtml, new RegExp(`${questionCount}<!-- --> verified 4-option questions`));
   assert.match(biologyHtml, /Cell theory and cell organelles/);
   assert.match(biologyHtml, /Growing topics/);
   assert.doesNotMatch(homeHtml, />0<\/span><p>verified MCQs live/);
