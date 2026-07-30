@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { absoluteUrl, siteConfig } from "@/lib/content";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,11 +31,13 @@ export const metadata: Metadata = {
     url: absoluteUrl("/"),
     siteName: siteConfig.name,
     type: "website",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "MedQGo NEET-UG Biology MCQs" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "NEET-UG Biology Question Bank",
     description: siteConfig.description,
+    images: [DEFAULT_OG_IMAGE],
   },
   icons: {
     icon: "/favicon.svg",

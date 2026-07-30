@@ -1,12 +1,28 @@
 import type { Metadata } from "next";
 import { ConversionPage } from "@/components/ConversionPage";
-import { getQuestions, getTopics } from "@/lib/content";
-import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
+import { absoluteUrl, getQuestions, getTopics } from "@/lib/content";
+import { INDEXABLE_TOPIC_MIN_QUESTIONS, ogImage } from "@/lib/seo";
+
+const image = ogImage("Free NEET Biology MCQ PDF", "Chapter-wise sample with answers");
 
 export const metadata: Metadata = {
   title: "Free NEET Biology MCQ PDF",
   description: "Get early access to a free NEET Biology MCQ PDF sample and practice chapter-wise NCERT-aligned questions with answers.",
   alternates: { canonical: "/neet-ug/biology/free-mcq-pdf" },
+  openGraph: {
+    title: "Free NEET Biology MCQ PDF",
+    description: "Get early access to a free NEET Biology MCQ PDF sample and practice chapter-wise NCERT-aligned questions with answers.",
+    url: absoluteUrl("/neet-ug/biology/free-mcq-pdf"),
+    siteName: "MedQGo",
+    type: "website",
+    images: [{ url: image, width: 1200, height: 630, alt: "Free NEET Biology MCQ PDF" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free NEET Biology MCQ PDF",
+    description: "Get early access to a free NEET Biology MCQ PDF sample.",
+    images: [image],
+  },
 };
 
 export default async function FreeMcqPdfPage() {

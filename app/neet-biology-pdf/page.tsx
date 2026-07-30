@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { EditorialByline } from "@/components/EditorialByline";
 import { WaitlistForm } from "@/components/WaitlistForm";
+import { absoluteUrl } from "@/lib/content";
+import { ogImage } from "@/lib/seo";
+
+const image = ogImage("Free NEET Biology MCQ PDF", "Chapter-wise sample with answers");
 
 export const metadata: Metadata = {
   title: "Free NEET Biology MCQ PDF",
@@ -9,14 +15,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free NEET Biology MCQ PDF",
     description: "Get early access to a free NEET Biology MCQ PDF sample with answers and explanations.",
-    url: "/neet-biology-pdf",
+    url: absoluteUrl("/neet-biology-pdf"),
     siteName: "MedQGo",
     type: "website",
+    images: [{ url: image, width: 1200, height: 630, alt: "Free NEET Biology MCQ PDF" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Free NEET Biology MCQ PDF",
     description: "Join early access for a free NEET Biology MCQ PDF sample.",
+    images: [image],
   },
 };
 
@@ -24,12 +32,17 @@ export default function NeetBiologyPdfPage() {
   return (
     <main className="page pdfLanding">
       <header className="pageHeader">
+        <Breadcrumbs items={[
+          { href: "/", label: "Home" },
+          { href: "/neet-biology-pdf", label: "Free PDF" },
+        ]} />
         <Link href="/" className="backLink">Home</Link>
         <p className="eyebrow">Free PDF sample</p>
         <h1>Free NEET Biology MCQ PDF</h1>
         <p>
           Join early access for a chapter-wise NEET Biology MCQ PDF sample with answers and NCERT-aligned explanations.
         </p>
+        <EditorialByline />
       </header>
 
       <section className="splitContent">

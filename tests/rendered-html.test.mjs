@@ -24,12 +24,16 @@ test("renders seeded qbank content on public index pages", async () => {
   assert.match(homeHtml, /WebSite/);
   assert.match(homeHtml, /Organization/);
   assert.match(homeHtml, /Course/);
+  assert.match(homeHtml, /og\?title=NEET-UG%20Biology%20MCQs/);
   assert.match(homeHtml, /Get free PDF/);
   assert.match(homeHtml, /Privacy/);
   assert.doesNotMatch(homeHtml, /SEO content pipeline/);
   assert.doesNotMatch(homeHtml, /generated from the same publishing pipeline/);
 
   assert.match(biologyHtml, new RegExp(`${questionCount}<!-- --> verified 4-option questions`));
+  assert.match(biologyHtml, /CollectionPage/);
+  assert.match(biologyHtml, /ItemList/);
+  assert.match(biologyHtml, /Reviewed by MedQGo Editorial Team/);
   assert.match(biologyHtml, /Cell theory and cell organelles/);
   assert.match(biologyHtml, /Growing topics/);
   assert.doesNotMatch(homeHtml, />0<\/span><p>verified MCQs live/);
@@ -57,7 +61,11 @@ test("renders HTML sitemap and question SEO metadata", async () => {
   assert.match(sitemapHtml, /neetug-bio-520996/);
   assert.match(questionHead, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
   assert.match(questionHead, /og:url/);
+  assert.match(questionHead, /og:image/);
   assert.match(questionFull, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
+  assert.match(questionFull, /Home/);
+  assert.match(questionFull, /NEET Biology/);
+  assert.match(questionFull, /Reviewed by MedQGo Editorial Team/);
   assert.match(questionFull, /Last updated: /);
 });
 
@@ -90,9 +98,11 @@ test("renders topic-specific SEO content", async () => {
   assert.match(topicHtml, /Which cell organelles are most important for NEET Biology/);
   assert.match(topicHtml, /Get NEET Biology MCQs as a chapter-wise PDF/);
   assert.match(topicHtml, /FAQPage/);
+  assert.match(topicHtml, /Reviewed by MedQGo Editorial Team/);
   assert.match(noteHtml, /Core concepts to revise/);
   assert.match(noteHtml, /Example MCQs and explanations/);
   assert.match(noteHtml, /Article/);
+  assert.match(noteHtml, /MedQGo Editorial Team/);
 });
 
 test("renders trust and conversion SEO pages", async () => {
@@ -113,4 +123,5 @@ test("renders trust and conversion SEO pages", async () => {
   assert.match(pdfGuideHtml, /Free NEET Biology MCQ PDF/);
   assert.match(chapterHtml, /NEET Biology Chapter-wise MCQs/);
   assert.match(answersHtml, /NEET Biology MCQs with Answers/);
+  assert.match(pdfGuideHtml, /Reviewed by MedQGo Editorial Team/);
 });

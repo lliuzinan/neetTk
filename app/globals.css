@@ -483,6 +483,38 @@ h3 {
   margin-top: 14px;
 }
 
+.breadcrumbs {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 750;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.breadcrumbs span {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--brand);
+}
+
+.editorialByline {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+
 .siteFooter {
   background: #10251c;
   color: #fff;

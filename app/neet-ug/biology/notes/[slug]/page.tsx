@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
-import { findNote, findQuestionsByTopic, findTopic, getSeoNotes } from "@/lib/content";
+import { absoluteUrl, findNote, findQuestionsByTopic, findTopic, getSeoNotes } from "@/lib/content";
 import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, noteMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
 
@@ -42,17 +44,26 @@ export default async function NotePage({ params }: Props) {
     datePublished: LAST_UPDATED_ISO,
     dateModified: LAST_UPDATED_ISO,
     about: topic.name,
+    author: { "@type": "Organization", name: "MedQGo Editorial Team" },
+    publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") },
   };
 
   return (
     <main className="page articlePage">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <header className="pageHeader">
+        <Breadcrumbs items={[
+          { href: "/", label: "Home" },
+          { href: "/neet-ug/biology", label: "NEET Biology" },
+          { href: `/neet-ug/biology/${topic.slug}`, label: topic.name },
+          { href: `/neet-ug/biology/notes/${note.slug}`, label: "Notes" },
+        ]} />
         <Link href="/neet-ug/biology" className="backLink">Biology topics</Link>
         <p className="eyebrow">{note.targetKeyword}</p>
         <h1>{note.title}</h1>
         <p>{note.description}</p>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
+        <EditorialByline />
       </header>
 
       <article className="articleBody">

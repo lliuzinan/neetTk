@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PdfCta } from "@/components/PdfCta";
+import { EditorialByline } from "@/components/EditorialByline";
 import {
   absoluteUrl,
   findQuestion,
@@ -92,10 +94,17 @@ export default async function QuestionPage({ params }: Props) {
     <main className="page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="pageHeader compact">
+        <Breadcrumbs items={[
+          { href: "/", label: "Home" },
+          { href: "/neet-ug/biology", label: "NEET Biology" },
+          { href: `/neet-ug/biology/${topic.slug}`, label: topic.name },
+          { href: getQuestionPath(question), label: "Question" },
+        ]} />
         <Link href={`/neet-ug/biology/${topic.slug}`} className="backLink">{topic.name}</Link>
         <p className="eyebrow">{question.ncertRef}</p>
         <h1>{questionTitle(question)}</h1>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
+        <EditorialByline />
       </header>
 
       <article className="mcqCard">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findQuestionsByTopic, findTopic, getQuestionPath, getTopics } from "@/lib/content";
 import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, topicMetadata } from "@/lib/seo";
@@ -58,6 +60,11 @@ export default async function TopicPage({ params }: Props) {
     <main className="page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbLd, faqLd]) }} />
       <header className="pageHeader">
+        <Breadcrumbs items={[
+          { href: "/", label: "Home" },
+          { href: "/neet-ug/biology", label: "NEET Biology" },
+          { href: `/neet-ug/biology/${topic.slug}`, label: topic.name },
+        ]} />
         <Link href="/neet-ug/biology" className="backLink">All Biology topics</Link>
         <p className="eyebrow">{topic.ncertRef}</p>
         <h1>{topic.name} MCQs for NEET-UG Biology</h1>
@@ -65,6 +72,7 @@ export default async function TopicPage({ params }: Props) {
           Revise this NCERT area with concise 4-option MCQs. Explanations are visible on each question page so students and search engines can read the learning value clearly.
         </p>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
+        <EditorialByline />
       </header>
 
       <section className="contentBand">

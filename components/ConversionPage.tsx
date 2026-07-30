@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
 import { getQuestionPath, getTopicPath, type Question, type Topic } from "@/lib/content";
 import { LAST_UPDATED_DISPLAY } from "@/lib/seo";
@@ -17,11 +19,17 @@ export function ConversionPage({ eyebrow, title, intro, source, bullets, topics,
   return (
     <main className="page">
       <header className="pageHeader">
+        <Breadcrumbs items={[
+          { href: "/", label: "Home" },
+          { href: "/neet-ug/biology", label: "NEET Biology" },
+          { href: "#", label: title },
+        ]} />
         <Link href="/neet-ug/biology" className="backLink">NEET Biology topics</Link>
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
         <p>{intro}</p>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
+        <EditorialByline />
       </header>
 
       <PdfCta source={source} />

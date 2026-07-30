@@ -5,6 +5,11 @@ import { absoluteUrl, getNotePath, getQuestionPath, getTopicPath } from "@/lib/c
 export const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
 export const LAST_UPDATED_ISO = "2026-07-30";
 export const LAST_UPDATED_DISPLAY = "July 30, 2026";
+export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20MCQs&subtitle=NCERT-aligned%20practice%20with%20answers");
+
+export function ogImage(title: string, subtitle = "NCERT-aligned NEET Biology practice") {
+  return absoluteUrl(`/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(subtitle)}`);
+}
 
 function stripHtml(value: string) {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
@@ -48,6 +53,7 @@ export function topicMetadata(topic: Topic): Metadata {
   const title = `${topic.name} MCQs for NEET-UG Biology`;
   const description = topicDescription(topic);
   const url = absoluteUrl(getTopicPath(topic));
+  const image = ogImage(title, `${topic.questionCount} MCQs with NCERT explanations`);
 
   return {
     title,
@@ -62,11 +68,13 @@ export function topicMetadata(topic: Topic): Metadata {
       type: "article",
       publishedTime: LAST_UPDATED_ISO,
       modifiedTime: LAST_UPDATED_ISO,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [image],
     },
   };
 }
@@ -76,6 +84,7 @@ export function questionMetadata(question: Question): Metadata {
   const title = questionTitle(question);
   const description = questionDescription(question, answerText);
   const url = absoluteUrl(getQuestionPath(question));
+  const image = ogImage(title, question.topic);
 
   return {
     title,
@@ -89,11 +98,13 @@ export function questionMetadata(question: Question): Metadata {
       type: "article",
       publishedTime: LAST_UPDATED_ISO,
       modifiedTime: LAST_UPDATED_ISO,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [image],
     },
   };
 }
@@ -102,6 +113,7 @@ export function noteMetadata(note: SeoNote, topic?: Topic): Metadata {
   const title = note.title;
   const description = truncate(note.description, 155);
   const url = absoluteUrl(getNotePath(note));
+  const image = ogImage(title, topic?.name || "NEET Biology revision notes");
 
   return {
     title,
@@ -116,11 +128,13 @@ export function noteMetadata(note: SeoNote, topic?: Topic): Metadata {
       type: "article",
       publishedTime: LAST_UPDATED_ISO,
       modifiedTime: LAST_UPDATED_ISO,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [image],
     },
   };
 }
