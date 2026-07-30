@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { absoluteUrl, siteConfig } from "@/lib/content";
 import "./globals.css";
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: absoluteUrl("/"),
+    languages: {
+      "en-IN": absoluteUrl("/"),
+    },
   },
   openGraph: {
     title: "NEET-UG Biology Question Bank",
@@ -44,10 +48,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <body>
         <GoogleAnalytics />
         {children}
+        <Footer />
       </body>
     </html>
   );

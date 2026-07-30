@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findQuestionsByTopic, findTopic, getQuestionPath, getTopics } from "@/lib/content";
-import { topicMetadata } from "@/lib/seo";
+import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, topicMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props {
@@ -41,7 +41,9 @@ export default async function TopicPage({ params }: Props) {
   };
   const faqLd = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
+      "@type": "FAQPage",
+      datePublished: LAST_UPDATED_ISO,
+      dateModified: LAST_UPDATED_ISO,
     mainEntity: seoContent.faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -62,6 +64,7 @@ export default async function TopicPage({ params }: Props) {
         <p>
           Revise this NCERT area with concise 4-option MCQs. Explanations are visible on each question page so students and search engines can read the learning value clearly.
         </p>
+        <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
       </header>
 
       <section className="contentBand">

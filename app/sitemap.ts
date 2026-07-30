@@ -17,6 +17,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: absoluteUrl("/"), lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: absoluteUrl("/neet-ug/biology"), lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl("/neet-biology-pdf"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: absoluteUrl("/neet-ug/biology/free-mcq-pdf"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl("/neet-ug/biology/chapter-wise-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl("/neet-ug/biology/mcqs-with-answers"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl("/about"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: absoluteUrl("/contact"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: absoluteUrl("/privacy"), lastModified: now, changeFrequency: "monthly", priority: 0.45 },
+    { url: absoluteUrl("/terms"), lastModified: now, changeFrequency: "monthly", priority: 0.45 },
     { url: absoluteUrl("/site-map"), lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     ...topicList.filter((topic) => indexableTopicSlugs.has(topic.slug)).map((topic) => ({
       url: absoluteUrl(getTopicPath(topic)),

@@ -3,6 +3,8 @@ import type { Question, SeoNote, Topic } from "@/lib/content";
 import { absoluteUrl, getNotePath, getQuestionPath, getTopicPath } from "@/lib/content";
 
 export const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
+export const LAST_UPDATED_ISO = "2026-07-30";
+export const LAST_UPDATED_DISPLAY = "July 30, 2026";
 
 function stripHtml(value: string) {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
@@ -58,6 +60,8 @@ export function topicMetadata(topic: Topic): Metadata {
       url,
       siteName: "MedQGo",
       type: "article",
+      publishedTime: LAST_UPDATED_ISO,
+      modifiedTime: LAST_UPDATED_ISO,
     },
     twitter: {
       card: "summary",
@@ -83,6 +87,8 @@ export function questionMetadata(question: Question): Metadata {
       url,
       siteName: "MedQGo",
       type: "article",
+      publishedTime: LAST_UPDATED_ISO,
+      modifiedTime: LAST_UPDATED_ISO,
     },
     twitter: {
       card: "summary",
@@ -108,6 +114,8 @@ export function noteMetadata(note: SeoNote, topic?: Topic): Metadata {
       url,
       siteName: "MedQGo",
       type: "article",
+      publishedTime: LAST_UPDATED_ISO,
+      modifiedTime: LAST_UPDATED_ISO,
     },
     twitter: {
       card: "summary",

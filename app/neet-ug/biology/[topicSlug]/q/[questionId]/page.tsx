@@ -13,7 +13,7 @@ import {
   getSeoNotes,
   getTopicPath,
 } from "@/lib/content";
-import { questionMetadata } from "@/lib/seo";
+import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, questionMetadata, questionTitle } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ topicSlug: string; questionId: string }>;
@@ -60,6 +60,8 @@ export default async function QuestionPage({ params }: Props) {
       "@context": "https://schema.org",
       "@type": "Quiz",
       name: `${question.topic} NEET-UG Biology MCQ`,
+      datePublished: LAST_UPDATED_ISO,
+      dateModified: LAST_UPDATED_ISO,
       educationalLevel: "Higher secondary",
       assesses: "NEET-UG Biology",
       about: {
@@ -92,7 +94,8 @@ export default async function QuestionPage({ params }: Props) {
       <header className="pageHeader compact">
         <Link href={`/neet-ug/biology/${topic.slug}`} className="backLink">{topic.name}</Link>
         <p className="eyebrow">{question.ncertRef}</p>
-        <h1>{question.topic} NEET-UG Biology MCQ</h1>
+        <h1>{questionTitle(question)}</h1>
+        <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
       </header>
 
       <article className="mcqCard">

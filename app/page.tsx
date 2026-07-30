@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
 import { TrackedLink } from "@/components/TrackedLink";
-import { getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
-import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
+import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics, siteConfig } from "@/lib/content";
+import { INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Free NEET Biology MCQs with Answers",
@@ -18,15 +18,60 @@ export default async function Home() {
     getSeoNotes(),
   ]);
   const firstQuestions = questionList.slice(0, 6);
+  const homeJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "MedQGo",
+      url: absoluteUrl("/"),
+      sameAs: [],
+      description: siteConfig.description,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "MedQGo",
+      url: absoluteUrl("/"),
+      inLanguage: "en-IN",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${absoluteUrl("/neet-ug/biology")}?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      name: "NEET-UG Biology MCQ Practice",
+      description: siteConfig.description,
+      provider: {
+        "@type": "Organization",
+        name: "MedQGo",
+        sameAs: absoluteUrl("/"),
+      },
+      educationalLevel: "Higher secondary",
+      inLanguage: "en-IN",
+      dateModified: LAST_UPDATED_ISO,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+      ],
+    },
+  ];
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
       <section className="hero">
         <nav className="nav">
           <Link href="/" className="brand">MedQGo</Link>
           <div className="navLinks">
             <Link href="/neet-ug/biology">Topics</Link>
             <Link href="/neet-biology-pdf">Free PDF</Link>
+            <Link href="/about">About</Link>
             <Link href="/neet-ug/biology/notes/cell-theory-and-cell-organelles">Notes</Link>
             <Link href="/site-map">Sitemap</Link>
           </div>
