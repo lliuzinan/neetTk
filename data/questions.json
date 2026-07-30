@@ -1,5 +1,465 @@
 [
   {
+    "id": "neetug-bio-516662",
+    "sourceId": 516662,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The disease in children due to iodine deficiency or hypothyroidism during embryonic development is",
+    "options": {
+      "A": "Addison's disease",
+      "B": "Dwarfism",
+      "C": "Acromegaly",
+      "D": "Cretinism"
+    },
+    "correctOption": "D",
+    "explanation": "Addison's disease is due to adrenal cortex dysfunction. Dwarfism results from growth hormone deficiency or inadequate secretion. Acromegaly occurs due to excessive growth hormone in adults. Cretinism involves intellectual disability and developmental delay in children due to iodine deficiency or hypothyroidism during embryonic development.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "neetug-bio-516664",
+    "sourceId": 516664,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Long-term iodine deficiency in food can lead to",
+    "options": {
+      "A": "cretinism",
+      "B": "acromegaly",
+      "C": "goiter",
+      "D": "rickets"
+    },
+    "correctOption": "C",
+    "explanation": "Long-term iodine deficiency leads to insufficient synthesis of thyroid hormones, which results in feedback stimulation of the adenohypophysis to secrete more TSH, leading to thyroid hyperplasia and enlargement.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "neetug-bio-520895",
+    "sourceId": 520895,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The chromosomal genome in eukaryotes is",
+    "options": {
+      "A": "linear double-stranded DNA molecule",
+      "B": "circular double-stranded DNA molecule",
+      "C": "linear single-stranded DNA molecule",
+      "D": "linear single-stranded RNA molecule"
+    },
+    "correctOption": "A",
+    "explanation": "The chromosomal genome in eukaryotes is typically linear and double-stranded, whereas prokaryotes often have a circular chromosome.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "neetug-bio-520922",
+    "sourceId": 520922,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "What is the role of RNA primer during DNA replication?",
+    "options": {
+      "A": "Provides a 3'OH end for dNTP addition",
+      "B": "Extends Okazaki fragments",
+      "C": "Participates in forming the primosome",
+      "D": "Assists helicase action"
+    },
+    "correctOption": "A",
+    "explanation": "The RNA primer provides a 3'OH end where DNA polymerase can add dNTPs during DNA replication.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "neetug-bio-521057",
+    "sourceId": 521057,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about gene expression is incorrect?",
+    "options": {
+      "A": "Some genes express their products as proteins",
+      "B": "Some genes express their products as RNA",
+      "C": "Some genes undergo processes like transcription and translation",
+      "D": "Always involves processes like transcription and translation"
+    },
+    "correctOption": "D",
+    "explanation": "Gene expression does not always involve both transcription and translation. Some genes can be expressed through only the process of transcription, such as in the case of RNA genes.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "neetug-bio-516220",
+    "sourceId": 516220,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following conditions can lead to an increase in Basal Metabolic Rate (BMR)?",
+    "options": {
+      "A": "renal syndrome",
+      "B": "pathological fasting",
+      "C": "adrenal cortex dysfunction",
+      "D": "hyperthyroidism"
+    },
+    "correctOption": "D",
+    "explanation": "In hyperthyroidism, BMR can be up to 25%-80% higher than normal. In the other conditions, BMR is generally lower.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "neetug-bio-516237",
+    "sourceId": 516237,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which hormone has the greatest impact on body heat production?",
+    "options": {
+      "A": "noradrenaline",
+      "B": "adrenaline",
+      "C": "thyroid hormone",
+      "D": "parathyroid hormone"
+    },
+    "correctOption": "C",
+    "explanation": "Thyroid hormone plays a crucial role in regulating metabolic rate and heat production in the body.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "neetug-bio-516580",
+    "sourceId": 516580,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following hormones has a lipophilic characteristic?",
+    "options": {
+      "A": "growth hormone",
+      "B": "insulin",
+      "C": "aldosterone",
+      "D": "adrenaline"
+    },
+    "correctOption": "C",
+    "explanation": "Aldosterone is a steroid hormone, which is lipophilic and can easily pass through the cell membrane. Growth hormone, insulin, and adrenaline are mostly hydrophilic and require receptors on the cell surface for action.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "neetug-bio-516660",
+    "sourceId": 516660,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "In a state of rest, the most important humoral factor regulating heat production in the human body is",
+    "options": {
+      "A": "thyroxine",
+      "B": "adrenaline",
+      "C": "noradrenaline",
+      "D": "acetylcholine"
+    },
+    "correctOption": "A",
+    "explanation": "Thyroxine, produced by the thyroid gland, plays a crucial role in regulating basal metabolic rate and heat production during rest. Adrenaline, noradrenaline, and acetylcholine are primarily involved in stress responses and other physiological functions but are not the most important humoral factors for heat production at rest.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 9
+  },
+  {
+    "id": "neetug-bio-516729",
+    "sourceId": 516729,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The secretion is regulated by the body's fat storage and participates in weight regulation. Which hormone is involved?",
+    "options": {
+      "A": "leptin",
+      "B": "thyroxine",
+      "C": "adrenaline",
+      "D": "insulin"
+    },
+    "correctOption": "A",
+    "explanation": "Leptin, secreted by adipose tissue, regulates body weight by signaling to the brain about fat stores.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 10
+  },
+  {
+    "id": "neetug-bio-520377",
+    "sourceId": 520377,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which technique does not involve nucleic acid hybridization?",
+    "options": {
+      "A": "protein blotting",
+      "B": "gene chip",
+      "C": "DNA blotting",
+      "D": "PCR"
+    },
+    "correctOption": "A",
+    "explanation": "Protein blotting involves the detection of proteins, whereas gene chip, DNA blotting, and PCR involve nucleic acid hybridization.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 11
+  },
+  {
+    "id": "neetug-bio-520569",
+    "sourceId": 520569,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Respiratory chain in eukaryotic cells is present in",
+    "options": {
+      "A": "cytoplasm",
+      "B": "nucleus",
+      "C": "mitochondria",
+      "D": "peroxisomes"
+    },
+    "correctOption": "C",
+    "explanation": "The respiratory chain in eukaryotic cells is primarily located in the mitochondria.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 12
+  },
+  {
+    "id": "neetug-bio-520614",
+    "sourceId": 520614,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following hormones can inhibit fat mobilization and breakdown?",
+    "options": {
+      "A": "adrenaline",
+      "B": "noradrenaline",
+      "C": "insulin",
+      "D": "glucagon"
+    },
+    "correctOption": "C",
+    "explanation": "Insulin is known to inhibit lipolysis in adipose tissue, whereas adrenaline, noradrenaline, and glucagon promote fat mobilization.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 13
+  },
+  {
+    "id": "neetug-bio-520827",
+    "sourceId": 520827,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Plant respiration",
+    "topicSlug": "plant-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 12",
+    "stem": "Which of the following pathways is most closely related to nucleic acid synthesis?",
+    "options": {
+      "A": "glycolysis",
+      "B": "gluconeogenesis",
+      "C": "urea cycle",
+      "D": "pentose phosphate pathway"
+    },
+    "correctOption": "D",
+    "explanation": "The pentose phosphate pathway produces ribose-5-phosphate, which is a precursor for nucleic acid synthesis.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 14
+  },
+  {
+    "id": "neetug-bio-520900",
+    "sourceId": 520900,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The main chemical component of genetic material in chromatin is",
+    "options": {
+      "A": "proteins",
+      "B": "non-proteins",
+      "C": "DNA",
+      "D": "RNA"
+    },
+    "correctOption": "C",
+    "explanation": "Genetic material in chromatin primarily consists of DNA, which carries the hereditary information.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 15
+  },
+  {
+    "id": "neetug-bio-520906",
+    "sourceId": 520906,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which factor is involved in maintaining the fidelity of DNA replication?",
+    "options": {
+      "A": "anticodon's degeneracy",
+      "B": "SOS repair mechanism of DNA",
+      "C": "nuclease activity of DNA polymerase",
+      "D": "high specificity of aminoacyl-tRNA synthetase"
+    },
+    "correctOption": "C",
+    "explanation": "Nuclease activity of DNA polymerase helps in proofreading and removing incorrect nucleotides during replication, thus maintaining the fidelity of DNA replication.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 16
+  },
+  {
+    "id": "neetug-bio-520924",
+    "sourceId": 520924,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is incorrect about DNA replication in eukaryotes?",
+    "options": {
+      "A": "RNA primers are shorter",
+      "B": "Okazaki fragments are longer",
+      "C": "Multiple replication origins",
+      "D": "Bidirectional replication, forming replication forks"
+    },
+    "correctOption": "B",
+    "explanation": "In eukaryotes, Okazaki fragments are indeed longer compared to prokaryotes due to the larger size of their DNA molecules and the presence of multiple replication origins.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 17
+  },
+  {
+    "id": "neetug-bio-520926",
+    "sourceId": 520926,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about telomerase is incorrect?",
+    "options": {
+      "A": "is an RNA-protein complex",
+      "B": "contains an RNA template",
+      "C": "has reverse transcriptase activity",
+      "D": "catalyzes the extension of the template strand DNA"
+    },
+    "correctOption": "D",
+    "explanation": "Telomerase has reverse transcriptase activity and functions to extend the telomere sequence on the DNA, not directly catalyze the extension of the template strand DNA.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 18
+  },
+  {
+    "id": "neetug-bio-520941",
+    "sourceId": 520941,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which component is part of telomerase?",
+    "options": {
+      "A": "DNA polymerase + substrate",
+      "B": "reverse transcriptase + RNA",
+      "C": "RNA polymerase + co-factor",
+      "D": "DNA repair enzyme + primer"
+    },
+    "correctOption": "B",
+    "explanation": "Telomerase consists of reverse transcriptase and RNA.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 19
+  },
+  {
+    "id": "neetug-bio-520950",
+    "sourceId": 520950,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Thymine dimers interfere with DNA synthesis by",
+    "options": {
+      "A": "causing a break in the DNA template strand",
+      "B": "forming apurinic/apyrimidic sites in DNA strands",
+      "C": "causing bends and kinks, affecting the DNA double helix, thereby hindering replication and transcription",
+      "D": "forming negative supercoils between the two DNA strands"
+    },
+    "correctOption": "C",
+    "explanation": "Thymine dimers cause structural distortions in the DNA molecule by creating bends and kinks. These distortions interfere with the normal processes of DNA replication and transcription, making option C the correct answer.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 20
+  },
+  {
     "id": "neetug-bio-520996",
     "sourceId": 520996,
     "exam": "NEET-UG",
@@ -20,7 +480,122 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 1
+    "sortOrder": 21
+  },
+  {
+    "id": "neetug-bio-521061",
+    "sourceId": 521061,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In prokaryotes, several enzymes related to a particular metabolic pathway are often coordinately expressed through which mechanism?",
+    "options": {
+      "A": "transcription factor",
+      "B": "operon",
+      "C": "enhancer",
+      "D": "attenuator"
+    },
+    "correctOption": "B",
+    "explanation": "Coordinately expressed enzymes in prokaryotes are typically regulated by an operon, where a single promoter controls the transcription of multiple structural genes.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 22
+  },
+  {
+    "id": "neetug-bio-521063",
+    "sourceId": 521063,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about operons is correct?",
+    "options": {
+      "A": "Several structural genes in series are controlled by one promoter",
+      "B": "Each of several structural genes in series has a different promoter",
+      "C": "A single structural gene has multiple promoters",
+      "D": "Transcription produces monocistronic RNA"
+    },
+    "correctOption": "A",
+    "explanation": "In operons, several structural genes are transcribed together under the control of one promoter.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 23
+  },
+  {
+    "id": "neetug-bio-521076",
+    "sourceId": 521076,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In the lac operon model of E. coli, what binds to the operator sequence to regulate transcription?",
+    "options": {
+      "A": "repressor protein",
+      "B": "RNA polymerase",
+      "C": "regulatory gene",
+      "D": "cAMP-CAP"
+    },
+    "correctOption": "A",
+    "explanation": "The repressor protein binds to the operator sequence in the lac operon of E. coli to regulate transcription.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 24
+  },
+  {
+    "id": "neetug-bio-521095",
+    "sourceId": 521095,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In E. coli, the function of the SD sequence in the efficient expression of an exogenous gene is to provide",
+    "options": {
+      "A": "a mRNA transcription terminator",
+      "B": "a ribosome binding site",
+      "C": "a translation termination site",
+      "D": "a selective splicing site"
+    },
+    "correctOption": "B",
+    "explanation": "The SD sequence provides a ribosome binding site, which enhances the efficiency of protein synthesis by facilitating the initiation of translation.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 25
+  },
+  {
+    "id": "neetug-bio-521139",
+    "sourceId": 521139,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following is not an extracellular signal molecule received by intracellular receptors?",
+    "options": {
+      "A": "steroid hormones",
+      "B": "nitric oxide",
+      "C": "thyroxine",
+      "D": "insulin"
+    },
+    "correctOption": "D",
+    "explanation": "Insulin acts through cell surface receptors and not intracellular receptors.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 26
   },
   {
     "id": "neetug-bio-588344",
@@ -43,7 +618,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 2
+    "sortOrder": 27
+  },
+  {
+    "id": "neetug-bio-588348",
+    "sourceId": 588348,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements is incorrect about prokaryotic genetic material?",
+    "options": {
+      "A": "distributed in the cell nucleus",
+      "B": "usually a circular DNA molecule",
+      "C": "DNA is naked and does not combine with histones",
+      "D": "controls cellular metabolism, growth, and reproduction"
+    },
+    "correctOption": "A",
+    "explanation": "Prokaryotic cells do not have a distinct nucleus. The genetic material (DNA) is located in the cytoplasm. It can exist as circular DNA molecules and does not combine with histones. It controls cellular functions such as metabolism, growth, and reproduction.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 28
+  },
+  {
+    "id": "neetug-bio-588362",
+    "sourceId": 588362,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements is incorrect about eukaryotic cells?",
+    "options": {
+      "A": "Contain chromatin formed by multiple DNA molecules and histones",
+      "B": "Transcription and translation of gene expression occur simultaneously",
+      "C": "Have a complete nuclear structure",
+      "D": "Are larger in size with diameters ranging from 10 to 100 μm"
+    },
+    "correctOption": "B",
+    "explanation": "In eukaryotic cells, transcription and translation do not occur simultaneously; they are separated by a short interval due to the presence of nuclear membrane.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 29
   },
   {
     "id": "neetug-bio-588742",
@@ -66,7 +687,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 3
+    "sortOrder": 30
+  },
+  {
+    "id": "neetug-bio-588795",
+    "sourceId": 588795,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is synthesized directly from DNA as a template?",
+    "options": {
+      "A": "transcription factors",
+      "B": "regulatory proteins",
+      "C": "primase",
+      "D": "hnRNA"
+    },
+    "correctOption": "D",
+    "explanation": "hnRNA (heterogeneous nuclear RNA) is transcribed directly from DNA. Transcription factors, regulatory proteins, and primase are involved in the process but are not direct products of DNA replication.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 31
   },
   {
     "id": "neetug-bio-588802",
@@ -89,7 +733,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 4
+    "sortOrder": 32
   },
   {
     "id": "neetug-bio-588809",
@@ -112,7 +756,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 5
+    "sortOrder": 33
   },
   {
     "id": "neetug-bio-588820",
@@ -135,7 +779,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 6
+    "sortOrder": 34
   },
   {
     "id": "neetug-bio-588825",
@@ -158,7 +802,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 7
+    "sortOrder": 35
+  },
+  {
+    "id": "neetug-bio-588830",
+    "sourceId": 588830,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In E. coli, the efficient expression of an exogenous gene is influenced by several factors. Among these, what role does the SD sequence play?",
+    "options": {
+      "A": "provides a mRNA transcription termination site",
+      "B": "provides a ribosome binding site",
+      "C": "provides a translation stop codon",
+      "D": "provides a selective splicing site"
+    },
+    "correctOption": "B",
+    "explanation": "The SD sequence provides a ribosome binding site, facilitating the initiation of protein synthesis during translation.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 36
   },
   {
     "id": "neetug-bio-588848",
@@ -181,7 +848,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 8
+    "sortOrder": 37
+  },
+  {
+    "id": "neetug-bio-589004",
+    "sourceId": 589004,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Calcium ions are stored within the",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "nucleus",
+      "C": "cytoplasm",
+      "D": "plasma membrane"
+    },
+    "correctOption": "A",
+    "explanation": "The endoplasmic reticulum is involved in storing calcium ions, which are crucial for various cellular processes.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 38
+  },
+  {
+    "id": "neetug-bio-589104",
+    "sourceId": 589104,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Gene expression regulation during cell differentiation mainly occurs at the level of",
+    "options": {
+      "A": "translation",
+      "B": "post-translation",
+      "C": "DNA replication",
+      "D": "transcription"
+    },
+    "correctOption": "D",
+    "explanation": "During cell differentiation, gene expression is primarily regulated at the transcriptional level. This involves the initiation and regulation of RNA synthesis from DNA templates.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 39
+  },
+  {
+    "id": "neetug-bio-589135",
+    "sourceId": 589135,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "In non-selective autophagy, the area where proteins or organelles are randomly transported and degraded is",
+    "options": {
+      "A": "lysosome",
+      "B": "mitochondria",
+      "C": "cytoplasm",
+      "D": "peroxisome"
+    },
+    "correctOption": "A",
+    "explanation": "Lysosomes are responsible for degrading proteins and organelles in non-selective autophagy. Mitochondria, cytoplasm, and peroxisomes do not primarily function in the degradation of random proteins or organelles.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 40
+  },
+  {
+    "id": "neetug-bio-589160",
+    "sourceId": 589160,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following is formed by lysosomes and contains insoluble lipoprotein particles?",
+    "options": {
+      "A": "nucleolus",
+      "B": "cell nucleus",
+      "C": "chromosomes",
+      "D": "lipofuscin"
+    },
+    "correctOption": "D",
+    "explanation": "Lipofuscin, also known as residual bodies, is formed by lysosomes and contains insoluble lipoprotein particles.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-588773",
@@ -204,7 +963,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 9
+    "sortOrder": 42
+  },
+  {
+    "id": "neetug-bio-589163",
+    "sourceId": 589163,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following is not a change observed in cell aging?",
+    "options": {
+      "A": "cell nucleus enlargement",
+      "B": "endoplasmic reticulum becomes diffuse",
+      "C": "mitochondria number decreases",
+      "D": "mitochondria volume decreases"
+    },
+    "correctOption": "A",
+    "explanation": "Cell nucleus enlargement is not typically associated with the changes observed in cell aging. Other options are correct as they represent typical changes seen during cellular senescence.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 43
   },
   {
     "id": "neetug-bio-516300",
@@ -227,7 +1009,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 10
+    "sortOrder": 44
   },
   {
     "id": "neetug-bio-516430",
@@ -250,7 +1032,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 11
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-516615",
@@ -273,7 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 12
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-516616",
@@ -296,7 +1078,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 13
+    "sortOrder": 47
   },
   {
     "id": "neetug-bio-516625",
@@ -319,7 +1101,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 14
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-516658",
@@ -342,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 15
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-516661",
@@ -365,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 16
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-516698",
@@ -388,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 17
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-516716",
@@ -411,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 18
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-520545",
@@ -434,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 19
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-520555",
@@ -457,7 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 20
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-520570",
@@ -480,7 +1262,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 21
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-520571",
@@ -503,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 22
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-520843",
@@ -526,7 +1308,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 23
+    "sortOrder": 57
   },
   {
     "id": "neetug-bio-520897",
@@ -549,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 24
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-521093",
@@ -572,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 25
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-521273",
@@ -595,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 26
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-521384",
@@ -618,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 27
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-579017",
@@ -641,7 +1423,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 28
+    "sortOrder": 62
   },
   {
     "id": "neetug-bio-579035",
@@ -664,7 +1446,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 63
   },
   {
     "id": "neetug-bio-579057",
@@ -687,7 +1469,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 64
   },
   {
     "id": "neetug-bio-579069",
@@ -710,7 +1492,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-579101",
@@ -733,7 +1515,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 66
   },
   {
     "id": "neetug-bio-579532",
@@ -756,7 +1538,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 67
   },
   {
     "id": "neetug-bio-579543",
@@ -779,7 +1561,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 68
   },
   {
     "id": "neetug-bio-579546",
@@ -802,7 +1584,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 69
   },
   {
     "id": "neetug-bio-579957",
@@ -825,7 +1607,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 70
   },
   {
     "id": "neetug-bio-588339",
@@ -848,7 +1630,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 71
   },
   {
     "id": "neetug-bio-588535",
@@ -871,7 +1653,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-588536",
@@ -894,7 +1676,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 73
   },
   {
     "id": "neetug-bio-588548",
@@ -917,7 +1699,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 74
   },
   {
     "id": "neetug-bio-588556",
@@ -940,7 +1722,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 75
   },
   {
     "id": "neetug-bio-588558",
@@ -963,7 +1745,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 76
   },
   {
     "id": "neetug-bio-588573",
@@ -986,7 +1768,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 77
   },
   {
     "id": "neetug-bio-588601",
@@ -1009,7 +1791,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 78
   },
   {
     "id": "neetug-bio-588609",
@@ -1032,7 +1814,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 79
   },
   {
     "id": "neetug-bio-589057",
@@ -1055,7 +1837,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 80
   },
   {
     "id": "neetug-bio-516588",
@@ -1078,7 +1860,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 81
   },
   {
     "id": "neetug-bio-516628",
@@ -1101,7 +1883,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 82
   },
   {
     "id": "neetug-bio-520587",
@@ -1124,7 +1906,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 83
   },
   {
     "id": "neetug-bio-521092",
@@ -1147,7 +1929,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 84
   },
   {
     "id": "neetug-bio-521391",
@@ -1170,7 +1952,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 85
   },
   {
     "id": "neetug-bio-578586",
@@ -1193,7 +1975,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 86
   },
   {
     "id": "neetug-bio-579914",
@@ -1216,7 +1998,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 87
   },
   {
     "id": "neetug-bio-588084",
@@ -1239,7 +2021,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 88
+  },
+  {
+    "id": "neetug-bio-588346",
+    "sourceId": 588346,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following cell organelles enables eukaryotic cells to survive in an oxygen-rich environment on Earth?",
+    "options": {
+      "A": "Golgi apparatus",
+      "B": "Mitochondria",
+      "C": "Lysosomes",
+      "D": "Endoplasmic reticulum"
+    },
+    "correctOption": "B",
+    "explanation": "Mitochondria are the powerhouses of the cell, producing energy through cellular respiration. This process is crucial for eukaryotic cells to survive in an oxygen-rich environment.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-588615",
@@ -1262,6 +2067,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 90
   }
 ]

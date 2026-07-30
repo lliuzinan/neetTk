@@ -1,12 +1,12 @@
 [
   {
-    "id": "cell-theory-and-cell-organelles",
+    "id": "endocrine-system-and-hormones",
     "exam": "NEET-UG",
     "subject": "Biology",
-    "name": "Cell theory and cell organelles",
-    "slug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "questionCount": 16,
+    "name": "Endocrine system and hormones",
+    "slug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "questionCount": 20,
     "sortOrder": 1
   },
   {
@@ -16,8 +16,28 @@
     "name": "DNA RNA replication transcription translation",
     "slug": "dna-rna-replication-transcription-translation",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 6,
+    "questionCount": 25,
     "sortOrder": 2
+  },
+  {
+    "id": "cell-theory-and-cell-organelles",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Cell theory and cell organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "questionCount": 22,
+    "sortOrder": 3
+  },
+  {
+    "id": "plant-respiration",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Plant respiration",
+    "slug": "plant-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 12",
+    "questionCount": 7,
+    "sortOrder": 4
   },
   {
     "id": "excretion-and-kidney-function",
@@ -27,7 +47,7 @@
     "slug": "excretion-and-kidney-function",
     "ncertRef": "NCERT Biology Class 11, Chapter 16",
     "questionCount": 1,
-    "sortOrder": 3
+    "sortOrder": 5
   },
   {
     "id": "neuron-nerve-impulse-synapse",
@@ -37,26 +57,6 @@
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 1,
-    "sortOrder": 4
-  },
-  {
-    "id": "endocrine-system-and-hormones",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Endocrine system and hormones",
-    "slug": "endocrine-system-and-hormones",
-    "ncertRef": "NCERT Biology Class 11, Chapter 19",
-    "questionCount": 11,
-    "sortOrder": 5
-  },
-  {
-    "id": "plant-respiration",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Plant respiration",
-    "slug": "plant-respiration",
-    "ncertRef": "NCERT Biology Class 11, Chapter 12",
-    "questionCount": 6,
     "sortOrder": 6
   },
   {

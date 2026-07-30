@@ -1,11 +1,11 @@
 [
   {
-    "id": "note-cell-theory-and-cell-organelles",
-    "slug": "cell-theory-and-cell-organelles",
-    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
+    "id": "note-endocrine-system-and-hormones",
+    "slug": "endocrine-system-and-hormones",
+    "title": "Endocrine system and hormones: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "endocrine-system-and-hormones",
+    "targetKeyword": "Endocrine system and hormones NEET UG Biology questions",
     "sortOrder": 1
   },
   {
@@ -18,12 +18,12 @@
     "sortOrder": 2
   },
   {
-    "id": "note-endocrine-system-and-hormones",
-    "slug": "endocrine-system-and-hormones",
-    "title": "Endocrine system and hormones: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Endocrine system and hormones for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "endocrine-system-and-hormones",
-    "targetKeyword": "Endocrine system and hormones NEET UG Biology questions",
+    "id": "note-cell-theory-and-cell-organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
     "sortOrder": 3
   },
   {
