@@ -17,10 +17,11 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const formElement = event.currentTarget;
     setState("submitting");
     setMessage("");
 
-    const form = new FormData(event.currentTarget);
+    const form = new FormData(formElement);
     const payload = {
       name: String(form.get("name") || ""),
       email: String(form.get("email") || ""),
@@ -48,7 +49,7 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
       });
       setState("success");
       setMessage("You are on the early access list. The free PDF sample will be sent when it is ready.");
-      event.currentTarget.reset();
+      formElement.reset();
     } catch (error) {
       setState("error");
       setMessage(error instanceof Error ? error.message : "Unable to join the list.");
