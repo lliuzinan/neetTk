@@ -27,6 +27,7 @@ body {
   color: var(--foreground);
   font-family: var(--app-font-sans);
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -69,6 +70,20 @@ a {
   gap: 20px;
   font-size: 0.92rem;
   opacity: 0.9;
+}
+
+.navLinks a,
+.footerLinks a,
+.breadcrumbs a,
+.backLink {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
+}
+
+.breadcrumbs a,
+.backLink {
+  min-height: 40px;
 }
 
 .heroGrid {
@@ -612,5 +627,150 @@ h3 {
 
   .hero {
     min-height: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 18px clamp(14px, 5vw, 20px) 44px;
+  }
+
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+
+  .brand {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .navLinks {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    opacity: 1;
+    width: 100%;
+  }
+
+  .navLinks a {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 8px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.08;
+  }
+
+  .pageHeader h1 {
+    font-size: 1.85rem;
+    line-height: 1.14;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .lede,
+  .pageHeader p,
+  .contentBand p,
+  .articleBody p,
+  .stem {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  .actions,
+  .questionNav {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .ctaButton,
+  .questionNav a,
+  .waitlistForm button {
+    justify-content: center;
+    min-height: 48px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .section,
+  .page {
+    padding: 44px clamp(14px, 5vw, 20px);
+  }
+
+  .heroPanel,
+  .listPanel,
+  .contentBand,
+  .articleBody,
+  .mcqCard,
+  .pdfCta,
+  .topicCard,
+  .questionRow {
+    padding: 18px;
+  }
+
+  .topicGrid,
+  .sitemapQuestions {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .option span,
+  .questionRow p,
+  .topicCard h2,
+  .topicCard h3,
+  .exampleItem h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .breadcrumbs {
+    gap: 4px 8px;
+    margin-bottom: 10px;
+  }
+
+  .breadcrumbs span {
+    gap: 6px;
+  }
+
+  .footerLinks a {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.82rem;
+  }
+
+  .pageHeader h1 {
+    font-size: 1.7rem;
+  }
+
+  .navLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .heroPanel,
+  .listPanel,
+  .contentBand,
+  .articleBody,
+  .mcqCard,
+  .pdfCta,
+  .topicCard,
+  .questionRow {
+    padding: 16px;
   }
 }
