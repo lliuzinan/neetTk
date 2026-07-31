@@ -148,7 +148,7 @@ for (const question of questions) {
 }
 
 const topics = [...topicMap.values()];
-const notes = topics.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).slice(0, 8).map((topic, index) => ({
+const notes = topics.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).map((topic, index) => ({
   id: `note-${topic.slug}`,
   slug: topic.slug,
   title: `${topic.name}: NEET-UG Biology NCERT Revision Notes`,

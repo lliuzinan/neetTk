@@ -828,6 +828,29 @@
     "sortOrder": 36
   },
   {
+    "id": "neetug-bio-521331",
+    "sourceId": 521331,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following cannot be used as a gene cloning vector?",
+    "options": {
+      "A": "plasmid",
+      "B": "M13 bacteriophage",
+      "C": "viral RNA",
+      "D": "λ bacteriophage"
+    },
+    "correctOption": "C",
+    "explanation": "Plasmids, M13 bacteriophage, and λ bacteriophage are commonly used as vectors in recombinant DNA technology. Viral RNA cannot be directly used as a cloning vector.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 37
+  },
+  {
     "id": "neetug-bio-579528",
     "sourceId": 579528,
     "exam": "NEET-UG",
@@ -848,7 +871,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 38
   },
   {
     "id": "neetug-bio-588344",
@@ -871,7 +894,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 39
   },
   {
     "id": "neetug-bio-588348",
@@ -894,7 +917,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 40
   },
   {
     "id": "neetug-bio-588362",
@@ -917,7 +940,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-588624",
@@ -940,7 +963,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 42
   },
   {
     "id": "neetug-bio-588742",
@@ -963,7 +986,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 43
   },
   {
     "id": "neetug-bio-588795",
@@ -986,7 +1009,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 44
   },
   {
     "id": "neetug-bio-588802",
@@ -1009,7 +1032,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-588809",
@@ -1032,7 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-588820",
@@ -1055,7 +1078,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 47
   },
   {
     "id": "neetug-bio-588825",
@@ -1078,7 +1101,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-588830",
@@ -1101,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-588848",
@@ -1124,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-589004",
@@ -1147,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-589104",
@@ -1170,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-589135",
@@ -1193,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-589160",
@@ -1216,7 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-520527",
@@ -1239,7 +1262,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-588773",
@@ -1262,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-589163",
@@ -1285,7 +1308,191 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 56
+    "sortOrder": 57
+  },
+  {
+    "id": "neetug-bio-515698",
+    "sourceId": 515698,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "If the Na+ concentration in the bathing solution of an isolated nerve fiber is reduced, then the overshoot value of the action potential in a single nerve fiber will",
+    "options": {
+      "A": "increase",
+      "B": "decrease",
+      "C": "remain unchanged",
+      "D": "first increase then decrease"
+    },
+    "correctOption": "B",
+    "explanation": "The overshoot value of an action potential is primarily determined by the Na+ channels opening. A reduction in extracellular Na+ concentration will lead to a smaller influx of Na+, thereby reducing the overshoot value.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 58
+  },
+  {
+    "id": "neetug-bio-515700",
+    "sourceId": 515700,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following membrane potentials is entirely determined by the intrinsic electrical properties of the membrane without activation of ion channels?",
+    "options": {
+      "A": "action potential",
+      "B": "local response",
+      "C": "endplate potential",
+      "D": "electrotonic potential"
+    },
+    "correctOption": "D",
+    "explanation": "Electrotonic potential, also known as electric tension potential, is a graded potential that occurs due to the passive flow of ions across the membrane without the activation of ion channels. Action potentials, local responses, and endplate potentials are all related to the activation of ion channels.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 59
+  },
+  {
+    "id": "neetug-bio-515705",
+    "sourceId": 515705,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "During the depolarization phase of an action potential in a nerve fiber, the membrane potential value exceeding 0mV is called",
+    "options": {
+      "A": "depolarization",
+      "B": "hyperpolarization",
+      "C": "repolarization",
+      "D": "overshoot"
+    },
+    "correctOption": "D",
+    "explanation": "Overshoot refers to the temporary increase in membrane potential that exceeds the resting potential during the depolarization phase of an action potential.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 60
+  },
+  {
+    "id": "neetug-bio-515706",
+    "sourceId": 515706,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following describes the mechanism for the formation of the repolarization phase in a nerve fiber action potential?",
+    "options": {
+      "A": "Na+ channels deactivate",
+      "B": "K+ channels activate",
+      "C": "Na+ channels deactivate and K+ channels activate",
+      "D": "Cl- channels activate"
+    },
+    "correctOption": "C",
+    "explanation": "During the repolarization phase of an action potential in a nerve fiber, sodium (Na+) channels deactivate while potassium (K+) channels become active. This leads to the efflux of potassium ions and helps restore the resting membrane potential.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 61
+  },
+  {
+    "id": "neetug-bio-515710",
+    "sourceId": 515710,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "The amplitude of the action potential in a neuron is closest to",
+    "options": {
+      "A": "potassium equilibrium potential",
+      "B": "sodium equilibrium potential",
+      "C": "difference between potassium equilibrium potential and resting potential",
+      "D": "difference between sodium equilibrium potential and resting potential"
+    },
+    "correctOption": "D",
+    "explanation": "The amplitude of the action potential in a neuron is closest to the difference between the sodium equilibrium potential and the resting potential. This is because during an action potential, sodium ions rapidly enter the cell, causing a depolarization that overshoots the sodium equilibrium potential.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 62
+  },
+  {
+    "id": "neetug-bio-515711",
+    "sourceId": 515711,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "The main factor affecting the amplitude of a nerve fiber action potential is",
+    "options": {
+      "A": "stimulus intensity",
+      "B": "duration of stimulus",
+      "C": "concentration of K+ on both sides of the cell membrane",
+      "D": "concentration of Na+ on both sides of the cell membrane"
+    },
+    "correctOption": "D",
+    "explanation": "The amplitude of a nerve fiber action potential is primarily determined by the concentration difference of sodium ions (Na+) across the cell membrane. Changes in this concentration gradient affect the magnitude of the generated action potential.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 63
+  },
+  {
+    "id": "neetug-bio-515715",
+    "sourceId": 515715,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "When the threshold potential level of a cell is raised (shifted upwards), it will result in",
+    "options": {
+      "A": "decreased excitability of the cell",
+      "B": "greater amplitude of the action potential",
+      "C": "activation of more Na+ channels upon excitation",
+      "D": "decreased number of Na+ channels activated"
+    },
+    "correctOption": "A",
+    "explanation": "When the threshold potential level is raised, it becomes harder for the cell to reach the threshold required for an action potential. This leads to a decrease in the cell's excitability.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 64
+  },
+  {
+    "id": "neetug-bio-516059",
+    "sourceId": 516059,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human respiration",
+    "topicSlug": "human-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 14",
+    "stem": "Which factor causes the rightward shift of the oxygen dissociation curve?",
+    "options": {
+      "A": "an increase in PCO₂ partial pressure",
+      "B": "a decrease in 2,3-DPG",
+      "C": "an increase in pH",
+      "D": "a decrease in temperature"
+    },
+    "correctOption": "A",
+    "explanation": "An increase in PCO₂ partial pressure causes the rightward shift of the oxygen dissociation curve. This is because higher CO₂ levels lead to more H⁺ ions, which bind to hemoglobin and reduce its affinity for oxygen, facilitating easier release of oxygen to tissues.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-516216",
@@ -1308,7 +1515,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 66
   },
   {
     "id": "neetug-bio-516300",
@@ -1331,7 +1538,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 67
+  },
+  {
+    "id": "neetug-bio-516412",
+    "sourceId": 516412,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "When an action potential reaches the synaptic terminal, which of the following is a key change that triggers neurotransmitter release?",
+    "options": {
+      "A": "Na+ influx",
+      "B": "Ca2+ influx",
+      "C": "K+ efflux",
+      "D": "Cl- efflux"
+    },
+    "correctOption": "B",
+    "explanation": "Calcium ions (Ca2+) influx into the synaptic terminal is a key change that triggers neurotransmitter release.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 68
+  },
+  {
+    "id": "neetug-bio-516413",
+    "sourceId": 516413,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following changes can directly reduce the release of neurotransmitters at the synaptic terminal due to an action potential?",
+    "options": {
+      "A": "Increase in Na+ influx, prolonging the duration of the action potential",
+      "B": "Decrease in Ca2+ influx",
+      "C": "Slowing down K+ efflux",
+      "D": "Increase in Ca2+ channel permeability"
+    },
+    "correctOption": "B",
+    "explanation": "A decrease in Ca2+ influx directly reduces the release of neurotransmitters at the synaptic terminal. Na+ influx and its prolongation, slowing K+ efflux, and increasing Ca2+ channel permeability do not directly reduce neurotransmitter release.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 69
+  },
+  {
+    "id": "neetug-bio-516425",
+    "sourceId": 516425,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "In the central nervous system, which type of glial cell forms myelin sheaths?",
+    "options": {
+      "A": "astrocytes",
+      "B": "oligodendrocytes",
+      "C": "microglia",
+      "D": "Schwann cells"
+    },
+    "correctOption": "B",
+    "explanation": "Oligodendrocytes are the glial cells in the central nervous system that form myelin sheaths around axons.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 70
+  },
+  {
+    "id": "neetug-bio-516428",
+    "sourceId": 516428,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "The main mechanism for the generation of a fast excitatory postsynaptic potential (fast EPSP) is",
+    "options": {
+      "A": "release of more neurotransmitter at the presynaptic terminal",
+      "B": "increased reactivity of the postsynaptic neuron",
+      "C": "reduced K+ efflux from the postsynaptic membrane",
+      "D": "increased Na+ influx into the postsynaptic membrane"
+    },
+    "correctOption": "D",
+    "explanation": "Fast EPSP is primarily generated by an increase in Na+ influx into the postsynaptic membrane, which depolarizes the membrane and triggers the action potential.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 71
   },
   {
     "id": "neetug-bio-516430",
@@ -1354,7 +1653,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-516615",
@@ -1377,7 +1676,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
+    "sortOrder": 73
   },
   {
     "id": "neetug-bio-516616",
@@ -1400,7 +1699,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 74
   },
   {
     "id": "neetug-bio-516625",
@@ -1423,7 +1722,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 75
   },
   {
     "id": "neetug-bio-516658",
@@ -1446,7 +1745,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 63
+    "sortOrder": 76
   },
   {
     "id": "neetug-bio-516661",
@@ -1469,7 +1768,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 64
+    "sortOrder": 77
   },
   {
     "id": "neetug-bio-516698",
@@ -1492,7 +1791,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 65
+    "sortOrder": 78
   },
   {
     "id": "neetug-bio-516716",
@@ -1515,7 +1814,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 66
+    "sortOrder": 79
+  },
+  {
+    "id": "neetug-bio-516756",
+    "sourceId": 516756,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "Which hormone is most crucial for the occurrence of ovulation during the menstrual cycle?",
+    "options": {
+      "A": "estrogen",
+      "B": "progestogen",
+      "C": "luteinizing hormone",
+      "D": "follicle-stimulating hormone"
+    },
+    "correctOption": "C",
+    "explanation": "Luteinizing hormone (LH) triggers the release of an egg from the ovary during the mid-cycle of the menstrual cycle.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 80
+  },
+  {
+    "id": "neetug-bio-516757",
+    "sourceId": 516757,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "During which phase of the menstrual cycle does the dominant follicle produce a large amount of estrogen?",
+    "options": {
+      "A": "First 4 days",
+      "B": "5th to 14th day",
+      "C": "15th to 20th day",
+      "D": "21st to 25th day"
+    },
+    "correctOption": "B",
+    "explanation": "The dominant follicle produces a large amount of estrogen during the follicular phase, which spans from the 5th to the 14th day of the menstrual cycle.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 81
+  },
+  {
+    "id": "neetug-bio-516758",
+    "sourceId": 516758,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "If fertilization does not occur, during which phase of the menstrual cycle does the corpus luteum degenerate?",
+    "options": {
+      "A": "First 4 days",
+      "B": "5th to 14th day",
+      "C": "15th to 20th day",
+      "D": "21st to 25th day"
+    },
+    "correctOption": "D",
+    "explanation": "The corpus luteum degenerates during the luteal phase, which is from the 21st to the 25th day of the menstrual cycle if fertilization does not occur.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 82
   },
   {
     "id": "neetug-bio-520307",
@@ -1538,7 +1906,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 67
+    "sortOrder": 83
   },
   {
     "id": "neetug-bio-520332",
@@ -1561,7 +1929,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 68
+    "sortOrder": 84
   },
   {
     "id": "neetug-bio-520370",
@@ -1584,7 +1952,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 69
+    "sortOrder": 85
   },
   {
     "id": "neetug-bio-520545",
@@ -1607,7 +1975,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 70
+    "sortOrder": 86
   },
   {
     "id": "neetug-bio-520555",
@@ -1630,7 +1998,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 71
+    "sortOrder": 87
   },
   {
     "id": "neetug-bio-520570",
@@ -1653,7 +2021,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 72
+    "sortOrder": 88
   },
   {
     "id": "neetug-bio-520571",
@@ -1676,7 +2044,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 73
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-520678",
@@ -1699,7 +2067,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 74
+    "sortOrder": 90
   },
   {
     "id": "neetug-bio-520843",
@@ -1722,7 +2090,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 75
+    "sortOrder": 91
   },
   {
     "id": "neetug-bio-520897",
@@ -1745,7 +2113,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 76
+    "sortOrder": 92
   },
   {
     "id": "neetug-bio-521005",
@@ -1768,7 +2136,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 77
+    "sortOrder": 93
   },
   {
     "id": "neetug-bio-521009",
@@ -1791,7 +2159,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 78
+    "sortOrder": 94
   },
   {
     "id": "neetug-bio-521010",
@@ -1814,7 +2182,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 79
+    "sortOrder": 95
   },
   {
     "id": "neetug-bio-521015",
@@ -1837,7 +2205,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 80
+    "sortOrder": 96
   },
   {
     "id": "neetug-bio-521078",
@@ -1860,7 +2228,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 81
+    "sortOrder": 97
   },
   {
     "id": "neetug-bio-521093",
@@ -1883,7 +2251,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 82
+    "sortOrder": 98
   },
   {
     "id": "neetug-bio-521106",
@@ -1906,7 +2274,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 83
+    "sortOrder": 99
   },
   {
     "id": "neetug-bio-521118",
@@ -1929,7 +2297,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 84
+    "sortOrder": 100
   },
   {
     "id": "neetug-bio-521131",
@@ -1952,7 +2320,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 85
+    "sortOrder": 101
   },
   {
     "id": "neetug-bio-521137",
@@ -1975,7 +2343,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 86
+    "sortOrder": 102
   },
   {
     "id": "neetug-bio-521273",
@@ -1998,7 +2366,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 87
+    "sortOrder": 103
   },
   {
     "id": "neetug-bio-521290",
@@ -2021,7 +2389,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 88
+    "sortOrder": 104
+  },
+  {
+    "id": "neetug-bio-521305",
+    "sourceId": 521305,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following is not a basic process in DNA recombinant technology?",
+    "options": {
+      "A": "induction expression of the gene",
+      "B": "ligation of DNA fragments with vectors",
+      "C": "selection and preparation of vectors",
+      "D": "transformation of recipient cells with recombinant DNA and cloning"
+    },
+    "correctOption": "A",
+    "explanation": "Induction expression of the gene is not a basic process in DNA recombinant technology; it involves controlling the expression of the inserted gene, which is an advanced step.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 105
   },
   {
     "id": "neetug-bio-521307",
@@ -2044,7 +2435,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 89
+    "sortOrder": 106
+  },
+  {
+    "id": "neetug-bio-521314",
+    "sourceId": 521314,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following DNA is generally not used as a gene engineering vector?",
+    "options": {
+      "A": "bacterial chromosome",
+      "B": "plasmid DNA",
+      "C": "viral DNA",
+      "D": "phage DNA"
+    },
+    "correctOption": "A",
+    "explanation": "Bacterial chromosomes are part of the bacterial cell and not typically used for gene transfer or genetic engineering purposes. Plasmids, viral DNA, and phage DNA are commonly used as vectors in recombinant DNA technology.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 107
+  },
+  {
+    "id": "neetug-bio-521315",
+    "sourceId": 521315,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "In gene engineering, the most commonly used plasmid DNA comes from",
+    "options": {
+      "A": "an extrachromosomal genetic element of bacteria",
+      "B": "a part of bacterial chromosome DNA",
+      "C": "a part of eukaryotic cell mitochondrial DNA",
+      "D": "a part of eukaryotic cell chromosome DNA"
+    },
+    "correctOption": "A",
+    "explanation": "Plasmids are small, circular, extrachromosomal DNA molecules that can replicate independently in bacteria. They are commonly used as vectors in gene engineering.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 108
   },
   {
     "id": "neetug-bio-521329",
@@ -2067,7 +2504,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 90
+    "sortOrder": 109
+  },
+  {
+    "id": "neetug-bio-521330",
+    "sourceId": 521330,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following is not a characteristic of Type II restriction enzymes?",
+    "options": {
+      "A": "Recognize sequences consisting of 4-6 bases",
+      "B": "Recognition sequence depends on DNA source",
+      "C": "Result in sticky ends after cutting",
+      "D": "Result in blunt ends after cutting"
+    },
+    "correctOption": "B",
+    "explanation": "Type II restriction enzymes recognize specific sequences and cut within or close to these sequences. The recognition sequence is not dependent on the DNA source but rather on the enzyme itself.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 110
   },
   {
     "id": "neetug-bio-521366",
@@ -2090,7 +2550,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 91
+    "sortOrder": 111
   },
   {
     "id": "neetug-bio-521384",
@@ -2113,7 +2573,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 92
+    "sortOrder": 112
   },
   {
     "id": "neetug-bio-521454",
@@ -2136,7 +2596,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 93
+    "sortOrder": 113
   },
   {
     "id": "neetug-bio-579014",
@@ -2159,7 +2619,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 94
+    "sortOrder": 114
   },
   {
     "id": "neetug-bio-579015",
@@ -2182,7 +2642,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 95
+    "sortOrder": 115
   },
   {
     "id": "neetug-bio-579016",
@@ -2205,7 +2665,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 96
+    "sortOrder": 116
   },
   {
     "id": "neetug-bio-579017",
@@ -2228,7 +2688,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 97
+    "sortOrder": 117
   },
   {
     "id": "neetug-bio-579034",
@@ -2251,7 +2711,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 98
+    "sortOrder": 118
   },
   {
     "id": "neetug-bio-579035",
@@ -2274,7 +2734,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 99
+    "sortOrder": 119
   },
   {
     "id": "neetug-bio-579057",
@@ -2297,7 +2757,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 100
+    "sortOrder": 120
   },
   {
     "id": "neetug-bio-579069",
@@ -2320,7 +2780,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 101
+    "sortOrder": 121
   },
   {
     "id": "neetug-bio-579101",
@@ -2343,7 +2803,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 102
+    "sortOrder": 122
   },
   {
     "id": "neetug-bio-579160",
@@ -2366,7 +2826,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 103
+    "sortOrder": 123
+  },
+  {
+    "id": "neetug-bio-579165",
+    "sourceId": 579165,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "In meiosis during the pachytene stage, a heterozygote for reciprocal translocation shows characteristic pairing of homologous regions forming",
+    "options": {
+      "A": "ring",
+      "B": "inverted loop",
+      "C": "dyad",
+      "D": "tetrad"
+    },
+    "correctOption": "B",
+    "explanation": "During the pachytene stage of meiosis, a heterozygote for reciprocal translocation shows characteristic pairing of homologous regions forming an inverted loop due to the exchange of genetic material between non-sister chromatids.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 124
   },
   {
     "id": "neetug-bio-579532",
@@ -2389,7 +2872,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 104
+    "sortOrder": 125
   },
   {
     "id": "neetug-bio-579543",
@@ -2412,7 +2895,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 105
+    "sortOrder": 126
   },
   {
     "id": "neetug-bio-579546",
@@ -2435,7 +2918,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 106
+    "sortOrder": 127
   },
   {
     "id": "neetug-bio-579957",
@@ -2458,7 +2941,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 107
+    "sortOrder": 128
   },
   {
     "id": "neetug-bio-588319",
@@ -2481,7 +2964,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 108
+    "sortOrder": 129
   },
   {
     "id": "neetug-bio-588339",
@@ -2504,7 +2987,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 109
+    "sortOrder": 130
   },
   {
     "id": "neetug-bio-588343",
@@ -2527,7 +3010,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 110
+    "sortOrder": 131
+  },
+  {
+    "id": "neetug-bio-588347",
+    "sourceId": 588347,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "Which of the following is not a function of prokaryotic cells?",
+    "options": {
+      "A": "cell growth and movement",
+      "B": "glycolysis",
+      "C": "mitosis",
+      "D": "replication of genetic material"
+    },
+    "correctOption": "C",
+    "explanation": "Prokaryotic cells do not undergo mitosis; they reproduce through binary fission.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 132
   },
   {
     "id": "neetug-bio-588359",
@@ -2550,7 +3056,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 111
+    "sortOrder": 133
   },
   {
     "id": "neetug-bio-588366",
@@ -2573,7 +3079,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 112
+    "sortOrder": 134
   },
   {
     "id": "neetug-bio-588370",
@@ -2596,7 +3102,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 113
+    "sortOrder": 135
   },
   {
     "id": "neetug-bio-588375",
@@ -2619,7 +3125,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 114
+    "sortOrder": 136
   },
   {
     "id": "neetug-bio-588446",
@@ -2642,7 +3148,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 115
+    "sortOrder": 137
   },
   {
     "id": "neetug-bio-588459",
@@ -2665,7 +3171,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 116
+    "sortOrder": 138
   },
   {
     "id": "neetug-bio-588508",
@@ -2688,7 +3194,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 117
+    "sortOrder": 139
   },
   {
     "id": "neetug-bio-588535",
@@ -2711,7 +3217,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 118
+    "sortOrder": 140
   },
   {
     "id": "neetug-bio-588536",
@@ -2734,7 +3240,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 119
+    "sortOrder": 141
   },
   {
     "id": "neetug-bio-588538",
@@ -2757,7 +3263,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 120
+    "sortOrder": 142
   },
   {
     "id": "neetug-bio-588548",
@@ -2780,7 +3286,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 121
+    "sortOrder": 143
   },
   {
     "id": "neetug-bio-588556",
@@ -2803,7 +3309,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 122
+    "sortOrder": 144
   },
   {
     "id": "neetug-bio-588558",
@@ -2826,7 +3332,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 123
+    "sortOrder": 145
   },
   {
     "id": "neetug-bio-588573",
@@ -2849,7 +3355,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 124
+    "sortOrder": 146
   },
   {
     "id": "neetug-bio-588601",
@@ -2872,7 +3378,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 125
+    "sortOrder": 147
   },
   {
     "id": "neetug-bio-588609",
@@ -2895,7 +3401,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 126
+    "sortOrder": 148
+  },
+  {
+    "id": "neetug-bio-588658",
+    "sourceId": 588658,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "Colchicine can inhibit cell mitosis and cause it to arrest in",
+    "options": {
+      "A": "prophase",
+      "B": "metaphase",
+      "C": "anaphase",
+      "D": "telophase"
+    },
+    "correctOption": "B",
+    "explanation": "Colchicine affects the formation of the spindle fibers, which are crucial for chromosome movement during prophase and metaphase. Therefore, it commonly arrests cells in metaphase.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 149
   },
   {
     "id": "neetug-bio-588824",
@@ -2918,7 +3447,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 127
+    "sortOrder": 150
+  },
+  {
+    "id": "neetug-bio-589055",
+    "sourceId": 589055,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "The second meiotic division of the ovum is completed after",
+    "options": {
+      "A": "fertilization",
+      "B": "ovulation",
+      "C": "maturation of the follicle",
+      "D": "primary follicle stage"
+    },
+    "correctOption": "A",
+    "explanation": "The second meiotic division of the ovum occurs post-fertilization.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 151
+  },
+  {
+    "id": "neetug-bio-589056",
+    "sourceId": 589056,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "During cleavage, the cell cycle includes",
+    "options": {
+      "A": "G 1 phase, G 2 phase, S phase, M phase",
+      "B": "S phase, M phase",
+      "C": "M phase only",
+      "D": "G 2 phase, S phase, M phase"
+    },
+    "correctOption": "A",
+    "explanation": "Cleavage involves the rapid division of cells after fertilization. The cell cycle during this process includes G1 phase (preparation for DNA synthesis), G2 phase (post-DNA synthesis and preparation for mitosis), S phase (DNA replication), and M phase (mitosis).",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 152
   },
   {
     "id": "neetug-bio-589057",
@@ -2941,7 +3516,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 128
+    "sortOrder": 153
+  },
+  {
+    "id": "neetug-bio-589103",
+    "sourceId": 589103,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "After fertilization, the egg immediately enters a rapid mitotic division phase. This period of rapid division is known as",
+    "options": {
+      "A": "fertilization",
+      "B": "embryonic stage",
+      "C": "gestation period",
+      "D": "cleavage"
+    },
+    "correctOption": "D",
+    "explanation": "The term 'cleavage' refers to the series of rapid mitotic divisions that occur in the early embryo after fertilization.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 154
   },
   {
     "id": "neetug-bio-516139",
@@ -2964,7 +3562,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 129
+    "sortOrder": 155
+  },
+  {
+    "id": "neetug-bio-516438",
+    "sourceId": 516438,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "During a reflex activity, after the stimulus stops, the motor nerve fiber can still generate action potentials. Physiology describes this phenomenon using which of the following concepts?",
+    "options": {
+      "A": "post-discharge",
+      "B": "synaptic facilitation",
+      "C": "central delay",
+      "D": "temporal summation"
+    },
+    "correctOption": "A",
+    "explanation": "Post-discharge refers to the continued generation of action potentials in motor nerve fibers after the stimulus has ceased, which accurately describes the phenomenon mentioned.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 156
   },
   {
     "id": "neetug-bio-516588",
@@ -2987,7 +3608,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 130
+    "sortOrder": 157
   },
   {
     "id": "neetug-bio-516628",
@@ -3010,7 +3631,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 131
+    "sortOrder": 158
   },
   {
     "id": "neetug-bio-520277",
@@ -3033,7 +3654,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 132
+    "sortOrder": 159
   },
   {
     "id": "neetug-bio-520291",
@@ -3056,7 +3677,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 133
+    "sortOrder": 160
   },
   {
     "id": "neetug-bio-520340",
@@ -3079,7 +3700,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 134
+    "sortOrder": 161
   },
   {
     "id": "neetug-bio-520587",
@@ -3102,7 +3723,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 135
+    "sortOrder": 162
   },
   {
     "id": "neetug-bio-521024",
@@ -3125,7 +3746,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 136
+    "sortOrder": 163
   },
   {
     "id": "neetug-bio-521092",
@@ -3148,7 +3769,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 137
+    "sortOrder": 164
+  },
+  {
+    "id": "neetug-bio-521300",
+    "sourceId": 521300,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following is a necessary condition for a cloning vector?",
+    "options": {
+      "A": "capable of direct cutting and ligation",
+      "B": "multiple single enzyme cut sites",
+      "C": "promoter sequence",
+      "D": "sufficiently large molecular weight"
+    },
+    "correctOption": "B",
+    "explanation": "Multiple single enzyme cut sites are essential for the insertion of foreign DNA into a cloning vector.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 165
+  },
+  {
+    "id": "neetug-bio-521304",
+    "sourceId": 521304,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Recombinant DNA technology",
+    "topicSlug": "recombinant-dna-technology",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following methods is not used for sequence-specific screening of recombinant DNA?",
+    "options": {
+      "A": "PCR amplification method",
+      "B": "Restriction enzyme electrophoresis method",
+      "C": "Nucleic acid hybridization method",
+      "D": "DNA sequencing method"
+    },
+    "correctOption": "A",
+    "explanation": "Alpha-complementation is not a sequence-specific screening method for recombinant DNA.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 166
   },
   {
     "id": "neetug-bio-521308",
@@ -3171,7 +3838,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 138
+    "sortOrder": 167
   },
   {
     "id": "neetug-bio-521321",
@@ -3194,7 +3861,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 139
+    "sortOrder": 168
   },
   {
     "id": "neetug-bio-521345",
@@ -3217,7 +3884,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 140
+    "sortOrder": 169
   },
   {
     "id": "neetug-bio-521391",
@@ -3240,7 +3907,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 141
+    "sortOrder": 170
   },
   {
     "id": "neetug-bio-578586",
@@ -3263,7 +3930,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 142
+    "sortOrder": 171
   },
   {
     "id": "neetug-bio-579009",
@@ -3286,7 +3953,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 143
+    "sortOrder": 172
   },
   {
     "id": "neetug-bio-579013",
@@ -3309,7 +3976,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 144
+    "sortOrder": 173
   },
   {
     "id": "neetug-bio-579032",
@@ -3332,7 +3999,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 145
+    "sortOrder": 174
   },
   {
     "id": "neetug-bio-579107",
@@ -3355,7 +4022,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 146
+    "sortOrder": 175
   },
   {
     "id": "neetug-bio-579187",
@@ -3378,7 +4045,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 147
+    "sortOrder": 176
   },
   {
     "id": "neetug-bio-579914",
@@ -3401,7 +4068,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 148
+    "sortOrder": 177
   },
   {
     "id": "neetug-bio-588084",
@@ -3424,7 +4091,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 149
+    "sortOrder": 178
   },
   {
     "id": "neetug-bio-588342",
@@ -3447,7 +4114,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 150
+    "sortOrder": 179
   },
   {
     "id": "neetug-bio-588346",
@@ -3470,7 +4137,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 151
+    "sortOrder": 180
   },
   {
     "id": "neetug-bio-588358",
@@ -3493,7 +4160,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 152
+    "sortOrder": 181
   },
   {
     "id": "neetug-bio-588433",
@@ -3516,7 +4183,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 153
+    "sortOrder": 182
   },
   {
     "id": "neetug-bio-588534",
@@ -3539,7 +4206,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 154
+    "sortOrder": 183
   },
   {
     "id": "neetug-bio-588615",
@@ -3562,7 +4229,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 155
+    "sortOrder": 184
+  },
+  {
+    "id": "neetug-bio-588678",
+    "sourceId": 588678,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "Which of the following cellular structures are involved in the formation of the mitotic apparatus?",
+    "options": {
+      "A": "nuclear lamina",
+      "B": "nucleoskeleton",
+      "C": "centrioles",
+      "D": "kinetochores"
+    },
+    "correctOption": "C",
+    "explanation": "Centrioles play a crucial role in the formation of the mitotic spindle, which is part of the mitotic apparatus. Nuclear lamina and nucleoskeleton are involved in nuclear structure but not directly in forming the mitotic apparatus. Kinetochores attach chromosomes to microtubules of the spindle.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 185
   },
   {
     "id": "neetug-bio-588831",
@@ -3585,6 +4275,98 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 156
+    "sortOrder": 186
+  },
+  {
+    "id": "neetug-bio-589041",
+    "sourceId": 589041,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "The two meiotic divisions of oogonia occur respectively in",
+    "options": {
+      "A": "before ovulation and after fertilization",
+      "B": "before ovulation and after fertilization",
+      "C": "during puberty and after puberty",
+      "D": "before birth and after birth"
+    },
+    "correctOption": "B",
+    "explanation": "Oogonia undergo the first meiotic division before ovulation, and complete the second meiotic division after fertilization.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 187
+  },
+  {
+    "id": "neetug-bio-589059",
+    "sourceId": 589059,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "In which phase of meiosis is the mammalian egg cell during fertilization?",
+    "options": {
+      "A": "prophase of the first meiotic division",
+      "B": "metaphase of the first meiotic division",
+      "C": "telophase of the first meiotic division",
+      "D": "prophase of the second meiotic division"
+    },
+    "correctOption": "D",
+    "explanation": "The mammalian egg cell is typically in the prophase of the second meiotic division during fertilization.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 188
+  },
+  {
+    "id": "neetug-bio-589073",
+    "sourceId": 589073,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "Which complex can regulate the meiotic division of oocytes?",
+    "options": {
+      "A": "cyclin A-Cdk 2",
+      "B": "cyclin B-Cdk 1",
+      "C": "cyclin D-Cdk 4",
+      "D": "cyclin D-Cdk 6"
+    },
+    "correctOption": "B",
+    "explanation": "Cyclin B-Cdk 1 complex is crucial for the initiation of meiotic division in oocytes.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 189
+  },
+  {
+    "id": "neetug-bio-589098",
+    "sourceId": 589098,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "Mitosis occurs during which phase of the cell cycle?",
+    "options": {
+      "A": "G1 phase",
+      "B": "G2 phase",
+      "C": "S phase",
+      "D": "M phase"
+    },
+    "correctOption": "D",
+    "explanation": "Mitosis is a part of the M (mitotic) phase of the cell cycle, where cell division actually takes place.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 190
   }
 ]
