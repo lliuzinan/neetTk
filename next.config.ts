@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/neet-ug/biology",
         permanent: true,
       },
+      {
+        source: "/medicine/endocrinology",
+        destination: "/neet-ug/biology/endocrine-system-and-hormones",
+        permanent: true,
+      },
     ];
   },
 };

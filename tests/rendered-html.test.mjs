@@ -1,6 +1,20 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import nextConfig from "../next.config.ts";
+
+test("redirects stale GSC URLs to live NEET Biology pages", async () => {
+  const redirects = await nextConfig.redirects();
+
+  assert.deepEqual(
+    redirects.find((redirect) => redirect.source === "/medicine/endocrinology"),
+    {
+      source: "/medicine/endocrinology",
+      destination: "/neet-ug/biology/endocrine-system-and-hormones",
+      permanent: true,
+    },
+  );
+});
 
 test("renders seeded qbank content on public index pages", async () => {
   const [homeHtml, biologyHtml, questionsJson] = await Promise.all([
