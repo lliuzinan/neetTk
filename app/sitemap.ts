@@ -20,6 +20,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: absoluteUrl("/neet-ug/biology/free-mcq-pdf"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
     { url: absoluteUrl("/neet-ug/biology/chapter-wise-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
     { url: absoluteUrl("/neet-ug/biology/mcqs-with-answers"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl("/neet-ug/biology/ncert-class-11-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl("/neet-ug/biology/ncert-class-12-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
     { url: absoluteUrl("/about"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/contact"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/privacy"), lastModified: now, changeFrequency: "monthly", priority: 0.45 },

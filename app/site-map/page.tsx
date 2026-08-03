@@ -37,6 +37,8 @@ export default async function SiteMapPage() {
           <Link href="/neet-ug/biology/free-mcq-pdf">Free NEET Biology MCQ PDF guide</Link>
           <Link href="/neet-ug/biology/chapter-wise-mcqs">Chapter-wise NEET Biology MCQs</Link>
           <Link href="/neet-ug/biology/mcqs-with-answers">NEET Biology MCQs with answers</Link>
+          <Link href="/neet-ug/biology/ncert-class-11-mcqs">NCERT Class 11 Biology MCQs</Link>
+          <Link href="/neet-ug/biology/ncert-class-12-mcqs">NCERT Class 12 Biology MCQs</Link>
           <Link href="/about">About MedQGo</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy Policy</Link>

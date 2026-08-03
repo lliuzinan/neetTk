@@ -85,6 +85,8 @@ export default async function Home() {
             </p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
+              <Link href="/neet-ug/biology/ncert-class-11-mcqs" className="secondaryButton">Class 11 MCQs</Link>
+              <Link href="/neet-ug/biology/ncert-class-12-mcqs" className="secondaryButton">Class 12 MCQs</Link>
               {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}
               <TrackedLink
                 href="/neet-biology-pdf?source=home_hero"

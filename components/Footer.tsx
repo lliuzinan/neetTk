@@ -12,6 +12,8 @@ export function Footer() {
         </div>
         <nav aria-label="Footer navigation" className="footerLinks">
           <Link href="/neet-ug/biology">NEET Biology</Link>
+          <Link href="/neet-ug/biology/ncert-class-11-mcqs">Class 11 MCQs</Link>
+          <Link href="/neet-ug/biology/ncert-class-12-mcqs">Class 12 MCQs</Link>
           <Link href="/neet-biology-pdf">Free PDF</Link>
           <Link href="/neet-ug/biology/free-mcq-pdf">MCQ PDF guide</Link>
           <Link href="/site-map">Sitemap</Link>
