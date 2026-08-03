@@ -30,6 +30,16 @@
     "sortOrder": 3
   },
   {
+    "id": "excretion-and-kidney-function",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Excretion and kidney function",
+    "slug": "excretion-and-kidney-function",
+    "ncertRef": "NCERT Biology Class 11, Chapter 16",
+    "questionCount": 2,
+    "sortOrder": 4
+  },
+  {
     "id": "plant-respiration",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -37,7 +47,7 @@
     "slug": "plant-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 12",
     "questionCount": 13,
-    "sortOrder": 4
+    "sortOrder": 5
   },
   {
     "id": "cell-theory-and-cell-organelles",
@@ -47,7 +57,7 @@
     "slug": "cell-theory-and-cell-organelles",
     "ncertRef": "NCERT Biology Class 11, Chapter 8",
     "questionCount": 24,
-    "sortOrder": 5
+    "sortOrder": 6
   },
   {
     "id": "mutation-and-gene-expression",
@@ -57,7 +67,7 @@
     "slug": "mutation-and-gene-expression",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 23,
-    "sortOrder": 6
+    "sortOrder": 7
   },
   {
     "id": "recombinant-dna-technology",
@@ -67,7 +77,7 @@
     "slug": "recombinant-dna-technology",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 8,
-    "sortOrder": 7
+    "sortOrder": 8
   },
   {
     "id": "pedigree-analysis-and-inheritance-patterns",
@@ -77,7 +87,27 @@
     "slug": "pedigree-analysis-and-inheritance-patterns",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 7,
-    "sortOrder": 8
+    "sortOrder": 9
+  },
+  {
+    "id": "basic-genetic-diseases-as-inheritance-examples",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Basic genetic diseases as inheritance examples",
+    "slug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 2,
+    "sortOrder": 10
+  },
+  {
+    "id": "immunity-pathogens-vaccines",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Immunity pathogens vaccines",
+    "slug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 9,
+    "sortOrder": 11
   },
   {
     "id": "neuron-nerve-impulse-synapse",
@@ -87,7 +117,7 @@
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 13,
-    "sortOrder": 9
+    "sortOrder": 12
   },
   {
     "id": "carbohydrates-proteins-lipids-nucleic-acids",
@@ -97,17 +127,7 @@
     "slug": "carbohydrates-proteins-lipids-nucleic-acids",
     "ncertRef": "NCERT Biology Class 11, Chapter 9",
     "questionCount": 23,
-    "sortOrder": 10
-  },
-  {
-    "id": "excretion-and-kidney-function",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Excretion and kidney function",
-    "slug": "excretion-and-kidney-function",
-    "ncertRef": "NCERT Biology Class 11, Chapter 16",
-    "questionCount": 1,
-    "sortOrder": 11
+    "sortOrder": 13
   },
   {
     "id": "human-reproductive-system-and-gametogenesis",
@@ -117,7 +137,7 @@
     "slug": "human-reproductive-system-and-gametogenesis",
     "ncertRef": "NCERT Biology Class 12, Chapter 2",
     "questionCount": 5,
-    "sortOrder": 12
+    "sortOrder": 14
   },
   {
     "id": "mitosis-and-meiosis",
@@ -127,26 +147,6 @@
     "slug": "mitosis-and-meiosis",
     "ncertRef": "NCERT Biology Class 11, Chapter 10",
     "questionCount": 12,
-    "sortOrder": 13
-  },
-  {
-    "id": "basic-genetic-diseases-as-inheritance-examples",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Basic genetic diseases as inheritance examples",
-    "slug": "basic-genetic-diseases-as-inheritance-examples",
-    "ncertRef": "NCERT Biology Class 12, Chapter 7",
-    "questionCount": 1,
-    "sortOrder": 14
-  },
-  {
-    "id": "immunity-pathogens-vaccines",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Immunity pathogens vaccines",
-    "slug": "immunity-pathogens-vaccines",
-    "ncertRef": "NCERT Biology Class 12, Chapter 7",
-    "questionCount": 1,
     "sortOrder": 15
   }
 ]
