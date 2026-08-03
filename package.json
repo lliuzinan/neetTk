@@ -17,7 +17,8 @@
     "db:generate": "drizzle-kit generate",
     "data:build": "node scripts/build-seed-data.mjs",
     "db:seed-sql": "node scripts/generate-supabase-seed.mjs",
-    "seo:publish": "node scripts/publish-seo-batch.mjs"
+    "seo:publish": "node scripts/publish-seo-batch.mjs",
+    "gsc:opportunities": "node scripts/gsc-opportunities.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

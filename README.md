@@ -91,6 +91,25 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm run build`: verify the vinext build output
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
+- `npm run gsc:opportunities`: fetch Google Search Console impressions by query/page and write SEO improvement opportunities to `data/gsc/opportunities.json` and `.csv`
+
+## Google Search Console Automation
+
+`npm run gsc:opportunities` uses the Search Console API with a Google service
+account. Add the service account email as a user on the `https://medqgo.com/`
+GSC property, then set one of these local-only environment variables:
+
+```bash
+GSC_SITE_URL=https://medqgo.com/
+GSC_SERVICE_ACCOUNT_FILE=/absolute/path/to/google-service-account.json
+```
+
+You can also pass raw JSON with `GSC_SERVICE_ACCOUNT_JSON`. Do not commit GSC
+credentials. Optional flags:
+
+```bash
+npm run gsc:opportunities -- --start 2026-07-30 --end 2026-08-03 --min-impressions 3
+```
 
 ## Learn More
 

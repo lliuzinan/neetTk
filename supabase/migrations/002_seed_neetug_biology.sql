@@ -45,7 +45,7 @@ VALUES ('excretion-and-kidney-function', 'NEET-UG', 'Biology', 'Excretion and ki
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
-VALUES ('human-reproductive-system-and-gametogenesis', 'NEET-UG', 'Biology', 'Human reproductive system and gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'Human reproductive system and gametogenesis MCQs for NEET-UG Biology', 'Practice Human reproductive system and gametogenesis NEET-UG Biology questions with NCERT explanations.', 4, 12)
+VALUES ('human-reproductive-system-and-gametogenesis', 'NEET-UG', 'Biology', 'Human reproductive system and gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'Human reproductive system and gametogenesis MCQs for NEET-UG Biology', 'Practice Human reproductive system and gametogenesis NEET-UG Biology questions with NCERT explanations.', 5, 12)
 ON CONFLICT (id) DO UPDATE SET question_count = EXCLUDED.question_count, updated_at = now();
 
 INSERT INTO topics (id, exam, subject, name, slug, ncert_ref, seo_title, seo_description, question_count, sort_order)
@@ -805,6 +805,10 @@ VALUES ('neetug-bio-588831', 588831, 'NEET-UG', 'Biology', 'carbohydrates-protei
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
 INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
+VALUES ('neetug-bio-589039', 589039, 'NEET-UG', 'Biology', 'human-reproductive-system-and-gametogenesis', 'human-reproductive-system-and-gametogenesis', 'NCERT Biology Class 12, Chapter 2', 'During spermatogenesis in mammals, the acrosome reaction occurs in contact with which structure?', 'zona pellucida', 'cytoplasm of the oocyte', 'follicular cells', 'oolemma', 'A', 'The zona pellucida is the outermost layer of an oocyte that the sperm must penetrate during fertilization. The acrosome reaction in spermatogenesis involves the release of enzymes by the sperm to facilitate penetration through this structure.', 100, 85, 'approved', true)
+ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
+
+INSERT INTO questions (id, source_id, exam, subject, topic_id, topic_slug, ncert_ref, stem, option_a, option_b, option_c, option_d, correct_option, explanation, quality_score, qwenmax_review_score, status, is_free)
 VALUES ('neetug-bio-589041', 589041, 'NEET-UG', 'Biology', 'mitosis-and-meiosis', 'mitosis-and-meiosis', 'NCERT Biology Class 11, Chapter 10', 'The two meiotic divisions of oogonia occur respectively in', 'before ovulation and after fertilization', 'before ovulation and after fertilization', 'during puberty and after puberty', 'before birth and after birth', 'B', 'Oogonia undergo the first meiotic division before ovulation, and complete the second meiotic division after fertilization.', 100, 85, 'approved', true)
 ON CONFLICT (source_id) DO UPDATE SET stem = EXCLUDED.stem, explanation = EXCLUDED.explanation, updated_at = now();
 
@@ -854,6 +858,10 @@ ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.de
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
 VALUES ('note-carbohydrates-proteins-lipids-nucleic-acids', 'topic_note', 'carbohydrates-proteins-lipids-nucleic-acids', 'Carbohydrates proteins lipids nucleic acids: NEET-UG Biology NCERT Revision Notes', 'Revise Carbohydrates proteins lipids nucleic acids for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Carbohydrates proteins lipids nucleic acids NEET UG Biology questions', 'carbohydrates-proteins-lipids-nucleic-acids', 'published')
+ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
+
+INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)
+VALUES ('note-human-reproductive-system-and-gametogenesis', 'topic_note', 'human-reproductive-system-and-gametogenesis', 'Human reproductive system and gametogenesis: NEET-UG Biology NCERT Revision Notes', 'Revise Human reproductive system and gametogenesis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.', 'Human reproductive system and gametogenesis NEET UG Biology questions', 'human-reproductive-system-and-gametogenesis', 'published')
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, description = EXCLUDED.description, updated_at = now();
 
 INSERT INTO seo_pages (id, type, slug, title, description, target_keyword, topic_slug, status)

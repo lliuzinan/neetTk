@@ -4278,6 +4278,29 @@
     "sortOrder": 186
   },
   {
+    "id": "neetug-bio-589039",
+    "sourceId": 589039,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "During spermatogenesis in mammals, the acrosome reaction occurs in contact with which structure?",
+    "options": {
+      "A": "zona pellucida",
+      "B": "cytoplasm of the oocyte",
+      "C": "follicular cells",
+      "D": "oolemma"
+    },
+    "correctOption": "A",
+    "explanation": "The zona pellucida is the outermost layer of an oocyte that the sperm must penetrate during fertilization. The acrosome reaction in spermatogenesis involves the release of enzymes by the sperm to facilitate penetration through this structure.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 187
+  },
+  {
     "id": "neetug-bio-589041",
     "sourceId": 589041,
     "exam": "NEET-UG",
@@ -4298,7 +4321,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 187
+    "sortOrder": 188
   },
   {
     "id": "neetug-bio-589059",
@@ -4321,7 +4344,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 188
+    "sortOrder": 189
   },
   {
     "id": "neetug-bio-589073",
@@ -4344,7 +4367,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 189
+    "sortOrder": 190
   },
   {
     "id": "neetug-bio-589098",
@@ -4367,6 +4390,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 190
+    "sortOrder": 191
   }
 ]

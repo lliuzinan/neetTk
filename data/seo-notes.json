@@ -81,12 +81,21 @@
     "sortOrder": 9
   },
   {
+    "id": "note-human-reproductive-system-and-gametogenesis",
+    "slug": "human-reproductive-system-and-gametogenesis",
+    "title": "Human reproductive system and gametogenesis: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Human reproductive system and gametogenesis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "targetKeyword": "Human reproductive system and gametogenesis NEET UG Biology questions",
+    "sortOrder": 10
+  },
+  {
     "id": "note-mitosis-and-meiosis",
     "slug": "mitosis-and-meiosis",
     "title": "Mitosis and meiosis: NEET-UG Biology NCERT Revision Notes",
     "description": "Revise Mitosis and meiosis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "mitosis-and-meiosis",
     "targetKeyword": "Mitosis and meiosis NEET UG Biology questions",
-    "sortOrder": 10
+    "sortOrder": 11
   }
 ]
