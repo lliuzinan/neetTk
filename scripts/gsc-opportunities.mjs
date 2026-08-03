@@ -1,9 +1,27 @@
 import { createSign } from "node:crypto";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const TOKEN_URL = "https://oauth2.googleapis.com/token";
 const GSC_SCOPE = "https://www.googleapis.com/auth/webmasters.readonly";
 const API_BASE = "https://searchconsole.googleapis.com/webmasters/v3/sites";
+
+function loadDotEnv(path = ".env") {
+  if (!existsSync(path)) return;
+  const lines = readFileSync(path, "utf8").split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const index = trimmed.indexOf("=");
+    if (index <= 0) continue;
+    const key = trimmed.slice(0, index).trim();
+    let value = trimmed.slice(index + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    if (!process.env[key]) process.env[key] = value;
+  }
+}
 
 function parseArgs(argv) {
   const args = {};
@@ -20,6 +38,8 @@ function parseArgs(argv) {
   }
   return args;
 }
+
+loadDotEnv();
 
 function daysAgo(days) {
   const date = new Date();
@@ -65,22 +85,59 @@ async function accessToken(serviceAccount) {
   const signature = createSign("RSA-SHA256").update(unsigned).sign(serviceAccount.private_key);
   const jwt = `${unsigned}.${base64url(signature)}`;
 
-  const response = await fetch(TOKEN_URL, {
-    method: "POST",
+  const body = new URLSearchParams({
+    grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+    assertion: jwt,
+  }).toString();
+  const data = await postJson(TOKEN_URL, {
     headers: { "content-type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({
-      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
-      assertion: jwt,
-    }),
+    body,
+    errorLabel: "Google token request",
   });
-  if (!response.ok) throw new Error(`Google token request failed: ${response.status} ${await response.text()}`);
-  const data = await response.json();
   return data.access_token;
 }
 
+async function postJson(url, { headers, body, errorLabel }) {
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers,
+      body,
+    });
+    if (!response.ok) throw new Error(`${errorLabel} failed: ${response.status} ${await response.text()}`);
+    return await response.json();
+  } catch (error) {
+    if (!String(error.message || "").includes("fetch failed")) throw error;
+  }
+
+  const curlArgs = [
+    "-sS",
+    "--fail-with-body",
+    "--max-time",
+    "60",
+    "-X",
+    "POST",
+  ];
+  for (const [key, value] of Object.entries(headers)) {
+    curlArgs.push("-H", `${key}: ${value}`);
+  }
+  curlArgs.push("--data-binary", "@-", url);
+  try {
+    const output = execFileSync("curl", curlArgs, {
+      input: body,
+      encoding: "utf8",
+      maxBuffer: 20 * 1024 * 1024,
+    });
+    return JSON.parse(output);
+  } catch (error) {
+    const stderr = error.stderr?.toString?.() || "";
+    const stdout = error.stdout?.toString?.() || "";
+    throw new Error(`${errorLabel} failed via fetch and curl. ${stderr || stdout || error.message}`);
+  }
+}
+
 async function searchAnalytics({ token, siteUrl, startDate, endDate, dimensions, rowLimit }) {
-  const response = await fetch(`${API_BASE}/${encodeURIComponent(siteUrl)}/searchAnalytics/query`, {
-    method: "POST",
+  const data = await postJson(`${API_BASE}/${encodeURIComponent(siteUrl)}/searchAnalytics/query`, {
     headers: {
       authorization: `Bearer ${token}`,
       "content-type": "application/json",
@@ -93,9 +150,8 @@ async function searchAnalytics({ token, siteUrl, startDate, endDate, dimensions,
       startRow: 0,
       searchType: "web",
     }),
+    errorLabel: "GSC query",
   });
-  if (!response.ok) throw new Error(`GSC query failed: ${response.status} ${await response.text()}`);
-  const data = await response.json();
   return data.rows || [];
 }
 
@@ -112,8 +168,16 @@ function classify(row, { minImpressions, lowCtr }) {
   const ctr = row.ctr || 0;
   const position = row.position || 0;
   const actions = [];
+  const staleMedicineUrl = /\/medicine\//i.test(page);
+  const clinicalQuery = /\b(abdominal|colic|pain|diagnosis|treatment|patient|clinical)\b/i.test(query);
 
-  if (impressions >= minImpressions && clicks === 0) {
+  if (staleMedicineUrl) {
+    actions.push("Stale medicine URL; keep a permanent redirect to the closest live NEET Biology page instead of creating clinical content.");
+  }
+  if (clinicalQuery) {
+    actions.push("Clinical/medical query is off-strategy for NEET-UG; do not expand content for this query unless it maps to NCERT Biology.");
+  }
+  if (impressions >= minImpressions && clicks === 0 && !staleMedicineUrl && !clinicalQuery) {
     actions.push("Rewrite title/meta to match the query; add the query phrase in H1/H2 or intro if relevant.");
   }
   if (impressions >= minImpressions && ctr > 0 && ctr < lowCtr) {
