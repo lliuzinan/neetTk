@@ -1,5 +1,28 @@
 [
   {
+    "id": "neetug-bio-515670",
+    "sourceId": 515670,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Blood and circulation",
+    "topicSlug": "blood-and-circulation",
+    "ncertRef": "NCERT Biology Class 11, Chapter 15",
+    "stem": "Which of the following does not belong to the internal environment?",
+    "options": {
+      "A": "cellular fluid",
+      "B": "interstitial fluid",
+      "C": "lymph",
+      "D": "cerebrospinal fluid"
+    },
+    "correctOption": "A",
+    "explanation": "The internal environment, also known as the extracellular environment, includes blood plasma, interstitial fluid, and lymph. Cerebrospinal fluid is primarily found within the central nervous system and does not directly participate in general body fluid exchange.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 1
+  },
+  {
     "id": "neetug-bio-516662",
     "sourceId": 516662,
     "exam": "NEET-UG",
@@ -20,7 +43,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 1
+    "sortOrder": 2
   },
   {
     "id": "neetug-bio-516664",
@@ -43,7 +66,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 2
+    "sortOrder": 3
   },
   {
     "id": "neetug-bio-520895",
@@ -66,7 +89,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 3
+    "sortOrder": 4
   },
   {
     "id": "neetug-bio-520922",
@@ -89,7 +112,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 4
+    "sortOrder": 5
   },
   {
     "id": "neetug-bio-521057",
@@ -112,7 +135,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 5
+    "sortOrder": 6
   },
   {
     "id": "neetug-bio-521108",
@@ -135,7 +158,329 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 6
+    "sortOrder": 7
+  },
+  {
+    "id": "neetug-bio-579564",
+    "sourceId": 579564,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "A couple with no phenotypic symptoms of phenylketonuria have given birth to three children affected by the condition. What is the probability that they will have a phenotypically normal child in their future offspring?",
+    "options": {
+      "A": "25%",
+      "B": "50%",
+      "C": "75%",
+      "D": "100%"
+    },
+    "correctOption": "C",
+    "explanation": "Phenylketonuria (PKU) is an autosomal recessive disorder. If both parents are carriers, the probability of having a child affected by PKU is 25%, and the probability of having a phenotypically normal child is 75%. The couple has already had three affected children, which suggests they are likely carriers.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "neetug-bio-588726",
+    "sourceId": 588726,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The main components of a nucleosome are",
+    "options": {
+      "A": "DNA and histones",
+      "B": "RNA and histones",
+      "C": "DNA and non-histone proteins",
+      "D": "RNA and non-histone proteins"
+    },
+    "correctOption": "A",
+    "explanation": "Nucleosomes are composed primarily of DNA wrapped around histone proteins.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 9
+  },
+  {
+    "id": "neetug-bio-515691",
+    "sourceId": 515691,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The process by which endocrine cells secrete protein hormones into the interstitial fluid belongs to",
+    "options": {
+      "A": "endocytosis",
+      "B": "facilitated diffusion",
+      "C": "exocytosis",
+      "D": "active transport"
+    },
+    "correctOption": "C",
+    "explanation": "Endocrine cells secrete protein hormones through exocytosis, where they release the hormones into the interstitial fluid.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 10
+  },
+  {
+    "id": "neetug-bio-515708",
+    "sourceId": 515708,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "During the depolarization phase of an action potential, the direct force promoting Na+ influx is",
+    "options": {
+      "A": "concentration gradient",
+      "B": "electrical gradient",
+      "C": "sodium pump activity",
+      "D": "ATP breakdown"
+    },
+    "correctOption": "B",
+    "explanation": "The direct force promoting Na+ influx during the depolarization phase of an action potential is the electrical gradient. The concentration gradient and sodium pump activity are important but not the direct driving force, while ATP breakdown provides energy but does not directly drive ion movement.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 11
+  },
+  {
+    "id": "neetug-bio-515713",
+    "sourceId": 515713,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following is a measure of tissue excitability?",
+    "options": {
+      "A": "action potential amplitude",
+      "B": "tissue response intensity",
+      "C": "action potential frequency",
+      "D": "threshold"
+    },
+    "correctOption": "D",
+    "explanation": "Threshold is the minimum stimulus required to produce an action potential in a tissue, thus it measures tissue excitability.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 12
+  },
+  {
+    "id": "neetug-bio-515718",
+    "sourceId": 515718,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "In an experiment, if both ends of a nerve fiber are stimulated simultaneously, the two action potentials will",
+    "options": {
+      "A": "pass through the midpoint and conduct to the other end separately",
+      "B": "meet at the midpoint and then return to the starting point",
+      "C": "meet at the midpoint and stop conducting",
+      "D": "only the stronger action potential will pass through the midpoint and reach the other end"
+    },
+    "correctOption": "C",
+    "explanation": "Action potentials in a nerve fiber are all-or-none events. They do not sum up or interfere with each other, so they will not meet and stop conducting at the midpoint.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 13
+  },
+  {
+    "id": "neetug-bio-515721",
+    "sourceId": 515721,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following electrical signals exhibit local excitation characteristics?",
+    "options": {
+      "A": "action potential in a nerve fiber",
+      "B": "action potential in a nerve trunk",
+      "C": "spike potential",
+      "D": "endplate potential"
+    },
+    "correctOption": "D",
+    "explanation": "Endplate potentials are graded potentials that can sum up to produce an action potential but do not reset the membrane potential to the resting level, thus exhibiting local excitation characteristics.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 14
+  },
+  {
+    "id": "neetug-bio-515729",
+    "sourceId": 515729,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "If two stimuli are given with increasing closeness in time to the sciatic nerve of a frog, the amplitude of the second action potential will",
+    "options": {
+      "A": "gradually increase",
+      "B": "graditionally decrease",
+      "C": "first increase then decrease",
+      "D": "first decrease then increase"
+    },
+    "correctOption": "B",
+    "explanation": "The amplitude of the second action potential gradually decreases due to the decremental conduction of nerve impulses in myelinated fibers.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 15
+  },
+  {
+    "id": "neetug-bio-515768",
+    "sourceId": 515768,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Muscle contraction and skeleton",
+    "topicSlug": "muscle-contraction-and-skeleton",
+    "ncertRef": "NCERT Biology Class 11, Chapter 17",
+    "stem": "In striated muscle, the initiating step for myofilament sliding is",
+    "options": {
+      "A": "calcium ions in the sarcoplasm bind to troponin",
+      "B": "myosin ATPase activity increases leading to ATP breakdown",
+      "C": "myosin binds to actin",
+      "D": "cross-bridge binds to actin"
+    },
+    "correctOption": "A",
+    "explanation": "Calcium ions in the sarcoplasm bind to troponin, which is the initiating step for myofilament sliding.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 16
+  },
+  {
+    "id": "neetug-bio-515807",
+    "sourceId": 515807,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The main regulatory hormone for erythropoiesis is",
+    "options": {
+      "A": "testosterone",
+      "B": "estrogen",
+      "C": "thyroid hormone",
+      "D": "erythropoietin"
+    },
+    "correctOption": "D",
+    "explanation": "Erythropoietin (EPO) is the primary hormone that regulates red blood cell production in the body. It is mainly produced by the kidneys and stimulates erythroid progenitor cells to differentiate into mature red blood cells.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 17
+  },
+  {
+    "id": "neetug-bio-515868",
+    "sourceId": 515868,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Blood and circulation",
+    "topicSlug": "blood-and-circulation",
+    "ncertRef": "NCERT Biology Class 11, Chapter 15",
+    "stem": "In the systemic and pulmonary circulations, which of the following values are basically the same?",
+    "options": {
+      "A": "systolic pressure",
+      "B": "diastolic pressure",
+      "C": "pulse pressure",
+      "D": "peripheral resistance"
+    },
+    "correctOption": "B",
+    "explanation": "Systolic and diastolic pressures are similar in both systemic and pulmonary circulations.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 18
+  },
+  {
+    "id": "neetug-bio-515872",
+    "sourceId": 515872,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Blood and circulation",
+    "topicSlug": "blood-and-circulation",
+    "ncertRef": "NCERT Biology Class 11, Chapter 15",
+    "stem": "Which of the following is a correct statement about cardiac output?",
+    "options": {
+      "A": "It is the amount of blood pumped by both ventricles in one heartbeat.",
+      "B": "It is the amount of blood pumped by both ventricles per minute.",
+      "C": "It equals heart rate multiplied by stroke volume.",
+      "D": "Females have higher cardiac output than males of the same weight."
+    },
+    "correctOption": "C",
+    "explanation": "Cardiac output (CO) is calculated as the product of heart rate (HR) and stroke volume (SV). The other options are incorrect.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 19
+  },
+  {
+    "id": "neetug-bio-515953",
+    "sourceId": 515953,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Blood and circulation",
+    "topicSlug": "blood-and-circulation",
+    "ncertRef": "NCERT Biology Class 11, Chapter 15",
+    "stem": "The venous pressure in the dorsalis pedis vein is higher when standing than when lying down, mainly due to",
+    "options": {
+      "A": "decrease in cardiac output",
+      "B": "increase in blood volume",
+      "C": "increased peripheral resistance",
+      "D": "gravitational effect on blood"
+    },
+    "correctOption": "D",
+    "explanation": "The venous pressure in the dorsalis pedis vein is higher when standing than when lying down, mainly due to the gravitational effect on blood. When a person stands, gravity causes an increase in blood pressure in the veins of the lower limbs, leading to higher venous pressure.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 20
+  },
+  {
+    "id": "neetug-bio-516033",
+    "sourceId": 516033,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Muscle contraction and skeleton",
+    "topicSlug": "muscle-contraction-and-skeleton",
+    "ncertRef": "NCERT Biology Class 11, Chapter 17",
+    "stem": "During quiet inhalation, which muscles mainly contract?",
+    "options": {
+      "A": "rib cage muscles and internal intercostal muscles",
+      "B": "external intercostal muscles and diaphragm",
+      "C": "internal intercostal muscles and diaphragm",
+      "D": "external intercostal muscles and abdominal muscles"
+    },
+    "correctOption": "B",
+    "explanation": "During quiet inhalation, the external intercostal muscles and diaphragm mainly contract to expand the thoracic cavity.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 21
   },
   {
     "id": "neetug-bio-516056",
@@ -158,7 +503,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 7
+    "sortOrder": 22
   },
   {
     "id": "neetug-bio-516060",
@@ -181,7 +526,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 8
+    "sortOrder": 23
+  },
+  {
+    "id": "neetug-bio-516061",
+    "sourceId": 516061,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human respiration",
+    "topicSlug": "human-respiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 14",
+    "stem": "The main form of transport for CO2 in the blood is",
+    "options": {
+      "A": "physical dissolution",
+      "B": "oxygenated hemoglobin",
+      "C": "de-oxygenated hemoglobin",
+      "D": "bicarbonate"
+    },
+    "correctOption": "D",
+    "explanation": "Most of the CO2 in the blood is transported as bicarbonate ions. A small amount is dissolved physically, and a smaller portion is bound to hemoglobin.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 24
   },
   {
     "id": "neetug-bio-516220",
@@ -204,7 +572,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 9
+    "sortOrder": 25
   },
   {
     "id": "neetug-bio-516237",
@@ -227,7 +595,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 10
+    "sortOrder": 26
+  },
+  {
+    "id": "neetug-bio-516267",
+    "sourceId": 516267,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Excretion and kidney function",
+    "topicSlug": "excretion-and-kidney-function",
+    "ncertRef": "NCERT Biology Class 11, Chapter 16",
+    "stem": "Which of the following conditions can lead to protein in urine?",
+    "options": {
+      "A": "increase in glomerular filtration rate",
+      "B": "reduction in slit diaphragm number on podocytes",
+      "C": "increase in filtration fraction",
+      "D": "acceleration of tubular fluid flow"
+    },
+    "correctOption": "B",
+    "explanation": "Slit diaphragms are special proteins expressed on the foot processes of podocytes in the glomerulus. They play a crucial role in forming the filtration barrier and preventing blood proteins from being filtered into urine. Therefore, their reduction leads to proteinuria.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 27
+  },
+  {
+    "id": "neetug-bio-516277",
+    "sourceId": 516277,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The reabsorption of sodium ions in the collecting duct is mainly regulated by which hormone?",
+    "options": {
+      "A": "aldosterone",
+      "B": "adrenaline",
+      "C": "ADH",
+      "D": "glucocorticoids"
+    },
+    "correctOption": "A",
+    "explanation": "Aldosterone primarily regulates the reabsorption of sodium ions in the collecting duct.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 28
+  },
+  {
+    "id": "neetug-bio-516292",
+    "sourceId": 516292,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which hormone has the greatest effect on water reabsorption?",
+    "options": {
+      "A": "angiotensin",
+      "B": "aldosterone",
+      "C": "antidiuretic hormone",
+      "D": "parathyroid hormone"
+    },
+    "correctOption": "C",
+    "explanation": "Antidiuretic hormone (ADH) plays a crucial role in regulating water reabsorption by increasing the permeability of the collecting ducts to water.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 29
+  },
+  {
+    "id": "neetug-bio-516295",
+    "sourceId": 516295,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which hormone regulates sodium and potassium excretion in the kidneys?",
+    "options": {
+      "A": "antidiuretic hormone",
+      "B": "atrial natriuretic peptide",
+      "C": "angiotensin",
+      "D": "aldosterone"
+    },
+    "correctOption": "D",
+    "explanation": "Aldosterone is the hormone that primarily regulates sodium and potassium excretion in the kidneys by acting on the distal convoluted tubule and collecting duct of the nephron.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 30
   },
   {
     "id": "neetug-bio-516306",
@@ -250,7 +710,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 11
+    "sortOrder": 31
+  },
+  {
+    "id": "neetug-bio-516406",
+    "sourceId": 516406,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "Which of the following describes the characteristic of nerve impulse conduction in a neuron?",
+    "options": {
+      "A": "Conducted only from axon to terminal unidirectionally",
+      "B": "Action potentials in different fibers of a nerve trunk do not interfere with each other",
+      "C": "Can conduct excitation normally as long as the structure is intact",
+      "D": "Is unaffected by changes in internal environmental factors"
+    },
+    "correctOption": "B",
+    "explanation": "The action potentials in different fibers of a nerve trunk can conduct independently without interfering with each other.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 32
+  },
+  {
+    "id": "neetug-bio-516578",
+    "sourceId": 516578,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following are amine hormones?",
+    "options": {
+      "A": "thyroid hormone",
+      "B": "pituitary hormone",
+      "C": "adrenal cortex hormone",
+      "D": "prolactin"
+    },
+    "correctOption": "B",
+    "explanation": "Amine hormones, also known as biogenic amines, include thyroid hormones. Thyroid hormones are derived from the amino acid tyrosine and fit this category.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 33
   },
   {
     "id": "neetug-bio-516580",
@@ -273,7 +779,122 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 12
+    "sortOrder": 34
+  },
+  {
+    "id": "neetug-bio-516586",
+    "sourceId": 516586,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which hormone must regulate target cell activity through membrane receptors?",
+    "options": {
+      "A": "calcitriol",
+      "B": "thyroid-stimulating hormone",
+      "C": "aldosterone",
+      "D": "testosterone"
+    },
+    "correctOption": "B",
+    "explanation": "Thyroid-stimulating hormone (TSH) acts on the thyroid gland cells via membrane receptors to regulate their activity. Calcitriol, aldosterone, and testosterone do not primarily rely on membrane receptors for their action.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 35
+  },
+  {
+    "id": "neetug-bio-516626",
+    "sourceId": 516626,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which hormone is closely related to the photoperiod?",
+    "options": {
+      "A": "growth hormone",
+      "B": "prolactin",
+      "C": "melatonin",
+      "D": "insulin"
+    },
+    "correctOption": "C",
+    "explanation": "Melatonin, produced by the pineal gland, regulates circadian rhythms and is influenced by light exposure.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 36
+  },
+  {
+    "id": "neetug-bio-516651",
+    "sourceId": 516651,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following hormones is not synthesized by the thyroid gland?",
+    "options": {
+      "A": "calcitonin",
+      "B": "triiodothyronine",
+      "C": "reverse-T3",
+      "D": "thyroid-stimulating hormone"
+    },
+    "correctOption": "D",
+    "explanation": "The thyroid gland synthesizes calcitonin, triiodothyronine (T3), and reverse-T3. However, thyroid-stimulating hormone is produced by the pituitary gland to regulate thyroid function.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 37
+  },
+  {
+    "id": "neetug-bio-516654",
+    "sourceId": 516654,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "In the synthesis of thyroid hormones, which enzyme plays a crucial role?",
+    "options": {
+      "A": "deiodinase",
+      "B": "proteolytic enzyme",
+      "C": "peroxidase",
+      "D": "adenylate cyclase"
+    },
+    "correctOption": "C",
+    "explanation": "Peroxidase is essential for the iodination of tyrosine residues in thyroid hormones.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 38
+  },
+  {
+    "id": "neetug-bio-516657",
+    "sourceId": 516657,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "The plasma protein that primarily binds to thyroid hormones in the blood is",
+    "options": {
+      "A": "CBG",
+      "B": "GHBP",
+      "C": "TBPA",
+      "D": "TBG"
+    },
+    "correctOption": "D",
+    "explanation": "Thyroxine-binding globulin (TBG) is the primary plasma protein that binds to thyroid hormones in the blood.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 39
   },
   {
     "id": "neetug-bio-516660",
@@ -296,7 +917,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 13
+    "sortOrder": 40
+  },
+  {
+    "id": "neetug-bio-516668",
+    "sourceId": 516668,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which substance can stimulate the enlargement of the thyroid gland and secretion of thyroid hormones?",
+    "options": {
+      "A": "TRH",
+      "B": "TSH",
+      "C": "CRH",
+      "D": "T3 and T4"
+    },
+    "correctOption": "B",
+    "explanation": "Thyroid-Stimulating Hormone (TSH) stimulates the enlargement of the thyroid gland and promotes the secretion of thyroid hormones, including T3 and T4.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 41
   },
   {
     "id": "neetug-bio-516729",
@@ -319,7 +963,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 14
+    "sortOrder": 42
+  },
+  {
+    "id": "neetug-bio-516754",
+    "sourceId": 516754,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "If a person's menstrual cycle is between 28 to 30 days, during which days of the cycle would ovulation most likely occur?",
+    "options": {
+      "A": "6th and 8th day",
+      "B": "10th and 12th day",
+      "C": "14th and 16th day",
+      "D": "18th and 20th day"
+    },
+    "correctOption": "C",
+    "explanation": "Ovulation typically occurs around 14 days before the next menstrual period. For a cycle between 28 to 30 days, ovulation would most likely occur between the 14th and 16th day.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 43
+  },
+  {
+    "id": "neetug-bio-516768",
+    "sourceId": 516768,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human reproductive system and gametogenesis",
+    "topicSlug": "human-reproductive-system-and-gametogenesis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "stem": "In a woman of reproductive age with a regular menstrual cycle of 28 days, if a scraping is done on the 17th day of her menstrual cycle, which phase should the endometrium be in?",
+    "options": {
+      "A": "proliferative early",
+      "B": "proliferative late",
+      "C": "secretory early",
+      "D": "secretory late"
+    },
+    "correctOption": "C",
+    "explanation": "On the 17th day of a 28-day menstrual cycle, the endometrium is in the secretory early phase. This is because by this time, the corpus luteum has formed and started secreting progesterone, initiating the secretory changes in the endometrium.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 44
+  },
+  {
+    "id": "neetug-bio-520350",
+    "sourceId": 520350,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about the size of nucleic acid molecules is incorrect?",
+    "options": {
+      "A": "Single-stranded DNA can be represented by the number of nucleotides (nt)",
+      "B": "Double-stranded DNA is measured in base pairs (bp)",
+      "C": "Long DNA can also be expressed in kilobases (kb)",
+      "D": "RNA molecules are generally not measured by the number of nucleotides (nt)"
+    },
+    "correctOption": "D",
+    "explanation": "Single-stranded and double-stranded DNA, as well as RNA, can all be represented by the number of nucleotides. Long DNA is often expressed in kilobases.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 45
   },
   {
     "id": "neetug-bio-520377",
@@ -342,7 +1055,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 15
+    "sortOrder": 46
   },
   {
     "id": "neetug-bio-520500",
@@ -365,7 +1078,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 16
+    "sortOrder": 47
+  },
+  {
+    "id": "neetug-bio-520542",
+    "sourceId": 520542,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Animal tissues",
+    "topicSlug": "animal-tissues",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "stem": "In animal tissues, the important intermediate product from glucose for synthesizing fatty acids is",
+    "options": {
+      "A": "pyruvate",
+      "B": "UTP",
+      "C": "acetyl-CoA",
+      "D": "acetone acid"
+    },
+    "correctOption": "C",
+    "explanation": "Acetyl-CoA is the key intermediate in the conversion of glucose to fatty acids.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 48
   },
   {
     "id": "neetug-bio-520558",
@@ -388,7 +1124,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 17
+    "sortOrder": 49
   },
   {
     "id": "neetug-bio-520569",
@@ -411,7 +1147,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 18
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-520614",
@@ -434,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 19
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-520743",
@@ -457,7 +1193,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 20
+    "sortOrder": 52
+  },
+  {
+    "id": "neetug-bio-520790",
+    "sourceId": 520790,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which of the following cannot be synthesized from tyrosine in the body?",
+    "options": {
+      "A": "adrenaline",
+      "B": "dopamine",
+      "C": "thyroxine",
+      "D": "phenylalanine"
+    },
+    "correctOption": "D",
+    "explanation": "Tyrosine is a precursor for adrenaline, dopamine, and thyroxine but not for phenylalanine.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-520827",
@@ -480,7 +1239,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 21
+    "sortOrder": 54
+  },
+  {
+    "id": "neetug-bio-520899",
+    "sourceId": 520899,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Five kingdom classification",
+    "topicSlug": "five-kingdom-classification",
+    "ncertRef": "NCERT Biology Class 11, Chapter 2",
+    "stem": "The basic structural unit of eukaryotic chromatin is",
+    "options": {
+      "A": "alpha-helix",
+      "B": "nucleosome",
+      "C": "plasmid",
+      "D": "beta-sheet"
+    },
+    "correctOption": "B",
+    "explanation": "Nucleosomes are the fundamental repeating subunits of chromatin in eukaryotes, consisting of DNA wrapped around histone proteins.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-520900",
@@ -503,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 22
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-520906",
@@ -526,7 +1308,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 23
+    "sortOrder": 57
   },
   {
     "id": "neetug-bio-520924",
@@ -549,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 24
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-520926",
@@ -572,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 25
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-520941",
@@ -595,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 26
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-520950",
@@ -618,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 27
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-520963",
@@ -641,7 +1423,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 28
+    "sortOrder": 62
+  },
+  {
+    "id": "neetug-bio-520977",
+    "sourceId": 520977,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The complementary strand of DNA for the given RNA sequence 5' -UGACGA-3' is",
+    "options": {
+      "A": "5'-ACTGCT-3'",
+      "B": "5'-TGACGA-3'",
+      "C": "5'-TCGTCA-3'",
+      "D": "5'-UCGTCA-3'"
+    },
+    "correctOption": "A",
+    "explanation": "The complementary strand of RNA is determined by the base pairing rules: A pairs with U, C pairs with G, and G pairs with C. Therefore, the complementary DNA sequence for 5' -UGACGA-3' would be 5'-ACTGCT-3'.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 63
+  },
+  {
+    "id": "neetug-bio-520978",
+    "sourceId": 520978,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following RNA molecules can regulate gene expression?",
+    "options": {
+      "A": "rRNA",
+      "B": "tRNA",
+      "C": "mRNA",
+      "D": "siRNA"
+    },
+    "correctOption": "D",
+    "explanation": "Small interfering RNA (siRNA) is involved in the regulation of gene expression through processes like RNA interference.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 64
+  },
+  {
+    "id": "neetug-bio-520979",
+    "sourceId": 520979,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Five kingdom classification",
+    "topicSlug": "five-kingdom-classification",
+    "ncertRef": "NCERT Biology Class 11, Chapter 2",
+    "stem": "Which of the following occurs only in prokaryotes and not in eukaryotes during gene expression?",
+    "options": {
+      "A": "AUG as start codon",
+      "B": "Okazaki fragments",
+      "C": "σ factor",
+      "D": "Rare bases in tRNA"
+    },
+    "correctOption": "C",
+    "explanation": "σ factor is involved in transcription initiation by RNA polymerase in prokaryotes but not in eukaryotes. AUG serves as the start codon for both prokaryotes and eukaryotes, Okazaki fragments are formed during DNA replication in both, and rare bases in tRNA are present in both types of organisms.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-520996",
@@ -664,7 +1515,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 66
   },
   {
     "id": "neetug-bio-521061",
@@ -687,7 +1538,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 67
   },
   {
     "id": "neetug-bio-521063",
@@ -710,7 +1561,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 68
   },
   {
     "id": "neetug-bio-521076",
@@ -733,7 +1584,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 69
   },
   {
     "id": "neetug-bio-521077",
@@ -756,7 +1607,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 70
   },
   {
     "id": "neetug-bio-521095",
@@ -779,7 +1630,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 71
+  },
+  {
+    "id": "neetug-bio-521100",
+    "sourceId": 521100,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Hypermethylation of CpG sequences generally leads to the repression of most genes in terms of",
+    "options": {
+      "A": "chromatin being transcriptionally active",
+      "B": "promoting transcription",
+      "C": "inhibiting transcription",
+      "D": "neither inhibiting nor promoting transcription"
+    },
+    "correctOption": "C",
+    "explanation": "Hypermethylation of CpG sequences generally leads to the repression of most genes in terms of inhibiting transcription.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-521139",
@@ -802,7 +1676,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 73
   },
   {
     "id": "neetug-bio-521191",
@@ -825,7 +1699,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 74
   },
   {
     "id": "neetug-bio-521261",
@@ -848,7 +1722,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 75
   },
   {
     "id": "neetug-bio-521331",
@@ -871,7 +1745,260 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 76
+  },
+  {
+    "id": "neetug-bio-521357",
+    "sourceId": 521357,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Polyacrylamide gel electrophoresis has higher resolution than general electrophoresis due to its",
+    "options": {
+      "A": "gradient concentration effect",
+      "B": "molecular sieving effect",
+      "C": "charge aggregation effect",
+      "D": "viscosity effect"
+    },
+    "correctOption": "B",
+    "explanation": "Polyacrylamide gel electrophoresis has higher resolution than general electrophoresis due to its molecular sieving effect, which allows separation based on the size of molecules.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 77
+  },
+  {
+    "id": "neetug-bio-521381",
+    "sourceId": 521381,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following is not a commonly used nucleic acid molecular hybridization technique?",
+    "options": {
+      "A": "Southern blotting",
+      "B": "Northern blotting",
+      "C": "Western blotting",
+      "D": "in situ colony hybridization"
+    },
+    "correctOption": "C",
+    "explanation": "Western blotting is not a nucleic acid hybridization technique; it is used for protein analysis.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 78
+  },
+  {
+    "id": "neetug-bio-521383",
+    "sourceId": 521383,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "Which of the following techniques uses restriction enzymes?",
+    "options": {
+      "A": "DNA sequencing",
+      "B": "RFLP",
+      "C": "RT-PCR",
+      "D": "Western blotting"
+    },
+    "correctOption": "B",
+    "explanation": "Restriction Fragment Length Polymorphism (RFLP) analysis involves cutting DNA with specific restriction enzymes to generate fragments of different lengths, which can be used for genetic analysis.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 79
+  },
+  {
+    "id": "neetug-bio-521386",
+    "sourceId": 521386,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following techniques can be used to detect abnormal gene expression levels?",
+    "options": {
+      "A": "ASO",
+      "B": "Northern blot hybridization",
+      "C": "Southern blot hybridization",
+      "D": "SSCP"
+    },
+    "correctOption": "B",
+    "explanation": "Northern blot hybridization is a technique that detects the presence and quantity of specific RNA molecules, making it suitable for detecting abnormal gene expression levels. ASO (alkali-denatured DNA probes) can detect mutations but not gene expression levels directly. Southern blot hybridization is used to detect DNA sequences in genomic DNA, SSCP (single-strand conformation polymorphism) is used to identify point mutations, and RFLP (restriction fragment length polymorphism) is a genetic marker detection method.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 80
+  },
+  {
+    "id": "neetug-bio-521390",
+    "sourceId": 521390,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "When analyzing genetic abnormalities, the method that detects DNA sequence linear nucleotide information is",
+    "options": {
+      "A": "fluorescence in situ hybridization",
+      "B": "karyotyping",
+      "C": "DNA sequencing",
+      "D": "gene chip"
+    },
+    "correctOption": "C",
+    "explanation": "DNA sequencing directly reads the linear nucleotide sequence of DNA, which is crucial for identifying genetic abnormalities.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 81
+  },
+  {
+    "id": "neetug-bio-521459",
+    "sourceId": 521459,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human genome and DNA polymorphism basics",
+    "topicSlug": "human-genome-and-dna-polymorphism-basics",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The strategy adopted by the Human Genome Project for sequencing is",
+    "options": {
+      "A": "mapping followed by sequencing and shotgun sequencing combined",
+      "B": "mapping followed by sequencing",
+      "C": "shotgun sequencing",
+      "D": "chip sequencing"
+    },
+    "correctOption": "A",
+    "explanation": "The Human Genome Project used a combination of mapping followed by sequencing along with shotgun sequencing to achieve accurate genome sequencing.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 82
+  },
+  {
+    "id": "neetug-bio-579040",
+    "sourceId": 579040,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Phenylketonuria occurs due to the deficiency of phenylalanine hydroxylase leading to",
+    "options": {
+      "A": "metabolic substrate accumulation",
+      "B": "metabolic byproduct accumulation",
+      "C": "accumulation of metabolic intermediate",
+      "D": "lack of metabolic end product"
+    },
+    "correctOption": "A",
+    "explanation": "Phenylketonuria is caused by the deficiency of phenylalanine hydroxylase, which leads to the accumulation of phenylalanine as a metabolic substrate.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 83
+  },
+  {
+    "id": "neetug-bio-579093",
+    "sourceId": 579093,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Population genetics",
+    "topicSlug": "population-genetics",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "stem": "Which of the following populations is in genetic equilibrium?",
+    "options": {
+      "A": "AA: 0.20; Aa: 0.60; aa: 0.20",
+      "B": "AA: 0.25; Aa: 0.50; aa: 0.25",
+      "C": "AA: 0.30; Aa: 0.50; aa: 0.20",
+      "D": "AA: 0.50; Aa: 0; aa: 0.50"
+    },
+    "correctOption": "B",
+    "explanation": "A population is in genetic equilibrium if the frequencies of alleles and genotypes remain constant from one generation to another, as described by the Hardy-Weinberg principle. The given genotype frequencies for option B (AA: 0.25; Aa: 0.50; aa: 0.25) satisfy this condition.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 84
+  },
+  {
+    "id": "neetug-bio-579102",
+    "sourceId": 579102,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mendelian inheritance",
+    "topicSlug": "mendelian-inheritance",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "stem": "In a population, the frequency of the genotype AA at a single nucleotide polymorphism (SNP) locus is 64%, AG is 32%, and GG is 4%. What is the frequency of the allele A?",
+    "options": {
+      "A": "0.64",
+      "B": "0.16",
+      "C": "0.9",
+      "D": "0.8"
+    },
+    "correctOption": "D",
+    "explanation": "The frequency of the allele A can be calculated as (2 * frequency of AA + frequency of AG) / 2 = (2 * 0.64 + 0.32) / 2 = 0.8.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 85
+  },
+  {
+    "id": "neetug-bio-579520",
+    "sourceId": 579520,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following genetic diseases is caused by lysosomal enzyme deficiency?",
+    "options": {
+      "A": "Albinism",
+      "B": "Galactosemia",
+      "C": "Mucopolysaccharidosis",
+      "D": "Phenylketonuria"
+    },
+    "correctOption": "C",
+    "explanation": "Mucopolysaccharidosis is a genetic disorder caused by the deficiency of lysosomal enzymes, leading to the accumulation of mucopolysaccharides in various tissues.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 86
+  },
+  {
+    "id": "neetug-bio-579522",
+    "sourceId": 579522,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which disease is caused due to a deficiency in galactose-1-phosphate uridylyltransferase?",
+    "options": {
+      "A": "albinism",
+      "B": "galactosemia",
+      "C": "mucopolysaccharidosis",
+      "D": "phenylketonuria"
+    },
+    "correctOption": "B",
+    "explanation": "Galactosemia is caused by a deficiency in galactose-1-phosphate uridylyltransferase, leading to the accumulation of toxic metabolites and various symptoms.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 87
   },
   {
     "id": "neetug-bio-579528",
@@ -894,7 +2021,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 88
+  },
+  {
+    "id": "neetug-bio-579614",
+    "sourceId": 579614,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Chromosomal basis of inheritance",
+    "topicSlug": "chromosomal-basis-of-inheritance",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "stem": "The most common chromosomal variation syndrome is",
+    "options": {
+      "A": "Klinefelter syndrome",
+      "B": "Down syndrome",
+      "C": "Turner syndrome",
+      "D": "Cat cry syndrome"
+    },
+    "correctOption": "B",
+    "explanation": "Down syndrome is the most common chromosomal variation syndrome, occurring due to an extra copy of chromosome 21.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-579622",
@@ -917,7 +2067,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 90
   },
   {
     "id": "neetug-bio-587008",
@@ -940,7 +2090,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 91
+  },
+  {
+    "id": "neetug-bio-587115",
+    "sourceId": 587115,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following is correct about hapten?",
+    "options": {
+      "A": "has immunogenicity and immunoreactivity",
+      "B": "has immunogenicity, but no immunoreactivity",
+      "C": "has immunoreactivity, but no immunogenicity",
+      "D": "can only combine with corresponding antibodies after binding to a carrier"
+    },
+    "correctOption": "C",
+    "explanation": "Hapten is a molecule that can react with antibodies but lacks the ability to induce an immune response on its own.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 92
   },
   {
     "id": "neetug-bio-587136",
@@ -963,7 +2136,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 93
+  },
+  {
+    "id": "neetug-bio-587158",
+    "sourceId": 587158,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "The specific binding site of antibodies to antigens is located in",
+    "options": {
+      "A": "CH and CL",
+      "B": "VH and CL",
+      "C": "VH and CH",
+      "D": "VL and CL"
+    },
+    "correctOption": "B",
+    "explanation": "The variable regions VH (Variable Heavy) and VL (Variable Light) of antibodies are responsible for the specific binding to antigens.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 94
+  },
+  {
+    "id": "neetug-bio-587180",
+    "sourceId": 587180,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following is a characteristic of monoclonal antibodies?",
+    "options": {
+      "A": "are not specific",
+      "B": "are prone to cross-reaction",
+      "C": "are difficult to produce in large quantities",
+      "D": "have a wide source"
+    },
+    "correctOption": "B",
+    "explanation": "Monoclonal antibodies are highly specific and recognize only one particular antigenic determinant, making options A, C, and D incorrect.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 95
   },
   {
     "id": "neetug-bio-587183",
@@ -986,7 +2205,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 96
+  },
+  {
+    "id": "neetug-bio-587196",
+    "sourceId": 587196,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "After vaccination, the first antibodies produced are",
+    "options": {
+      "A": "IgA",
+      "B": "IgG",
+      "C": "IgE",
+      "D": "IgM"
+    },
+    "correctOption": "D",
+    "explanation": "The primary antibodies produced after vaccination are IgM. IgM is typically the first antibody to be detected post-vaccination due to its rapid production.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 97
   },
   {
     "id": "neetug-bio-587200",
@@ -1009,7 +2251,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 98
+  },
+  {
+    "id": "neetug-bio-587201",
+    "sourceId": 587201,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "After nasal immunization with a vaccine containing influenza virus hemagglutinin (HA) and mucosal adjuvant, the main antibody detected in nasal washes is",
+    "options": {
+      "A": "IgG against viral nucleic acid",
+      "B": "IgM against hemagglutinin",
+      "C": "IgE against hemagglutinin",
+      "D": "IgG against hemagglutinin"
+    },
+    "correctOption": "B",
+    "explanation": "The main antibody detected in nasal washes after immunization with a vaccine containing influenza virus hemagglutinin (HA) and mucosal adjuvant is IgM, as it is the primary type of antibody involved in local immune responses at mucosal surfaces.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 99
   },
   {
     "id": "neetug-bio-587690",
@@ -1032,7 +2297,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 100
+  },
+  {
+    "id": "neetug-bio-587758",
+    "sourceId": 587758,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Animal tissues",
+    "topicSlug": "animal-tissues",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "stem": "Which immunocyte present in mucosal connective tissue has FcεRⅠ on its surface?",
+    "options": {
+      "A": "mast cells",
+      "B": "eosinophils",
+      "C": "basophils",
+      "D": "neutrophils"
+    },
+    "correctOption": "A",
+    "explanation": "Mast cells are the immunocytes present in mucosal connective tissue and have FcεRⅠ on their surface.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 101
   },
   {
     "id": "neetug-bio-588069",
@@ -1055,7 +2343,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 102
   },
   {
     "id": "neetug-bio-588072",
@@ -1078,7 +2366,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 103
+  },
+  {
+    "id": "neetug-bio-588313",
+    "sourceId": 588313,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "When was the cell theory established?",
+    "options": {
+      "A": "16th century",
+      "B": "17th century",
+      "C": "18th century",
+      "D": "19th century"
+    },
+    "correctOption": "D",
+    "explanation": "The cell theory was established in the 19th century, during which time significant advancements were made in understanding cellular structures and functions.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 104
+  },
+  {
+    "id": "neetug-bio-588317",
+    "sourceId": 588317,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is not an example of epigenetic change?",
+    "options": {
+      "A": "gene point mutation",
+      "B": "DNA methylation",
+      "C": "histone acetylation",
+      "D": "histone phosphorylation"
+    },
+    "correctOption": "A",
+    "explanation": "Gene point mutation is a genetic change, whereas DNA methylation, histone acetylation, and histone phosphorylation are epigenetic changes.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 105
+  },
+  {
+    "id": "neetug-bio-588321",
+    "sourceId": 588321,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Human genome and DNA polymorphism basics",
+    "topicSlug": "human-genome-and-dna-polymorphism-basics",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "When was the Human Genome Project initiated and completed?",
+    "options": {
+      "A": "1990,2005",
+      "B": "1990,2003",
+      "C": "1990,2000",
+      "D": "1993,2003"
+    },
+    "correctOption": "B",
+    "explanation": "The Human Genome Project was initiated in 1990 and completed in 2003.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 106
   },
   {
     "id": "neetug-bio-588344",
@@ -1101,7 +2458,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 107
   },
   {
     "id": "neetug-bio-588348",
@@ -1124,7 +2481,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 108
   },
   {
     "id": "neetug-bio-588362",
@@ -1147,7 +2504,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 109
+  },
+  {
+    "id": "neetug-bio-588419",
+    "sourceId": 588419,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "What is the role of dithiothreitol (DTT) in SDS-PAGE?",
+    "options": {
+      "A": "binds to protein hydrophobic regions",
+      "B": "denatures proteins",
+      "C": "breaks disulfide bonds within proteins",
+      "D": "causes protein molecules to fold"
+    },
+    "correctOption": "C",
+    "explanation": "Dithiothreitol (DTT) breaks the disulfide bonds in proteins, which prevents their aggregation and allows for better separation during SDS-PAGE.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 110
+  },
+  {
+    "id": "neetug-bio-588434",
+    "sourceId": 588434,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Molecular tools and DNA analysis",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "stem": "SDS polyacrylamide gel electrophoresis separates proteins based on",
+    "options": {
+      "A": "hydrophobicity",
+      "B": "molecular weight size",
+      "C": "amount of positive charge carried",
+      "D": "amount of negative charge carried"
+    },
+    "correctOption": "B",
+    "explanation": "SDS-PAGE separates proteins primarily based on their molecular weight, as the SDS coats the protein uniformly and gives it a uniform negative charge.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 111
+  },
+  {
+    "id": "neetug-bio-588557",
+    "sourceId": 588557,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following proteins is not synthesized in the rough endoplasmic reticulum?",
+    "options": {
+      "A": "secretory proteins",
+      "B": "cell membrane receptors",
+      "C": "lysosomal enzymes",
+      "D": "histones"
+    },
+    "correctOption": "D",
+    "explanation": "Histones are synthesized in the nucleus and not in the rough endoplasmic reticulum.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 112
   },
   {
     "id": "neetug-bio-588624",
@@ -1170,7 +2596,99 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 113
+  },
+  {
+    "id": "neetug-bio-588667",
+    "sourceId": 588667,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following cell structures is primarily composed of microtubules?",
+    "options": {
+      "A": "flagella",
+      "B": "pseudopodia",
+      "C": "nuclear lamina",
+      "D": "microvilli"
+    },
+    "correctOption": "A",
+    "explanation": "Flagella are often composed of microtubules arranged in a9+2 pattern, which is characteristic of cilia and flagella.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 114
+  },
+  {
+    "id": "neetug-bio-588681",
+    "sourceId": 588681,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following cell structures is primarily composed of microfilaments?",
+    "options": {
+      "A": "cilia",
+      "B": "flagella",
+      "C": "cell cortex",
+      "D": "nuclear lamina"
+    },
+    "correctOption": "C",
+    "explanation": "The cell cortex, also known as the actin cytoskeleton, is mainly composed of microfilaments. Cilia and flagella are primarily made up of microtubules, nuclear lamina is a network of intermediate filaments within the nucleus.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 115
+  },
+  {
+    "id": "neetug-bio-588683",
+    "sourceId": 588683,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Myosin does not participate in the formation of which of the following cell structures?",
+    "options": {
+      "A": "microvilli",
+      "B": "thick filaments",
+      "C": "stress fibers",
+      "D": "pseudopodia"
+    },
+    "correctOption": "A",
+    "explanation": "Myosin is involved in the formation of thick filaments, stress fibers, and pseudopodia. However, microvilli do not contain myosin.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 116
+  },
+  {
+    "id": "neetug-bio-588737",
+    "sourceId": 588737,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The assembly site of the large subunit of ribosomes is",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "golgi apparatus",
+      "C": "nucleolus",
+      "D": "cell membrane"
+    },
+    "correctOption": "C",
+    "explanation": "Nucleolus is the site where the large subunit of ribosomes assembles.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 117
   },
   {
     "id": "neetug-bio-588742",
@@ -1193,7 +2711,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 118
+  },
+  {
+    "id": "neetug-bio-588747",
+    "sourceId": 588747,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The site for synthesis of rRNA in the cell is",
+    "options": {
+      "A": "ribosome",
+      "B": "nucleolus",
+      "C": "rough endoplasmic reticulum",
+      "D": "smooth endoplasmic reticulum"
+    },
+    "correctOption": "B",
+    "explanation": "rRNA synthesis occurs in the nucleolus of the cell.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 119
+  },
+  {
+    "id": "neetug-bio-588771",
+    "sourceId": 588771,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The main component found in the nucleolus is",
+    "options": {
+      "A": "rRNA",
+      "B": "mRNA",
+      "C": "tRNA",
+      "D": "rDNA"
+    },
+    "correctOption": "A",
+    "explanation": "The nucleolus primarily synthesizes rRNA, which is a key component of ribosomes.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 120
   },
   {
     "id": "neetug-bio-588795",
@@ -1216,7 +2780,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 121
   },
   {
     "id": "neetug-bio-588802",
@@ -1239,7 +2803,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 122
   },
   {
     "id": "neetug-bio-588809",
@@ -1262,7 +2826,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 123
+  },
+  {
+    "id": "neetug-bio-588814",
+    "sourceId": 588814,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Before being incorporated into the polypeptide chain, amino acids must be activated. Where does amino acid activation occur?",
+    "options": {
+      "A": "cytoplasm",
+      "B": "attached ribosome",
+      "C": "Golgi apparatus",
+      "D": "nucleus"
+    },
+    "correctOption": "A",
+    "explanation": "Amino acid activation occurs in the cytoplasm before they are added to the polypeptide chain.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 124
   },
   {
     "id": "neetug-bio-588820",
@@ -1285,7 +2872,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 56
+    "sortOrder": 125
   },
   {
     "id": "neetug-bio-588825",
@@ -1308,7 +2895,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 126
   },
   {
     "id": "neetug-bio-588830",
@@ -1331,7 +2918,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 127
   },
   {
     "id": "neetug-bio-588848",
@@ -1354,7 +2941,76 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 128
+  },
+  {
+    "id": "neetug-bio-588861",
+    "sourceId": 588861,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Animal tissues",
+    "topicSlug": "animal-tissues",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "stem": "Which of the following is an incorrect statement about cell junctions?",
+    "options": {
+      "A": "Cell junction structures belong to the extracellular matrix",
+      "B": "Cardiac muscle contraction depends on gap junctions",
+      "C": "Tight junctions in intestinal epithelial cells ensure directional transport of substances",
+      "D": "Structural characteristics of cell junctions can only be observed under an electron microscope"
+    },
+    "correctOption": "A",
+    "explanation": "Cell junction structures are not part of the extracellular matrix; they are specialized structures that connect and seal adjacent cells. The other statements are correct.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 129
+  },
+  {
+    "id": "neetug-bio-588928",
+    "sourceId": 588928,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Animal tissues",
+    "topicSlug": "animal-tissues",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "stem": "Which of the following tissues has the highest content of extracellular matrix?",
+    "options": {
+      "A": "epithelial tissue",
+      "B": "muscular tissue",
+      "C": "brain",
+      "D": "connective tissue"
+    },
+    "correctOption": "D",
+    "explanation": "Connective tissue contains a high amount of extracellular matrix, which includes components like collagen and elastin. Epithelial, muscular, and brain tissues have less extracellular matrix.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 130
+  },
+  {
+    "id": "neetug-bio-588969",
+    "sourceId": 588969,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Endocrine system and hormones",
+    "topicSlug": "endocrine-system-and-hormones",
+    "ncertRef": "NCERT Biology Class 11, Chapter 19",
+    "stem": "Which substance acts through intracellular receptors?",
+    "options": {
+      "A": "gamma-aminobutyric acid",
+      "B": "thyroxine",
+      "C": "insulin",
+      "D": "epidermal growth factor"
+    },
+    "correctOption": "B",
+    "explanation": "Thyroxine is a hormone that acts through intracellular receptors. Gamma-aminobutyric acid, insulin, and epidermal growth factor act via other mechanisms.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 131
   },
   {
     "id": "neetug-bio-589004",
@@ -1377,7 +3033,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
+    "sortOrder": 132
   },
   {
     "id": "neetug-bio-589104",
@@ -1400,7 +3056,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 133
+  },
+  {
+    "id": "neetug-bio-589107",
+    "sourceId": 589107,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The main characteristic of red blood cell differentiation is",
+    "options": {
+      "A": "expressing mitochondria",
+      "B": "expressing ribosomes",
+      "C": "expressing actin",
+      "D": "expressing hemoglobin"
+    },
+    "correctOption": "D",
+    "explanation": "Red blood cells differentiate to express hemoglobin, which is essential for their function in oxygen transport.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 134
+  },
+  {
+    "id": "neetug-bio-589112",
+    "sourceId": 589112,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following represents a chemical modification in chromatin components?",
+    "options": {
+      "A": "base mutation",
+      "B": "base mismatch",
+      "C": "DNA methylation",
+      "D": "RNA splicing"
+    },
+    "correctOption": "C",
+    "explanation": "DNA methylation is a common chemical modification found in chromatin. Base mutation and base mismatch are errors that can occur during DNA replication, not specific modifications. RNA splicing occurs in the processing of pre-mRNA to mature mRNA and does not directly modify chromatin components.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 135
   },
   {
     "id": "neetug-bio-589135",
@@ -1423,7 +3125,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 136
   },
   {
     "id": "neetug-bio-589160",
@@ -1446,7 +3148,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 63
+    "sortOrder": 137
   },
   {
     "id": "neetug-bio-520527",
@@ -1469,7 +3171,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 64
+    "sortOrder": 138
   },
   {
     "id": "neetug-bio-587141",
@@ -1492,7 +3194,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 65
+    "sortOrder": 139
+  },
+  {
+    "id": "neetug-bio-588250",
+    "sourceId": 588250,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which factor does not affect the antigen-antibody reaction?",
+    "options": {
+      "A": "molecular ratio of antigen and antibody",
+      "B": "temperature of the reaction",
+      "C": "pH of the reaction",
+      "D": "ionic strength of the reaction"
+    },
+    "correctOption": "A",
+    "explanation": "The molecular ratio of antigen and antibody, temperature, pH, and ionic strength are all factors that can affect the antigen-antibody reaction. However, the structural complementarity between antigens and antibodies is a prerequisite for their binding and does not directly influence the reaction conditions.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 140
+  },
+  {
+    "id": "neetug-bio-588327",
+    "sourceId": 588327,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Cells are considered to be a mass of protoplasm enclosed within a cell membrane, originating from",
+    "options": {
+      "A": "protoplasm theory",
+      "B": "cell theory",
+      "C": "cytology",
+      "D": "gene theory"
+    },
+    "correctOption": "B",
+    "explanation": "Cell theory states that cells are the basic unit of life and that all organisms are composed of one or more cells. The protoplasm theory refers to the living material within a cell, while cytology is the study of cells. Gene theory deals with heredity and genetic information.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 141
   },
   {
     "id": "neetug-bio-588773",
@@ -1515,7 +3263,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 66
+    "sortOrder": 142
+  },
+  {
+    "id": "neetug-bio-588900",
+    "sourceId": 588900,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Animal tissues",
+    "topicSlug": "animal-tissues",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "stem": "Which of the following is an incorrect statement about gap junctions?",
+    "options": {
+      "A": "Gap junctions are present in all animal tissues.",
+      "B": "Each connexon is surrounded by 6 identical or similar connexin proteins.",
+      "C": "Connexin proteins exhibit tissue cell specificity.",
+      "D": "Molecules with a molecular weight greater than 1kD can pass through the aqueous channels formed by gap junctions."
+    },
+    "correctOption": "A",
+    "explanation": "Gap junctions are not necessarily present in all animal tissues; they are found primarily in certain types of animal cells. The other statements are correct according to NCERT Biology Class 11, Chapter 7.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 143
+  },
+  {
+    "id": "neetug-bio-589094",
+    "sourceId": 589094,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "During early embryonic development, the substance that leads to a difference in fate between two daughter cells due to unequal cytoplasmic distribution is",
+    "options": {
+      "A": "mRNA",
+      "B": "tRNA",
+      "C": "DNA",
+      "D": "ribosomes"
+    },
+    "correctOption": "A",
+    "explanation": "mRNA can be unequally distributed during early embryonic development, leading to differences in gene expression and cell fate between daughter cells.",
+    "qwenmaxReviewScore": 92,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 144
   },
   {
     "id": "neetug-bio-589163",
@@ -1538,7 +3332,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 67
+    "sortOrder": 145
   },
   {
     "id": "neetug-bio-515698",
@@ -1561,7 +3355,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 68
+    "sortOrder": 146
   },
   {
     "id": "neetug-bio-515700",
@@ -1584,7 +3378,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 69
+    "sortOrder": 147
   },
   {
     "id": "neetug-bio-515705",
@@ -1607,7 +3401,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 70
+    "sortOrder": 148
   },
   {
     "id": "neetug-bio-515706",
@@ -1630,7 +3424,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 71
+    "sortOrder": 149
   },
   {
     "id": "neetug-bio-515710",
@@ -1653,7 +3447,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 72
+    "sortOrder": 150
   },
   {
     "id": "neetug-bio-515711",
@@ -1676,7 +3470,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 73
+    "sortOrder": 151
   },
   {
     "id": "neetug-bio-515715",
@@ -1699,7 +3493,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 74
+    "sortOrder": 152
   },
   {
     "id": "neetug-bio-516059",
@@ -1722,7 +3516,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 75
+    "sortOrder": 153
   },
   {
     "id": "neetug-bio-516216",
@@ -1745,7 +3539,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 76
+    "sortOrder": 154
   },
   {
     "id": "neetug-bio-516300",
@@ -1768,7 +3562,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 77
+    "sortOrder": 155
   },
   {
     "id": "neetug-bio-516412",
@@ -1791,7 +3585,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 78
+    "sortOrder": 156
   },
   {
     "id": "neetug-bio-516413",
@@ -1814,7 +3608,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 79
+    "sortOrder": 157
   },
   {
     "id": "neetug-bio-516425",
@@ -1837,7 +3631,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 80
+    "sortOrder": 158
   },
   {
     "id": "neetug-bio-516428",
@@ -1860,7 +3654,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 81
+    "sortOrder": 159
   },
   {
     "id": "neetug-bio-516430",
@@ -1883,7 +3677,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 82
+    "sortOrder": 160
   },
   {
     "id": "neetug-bio-516615",
@@ -1906,7 +3700,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 83
+    "sortOrder": 161
   },
   {
     "id": "neetug-bio-516616",
@@ -1929,7 +3723,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 84
+    "sortOrder": 162
   },
   {
     "id": "neetug-bio-516625",
@@ -1952,7 +3746,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 85
+    "sortOrder": 163
   },
   {
     "id": "neetug-bio-516658",
@@ -1975,7 +3769,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 86
+    "sortOrder": 164
   },
   {
     "id": "neetug-bio-516661",
@@ -1998,7 +3792,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 87
+    "sortOrder": 165
   },
   {
     "id": "neetug-bio-516698",
@@ -2021,7 +3815,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 88
+    "sortOrder": 166
   },
   {
     "id": "neetug-bio-516716",
@@ -2044,7 +3838,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 89
+    "sortOrder": 167
   },
   {
     "id": "neetug-bio-516756",
@@ -2067,7 +3861,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 90
+    "sortOrder": 168
   },
   {
     "id": "neetug-bio-516757",
@@ -2090,7 +3884,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 91
+    "sortOrder": 169
   },
   {
     "id": "neetug-bio-516758",
@@ -2113,7 +3907,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 92
+    "sortOrder": 170
   },
   {
     "id": "neetug-bio-520307",
@@ -2136,7 +3930,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 93
+    "sortOrder": 171
   },
   {
     "id": "neetug-bio-520332",
@@ -2159,7 +3953,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 94
+    "sortOrder": 172
   },
   {
     "id": "neetug-bio-520370",
@@ -2182,7 +3976,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 95
+    "sortOrder": 173
   },
   {
     "id": "neetug-bio-520545",
@@ -2205,7 +3999,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 96
+    "sortOrder": 174
   },
   {
     "id": "neetug-bio-520555",
@@ -2228,7 +4022,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 97
+    "sortOrder": 175
   },
   {
     "id": "neetug-bio-520570",
@@ -2251,7 +4045,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 98
+    "sortOrder": 176
   },
   {
     "id": "neetug-bio-520571",
@@ -2274,7 +4068,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 99
+    "sortOrder": 177
   },
   {
     "id": "neetug-bio-520678",
@@ -2297,7 +4091,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 100
+    "sortOrder": 178
   },
   {
     "id": "neetug-bio-520843",
@@ -2320,7 +4114,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 101
+    "sortOrder": 179
   },
   {
     "id": "neetug-bio-520897",
@@ -2343,7 +4137,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 102
+    "sortOrder": 180
   },
   {
     "id": "neetug-bio-521005",
@@ -2366,7 +4160,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 103
+    "sortOrder": 181
   },
   {
     "id": "neetug-bio-521009",
@@ -2389,7 +4183,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 104
+    "sortOrder": 182
   },
   {
     "id": "neetug-bio-521010",
@@ -2412,7 +4206,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 105
+    "sortOrder": 183
   },
   {
     "id": "neetug-bio-521015",
@@ -2435,7 +4229,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 106
+    "sortOrder": 184
   },
   {
     "id": "neetug-bio-521078",
@@ -2458,7 +4252,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 107
+    "sortOrder": 185
   },
   {
     "id": "neetug-bio-521093",
@@ -2481,7 +4275,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 108
+    "sortOrder": 186
   },
   {
     "id": "neetug-bio-521106",
@@ -2504,7 +4298,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 109
+    "sortOrder": 187
   },
   {
     "id": "neetug-bio-521118",
@@ -2527,7 +4321,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 110
+    "sortOrder": 188
   },
   {
     "id": "neetug-bio-521131",
@@ -2550,7 +4344,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 111
+    "sortOrder": 189
   },
   {
     "id": "neetug-bio-521137",
@@ -2573,7 +4367,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 112
+    "sortOrder": 190
   },
   {
     "id": "neetug-bio-521273",
@@ -2596,7 +4390,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 113
+    "sortOrder": 191
   },
   {
     "id": "neetug-bio-521290",
@@ -2619,7 +4413,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 114
+    "sortOrder": 192
   },
   {
     "id": "neetug-bio-521305",
@@ -2642,7 +4436,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 115
+    "sortOrder": 193
   },
   {
     "id": "neetug-bio-521307",
@@ -2665,7 +4459,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 116
+    "sortOrder": 194
   },
   {
     "id": "neetug-bio-521314",
@@ -2688,7 +4482,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 117
+    "sortOrder": 195
   },
   {
     "id": "neetug-bio-521315",
@@ -2711,7 +4505,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 118
+    "sortOrder": 196
   },
   {
     "id": "neetug-bio-521329",
@@ -2734,7 +4528,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 119
+    "sortOrder": 197
   },
   {
     "id": "neetug-bio-521330",
@@ -2757,7 +4551,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 120
+    "sortOrder": 198
   },
   {
     "id": "neetug-bio-521366",
@@ -2780,7 +4574,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 121
+    "sortOrder": 199
   },
   {
     "id": "neetug-bio-521384",
@@ -2803,7 +4597,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 122
+    "sortOrder": 200
   },
   {
     "id": "neetug-bio-521454",
@@ -2826,7 +4620,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 123
+    "sortOrder": 201
   },
   {
     "id": "neetug-bio-579014",
@@ -2849,7 +4643,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 124
+    "sortOrder": 202
   },
   {
     "id": "neetug-bio-579015",
@@ -2872,7 +4666,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 125
+    "sortOrder": 203
   },
   {
     "id": "neetug-bio-579016",
@@ -2895,7 +4689,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 126
+    "sortOrder": 204
   },
   {
     "id": "neetug-bio-579017",
@@ -2918,7 +4712,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 127
+    "sortOrder": 205
   },
   {
     "id": "neetug-bio-579034",
@@ -2941,7 +4735,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 128
+    "sortOrder": 206
   },
   {
     "id": "neetug-bio-579035",
@@ -2964,7 +4758,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 129
+    "sortOrder": 207
   },
   {
     "id": "neetug-bio-579057",
@@ -2987,7 +4781,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 130
+    "sortOrder": 208
   },
   {
     "id": "neetug-bio-579069",
@@ -3010,7 +4804,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 131
+    "sortOrder": 209
   },
   {
     "id": "neetug-bio-579101",
@@ -3033,7 +4827,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 132
+    "sortOrder": 210
   },
   {
     "id": "neetug-bio-579160",
@@ -3056,7 +4850,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 133
+    "sortOrder": 211
+  },
+  {
+    "id": "neetug-bio-579163",
+    "sourceId": 579163,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Chromosomal basis of inheritance",
+    "topicSlug": "chromosomal-basis-of-inheritance",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "stem": "Which of the following belongs to chromosomal structural variations?",
+    "options": {
+      "A": "deletion",
+      "B": "sub-diploid",
+      "C": "monosomy",
+      "D": "trisomy"
+    },
+    "correctOption": "A",
+    "explanation": "Chromosomal structural variations include deletion, monosomy, and trisomy. Sub-diploid is not a specific term for chromosomal structural variation.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 212
   },
   {
     "id": "neetug-bio-579165",
@@ -3079,7 +4896,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 134
+    "sortOrder": 213
   },
   {
     "id": "neetug-bio-579532",
@@ -3102,7 +4919,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 135
+    "sortOrder": 214
   },
   {
     "id": "neetug-bio-579543",
@@ -3125,7 +4942,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 136
+    "sortOrder": 215
   },
   {
     "id": "neetug-bio-579546",
@@ -3148,7 +4965,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 137
+    "sortOrder": 216
   },
   {
     "id": "neetug-bio-579957",
@@ -3171,7 +4988,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 138
+    "sortOrder": 217
   },
   {
     "id": "neetug-bio-588319",
@@ -3194,7 +5011,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 139
+    "sortOrder": 218
   },
   {
     "id": "neetug-bio-588339",
@@ -3217,7 +5034,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 140
+    "sortOrder": 219
   },
   {
     "id": "neetug-bio-588343",
@@ -3240,7 +5057,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 141
+    "sortOrder": 220
   },
   {
     "id": "neetug-bio-588347",
@@ -3263,7 +5080,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 142
+    "sortOrder": 221
   },
   {
     "id": "neetug-bio-588359",
@@ -3286,7 +5103,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 143
+    "sortOrder": 222
   },
   {
     "id": "neetug-bio-588366",
@@ -3309,7 +5126,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 144
+    "sortOrder": 223
   },
   {
     "id": "neetug-bio-588370",
@@ -3332,7 +5149,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 145
+    "sortOrder": 224
   },
   {
     "id": "neetug-bio-588375",
@@ -3355,7 +5172,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 146
+    "sortOrder": 225
   },
   {
     "id": "neetug-bio-588446",
@@ -3378,7 +5195,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 147
+    "sortOrder": 226
   },
   {
     "id": "neetug-bio-588459",
@@ -3401,7 +5218,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 148
+    "sortOrder": 227
   },
   {
     "id": "neetug-bio-588508",
@@ -3424,7 +5241,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 149
+    "sortOrder": 228
   },
   {
     "id": "neetug-bio-588535",
@@ -3447,7 +5264,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 150
+    "sortOrder": 229
   },
   {
     "id": "neetug-bio-588536",
@@ -3470,7 +5287,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 151
+    "sortOrder": 230
   },
   {
     "id": "neetug-bio-588538",
@@ -3493,7 +5310,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 152
+    "sortOrder": 231
   },
   {
     "id": "neetug-bio-588548",
@@ -3516,7 +5333,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 153
+    "sortOrder": 232
+  },
+  {
+    "id": "neetug-bio-588550",
+    "sourceId": 588550,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "N-linked glycosylation of proteins connects oligosaccharides to which amino acid residue?",
+    "options": {
+      "A": "Asp",
+      "B": "Asn",
+      "C": "Ser",
+      "D": "Thr"
+    },
+    "correctOption": "B",
+    "explanation": "N-linked glycosylation involves the attachment of oligosaccharides to asparagine (Asn) residues in the polypeptide chain.",
+    "qwenmaxReviewScore": 90,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 233
   },
   {
     "id": "neetug-bio-588556",
@@ -3539,7 +5379,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 154
+    "sortOrder": 234
   },
   {
     "id": "neetug-bio-588558",
@@ -3562,7 +5402,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 155
+    "sortOrder": 235
   },
   {
     "id": "neetug-bio-588573",
@@ -3585,7 +5425,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 156
+    "sortOrder": 236
   },
   {
     "id": "neetug-bio-588601",
@@ -3608,7 +5448,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 157
+    "sortOrder": 237
   },
   {
     "id": "neetug-bio-588609",
@@ -3631,7 +5471,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 158
+    "sortOrder": 238
   },
   {
     "id": "neetug-bio-588658",
@@ -3654,7 +5494,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 159
+    "sortOrder": 239
   },
   {
     "id": "neetug-bio-588824",
@@ -3677,7 +5517,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 160
+    "sortOrder": 240
   },
   {
     "id": "neetug-bio-589055",
@@ -3700,7 +5540,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 161
+    "sortOrder": 241
   },
   {
     "id": "neetug-bio-589056",
@@ -3723,7 +5563,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 162
+    "sortOrder": 242
   },
   {
     "id": "neetug-bio-589057",
@@ -3746,7 +5586,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 163
+    "sortOrder": 243
   },
   {
     "id": "neetug-bio-589103",
@@ -3769,7 +5609,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 164
+    "sortOrder": 244
   },
   {
     "id": "neetug-bio-516139",
@@ -3792,7 +5632,30 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 165
+    "sortOrder": 245
+  },
+  {
+    "id": "neetug-bio-516405",
+    "sourceId": 516405,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Neuron nerve impulse synapse",
+    "topicSlug": "neuron-nerve-impulse-synapse",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "stem": "The action potential in a pseudounipolar sensory neuron generally first occurs at",
+    "options": {
+      "A": "the peripheral dendrite closest to the distal axon terminal",
+      "B": "the peripheral dendrite closest to the cell body",
+      "C": "the central process terminal",
+      "D": "the cell body"
+    },
+    "correctOption": "B",
+    "explanation": "In a pseudounipolar sensory neuron, the action potential generally first occurs at the peripheral dendrite closest to the cell body. This is because the dendrites receive stimuli and transmit them towards the cell body, where the action potential is generated.",
+    "qwenmaxReviewScore": 85,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 246
   },
   {
     "id": "neetug-bio-516438",
@@ -3815,7 +5678,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 166
+    "sortOrder": 247
   },
   {
     "id": "neetug-bio-516588",
@@ -3838,7 +5701,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 167
+    "sortOrder": 248
   },
   {
     "id": "neetug-bio-516628",
@@ -3861,7 +5724,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 168
+    "sortOrder": 249
   },
   {
     "id": "neetug-bio-520277",
@@ -3884,7 +5747,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 169
+    "sortOrder": 250
   },
   {
     "id": "neetug-bio-520291",
@@ -3907,7 +5770,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 170
+    "sortOrder": 251
   },
   {
     "id": "neetug-bio-520340",
@@ -3930,7 +5793,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 171
+    "sortOrder": 252
   },
   {
     "id": "neetug-bio-520587",
@@ -3953,7 +5816,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 172
+    "sortOrder": 253
   },
   {
     "id": "neetug-bio-521024",
@@ -3976,7 +5839,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 173
+    "sortOrder": 254
   },
   {
     "id": "neetug-bio-521092",
@@ -3999,7 +5862,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 174
+    "sortOrder": 255
   },
   {
     "id": "neetug-bio-521300",
@@ -4022,7 +5885,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 175
+    "sortOrder": 256
   },
   {
     "id": "neetug-bio-521304",
@@ -4045,7 +5908,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 176
+    "sortOrder": 257
   },
   {
     "id": "neetug-bio-521308",
@@ -4068,7 +5931,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 177
+    "sortOrder": 258
   },
   {
     "id": "neetug-bio-521321",
@@ -4091,7 +5954,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 178
+    "sortOrder": 259
   },
   {
     "id": "neetug-bio-521345",
@@ -4114,7 +5977,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 179
+    "sortOrder": 260
   },
   {
     "id": "neetug-bio-521391",
@@ -4137,7 +6000,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 180
+    "sortOrder": 261
   },
   {
     "id": "neetug-bio-578586",
@@ -4160,7 +6023,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 181
+    "sortOrder": 262
   },
   {
     "id": "neetug-bio-579009",
@@ -4183,7 +6046,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 182
+    "sortOrder": 263
   },
   {
     "id": "neetug-bio-579013",
@@ -4206,7 +6069,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 183
+    "sortOrder": 264
   },
   {
     "id": "neetug-bio-579032",
@@ -4229,7 +6092,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 184
+    "sortOrder": 265
   },
   {
     "id": "neetug-bio-579107",
@@ -4252,7 +6115,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 185
+    "sortOrder": 266
   },
   {
     "id": "neetug-bio-579187",
@@ -4275,7 +6138,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 186
+    "sortOrder": 267
   },
   {
     "id": "neetug-bio-579914",
@@ -4298,7 +6161,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 187
+    "sortOrder": 268
   },
   {
     "id": "neetug-bio-588084",
@@ -4321,7 +6184,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 188
+    "sortOrder": 269
   },
   {
     "id": "neetug-bio-588342",
@@ -4344,7 +6207,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 189
+    "sortOrder": 270
   },
   {
     "id": "neetug-bio-588346",
@@ -4367,7 +6230,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 190
+    "sortOrder": 271
   },
   {
     "id": "neetug-bio-588358",
@@ -4390,7 +6253,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 191
+    "sortOrder": 272
   },
   {
     "id": "neetug-bio-588433",
@@ -4413,7 +6276,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 192
+    "sortOrder": 273
   },
   {
     "id": "neetug-bio-588534",
@@ -4436,7 +6299,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 193
+    "sortOrder": 274
   },
   {
     "id": "neetug-bio-588615",
@@ -4459,7 +6322,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 194
+    "sortOrder": 275
   },
   {
     "id": "neetug-bio-588678",
@@ -4482,7 +6345,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 195
+    "sortOrder": 276
   },
   {
     "id": "neetug-bio-588831",
@@ -4505,7 +6368,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 196
+    "sortOrder": 277
   },
   {
     "id": "neetug-bio-589039",
@@ -4528,7 +6391,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 197
+    "sortOrder": 278
   },
   {
     "id": "neetug-bio-589041",
@@ -4551,7 +6414,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 198
+    "sortOrder": 279
   },
   {
     "id": "neetug-bio-589059",
@@ -4574,7 +6437,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 199
+    "sortOrder": 280
   },
   {
     "id": "neetug-bio-589073",
@@ -4597,7 +6460,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 200
+    "sortOrder": 281
   },
   {
     "id": "neetug-bio-589098",
@@ -4620,6 +6483,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 201
+    "sortOrder": 282
   }
 ]

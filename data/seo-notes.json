@@ -18,58 +18,13 @@
     "sortOrder": 2
   },
   {
-    "id": "note-plant-respiration",
-    "slug": "plant-respiration",
-    "title": "Plant respiration: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "plant-respiration",
-    "targetKeyword": "Plant respiration NEET UG Biology questions",
+    "id": "note-basic-genetic-diseases-as-inheritance-examples",
+    "slug": "basic-genetic-diseases-as-inheritance-examples",
+    "title": "Basic genetic diseases as inheritance examples: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Basic genetic diseases as inheritance examples for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "targetKeyword": "Basic genetic diseases as inheritance examples NEET UG Biology questions",
     "sortOrder": 3
-  },
-  {
-    "id": "note-cell-theory-and-cell-organelles",
-    "slug": "cell-theory-and-cell-organelles",
-    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
-    "sortOrder": 4
-  },
-  {
-    "id": "note-mutation-and-gene-expression",
-    "slug": "mutation-and-gene-expression",
-    "title": "Mutation and gene expression: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "mutation-and-gene-expression",
-    "targetKeyword": "Mutation and gene expression NEET UG Biology questions",
-    "sortOrder": 5
-  },
-  {
-    "id": "note-recombinant-dna-technology",
-    "slug": "recombinant-dna-technology",
-    "title": "Recombinant DNA technology: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Recombinant DNA technology for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "recombinant-dna-technology",
-    "targetKeyword": "Recombinant DNA technology NEET UG Biology questions",
-    "sortOrder": 6
-  },
-  {
-    "id": "note-pedigree-analysis-and-inheritance-patterns",
-    "slug": "pedigree-analysis-and-inheritance-patterns",
-    "title": "Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "pedigree-analysis-and-inheritance-patterns",
-    "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
-    "sortOrder": 7
-  },
-  {
-    "id": "note-immunity-pathogens-vaccines",
-    "slug": "immunity-pathogens-vaccines",
-    "title": "Immunity pathogens vaccines: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Immunity pathogens vaccines for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "immunity-pathogens-vaccines",
-    "targetKeyword": "Immunity pathogens vaccines NEET UG Biology questions",
-    "sortOrder": 8
   },
   {
     "id": "note-neuron-nerve-impulse-synapse",
@@ -78,16 +33,7 @@
     "description": "Revise Neuron nerve impulse synapse for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "neuron-nerve-impulse-synapse",
     "targetKeyword": "Neuron nerve impulse synapse NEET UG Biology questions",
-    "sortOrder": 9
-  },
-  {
-    "id": "note-carbohydrates-proteins-lipids-nucleic-acids",
-    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
-    "title": "Carbohydrates proteins lipids nucleic acids: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Carbohydrates proteins lipids nucleic acids for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
-    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
-    "targetKeyword": "Carbohydrates proteins lipids nucleic acids NEET UG Biology questions",
-    "sortOrder": 10
+    "sortOrder": 4
   },
   {
     "id": "note-human-reproductive-system-and-gametogenesis",
@@ -96,7 +42,88 @@
     "description": "Revise Human reproductive system and gametogenesis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "human-reproductive-system-and-gametogenesis",
     "targetKeyword": "Human reproductive system and gametogenesis NEET UG Biology questions",
+    "sortOrder": 5
+  },
+  {
+    "id": "note-plant-respiration",
+    "slug": "plant-respiration",
+    "title": "Plant respiration: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "plant-respiration",
+    "targetKeyword": "Plant respiration NEET UG Biology questions",
+    "sortOrder": 6
+  },
+  {
+    "id": "note-animal-tissues",
+    "slug": "animal-tissues",
+    "title": "Animal tissues: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Animal tissues for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "animal-tissues",
+    "targetKeyword": "Animal tissues NEET UG Biology questions",
+    "sortOrder": 7
+  },
+  {
+    "id": "note-cell-theory-and-cell-organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "title": "Cell theory and cell organelles: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Cell theory and cell organelles for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "targetKeyword": "Cell theory and cell organelles NEET UG Biology questions",
+    "sortOrder": 8
+  },
+  {
+    "id": "note-mutation-and-gene-expression",
+    "slug": "mutation-and-gene-expression",
+    "title": "Mutation and gene expression: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Mutation and gene expression for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "mutation-and-gene-expression",
+    "targetKeyword": "Mutation and gene expression NEET UG Biology questions",
+    "sortOrder": 9
+  },
+  {
+    "id": "note-recombinant-dna-technology",
+    "slug": "recombinant-dna-technology",
+    "title": "Recombinant DNA technology: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Recombinant DNA technology for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "recombinant-dna-technology",
+    "targetKeyword": "Recombinant DNA technology NEET UG Biology questions",
+    "sortOrder": 10
+  },
+  {
+    "id": "note-molecular-tools-and-dna-analysis",
+    "slug": "molecular-tools-and-dna-analysis",
+    "title": "Molecular tools and DNA analysis: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Molecular tools and DNA analysis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "molecular-tools-and-dna-analysis",
+    "targetKeyword": "Molecular tools and DNA analysis NEET UG Biology questions",
     "sortOrder": 11
+  },
+  {
+    "id": "note-pedigree-analysis-and-inheritance-patterns",
+    "slug": "pedigree-analysis-and-inheritance-patterns",
+    "title": "Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "pedigree-analysis-and-inheritance-patterns",
+    "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
+    "sortOrder": 12
+  },
+  {
+    "id": "note-immunity-pathogens-vaccines",
+    "slug": "immunity-pathogens-vaccines",
+    "title": "Immunity pathogens vaccines: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Immunity pathogens vaccines for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "targetKeyword": "Immunity pathogens vaccines NEET UG Biology questions",
+    "sortOrder": 13
+  },
+  {
+    "id": "note-carbohydrates-proteins-lipids-nucleic-acids",
+    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "title": "Carbohydrates proteins lipids nucleic acids: NEET-UG Biology NCERT Revision Notes",
+    "description": "Revise Carbohydrates proteins lipids nucleic acids for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "targetKeyword": "Carbohydrates proteins lipids nucleic acids NEET UG Biology questions",
+    "sortOrder": 14
   },
   {
     "id": "note-mitosis-and-meiosis",
@@ -105,6 +132,6 @@
     "description": "Revise Mitosis and meiosis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
     "topicSlug": "mitosis-and-meiosis",
     "targetKeyword": "Mitosis and meiosis NEET UG Biology questions",
-    "sortOrder": 12
+    "sortOrder": 15
   }
 ]
