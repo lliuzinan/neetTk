@@ -16,7 +16,7 @@
     "name": "Endocrine system and hormones",
     "slug": "endocrine-system-and-hormones",
     "ncertRef": "NCERT Biology Class 11, Chapter 19",
-    "questionCount": 34,
+    "questionCount": 42,
     "sortOrder": 2
   },
   {
@@ -26,7 +26,7 @@
     "name": "DNA RNA replication transcription translation",
     "slug": "dna-rna-replication-transcription-translation",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 42,
+    "questionCount": 51,
     "sortOrder": 3
   },
   {
@@ -46,7 +46,7 @@
     "name": "Neuron nerve impulse synapse",
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
-    "questionCount": 20,
+    "questionCount": 21,
     "sortOrder": 5
   },
   {
@@ -60,6 +60,16 @@
     "sortOrder": 6
   },
   {
+    "id": "immunity-pathogens-vaccines",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Immunity pathogens vaccines",
+    "slug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 22,
+    "sortOrder": 7
+  },
+  {
     "id": "human-respiration",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -67,7 +77,7 @@
     "slug": "human-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 14",
     "questionCount": 4,
-    "sortOrder": 7
+    "sortOrder": 8
   },
   {
     "id": "excretion-and-kidney-function",
@@ -77,7 +87,7 @@
     "slug": "excretion-and-kidney-function",
     "ncertRef": "NCERT Biology Class 11, Chapter 16",
     "questionCount": 3,
-    "sortOrder": 8
+    "sortOrder": 9
   },
   {
     "id": "human-reproductive-system-and-gametogenesis",
@@ -87,7 +97,7 @@
     "slug": "human-reproductive-system-and-gametogenesis",
     "ncertRef": "NCERT Biology Class 12, Chapter 2",
     "questionCount": 7,
-    "sortOrder": 9
+    "sortOrder": 10
   },
   {
     "id": "plant-respiration",
@@ -97,7 +107,7 @@
     "slug": "plant-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 12",
     "questionCount": 13,
-    "sortOrder": 10
+    "sortOrder": 11
   },
   {
     "id": "animal-tissues",
@@ -107,7 +117,7 @@
     "slug": "animal-tissues",
     "ncertRef": "NCERT Biology Class 11, Chapter 7",
     "questionCount": 5,
-    "sortOrder": 11
+    "sortOrder": 12
   },
   {
     "id": "cell-theory-and-cell-organelles",
@@ -117,7 +127,7 @@
     "slug": "cell-theory-and-cell-organelles",
     "ncertRef": "NCERT Biology Class 11, Chapter 8",
     "questionCount": 35,
-    "sortOrder": 12
+    "sortOrder": 13
   },
   {
     "id": "five-kingdom-classification",
@@ -127,7 +137,7 @@
     "slug": "five-kingdom-classification",
     "ncertRef": "NCERT Biology Class 11, Chapter 2",
     "questionCount": 2,
-    "sortOrder": 13
+    "sortOrder": 14
   },
   {
     "id": "mutation-and-gene-expression",
@@ -137,7 +147,7 @@
     "slug": "mutation-and-gene-expression",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 27,
-    "sortOrder": 14
+    "sortOrder": 15
   },
   {
     "id": "recombinant-dna-technology",
@@ -147,7 +157,7 @@
     "slug": "recombinant-dna-technology",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 8,
-    "sortOrder": 15
+    "sortOrder": 16
   },
   {
     "id": "molecular-tools-and-dna-analysis",
@@ -157,7 +167,7 @@
     "slug": "molecular-tools-and-dna-analysis",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 6,
-    "sortOrder": 16
+    "sortOrder": 17
   },
   {
     "id": "human-genome-and-dna-polymorphism-basics",
@@ -167,7 +177,7 @@
     "slug": "human-genome-and-dna-polymorphism-basics",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 2,
-    "sortOrder": 17
+    "sortOrder": 18
   },
   {
     "id": "population-genetics",
@@ -177,7 +187,7 @@
     "slug": "population-genetics",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 1,
-    "sortOrder": 18
+    "sortOrder": 19
   },
   {
     "id": "mendelian-inheritance",
@@ -187,16 +197,6 @@
     "slug": "mendelian-inheritance",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 1,
-    "sortOrder": 19
-  },
-  {
-    "id": "pedigree-analysis-and-inheritance-patterns",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Pedigree analysis and inheritance patterns",
-    "slug": "pedigree-analysis-and-inheritance-patterns",
-    "ncertRef": "NCERT Biology Class 12, Chapter 4",
-    "questionCount": 7,
     "sortOrder": 20
   },
   {
@@ -206,17 +206,17 @@
     "name": "Chromosomal basis of inheritance",
     "slug": "chromosomal-basis-of-inheritance",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
-    "questionCount": 2,
+    "questionCount": 4,
     "sortOrder": 21
   },
   {
-    "id": "immunity-pathogens-vaccines",
+    "id": "pedigree-analysis-and-inheritance-patterns",
     "exam": "NEET-UG",
     "subject": "Biology",
-    "name": "Immunity pathogens vaccines",
-    "slug": "immunity-pathogens-vaccines",
-    "ncertRef": "NCERT Biology Class 12, Chapter 7",
-    "questionCount": 15,
+    "name": "Pedigree analysis and inheritance patterns",
+    "slug": "pedigree-analysis-and-inheritance-patterns",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "questionCount": 7,
     "sortOrder": 22
   },
   {
