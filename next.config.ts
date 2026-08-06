@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: "/neet-ug/biology/endocrine-system-and-hormones",
         permanent: true,
       },
+      {
+        source: "/mock-test",
+        destination: "/neet-ug/biology",
+        permanent: true,
+      },
     ];
   },
 };

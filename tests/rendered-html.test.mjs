@@ -14,6 +14,14 @@ test("redirects stale GSC URLs to live NEET Biology pages", async () => {
       permanent: true,
     },
   );
+  assert.deepEqual(
+    redirects.find((redirect) => redirect.source === "/mock-test"),
+    {
+      source: "/mock-test",
+      destination: "/neet-ug/biology",
+      permanent: true,
+    },
+  );
 });
 
 test("renders seeded qbank content on public index pages", async () => {
