@@ -1,5 +1,55 @@
 [
   {
+    "id": "carbohydrates-proteins-lipids-nucleic-acids",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Carbohydrates proteins lipids nucleic acids",
+    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "questionCount": 28,
+    "sortOrder": 1
+  },
+  {
+    "id": "dna-rna-replication-transcription-translation",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "DNA RNA replication transcription translation",
+    "slug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "questionCount": 64,
+    "sortOrder": 2
+  },
+  {
+    "id": "mutation-and-gene-expression",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Mutation and gene expression",
+    "slug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "questionCount": 32,
+    "sortOrder": 3
+  },
+  {
+    "id": "cell-theory-and-cell-organelles",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Cell theory and cell organelles",
+    "slug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "questionCount": 43,
+    "sortOrder": 4
+  },
+  {
+    "id": "mitosis-and-meiosis",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Mitosis and meiosis",
+    "slug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "questionCount": 14,
+    "sortOrder": 5
+  },
+  {
     "id": "blood-and-circulation",
     "exam": "NEET-UG",
     "subject": "Biology",
@@ -7,7 +57,7 @@
     "slug": "blood-and-circulation",
     "ncertRef": "NCERT Biology Class 11, Chapter 15",
     "questionCount": 4,
-    "sortOrder": 1
+    "sortOrder": 6
   },
   {
     "id": "endocrine-system-and-hormones",
@@ -17,17 +67,7 @@
     "slug": "endocrine-system-and-hormones",
     "ncertRef": "NCERT Biology Class 11, Chapter 19",
     "questionCount": 42,
-    "sortOrder": 2
-  },
-  {
-    "id": "dna-rna-replication-transcription-translation",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "DNA RNA replication transcription translation",
-    "slug": "dna-rna-replication-transcription-translation",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 51,
-    "sortOrder": 3
+    "sortOrder": 7
   },
   {
     "id": "basic-genetic-diseases-as-inheritance-examples",
@@ -36,8 +76,18 @@
     "name": "Basic genetic diseases as inheritance examples",
     "slug": "basic-genetic-diseases-as-inheritance-examples",
     "ncertRef": "NCERT Biology Class 12, Chapter 7",
-    "questionCount": 6,
-    "sortOrder": 4
+    "questionCount": 11,
+    "sortOrder": 8
+  },
+  {
+    "id": "immunity-pathogens-vaccines",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Immunity pathogens vaccines",
+    "slug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "questionCount": 24,
+    "sortOrder": 9
   },
   {
     "id": "neuron-nerve-impulse-synapse",
@@ -47,7 +97,7 @@
     "slug": "neuron-nerve-impulse-synapse",
     "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 21,
-    "sortOrder": 5
+    "sortOrder": 10
   },
   {
     "id": "muscle-contraction-and-skeleton",
@@ -57,17 +107,7 @@
     "slug": "muscle-contraction-and-skeleton",
     "ncertRef": "NCERT Biology Class 11, Chapter 17",
     "questionCount": 2,
-    "sortOrder": 6
-  },
-  {
-    "id": "immunity-pathogens-vaccines",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Immunity pathogens vaccines",
-    "slug": "immunity-pathogens-vaccines",
-    "ncertRef": "NCERT Biology Class 12, Chapter 7",
-    "questionCount": 22,
-    "sortOrder": 7
+    "sortOrder": 11
   },
   {
     "id": "human-respiration",
@@ -77,7 +117,7 @@
     "slug": "human-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 14",
     "questionCount": 4,
-    "sortOrder": 8
+    "sortOrder": 12
   },
   {
     "id": "excretion-and-kidney-function",
@@ -87,7 +127,7 @@
     "slug": "excretion-and-kidney-function",
     "ncertRef": "NCERT Biology Class 11, Chapter 16",
     "questionCount": 3,
-    "sortOrder": 9
+    "sortOrder": 13
   },
   {
     "id": "human-reproductive-system-and-gametogenesis",
@@ -97,7 +137,7 @@
     "slug": "human-reproductive-system-and-gametogenesis",
     "ncertRef": "NCERT Biology Class 12, Chapter 2",
     "questionCount": 7,
-    "sortOrder": 10
+    "sortOrder": 14
   },
   {
     "id": "plant-respiration",
@@ -107,7 +147,7 @@
     "slug": "plant-respiration",
     "ncertRef": "NCERT Biology Class 11, Chapter 12",
     "questionCount": 13,
-    "sortOrder": 11
+    "sortOrder": 15
   },
   {
     "id": "animal-tissues",
@@ -117,17 +157,7 @@
     "slug": "animal-tissues",
     "ncertRef": "NCERT Biology Class 11, Chapter 7",
     "questionCount": 5,
-    "sortOrder": 12
-  },
-  {
-    "id": "cell-theory-and-cell-organelles",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Cell theory and cell organelles",
-    "slug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "questionCount": 35,
-    "sortOrder": 13
+    "sortOrder": 16
   },
   {
     "id": "five-kingdom-classification",
@@ -137,17 +167,7 @@
     "slug": "five-kingdom-classification",
     "ncertRef": "NCERT Biology Class 11, Chapter 2",
     "questionCount": 2,
-    "sortOrder": 14
-  },
-  {
-    "id": "mutation-and-gene-expression",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Mutation and gene expression",
-    "slug": "mutation-and-gene-expression",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "questionCount": 27,
-    "sortOrder": 15
+    "sortOrder": 17
   },
   {
     "id": "recombinant-dna-technology",
@@ -157,7 +177,7 @@
     "slug": "recombinant-dna-technology",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 8,
-    "sortOrder": 16
+    "sortOrder": 18
   },
   {
     "id": "molecular-tools-and-dna-analysis",
@@ -167,7 +187,7 @@
     "slug": "molecular-tools-and-dna-analysis",
     "ncertRef": "NCERT Biology Class 12, Chapter 9",
     "questionCount": 6,
-    "sortOrder": 17
+    "sortOrder": 19
   },
   {
     "id": "human-genome-and-dna-polymorphism-basics",
@@ -177,7 +197,7 @@
     "slug": "human-genome-and-dna-polymorphism-basics",
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 2,
-    "sortOrder": 18
+    "sortOrder": 20
   },
   {
     "id": "population-genetics",
@@ -187,7 +207,7 @@
     "slug": "population-genetics",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 1,
-    "sortOrder": 19
+    "sortOrder": 21
   },
   {
     "id": "mendelian-inheritance",
@@ -197,7 +217,7 @@
     "slug": "mendelian-inheritance",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 1,
-    "sortOrder": 20
+    "sortOrder": 22
   },
   {
     "id": "chromosomal-basis-of-inheritance",
@@ -207,7 +227,7 @@
     "slug": "chromosomal-basis-of-inheritance",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 4,
-    "sortOrder": 21
+    "sortOrder": 23
   },
   {
     "id": "pedigree-analysis-and-inheritance-patterns",
@@ -217,26 +237,6 @@
     "slug": "pedigree-analysis-and-inheritance-patterns",
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 7,
-    "sortOrder": 22
-  },
-  {
-    "id": "carbohydrates-proteins-lipids-nucleic-acids",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Carbohydrates proteins lipids nucleic acids",
-    "slug": "carbohydrates-proteins-lipids-nucleic-acids",
-    "ncertRef": "NCERT Biology Class 11, Chapter 9",
-    "questionCount": 24,
-    "sortOrder": 23
-  },
-  {
-    "id": "mitosis-and-meiosis",
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "name": "Mitosis and meiosis",
-    "slug": "mitosis-and-meiosis",
-    "ncertRef": "NCERT Biology Class 11, Chapter 10",
-    "questionCount": 12,
     "sortOrder": 24
   }
 ]

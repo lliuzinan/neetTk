@@ -1,5 +1,327 @@
 [
   {
+    "id": "neetug-bio-161767",
+    "sourceId": 161767,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The main chemical bond in protein molecules is",
+    "options": {
+      "A": "peptide bonds",
+      "B": "salt bridges",
+      "C": "ester bonds",
+      "D": "disulfide bonds"
+    },
+    "correctOption": "A",
+    "explanation": "Peptide bonds are the primary covalent bonds that link amino acids together to form polypeptide chains in proteins.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "neetug-bio-161788",
+    "sourceId": 161788,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The spatial conformation of proteins mainly depends on",
+    "options": {
+      "A": "the sequence of amino acids in the polypeptide chain",
+      "B": "α-helix and β-sheet",
+      "C": "side chains of amino acids in the polypeptide chain",
+      "D": "positions of disulfide bonds in the polypeptide chain"
+    },
+    "correctOption": "A",
+    "explanation": "Proteins are large biological molecules formed by many amino acids linked through peptide bonds. The primary structure of a protein refers to the sequence of amino acids from N-terminus to C-terminus, i.e., the amino acid sequence. Secondary structure refers to the local spatial arrangement of the main chain, mainly including α-helices and β-sheets. Tertiary structure involves the overall spatial arrangement of all atoms in the polypeptide chain and its side chains. Quaternary structure concerns the aggregation of protein subunits. The first three structures are collectively known as the spatial structure of proteins. The primary structure is the foundation for spatial conformation, meaning that the spatial conformation of proteins mainly depends on the sequence of amino acids in the polypeptide chain.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "neetug-bio-389635",
+    "sourceId": 389635,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following components in bacteria is extrachromosomal genetic material?",
+    "options": {
+      "A": "plasmid",
+      "B": "rRNA",
+      "C": "mRNA",
+      "D": "metachromatic granules"
+    },
+    "correctOption": "A",
+    "explanation": "The genetic material in bacteria includes chromosomes, plasmids, transposons, and prophages. Plasmids are extrachromosomal genetic materials found in the cytoplasm of bacterial cells as circular or linear dsDNA that can replicate independently. Plasmids are not essential for the life activities of bacteria but carry information that can confer specific biological traits to the host bacterium, such as conjugation ability, antibiotic resistance, and pathogenicity.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "neetug-bio-395115",
+    "sourceId": 395115,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In the genetic code table, the genetic codons are represented by which of the following molecules' 5'→3' direction base triplets?",
+    "options": {
+      "A": "DNA",
+      "B": "RNA",
+      "C": "tRNA",
+      "D": "rRNA"
+    },
+    "correctOption": "B",
+    "explanation": "The genetic code is read from the 5' to 3' direction of mRNA during protein synthesis.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "neetug-bio-395151",
+    "sourceId": 395151,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Due to a mutation causing a codon to form a stop codon, this mutation is known as",
+    "options": {
+      "A": "missense mutation",
+      "B": "nonsense mutation",
+      "C": "stop codon mutation",
+      "D": "frameshift mutation"
+    },
+    "correctOption": "B",
+    "explanation": "A nonsense mutation results in the formation of a premature stop codon, leading to a truncated protein.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "neetug-bio-399515",
+    "sourceId": 399515,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "What is the role of RNA primer during DNA replication?",
+    "options": {
+      "A": "Provides a 3′-OH end for dNTP addition",
+      "B": "Extends Okazaki fragments",
+      "C": "Participates in forming the primosome",
+      "D": "Assists helicase action"
+    },
+    "correctOption": "A",
+    "explanation": "DNA polymerase cannot catalyze the formation of a phosphodiester bond between two free dNTPs; it can only catalyze the addition of dNTPs to the 3′-OH end of a nucleotide fragment. The primase, which is an RNA polymerase, provides a short RNA primer that offers a 3′-OH end for DNA synthesis. In the presence of DNA polymerase, dNTPs are added one by one to form the DNA daughter strand. B: Extending Okazaki fragments is done by DNA pol I. C: Primase participates in forming the primosome; after catalyzing primer formation, it enters the phase of DNA daughter strand elongation. D: The action of assisting helicase is performed by DnaC protein.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "neetug-bio-401347",
+    "sourceId": 401347,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following is the main site for biological oxidation and energy conversion in animal cells?",
+    "options": {
+      "A": "nucleus",
+      "B": "endoplasmic reticulum",
+      "C": "golgi apparatus",
+      "D": "mitochondria"
+    },
+    "correctOption": "D",
+    "explanation": "Mitochondria are known as the powerhouses of the cell, where most of the ATP (adenosine triphosphate) is generated through cellular respiration.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "neetug-bio-401715",
+    "sourceId": 401715,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Where does aerobic respiration and oxidative phosphorylation occur in a cell?",
+    "options": {
+      "A": "ribosome",
+      "B": "mitochondrion",
+      "C": "cell membrane",
+      "D": "rough endoplasmic reticulum"
+    },
+    "correctOption": "B",
+    "explanation": "Aerobic respiration and oxidative phosphorylation take place in the mitochondria of a cell.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "neetug-bio-406701",
+    "sourceId": 406701,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "During meiosis II, separation occurs of",
+    "options": {
+      "A": "sister chromatids",
+      "B": "non-sister chromatids",
+      "C": "homologous chromosomes",
+      "D": "alleles"
+    },
+    "correctOption": "A",
+    "explanation": "During meiosis II, the sister chromatids separate and move to opposite poles.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 9
+  },
+  {
+    "id": "neetug-bio-406733",
+    "sourceId": 406733,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In the genetic code table, the genetic codons are represented by which molecule's 5'→3' direction of base triplets?",
+    "options": {
+      "A": "mRNA",
+      "B": "tRNA",
+      "C": "rRNA",
+      "D": "DNA"
+    },
+    "correctOption": "A",
+    "explanation": "The genetic code is read from the mRNA during protein synthesis. The codons in the mRNA are a sequence of three nucleotides that specify which amino acid will be added next to the growing polypeptide chain.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 10
+  },
+  {
+    "id": "neetug-bio-453226",
+    "sourceId": 453226,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is an incorrect statement about mutations?",
+    "options": {
+      "A": "Point mutations include transitions and transversions",
+      "B": "Insertion of 2 bp can cause a frameshift mutation",
+      "C": "Mutations can alter the genotype",
+      "D": "If there is a mutation, it will definitely affect the phenotype"
+    },
+    "correctOption": "D",
+    "explanation": "Mutations do not necessarily lead to changes in the phenotype; they may only alter the genotype.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 11
+  },
+  {
+    "id": "neetug-bio-453245",
+    "sourceId": 453245,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In DNA, introns are found in",
+    "options": {
+      "A": "coding sequences",
+      "B": "structural gene sequences",
+      "C": "mature mRNA",
+      "D": "hnRNA"
+    },
+    "correctOption": "D",
+    "explanation": "Introns are non-coding sequences present in the initial RNA transcript (hnRNA) that are removed during splicing to form mature mRNA. They do not appear in mature mRNA.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 12
+  },
+  {
+    "id": "neetug-bio-453246",
+    "sourceId": 453246,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In DNA, exons are",
+    "options": {
+      "A": "sequences not transcribed",
+      "B": "transcribed but not translated sequences",
+      "C": "transcribed and translated sequences",
+      "D": "regulatory gene sequences"
+    },
+    "correctOption": "C",
+    "explanation": "Exons in DNA are coding sequences that are transcribed into mRNA and then translated into proteins.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 13
+  },
+  {
+    "id": "neetug-bio-453324",
+    "sourceId": 453324,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Where does the tricarboxylic acid cycle occur?",
+    "options": {
+      "A": "cell nucleus",
+      "B": "microsomes",
+      "C": "mitochondria",
+      "D": "endoplasmic reticulum"
+    },
+    "correctOption": "C",
+    "explanation": "The tricarboxylic acid (TCA) cycle, also known as the citric acid cycle or Krebs cycle, takes place in the mitochondrial matrix of eukaryotic cells.",
+    "qwenmaxReviewScore": 98,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 14
+  },
+  {
     "id": "neetug-bio-515670",
     "sourceId": 515670,
     "exam": "NEET-UG",
@@ -20,7 +342,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 1
+    "sortOrder": 15
   },
   {
     "id": "neetug-bio-516662",
@@ -43,7 +365,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 2
+    "sortOrder": 16
   },
   {
     "id": "neetug-bio-516664",
@@ -66,7 +388,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 3
+    "sortOrder": 17
   },
   {
     "id": "neetug-bio-520895",
@@ -89,30 +411,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 4
-  },
-  {
-    "id": "neetug-bio-520922",
-    "sourceId": 520922,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "DNA RNA replication transcription translation",
-    "topicSlug": "dna-rna-replication-transcription-translation",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "stem": "What is the role of RNA primer during DNA replication?",
-    "options": {
-      "A": "Provides a 3'OH end for dNTP addition",
-      "B": "Extends Okazaki fragments",
-      "C": "Participates in forming the primosome",
-      "D": "Assists helicase action"
-    },
-    "correctOption": "A",
-    "explanation": "The RNA primer provides a 3'OH end where DNA polymerase can add dNTPs during DNA replication.",
-    "qwenmaxReviewScore": 98,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 5
+    "sortOrder": 18
   },
   {
     "id": "neetug-bio-521057",
@@ -135,7 +434,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 6
+    "sortOrder": 19
   },
   {
     "id": "neetug-bio-521084",
@@ -158,7 +457,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 7
+    "sortOrder": 20
   },
   {
     "id": "neetug-bio-521108",
@@ -181,7 +480,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 8
+    "sortOrder": 21
   },
   {
     "id": "neetug-bio-579564",
@@ -204,7 +503,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 9
+    "sortOrder": 22
   },
   {
     "id": "neetug-bio-588726",
@@ -227,7 +526,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 10
+    "sortOrder": 23
   },
   {
     "id": "neetug-bio-588837",
@@ -250,7 +549,605 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 11
+    "sortOrder": 24
+  },
+  {
+    "id": "neetug-bio-161786",
+    "sourceId": 161786,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The primary structure and higher-order structure of proteins depend on",
+    "options": {
+      "A": "hydrogen bonds within the molecule",
+      "B": "ion bonds within the molecule",
+      "C": "amino acid composition and sequence",
+      "D": "internal hydrophobic bonds"
+    },
+    "correctOption": "C",
+    "explanation": "The primary structure of a protein is determined by its amino acid composition and sequence, which in turn influences its higher-order structure.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 25
+  },
+  {
+    "id": "neetug-bio-161807",
+    "sourceId": 161807,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Carbohydrates proteins lipids nucleic acids",
+    "topicSlug": "carbohydrates-proteins-lipids-nucleic-acids",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "stem": "The ability of proteins to absorb ultraviolet light mainly depends on",
+    "options": {
+      "A": "the content of sulfur-containing amino acids",
+      "B": "the content of basic amino acids",
+      "C": "the content of aromatic amino acids",
+      "D": "the content of aliphatic amino acids"
+    },
+    "correctOption": "C",
+    "explanation": "Aromatic amino acids, such as tryptophan and tyrosine, contain conjugated double bonds in their side chains. These conjugated systems allow proteins to absorb UV light effectively.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 26
+  },
+  {
+    "id": "neetug-bio-389648",
+    "sourceId": 389648,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is not a mode of bacterial gene transfer and recombination?",
+    "options": {
+      "A": "transformation",
+      "B": "conjugation",
+      "C": "transduction",
+      "D": "mutation"
+    },
+    "correctOption": "D",
+    "explanation": "Bacterial gene transfer and recombination include transformation, transduction, and conjugation. Mutation refers to changes in the DNA sequence due to base pair substitution, insertion, or deletion, which can be point mutations, insertional or deletional mutations, etc.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 27
+  },
+  {
+    "id": "neetug-bio-395102",
+    "sourceId": 395102,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Down syndrome is caused by",
+    "options": {
+      "A": "a single gene mutation",
+      "B": "multiple genes interaction",
+      "C": "chromosomal abnormality",
+      "D": "mitochondrial disorder"
+    },
+    "correctOption": "C",
+    "explanation": "Down syndrome, also known as trisomy 21, is a genetic condition caused by the presence of all or part of a third copy of chromosome 21. This makes it a chromosomal abnormality.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 28
+  },
+  {
+    "id": "neetug-bio-395147",
+    "sourceId": 395147,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Mutation caused by the expansion of trinucleotide repeat sequences is known as",
+    "options": {
+      "A": "frameshift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment mutation",
+      "D": "transversion"
+    },
+    "correctOption": "B",
+    "explanation": "Dynamic mutations are characterized by the expansion or contraction of trinucleotide repeats, leading to genetic disorders.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 29
+  },
+  {
+    "id": "neetug-bio-395148",
+    "sourceId": 395148,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In a mutation where all codons after the mutation point are shifted, it is known as",
+    "options": {
+      "A": "frameshift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment mutation",
+      "D": "transition"
+    },
+    "correctOption": "A",
+    "explanation": "Frameshift mutations result in a shift of the reading frame from the point of insertion or deletion, leading to a completely different sequence of amino acids.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 30
+  },
+  {
+    "id": "neetug-bio-395149",
+    "sourceId": 395149,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mutation and gene expression",
+    "topicSlug": "mutation-and-gene-expression",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The mutation involving a substitution between non-complementary bases is called",
+    "options": {
+      "A": "frameshift mutation",
+      "B": "dynamic mutation",
+      "C": "fragment mutation",
+      "D": "transversion"
+    },
+    "correctOption": "D",
+    "explanation": "Transversion refers to the substitution of one purine with another pyrimidine or vice versa, which involves non-complementary bases. The other options do not fit this description.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 31
+  },
+  {
+    "id": "neetug-bio-395345",
+    "sourceId": 395345,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Mitosis and meiosis",
+    "topicSlug": "mitosis-and-meiosis",
+    "ncertRef": "NCERT Biology Class 11, Chapter 10",
+    "stem": "The basis of chromosomal structural abnormalities is",
+    "options": {
+      "A": "sister chromatid exchange",
+      "B": "chromosome intranuclear replication",
+      "C": "chromosome non-separation during cell division",
+      "D": "chromosome breakage followed by abnormal rearrangement"
+    },
+    "correctOption": "D",
+    "explanation": "Chromosomal structural abnormalities are primarily caused by chromosome breakage followed by abnormal rearrangement. Sister chromatid exchange and intranuclear replication do not directly lead to such abnormalities, while non-separation of chromosomes can result in numerical changes but not necessarily structural ones.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 32
+  },
+  {
+    "id": "neetug-bio-395385",
+    "sourceId": 395385,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following is a molecular disease due to transporter protein defect?",
+    "options": {
+      "A": "sickle cell anemia",
+      "B": "HbLepore",
+      "C": "hemophilia A",
+      "D": "familial hypercholesterolemia"
+    },
+    "correctOption": "D",
+    "explanation": "Familial hypercholesterolemia is a genetic disorder due to defects in the LDL receptor, which is a transporter protein. The other options are not primarily caused by defects in transporter proteins.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 33
+  },
+  {
+    "id": "neetug-bio-395387",
+    "sourceId": 395387,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "The disease caused by the lack of phenylalanine hydroxylase is",
+    "options": {
+      "A": "albinism",
+      "B": "galactosemia",
+      "C": "mucopolysaccharidosis",
+      "D": "phenylketonuria"
+    },
+    "correctOption": "D",
+    "explanation": "Phenylketonuria (PKU) is caused by the lack of phenylalanine hydroxylase, which leads to an accumulation of phenylalanine in the body. This condition can result in severe neurological damage if not treated early.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 34
+  },
+  {
+    "id": "neetug-bio-395481",
+    "sourceId": 395481,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following genetic diseases can be diagnosed through chromosome testing?",
+    "options": {
+      "A": "phenylketonuria",
+      "B": "albinism",
+      "C": "haemophilia",
+      "D": "Klinefelter syndrome"
+    },
+    "correctOption": "D",
+    "explanation": "Phenylketonuria (A) is a metabolic disorder, albinism (B) affects pigmentation, and haemophilia (C) involves blood clotting factors. Klinefelter syndrome (D) is a genetic condition involving an extra X chromosome, which can be diagnosed through chromosomal analysis.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 35
+  },
+  {
+    "id": "neetug-bio-399087",
+    "sourceId": 399087,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Where does the respiratory chain exist in eukaryotic cells?",
+    "options": {
+      "A": "cytoplasm",
+      "B": "nucleus",
+      "C": "mitochondria",
+      "D": "peroxisomes"
+    },
+    "correctOption": "C",
+    "explanation": "Mitochondria contain various enzymes and cofactors required for oxidative phosphorylation. The cytoplasm is involved in substance transport, information transmission, and multiple metabolic reactions such as glycolysis, gluconeogenesis, and synthetic metabolism. The nucleus stores, replicates, and transcribes genetic material, controlling cellular genetics and various metabolic activities. Peroxisomes contain a rich variety of enzymes including oxidases, catalase, and peroxidase that can catalyze the β-oxidation of fatty acids and decomposition of H2O2.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 36
+  },
+  {
+    "id": "neetug-bio-399504",
+    "sourceId": 399504,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which enzyme is not involved in DNA replication?",
+    "options": {
+      "A": "ribozyme",
+      "B": "unwinding enzyme",
+      "C": "topoisomerase",
+      "D": "primase"
+    },
+    "correctOption": "A",
+    "explanation": "Ribozyme is a type of RNA with catalytic activity, playing a role in RNA splicing and modification. B: Unwinding enzyme (helicase) uses ATP to unwind the DNA double helix during DNA replication. C: Topoisomerase helps in unwinding, decatenating or relaxing the DNA during replication for proper coiling. D: Primase catalyzes the synthesis of short RNA primers which provide a 3′-OH end for DNA polymerase during DNA replication.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 37
+  },
+  {
+    "id": "neetug-bio-399587",
+    "sourceId": 399587,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Transcription in eukaryotic cells occurs in the",
+    "options": {
+      "A": "mitochondria",
+      "B": "cytoplasm",
+      "C": "nucleus",
+      "D": "endoplasmic reticulum"
+    },
+    "correctOption": "C",
+    "explanation": "Transcription in eukaryotic cells occurs in the nucleus.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 38
+  },
+  {
+    "id": "neetug-bio-399593",
+    "sourceId": 399593,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Transcription in eukaryotes occurs in the",
+    "options": {
+      "A": "cytoplasm",
+      "B": "nucleus",
+      "C": "mitochondria",
+      "D": "endoplasmic reticulum"
+    },
+    "correctOption": "B",
+    "explanation": "In eukaryotes, transcription and translation are separate processes. Transcription takes place in the nucleus while translation occurs in the cytoplasm.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 39
+  },
+  {
+    "id": "neetug-bio-399597",
+    "sourceId": 399597,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In eukaryotes, the proteins that bind with RNA polymerase during transcription are called",
+    "options": {
+      "A": "promoters",
+      "B": "enhancers",
+      "C": "transcription factors",
+      "D": "σ factors"
+    },
+    "correctOption": "C",
+    "explanation": "Transcription factors form a transcription initiation complex with RNA polymerase and participate in the initiation process of transcription. Promoters are specific DNA sequences recognized and bound by RNA polymerase. Enhancers are DNA sequences that increase the frequency of transcription of genes they are linked to. σ Factors are components of RNA polymerase that recognize the promoter consensus sequence.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 40
+  },
+  {
+    "id": "neetug-bio-400651",
+    "sourceId": 400651,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following is a difference between transcription and DNA replication?",
+    "options": {
+      "A": "The genetic information is stored in the base sequence",
+      "B": "New strand synthesis follows base pairing rules",
+      "C": "RNA polymerase lacks proofreading function",
+      "D": "Synthesis direction is 5'→3'"
+    },
+    "correctOption": "C",
+    "explanation": "Key points: Differences between DNA replication and transcription, properties of RNA polymerase. DNA polymerase has 3'→5' exonuclease activity for self-correction; RNA polymerase lacks this function, hence the error rate in transcription is higher than in replication.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 41
+  },
+  {
+    "id": "neetug-bio-400658",
+    "sourceId": 400658,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "In eukaryotes, the TATA box is located",
+    "options": {
+      "A": "at the start of replication",
+      "B": "upstream of the transcription start site",
+      "C": "at the start of translation",
+      "D": "binding site for σ factor"
+    },
+    "correctOption": "B",
+    "explanation": "The TATA box is a DNA sequence that serves as a binding site for RNA polymerase II and other transcription factors, located upstream of the transcription start site in eukaryotes. It is part of the core promoter region.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 42
+  },
+  {
+    "id": "neetug-bio-400672",
+    "sourceId": 400672,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following statements about ribosomes is correct?",
+    "options": {
+      "A": "carries genetic codes",
+      "B": "consists of rRNA and proteins",
+      "C": "consists of snRNA and hnRNA",
+      "D": "consists of DNA and proteins"
+    },
+    "correctOption": "B",
+    "explanation": "Ribosomes are composed of rRNA and proteins, serving as the primary site for protein biosynthesis.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 43
+  },
+  {
+    "id": "neetug-bio-400676",
+    "sourceId": 400676,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Which of the following correctly defines wobble?",
+    "options": {
+      "A": "A type of anticodon can pair with several codons having different third bases",
+      "B": "A mechanism that extends peptide bonds in the large subunit of ribosome",
+      "C": "An error induced by streptomycin during translation",
+      "D": "Refers to the movement of ribosome along mRNA from 5' end to 3' end"
+    },
+    "correctOption": "A",
+    "explanation": "Wobble refers to a phenomenon where the third base of an anticodon can pair with different bases in the codon, not strictly following the Watson-Crick base pairing rules.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 44
+  },
+  {
+    "id": "neetug-bio-401327",
+    "sourceId": 401327,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "The main site for synthesis of lipid molecules in eukaryotic cells is",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "golgi apparatus",
+      "C": "ribosome",
+      "D": "lysosome"
+    },
+    "correctOption": "A",
+    "explanation": "Lipid synthesis primarily occurs in the endoplasmic reticulum.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 45
+  },
+  {
+    "id": "neetug-bio-401712",
+    "sourceId": 401712,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following cell organelles forms the sarcoplasmic reticulum in striated muscle cells?",
+    "options": {
+      "A": "endoplasmic reticulum",
+      "B": "golgi apparatus",
+      "C": "lysosomes",
+      "D": "mitochondria"
+    },
+    "correctOption": "A",
+    "explanation": "The sarcoplasmic reticulum is a specialized form of the endoplasmic reticulum found in muscle cells, responsible for storing and releasing calcium ions.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 46
+  },
+  {
+    "id": "neetug-bio-406847",
+    "sourceId": 406847,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Basic genetic diseases as inheritance examples",
+    "topicSlug": "basic-genetic-diseases-as-inheritance-examples",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following diseases is not a polygenic disease?",
+    "options": {
+      "A": "asthma",
+      "B": "schizophrenia",
+      "C": "phenylketonuria",
+      "D": "primary hypertension"
+    },
+    "correctOption": "C",
+    "explanation": "Phenylketonuria (PKU) is a single-gene disorder, while asthma, schizophrenia, and primary hypertension are polygenic diseases.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 47
+  },
+  {
+    "id": "neetug-bio-406997",
+    "sourceId": 406997,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "Non-coding RNA (ncRNA) is transcribed from DNA but does not get translated into proteins.",
+    "options": {
+      "A": "transcribed from DNA and translated into proteins",
+      "B": "transcribed from DNA but not translated into proteins",
+      "C": "has no transcription product",
+      "D": "neither transcribed nor translated into proteins"
+    },
+    "correctOption": "B",
+    "explanation": "Non-coding RNA (ncRNA) is a type of RNA that does not get translated into proteins. It is transcribed from DNA but the resulting RNA molecules do not code for proteins.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 48
+  },
+  {
+    "id": "neetug-bio-413342",
+    "sourceId": 413342,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "Which of the following is a function of macrophages in immunology?",
+    "options": {
+      "A": "secrete specific antibodies",
+      "B": "present antigens",
+      "C": "mediate type III hypersensitivity reaction",
+      "D": "mediate type I hypersensitivity reaction"
+    },
+    "correctOption": "B",
+    "explanation": "Macrophages have the following functions: killing and removing pathogens, killing intracellular parasites and tumor cells, participating in inflammatory responses, processing and presenting antigens to initiate adaptive immune responses, and immunoregulatory activities.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 49
+  },
+  {
+    "id": "neetug-bio-415349",
+    "sourceId": 415349,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Immunity pathogens vaccines",
+    "topicSlug": "immunity-pathogens-vaccines",
+    "ncertRef": "NCERT Biology Class 12, Chapter 7",
+    "stem": "The antigen obtained by extracting effective immunogens from pathogens is called",
+    "options": {
+      "A": "inactivated vaccine",
+      "B": "peptide vaccine",
+      "C": "combined vaccine",
+      "D": "subunit vaccine"
+    },
+    "correctOption": "D",
+    "explanation": "Subunit vaccines contain only the specific antigens of the pathogen, which are the effective immunogens extracted from it.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 50
   },
   {
     "id": "neetug-bio-515691",
@@ -273,7 +1170,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 12
+    "sortOrder": 51
   },
   {
     "id": "neetug-bio-515708",
@@ -296,7 +1193,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 13
+    "sortOrder": 52
   },
   {
     "id": "neetug-bio-515713",
@@ -319,7 +1216,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 14
+    "sortOrder": 53
   },
   {
     "id": "neetug-bio-515718",
@@ -342,7 +1239,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 15
+    "sortOrder": 54
   },
   {
     "id": "neetug-bio-515721",
@@ -365,7 +1262,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 16
+    "sortOrder": 55
   },
   {
     "id": "neetug-bio-515729",
@@ -388,7 +1285,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 17
+    "sortOrder": 56
   },
   {
     "id": "neetug-bio-515768",
@@ -411,7 +1308,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 18
+    "sortOrder": 57
   },
   {
     "id": "neetug-bio-515807",
@@ -434,7 +1331,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 19
+    "sortOrder": 58
   },
   {
     "id": "neetug-bio-515828",
@@ -457,7 +1354,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 20
+    "sortOrder": 59
   },
   {
     "id": "neetug-bio-515868",
@@ -480,7 +1377,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 21
+    "sortOrder": 60
   },
   {
     "id": "neetug-bio-515872",
@@ -503,7 +1400,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 22
+    "sortOrder": 61
   },
   {
     "id": "neetug-bio-515953",
@@ -526,7 +1423,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 23
+    "sortOrder": 62
   },
   {
     "id": "neetug-bio-516033",
@@ -549,7 +1446,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 24
+    "sortOrder": 63
   },
   {
     "id": "neetug-bio-516056",
@@ -572,7 +1469,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 25
+    "sortOrder": 64
   },
   {
     "id": "neetug-bio-516060",
@@ -595,7 +1492,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 26
+    "sortOrder": 65
   },
   {
     "id": "neetug-bio-516061",
@@ -618,7 +1515,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 27
+    "sortOrder": 66
   },
   {
     "id": "neetug-bio-516220",
@@ -641,7 +1538,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 28
+    "sortOrder": 67
   },
   {
     "id": "neetug-bio-516237",
@@ -664,7 +1561,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 29
+    "sortOrder": 68
   },
   {
     "id": "neetug-bio-516267",
@@ -687,7 +1584,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 30
+    "sortOrder": 69
   },
   {
     "id": "neetug-bio-516277",
@@ -710,7 +1607,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 31
+    "sortOrder": 70
   },
   {
     "id": "neetug-bio-516292",
@@ -733,7 +1630,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 32
+    "sortOrder": 71
   },
   {
     "id": "neetug-bio-516295",
@@ -756,7 +1653,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 33
+    "sortOrder": 72
   },
   {
     "id": "neetug-bio-516306",
@@ -779,7 +1676,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 34
+    "sortOrder": 73
   },
   {
     "id": "neetug-bio-516406",
@@ -802,7 +1699,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 35
+    "sortOrder": 74
   },
   {
     "id": "neetug-bio-516578",
@@ -825,7 +1722,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 36
+    "sortOrder": 75
   },
   {
     "id": "neetug-bio-516580",
@@ -848,7 +1745,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 37
+    "sortOrder": 76
   },
   {
     "id": "neetug-bio-516586",
@@ -871,7 +1768,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 38
+    "sortOrder": 77
   },
   {
     "id": "neetug-bio-516610",
@@ -894,7 +1791,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 39
+    "sortOrder": 78
   },
   {
     "id": "neetug-bio-516614",
@@ -917,7 +1814,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 40
+    "sortOrder": 79
   },
   {
     "id": "neetug-bio-516617",
@@ -940,7 +1837,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 41
+    "sortOrder": 80
   },
   {
     "id": "neetug-bio-516626",
@@ -963,7 +1860,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 42
+    "sortOrder": 81
   },
   {
     "id": "neetug-bio-516651",
@@ -986,7 +1883,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 43
+    "sortOrder": 82
   },
   {
     "id": "neetug-bio-516654",
@@ -1009,7 +1906,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 44
+    "sortOrder": 83
   },
   {
     "id": "neetug-bio-516657",
@@ -1032,7 +1929,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 45
+    "sortOrder": 84
   },
   {
     "id": "neetug-bio-516660",
@@ -1055,7 +1952,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 46
+    "sortOrder": 85
   },
   {
     "id": "neetug-bio-516663",
@@ -1078,7 +1975,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 47
+    "sortOrder": 86
   },
   {
     "id": "neetug-bio-516665",
@@ -1101,7 +1998,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 48
+    "sortOrder": 87
   },
   {
     "id": "neetug-bio-516668",
@@ -1124,7 +2021,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 49
+    "sortOrder": 88
   },
   {
     "id": "neetug-bio-516712",
@@ -1147,7 +2044,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 50
+    "sortOrder": 89
   },
   {
     "id": "neetug-bio-516713",
@@ -1170,7 +2067,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 51
+    "sortOrder": 90
   },
   {
     "id": "neetug-bio-516729",
@@ -1193,7 +2090,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 52
+    "sortOrder": 91
   },
   {
     "id": "neetug-bio-516732",
@@ -1216,7 +2113,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 53
+    "sortOrder": 92
   },
   {
     "id": "neetug-bio-516754",
@@ -1239,7 +2136,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 54
+    "sortOrder": 93
   },
   {
     "id": "neetug-bio-516768",
@@ -1262,7 +2159,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 55
+    "sortOrder": 94
   },
   {
     "id": "neetug-bio-520350",
@@ -1285,7 +2182,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 56
+    "sortOrder": 95
   },
   {
     "id": "neetug-bio-520361",
@@ -1308,7 +2205,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 57
+    "sortOrder": 96
   },
   {
     "id": "neetug-bio-520377",
@@ -1331,7 +2228,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 58
+    "sortOrder": 97
   },
   {
     "id": "neetug-bio-520500",
@@ -1354,7 +2251,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 59
+    "sortOrder": 98
   },
   {
     "id": "neetug-bio-520542",
@@ -1377,7 +2274,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 60
+    "sortOrder": 99
   },
   {
     "id": "neetug-bio-520558",
@@ -1400,7 +2297,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 61
+    "sortOrder": 100
   },
   {
     "id": "neetug-bio-520569",
@@ -1423,7 +2320,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 62
+    "sortOrder": 101
   },
   {
     "id": "neetug-bio-520614",
@@ -1446,7 +2343,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 63
+    "sortOrder": 102
   },
   {
     "id": "neetug-bio-520743",
@@ -1469,7 +2366,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 64
+    "sortOrder": 103
   },
   {
     "id": "neetug-bio-520790",
@@ -1492,7 +2389,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 65
+    "sortOrder": 104
   },
   {
     "id": "neetug-bio-520827",
@@ -1515,7 +2412,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 66
+    "sortOrder": 105
   },
   {
     "id": "neetug-bio-520896",
@@ -1538,7 +2435,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 67
+    "sortOrder": 106
   },
   {
     "id": "neetug-bio-520899",
@@ -1561,7 +2458,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 68
+    "sortOrder": 107
   },
   {
     "id": "neetug-bio-520900",
@@ -1584,7 +2481,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 69
+    "sortOrder": 108
   },
   {
     "id": "neetug-bio-520906",
@@ -1607,7 +2504,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 70
+    "sortOrder": 109
   },
   {
     "id": "neetug-bio-520924",
@@ -1630,7 +2527,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 71
+    "sortOrder": 110
   },
   {
     "id": "neetug-bio-520926",
@@ -1653,7 +2550,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 72
+    "sortOrder": 111
   },
   {
     "id": "neetug-bio-520941",
@@ -1676,7 +2573,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 73
+    "sortOrder": 112
   },
   {
     "id": "neetug-bio-520950",
@@ -1699,7 +2596,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 74
+    "sortOrder": 113
   },
   {
     "id": "neetug-bio-520963",
@@ -1722,7 +2619,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 75
+    "sortOrder": 114
   },
   {
     "id": "neetug-bio-520977",
@@ -1745,7 +2642,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 76
+    "sortOrder": 115
   },
   {
     "id": "neetug-bio-520978",
@@ -1768,7 +2665,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 77
+    "sortOrder": 116
   },
   {
     "id": "neetug-bio-520979",
@@ -1791,7 +2688,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 78
+    "sortOrder": 117
   },
   {
     "id": "neetug-bio-520986",
@@ -1814,7 +2711,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 79
+    "sortOrder": 118
   },
   {
     "id": "neetug-bio-520996",
@@ -1837,7 +2734,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 80
+    "sortOrder": 119
   },
   {
     "id": "neetug-bio-521016",
@@ -1860,7 +2757,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 81
+    "sortOrder": 120
   },
   {
     "id": "neetug-bio-521061",
@@ -1883,7 +2780,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 82
+    "sortOrder": 121
   },
   {
     "id": "neetug-bio-521063",
@@ -1906,7 +2803,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 83
+    "sortOrder": 122
   },
   {
     "id": "neetug-bio-521076",
@@ -1929,7 +2826,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 84
+    "sortOrder": 123
   },
   {
     "id": "neetug-bio-521077",
@@ -1952,7 +2849,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 85
+    "sortOrder": 124
   },
   {
     "id": "neetug-bio-521095",
@@ -1975,7 +2872,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 86
+    "sortOrder": 125
   },
   {
     "id": "neetug-bio-521100",
@@ -1998,7 +2895,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 87
+    "sortOrder": 126
   },
   {
     "id": "neetug-bio-521139",
@@ -2021,7 +2918,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 88
+    "sortOrder": 127
   },
   {
     "id": "neetug-bio-521191",
@@ -2044,7 +2941,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 89
+    "sortOrder": 128
   },
   {
     "id": "neetug-bio-521261",
@@ -2067,7 +2964,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 90
+    "sortOrder": 129
   },
   {
     "id": "neetug-bio-521313",
@@ -2090,7 +2987,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 91
+    "sortOrder": 130
   },
   {
     "id": "neetug-bio-521316",
@@ -2113,7 +3010,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 92
+    "sortOrder": 131
   },
   {
     "id": "neetug-bio-521331",
@@ -2136,7 +3033,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 93
+    "sortOrder": 132
   },
   {
     "id": "neetug-bio-521357",
@@ -2159,7 +3056,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 94
+    "sortOrder": 133
   },
   {
     "id": "neetug-bio-521381",
@@ -2182,7 +3079,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 95
+    "sortOrder": 134
   },
   {
     "id": "neetug-bio-521383",
@@ -2205,7 +3102,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 96
+    "sortOrder": 135
   },
   {
     "id": "neetug-bio-521386",
@@ -2228,7 +3125,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 97
+    "sortOrder": 136
   },
   {
     "id": "neetug-bio-521390",
@@ -2251,7 +3148,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 98
+    "sortOrder": 137
   },
   {
     "id": "neetug-bio-521459",
@@ -2274,7 +3171,53 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 99
+    "sortOrder": 138
+  },
+  {
+    "id": "neetug-bio-523573",
+    "sourceId": 523573,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "DNA RNA replication transcription translation",
+    "topicSlug": "dna-rna-replication-transcription-translation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "stem": "The process of genetic information transfer from RNA to DNA is called",
+    "options": {
+      "A": "transduction",
+      "B": "transformation",
+      "C": "reverse transcription",
+      "D": "recombination"
+    },
+    "correctOption": "C",
+    "explanation": "Reverse transcription is the process where genetic information is transferred from RNA to DNA, which is catalyzed by reverse transcriptase enzymes. This process is a key step in retroviral replication.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 139
+  },
+  {
+    "id": "neetug-bio-523799",
+    "sourceId": 523799,
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "topic": "Cell theory and cell organelles",
+    "topicSlug": "cell-theory-and-cell-organelles",
+    "ncertRef": "NCERT Biology Class 11, Chapter 8",
+    "stem": "Which of the following structures or components is not present in fungi cells?",
+    "options": {
+      "A": "cell wall",
+      "B": "nucleus",
+      "C": "endoplasmic reticulum",
+      "D": "chlorophyll"
+    },
+    "correctOption": "D",
+    "explanation": "Fungi do not contain chlorophyll and hence cannot perform photosynthesis. They have a cell wall, nucleus, and endoplasmic reticulum.",
+    "qwenmaxReviewScore": 95,
+    "qualityScore": 100,
+    "status": "approved",
+    "isFree": true,
+    "sortOrder": 140
   },
   {
     "id": "neetug-bio-579040",
@@ -2297,7 +3240,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 100
+    "sortOrder": 141
   },
   {
     "id": "neetug-bio-579093",
@@ -2320,7 +3263,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 101
+    "sortOrder": 142
   },
   {
     "id": "neetug-bio-579102",
@@ -2343,7 +3286,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 102
+    "sortOrder": 143
   },
   {
     "id": "neetug-bio-579149",
@@ -2366,7 +3309,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 103
+    "sortOrder": 144
   },
   {
     "id": "neetug-bio-579520",
@@ -2389,7 +3332,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 104
+    "sortOrder": 145
   },
   {
     "id": "neetug-bio-579522",
@@ -2412,7 +3355,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 105
+    "sortOrder": 146
   },
   {
     "id": "neetug-bio-579528",
@@ -2435,7 +3378,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 106
+    "sortOrder": 147
   },
   {
     "id": "neetug-bio-579614",
@@ -2458,7 +3401,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 107
+    "sortOrder": 148
   },
   {
     "id": "neetug-bio-579622",
@@ -2481,7 +3424,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 108
+    "sortOrder": 149
   },
   {
     "id": "neetug-bio-587008",
@@ -2504,7 +3447,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 109
+    "sortOrder": 150
   },
   {
     "id": "neetug-bio-587014",
@@ -2527,7 +3470,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 110
+    "sortOrder": 151
   },
   {
     "id": "neetug-bio-587015",
@@ -2550,7 +3493,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 111
+    "sortOrder": 152
   },
   {
     "id": "neetug-bio-587022",
@@ -2573,7 +3516,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 112
+    "sortOrder": 153
   },
   {
     "id": "neetug-bio-587026",
@@ -2596,7 +3539,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 113
+    "sortOrder": 154
   },
   {
     "id": "neetug-bio-587052",
@@ -2619,7 +3562,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 114
+    "sortOrder": 155
   },
   {
     "id": "neetug-bio-587115",
@@ -2642,7 +3585,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 115
+    "sortOrder": 156
   },
   {
     "id": "neetug-bio-587136",
@@ -2665,7 +3608,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 116
+    "sortOrder": 157
   },
   {
     "id": "neetug-bio-587158",
@@ -2688,7 +3631,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 117
+    "sortOrder": 158
   },
   {
     "id": "neetug-bio-587180",
@@ -2711,7 +3654,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 118
+    "sortOrder": 159
   },
   {
     "id": "neetug-bio-587183",
@@ -2734,7 +3677,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 119
+    "sortOrder": 160
   },
   {
     "id": "neetug-bio-587196",
@@ -2757,7 +3700,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 120
+    "sortOrder": 161
   },
   {
     "id": "neetug-bio-587200",
@@ -2780,7 +3723,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 121
+    "sortOrder": 162
   },
   {
     "id": "neetug-bio-587201",
@@ -2803,7 +3746,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 122
+    "sortOrder": 163
   },
   {
     "id": "neetug-bio-587690",
@@ -2826,7 +3769,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 123
+    "sortOrder": 164
   },
   {
     "id": "neetug-bio-587758",
@@ -2849,7 +3792,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 124
+    "sortOrder": 165
   },
   {
     "id": "neetug-bio-588000",
@@ -2872,7 +3815,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 125
+    "sortOrder": 166
   },
   {
     "id": "neetug-bio-588069",
@@ -2895,7 +3838,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 126
+    "sortOrder": 167
   },
   {
     "id": "neetug-bio-588072",
@@ -2918,7 +3861,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 127
+    "sortOrder": 168
   },
   {
     "id": "neetug-bio-588313",
@@ -2941,7 +3884,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 128
+    "sortOrder": 169
   },
   {
     "id": "neetug-bio-588317",
@@ -2964,7 +3907,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 129
+    "sortOrder": 170
   },
   {
     "id": "neetug-bio-588321",
@@ -2987,7 +3930,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 130
+    "sortOrder": 171
   },
   {
     "id": "neetug-bio-588344",
@@ -3010,7 +3953,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 131
+    "sortOrder": 172
   },
   {
     "id": "neetug-bio-588348",
@@ -3033,7 +3976,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 132
+    "sortOrder": 173
   },
   {
     "id": "neetug-bio-588362",
@@ -3056,7 +3999,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 133
+    "sortOrder": 174
   },
   {
     "id": "neetug-bio-588419",
@@ -3079,7 +4022,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 134
+    "sortOrder": 175
   },
   {
     "id": "neetug-bio-588434",
@@ -3102,7 +4045,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 135
+    "sortOrder": 176
   },
   {
     "id": "neetug-bio-588557",
@@ -3125,7 +4068,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 136
+    "sortOrder": 177
   },
   {
     "id": "neetug-bio-588624",
@@ -3148,7 +4091,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 137
+    "sortOrder": 178
   },
   {
     "id": "neetug-bio-588667",
@@ -3171,7 +4114,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 138
+    "sortOrder": 179
   },
   {
     "id": "neetug-bio-588681",
@@ -3194,7 +4137,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 139
+    "sortOrder": 180
   },
   {
     "id": "neetug-bio-588683",
@@ -3217,7 +4160,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 140
+    "sortOrder": 181
   },
   {
     "id": "neetug-bio-588737",
@@ -3240,7 +4183,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 141
+    "sortOrder": 182
   },
   {
     "id": "neetug-bio-588742",
@@ -3263,7 +4206,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 142
+    "sortOrder": 183
   },
   {
     "id": "neetug-bio-588747",
@@ -3286,7 +4229,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 143
+    "sortOrder": 184
   },
   {
     "id": "neetug-bio-588766",
@@ -3309,7 +4252,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 144
+    "sortOrder": 185
   },
   {
     "id": "neetug-bio-588771",
@@ -3332,7 +4275,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 145
+    "sortOrder": 186
   },
   {
     "id": "neetug-bio-588795",
@@ -3355,7 +4298,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 146
+    "sortOrder": 187
   },
   {
     "id": "neetug-bio-588802",
@@ -3378,30 +4321,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 147
-  },
-  {
-    "id": "neetug-bio-588809",
-    "sourceId": 588809,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Cell theory and cell organelles",
-    "topicSlug": "cell-theory-and-cell-organelles",
-    "ncertRef": "NCERT Biology Class 11, Chapter 8",
-    "stem": "Transcription in eukaryotic cells occurs in the",
-    "options": {
-      "A": "nucleus",
-      "B": "cytoplasm",
-      "C": "mitochondria",
-      "D": "endoplasmic reticulum"
-    },
-    "correctOption": "A",
-    "explanation": "Transcription primarily takes place in the nucleus of eukaryotic cells.",
-    "qwenmaxReviewScore": 95,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 148
+    "sortOrder": 188
   },
   {
     "id": "neetug-bio-588814",
@@ -3424,7 +4344,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 149
+    "sortOrder": 189
   },
   {
     "id": "neetug-bio-588820",
@@ -3447,7 +4367,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 150
+    "sortOrder": 190
   },
   {
     "id": "neetug-bio-588825",
@@ -3470,7 +4390,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 151
+    "sortOrder": 191
   },
   {
     "id": "neetug-bio-588828",
@@ -3493,7 +4413,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 152
+    "sortOrder": 192
   },
   {
     "id": "neetug-bio-588830",
@@ -3516,7 +4436,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 153
+    "sortOrder": 193
   },
   {
     "id": "neetug-bio-588848",
@@ -3539,7 +4459,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 154
+    "sortOrder": 194
   },
   {
     "id": "neetug-bio-588861",
@@ -3562,7 +4482,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 155
+    "sortOrder": 195
   },
   {
     "id": "neetug-bio-588928",
@@ -3585,7 +4505,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 156
+    "sortOrder": 196
   },
   {
     "id": "neetug-bio-588969",
@@ -3608,7 +4528,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 157
+    "sortOrder": 197
   },
   {
     "id": "neetug-bio-589004",
@@ -3631,7 +4551,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 158
+    "sortOrder": 198
   },
   {
     "id": "neetug-bio-589104",
@@ -3654,7 +4574,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 159
+    "sortOrder": 199
   },
   {
     "id": "neetug-bio-589107",
@@ -3677,7 +4597,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 160
+    "sortOrder": 200
   },
   {
     "id": "neetug-bio-589112",
@@ -3700,7 +4620,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 161
+    "sortOrder": 201
   },
   {
     "id": "neetug-bio-589135",
@@ -3723,7 +4643,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 162
+    "sortOrder": 202
   },
   {
     "id": "neetug-bio-589160",
@@ -3746,7 +4666,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 163
+    "sortOrder": 203
   },
   {
     "id": "neetug-bio-520527",
@@ -3769,7 +4689,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 164
+    "sortOrder": 204
   },
   {
     "id": "neetug-bio-587141",
@@ -3792,7 +4712,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 165
+    "sortOrder": 205
   },
   {
     "id": "neetug-bio-588250",
@@ -3815,7 +4735,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 166
+    "sortOrder": 206
   },
   {
     "id": "neetug-bio-588327",
@@ -3838,7 +4758,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 167
+    "sortOrder": 207
   },
   {
     "id": "neetug-bio-588773",
@@ -3861,7 +4781,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 168
+    "sortOrder": 208
   },
   {
     "id": "neetug-bio-588900",
@@ -3884,7 +4804,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 169
+    "sortOrder": 209
   },
   {
     "id": "neetug-bio-589094",
@@ -3907,7 +4827,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 170
+    "sortOrder": 210
   },
   {
     "id": "neetug-bio-589163",
@@ -3930,7 +4850,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 171
+    "sortOrder": 211
   },
   {
     "id": "neetug-bio-515698",
@@ -3953,7 +4873,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 172
+    "sortOrder": 212
   },
   {
     "id": "neetug-bio-515700",
@@ -3976,7 +4896,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 173
+    "sortOrder": 213
   },
   {
     "id": "neetug-bio-515705",
@@ -3999,7 +4919,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 174
+    "sortOrder": 214
   },
   {
     "id": "neetug-bio-515706",
@@ -4022,7 +4942,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 175
+    "sortOrder": 215
   },
   {
     "id": "neetug-bio-515710",
@@ -4045,7 +4965,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 176
+    "sortOrder": 216
   },
   {
     "id": "neetug-bio-515711",
@@ -4068,7 +4988,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 177
+    "sortOrder": 217
   },
   {
     "id": "neetug-bio-515715",
@@ -4091,7 +5011,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 178
+    "sortOrder": 218
   },
   {
     "id": "neetug-bio-516059",
@@ -4114,7 +5034,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 179
+    "sortOrder": 219
   },
   {
     "id": "neetug-bio-516216",
@@ -4137,7 +5057,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 180
+    "sortOrder": 220
   },
   {
     "id": "neetug-bio-516300",
@@ -4160,7 +5080,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 181
+    "sortOrder": 221
   },
   {
     "id": "neetug-bio-516412",
@@ -4183,7 +5103,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 182
+    "sortOrder": 222
   },
   {
     "id": "neetug-bio-516413",
@@ -4206,7 +5126,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 183
+    "sortOrder": 223
   },
   {
     "id": "neetug-bio-516425",
@@ -4229,7 +5149,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 184
+    "sortOrder": 224
   },
   {
     "id": "neetug-bio-516428",
@@ -4252,7 +5172,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 185
+    "sortOrder": 225
   },
   {
     "id": "neetug-bio-516430",
@@ -4275,7 +5195,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 186
+    "sortOrder": 226
   },
   {
     "id": "neetug-bio-516615",
@@ -4298,7 +5218,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 187
+    "sortOrder": 227
   },
   {
     "id": "neetug-bio-516616",
@@ -4321,7 +5241,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 188
+    "sortOrder": 228
   },
   {
     "id": "neetug-bio-516625",
@@ -4344,7 +5264,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 189
+    "sortOrder": 229
   },
   {
     "id": "neetug-bio-516658",
@@ -4367,7 +5287,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 190
+    "sortOrder": 230
   },
   {
     "id": "neetug-bio-516661",
@@ -4390,7 +5310,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 191
+    "sortOrder": 231
   },
   {
     "id": "neetug-bio-516698",
@@ -4413,7 +5333,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 192
+    "sortOrder": 232
   },
   {
     "id": "neetug-bio-516716",
@@ -4436,7 +5356,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 193
+    "sortOrder": 233
   },
   {
     "id": "neetug-bio-516756",
@@ -4459,7 +5379,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 194
+    "sortOrder": 234
   },
   {
     "id": "neetug-bio-516757",
@@ -4482,7 +5402,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 195
+    "sortOrder": 235
   },
   {
     "id": "neetug-bio-516758",
@@ -4505,7 +5425,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 196
+    "sortOrder": 236
   },
   {
     "id": "neetug-bio-520307",
@@ -4528,7 +5448,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 197
+    "sortOrder": 237
   },
   {
     "id": "neetug-bio-520332",
@@ -4551,7 +5471,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 198
+    "sortOrder": 238
   },
   {
     "id": "neetug-bio-520370",
@@ -4574,7 +5494,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 199
+    "sortOrder": 239
   },
   {
     "id": "neetug-bio-520545",
@@ -4597,7 +5517,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 200
+    "sortOrder": 240
   },
   {
     "id": "neetug-bio-520555",
@@ -4620,7 +5540,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 201
+    "sortOrder": 241
   },
   {
     "id": "neetug-bio-520570",
@@ -4643,7 +5563,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 202
+    "sortOrder": 242
   },
   {
     "id": "neetug-bio-520571",
@@ -4666,7 +5586,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 203
+    "sortOrder": 243
   },
   {
     "id": "neetug-bio-520678",
@@ -4689,7 +5609,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 204
+    "sortOrder": 244
   },
   {
     "id": "neetug-bio-520843",
@@ -4712,7 +5632,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 205
+    "sortOrder": 245
   },
   {
     "id": "neetug-bio-520897",
@@ -4735,7 +5655,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 206
+    "sortOrder": 246
   },
   {
     "id": "neetug-bio-521005",
@@ -4758,7 +5678,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 207
+    "sortOrder": 247
   },
   {
     "id": "neetug-bio-521009",
@@ -4781,7 +5701,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 208
+    "sortOrder": 248
   },
   {
     "id": "neetug-bio-521010",
@@ -4804,7 +5724,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 209
+    "sortOrder": 249
   },
   {
     "id": "neetug-bio-521015",
@@ -4827,7 +5747,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 210
+    "sortOrder": 250
   },
   {
     "id": "neetug-bio-521078",
@@ -4850,7 +5770,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 211
+    "sortOrder": 251
   },
   {
     "id": "neetug-bio-521093",
@@ -4873,7 +5793,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 212
+    "sortOrder": 252
   },
   {
     "id": "neetug-bio-521106",
@@ -4896,7 +5816,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 213
+    "sortOrder": 253
   },
   {
     "id": "neetug-bio-521131",
@@ -4919,7 +5839,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 214
+    "sortOrder": 254
   },
   {
     "id": "neetug-bio-521137",
@@ -4942,7 +5862,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 215
+    "sortOrder": 255
   },
   {
     "id": "neetug-bio-521273",
@@ -4965,7 +5885,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 216
+    "sortOrder": 256
   },
   {
     "id": "neetug-bio-521290",
@@ -4988,7 +5908,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 217
+    "sortOrder": 257
   },
   {
     "id": "neetug-bio-521305",
@@ -5011,7 +5931,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 218
+    "sortOrder": 258
   },
   {
     "id": "neetug-bio-521307",
@@ -5034,7 +5954,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 219
+    "sortOrder": 259
   },
   {
     "id": "neetug-bio-521314",
@@ -5057,7 +5977,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 220
+    "sortOrder": 260
   },
   {
     "id": "neetug-bio-521315",
@@ -5080,7 +6000,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 221
+    "sortOrder": 261
   },
   {
     "id": "neetug-bio-521329",
@@ -5103,7 +6023,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 222
+    "sortOrder": 262
   },
   {
     "id": "neetug-bio-521330",
@@ -5126,7 +6046,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 223
+    "sortOrder": 263
   },
   {
     "id": "neetug-bio-521366",
@@ -5149,7 +6069,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 224
+    "sortOrder": 264
   },
   {
     "id": "neetug-bio-521384",
@@ -5172,7 +6092,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 225
+    "sortOrder": 265
   },
   {
     "id": "neetug-bio-521454",
@@ -5195,30 +6115,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 226
-  },
-  {
-    "id": "neetug-bio-579014",
-    "sourceId": 579014,
-    "exam": "NEET-UG",
-    "subject": "Biology",
-    "topic": "Mutation and gene expression",
-    "topicSlug": "mutation-and-gene-expression",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
-    "stem": "In a mutation where all codons after the mutation point are shifted, it is known as",
-    "options": {
-      "A": "frameshift mutation",
-      "B": "dynamic mutation",
-      "C": "fragment mutation",
-      "D": "transition"
-    },
-    "correctOption": "A",
-    "explanation": "Frameshift mutations involve a change in the reading frame of the genetic code due to insertions or deletions that are not multiples of three nucleotides, causing all subsequent codons to be shifted.",
-    "qwenmaxReviewScore": 90,
-    "qualityScore": 100,
-    "status": "approved",
-    "isFree": true,
-    "sortOrder": 227
+    "sortOrder": 266
   },
   {
     "id": "neetug-bio-579015",
@@ -5241,7 +6138,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 228
+    "sortOrder": 267
   },
   {
     "id": "neetug-bio-579016",
@@ -5264,7 +6161,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 229
+    "sortOrder": 268
   },
   {
     "id": "neetug-bio-579017",
@@ -5287,7 +6184,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 230
+    "sortOrder": 269
   },
   {
     "id": "neetug-bio-579034",
@@ -5310,7 +6207,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 231
+    "sortOrder": 270
   },
   {
     "id": "neetug-bio-579035",
@@ -5333,7 +6230,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 232
+    "sortOrder": 271
   },
   {
     "id": "neetug-bio-579057",
@@ -5356,7 +6253,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 233
+    "sortOrder": 272
   },
   {
     "id": "neetug-bio-579069",
@@ -5379,7 +6276,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 234
+    "sortOrder": 273
   },
   {
     "id": "neetug-bio-579101",
@@ -5402,7 +6299,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 235
+    "sortOrder": 274
   },
   {
     "id": "neetug-bio-579160",
@@ -5425,7 +6322,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 236
+    "sortOrder": 275
   },
   {
     "id": "neetug-bio-579163",
@@ -5448,7 +6345,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 237
+    "sortOrder": 276
   },
   {
     "id": "neetug-bio-579165",
@@ -5471,7 +6368,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 238
+    "sortOrder": 277
   },
   {
     "id": "neetug-bio-579532",
@@ -5494,7 +6391,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 239
+    "sortOrder": 278
   },
   {
     "id": "neetug-bio-579543",
@@ -5517,7 +6414,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 240
+    "sortOrder": 279
   },
   {
     "id": "neetug-bio-579546",
@@ -5540,7 +6437,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 241
+    "sortOrder": 280
   },
   {
     "id": "neetug-bio-579618",
@@ -5563,7 +6460,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 242
+    "sortOrder": 281
   },
   {
     "id": "neetug-bio-579957",
@@ -5586,7 +6483,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 243
+    "sortOrder": 282
   },
   {
     "id": "neetug-bio-588319",
@@ -5609,7 +6506,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 244
+    "sortOrder": 283
   },
   {
     "id": "neetug-bio-588339",
@@ -5632,7 +6529,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 245
+    "sortOrder": 284
   },
   {
     "id": "neetug-bio-588343",
@@ -5655,7 +6552,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 246
+    "sortOrder": 285
   },
   {
     "id": "neetug-bio-588347",
@@ -5678,7 +6575,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 247
+    "sortOrder": 286
   },
   {
     "id": "neetug-bio-588359",
@@ -5701,7 +6598,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 248
+    "sortOrder": 287
   },
   {
     "id": "neetug-bio-588366",
@@ -5724,7 +6621,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 249
+    "sortOrder": 288
   },
   {
     "id": "neetug-bio-588370",
@@ -5747,7 +6644,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 250
+    "sortOrder": 289
   },
   {
     "id": "neetug-bio-588375",
@@ -5770,7 +6667,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 251
+    "sortOrder": 290
   },
   {
     "id": "neetug-bio-588446",
@@ -5793,7 +6690,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 252
+    "sortOrder": 291
   },
   {
     "id": "neetug-bio-588459",
@@ -5816,7 +6713,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 253
+    "sortOrder": 292
   },
   {
     "id": "neetug-bio-588508",
@@ -5839,7 +6736,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 254
+    "sortOrder": 293
   },
   {
     "id": "neetug-bio-588535",
@@ -5862,7 +6759,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 255
+    "sortOrder": 294
   },
   {
     "id": "neetug-bio-588536",
@@ -5885,7 +6782,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 256
+    "sortOrder": 295
   },
   {
     "id": "neetug-bio-588538",
@@ -5908,7 +6805,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 257
+    "sortOrder": 296
   },
   {
     "id": "neetug-bio-588548",
@@ -5931,7 +6828,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 258
+    "sortOrder": 297
   },
   {
     "id": "neetug-bio-588550",
@@ -5954,7 +6851,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 259
+    "sortOrder": 298
   },
   {
     "id": "neetug-bio-588556",
@@ -5977,7 +6874,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 260
+    "sortOrder": 299
   },
   {
     "id": "neetug-bio-588558",
@@ -6000,7 +6897,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 261
+    "sortOrder": 300
   },
   {
     "id": "neetug-bio-588573",
@@ -6023,7 +6920,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 262
+    "sortOrder": 301
   },
   {
     "id": "neetug-bio-588601",
@@ -6046,7 +6943,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 263
+    "sortOrder": 302
   },
   {
     "id": "neetug-bio-588609",
@@ -6069,7 +6966,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 264
+    "sortOrder": 303
   },
   {
     "id": "neetug-bio-588658",
@@ -6092,7 +6989,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 265
+    "sortOrder": 304
   },
   {
     "id": "neetug-bio-588824",
@@ -6115,7 +7012,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 266
+    "sortOrder": 305
   },
   {
     "id": "neetug-bio-589055",
@@ -6138,7 +7035,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 267
+    "sortOrder": 306
   },
   {
     "id": "neetug-bio-589056",
@@ -6161,7 +7058,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 268
+    "sortOrder": 307
   },
   {
     "id": "neetug-bio-589057",
@@ -6184,7 +7081,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 269
+    "sortOrder": 308
   },
   {
     "id": "neetug-bio-589103",
@@ -6207,7 +7104,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 270
+    "sortOrder": 309
   },
   {
     "id": "neetug-bio-515727",
@@ -6230,7 +7127,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 271
+    "sortOrder": 310
   },
   {
     "id": "neetug-bio-516139",
@@ -6253,7 +7150,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 272
+    "sortOrder": 311
   },
   {
     "id": "neetug-bio-516405",
@@ -6276,7 +7173,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 273
+    "sortOrder": 312
   },
   {
     "id": "neetug-bio-516438",
@@ -6299,7 +7196,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 274
+    "sortOrder": 313
   },
   {
     "id": "neetug-bio-516588",
@@ -6322,7 +7219,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 275
+    "sortOrder": 314
   },
   {
     "id": "neetug-bio-516628",
@@ -6345,7 +7242,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 276
+    "sortOrder": 315
   },
   {
     "id": "neetug-bio-520277",
@@ -6368,7 +7265,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 277
+    "sortOrder": 316
   },
   {
     "id": "neetug-bio-520291",
@@ -6391,7 +7288,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 278
+    "sortOrder": 317
   },
   {
     "id": "neetug-bio-520340",
@@ -6414,7 +7311,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 279
+    "sortOrder": 318
   },
   {
     "id": "neetug-bio-520587",
@@ -6437,7 +7334,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 280
+    "sortOrder": 319
   },
   {
     "id": "neetug-bio-521024",
@@ -6460,7 +7357,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 281
+    "sortOrder": 320
   },
   {
     "id": "neetug-bio-521092",
@@ -6483,7 +7380,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 282
+    "sortOrder": 321
   },
   {
     "id": "neetug-bio-521300",
@@ -6506,7 +7403,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 283
+    "sortOrder": 322
   },
   {
     "id": "neetug-bio-521304",
@@ -6529,7 +7426,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 284
+    "sortOrder": 323
   },
   {
     "id": "neetug-bio-521308",
@@ -6552,7 +7449,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 285
+    "sortOrder": 324
   },
   {
     "id": "neetug-bio-521321",
@@ -6575,7 +7472,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 286
+    "sortOrder": 325
   },
   {
     "id": "neetug-bio-521345",
@@ -6598,7 +7495,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 287
+    "sortOrder": 326
   },
   {
     "id": "neetug-bio-521391",
@@ -6621,7 +7518,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 288
+    "sortOrder": 327
   },
   {
     "id": "neetug-bio-578586",
@@ -6644,7 +7541,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 289
+    "sortOrder": 328
   },
   {
     "id": "neetug-bio-579009",
@@ -6667,7 +7564,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 290
+    "sortOrder": 329
   },
   {
     "id": "neetug-bio-579013",
@@ -6690,7 +7587,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 291
+    "sortOrder": 330
   },
   {
     "id": "neetug-bio-579032",
@@ -6713,7 +7610,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 292
+    "sortOrder": 331
   },
   {
     "id": "neetug-bio-579107",
@@ -6736,7 +7633,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 293
+    "sortOrder": 332
   },
   {
     "id": "neetug-bio-579187",
@@ -6759,7 +7656,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 294
+    "sortOrder": 333
   },
   {
     "id": "neetug-bio-579914",
@@ -6782,7 +7679,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 295
+    "sortOrder": 334
   },
   {
     "id": "neetug-bio-588084",
@@ -6805,7 +7702,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 296
+    "sortOrder": 335
   },
   {
     "id": "neetug-bio-588342",
@@ -6828,7 +7725,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 297
+    "sortOrder": 336
   },
   {
     "id": "neetug-bio-588346",
@@ -6851,7 +7748,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 298
+    "sortOrder": 337
   },
   {
     "id": "neetug-bio-588358",
@@ -6874,7 +7771,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 299
+    "sortOrder": 338
   },
   {
     "id": "neetug-bio-588433",
@@ -6897,7 +7794,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 300
+    "sortOrder": 339
   },
   {
     "id": "neetug-bio-588534",
@@ -6920,7 +7817,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 301
+    "sortOrder": 340
   },
   {
     "id": "neetug-bio-588615",
@@ -6943,7 +7840,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 302
+    "sortOrder": 341
   },
   {
     "id": "neetug-bio-588678",
@@ -6966,7 +7863,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 303
+    "sortOrder": 342
   },
   {
     "id": "neetug-bio-588831",
@@ -6989,7 +7886,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 304
+    "sortOrder": 343
   },
   {
     "id": "neetug-bio-589039",
@@ -7012,7 +7909,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 305
+    "sortOrder": 344
   },
   {
     "id": "neetug-bio-589041",
@@ -7035,7 +7932,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 306
+    "sortOrder": 345
   },
   {
     "id": "neetug-bio-589059",
@@ -7058,7 +7955,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 307
+    "sortOrder": 346
   },
   {
     "id": "neetug-bio-589073",
@@ -7081,7 +7978,7 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 308
+    "sortOrder": 347
   },
   {
     "id": "neetug-bio-589098",
@@ -7104,6 +8001,6 @@
     "qualityScore": 100,
     "status": "approved",
     "isFree": true,
-    "sortOrder": 309
+    "sortOrder": 348
   }
 ]
