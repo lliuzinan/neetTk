@@ -169,15 +169,23 @@ function classify(row, { minImpressions, lowCtr }) {
   const position = row.position || 0;
   const actions = [];
   const staleMedicineUrl = /\/medicine\//i.test(page);
+  const staleMockUrl = /\/mock-test\/?$/i.test(page);
   const clinicalQuery = /\b(abdominal|colic|pain|diagnosis|treatment|patient|clinical)\b/i.test(query);
+  const offStrategyExamQuery = /\b(fmge|neet\s*pg|inicet|ini-cet|usmle|plab)\b/i.test(query);
 
   if (staleMedicineUrl) {
     actions.push("Stale medicine URL; keep a permanent redirect to the closest live NEET Biology page instead of creating clinical content.");
   }
+  if (staleMockUrl) {
+    actions.push("Stale mock-test URL; keep the permanent redirect to the NEET Biology hub and do not create a generic mock-test page yet.");
+  }
   if (clinicalQuery) {
     actions.push("Clinical/medical query is off-strategy for NEET-UG; do not expand content for this query unless it maps to NCERT Biology.");
   }
-  if (impressions >= minImpressions && clicks === 0 && !staleMedicineUrl && !clinicalQuery) {
+  if (offStrategyExamQuery) {
+    actions.push("Off-strategy exam query; ignore for content expansion unless MedQGo deliberately enters this exam vertical.");
+  }
+  if (impressions >= minImpressions && clicks === 0 && !staleMedicineUrl && !staleMockUrl && !clinicalQuery && !offStrategyExamQuery) {
     actions.push("Rewrite title/meta to match the query; add the query phrase in H1/H2 or intro if relevant.");
   }
   if (impressions >= minImpressions && ctr > 0 && ctr < lowCtr) {
