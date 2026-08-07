@@ -84,6 +84,15 @@ export default async function BiologyTopicsPage() {
         <EditorialByline />
       </header>
 
+      <section className="contentBand pyqPromo">
+        <p className="eyebrow">Previous year questions</p>
+        <h2>NEET 2025 Biology PYQ with solutions</h2>
+        <p>
+          Practice reviewed Biology questions from the NEET 2025 Code 45 English paper with official answers and NCERT-aligned explanations.
+        </p>
+        <Link href="/neet-ug/biology/pyq/neet-2025" className="primaryButton">Practice NEET 2025 PYQs</Link>
+      </section>
+
       <PdfCta source="biology_index" />
 
       <div className="topicGrid">

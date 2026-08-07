@@ -1,6 +1,7 @@
 import questionsData from "@/data/questions.json";
 import topicsData from "@/data/topics.json";
 import notesData from "@/data/seo-notes.json";
+import pyqQuestionsData from "@/data/pyq-questions.json";
 
 export type OptionKey = "A" | "B" | "C" | "D";
 
@@ -44,9 +45,31 @@ export interface SeoNote {
   sortOrder: number;
 }
 
+export interface PyqQuestion {
+  id: string;
+  pyqId: string;
+  exam: "NEET (UG)";
+  year: number;
+  testBookletCode: string;
+  subject: "Biology";
+  questionNumber: number;
+  topic: string;
+  topicSlug: string;
+  ncertClass: string;
+  stem: string;
+  options: Record<OptionKey, string>;
+  correctOption: OptionKey;
+  explanation: string;
+  sourcePageStart: number;
+  sourcePageEnd: number;
+  qwenReviewScore: number;
+  status: "approved";
+}
+
 export const questions = questionsData as Question[];
 export const topics = topicsData as Topic[];
 export const seoNotes = notesData as SeoNote[];
+export const pyqQuestions = pyqQuestionsData as PyqQuestion[];
 
 export const siteConfig = {
   name: "MedQGo NEET-UG Biology",
@@ -84,6 +107,10 @@ export function getTopicPath(topic: Pick<Topic, "slug">) {
 
 export function getQuestionPath(question: Pick<Question, "topicSlug" | "id">) {
   return `/neet-ug/biology/${question.topicSlug}/q/${question.id}`;
+}
+
+export function getPyq2025Path() {
+  return "/neet-ug/biology/pyq/neet-2025";
 }
 
 export function getNotePath(note: Pick<SeoNote, "slug">) {
@@ -243,6 +270,10 @@ export async function getSeoNotes() {
   if (!rows?.length) return seoNotes;
 
   return rows.map(mapSeoPage);
+}
+
+export async function getPyqQuestions() {
+  return pyqQuestions;
 }
 
 export async function findTopic(slug: string) {

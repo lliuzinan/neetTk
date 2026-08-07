@@ -154,6 +154,13 @@ h3 {
   color: var(--brand-dark);
 }
 
+.contentBand .primaryButton,
+.pyqPromo .primaryButton {
+  background: var(--brand);
+  color: #fff;
+  margin-top: 16px;
+}
+
 .secondaryButton {
   border: 1px solid rgba(255, 255, 255, 0.38);
   color: #fff;
@@ -221,6 +228,21 @@ h3 {
   display: block;
   padding: 20px;
   transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.pyqList {
+  display: grid;
+  gap: 18px;
+}
+
+.pyqItem h2 {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.3;
+}
+
+.pyqItem .answerBox h3 {
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .topicCard:hover,

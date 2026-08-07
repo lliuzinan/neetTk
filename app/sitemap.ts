@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
+import { absoluteUrl, getNotePath, getPyq2025Path, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
 import { INDEXABLE_TOPIC_MIN_QUESTIONS } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -22,6 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: absoluteUrl("/neet-ug/biology/mcqs-with-answers"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
     { url: absoluteUrl("/neet-ug/biology/ncert-class-11-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
     { url: absoluteUrl("/neet-ug/biology/ncert-class-12-mcqs"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
+    { url: absoluteUrl(getPyq2025Path()), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl("/about"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/contact"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/privacy"), lastModified: now, changeFrequency: "monthly", priority: 0.45 },
