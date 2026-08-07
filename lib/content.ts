@@ -121,6 +121,10 @@ export function getPyq2023Path() {
   return "/neet-ug/biology/pyq/neet-2023";
 }
 
+export function getPyq2022Path() {
+  return "/neet-ug/biology/pyq/neet-2022";
+}
+
 export function getNotePath(note: Pick<SeoNote, "slug">) {
   return `/neet-ug/biology/notes/${note.slug}`;
 }

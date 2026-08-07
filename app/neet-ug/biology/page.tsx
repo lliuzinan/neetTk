@@ -88,11 +88,12 @@ export default async function BiologyTopicsPage() {
         <p className="eyebrow">Previous year questions</p>
         <h2>NEET Biology PYQs with solutions</h2>
         <p>
-          Practice reviewed Biology questions from the NEET 2025, 2024, and 2023 English papers with official answers and NCERT-aligned explanations.
+          Practice reviewed Biology questions from the NEET 2025, 2024, 2023, and 2022 English papers with official answers and NCERT-aligned explanations.
         </p>
         <Link href="/neet-ug/biology/pyq/neet-2025" className="primaryButton">Practice NEET 2025 PYQs</Link>
         <Link href="/neet-ug/biology/pyq/neet-2024" className="primaryButton">Practice NEET 2024 PYQs</Link>
         <Link href="/neet-ug/biology/pyq/neet-2023" className="primaryButton">Practice NEET 2023 PYQs</Link>
+        <Link href="/neet-ug/biology/pyq/neet-2022" className="primaryButton">Practice NEET 2022 PYQs</Link>
       </section>
 
       <PdfCta source="biology_index" />
