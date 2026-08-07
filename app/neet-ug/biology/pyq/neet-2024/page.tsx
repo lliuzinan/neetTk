@@ -6,37 +6,37 @@ import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
 
-const pagePath = "/neet-ug/biology/pyq/neet-2025";
+const pagePath = "/neet-ug/biology/pyq/neet-2024";
 
 export const metadata: Metadata = {
-  title: "NEET 2025 Biology Question Paper with Solutions",
+  title: "NEET 2024 Biology Question Paper with Solutions",
   description:
-    "Practice NEET 2025 Biology PYQs with answers and NCERT-aligned explanations. Code 45 English Biology questions from the official paper, reviewed for OCR quality.",
+    "Practice NEET 2024 Biology PYQs with answers and NCERT-aligned explanations. Code T1 English Biology questions from the official paper, reviewed for OCR quality.",
   alternates: { canonical: pagePath },
   openGraph: {
-    title: "NEET 2025 Biology Question Paper with Solutions",
+    title: "NEET 2024 Biology Question Paper with Solutions",
     description:
-      "Practice NEET 2025 Biology previous year questions with answers and NCERT-aligned explanations.",
+      "Practice NEET 2024 Biology previous year questions with answers and NCERT-aligned explanations.",
     url: absoluteUrl(pagePath),
     siteName: "MedQGo",
     type: "article",
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "NEET 2025 Biology PYQ with solutions" }],
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "NEET 2024 Biology PYQ with solutions" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEET 2025 Biology Question Paper with Solutions",
-    description: "Practice NEET 2025 Biology PYQs with answers and NCERT-aligned explanations.",
+    title: "NEET 2024 Biology Question Paper with Solutions",
+    description: "Practice NEET 2024 Biology PYQs with answers and NCERT-aligned explanations.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
-export default async function Neet2025BiologyPyqPage() {
-  const questions = await getPyqQuestions(2025);
+export default async function Neet2024BiologyPyqPage() {
+  const questions = await getPyqQuestions(2024);
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "NEET 2025 Biology Question Paper with Solutions",
+      name: "NEET 2024 Biology Question Paper with Solutions",
       url: absoluteUrl(pagePath),
       inLanguage: "en-IN",
       datePublished: LAST_UPDATED_ISO,
@@ -52,7 +52,7 @@ export default async function Neet2025BiologyPyqPage() {
         itemListElement: questions.slice(0, 50).map((question, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          name: `NEET 2025 Biology Question ${question.questionNumber}`,
+          name: `NEET 2024 Biology Question ${question.questionNumber}`,
         })),
       },
     },
@@ -62,18 +62,18 @@ export default async function Neet2025BiologyPyqPage() {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Are these NEET 2025 Biology questions from the official paper?",
+          name: "Are these NEET 2024 Biology questions from the official paper?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "This page uses the NEET 2025 Code 45 English question paper and the official answer key as source material. OCR output was reviewed before publication.",
+            text: "This page uses the NEET 2024 Code T1 English question paper and the revised official answer key as source material. OCR output was reviewed before publication.",
           },
         },
         {
           "@type": "Question",
-          name: "How should I revise NEET 2025 Biology PYQs?",
+          name: "How should I revise NEET 2024 Biology PYQs?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Attempt the question first, check the answer, then read the NCERT-aligned explanation and note the exact concept tested.",
+            text: "Attempt each question first, compare the official answer, then read the NCERT-aligned explanation and note the exact concept tested.",
           },
         },
       ],
@@ -87,24 +87,24 @@ export default async function Neet2025BiologyPyqPage() {
         <Breadcrumbs items={[
           { href: "/", label: "Home" },
           { href: "/neet-ug/biology", label: "NEET Biology" },
-          { href: pagePath, label: "NEET 2025 PYQ" },
+          { href: pagePath, label: "NEET 2024 PYQ" },
         ]} />
         <Link href="/neet-ug/biology" className="backLink">NEET Biology</Link>
-        <p className="eyebrow">NEET 2025 PYQ</p>
-        <h1>NEET 2025 Biology Question Paper with Solutions</h1>
+        <p className="eyebrow">NEET 2024 PYQ</p>
+        <h1>NEET 2024 Biology Question Paper with Solutions</h1>
         <p>
-          Practice {questions.length} reviewed Biology questions from the NEET 2025 Code 45 English paper with official answers and NCERT-aligned explanations.
+          Practice {questions.length} reviewed Biology questions from the NEET 2024 Code T1 English paper with official answers and NCERT-aligned explanations.
         </p>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
         <EditorialByline />
       </header>
 
-      <PdfCta source="neet_2025_pyq" />
+      <PdfCta source="neet_2024_pyq" />
 
       <section className="contentBand">
         <h2>How to use this PYQ set</h2>
         <p>
-          Try each question before opening the answer. Pay special attention to NCERT wording, statement-based questions, biotechnology examples, ecology definitions, and human physiology facts because these areas create frequent distractors in NEET Biology.
+          Work through the official questions first, then use the explanation to connect each answer to NCERT terms. Focus on ecology, genetics, plant physiology, biotechnology, and human physiology patterns because these themes repeatedly appear in NEET Biology.
         </p>
       </section>
 

@@ -113,6 +113,10 @@ export function getPyq2025Path() {
   return "/neet-ug/biology/pyq/neet-2025";
 }
 
+export function getPyq2024Path() {
+  return "/neet-ug/biology/pyq/neet-2024";
+}
+
 export function getNotePath(note: Pick<SeoNote, "slug">) {
   return `/neet-ug/biology/notes/${note.slug}`;
 }
@@ -272,8 +276,9 @@ export async function getSeoNotes() {
   return rows.map(mapSeoPage);
 }
 
-export async function getPyqQuestions() {
-  return pyqQuestions;
+export async function getPyqQuestions(year?: number) {
+  if (!year) return pyqQuestions;
+  return pyqQuestions.filter((question) => question.year === year);
 }
 
 export async function findTopic(slug: string) {

@@ -34,6 +34,7 @@ export default async function SiteMapPage() {
           <Link href="/">Free NEET Biology MCQs with Answers</Link>
           <Link href="/neet-ug/biology">NEET Biology chapter-wise MCQs</Link>
           <Link href="/neet-ug/biology/pyq/neet-2025">NEET 2025 Biology Question Paper with Solutions</Link>
+          <Link href="/neet-ug/biology/pyq/neet-2024">NEET 2024 Biology Question Paper with Solutions</Link>
           <Link href="/neet-biology-pdf">Free NEET Biology MCQ PDF</Link>
           <Link href="/neet-ug/biology/free-mcq-pdf">Free NEET Biology MCQ PDF guide</Link>
           <Link href="/neet-ug/biology/chapter-wise-mcqs">Chapter-wise NEET Biology MCQs</Link>

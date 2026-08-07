@@ -13,6 +13,7 @@ export function Footer() {
         <nav aria-label="Footer navigation" className="footerLinks">
           <Link href="/neet-ug/biology">NEET Biology</Link>
           <Link href="/neet-ug/biology/pyq/neet-2025">NEET 2025 PYQs</Link>
+          <Link href="/neet-ug/biology/pyq/neet-2024">NEET 2024 PYQs</Link>
           <Link href="/neet-ug/biology/ncert-class-11-mcqs">Class 11 MCQs</Link>
           <Link href="/neet-ug/biology/ncert-class-12-mcqs">Class 12 MCQs</Link>
           <Link href="/neet-biology-pdf">Free PDF</Link>
