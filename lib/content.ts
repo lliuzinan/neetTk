@@ -125,6 +125,10 @@ export function getPyq2022Path() {
   return "/neet-ug/biology/pyq/neet-2022";
 }
 
+export function getPyq2021Path() {
+  return "/neet-ug/biology/pyq/neet-2021";
+}
+
 export function getPyq2020Path() {
   return "/neet-ug/biology/pyq/neet-2020";
 }
