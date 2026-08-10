@@ -14,6 +14,26 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/medicine/respiratory-medicine/:path*",
+        destination: "/neet-ug/biology/human-respiration",
+        permanent: true,
+      },
+      {
+        source: "/medicine",
+        destination: "/neet-ug/biology",
+        permanent: true,
+      },
+      {
+        source: "/medicine/:path*",
+        destination: "/neet-ug/biology",
+        permanent: true,
+      },
+      {
+        source: "/daily-mcq",
+        destination: "/neet-ug/biology",
+        permanent: true,
+      },
+      {
         source: "/mock-test",
         destination: "/neet-ug/biology",
         permanent: true,

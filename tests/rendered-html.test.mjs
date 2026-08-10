@@ -22,6 +22,30 @@ test("redirects stale GSC URLs to live NEET Biology pages", async () => {
       permanent: true,
     },
   );
+  assert.deepEqual(
+    redirects.find((redirect) => redirect.source === "/medicine/respiratory-medicine/:path*"),
+    {
+      source: "/medicine/respiratory-medicine/:path*",
+      destination: "/neet-ug/biology/human-respiration",
+      permanent: true,
+    },
+  );
+  assert.deepEqual(
+    redirects.find((redirect) => redirect.source === "/medicine/:path*"),
+    {
+      source: "/medicine/:path*",
+      destination: "/neet-ug/biology",
+      permanent: true,
+    },
+  );
+  assert.deepEqual(
+    redirects.find((redirect) => redirect.source === "/daily-mcq"),
+    {
+      source: "/daily-mcq",
+      destination: "/neet-ug/biology",
+      permanent: true,
+    },
+  );
 });
 
 test("renders seeded qbank content on public index pages", async () => {
