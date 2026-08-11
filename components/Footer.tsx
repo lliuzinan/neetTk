@@ -18,6 +18,7 @@ export function Footer() {
           <Link href="/neet-ug/biology/pyq/neet-2022">NEET 2022 PYQs</Link>
           <Link href="/neet-ug/biology/pyq/neet-2021">NEET 2021 PYQs</Link>
           <Link href="/neet-ug/biology/pyq/neet-2020">NEET 2020 PYQs</Link>
+          <Link href="/neet-ug/biology/pyq/neet-2019">NEET 2019 PYQs</Link>
           <Link href="/neet-ug/biology/ncert-class-11-mcqs">Class 11 MCQs</Link>
           <Link href="/neet-ug/biology/ncert-class-12-mcqs">Class 12 MCQs</Link>
           <Link href="/neet-biology-pdf">Free PDF</Link>
