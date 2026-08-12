@@ -109,6 +109,15 @@ export default async function TopicPage({ params }: Props) {
         ))}
       </section>
 
+      {topicQuestions.length >= 5 && (
+        <section className="contentBand practicePromo">
+          <p className="eyebrow">Interactive practice</p>
+          <h2>Try this chapter without seeing the answer first</h2>
+          <p>Answer each question, check the explanation, and keep your session score and mistakes on this device.</p>
+          <Link href={`/neet-ug/biology/practice/${topic.slug}`} className="primaryButton">Practice {topic.name}</Link>
+        </section>
+      )}
+
       <PdfCta source="topic_page" topicSlug={topic.slug} />
 
       <div className="questionList">

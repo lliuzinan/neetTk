@@ -155,7 +155,8 @@ h3 {
 }
 
 .contentBand .primaryButton,
-.pyqPromo .primaryButton {
+.pyqPromo .primaryButton,
+.practicePromo .primaryButton {
   background: var(--brand);
   color: #fff;
   margin-top: 16px;
@@ -516,6 +517,152 @@ h3 {
   opacity: 0.7;
 }
 
+.downloadButton {
+  background: var(--accent);
+  border-radius: 8px;
+  color: var(--foreground);
+  font-weight: 850;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.practiceShell,
+.practiceComplete {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.practiceStats,
+.practiceSummary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.practiceStats span,
+.practiceSummary span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.practiceSummary {
+  margin: 20px 0;
+}
+
+.practiceSummary strong {
+  color: var(--brand);
+}
+
+.practiceProgress {
+  background: var(--line);
+  border-radius: 999px;
+  height: 8px;
+  margin: 18px 0 26px;
+  overflow: hidden;
+}
+
+.practiceProgress span {
+  background: var(--brand);
+  display: block;
+  height: 100%;
+  transition: width 180ms ease;
+}
+
+.practiceQuestion h2,
+.practiceComplete h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.practiceOptions {
+  display: grid;
+  gap: 12px;
+}
+
+.practiceOption {
+  align-items: start;
+  background: #fbfdf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--foreground);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 12px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  padding: 14px;
+  text-align: left;
+}
+
+.practiceOption:hover:not(:disabled),
+.practiceOption.selected {
+  border-color: var(--brand);
+}
+
+.practiceOption.selected {
+  background: var(--soft);
+}
+
+.practiceOption.correct {
+  background: #e5f7ea;
+  border-color: var(--brand);
+}
+
+.practiceOption.incorrect {
+  background: #fff0f0;
+  border-color: #b83232;
+}
+
+.practiceOption:disabled {
+  cursor: default;
+}
+
+.practicePrimary {
+  background: var(--brand);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 850;
+  margin-top: 20px;
+  min-height: 48px;
+  padding: 12px 18px;
+}
+
+.practicePrimary:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.practiceFeedback {
+  border-radius: 8px;
+  margin-top: 22px;
+  padding: 18px;
+}
+
+.practiceFeedback.correct {
+  background: #e5f7ea;
+}
+
+.practiceFeedback.incorrect {
+  background: #fff4f4;
+}
+
+.practiceFeedback h3 {
+  font-size: 1.1rem;
+}
+
+.practiceFeedback p,
+.practiceComplete p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .formSuccess,
 .formError {
   border-radius: 8px;
@@ -737,6 +884,7 @@ h3 {
   .primaryButton,
   .secondaryButton,
   .ctaButton,
+  .practicePrimary,
   .questionNav a,
   .waitlistForm button {
     justify-content: center;
@@ -768,6 +916,10 @@ h3 {
   }
 
   .option {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .practiceOption {
     grid-template-columns: 28px minmax(0, 1fr);
   }
 

@@ -70,6 +70,7 @@ export default async function Home() {
           <Link href="/" className="brand">MedQGo</Link>
           <div className="navLinks">
             <Link href="/neet-ug/biology">Topics</Link>
+            <Link href="/neet-ug/biology/practice">Practice</Link>
             <Link href="/neet-biology-pdf">Free PDF</Link>
             <Link href="/about">About</Link>
             <Link href="/neet-ug/biology/notes/cell-theory-and-cell-organelles">Notes</Link>
@@ -85,6 +86,7 @@ export default async function Home() {
             </p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
+              <Link href="/neet-ug/biology/practice" className="secondaryButton">Interactive practice</Link>
               <Link href="/neet-ug/biology/ncert-class-11-mcqs" className="secondaryButton">Class 11 MCQs</Link>
               <Link href="/neet-ug/biology/ncert-class-12-mcqs" className="secondaryButton">Class 12 MCQs</Link>
               {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}

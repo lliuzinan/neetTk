@@ -84,6 +84,13 @@ export default async function BiologyTopicsPage() {
         <EditorialByline />
       </header>
 
+      <section className="contentBand practicePromo">
+        <p className="eyebrow">Interactive practice</p>
+        <h2>Answer first. See the explanation after.</h2>
+        <p>Use Practice Mode for one-question-at-a-time sessions with instant feedback, score tracking, and saved progress on your device.</p>
+        <Link href="/neet-ug/biology/practice" className="primaryButton">Start Practice Mode</Link>
+      </section>
+
       <section className="contentBand pyqPromo">
         <p className="eyebrow">Previous year questions</p>
         <h2>NEET Biology PYQs with solutions</h2>

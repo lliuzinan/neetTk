@@ -124,7 +124,24 @@ test("renders PDF waitlist landing page", async () => {
   assert.match(pdfHtml, /Free NEET Biology MCQ PDF/);
   assert.match(pdfHtml, /Join early access/);
   assert.match(pdfHtml, /WhatsApp number/);
+  assert.match(pdfHtml, /30 original, reviewed NEET-UG Biology MCQs/);
+  assert.match(pdfHtml, /Get the free sample/);
   assert.doesNotMatch(pdfHtml, /Telegram/);
+});
+
+test("renders interactive practice routes without putting them in the SEO sitemap", async () => {
+  const [practiceHtml, topicPracticeHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/practice.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/practice/cell-theory-and-cell-organelles.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(practiceHtml, /NEET Biology Practice Mode/);
+  assert.match(topicPracticeHtml, /Cell theory and cell organelles practice/);
+  assert.match(topicPracticeHtml, /Check answer/);
+  assert.match(topicPracticeHtml, /noindex, follow/);
+  assert.match(topicPracticeHtml, /neet-ug\/biology\/practice\/cell-theory-and-cell-organelles/);
+  assert.doesNotMatch(sitemapXml, /neet-ug\/biology\/practice/);
 });
 
 test("renders topic-specific SEO content", async () => {

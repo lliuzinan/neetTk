@@ -16,6 +16,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "data:build": "node scripts/build-seed-data.mjs",
+    "pdf:sample": "python3 scripts/generate-pdf-sample.py",
     "db:seed-sql": "node scripts/generate-supabase-seed.mjs",
     "seo:publish": "node scripts/publish-seo-batch.mjs",
     "gsc:opportunities": "node scripts/gsc-opportunities.mjs",

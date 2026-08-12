@@ -10,11 +10,11 @@ const image = ogImage("Free NEET Biology MCQ PDF", "Chapter-wise sample with ans
 
 export const metadata: Metadata = {
   title: "Free NEET Biology MCQ PDF",
-  description: "Join early access for a free NEET Biology MCQ PDF sample with answers and NCERT-aligned explanations.",
+  description: "Get a free NEET Biology MCQ PDF sample with original questions, answers, NCERT-aligned explanations, and a revision sheet.",
   alternates: { canonical: "/neet-biology-pdf" },
   openGraph: {
     title: "Free NEET Biology MCQ PDF",
-    description: "Get early access to a free NEET Biology MCQ PDF sample with answers and explanations.",
+    description: "Get a free NEET Biology MCQ sample with answers, explanations, and a revision sheet.",
     url: absoluteUrl("/neet-biology-pdf"),
     siteName: "MedQGo",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free NEET Biology MCQ PDF",
-    description: "Join early access for a free NEET Biology MCQ PDF sample.",
+    description: "Get a free NEET Biology MCQ PDF sample.",
     images: [image],
   },
 };
@@ -40,7 +40,7 @@ export default function NeetBiologyPdfPage() {
         <p className="eyebrow">Free PDF sample</p>
         <h1>Free NEET Biology MCQ PDF</h1>
         <p>
-          Join early access for a chapter-wise NEET Biology MCQ PDF sample with answers and NCERT-aligned explanations.
+          Get a chapter-wise sample of original NEET Biology MCQs with answers, NCERT-aligned explanations, and a one-page revision sheet.
         </p>
         <EditorialByline />
       </header>
@@ -49,13 +49,14 @@ export default function NeetBiologyPdfPage() {
         <div className="contentBand">
           <h2>What you will get</h2>
           <ul className="seoList">
-            <li>Free sample of NEET-UG Biology MCQs with answers.</li>
-            <li>NCERT-aligned explanations for quick revision.</li>
-            <li>Early access when the larger chapter-wise PDF pack is ready.</li>
+            <li>30 original, reviewed NEET-UG Biology MCQs.</li>
+            <li>Answers and NCERT-aligned explanations for quick revision.</li>
+            <li>A compact error-review sheet to use after practice.</li>
+            <li>Web practice mode keeps your score and mistakes on this device.</li>
           </ul>
         </div>
         <div className="contentBand">
-          <h2>Join early access</h2>
+          <h2>Get the free sample</h2>
           <WaitlistForm />
         </div>
       </section>
