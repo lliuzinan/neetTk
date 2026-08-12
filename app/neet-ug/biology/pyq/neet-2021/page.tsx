@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
+import { getPyqRevisionFaq, PyqRevisionGuide } from "@/components/PyqRevisionGuide";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -59,24 +60,14 @@ export default async function Neet2021BiologyPyqPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Are these NEET 2021 Biology answers checked with the official key?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This page uses the NEET 2021 Code M1 Biology question paper and checks answers against the official final answer key before publication.",
-          },
+      mainEntity: getPyqRevisionFaq(2021).map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
-        {
-          "@type": "Question",
-          name: "How should I use NEET 2021 Biology PYQs for revision?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Solve the question first, check the answer, then connect the explanation to the NCERT concept. Pay special attention to ecology, genetics, human physiology, and biotechnology questions.",
-          },
-        },
-      ],
+      })),
     },
   ];
 
@@ -101,12 +92,7 @@ export default async function Neet2021BiologyPyqPage() {
 
       <PdfCta source="neet_2021_pyq" />
 
-      <section className="contentBand">
-        <h2>How to use this PYQ set</h2>
-        <p>
-          Use this older NEET paper to spot NCERT lines that still repeat in modern Biology papers. Write down the concept behind each mistake instead of memorising only the option letter.
-        </p>
-      </section>
+      <PyqRevisionGuide year={2021} />
 
       <div className="pyqList">
         {questions.map((question) => {

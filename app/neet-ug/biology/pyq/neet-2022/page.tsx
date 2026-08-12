@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
+import { getPyqRevisionFaq, PyqRevisionGuide } from "@/components/PyqRevisionGuide";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -59,24 +60,14 @@ export default async function Neet2022BiologyPyqPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Are these NEET 2022 Biology answers based on the official key?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This page uses the NEET 2022 Code Q6 English question paper as source material and checks answers against the official NTA final answer key.",
-          },
+      mainEntity: getPyqRevisionFaq(2022).map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
-        {
-          "@type": "Question",
-          name: "Why should I solve NEET 2022 Biology PYQs?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "NEET 2022 Biology PYQs help students identify recurring NCERT concepts across genetics, ecology, plant physiology, biotechnology, and human physiology.",
-          },
-        },
-      ],
+      })),
     },
   ];
 
@@ -101,12 +92,7 @@ export default async function Neet2022BiologyPyqPage() {
 
       <PdfCta source="neet_2022_pyq" />
 
-      <section className="contentBand">
-        <h2>How to use this PYQ set</h2>
-        <p>
-          Attempt the questions before reading the explanation. Mark the NCERT concept behind each answer, especially statements-based questions, matching questions, and factual NCERT lines that appear repeatedly in Biology.
-        </p>
-      </section>
+      <PyqRevisionGuide year={2022} />
 
       <div className="pyqList">
         {questions.map((question) => {

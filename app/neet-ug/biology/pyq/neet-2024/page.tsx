@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
+import { getPyqRevisionFaq, PyqRevisionGuide } from "@/components/PyqRevisionGuide";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -59,24 +60,14 @@ export default async function Neet2024BiologyPyqPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Are these NEET 2024 Biology questions from the official paper?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This page uses the NEET 2024 Code T1 English question paper and the revised official answer key as source material. OCR output was reviewed before publication.",
-          },
+      mainEntity: getPyqRevisionFaq(2024).map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
-        {
-          "@type": "Question",
-          name: "How should I revise NEET 2024 Biology PYQs?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Attempt each question first, compare the official answer, then read the NCERT-aligned explanation and note the exact concept tested.",
-          },
-        },
-      ],
+      })),
     },
   ];
 
@@ -101,12 +92,7 @@ export default async function Neet2024BiologyPyqPage() {
 
       <PdfCta source="neet_2024_pyq" />
 
-      <section className="contentBand">
-        <h2>How to use this PYQ set</h2>
-        <p>
-          Work through the official questions first, then use the explanation to connect each answer to NCERT terms. Focus on ecology, genetics, plant physiology, biotechnology, and human physiology patterns because these themes repeatedly appear in NEET Biology.
-        </p>
-      </section>
+      <PyqRevisionGuide year={2024} />
 
       <div className="pyqList">
         {questions.map((question) => {

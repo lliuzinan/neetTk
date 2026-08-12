@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
+import { getPyqRevisionFaq, PyqRevisionGuide } from "@/components/PyqRevisionGuide";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -59,24 +60,14 @@ export default async function Neet2025BiologyPyqPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Are these NEET 2025 Biology questions from the official paper?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This page uses the NEET 2025 Code 45 English question paper and the official answer key as source material. OCR output was reviewed before publication.",
-          },
+      mainEntity: getPyqRevisionFaq(2025).map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
-        {
-          "@type": "Question",
-          name: "How should I revise NEET 2025 Biology PYQs?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Attempt the question first, check the answer, then read the NCERT-aligned explanation and note the exact concept tested.",
-          },
-        },
-      ],
+      })),
     },
   ];
 
@@ -101,12 +92,7 @@ export default async function Neet2025BiologyPyqPage() {
 
       <PdfCta source="neet_2025_pyq" />
 
-      <section className="contentBand">
-        <h2>How to use this PYQ set</h2>
-        <p>
-          Try each question before opening the answer. Pay special attention to NCERT wording, statement-based questions, biotechnology examples, ecology definitions, and human physiology facts because these areas create frequent distractors in NEET Biology.
-        </p>
-      </section>
+      <PyqRevisionGuide year={2025} />
 
       <div className="pyqList">
         {questions.map((question) => {
