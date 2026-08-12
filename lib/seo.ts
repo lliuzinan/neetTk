@@ -5,6 +5,8 @@ import { absoluteUrl, getNotePath, getQuestionPath, getTopicPath } from "@/lib/c
 export const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
 export const LAST_UPDATED_ISO = "2026-07-30";
 export const LAST_UPDATED_DISPLAY = "July 30, 2026";
+export const PYQ_LAST_UPDATED_ISO = "2026-08-12";
+export const PYQ_LAST_UPDATED_DISPLAY = "August 12, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20MCQs&subtitle=NCERT-aligned%20practice%20with%20answers");
 
 export function ogImage(title: string, subtitle = "NCERT-aligned NEET Biology practice") {

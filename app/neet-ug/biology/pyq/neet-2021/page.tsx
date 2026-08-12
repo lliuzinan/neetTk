@@ -5,7 +5,7 @@ import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
 import { getPyqRevisionFaq, PyqRevisionGuide } from "@/components/PyqRevisionGuide";
 import { absoluteUrl, getPyqQuestions } from "@/lib/content";
-import { DEFAULT_OG_IMAGE, LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO } from "@/lib/seo";
+import { DEFAULT_OG_IMAGE, PYQ_LAST_UPDATED_DISPLAY, PYQ_LAST_UPDATED_ISO } from "@/lib/seo";
 
 const pagePath = "/neet-ug/biology/pyq/neet-2021";
 
@@ -40,8 +40,7 @@ export default async function Neet2021BiologyPyqPage() {
       name: "NEET 2021 Biology Question Paper with Solutions",
       url: absoluteUrl(pagePath),
       inLanguage: "en-IN",
-      datePublished: LAST_UPDATED_ISO,
-      dateModified: LAST_UPDATED_ISO,
+      dateModified: PYQ_LAST_UPDATED_ISO,
       about: {
         "@type": "Course",
         name: "NEET-UG Biology",
@@ -86,8 +85,8 @@ export default async function Neet2021BiologyPyqPage() {
         <p>
           Practice {questions.length} reviewed Biology questions from the NEET 2021 Code M1 paper with official answers and NCERT-aligned explanations.
         </p>
-        <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
-        <EditorialByline />
+        <p className="updatedStamp">Last updated: {PYQ_LAST_UPDATED_DISPLAY}</p>
+        <EditorialByline lastUpdated={PYQ_LAST_UPDATED_DISPLAY} />
       </header>
 
       <PdfCta source="neet_2021_pyq" />
