@@ -51,6 +51,52 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "excretion-and-kidney-function": [
+    {
+      heading: "Excretion: organise the chapter as a flow",
+      paragraphs: [
+        "A reliable NEET revision route is to follow blood through the nephron: filtration at the glomerulus, selective reabsorption along the tubule, secretion of selected substances into tubular fluid, and final urine concentration in the collecting duct. Questions often test the sequence or ask which process explains a change in tubular fluid.",
+        "The kidney is not simply a filter that removes everything from blood. Useful substances and much of the water are selectively returned to circulation, while nitrogenous waste and excess ions are regulated through coordinated nephron processes.",
+      ],
+    },
+    {
+      heading: "Filtration at the renal corpuscle",
+      paragraphs: [
+        "The glomerulus is a capillary tuft within Bowman's capsule. Its filtration depends on pressure differences across the filtration membrane. The filtrate resembles plasma in many small solutes, but cells and most large plasma proteins normally remain in the blood.",
+        "When an option describes filtration, check whether it belongs to the glomerulus or a later tubule segment. Reabsorption is not filtration, and secretion is not the same as movement of a useful substance back into blood.",
+      ],
+      bullets: [
+        "Filtration: blood to Bowman's capsule.",
+        "Reabsorption: tubular fluid to peritubular blood.",
+        "Secretion: peritubular blood to tubular fluid.",
+        "Excretion: removal of the final urine from the body.",
+      ],
+    },
+    {
+      heading: "Selective reabsorption and the nephron",
+      paragraphs: [
+        "The proximal convoluted tubule is central to bulk reabsorption. Later segments refine water and ion balance. The loop of Henle contributes to the medullary concentration gradient, while the distal tubule and collecting duct respond to the body's regulatory needs.",
+        "Antidiuretic hormone is a high-yield connection: it increases water reabsorption in the distal nephron and collecting ducts when the body needs to conserve water. Do not confuse this with a hormone that directly creates the initial glomerular filtrate.",
+      ],
+    },
+    {
+      heading: "What to separate in close options",
+      bullets: [
+        "Urine formation versus urine storage: kidneys form urine; the urinary bladder stores it.",
+        "Glomerular filtration versus tubular reabsorption: their directions are opposite.",
+        "Osmoregulation versus removal of nitrogenous waste: both involve kidneys, but the question may ask for one specific role.",
+        "Urea, uric acid and ammonia: identify the organismal context before selecting the major nitrogenous waste product.",
+        "Hormonal control of water balance versus neural control of micturition.",
+      ],
+    },
+    {
+      heading: "A 15-minute revision method",
+      paragraphs: [
+        "Draw a nephron and label the direction of fluid flow. Beside each segment, write one main task rather than a long list: filtration, bulk reabsorption, gradient formation, fine regulation, or final concentration. Then answer a short set by naming the process before looking at the options.",
+        "For each error, record whether you mixed up a nephron segment, a direction of transport, or a regulatory hormone. That makes subsequent revision specific and prevents memorising answer letters without understanding the physiology.",
+      ],
+    },
+  ],
 };
 
 export function getNoteContent(slug: string) {

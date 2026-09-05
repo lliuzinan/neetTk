@@ -56,7 +56,7 @@ const htmlEntities = new Map([
 
 const advancedPattern = /\b(microautophagy|signal peptide|protein sorting)\b/i;
 const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
-const PRIORITY_NOTE_TOPICS = new Set(["human-respiration"]);
+const PRIORITY_NOTE_TOPICS = new Set(["human-respiration", "excretion-and-kidney-function"]);
 
 function decodeHtmlEntities(value) {
   return String(value || "")

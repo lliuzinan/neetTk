@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
 import { INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
 
-const INDEXABLE_NOTE_TOPIC_SLUGS = new Set(["human-respiration"]);
+const INDEXABLE_NOTE_TOPIC_SLUGS = new Set(["human-respiration", "excretion-and-kidney-function"]);
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const biologyLastModified = new Date(`${LAST_UPDATED_ISO}T00:00:00.000Z`);
