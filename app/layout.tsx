@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
+import { GoogleAdSense } from "@/components/GoogleAdSense";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { absoluteUrl, siteConfig } from "@/lib/content";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="en-IN">
       <body>
         <GoogleAnalytics />
+        <GoogleAdSense />
         {children}
         <Footer />
       </body>

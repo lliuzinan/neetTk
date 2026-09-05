@@ -25,7 +25,7 @@ export default function AboutPage() {
           title: "Editorial Process",
           body: [
             "Questions are selected through a multi-step workflow: rule filtering, Biology topic mapping, NCERT topic alignment, strict suitability review, English rewriting, deterministic quality checks, and answer consistency verification. Items that fail translation quality or answer verification are held back for review instead of being published.",
-            "The goal is not to publish the largest possible question bank immediately. The goal is to publish useful NEET-UG practice pages that students can read clearly and Google can understand as education content.",
+            "Previous-year-question revision pages are labelled separately from MedQGo's original practice content. They include their exam-year context and independent NCERT-aligned explanations. Read the Editorial Policy and Copyright page for the way we label, review, and handle requests about this material.",
           ],
         },
         {
