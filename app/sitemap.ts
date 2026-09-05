@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
 import { INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
 
+const INDEXABLE_NOTE_TOPIC_SLUGS = new Set(["human-respiration"]);
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const biologyLastModified = new Date(`${LAST_UPDATED_ISO}T00:00:00.000Z`);
   const [topicList, questionList, noteList] = await Promise.all([
@@ -39,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    ...noteList.filter((note) => indexableTopicSlugs.has(note.topicSlug)).map((note) => ({
+    ...noteList.filter((note) => indexableTopicSlugs.has(note.topicSlug) || INDEXABLE_NOTE_TOPIC_SLUGS.has(note.topicSlug)).map((note) => ({
       url: absoluteUrl(getNotePath(note)),
       lastModified: biologyLastModified,
       changeFrequency: "monthly" as const,
