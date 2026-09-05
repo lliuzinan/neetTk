@@ -21,13 +21,6 @@ export default function CopyrightPage() {
           ],
         },
         {
-          title: "Exam Names and Previous-Year Material",
-          body: [
-            "NEET-UG, NTA, and NCERT names and related material may be the property of their respective rights holders. MedQGo is an independent education resource and is not endorsed by, affiliated with, or sponsored by those organizations.",
-            "Previous-year-question pages are maintained as labelled revision resources with added explanatory content. They are not official question-paper publications or a substitute for material issued by the examination authority.",
-          ],
-        },
-        {
           title: "Request a Review or Removal",
           body: [
             "For a copyright, attribution, or removal request, contact MedQGo with your name, organization where applicable, the exact URL, a description of the material, your relationship to the rights, and a way to contact you. We will review credible requests and may correct, credit, restrict, or remove content as appropriate.",

@@ -22,13 +22,6 @@ export default function EditorialPolicyPage() {
           ],
         },
         {
-          title: "Previous-Year Question Pages",
-          body: [
-            "PYQ pages are clearly labelled as previous-year-question revision resources. They identify the relevant exam year and paper code, distinguish those pages from MedQGo's original practice bank, and add independent NCERT-aligned explanations for revision.",
-            "MedQGo is not affiliated with NTA, NEET-UG, NCERT, or any examination authority. Official names are used only to identify the examination and source material relevant to students. Rights holders may request review or removal through the contact page.",
-          ],
-        },
-        {
           title: "Corrections and Updates",
           body: [
             "To report a possible error, use the Contact page and include the page URL, question number where relevant, the proposed correction, and supporting NCERT or official-reference details. We review actionable reports and update the affected page when appropriate.",

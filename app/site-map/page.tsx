@@ -33,13 +33,6 @@ export default async function SiteMapPage() {
         <div className="miniLinks">
           <Link href="/">Free NEET Biology MCQs with Answers</Link>
           <Link href="/neet-ug/biology">NEET Biology chapter-wise MCQs</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2025">NEET 2025 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2024">NEET 2024 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2023">NEET 2023 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2022">NEET 2022 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2021">NEET 2021 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2020">NEET 2020 Biology Question Paper with Solutions</Link>
-          <Link href="/neet-ug/biology/pyq/neet-2019">NEET 2019 Biology Question Paper with Solutions</Link>
           <Link href="/neet-biology-pdf">Free NEET Biology MCQ PDF</Link>
           <Link href="/neet-ug/biology/free-mcq-pdf">Free NEET Biology MCQ PDF guide</Link>
           <Link href="/neet-ug/biology/chapter-wise-mcqs">Chapter-wise NEET Biology MCQs</Link>

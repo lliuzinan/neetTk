@@ -91,21 +91,6 @@ export default async function BiologyTopicsPage() {
         <Link href="/neet-ug/biology/practice" className="primaryButton">Start Practice Mode</Link>
       </section>
 
-      <section className="contentBand pyqPromo">
-        <p className="eyebrow">Previous year questions</p>
-        <h2>NEET Biology PYQs with solutions</h2>
-        <p>
-          Practice reviewed Biology questions from the NEET 2025, 2024, 2023, 2022, 2021, 2020, and 2019 papers with official answers and NCERT-aligned explanations.
-        </p>
-        <Link href="/neet-ug/biology/pyq/neet-2025" className="primaryButton">Practice NEET 2025 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2024" className="primaryButton">Practice NEET 2024 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2023" className="primaryButton">Practice NEET 2023 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2022" className="primaryButton">Practice NEET 2022 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2021" className="primaryButton">Practice NEET 2021 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2020" className="primaryButton">Practice NEET 2020 PYQs</Link>
-        <Link href="/neet-ug/biology/pyq/neet-2019" className="primaryButton">Practice NEET 2019 PYQs</Link>
-      </section>
-
       <PdfCta source="biology_index" />
 
       <div className="topicGrid">
