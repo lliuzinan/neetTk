@@ -56,6 +56,7 @@ const htmlEntities = new Map([
 
 const advancedPattern = /\b(microautophagy|signal peptide|protein sorting)\b/i;
 const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
+const PRIORITY_NOTE_TOPICS = new Set(["human-respiration"]);
 
 function decodeHtmlEntities(value) {
   return String(value || "")
@@ -148,7 +149,7 @@ for (const question of questions) {
 }
 
 const topics = [...topicMap.values()];
-const notes = topics.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).map((topic, index) => ({
+const notes = topics.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS || PRIORITY_NOTE_TOPICS.has(topic.slug)).map((topic, index) => ({
   id: `note-${topic.slug}`,
   slug: topic.slug,
   title: `${topic.name}: NEET-UG Biology NCERT Revision Notes`,

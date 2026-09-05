@@ -7,6 +7,7 @@ import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findNote, findQuestionsByTopic, findTopic, getSeoNotes } from "@/lib/content";
 import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, noteMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
+import { getNoteContent } from "@/lib/noteContent";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,6 +37,7 @@ export default async function NotePage({ params }: Props) {
 
   const topicQuestions = (await findQuestionsByTopic(topic.slug)).slice(0, 6);
   const seoContent = getTopicSeoContent(topic.slug);
+  const authoredSections = getNoteContent(note.slug);
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -67,6 +69,13 @@ export default async function NotePage({ params }: Props) {
       </header>
 
       <article className="articleBody">
+        {authoredSections && authoredSections.map((section) => (
+          <section key={section.heading}>
+            <h2>{section.heading}</h2>
+            {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+          </section>
+        ))}
         <h2>NEET-UG importance</h2>
         <p>
           {topic.name} is a useful scoring area because questions often test direct NCERT wording, process sequence, and the ability to separate close distractors. Keep the revision tight and practice with explanations after each attempt.
