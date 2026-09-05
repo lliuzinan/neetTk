@@ -1,5 +1,5 @@
 function getPublisherId() {
-  const value = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim();
+  const value = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || "ca-pub-7031362773027237";
   return value && /^ca-pub-\d+$/.test(value) ? value : null;
 }
 
