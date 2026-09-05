@@ -97,6 +97,54 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "immunity-pathogens-vaccines": [
+    {
+      heading: "Immunity: start with the body's lines of defence",
+      paragraphs: [
+        "For NEET revision, arrange immunity from broad to specific. Physical barriers such as skin and mucous membranes form the first line. Innate responses act quickly and do not depend on a previous encounter with one particular antigen. Acquired immunity is antigen-specific and develops memory.",
+        "This sequence helps with close options. A response can be rapid without being specific, and it can be specific without being the first response to an infection. Identify whether the question is asking about a barrier, an innate cell-based response, or an acquired immune response.",
+      ],
+      bullets: [
+        "Innate immunity: present from birth and broadly protective.",
+        "Acquired immunity: antigen-specific and associated with immunological memory.",
+        "Active immunity: the body produces its own immune response after antigen exposure.",
+        "Passive immunity: ready-made antibodies are received from another source.",
+      ],
+    },
+    {
+      heading: "Antigens, antibodies and lymphocytes",
+      paragraphs: [
+        "An antigen is a substance that can be recognised by the immune system and can trigger a specific response. Antibodies are proteins produced by plasma cells derived from B lymphocytes. They bind particular antigens; they are not general-purpose chemicals that kill every pathogen in the same way.",
+        "T lymphocytes and B lymphocytes have different roles. In simple exam comparisons, B-cell responses are linked with antibody production, while T-cell responses include cell-mediated functions. Avoid choosing an option just because it mentions a lymphocyte: check which mechanism is being tested.",
+      ],
+    },
+    {
+      heading: "Pathogens and disease transmission",
+      paragraphs: [
+        "A pathogen is a disease-causing organism or agent. Bacteria, viruses, protozoans, fungi and parasitic worms can all be relevant in the NEET syllabus, but their biology and modes of control differ. Read the organismal clue before matching a disease with its cause or transmission route.",
+        "Transmission questions often mix reservoir, vector and route. A vector carries a pathogen between hosts, whereas a reservoir is the organism or environment in which an infectious agent is normally maintained. Contaminated food, water, air, contact and insect vectors are routes or mechanisms, not interchangeable labels.",
+      ],
+      bullets: [
+        "Do not classify every microbe as a virus or every infectious disease as vector-borne.",
+        "Separate the causative organism from the symptom, vector and preventive measure.",
+        "A prevention method may reduce transmission without directly treating an established infection.",
+      ],
+    },
+    {
+      heading: "Vaccination and immune memory",
+      paragraphs: [
+        "Vaccination presents the immune system with an antigenic stimulus in a controlled way so that memory can develop. On a later exposure to the relevant antigen, the secondary response is typically faster and stronger because memory cells are available.",
+        "Vaccines support active acquired immunity. Antiserum containing pre-formed antibodies gives passive immunity and may act immediately, but it does not create the same long-term memory. This active-versus-passive distinction is a dependable way to resolve common NEET distractors.",
+      ],
+    },
+    {
+      heading: "A 15-minute revision method",
+      paragraphs: [
+        "Make four columns headed barrier, innate response, acquired response and prevention. Place each NCERT term in one column, then add one example and one common confusion. Finish by explaining active and passive immunity aloud without looking at notes.",
+        "When reviewing MCQs, mark whether the mistake came from confusing a cell type, a pathogen, a route of transmission, or a type of immunity. That classification makes the next practice set targeted rather than repetitive.",
+      ],
+    },
+  ],
 };
 
 export function getNoteContent(slug: string) {
