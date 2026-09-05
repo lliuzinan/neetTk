@@ -35,6 +35,13 @@ export default function PrivacyPage() {
             "You can use browser controls, ad blockers, or privacy settings to limit some analytics collection. If you want a waitlist record removed, contact us with the email address used in the form.",
           ],
         },
+        {
+          title: "Advertising",
+          body: [
+            "If Google ads are served on MedQGo, Google and its partners may use cookies or similar technologies to deliver and measure ads, subject to applicable consent requirements.",
+            "You can manage ad personalisation through Google Ads Settings. Where consent is required for advertising cookies or personalised ads, MedQGo will use an appropriate consent solution before serving those ads.",
+          ],
+        },
       ]}
     />
   );
