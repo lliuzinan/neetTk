@@ -242,7 +242,12 @@ export async function getSeoNotes() {
   );
   if (!rows?.length) return seoNotes;
 
-  return rows.map(mapSeoPage);
+  const remoteNotes = rows.map(mapSeoPage);
+  const remoteById = new Map(remoteNotes.map((note) => [note.id, note]));
+  const merged = seoNotes.map((note) => remoteById.get(note.id) || note);
+  const localIds = new Set(seoNotes.map((note) => note.id));
+
+  return [...merged, ...remoteNotes.filter((note) => !localIds.has(note.id))];
 }
 
 export async function findTopic(slug: string) {
