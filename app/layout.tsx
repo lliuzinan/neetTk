@@ -53,9 +53,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-IN">
+      <head>
+        <GoogleAdSense />
+      </head>
       <body>
         <GoogleAnalytics />
-        <GoogleAdSense />
         {children}
         <Footer />
       </body>
