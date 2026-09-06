@@ -192,6 +192,49 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "neuron-nerve-impulse-synapse": [
+    {
+      heading: "Read the chapter as a route, not a list of terms",
+      paragraphs: [
+        "A nerve impulse follows a physical route: a receptor detects a change, a neuron carries the signal, a synapse passes it to the next cell, and an effector produces a response. When an MCQ feels crowded with terms such as dendrite, axon, synapse and receptor, first ask where in that route the event is taking place.",
+        "The neuron is specialised for receiving, conducting and passing on information. Dendrites mainly receive signals toward the cell body, while the axon carries impulses away from it. This is a directional idea, so it is more useful than trying to memorise a diagram as a picture.",
+      ],
+    },
+    {
+      heading: "Resting potential and the travelling impulse",
+      paragraphs: [
+        "At rest, the neuronal membrane has an electrical difference across it because ions are distributed unequally. A stimulus strong enough to reach threshold changes membrane permeability and produces depolarisation. The important exam point is the sequence: resting state, depolarisation, recovery of the original state, then readiness for another impulse.",
+        "An impulse does not travel because one end of the neuron is permanently charged. Each adjacent portion of membrane is stimulated in turn. In a myelinated fibre, conduction is faster because the impulse effectively jumps between nodes of Ranvier rather than being regenerated continuously along every small section of membrane.",
+      ],
+      bullets: [
+        "Threshold: the minimum effective stimulus needed to initiate an action potential.",
+        "Depolarisation: the membrane becomes less negative as ion movement changes the potential difference.",
+        "Repolarisation: the membrane returns toward its resting state after the impulse.",
+        "Myelin increases the speed of conduction; it does not create the impulse itself.",
+      ],
+    },
+    {
+      heading: "At the synapse, the signal changes form",
+      paragraphs: [
+        "Most NEET questions use the chemical synapse model. When an impulse reaches the presynaptic terminal, neurotransmitter is released into the synaptic cleft. It binds receptors on the postsynaptic membrane and can start a new electrical change in the next neuron or target cell.",
+        "The synaptic cleft is not a direct electrical wire. This is why chemical synapses normally pass information in one direction: neurotransmitter is released from the presynaptic side and the relevant receptors are concentrated on the postsynaptic side. Keep the names of the two sides separate in close options.",
+      ],
+    },
+    {
+      heading: "Reflex action: fast does not mean unconscious at every stage",
+      paragraphs: [
+        "A reflex action is a quick, automatic response to a stimulus. In a simple reflex arc, sensory neurons carry information to the spinal cord, an interneuron may link the pathway, and motor neurons carry the response to an effector. The body can become aware of the event, but the rapid protective response does not wait for a deliberate decision from the cerebrum.",
+        "Questions often confuse the receptor with the effector. The receptor detects the stimulus; the effector, such as a muscle or gland, carries out the response. Draw one arrow from stimulus to receptor and another from motor neuron to effector before choosing an answer.",
+      ],
+    },
+    {
+      heading: "A short revision routine before practice",
+      paragraphs: [
+        "Sketch a neuron and a synapse from memory, then add arrows showing information flow. On a second line, write only four steps for a reflex arc: receptor, sensory neuron, central connection, motor neuron and effector. Finally, explain why a myelinated axon is faster without using the word 'faster' as the explanation itself.",
+        "When you miss a question, sort the error into one of three groups: direction of signal flow, ionic change at the membrane, or role of a structure. The pattern usually becomes obvious after a few questions and tells you exactly what to revise from NCERT.",
+      ],
+    },
+  ],
 };
 
 export function getNoteContent(slug: string) {
