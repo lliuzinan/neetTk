@@ -145,6 +145,53 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "endocrine-system-and-hormones": [
+    {
+      heading: "Endocrine control: map gland, hormone and target",
+      paragraphs: [
+        "The quickest way to organise this NEET chapter is to make a three-part map for every hormone: the gland or tissue that releases it, its major target, and its principal effect. This prevents a common error in which a correct hormone is paired with the wrong gland or an effect belonging to another regulatory system.",
+        "Endocrine glands release hormones into blood, so their effects may reach distant target tissues. A target cell responds only when it has the appropriate receptor. Do not treat every circulating hormone as if it acts equally on every cell in the body.",
+      ],
+      bullets: [
+        "Hypothalamus: links neural control with endocrine regulation.",
+        "Pituitary: coordinates several endocrine glands, while also releasing hormones with direct effects.",
+        "Thyroid, adrenal glands, pancreas and gonads: high-yield sources of hormones with distinct roles.",
+      ],
+    },
+    {
+      heading: "Feedback regulation is the central pattern",
+      paragraphs: [
+        "Many endocrine questions are best solved through negative feedback. When the level or effect of a regulated variable rises sufficiently, the stimulus for further hormone release is reduced. This keeps internal conditions within a useful range rather than allowing a response to increase without limit.",
+        "Use the direction of the loop, not a memorised phrase. Ask what increases first, what hormone responds, and what change feeds back to the control centre. Positive feedback is an exception used in specific physiological situations, so do not label every hormone sequence as positive feedback.",
+      ],
+    },
+    {
+      heading: "Thyroid, pancreas and adrenal connections",
+      paragraphs: [
+        "Thyroid hormones are associated with basal metabolic activity and normal development. Iodine availability is an important NCERT connection because it is required for thyroid hormone synthesis. In close options, separate thyroid hormones from calcitonin: both are linked with the thyroid gland but do not have the same main role.",
+        "The endocrine pancreas helps regulate blood glucose. Insulin lowers blood glucose by supporting uptake and storage processes, whereas glucagon raises it by mobilising stored reserves. The adrenal glands provide another frequent comparison: the medulla is associated with rapid emergency responses, while the cortex releases a different group of steroid hormones.",
+      ],
+      bullets: [
+        "Insulin and glucagon act in opposing directions on blood glucose regulation.",
+        "Adrenaline prepares the body for an acute emergency response; it is not a digestive hormone.",
+        "A gland can release more than one hormone, so match the exact hormone before choosing an effect.",
+      ],
+    },
+    {
+      heading: "Growth, reproduction and water balance",
+      paragraphs: [
+        "Growth hormone supports normal growth and metabolism, but it should not be confused with thyroxine, insulin or sex hormones merely because each can influence growth-related outcomes. In a question, identify whether the wording points to skeletal growth, metabolic rate, blood glucose, or reproductive function.",
+        "For water balance, antidiuretic hormone increases water reabsorption in the kidney when conservation is needed. Oxytocin is a separate high-yield hormone with roles in childbirth and milk ejection. Similar names or a shared pituitary connection do not mean identical targets or effects.",
+      ],
+    },
+    {
+      heading: "A 15-minute revision method",
+      paragraphs: [
+        "Draw a table with four columns: gland, hormone, target and one effect. Fill it from memory, then compare it with NCERT and correct only the mismatched cells. Next, draw arrows for insulin versus glucagon and for a simple negative-feedback loop involving the hypothalamus, pituitary and target gland.",
+        "While practising MCQs, label each error as a gland mismatch, hormone-effect mismatch, or feedback-direction error. This turns a long list of hormone names into a small set of testable relationships.",
+      ],
+    },
+  ],
 };
 
 export function getNoteContent(slug: string) {
