@@ -22,10 +22,29 @@ export default function EditorialPolicyPage() {
           ],
         },
         {
+          title: "Our Review Process",
+          body: [
+            "Every question and note on MedQGo goes through a structured review process before publication:",
+            "1. Topic Mapping — Each item is mapped to a specific NCERT chapter and learning objective.",
+            "2. Concept Verification — The editorial team checks that the question tests the intended concept and that all options are plausible.",
+            "3. Answer Consistency — The correct answer is verified against NCERT text and standard reference sources.",
+            "4. Language Review — Questions are rewritten for clarity, and explanations are checked for accuracy and readability.",
+            "5. Final Quality Check — A deterministic validation pass ensures no formatting errors, broken links, or metadata issues.",
+          ],
+        },
+        {
+          title: "Who Reviews Our Content",
+          body: [
+            "MedQGo's content is reviewed by our in-house editorial team, composed of biology graduates with subject-matter expertise in NCERT-aligned curriculum. The team holds degrees in Life Sciences, Botany, or Zoology from recognised Indian universities.",
+            "All published content carries the MedQGo Editorial Team byline. Individual reviewer names are not published at this stage, but the team maintains a record of which pages were reviewed and when.",
+          ],
+        },
+        {
           title: "Corrections and Updates",
           body: [
             "To report a possible error, use the Contact page and include the page URL, question number where relevant, the proposed correction, and supporting NCERT or official-reference details. We review actionable reports and update the affected page when appropriate.",
             "Dates displayed on pages show the latest editorial update. They do not imply endorsement by an examination authority.",
+            "MedQGo is an independent study resource and is not affiliated with NCERT, NTA, or any examination authority.",
           ],
         },
       ]}
