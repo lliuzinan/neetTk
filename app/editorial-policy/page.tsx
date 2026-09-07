@@ -22,21 +22,10 @@ export default function EditorialPolicyPage() {
           ],
         },
         {
-          title: "Our Review Process",
+          title: "Quality Checks",
           body: [
-            "Every question and note on MedQGo goes through a structured review process before publication:",
-            "1. Topic Mapping — Each item is mapped to a specific NCERT chapter and learning objective.",
-            "2. Concept Verification — The editorial team checks that the question tests the intended concept and that all options are plausible.",
-            "3. Answer Consistency — The correct answer is verified against NCERT text and standard reference sources.",
-            "4. Language Review — Questions are rewritten for clarity, and explanations are checked for accuracy and readability.",
-            "5. Final Quality Check — A deterministic validation pass ensures no formatting errors, broken links, or metadata issues.",
-          ],
-        },
-        {
-          title: "Who Reviews Our Content",
-          body: [
-            "MedQGo's content is reviewed by our in-house editorial team, composed of biology graduates with subject-matter expertise in NCERT-aligned curriculum. The team holds degrees in Life Sciences, Botany, or Zoology from recognised Indian universities.",
-            "All published content carries the MedQGo Editorial Team byline. Individual reviewer names are not published at this stage, but the team maintains a record of which pages were reviewed and when.",
+            "MedQGo uses automated quality checks and editorial review for selected revision resources. Automated steps include topic mapping to NCERT chapters, answer consistency verification, and deterministic validation for formatting and metadata.",
+            "Corrections are prioritised when readers report an issue. We revise or remove material when a credible correction identifies an error.",
           ],
         },
         {

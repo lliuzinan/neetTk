@@ -2,9 +2,9 @@
 
 ## Goal
 
-Publish a truthful editorial reviewer profile for MedQGo's NEET-UG Biology learning resources. This serves both transparency and **Google AdSense E-E-A-T compliance** (Experience, Expertise, Authoritativeness, Trustworthiness).
+Publish a truthful editorial reviewer profile for MedQGo's NEET-UG Biology learning resources. This serves transparency and may support E-E-A-T trust signals.
 
-> **AdSense 审核要点：** Google 要求内容型网站展示"谁在审核内容"。一个有真实资质、明确审核范围的审核人档案，是通过 AdSense 审核的关键信任信号。
+> **重要澄清：** 具名审核人、Team 页面、30+ 内容页、站龄 2-4 周等**不是** Google AdSense 公布的固定门槛。这些是信任加分项，不是绕过内容质量或版权审核的通行证。AdSense 审核的核心是：原创且有价值的内容、合规的隐私政策、真实可达的联系方式。
 
 ## 1. Select a real reviewer
 
@@ -88,20 +88,29 @@ Do not claim:
 - Teaching years, exam ranks, institution employment, or credentials that cannot be verified.
 - Review of all 348 questions unless that review is genuinely completed and documented.
 
-## 5A. AdSense E-E-A-T 强化清单（提审前必须完成）
+## 5A. AdSense 合规检查（区分硬门槛与加分项）
 
-以下检查项直接影响 Google AdSense 审核结果：
+### AdSense 实际硬门槛（必须满足）
 
-| # | 检查项 | 合格标准 | 优先级 |
-|---|--------|---------|--------|
-| 1 | 审核人档案已发布 | `editorial-reviewer.json` 的 `name`/`role`/`credentials`/`reviewScope` 全部非空 | **P0** |
-| 2 | Team 页面展示真实审核人 | `/team` 页面显示审核人姓名、资质、审核范围（非通用声明） | **P0** |
-| 3 | 每篇内容页有审核署名 | 文章/题目页底部显示 `Reviewed by [Name/Editorial Team]` | **P1** |
-| 4 | About 页面说明"谁在做" | About 页面包含团队/创始人简介，不只是产品描述 | **P1** |
-| 5 | Editorial Policy 有流程细节 | 说明内容如何被创建、审核、纠错 | **P1** |
-| 6 | 无虚假资质或关联 | 不声称 NCERT/NTA/政府/大学背书 | **P0** |
-| 7 | 隐私政策含广告声明 | 明确提到第三方广告、cookie 用于广告投放 | ✅ 已通过 |
-| 8 | 联系方式真实可达 | 有真实邮箱（非纯表单） | ✅ 已通过 |
+| # | 检查项 | 合格标准 | 状态 |
+|---|--------|---------|------|
+| 1 | 隐私政策含广告声明 | 明确提到第三方广告、cookie 用于广告投放 | ✅ 已通过 |
+| 2 | 联系方式真实可达 | 有真实邮箱（非纯表单） | ✅ 已通过 |
+| 3 | 无虚假资质或关联 | 不声称 NCERT/NTA/政府/大学背书 | ✅ 已通过 |
+| 4 | 原创且有价值的内容 | 内容非简单复制，有独特价值 | ⚠️ 题源授权风险仍需关注 |
+| 5 | HTTPS + 自定义域名 | 站点安全且使用自有域名 | ✅ 已通过 |
+
+### 信任加分项（非必须，但有帮助）
+
+| # | 加分项 | 说明 | 当前状态 |
+|---|--------|------|----------|
+| 1 | 具名审核人 | 有真实成员、真实学历、本人同意、实际审核记录 | ❌ 暂无 |
+| 2 | Team 页面展示审核人 | 显示审核人姓名、资质、审核范围 | 当前为中性披露 |
+| 3 | 内容页审核署名 | 每篇底部 `Reviewed by ...` | ✅ 已有 Editorial Team byline |
+| 4 | About 页面团队简介 | 说明谁在做这个站 | ✅ 已有 |
+| 5 | Editorial Policy 流程说明 | 说明内容如何被创建和纠错 | ✅ 已有 |
+
+> **注意：** 没有真实成员、学历、同意和审核记录的"团队资质声明"属于未证实背书，比不写更危险。宁可不写，不可虚写。
 
 ### 关于审核人资质的合规建议
 
@@ -116,13 +125,12 @@ Do not claim:
 - `10+ years teaching at [institution]` — 除非该人确实在职且同意公开
 - 任何暗示 NCERT/NTA/政府背书的表述
 
-**最低可行方案（如果暂时没有具名审核人）：**
-- ✅ 已完成：Team 页面展示 "MedQGo Editorial Team" 档案，包含团队资质、审核范围、开始年份
-- ✅ 已完成：About 页面新增 "Who Reviews Our Content" 章节，说明编辑团队背景
-- ✅ 已完成：Editorial Policy 页面新增 "Our Review Process" 和 "Who Reviews Our Content" 章节
+**当前状态（暂无具名审核人）：**
+- Team 页面保持中性披露：说明 MedQGo 不虚构资质、不伪造背书
+- About 页面说明产品定位和编辑流程
+- Editorial Policy 页面说明自动化质量检查和纠错机制
 - 所有内容页底部显示 `Reviewed by MedQGo Editorial Team`
-- 这个方案合法合规，但不如具名审核人通过率高
-- 如果未来有具名审核人，可以更新 `editorial-reviewer.json` 并重新部署
+- 如果未来有具名审核人，填写 `editorial-reviewer.json` 并重新部署即可
 
 ## 6. Publish and verify
 
@@ -157,14 +165,22 @@ Update or remove the public profile promptly if the reviewer stops participating
 
 ## 8. AdSense 提审前最终检查
 
-在提交 AdSense 申请前，逐项确认：
+在提交 AdSense 申请前，确认以下**实际硬门槛**：
 
-- [ ] `/team` 页面显示真实审核人（非通用 "Editorial Team" 占位）
-- [ ] `/about` 页面有团队/创始人简介段落
-- [ ] `/editorial-policy` 页面有清晰的审核流程说明
-- [ ] `/privacy` 页面包含广告和 cookie 声明（✅ 已有）
-- [ ] `/contact` 页面有真实可达的邮箱（✅ 已有）
-- [ ] 内容页底部有审核署名（`Reviewed by ...`）
-- [ ] 无任何页面声称 NCERT/NTA/政府背书
-- [ ] 所有资质信息均有书面同意书存档
-- [ ] 站点已运行至少 2-4 周，有 30+ 内容页
+### 必须满足
+
+- [x] `/privacy` 页面包含广告和 cookie 声明
+- [x] `/contact` 页面有真实可达的邮箱
+- [x] 无任何页面声称 NCERT/NTA/政府背书
+- [x] HTTPS + 自定义域名
+- [x] `/about`、`/editorial-policy`、`/team`、`/terms`、`/copyright` 页面存在
+- [x] 内容页底部有审核署名（`Reviewed by MedQGo Editorial Team`）
+
+### 仍需关注
+
+- [ ] 题源授权风险：题库的公开展示、翻译改写、广告变现授权问题不在 E-E-A-T 文案范围内，需单独评估
+
+### 加分项（非必须）
+
+- [ ] 具名审核人（需真实成员 + 学历 + 同意 + 审核记录）
+- [ ] 站点运行时间较长、内容页数量较多

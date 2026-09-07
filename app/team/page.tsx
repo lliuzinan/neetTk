@@ -5,8 +5,8 @@ import { editorialReviewer, hasPublishedReviewer } from "@/lib/editorialReviewer
 import { LAST_UPDATED_DISPLAY } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Editorial Team | MedQGo",
-  description: "Meet the MedQGo Editorial Team — biology graduates who review NEET-UG Biology content for NCERT alignment and answer accuracy.",
+  title: "Editorial Team",
+  description: "Learn how MedQGo identifies and publishes editorial contributors for NEET-UG Biology learning resources.",
   alternates: { canonical: "/team" },
 };
 
@@ -37,19 +37,10 @@ export default function TeamPage() {
             )}
           </section>
         ) : (
-          <>
-            <section>
-              <h2>MedQGo Editorial Team</h2>
-              <p>MedQGo's content is reviewed by our in-house editorial team, composed of biology graduates with subject-matter expertise in NCERT-aligned curriculum.</p>
-              <p><strong>Team qualifications:</strong> Members hold degrees in Life Sciences, Botany, or Zoology from recognised Indian universities.</p>
-              <p><strong>Review scope:</strong> The team verifies concept accuracy, answer consistency, and alignment with the NEET-UG Biology syllabus before publication.</p>
-              <p><strong>Reviewing since:</strong> 2026</p>
-            </section>
-            <section>
-              <h2>Contributor disclosure</h2>
-              <p>Individual reviewer names are not published at this stage. All content carries the MedQGo Editorial Team byline to indicate professional review. MedQGo does not invent qualifications, affiliations, or endorsements.</p>
-            </section>
-          </>
+          <section>
+            <h2>Contributor disclosure</h2>
+            <p>Individual reviewer details are not published until MedQGo has a real contributor, their consent to publish the profile, and records supporting the stated role. MedQGo does not invent qualifications, affiliations, or endorsements.</p>
+          </section>
         )}
 
         <section>

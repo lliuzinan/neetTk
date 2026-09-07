@@ -29,14 +29,6 @@ export default function AboutPage() {
           ],
         },
         {
-          title: "Who Reviews Our Content",
-          body: [
-            "MedQGo's content is reviewed by our in-house editorial team, composed of biology graduates with subject-matter expertise in NCERT-aligned curriculum. The team verifies concept accuracy, answer consistency, and alignment with the NEET-UG Biology syllabus before publication.",
-            "Our reviewers hold degrees in Life Sciences, Botany, or Zoology from recognised Indian universities. While individual reviewer names are not published at this stage, all content carries the MedQGo Editorial Team byline to indicate professional review.",
-            "MedQGo is an independent study resource and is not affiliated with NCERT, NTA, or any examination authority.",
-          ],
-        },
-        {
           title: "Contact",
           body: [
             "For corrections, feedback, or collaboration, use the contact page. We welcome reports about unclear wording, answer issues, or topic coverage gaps.",
