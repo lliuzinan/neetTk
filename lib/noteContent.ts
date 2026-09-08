@@ -10,6 +10,9 @@ export const AUTHORED_NOTE_SLUGS = [
   "immunity-pathogens-vaccines",
   "endocrine-system-and-hormones",
   "neuron-nerve-impulse-synapse",
+  "dna-rna-replication-transcription-translation",
+  "cell-theory-and-cell-organelles",
+  "mutation-and-gene-expression",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -240,6 +243,141 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "Sketch a neuron and a synapse from memory, then add arrows showing information flow. On a second line, write only four steps for a reflex arc: receptor, sensory neuron, central connection, motor neuron and effector. Finally, explain why a myelinated axon is faster without using the word 'faster' as the explanation itself.",
         "When you miss a question, sort the error into one of three groups: direction of signal flow, ionic change at the membrane, or role of a structure. The pattern usually becomes obvious after a few questions and tells you exactly what to revise from NCERT.",
+      ],
+    },
+  ],
+  "dna-rna-replication-transcription-translation": [
+    {
+      heading: "Build the chapter around information flow",
+      paragraphs: [
+        "The most useful starting point is a simple direction map: DNA stores hereditary information, a gene is expressed through an RNA intermediate, and translation uses that RNA information to assemble a protein. This map is not a substitute for the details, but it prevents the common mistake of treating replication, transcription and translation as unrelated lists of terms.",
+        "Before revising individual enzymes or molecules, identify the input, output, main location and purpose of each process. Replication makes a new DNA copy before cell division. Transcription produces RNA from a DNA template. Translation reads the information carried by messenger RNA to make a polypeptide. A close comparison is easier when these four anchors are clear.",
+      ],
+    },
+    {
+      heading: "DNA and RNA: compare structure before function",
+      paragraphs: [
+        "DNA and RNA are nucleic acids made from nucleotide units. A nucleotide contains a sugar, phosphate group and nitrogenous base. The sugar and base choices help distinguish DNA from RNA: DNA contains deoxyribose and thymine, whereas RNA contains ribose and usually uses uracil in place of thymine.",
+        "Structure supports function. DNA is generally treated as the more stable long-term information store, while several RNA molecules take part in using that information. Messenger RNA carries a coded message, transfer RNA brings amino acids during protein assembly, and ribosomal RNA is part of the machinery where polypeptides are made. Avoid reducing all RNA to a single role.",
+      ],
+      bullets: [
+        "A gene is a functional segment of DNA associated with a product or regulatory role.",
+        "A chromosome is a larger DNA-protein structure that contains many genes.",
+        "A base pair is a structural relationship in nucleic acid; a codon is an information unit read during translation.",
+        "Complementary pairing explains copying and transcription, but the two processes do not have the same product.",
+      ],
+    },
+    {
+      heading: "Replication: copying information accurately",
+      paragraphs: [
+        "During DNA replication, the two existing strands separate and each can guide the formation of a complementary strand. This is why replication is described as semi-conservative: each resulting DNA molecule includes one original strand and one newly made strand. The key idea is template-directed copying, not the creation of a completely unrelated molecule.",
+        "Revision questions often become confusing when the direction of copying, the need for a template, and the outcome are mixed together. Keep the outcome fixed in your mind: replication produces DNA from DNA. It is linked with preparation for cell division, whereas transcription is linked with using genetic information for expression.",
+      ],
+    },
+    {
+      heading: "Transcription and translation: two different stages",
+      paragraphs: [
+        "Transcription uses one DNA strand as a template to produce an RNA molecule. In eukaryotic cells, it is commonly associated with the nucleus. The RNA sequence is complementary to the template strand, with uracil used in RNA. The result is not a protein and not a second DNA molecule.",
+        "Translation occurs at ribosomes. The ribosome reads messenger RNA in codons, and transfer RNA molecules match their anticodons to the codons while carrying the corresponding amino acids. Peptide bonds join amino acids into a polypeptide. The genetic code links a nucleotide triplet in mRNA with an amino acid instruction; it does not mean that a codon itself is an amino acid.",
+      ],
+      bullets: [
+        "Replication: DNA template to DNA product.",
+        "Transcription: DNA template to RNA product.",
+        "Translation: mRNA information to polypeptide product.",
+        "Codon: triplet on mRNA. Anticodon: complementary triplet on tRNA.",
+      ],
+    },
+    {
+      heading: "A 20-minute recall routine",
+      paragraphs: [
+        "Draw three arrows labelled replication, transcription and translation. Under each arrow, write template, product, location and one essential molecule. Then draw a tRNA beside an mRNA strand and label codon, anticodon and amino acid. Check the drawing against NCERT only after completing it from memory.",
+        "For every gap, write a correction as a relationship rather than a lone fact. For example, write 'translation reads mRNA at ribosomes' rather than simply writing 'ribosome'. Relationship-based notes make similar terms easier to separate during a time-limited revision session.",
+      ],
+    },
+  ],
+  "cell-theory-and-cell-organelles": [
+    {
+      heading: "Start with the cell as an organised system",
+      paragraphs: [
+        "Cell biology becomes more manageable when structures are grouped by their contribution to one system: a cell has a boundary, stores and uses genetic information, makes molecules, processes and transports materials, releases energy, and removes or recycles selected material. This functional map is more reliable than memorising a disconnected list of organelle names.",
+        "Cell theory provides the frame. Cells are the basic structural and functional units of living organisms, and new cells arise from pre-existing cells. Use the theory to distinguish a general principle about life from a description of one specialised organelle.",
+      ],
+    },
+    {
+      heading: "Prokaryotic and eukaryotic cells: make one clean comparison",
+      paragraphs: [
+        "A prokaryotic cell does not have a membrane-bound nucleus; its genetic material occupies a nucleoid region. Eukaryotic cells have a membrane-bound nucleus and contain several membrane-bound organelles. This difference is more informative than simply calling one type simple and the other complex.",
+        "Both cell types still require a cell boundary, genetic material, cytoplasm and ribosomes. When comparing them, first identify which feature is shared and which feature is a defining difference. A shared feature cannot be used as evidence that a cell is eukaryotic.",
+      ],
+      bullets: [
+        "Cell membrane: selectively separates the cell interior from the surroundings.",
+        "Cytoplasm: site of many cellular activities and suspended structures.",
+        "Ribosomes: associated with protein synthesis in both prokaryotic and eukaryotic cells.",
+        "Nucleus: membrane-bound genetic control centre in eukaryotic cells.",
+      ],
+    },
+    {
+      heading: "Follow the protein-processing route",
+      paragraphs: [
+        "For many cell questions, trace a protein rather than recalling isolated organelles. Genetic information in the nucleus is used to make RNA. Ribosomes assemble polypeptides. Rough endoplasmic reticulum is associated with proteins that enter a processing and transport pathway. The Golgi apparatus modifies, sorts and packages material into vesicles for appropriate destinations.",
+        "The important distinction is that ribosomes carry out protein synthesis, while the endoplasmic reticulum and Golgi apparatus support processing, transport and packaging roles. The nucleus directs cellular activities through genetic information, but it is not the site where ribosomes assemble every protein.",
+      ],
+    },
+    {
+      heading: "Energy, digestion and plant-specific structures",
+      paragraphs: [
+        "Mitochondria are linked with aerobic respiration and ATP production. Their role should be separated from chloroplasts, which are associated with photosynthesis in plant cells. Both are often discussed as organelles with their own genetic material, but their central energy-related functions are different.",
+        "Lysosomes contain digestive enzymes and are associated with intracellular breakdown. Vacuoles can contribute to storage and, in many plant cells, turgor-related functions. The cell wall gives plant cells additional support outside the plasma membrane; it does not replace the selectively permeable cell membrane.",
+      ],
+    },
+    {
+      heading: "A practical organelle map",
+      paragraphs: [
+        "Make six headings on one page: boundary, information, protein route, energy, digestion and storage. Place every organelle under one primary heading, then add one secondary connection only where it genuinely helps. For example, mitochondria belong under energy, while the nucleus belongs under information.",
+        "Test your map by explaining why a cell membrane and a cell wall are not interchangeable, why a ribosome and a Golgi apparatus are not interchangeable, and why a chloroplast and a mitochondrion are not interchangeable. Those paired explanations expose weak distinctions faster than a long vocabulary list.",
+      ],
+    },
+  ],
+  "mutation-and-gene-expression": [
+    {
+      heading: "Gene expression connects genotype with cell function",
+      paragraphs: [
+        "A genotype refers to genetic information, while phenotype refers to observable characteristics influenced by genes and environment. Gene expression is the process by which information in DNA is used to produce a functional product, often a protein. It is therefore a bridge between a DNA sequence and the behaviour or structure of a cell.",
+        "Not every gene is active in every cell at the same time. Cells with the same DNA can differ because they use different sets of genes. Keep this idea separate from mutation: regulation changes when or where existing information is used, whereas a mutation is a change in genetic material.",
+      ],
+    },
+    {
+      heading: "What a mutation changes",
+      paragraphs: [
+        "A mutation is a heritable alteration in genetic material. It can involve a change in the nucleotide sequence of a gene or a larger change involving chromosome structure or chromosome number. The effect depends on where the change occurs and how it affects a gene product or chromosome behaviour; a mutation is not automatically harmful, beneficial or visible.",
+        "When revising mutation types, separate the level at which the change occurs. Gene-level changes affect a DNA sequence within a gene. Chromosomal changes concern larger segments or number. Mixing these levels is a common source of confusion because both can influence inherited traits.",
+      ],
+      bullets: [
+        "Substitution changes one base pair for another.",
+        "Insertion or deletion can alter the reading frame when the number of added or removed bases is not a multiple of three.",
+        "A mutation may change a protein sequence, have little apparent effect, or affect regulation depending on context.",
+        "Mutagens are factors that can increase the chance of mutation; they are not the same as a mutation itself.",
+      ],
+    },
+    {
+      heading: "From DNA change to protein consequence",
+      paragraphs: [
+        "To reason through a gene mutation, follow a sequence: DNA information is transcribed into RNA, RNA codons are read during translation, and the resulting amino-acid sequence contributes to protein structure and function. A change in DNA does not guarantee a dramatic phenotype, because the genetic code has redundancy and because the position of the change matters.",
+        "A frameshift is especially important as a concept because inserting or deleting bases can change how later codons are grouped. By contrast, a substitution changes one position without necessarily shifting the downstream grouping. Draw the codons in groups of three to make this distinction visible.",
+      ],
+    },
+    {
+      heading: "Regulation is not an on-off slogan",
+      paragraphs: [
+        "Gene regulation means that a cell can control the timing, location or amount of gene expression. For revision, do not treat it as a vague switch. Ask what is being regulated: formation of an RNA transcript, availability of a protein product, or a response to a cellular signal. The exact mechanisms can be detailed, but the core principle is selective use of genetic information.",
+        "This principle helps explain cell differentiation. A nerve cell and a muscle cell can contain the same genome but perform different functions because their patterns of gene expression differ. The distinction is about expression pattern, not about one cell type having an entirely different set of chromosomes.",
+      ],
+    },
+    {
+      heading: "A 20-minute revision routine",
+      paragraphs: [
+        "Create two columns labelled 'change in DNA' and 'use of DNA'. Put mutation in the first column and regulation in the second. Then write a four-step path from DNA to protein and mark where a substitution, an insertion, and a deletion could affect the result. Keep the examples general rather than trying to memorise a large list of diseases.",
+        "Finish by explaining three pairs aloud: mutation versus mutagen, genotype versus phenotype, and gene regulation versus gene mutation. If you can state the difference and one connection for each pair without notes, the chapter is ready for a more detailed NCERT review.",
       ],
     },
   ],
