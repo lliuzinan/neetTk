@@ -7,7 +7,7 @@ export function Footer() {
         <div>
           <Link href="/" className="footerBrand">MedQGo</Link>
           <p>
-            Free NCERT-aligned NEET-UG Biology MCQs, topic revision pages, and early access PDF resources for Indian exam preparation.
+            Independent NEET-UG Biology revision notes and early access learning resources for Indian exam preparation.
           </p>
           <p className="footerDisclaimer">
             Educational use only. MedQGo is not official NCERT, NTA, or NEET material and does not provide medical advice, diagnosis, or treatment.
@@ -15,11 +15,7 @@ export function Footer() {
         </div>
         <nav aria-label="Footer navigation" className="footerLinks">
           <Link href="/neet-ug/biology">NEET Biology</Link>
-          <Link href="/neet-ug/biology/practice">Practice Mode</Link>
-          <Link href="/neet-ug/biology/ncert-class-11-mcqs">Class 11 MCQs</Link>
-          <Link href="/neet-ug/biology/ncert-class-12-mcqs">Class 12 MCQs</Link>
-          <Link href="/neet-biology-pdf">Free PDF</Link>
-          <Link href="/neet-ug/biology/free-mcq-pdf">MCQ PDF guide</Link>
+          <Link href="/neet-biology-pdf">Revision Workbook</Link>
           <Link href="/site-map">Sitemap</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>

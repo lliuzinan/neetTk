@@ -3,30 +3,28 @@ import { TrackedLink } from "@/components/TrackedLink";
 type Props = {
   source: string;
   topicSlug?: string;
-  questionId?: string;
 };
 
-export function PdfCta({ source, topicSlug, questionId }: Props) {
+export function PdfCta({ source, topicSlug }: Props) {
   const params = new URLSearchParams({ source });
   if (topicSlug) params.set("topic", topicSlug);
-  if (questionId) params.set("question", questionId);
 
   return (
     <section className="pdfCta">
       <div>
-        <p className="eyebrow">Free PDF sample</p>
-        <h2>Get NEET Biology MCQs as a chapter-wise PDF.</h2>
+        <p className="eyebrow">Revision workbook</p>
+        <h2>Get early access to the NEET Biology revision workbook.</h2>
         <p>
-          Join early access for a free MCQ sample with answers and NCERT-aligned explanations.
+          Join the list for independently prepared revision checklists and printable study resources.
         </p>
       </div>
       <TrackedLink
         href={`/neet-biology-pdf?${params.toString()}`}
         className="ctaButton"
         eventName="pdf_cta_click"
-        eventParams={{ source, offer: "neet_biology_pdf", topic_slug: topicSlug || "", question_id: questionId || "" }}
+        eventParams={{ source, offer: "neet_biology_pdf", topic_slug: topicSlug || "" }}
       >
-        Get free PDF
+        Join early access
       </TrackedLink>
     </section>
   );

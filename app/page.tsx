@@ -1,65 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
-import { TrackedLink } from "@/components/TrackedLink";
-import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics, siteConfig } from "@/lib/content";
-import { INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
+import { absoluteUrl, getNotePath, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
+import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
+import { LAST_UPDATED_ISO } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Free NEET Biology MCQs with Answers",
-  description: "Practice free NEET-UG Biology MCQs with answers, NCERT-aligned explanations, topic-wise pages, and revision notes for Indian students.",
+  title: "NEET Biology Revision Notes",
+  description: "Independent NEET-UG Biology revision notes with NCERT-aligned concept maps, common confusions, and focused study routines.",
   alternates: { canonical: "/" },
 };
 
 export default async function Home() {
-  const [questionList, topicList, noteList] = await Promise.all([
-    getQuestions(),
-    getTopics(),
-    getSeoNotes(),
-  ]);
-  const firstQuestions = questionList.slice(0, 6);
+  const [topicList, noteList] = await Promise.all([getTopics(), getSeoNotes()]);
+  const notes = noteList.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
+  const topics = topicList.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
   const homeJsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "MedQGo",
-      url: absoluteUrl("/"),
-      sameAs: [],
-      description: siteConfig.description,
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: "MedQGo",
-      url: absoluteUrl("/"),
-      inLanguage: "en-IN",
-      potentialAction: {
-        "@type": "SearchAction",
-        target: `${absoluteUrl("/neet-ug/biology")}?q={search_term_string}`,
-        "query-input": "required name=search_term_string",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Course",
-      name: "NEET-UG Biology MCQ Practice",
-      description: siteConfig.description,
-      provider: {
-        "@type": "Organization",
-        name: "MedQGo",
-        sameAs: absoluteUrl("/"),
-      },
-      educationalLevel: "Higher secondary",
-      inLanguage: "en-IN",
-      dateModified: LAST_UPDATED_ISO,
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
-      ],
-    },
+    { "@context": "https://schema.org", "@type": "Organization", name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description },
+    { "@context": "https://schema.org", "@type": "WebSite", name: "MedQGo", url: absoluteUrl("/"), inLanguage: "en-IN" },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }], dateModified: LAST_UPDATED_ISO },
   ];
 
   return (
@@ -69,105 +28,40 @@ export default async function Home() {
         <nav className="nav">
           <Link href="/" className="brand">MedQGo</Link>
           <div className="navLinks">
-            <Link href="/neet-ug/biology">Topics</Link>
-            <Link href="/neet-ug/biology/practice">Practice</Link>
-            <Link href="/neet-biology-pdf">Free PDF</Link>
+            <Link href="/neet-ug/biology">Revision library</Link>
+            <Link href="/neet-biology-pdf">Revision workbook</Link>
             <Link href="/about">About</Link>
-            <Link href="/neet-ug/biology/notes/cell-theory-and-cell-organelles">Notes</Link>
             <Link href="/site-map">Sitemap</Link>
           </div>
         </nav>
         <div className="heroGrid">
           <div>
-            <p className="eyebrow">NEET-UG Biology • NCERT aligned</p>
-            <h1>Build your Biology score with focused MCQs and explanations.</h1>
-            <p className="lede">
-              Free chapter-wise NEET Biology MCQs for Indian students, aligned with NCERT Class 11 and 12. Practice four-option questions with visible answers and concise explanations.
-            </p>
+            <p className="eyebrow">NEET-UG Biology | Independent study resource</p>
+            <h1>Build a clearer NEET Biology revision routine.</h1>
+            <p className="lede">MedQGo publishes focused Biology revision notes for Indian students. Use the concept maps, common-confusion checks, and short revision routines alongside your NCERT textbook and school learning.</p>
             <div className="actions">
-              <Link href="/neet-ug/biology" className="primaryButton">Start Biology Practice</Link>
-              <Link href="/neet-ug/biology/practice" className="secondaryButton">Interactive practice</Link>
-              <Link href="/neet-ug/biology/ncert-class-11-mcqs" className="secondaryButton">Class 11 MCQs</Link>
-              <Link href="/neet-ug/biology/ncert-class-12-mcqs" className="secondaryButton">Class 12 MCQs</Link>
-              {firstQuestions[0] && <Link href={getQuestionPath(firstQuestions[0])} className="secondaryButton">Try a sample MCQ</Link>}
-              <TrackedLink
-                href="/neet-biology-pdf?source=home_hero"
-                className="secondaryButton"
-                eventName="pdf_cta_click"
-                eventParams={{ source: "home_hero", offer: "neet_biology_pdf" }}
-              >
-                Get free PDF
-              </TrackedLink>
+              <Link href="/neet-ug/biology" className="primaryButton">Browse revision topics</Link>
+              <Link href="/neet-biology-pdf" className="secondaryButton">Join workbook early access</Link>
             </div>
           </div>
-          <div className="heroPanel" aria-label="Question bank status">
-            <div className="metricRow">
-              <span>{questionList.length}</span>
-              <p>verified MCQs live</p>
-            </div>
-            <div className="metricRow">
-              <span>{topicList.length}</span>
-              <p>NCERT topic clusters</p>
-            </div>
-            <div className="metricRow">
-              <span>{noteList.length}</span>
-              <p>NCERT revision notes</p>
-            </div>
+          <div className="heroPanel" aria-label="Revision library status">
+            <div className="metricRow"><span>{notes.length}</span><p>in-depth revision notes</p></div>
+            <div className="metricRow"><span>{topics.length}</span><p>focused Biology topics</p></div>
+            <div className="metricRow"><span>1</span><p>clear study goal: better recall</p></div>
           </div>
         </div>
       </section>
-
       <section className="section">
-        <PdfCta source="home_midpage" />
-      </section>
-
-      <section className="section">
-        <div className="sectionHeader">
-          <p className="eyebrow">Question bank</p>
-          <h2>Chapter-wise NEET Biology MCQs with answers</h2>
-        </div>
+        <div className="sectionHeader"><p className="eyebrow">Revision library</p><h2>Start with a focused Biology topic</h2></div>
         <div className="topicGrid">
-          {topicList.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).map((topic) => (
-            <Link href={getTopicPath(topic)} className="topicCard" key={topic.id}>
-              <span>{topic.questionCount} MCQs</span>
-              <h3>{topic.name}</h3>
-              <p>{topic.ncertRef}</p>
-            </Link>
-          ))}
+          {topics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Concept focus, common confusions, and a short revision routine.</p></Link>)}
         </div>
       </section>
-
       <section className="section split">
-        <div>
-          <p className="eyebrow">NCERT revision</p>
-          <h2>Revise high-yield Biology concepts before solving topic-wise MCQs.</h2>
-          <p className="muted">
-            Use these short notes to review definitions, examples, and common distractors from NCERT before practicing questions for NEET-UG Biology.
-          </p>
-        </div>
-        <div className="listPanel">
-          {noteList.slice(0, 5).map((note) => (
-            <Link href={getNotePath(note)} key={note.id}>
-              {note.title}
-            </Link>
-          ))}
-        </div>
+        <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then use a compact recall routine.</h2><p className="muted">Each note is written as a learning aid, not as official exam material. Check definitions and diagrams against your current NCERT textbook.</p></div>
+        <div className="listPanel">{notes.map((note) => <Link href={getNotePath(note)} key={note.id}>{note.title}</Link>)}</div>
       </section>
-
-      <section className="section">
-        <div className="sectionHeader">
-          <p className="eyebrow">Sample MCQs</p>
-          <h2>Indexable question pages with visible explanations</h2>
-        </div>
-        <div className="questionList">
-          {firstQuestions.map((question) => (
-            <Link href={getQuestionPath(question)} className="questionRow" key={question.id}>
-              <span>{question.topic}</span>
-              <p>{question.stem}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <section className="section"><PdfCta source="home_midpage" /></section>
     </main>
   );
 }

@@ -3,118 +3,37 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getQuestionPath, getQuestions, getTopicPath, getTopics } from "@/lib/content";
-import { DEFAULT_OG_IMAGE, INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
+import { absoluteUrl, getSeoNotes, getTopics } from "@/lib/content";
+import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
+import { DEFAULT_OG_IMAGE, LAST_UPDATED_ISO } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "NEET Biology Chapter-wise MCQs",
-  description: "Browse chapter-wise NEET-UG Biology MCQs with answers, NCERT-aligned explanations, and free topic practice pages.",
+  title: "NEET Biology Revision Library",
+  description: "Independent NEET-UG Biology revision notes organised by topic, with concept focus, common confusions, and short study routines.",
   alternates: { canonical: "/neet-ug/biology" },
-  openGraph: {
-    title: "NEET Biology Chapter-wise MCQs",
-    description: "Browse chapter-wise NEET-UG Biology MCQs with answers, NCERT-aligned explanations, and free topic practice pages.",
-    url: absoluteUrl("/neet-ug/biology"),
-    siteName: "MedQGo",
-    type: "website",
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "NEET Biology Chapter-wise MCQs" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "NEET Biology Chapter-wise MCQs",
-    description: "Browse chapter-wise NEET-UG Biology MCQs with answers and NCERT-aligned explanations.",
-    images: [DEFAULT_OG_IMAGE],
-  },
+  openGraph: { title: "NEET Biology Revision Library", description: "Focused NEET Biology revision notes for Indian students.", url: absoluteUrl("/neet-ug/biology"), siteName: "MedQGo", type: "website", images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "MedQGo NEET Biology revision library" }] },
 };
 
 export default async function BiologyTopicsPage() {
-  const [questionList, topicList] = await Promise.all([getQuestions(), getTopics()]);
-  const primaryTopics = topicList.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS);
-  const growingTopics = topicList.filter((topic) => topic.questionCount < INDEXABLE_TOPIC_MIN_QUESTIONS);
-  const itemListLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "NEET Biology Chapter-wise MCQs",
-    url: absoluteUrl("/neet-ug/biology"),
-    inLanguage: "en-IN",
-    dateModified: LAST_UPDATED_ISO,
-    about: {
-      "@type": "Course",
-      name: "NEET-UG Biology",
-      educationalLevel: "Higher secondary",
-      provider: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") },
-    },
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: primaryTopics.length,
-      itemListElement: primaryTopics.map((topic, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: `${topic.name} MCQs`,
-        url: absoluteUrl(getTopicPath(topic)),
-      })),
-    },
-  };
-  const questionListLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "NEET Biology MCQs with Answers",
-    numberOfItems: questionList.length,
-    itemListElement: questionList.slice(0, 50).map((question, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: question.stem,
-      url: absoluteUrl(getQuestionPath(question)),
-    })),
-  };
+  const [allTopics, allNotes] = await Promise.all([getTopics(), getSeoNotes()]);
+  const notes = allNotes.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
+  const topics = allTopics.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
+  const itemListLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: "NEET Biology Revision Library", url: absoluteUrl("/neet-ug/biology"), inLanguage: "en-IN", dateModified: LAST_UPDATED_ISO, mainEntity: { "@type": "ItemList", numberOfItems: topics.length, itemListElement: topics.map((topic, index) => ({ "@type": "ListItem", position: index + 1, name: `${topic.name} revision guide`, url: absoluteUrl(`/neet-ug/biology/${topic.slug}`) })) } };
 
   return (
     <main className="page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([itemListLd, questionListLd]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }} />
       <header className="pageHeader">
-        <Breadcrumbs items={[
-          { href: "/", label: "Home" },
-          { href: "/neet-ug/biology", label: "NEET Biology" },
-        ]} />
+        <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-ug/biology", label: "NEET Biology" }]} />
         <Link href="/" className="backLink">Home</Link>
         <p className="eyebrow">NEET-UG Biology</p>
-        <h1>NCERT topic-wise Biology MCQs</h1>
-        <p>
-          Start with {questionList.length} verified 4-option questions across NCERT-aligned Biology topics. Stronger chapters are listed first for practice and indexing.
-        </p>
+        <h1>NEET Biology revision library</h1>
+        <p>Use these independent topic guides to organise NCERT revision around definitions, processes, comparisons, and common sources of confusion.</p>
         <EditorialByline />
       </header>
-
-      <section className="contentBand practicePromo">
-        <p className="eyebrow">Interactive practice</p>
-        <h2>Answer first. See the explanation after.</h2>
-        <p>Use Practice Mode for one-question-at-a-time sessions with instant feedback, score tracking, and saved progress on your device.</p>
-        <Link href="/neet-ug/biology/practice" className="primaryButton">Start Practice Mode</Link>
-      </section>
-
+      <section className="contentBand"><h2>How to use this library</h2><p>Read the corresponding NCERT chapter first. Then use a MedQGo guide to test whether you can explain the central process, separate similar terms, and recall key examples without looking back at the textbook.</p></section>
+      <div className="topicGrid">{topics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h2>{topic.name}</h2><p>Study focus, likely confusions, and an original revision routine.</p></Link>)}</div>
       <PdfCta source="biology_index" />
-
-      <div className="topicGrid">
-        {primaryTopics.map((topic) => (
-          <Link href={getTopicPath(topic)} className="topicCard" key={topic.id}>
-            <span>{topic.questionCount} MCQs</span>
-            <h2>{topic.name}</h2>
-            <p>{topic.ncertRef}</p>
-          </Link>
-        ))}
-      </div>
-      {growingTopics.length > 0 && (
-        <section className="contentBand topicQueue">
-          <h2>Growing topics</h2>
-          <p>These chapters are live for users but kept out of the main SEO push until they have more verified MCQs.</p>
-          <div className="miniLinks">
-            {growingTopics.map((topic) => (
-              <Link href={getTopicPath(topic)} key={topic.id}>
-                {topic.name} ({topic.questionCount} MCQs)
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
     </main>
   );
 }

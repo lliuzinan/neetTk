@@ -15,23 +15,23 @@ export default function EditorialPolicyPage() {
       intro="This policy explains how MedQGo prepares NEET-UG Biology learning material and how students can report a correction."
       sections={[
         {
-          title: "Original MedQGo Practice Content",
+          title: "Independent MedQGo Revision Content",
           body: [
-            "MedQGo's topic-wise MCQs, notes, practice mode, and PDF sample are created as independent learning resources. Before publication, questions are filtered for Biology relevance, mapped to an NCERT topic, rewritten in English for NEET-UG practice, checked for answer consistency, and reviewed for clarity.",
-            "A question is not published when its wording, options, answer, topic mapping, or explanation fails the applicable checks. We revise or remove material when a credible correction identifies an error.",
+            "MedQGo publishes independently prepared revision notes, topic guides, and planned printable learning resources. We do not present public material as official NCERT, NTA, or NEET content.",
+            "A guide is not published when its wording, topic fit, supporting explanation, or source treatment fails our review. We revise or remove material when a credible correction identifies an error or rights concern.",
           ],
         },
         {
           title: "Quality Checks",
           body: [
-            "MedQGo uses automated quality checks and editorial review for selected revision resources. Automated steps include topic mapping to NCERT chapters, answer consistency verification, and deterministic validation for formatting and metadata.",
+            "MedQGo uses structured editorial checks for selected revision resources. These checks include topic mapping, clarity review, deterministic validation for formatting and metadata, and correction review when readers report an issue.",
             "Corrections are prioritised when readers report an issue. We revise or remove material when a credible correction identifies an error.",
           ],
         },
         {
           title: "Corrections and Updates",
           body: [
-            "To report a possible error, use the Contact page and include the page URL, question number where relevant, the proposed correction, and supporting NCERT or official-reference details. We review actionable reports and update the affected page when appropriate.",
+            "To report a possible error, use the Contact page and include the page URL, the proposed correction, and supporting NCERT or official-reference details. We review actionable reports and update the affected page when appropriate.",
             "Dates displayed on pages show the latest editorial update. They do not imply endorsement by an examination authority.",
             "MedQGo is an independent study resource and is not affiliated with NCERT, NTA, or any examination authority.",
           ],

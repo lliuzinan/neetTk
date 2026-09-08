@@ -1,51 +1,22 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, getNotePath, getQuestionPath, getQuestions, getSeoNotes, getTopicPath, getTopics } from "@/lib/content";
-import { INDEXABLE_TOPIC_MIN_QUESTIONS, LAST_UPDATED_ISO } from "@/lib/seo";
+import { absoluteUrl, getNotePath, getSeoNotes, getTopics } from "@/lib/content";
+import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
+import { LAST_UPDATED_ISO } from "@/lib/seo";
 
-const INDEXABLE_NOTE_TOPIC_SLUGS = new Set(["human-respiration", "excretion-and-kidney-function"]);
+const trustPages = ["/about", "/contact", "/privacy", "/terms", "/team", "/editorial-policy", "/copyright", "/site-map"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const biologyLastModified = new Date(`${LAST_UPDATED_ISO}T00:00:00.000Z`);
-  const [topicList, questionList, noteList] = await Promise.all([
-    getTopics(),
-    getQuestions(),
-    getSeoNotes(),
-  ]);
-  const indexableTopicSlugs = new Set(
-    topicList.filter((topic) => topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS).map((topic) => topic.slug),
-  );
-
+  const lastModified = new Date(`${LAST_UPDATED_ISO}T00:00:00.000Z`);
+  const [allNotes, allTopics] = await Promise.all([getSeoNotes(), getTopics()]);
+  const notes = allNotes.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
+  const topicSlugs = new Set(notes.map((note) => note.topicSlug));
+  const topics = allTopics.filter((topic) => topicSlugs.has(topic.slug));
   return [
-    { url: absoluteUrl("/"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 1 },
-    { url: absoluteUrl("/neet-ug/biology"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.95 },
-    { url: absoluteUrl("/neet-biology-pdf"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.8 },
-    { url: absoluteUrl("/neet-ug/biology/free-mcq-pdf"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.82 },
-    { url: absoluteUrl("/neet-ug/biology/chapter-wise-mcqs"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.82 },
-    { url: absoluteUrl("/neet-ug/biology/mcqs-with-answers"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.82 },
-    { url: absoluteUrl("/neet-ug/biology/ncert-class-11-mcqs"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.82 },
-    { url: absoluteUrl("/neet-ug/biology/ncert-class-12-mcqs"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.82 },
-    { url: absoluteUrl("/about"), lastModified: biologyLastModified, changeFrequency: "monthly", priority: 0.5 },
-    { url: absoluteUrl("/contact"), lastModified: biologyLastModified, changeFrequency: "monthly", priority: 0.5 },
-    { url: absoluteUrl("/privacy"), lastModified: biologyLastModified, changeFrequency: "monthly", priority: 0.45 },
-    { url: absoluteUrl("/terms"), lastModified: biologyLastModified, changeFrequency: "monthly", priority: 0.45 },
-    { url: absoluteUrl("/site-map"), lastModified: biologyLastModified, changeFrequency: "weekly", priority: 0.6 },
-    ...topicList.filter((topic) => indexableTopicSlugs.has(topic.slug)).map((topic) => ({
-      url: absoluteUrl(getTopicPath(topic)),
-      lastModified: biologyLastModified,
-      changeFrequency: "weekly" as const,
-      priority: 0.85,
-    })),
-    ...questionList.map((question) => ({
-      url: absoluteUrl(getQuestionPath(question)),
-      lastModified: biologyLastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-    ...noteList.filter((note) => indexableTopicSlugs.has(note.topicSlug) || INDEXABLE_NOTE_TOPIC_SLUGS.has(note.topicSlug)).map((note) => ({
-      url: absoluteUrl(getNotePath(note)),
-      lastModified: biologyLastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
-    })),
+    { url: absoluteUrl("/"), lastModified, changeFrequency: "weekly", priority: 1 },
+    { url: absoluteUrl("/neet-ug/biology"), lastModified, changeFrequency: "weekly", priority: 0.95 },
+    { url: absoluteUrl("/neet-biology-pdf"), lastModified, changeFrequency: "weekly", priority: 0.8 },
+    ...topics.map((topic) => ({ url: absoluteUrl(`/neet-ug/biology/${topic.slug}`), lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...notes.map((note) => ({ url: absoluteUrl(getNotePath(note)), lastModified, changeFrequency: "monthly" as const, priority: 0.85 })),
+    ...trustPages.map((path) => ({ url: absoluteUrl(path), lastModified, changeFrequency: "monthly" as const, priority: 0.4 })),
   ];
 }

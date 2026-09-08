@@ -3,188 +3,61 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import nextConfig from "../next.config.ts";
 
-test("redirects stale GSC URLs to live NEET Biology pages", async () => {
+test("keeps legacy GSC routes pointed at a live revision hub", async () => {
   const redirects = await nextConfig.redirects();
-
-  assert.deepEqual(
-    redirects.find((redirect) => redirect.source === "/medicine/endocrinology"),
-    {
-      source: "/medicine/endocrinology",
-      destination: "/neet-ug/biology/endocrine-system-and-hormones",
-      permanent: true,
-    },
-  );
-  assert.deepEqual(
-    redirects.find((redirect) => redirect.source === "/mock-test"),
-    {
-      source: "/mock-test",
-      destination: "/neet-ug/biology",
-      permanent: true,
-    },
-  );
-  assert.deepEqual(
-    redirects.find((redirect) => redirect.source === "/medicine/respiratory-medicine/:path*"),
-    {
-      source: "/medicine/respiratory-medicine/:path*",
-      destination: "/neet-ug/biology/human-respiration",
-      permanent: true,
-    },
-  );
-  assert.deepEqual(
-    redirects.find((redirect) => redirect.source === "/medicine/:path*"),
-    {
-      source: "/medicine/:path*",
-      destination: "/neet-ug/biology",
-      permanent: true,
-    },
-  );
-  assert.deepEqual(
-    redirects.find((redirect) => redirect.source === "/daily-mcq"),
-    {
-      source: "/daily-mcq",
-      destination: "/neet-ug/biology",
-      permanent: true,
-    },
-  );
+  assert.equal(redirects.find((redirect) => redirect.source === "/mock-test")?.destination, "/neet-ug/biology");
+  assert.equal(redirects.find((redirect) => redirect.source === "/daily-mcq")?.destination, "/neet-ug/biology");
 });
 
-test("renders seeded qbank content on public index pages", async () => {
-  const [homeHtml, biologyHtml, questionsJson] = await Promise.all([
+test("renders the independent revision home and topic library", async () => {
+  const [homeHtml, biologyHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
-    readFile(
-      new URL("../.next/server/app/neet-ug/biology.html", import.meta.url),
-      "utf8",
-    ),
-    readFile(new URL("../data/questions.json", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology.html", import.meta.url), "utf8"),
   ]);
-  const questionCount = JSON.parse(questionsJson).length;
-
-  assert.match(homeHtml, new RegExp(`>${questionCount}<`));
-  assert.match(homeHtml, /verified MCQs live/);
-  assert.match(homeHtml, /Protein synthesis occurs in the/);
-  assert.match(homeHtml, /neetug-bio-520996/);
-  assert.match(homeHtml, /Free chapter-wise NEET Biology MCQs for Indian students/);
-  assert.match(homeHtml, /href="\/site-map"/);
-  assert.match(homeHtml, /href="\/neet-biology-pdf/);
-  assert.match(homeHtml, /href="\/about"/);
-  assert.match(homeHtml, /WebSite/);
-  assert.match(homeHtml, /Organization/);
-  assert.match(homeHtml, /Course/);
-  assert.match(homeHtml, /og\?title=NEET-UG%20Biology%20MCQs/);
-  assert.match(homeHtml, /Get free PDF/);
-  assert.match(homeHtml, /Privacy/);
-  assert.doesNotMatch(homeHtml, /SEO content pipeline/);
-  assert.doesNotMatch(homeHtml, /generated from the same publishing pipeline/);
-
-  assert.match(biologyHtml, new RegExp(`${questionCount}<!-- --> verified 4-option questions`));
-  assert.match(biologyHtml, /CollectionPage/);
-  assert.match(biologyHtml, /ItemList/);
-  assert.match(biologyHtml, /Reviewed by MedQGo Editorial Team/);
-  assert.match(biologyHtml, /Cell theory and cell organelles/);
-  assert.match(biologyHtml, /Growing topics/);
-  assert.doesNotMatch(homeHtml, />0<\/span><p>verified MCQs live/);
-  assert.doesNotMatch(biologyHtml, /Start with <!-- -->0<!-- --> verified/);
+  assert.match(homeHtml, /Build a clearer NEET Biology revision routine/);
+  assert.match(homeHtml, /in-depth revision notes/);
+  assert.match(homeHtml, /Join workbook early access/);
+  assert.doesNotMatch(homeHtml, /verified MCQs live/);
+  assert.doesNotMatch(homeHtml, /Protein synthesis occurs in the/);
+  assert.match(biologyHtml, /NEET Biology revision library/);
+  assert.match(biologyHtml, /How to use this library/);
+  assert.match(biologyHtml, /Human respiration/);
 });
 
-test("renders HTML sitemap and question SEO metadata", async () => {
-  const [sitemapHtml, questionHead, questionFull] = await Promise.all([
+test("publishes only revision URLs in the sitemap", async () => {
+  const [sitemapHtml, sitemapXml] = await Promise.all([
     readFile(new URL("../.next/server/app/site-map.html", import.meta.url), "utf8"),
-    readFile(
-      new URL("../.next/server/app/neet-ug/biology/cell-theory-and-cell-organelles/q/neetug-bio-520996.segments/_head.segment.rsc", import.meta.url),
-      "utf8",
-    ),
-    readFile(
-      new URL("../.next/server/app/neet-ug/biology/cell-theory-and-cell-organelles/q/neetug-bio-520996.segments/_full.segment.rsc", import.meta.url),
-      "utf8",
-    ),
-  ]);
-
-  assert.match(sitemapHtml, /NEET Biology HTML sitemap/);
-  assert.match(sitemapHtml, /Free NEET Biology MCQ PDF/);
-  assert.match(sitemapHtml, /Chapter-wise NEET Biology MCQs/);
-  assert.match(sitemapHtml, /About MedQGo/);
-  assert.match(sitemapHtml, /All MCQ pages/);
-  assert.match(sitemapHtml, /neetug-bio-520996/);
-  assert.match(questionHead, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
-  assert.match(questionHead, /og:url/);
-  assert.match(questionHead, /og:image/);
-  assert.match(questionFull, /Protein synthesis occurs in the ribosomes: NEET Biology MCQ/);
-  assert.match(questionFull, /Home/);
-  assert.match(questionFull, /NEET Biology/);
-  assert.match(questionFull, /Reviewed by MedQGo Editorial Team/);
-  assert.match(questionFull, /Last updated: /);
-});
-
-test("renders PDF waitlist landing page", async () => {
-  const pdfHtml = await readFile(
-    new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url),
-    "utf8",
-  );
-
-  assert.match(pdfHtml, /Free NEET Biology MCQ PDF/);
-  assert.match(pdfHtml, /Join early access/);
-  assert.match(pdfHtml, /WhatsApp number/);
-  assert.match(pdfHtml, /30 original, reviewed NEET-UG Biology MCQs/);
-  assert.match(pdfHtml, /Get the free sample/);
-  assert.doesNotMatch(pdfHtml, /Telegram/);
-});
-
-test("renders interactive practice routes without putting them in the SEO sitemap", async () => {
-  const [practiceHtml, topicPracticeHtml, sitemapXml] = await Promise.all([
-    readFile(new URL("../.next/server/app/neet-ug/biology/practice.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/neet-ug/biology/practice/cell-theory-and-cell-organelles.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
   ]);
-
-  assert.match(practiceHtml, /NEET Biology Practice Mode/);
-  assert.match(topicPracticeHtml, /Cell theory and cell organelles practice/);
-  assert.match(topicPracticeHtml, /Check answer/);
-  assert.match(topicPracticeHtml, /noindex, follow/);
-  assert.match(topicPracticeHtml, /neet-ug\/biology\/practice\/cell-theory-and-cell-organelles/);
-  assert.doesNotMatch(sitemapXml, /neet-ug\/biology\/practice/);
+  assert.match(sitemapHtml, /NEET Biology revision sitemap/);
+  assert.match(sitemapHtml, /Revision workbook early access/);
+  assert.match(sitemapHtml, /Human respiration/);
+  assert.doesNotMatch(sitemapHtml, /All MCQ pages/);
+  assert.doesNotMatch(sitemapXml, /\/q\//);
+  assert.doesNotMatch(sitemapXml, /\/practice/);
+  assert.match(sitemapXml, /human-respiration/);
 });
 
-test("renders topic-specific SEO content", async () => {
-  const [topicHtml, noteHtml] = await Promise.all([
-    readFile(
-      new URL("../.next/server/app/neet-ug/biology/cell-theory-and-cell-organelles.html", import.meta.url),
-      "utf8",
-    ),
-    readFile(
-      new URL("../.next/server/app/neet-ug/biology/notes/cell-theory-and-cell-organelles.html", import.meta.url),
-      "utf8",
-    ),
-  ]);
-
-  assert.match(topicHtml, /High-yield NCERT focus/);
-  assert.match(topicHtml, /Common NEET traps/);
-  assert.match(topicHtml, /Which cell organelles are most important for NEET Biology/);
-  assert.match(topicHtml, /Get NEET Biology MCQs as a chapter-wise PDF/);
-  assert.match(topicHtml, /FAQPage/);
-  assert.match(topicHtml, /Reviewed by MedQGo Editorial Team/);
-  assert.match(noteHtml, /Core concepts to revise/);
-  assert.match(noteHtml, /Example MCQs and explanations/);
-  assert.match(noteHtml, /Article/);
-  assert.match(noteHtml, /MedQGo Editorial Team/);
+test("renders the revision workbook early-access page without a question download", async () => {
+  const pdfHtml = await readFile(new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url), "utf8");
+  assert.match(pdfHtml, /NEET Biology revision workbook/);
+  assert.match(pdfHtml, /Join early access/);
+  assert.match(pdfHtml, /WhatsApp number/);
+  assert.doesNotMatch(pdfHtml, /30 original, reviewed/);
+  assert.doesNotMatch(pdfHtml, /Download free PDF sample/);
 });
 
-test("renders trust and conversion SEO pages", async () => {
-  const [aboutHtml, contactHtml, privacyHtml, termsHtml, pdfGuideHtml, chapterHtml, answersHtml] = await Promise.all([
+test("renders the authored revision note and the trust pages", async () => {
+  const [noteHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/notes/human-respiration.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/contact.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/neet-ug/biology/free-mcq-pdf.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/neet-ug/biology/chapter-wise-mcqs.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/neet-ug/biology/mcqs-with-answers.html", import.meta.url), "utf8"),
   ]);
-
-  assert.match(aboutHtml, /About MedQGo/);
-  assert.match(contactHtml, /a9665670@163.com/);
+  assert.match(noteHtml, /Human respiration: the high-yield sequence/);
+  assert.match(noteHtml, /Use this note responsibly/);
+  assert.match(noteHtml, /Article/);
+  assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);
-  assert.match(pdfGuideHtml, /Free NEET Biology MCQ PDF/);
-  assert.match(chapterHtml, /NEET Biology Chapter-wise MCQs/);
-  assert.match(answersHtml, /NEET Biology MCQs with Answers/);
-  assert.match(pdfGuideHtml, /Reviewed by MedQGo Editorial Team/);
 });

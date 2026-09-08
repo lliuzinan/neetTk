@@ -6,60 +6,18 @@ import { WaitlistForm } from "@/components/WaitlistForm";
 import { absoluteUrl } from "@/lib/content";
 import { ogImage } from "@/lib/seo";
 
-const image = ogImage("Free NEET Biology MCQ PDF", "Chapter-wise sample with answers");
-
+const image = ogImage("NEET Biology Revision Workbook", "Independent revision checklists and study resources");
 export const metadata: Metadata = {
-  title: "Free NEET Biology MCQ PDF",
-  description: "Get a free NEET Biology MCQ PDF sample with original questions, answers, NCERT-aligned explanations, and a revision sheet.",
+  title: "NEET Biology Revision Workbook Early Access",
+  description: "Join early access for MedQGo's independently prepared NEET Biology revision workbook and printable study resources.",
   alternates: { canonical: "/neet-biology-pdf" },
-  openGraph: {
-    title: "Free NEET Biology MCQ PDF",
-    description: "Get a free NEET Biology MCQ sample with answers, explanations, and a revision sheet.",
-    url: absoluteUrl("/neet-biology-pdf"),
-    siteName: "MedQGo",
-    type: "website",
-    images: [{ url: image, width: 1200, height: 630, alt: "Free NEET Biology MCQ PDF" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free NEET Biology MCQ PDF",
-    description: "Get a free NEET Biology MCQ PDF sample.",
-    images: [image],
-  },
+  openGraph: { title: "NEET Biology Revision Workbook", description: "Independent revision checklists and study resources.", url: absoluteUrl("/neet-biology-pdf"), siteName: "MedQGo", type: "website", images: [{ url: image, width: 1200, height: 630, alt: "NEET Biology revision workbook" }] },
+  twitter: { card: "summary_large_image", title: "NEET Biology Revision Workbook", description: "Independent revision checklists and study resources.", images: [image] },
 };
 
 export default function NeetBiologyPdfPage() {
-  return (
-    <main className="page pdfLanding">
-      <header className="pageHeader">
-        <Breadcrumbs items={[
-          { href: "/", label: "Home" },
-          { href: "/neet-biology-pdf", label: "Free PDF" },
-        ]} />
-        <Link href="/" className="backLink">Home</Link>
-        <p className="eyebrow">Free PDF sample</p>
-        <h1>Free NEET Biology MCQ PDF</h1>
-        <p>
-          Get a chapter-wise sample of original NEET Biology MCQs with answers, NCERT-aligned explanations, and a one-page revision sheet.
-        </p>
-        <EditorialByline />
-      </header>
-
-      <section className="splitContent">
-        <div className="contentBand">
-          <h2>What you will get</h2>
-          <ul className="seoList">
-            <li>30 original, reviewed NEET-UG Biology MCQs.</li>
-            <li>Answers and NCERT-aligned explanations for quick revision.</li>
-            <li>A compact error-review sheet to use after practice.</li>
-            <li>Web practice mode keeps your score and mistakes on this device.</li>
-          </ul>
-        </div>
-        <div className="contentBand">
-          <h2>Get the free sample</h2>
-          <WaitlistForm />
-        </div>
-      </section>
-    </main>
-  );
+  return <main className="page pdfLanding">
+    <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Revision workbook" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Revision workbook early access</p><h1>NEET Biology revision workbook</h1><p>Join early access for independently prepared printable revision checklists and topic-based study resources. No material is presented as official NCERT, NTA, or NEET content.</p><EditorialByline /></header>
+    <section className="splitContent"><div className="contentBand"><h2>Planned resource focus</h2><ul className="seoList"><li>Topic-based concept maps for Biology revision.</li><li>Common-confusion checklists to use alongside NCERT.</li><li>Short recall routines for before a mock test.</li><li>Clear source and update information for every published resource.</li></ul></div><div className="contentBand"><h2>Join early access</h2><WaitlistForm /></div></section>
+  </main>;
 }

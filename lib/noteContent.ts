@@ -4,6 +4,14 @@ export type NoteSection = {
   bullets?: string[];
 };
 
+export const AUTHORED_NOTE_SLUGS = [
+  "human-respiration",
+  "excretion-and-kidney-function",
+  "immunity-pathogens-vaccines",
+  "endocrine-system-and-hormones",
+  "neuron-nerve-impulse-synapse",
+] as const;
+
 const noteContent: Record<string, NoteSection[]> = {
   "human-respiration": [
     {
@@ -141,7 +149,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "A 15-minute revision method",
       paragraphs: [
         "Make four columns headed barrier, innate response, acquired response and prevention. Place each NCERT term in one column, then add one example and one common confusion. Finish by explaining active and passive immunity aloud without looking at notes.",
-        "When reviewing MCQs, mark whether the mistake came from confusing a cell type, a pathogen, a route of transmission, or a type of immunity. That classification makes the next practice set targeted rather than repetitive.",
+        "When reviewing your recall notes, mark whether the gap came from confusing a cell type, a pathogen, a route of transmission, or a type of immunity. That classification makes the next revision session targeted rather than repetitive.",
       ],
     },
   ],
@@ -188,7 +196,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "A 15-minute revision method",
       paragraphs: [
         "Draw a table with four columns: gland, hormone, target and one effect. Fill it from memory, then compare it with NCERT and correct only the mismatched cells. Next, draw arrows for insulin versus glucagon and for a simple negative-feedback loop involving the hypothalamus, pituitary and target gland.",
-        "While practising MCQs, label each error as a gland mismatch, hormone-effect mismatch, or feedback-direction error. This turns a long list of hormone names into a small set of testable relationships.",
+        "While checking recall, label each error as a gland mismatch, hormone-effect mismatch, or feedback-direction error. This turns a long list of hormone names into a small set of clear relationships.",
       ],
     },
   ],
@@ -196,7 +204,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Read the chapter as a route, not a list of terms",
       paragraphs: [
-        "A nerve impulse follows a physical route: a receptor detects a change, a neuron carries the signal, a synapse passes it to the next cell, and an effector produces a response. When an MCQ feels crowded with terms such as dendrite, axon, synapse and receptor, first ask where in that route the event is taking place.",
+        "A nerve impulse follows a physical route: a receptor detects a change, a neuron carries the signal, a synapse passes it to the next cell, and an effector produces a response. When a revision prompt feels crowded with terms such as dendrite, axon, synapse and receptor, first ask where in that route the event is taking place.",
         "The neuron is specialised for receiving, conducting and passing on information. Dendrites mainly receive signals toward the cell body, while the axon carries impulses away from it. This is a directional idea, so it is more useful than trying to memorise a diagram as a picture.",
       ],
     },

@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/InfoPage";
 
 export const metadata: Metadata = {
   title: "About MedQGo",
-  description: "Learn about MedQGo, a focused NEET-UG Biology practice resource for NCERT-aligned MCQs, explanations, and revision support.",
+  description: "Learn about MedQGo, an independent NEET-UG Biology revision resource for Indian students.",
   alternates: { canonical: "/about" },
 };
 
@@ -12,20 +12,20 @@ export default function AboutPage() {
     <InfoPage
       eyebrow="About"
       title="About MedQGo"
-      intro="MedQGo is a focused NEET-UG Biology practice resource built for Indian students who want concise MCQs, visible answers, and NCERT-aligned explanations."
+      intro="MedQGo is an independent NEET-UG Biology revision resource for Indian students who want clear concept maps, common-confusion checks, and concise study routines."
       sections={[
         {
           title: "What We Publish",
           body: [
-            "MedQGo publishes chapter-wise NEET-UG Biology multiple-choice questions, answer explanations, revision notes, and topic landing pages. The current Biology bank is built from a larger source question collection, then filtered, rewritten, and checked before publication.",
-            "Our first subject focus is Biology because NEET-UG Biology rewards direct NCERT recall, careful reading, and repeated practice. We prioritize short concept checks, chapter-level organization, and explanations that help students understand why an answer is correct.",
+            "MedQGo publishes independently prepared NEET-UG Biology revision notes, topic guides, and early-access learning resources. The public library focuses on concepts, comparisons, and study routines rather than reproducing exam or textbook material.",
+            "Our first subject focus is Biology because NEET-UG Biology rewards direct NCERT recall and careful reading. We organise each guide around a small set of concepts that a student can verify against the current NCERT textbook.",
           ],
         },
         {
           title: "Editorial Process",
           body: [
-            "Questions are selected through a multi-step workflow: rule filtering, Biology topic mapping, NCERT topic alignment, strict suitability review, English rewriting, deterministic quality checks, and answer consistency verification. Items that fail translation quality or answer verification are held back for review instead of being published.",
-            "Read the Editorial Policy and Copyright page for the way we review original content and handle correction or rights-holder requests.",
+            "Each public guide is checked for clarity, topic fit, and unsupported claims before publication. We revise or remove a guide when a credible correction identifies an error or a source concern.",
+            "Read the Editorial Policy and Copyright page for the way we prepare revision content and handle correction or rights-holder requests.",
           ],
         },
         {

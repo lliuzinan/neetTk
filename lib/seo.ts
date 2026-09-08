@@ -5,9 +5,9 @@ import { absoluteUrl, getNotePath, getQuestionPath, getTopicPath } from "@/lib/c
 export const INDEXABLE_TOPIC_MIN_QUESTIONS = 5;
 export const LAST_UPDATED_ISO = "2026-07-30";
 export const LAST_UPDATED_DISPLAY = "July 30, 2026";
-export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20MCQs&subtitle=NCERT-aligned%20practice%20with%20answers");
+export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
-export function ogImage(title: string, subtitle = "NCERT-aligned NEET Biology practice") {
+export function ogImage(title: string, subtitle = "Independent NEET Biology revision resource") {
   return absoluteUrl(`/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(subtitle)}`);
 }
 
@@ -44,22 +44,21 @@ export function questionDescription(question: Question, answerText: string) {
 
 export function topicDescription(topic: Topic) {
   return truncate(
-    `Practice ${topic.name} NEET-UG Biology MCQs with answers and NCERT-aligned explanations for Class 11 and 12 chapter-wise revision.`,
+    `Review ${topic.name} for NEET-UG Biology with an independent revision guide, NCERT-aligned concept focus, common confusions, and a recall routine.`,
     155,
   );
 }
 
 export function topicMetadata(topic: Topic): Metadata {
-  const title = `${topic.name} MCQs for NEET-UG Biology`;
+  const title = `${topic.name} Revision Guide for NEET-UG Biology`;
   const description = topicDescription(topic);
   const url = absoluteUrl(getTopicPath(topic));
-  const image = ogImage(title, `${topic.questionCount} MCQs with NCERT explanations`);
+  const image = ogImage(title, "Concept focus and a compact recall routine");
 
   return {
     title,
     description,
     alternates: { canonical: getTopicPath(topic) },
-    robots: topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS ? undefined : { index: false, follow: true },
     openGraph: {
       title,
       description,
@@ -119,7 +118,6 @@ export function noteMetadata(note: SeoNote, topic?: Topic): Metadata {
     title,
     description,
     alternates: { canonical: getNotePath(note) },
-    robots: !topic || topic.questionCount >= INDEXABLE_TOPIC_MIN_QUESTIONS ? undefined : { index: false, follow: true },
     openGraph: {
       title,
       description,

@@ -4,8 +4,8 @@ export const runtime = "edge";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const title = searchParams.get("title") || "NEET-UG Biology MCQs";
-  const subtitle = searchParams.get("subtitle") || "NCERT-aligned practice with answers";
+  const title = searchParams.get("title") || "NEET-UG Biology Revision";
+  const subtitle = searchParams.get("subtitle") || "Independent study notes for Indian students";
 
   return new ImageResponse(
     (
@@ -27,7 +27,7 @@ export async function GET(request: Request) {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ color: "#1f7a4d", fontSize: 30, fontWeight: 800 }}>
-            Free NCERT-aligned MCQs
+            Independent revision notes
           </div>
           <div style={{ fontSize: 68, fontWeight: 900, lineHeight: 1.08, maxWidth: 980 }}>
             {title}
@@ -49,8 +49,8 @@ export async function GET(request: Request) {
             width: "100%",
           }}
         >
-          <span>Chapter-wise practice</span>
-          <span>Answers + explanations</span>
+          <span>Topic-based revision</span>
+          <span>Concepts + recall routines</span>
           <span>medqgo.com</span>
         </div>
       </div>

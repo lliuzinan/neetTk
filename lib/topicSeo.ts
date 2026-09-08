@@ -7,16 +7,16 @@ export type TopicSeoContent = {
 
 const defaultContent: TopicSeoContent = {
   focus: [
-    "Revise the NCERT definitions first, then solve short concept-check MCQs.",
+    "Revise the NCERT definitions first, then explain each concept aloud without looking at the text.",
     "Mark examples and exceptions because NEET Biology questions often test exact wording.",
-    "Review every wrong option after practice so close distractors become easier to eliminate.",
+    "Use a short recall check after revision so close concepts become easier to separate.",
   ],
   traps: [
     "Do not rely on memorized keywords without checking the full statement.",
     "Separate NCERT-level facts from advanced details that are not needed for NEET-UG.",
   ],
   practicePlan:
-    "Start with 10 questions from this topic, review the explanation for every wrong answer, then repeat the same topic after revising the NCERT paragraph.",
+    "Start by mapping the topic from memory, compare it with the NCERT paragraph, then repeat the recall routine after correcting the gaps.",
   faqs: [
     {
       question: "Are these questions useful for NEET-UG Biology revision?",

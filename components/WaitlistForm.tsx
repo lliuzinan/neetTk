@@ -48,7 +48,7 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
         question_id: payload.questionId,
       });
       setState("success");
-      setMessage("Your free PDF sample is ready to download below.");
+      setMessage("You are on the early-access list. We will email you when the revision workbook is ready.");
       formElement.reset();
     } catch (error) {
       setState("error");
@@ -74,16 +74,6 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
         {state === "submitting" ? "Joining..." : "Join early access"}
       </button>
       {message && <p className={state === "success" ? "formSuccess" : "formError"}>{message}</p>}
-      {state === "success" && (
-        <a
-          className="downloadButton"
-          href="/downloads/medqgo-neet-biology-mcq-sample.pdf"
-          download
-          onClick={() => trackEvent("pdf_sample_download", { source, offer: "neet_biology_pdf" })}
-        >
-          Download free PDF sample
-        </a>
-      )}
     </form>
   );
 }

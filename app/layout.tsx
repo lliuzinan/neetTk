@@ -9,16 +9,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: "NEET-UG Biology Question Bank | MedQGo",
+    default: "NEET Biology Revision Notes | MedQGo",
     template: "%s | MedQGo",
   },
   description: siteConfig.description,
   keywords: [
     "NEET-UG Biology",
-    "NEET Biology MCQ",
-    "NCERT Biology questions",
-    "NEET UG question bank",
-    "Biology practice test India",
+    "NEET Biology revision",
+    "NCERT Biology revision notes",
+    "NEET UG Biology study guide",
+    "Biology study resources India",
   ],
   alternates: {
     canonical: absoluteUrl("/"),
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "NEET-UG Biology Question Bank",
+    title: "NEET Biology Revision Notes",
     description: siteConfig.description,
     url: absoluteUrl("/"),
     siteName: siteConfig.name,
     type: "website",
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "MedQGo NEET-UG Biology MCQs" }],
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "MedQGo NEET Biology revision notes" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEET-UG Biology Question Bank",
+    title: "NEET Biology Revision Notes",
     description: siteConfig.description,
     images: [DEFAULT_OG_IMAGE],
   },

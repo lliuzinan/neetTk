@@ -12,7 +12,7 @@ export default function PrivacyPage() {
     <InfoPage
       eyebrow="Privacy"
       title="Privacy Policy"
-      intro="This Privacy Policy explains how MedQGo collects and uses information when students browse NEET Biology practice pages or join the PDF early access list."
+      intro="This Privacy Policy explains how MedQGo collects and uses information when students browse NEET Biology revision pages or join the revision-workbook early access list."
       sections={[
         {
           title: "Information We Collect",
@@ -24,8 +24,8 @@ export default function PrivacyPage() {
         {
           title: "How We Use Information",
           body: [
-            "Analytics data helps us improve NEET Biology pages, prioritize topics, fix technical issues, and understand whether students are finding useful practice material.",
-            "Waitlist information is used to send or prepare access to the NEET Biology PDF sample, future chapter-wise MCQ resources, and related product updates. We do not sell your submitted contact information.",
+            "Analytics data helps us improve NEET Biology revision pages, prioritize topics, fix technical issues, and understand whether students are finding useful study material.",
+            "Waitlist information is used to send or prepare access to the NEET Biology revision workbook, future independent study resources, and related product updates. We do not sell your submitted contact information.",
           ],
         },
         {
