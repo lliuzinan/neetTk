@@ -740,6 +740,45 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.editorialAside {
+  background: #fffaf0;
+  border: 1px solid #f0ddaf;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.comparisonTableWrap {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 14px;
+  overflow-x: auto;
+}
+
+.comparisonTable {
+  border-collapse: collapse;
+  min-width: 680px;
+  width: 100%;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  border-bottom: 1px solid var(--line);
+  line-height: 1.5;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparisonTable th {
+  background: var(--soft);
+  color: var(--brand-dark);
+  font-size: 0.88rem;
+}
+
+.comparisonTable tr:last-child td {
+  border-bottom: 0;
+}
+
 .relatedGuideGrid {
   display: grid;
   gap: 12px;

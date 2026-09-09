@@ -9,8 +9,20 @@ export type NoteReference = {
   href: string;
 };
 
+export type NoteComparisonTable = {
+  heading: string;
+  intro: string;
+  columns: string[];
+  rows: string[][];
+};
+
+export type NoteEditorialBlock = {
+  heading: string;
+  paragraphs: string[];
+  bullets?: string[];
+};
+
 export const AUTHORED_NOTE_SLUGS = [
-  "carbohydrates-proteins-lipids-nucleic-acids",
   "human-respiration",
   "excretion-and-kidney-function",
   "immunity-pathogens-vaccines",
@@ -18,14 +30,6 @@ export const AUTHORED_NOTE_SLUGS = [
   "neuron-nerve-impulse-synapse",
   "dna-rna-replication-transcription-translation",
   "cell-theory-and-cell-organelles",
-  "mitosis-and-meiosis",
-  "basic-genetic-diseases-as-inheritance-examples",
-  "human-reproductive-system-and-gametogenesis",
-  "plant-respiration",
-  "animal-tissues",
-  "recombinant-dna-technology",
-  "molecular-tools-and-dna-analysis",
-  "pedigree-analysis-and-inheritance-patterns",
   "mutation-and-gene-expression",
 ] as const;
 
@@ -465,6 +469,157 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
 };
 
+const noteTables: Record<string, NoteComparisonTable> = {
+  "dna-rna-replication-transcription-translation": {
+    heading: "DNA, RNA, transcription and translation: keep the jobs separate",
+    intro: "Most mistakes in this chapter come from choosing a correct word for the wrong job. Use this table before MCQ practice.",
+    columns: ["Term", "Main job", "Place to watch", "Common wrong swap"],
+    rows: [
+      ["DNA", "Stores genetic information", "Nucleus in eukaryotes", "Treated as the molecule being translated directly"],
+      ["RNA", "Carries or helps use genetic information", "Nucleus and cytoplasm", "Confused with DNA because both are nucleic acids"],
+      ["Transcription", "Makes RNA from a DNA template", "Mostly nucleus in eukaryotes", "Mixed with translation"],
+      ["Translation", "Makes a polypeptide from mRNA information", "Ribosomes", "Placed in the nucleus without checking the process"],
+    ],
+  },
+  "immunity-pathogens-vaccines": {
+    heading: "Innate, acquired, active and passive immunity in one view",
+    intro: "The words sound familiar, which is exactly why they become dangerous in close options.",
+    columns: ["Type", "Speed", "Specificity", "Memory"],
+    rows: [
+      ["Innate immunity", "Fast", "Broad, non-specific", "No antigen-specific memory"],
+      ["Acquired immunity", "Slower first response", "Antigen-specific", "Memory develops"],
+      ["Active immunity", "Develops after antigen exposure", "Specific", "Usually long-lasting"],
+      ["Passive immunity", "Immediate", "Depends on received antibodies", "No strong long-term memory"],
+    ],
+  },
+  "cell-theory-and-cell-organelles": {
+    heading: "Organelle trap table",
+    intro: "Do not memorise organelles as a parade of names. Pair each one with the job NEET usually tests.",
+    columns: ["Structure", "High-yield function", "Do not confuse with", "Quick check"],
+    rows: [
+      ["Ribosome", "Protein synthesis", "Golgi apparatus", "Makes polypeptide, does not package it"],
+      ["Mitochondrion", "ATP production in aerobic respiration", "Chloroplast", "Energy release, not photosynthesis"],
+      ["Golgi apparatus", "Modification and packaging", "Ribosome", "Handles products after synthesis"],
+      ["Lysosome", "Intracellular digestion", "Vacuole", "Breakdown, not general storage"],
+    ],
+  },
+  "endocrine-system-and-hormones": {
+    heading: "Gland, hormone, effect: the minimum table",
+    intro: "For hormones, never learn a single column. The exam normally swaps one cell in the row.",
+    columns: ["Gland or tissue", "Example hormone", "Main idea", "Likely distractor"],
+    rows: [
+      ["Pancreas", "Insulin", "Lowers blood glucose", "Swapped with glucagon"],
+      ["Thyroid", "Thyroxine", "Metabolic regulation", "Mixed with calcitonin"],
+      ["Adrenal medulla", "Adrenaline", "Emergency response", "Confused with cortical steroid hormones"],
+      ["Posterior pituitary", "ADH", "Water balance", "Confused with oxytocin"],
+    ],
+  },
+  "human-respiration": {
+    heading: "Respiration stages that should not be mixed",
+    intro: "A respiration option may be true but still belong to the wrong stage. That is the trap.",
+    columns: ["Stage", "What happens", "Direction clue", "Common mix-up"],
+    rows: [
+      ["Ventilation", "Air moves in and out", "Atmosphere to alveoli and back", "Called gas exchange"],
+      ["External respiration", "Gas exchange at alveoli", "Oxygen into blood, CO2 out", "Mixed with tissue exchange"],
+      ["Transport", "Blood carries gases", "Haemoglobin and bicarbonate matter", "Confused with diffusion itself"],
+      ["Internal respiration", "Exchange at tissues", "Oxygen leaves blood", "Mixed with cellular respiration wording"],
+    ],
+  },
+  "excretion-and-kidney-function": {
+    heading: "Nephron direction table",
+    intro: "Kidney questions become easier when every word has a direction.",
+    columns: ["Process", "Direction", "Main site or idea", "Wrong turn"],
+    rows: [
+      ["Filtration", "Blood to Bowman's capsule", "Glomerulus", "Confused with reabsorption"],
+      ["Reabsorption", "Tubule to blood", "Useful substances return", "Read as removal from body"],
+      ["Secretion", "Blood to tubule", "Selected substances added to filtrate", "Treated as filtration"],
+      ["Excretion", "Final urine leaves body", "End result", "Used for every earlier step"],
+    ],
+  },
+  "neuron-nerve-impulse-synapse": {
+    heading: "Nerve signal route table",
+    intro: "This chapter is a route map. If the route is clear, the vocabulary becomes much less scary.",
+    columns: ["Part", "Role", "Direction", "Common mistake"],
+    rows: [
+      ["Dendrite", "Receives signal", "Toward cell body", "Swapped with axon"],
+      ["Axon", "Conducts impulse", "Away from cell body", "Treated as receptor"],
+      ["Synapse", "Passes signal to next cell", "Presynaptic to postsynaptic", "Called a direct wire"],
+      ["Effector", "Produces response", "After motor neuron", "Confused with receptor"],
+    ],
+  },
+  "mutation-and-gene-expression": {
+    heading: "Mutation versus regulation",
+    intro: "The cleanest split: mutation changes information; regulation changes how information is used.",
+    columns: ["Idea", "What changes", "Possible result", "Exam trap"],
+    rows: [
+      ["Mutation", "DNA sequence or chromosome structure/number", "Protein, regulation, or no visible effect", "Assumed always harmful"],
+      ["Gene expression", "Use of DNA information", "RNA or functional product", "Confused with mutation"],
+      ["Substitution", "One base pair", "May or may not alter amino acid", "Treated as frameshift every time"],
+      ["Insertion/deletion", "Added or removed bases", "Can shift reading frame", "Ignored after the first codon"],
+    ],
+  },
+};
+
+const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "dna-rna-replication-transcription-translation": {
+    heading: "The recipe-book shortcut",
+    paragraphs: [
+      "Think of DNA as a thick recipe book kept in a protected place. Transcription is not cooking the dish; it is copying one recipe onto a working note. Translation is where that working note is read to build the protein.",
+      "That small story helps because the exam likes to blur the stages. If the option says protein is made directly from DNA, slow down. Something has been skipped.",
+    ],
+    bullets: ["Copying the recipe: transcription.", "Cooking from the copied note: translation.", "Copying the whole book before division: replication."],
+  },
+  "immunity-pathogens-vaccines": {
+    heading: "The mistake hidden in fast responses",
+    paragraphs: [
+      "Fast does not automatically mean acquired. This is a very common student-style slip: a response acts quickly, so it gets labelled as specific immunity. In reality, innate immunity is fast precisely because it is already broadly available.",
+      "When a question mentions memory cells, vaccination, antibodies after exposure, or a second response, then acquired immunity becomes more likely.",
+    ],
+  },
+  "cell-theory-and-cell-organelles": {
+    heading: "Do not learn organelles as flashcards only",
+    paragraphs: [
+      "A flashcard that says 'Golgi apparatus: packaging' is useful for ten seconds. A better note asks what happened before packaging and where the product might go after it.",
+      "That is why the protein route matters: nucleus gives information, ribosome builds, rough ER and Golgi handle processing and movement. The route is easier to remember than four isolated labels.",
+    ],
+  },
+  "endocrine-system-and-hormones": {
+    heading: "The three-column rule for hormone questions",
+    paragraphs: [
+      "For every hormone, force yourself to fill three columns: source, target, effect. If one column is missing, the answer can still feel familiar but be wrong.",
+      "This is especially useful for pituitary questions because the pituitary is part of several control lines. A hormone can be associated with the pituitary without having the same target or final effect as another pituitary-linked hormone.",
+    ],
+  },
+  "human-respiration": {
+    heading: "Air movement is not the same as gas exchange",
+    paragraphs: [
+      "A neat way to catch respiration errors is to ask: are we moving air, moving gases across a membrane, or moving gases in blood? Those are three different jobs.",
+      "The option may use a beautiful word like haemoglobin or bicarbonate. That does not make it right if the question was only about inspiration and pressure change.",
+    ],
+  },
+  "excretion-and-kidney-function": {
+    heading: "Put arrows on every kidney fact",
+    paragraphs: [
+      "Kidney revision gets much cleaner when every process has an arrow. Filtration points from blood to capsule. Reabsorption points back to blood. Secretion points from blood into the tubule.",
+      "If you cannot draw the arrow, you probably do not own the concept yet. That is the moment to return to the nephron diagram instead of doing ten more MCQs blindly.",
+    ],
+  },
+  "neuron-nerve-impulse-synapse": {
+    heading: "The route is the memory aid",
+    paragraphs: [
+      "Neuron vocabulary looks heavy until you treat it as a journey. Signal arrives, moves along the neuron, crosses a synapse, and produces a response.",
+      "Once the journey is fixed, dendrite and axon stop being random names. One receives; the other carries away.",
+    ],
+  },
+  "mutation-and-gene-expression": {
+    heading: "Mutation is not a synonym for disease",
+    paragraphs: [
+      "A mutation can be harmful, neutral, or occasionally useful. The exam may quietly test this by offering a dramatic option that says every mutation causes disease.",
+      "The safer habit is to ask what level changed: a base, a reading frame, a chromosome segment, or chromosome number. The effect depends on that level and context.",
+    ],
+  },
+};
+
 export function buildFallbackNoteContent(topicName: string, ncertRef: string, focus: string[], traps: string[]): NoteSection[] {
   const primaryFocus = focus[0] || `Core NCERT ideas in ${topicName}.`;
   const mainTrap = traps[0] || "Choosing a familiar keyword before checking the full statement.";
@@ -514,4 +669,28 @@ export function getNoteContent(slug: string, topicName?: string, ncertRef?: stri
 
 export function getNoteReferences(slug: string) {
   return noteReferences[slug] || defaultReferences;
+}
+
+export function getNoteComparisonTable(slug: string, topicName: string): NoteComparisonTable {
+  return noteTables[slug] || {
+    heading: `${topicName}: quick comparison table`,
+    intro: "Use this table to separate the concept from nearby distractors before starting MCQs.",
+    columns: ["Checkpoint", "What to remember", "Common distractor", "Revision action"],
+    rows: [
+      ["Definition", "Use the NCERT boundary of the term", "A nearby term with similar wording", "Write the definition in one line"],
+      ["Example", "Attach the correct example to the concept", "Correct example from another chapter", "List one NCERT example"],
+      ["Process", "Keep the sequence in order", "Reversed cause and effect", "Draw arrows before answering"],
+      ["Exception", "Watch for overgeneralised statements", "A statement that sounds broad and confident", "Mark exact wording"],
+    ],
+  };
+}
+
+export function getNoteEditorialBlock(slug: string, topicName: string): NoteEditorialBlock {
+  return noteEditorialBlocks[slug] || {
+    heading: "A small exam-room trap",
+    paragraphs: [
+      `${topicName} questions often look easier than they are because the options reuse familiar words. Familiar is not the same as correct.`,
+      "Before choosing an answer, match the option back to the exact NCERT idea being tested. That extra pause is usually where careless errors disappear.",
+    ],
+  };
 }

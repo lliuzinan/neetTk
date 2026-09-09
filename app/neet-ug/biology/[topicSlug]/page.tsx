@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, findQuestionsByTopic, findTopic, getSeoNotes, getTopics } from "@/lib/content";
-import { AUTHORED_NOTE_SLUGS, getNoteContent, getNoteReferences } from "@/lib/noteContent";
+import { absoluteUrl, findTopic, getSeoNotes, getTopics } from "@/lib/content";
+import { AUTHORED_NOTE_SLUGS, getNoteComparisonTable, getNoteContent, getNoteEditorialBlock, getNoteReferences } from "@/lib/noteContent";
 import { ogImage, topicDates, topicMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
 
@@ -37,12 +37,10 @@ export default async function TopicPage({ params }: Props) {
   const dates = topicDates(topic.slug);
   const sections = getNoteContent(note.slug, topic.name, topic.ncertRef, seoContent.focus, seoContent.traps);
   if (!sections) notFound();
-  const [practiceQuestions, references] = await Promise.all([
-    findQuestionsByTopic(topic.slug),
-    Promise.resolve(getNoteReferences(note.slug)),
-  ]);
-  const sampleQuestions = practiceQuestions.slice(0, 3);
+  const references = getNoteReferences(note.slug);
   const heroImage = ogImage(`${topic.name} revision guide`, "NCERT-aligned NEET Biology notes");
+  const comparisonTable = getNoteComparisonTable(note.slug, topic.name);
+  const editorialBlock = getNoteEditorialBlock(note.slug, topic.name);
   const noteTopicSlugs = new Set(notes.filter((item) => isPublishedNote(item.slug)).map((item) => item.topicSlug));
   const relatedTopics = allTopics
     .filter((item) => item.slug !== topic.slug && noteTopicSlugs.has(item.slug))
@@ -71,29 +69,35 @@ export default async function TopicPage({ params }: Props) {
       </figure>
       <section className="contentBand"><h2>Concept focus</h2><ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul></section>
       <article className="articleBody">
-        {sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        {sections.slice(0, 2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        <section className="editorialAside">
+          <h2>{editorialBlock.heading}</h2>
+          {editorialBlock.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {editorialBlock.bullets && <ul className="seoList">{editorialBlock.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+        </section>
+        <section>
+          <h2>{comparisonTable.heading}</h2>
+          <p>{comparisonTable.intro}</p>
+          <div className="comparisonTableWrap">
+            <table className="comparisonTable">
+              <thead>
+                <tr>{comparisonTable.columns.map((column) => <th key={column}>{column}</th>)}</tr>
+              </thead>
+              <tbody>
+                {comparisonTable.rows.map((row) => (
+                  <tr key={row.join("|")}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+        {sections.slice(2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
         <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section>
           <h2>Exam-style checkpoints</h2>
-          <p>Before leaving this page, check whether you can explain {topic.name} without looking at the answer choices. A good checkpoint is to define the main term, give one NCERT-linked example, and state one confusion that would make a close option look tempting.</p>
+          <p>Before leaving this page, check whether you can explain {topic.name} without opening your textbook. A good checkpoint is to define the main term, give one NCERT-linked example, and state one nearby idea that could be confused with it.</p>
           <p>For a second pass, mix this guide with a neighbouring Biology topic instead of revising it alone. NEET-UG Biology often tests whether students can keep similar processes, structures, molecules, or examples separate under time pressure.</p>
         </section>
-        {sampleQuestions.length > 0 && (
-          <section>
-            <h2>Quick MCQ practice</h2>
-            <div className="inlineMcqList">
-              {sampleQuestions.map((question) => (
-                <article className="inlineMcq" key={question.id}>
-                  <h3>{question.stem}</h3>
-                  <ol type="A">
-                    {Object.values(question.options).map((option) => <li key={option}>{option}</li>)}
-                  </ol>
-                  <p><strong>Answer:</strong> {question.correctOption}. {question.explanation}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        )}
         <section>
           <h2>References</h2>
           <ul className="seoList referenceList">

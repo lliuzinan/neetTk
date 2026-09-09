@@ -36,8 +36,8 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.doesNotMatch(sitemapXml, /\/q\//);
   assert.doesNotMatch(sitemapXml, /\/practice/);
   assert.match(sitemapXml, /human-respiration/);
-  assert.match(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
-  assert.match(sitemapXml, /recombinant-dna-technology/);
+  assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
+  assert.doesNotMatch(sitemapXml, /recombinant-dna-technology/);
 });
 
 test("renders the revision workbook early-access page without a question download", async () => {
@@ -63,6 +63,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Related revision guides/);
   assert.match(topicHtml, /Exam-style checkpoints/);
   assert.match(topicHtml, /Article/);
+  assert.doesNotMatch(topicHtml, /Quick MCQ practice/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);
