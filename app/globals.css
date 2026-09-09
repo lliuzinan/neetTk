@@ -740,6 +740,33 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.relatedGuideGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 14px;
+}
+
+.relatedGuide {
+  background: #fbfdf8;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.relatedGuide strong {
+  color: var(--foreground);
+  line-height: 1.35;
+}
+
+.relatedGuide span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
 .cookieConsent {
   align-items: center;
   background: #ffffff;

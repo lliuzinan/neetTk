@@ -36,6 +36,8 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.doesNotMatch(sitemapXml, /\/q\//);
   assert.doesNotMatch(sitemapXml, /\/practice/);
   assert.match(sitemapXml, /human-respiration/);
+  assert.match(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
+  assert.match(sitemapXml, /recombinant-dna-technology/);
 });
 
 test("renders the revision workbook early-access page without a question download", async () => {
@@ -56,6 +58,10 @@ test("renders in-depth topic guides and the trust pages", async () => {
   ]);
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
+  assert.match(topicHtml, /Published: .*August 5, 2026/);
+  assert.match(topicHtml, /Last updated: .*August 21, 2026/);
+  assert.match(topicHtml, /Related revision guides/);
+  assert.match(topicHtml, /Exam-style checkpoints/);
   assert.match(topicHtml, /Article/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);

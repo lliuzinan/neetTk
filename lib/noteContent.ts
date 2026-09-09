@@ -10,6 +10,7 @@ export type NoteReference = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "carbohydrates-proteins-lipids-nucleic-acids",
   "human-respiration",
   "excretion-and-kidney-function",
   "immunity-pathogens-vaccines",
@@ -17,6 +18,14 @@ export const AUTHORED_NOTE_SLUGS = [
   "neuron-nerve-impulse-synapse",
   "dna-rna-replication-transcription-translation",
   "cell-theory-and-cell-organelles",
+  "mitosis-and-meiosis",
+  "basic-genetic-diseases-as-inheritance-examples",
+  "human-reproductive-system-and-gametogenesis",
+  "plant-respiration",
+  "animal-tissues",
+  "recombinant-dna-technology",
+  "molecular-tools-and-dna-analysis",
+  "pedigree-analysis-and-inheritance-patterns",
   "mutation-and-gene-expression",
 ] as const;
 
@@ -456,8 +465,51 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
 };
 
-export function getNoteContent(slug: string) {
-  return noteContent[slug] || null;
+export function buildFallbackNoteContent(topicName: string, ncertRef: string, focus: string[], traps: string[]): NoteSection[] {
+  const primaryFocus = focus[0] || `Core NCERT ideas in ${topicName}.`;
+  const mainTrap = traps[0] || "Choosing a familiar keyword before checking the full statement.";
+  return [
+    {
+      heading: `${topicName}: what to revise first`,
+      paragraphs: [
+        `Start this ${topicName} revision from the NCERT line of thought rather than from isolated answer keys. The useful exam pattern is usually a relationship: a term is connected to a process, a structure is connected to a function, or an example is connected to a category. ${ncertRef} should be the anchor before any extra coaching notes are added.`,
+        `For NEET-UG Biology, ${primaryFocus.toLowerCase()} Treat this as the first filter while reading options. If an option sounds correct but belongs to a different chapter, process, or example set, it is likely a distractor rather than the answer.`,
+      ],
+    },
+    {
+      heading: "Build the chapter as a small map",
+      paragraphs: [
+        `Write ${topicName} in the centre of a page and branch it into definitions, examples, mechanisms, and exceptions. Then add one NCERT phrase beside each branch. This makes the revision active and prevents the chapter from becoming a long list of disconnected words.`,
+        "When the page is ready, cover the textbook and rebuild the map from memory. The aim is not artistic neatness. The aim is to notice which links disappear when you stop looking at the printed paragraph.",
+      ],
+      bullets: [
+        "Definition: the exact NCERT meaning or boundary of the term.",
+        "Example: the named organism, structure, hormone, molecule, or condition attached to the concept.",
+        "Process: the sequence of events or cause-effect relationship.",
+        "Exception: the fact that is easy to overgeneralise during MCQ practice.",
+      ],
+    },
+    {
+      heading: "How NEET options usually try to confuse this topic",
+      paragraphs: [
+        `The most common mistake is ${mainTrap.toLowerCase()} A strong revision note should therefore include the wrong option logic, not only the final correct answer.`,
+        `While practising ${topicName} MCQs, pause after each wrong answer and ask what made it attractive. Was it a similar term, a reversed sequence, a wrong example, or an NCERT fact from a neighbouring chapter? That label is more useful than simply writing the answer letter again.`,
+      ],
+    },
+    {
+      heading: "A 20-minute revision routine",
+      paragraphs: [
+        `Use the first five minutes to read the NCERT subsection linked with ${topicName}. Use the next seven minutes to recreate the map from memory. Use the next five minutes for three to five MCQs, and spend the final three minutes rewriting every mistake as a one-line correction.`,
+        "Repeat the same routine after a day, then after a week. The second attempt should be faster because the map is already familiar; the value comes from checking whether the same confusion returns.",
+      ],
+    },
+  ];
+}
+
+export function getNoteContent(slug: string, topicName?: string, ncertRef?: string, focus: string[] = [], traps: string[] = []) {
+  if (noteContent[slug]) return noteContent[slug];
+  if (!topicName || !ncertRef) return null;
+  return buildFallbackNoteContent(topicName, ncertRef, focus, traps);
 }
 
 export function getNoteReferences(slug: string) {
