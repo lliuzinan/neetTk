@@ -5,8 +5,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findTopic, getSeoNotes, getTopics } from "@/lib/content";
-import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
-import { LAST_UPDATED_DISPLAY, topicMetadata } from "@/lib/seo";
+import { AUTHORED_NOTE_SLUGS, getNoteContent } from "@/lib/noteContent";
+import { LAST_UPDATED_DISPLAY, LAST_UPDATED_ISO, topicMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props { params: Promise<{ topicSlug: string }>; }
@@ -34,23 +34,29 @@ export default async function TopicPage({ params }: Props) {
   if (!topic || !note) notFound();
 
   const seoContent = getTopicSeoContent(topic.slug);
+  const sections = getNoteContent(note.slug);
+  if (!sections) notFound();
   const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) }] };
+  const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: `${topic.name} revision guide`, description: note.description, datePublished: LAST_UPDATED_ISO, dateModified: LAST_UPDATED_ISO, about: topic.name, author: { "@type": "Organization", name: "MedQGo" }, publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") } };
 
   return (
     <main className="page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbLd, articleLd]) }} />
       <header className="pageHeader">
         <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-ug/biology", label: "NEET Biology" }, { href: `/neet-ug/biology/${topic.slug}`, label: topic.name }]} />
         <Link href="/neet-ug/biology" className="backLink">All Biology topics</Link>
         <p className="eyebrow">{topic.ncertRef}</p>
         <h1>{topic.name} revision guide</h1>
-        <p>A compact independent study guide for reviewing central NCERT ideas, separating similar terms, and building a recall routine.</p>
+        <p>{note.description}</p>
         <p className="updatedStamp">Last updated: {LAST_UPDATED_DISPLAY}</p>
         <EditorialByline />
       </header>
       <section className="contentBand"><h2>Concept focus</h2><ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul></section>
-      <section className="contentBand splitContent"><div><h2>Common confusions</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>Revision routine</h2><p>Read the relevant NCERT section, make a one-page relationship map from memory, then use the detailed note below to correct only the gaps you found.</p></div></section>
-      <section className="contentBand"><h2>Detailed revision note</h2><p>This note expands the topic with explanations and a short recall routine.</p><Link href={`/neet-ug/biology/notes/${note.slug}`} className="primaryButton">Read the {topic.name} note</Link></section>
+      <article className="articleBody">
+        {sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
+        <section><h2>How to use this guide</h2><p>Read the relevant NCERT chapter first. Then redraw the relationships or process described here from memory, compare your version with the textbook, and correct only the gaps. This is an independent revision aid, not official NCERT, NTA, or NEET material.</p></section>
+      </article>
       <PdfCta source="topic_page" topicSlug={topic.slug} />
     </main>
   );

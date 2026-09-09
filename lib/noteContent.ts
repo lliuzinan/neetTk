@@ -196,6 +196,26 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
     {
+      heading: "The hypothalamus and pituitary: read the control hierarchy",
+      paragraphs: [
+        "The hypothalamus connects nervous-system input with endocrine control. It releases regulatory signals that influence the anterior pituitary, while the posterior pituitary releases hormones that are made in the hypothalamus and transported to it. This division matters because a hormone may be associated with the pituitary in a diagram without being synthesised there.",
+        "The anterior pituitary is linked with several hormones that influence growth, thyroid activity, adrenal cortex activity and gonadal function. The safer revision method is not to memorise a long isolated list. Instead, draw a control line from hypothalamus to pituitary to target gland, then draw the feedback arrow back. This explains why the same system can coordinate several distant organs without every hormone acting on every tissue.",
+      ],
+      bullets: [
+        "Control centre: receives information and sends a regulatory signal.",
+        "Tropic hormone: influences another endocrine gland.",
+        "Target gland: releases a hormone that produces a downstream physiological effect.",
+        "Negative feedback: a sufficient downstream effect reduces further stimulation in the control pathway.",
+      ],
+    },
+    {
+      heading: "Calcium balance and reproductive hormones: separate the comparisons",
+      paragraphs: [
+        "Calcium regulation is a useful example of why the source, trigger and effect must be kept together. Calcitonin is associated with the thyroid gland and is linked with reducing blood calcium in the relevant physiological context. Parathyroid hormone is associated with the parathyroid glands and has the opposing regulatory direction. Similar gland names do not mean the hormones do the same job.",
+        "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones contribute to reproductive function and feedback regulation. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. This prevents a correct term from being placed at the wrong level of the system.",
+      ],
+    },
+    {
       heading: "A 15-minute revision method",
       paragraphs: [
         "Draw a table with four columns: gland, hormone, target and one effect. Fill it from memory, then compare it with NCERT and correct only the mismatched cells. Next, draw arrows for insulin versus glucagon and for a simple negative-feedback loop involving the hypothalamus, pituitary and target gland.",

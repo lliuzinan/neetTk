@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getNotePath, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
+import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 import { LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -59,7 +59,7 @@ export default async function Home() {
       </section>
       <section className="section split">
         <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then use a compact recall routine.</h2><p className="muted">Each note is written as a learning aid, not as official exam material. Check definitions and diagrams against your current NCERT textbook.</p></div>
-        <div className="listPanel">{notes.map((note) => <Link href={getNotePath(note)} key={note.id}>{note.title}</Link>)}</div>
+        <div className="listPanel">{notes.map((note) => <Link href={`/neet-ug/biology/${note.topicSlug}`} key={note.id}>{note.title}</Link>)}</div>
       </section>
       <section className="section"><PdfCta source="home_midpage" /></section>
     </main>

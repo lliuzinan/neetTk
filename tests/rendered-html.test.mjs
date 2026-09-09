@@ -47,16 +47,16 @@ test("renders the revision workbook early-access page without a question downloa
   assert.doesNotMatch(pdfHtml, /Download free PDF sample/);
 });
 
-test("renders the authored revision note and the trust pages", async () => {
-  const [noteHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
-    readFile(new URL("../.next/server/app/neet-ug/biology/notes/human-respiration.html", import.meta.url), "utf8"),
+test("renders in-depth topic guides and the trust pages", async () => {
+  const [topicHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
   ]);
-  assert.match(noteHtml, /Human respiration: the high-yield sequence/);
-  assert.match(noteHtml, /Use this note responsibly/);
-  assert.match(noteHtml, /Article/);
+  assert.match(topicHtml, /Human respiration: the high-yield sequence/);
+  assert.match(topicHtml, /How to use this guide/);
+  assert.match(topicHtml, /Article/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);
