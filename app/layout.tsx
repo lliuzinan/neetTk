@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
+import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAdSense } from "@/components/GoogleAdSense";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { absoluteUrl, siteConfig } from "@/lib/content";
@@ -51,15 +52,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "MedQGo",
+    url: absoluteUrl("/"),
+    logo: absoluteUrl("/favicon.svg"),
+    sameAs: ["https://medqgo.com"],
+  };
+  const websiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "MedQGo",
+    url: absoluteUrl("/"),
+    description: siteConfig.description,
+    inLanguage: "en-IN",
+  };
+
   return (
     <html lang="en-IN">
       <head>
         <GoogleAdSense />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd, websiteLd]) }} />
       </head>
       <body>
         <GoogleAnalytics />
         {children}
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

@@ -31,7 +31,7 @@ export default function PrivacyPage() {
         {
           title: "Third-Party Services",
           body: [
-            "MedQGo uses Google Analytics 4 for traffic measurement and Supabase for storing waitlist submissions. These services may process data according to their own privacy and security policies.",
+            "MedQGo uses Google Analytics 4 for traffic measurement, Google AdSense for advertising where enabled, and Supabase for storing waitlist submissions. These services may process data according to their own privacy and security policies.",
             "You can use browser controls, ad blockers, or privacy settings to limit some analytics collection. If you want a waitlist record removed, contact us with the email address used in the form.",
           ],
         },
@@ -40,6 +40,13 @@ export default function PrivacyPage() {
           body: [
             "If Google ads are served on MedQGo, Google and its partners may use cookies or similar technologies to deliver and measure ads, subject to applicable consent requirements.",
             "You can manage ad personalisation through Google Ads Settings. Where consent is required for advertising cookies or personalised ads, MedQGo will use an appropriate consent solution before serving those ads.",
+          ],
+        },
+        {
+          title: "Cookie Consent",
+          body: [
+            "MedQGo shows a cookie notice to visitors so they can acknowledge the use of essential, analytics, and advertising cookies where applicable.",
+            "You can clear local browser storage or adjust browser cookie settings if you want to reset your consent choice on this device.",
           ],
         },
       ]}

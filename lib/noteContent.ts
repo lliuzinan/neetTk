@@ -4,6 +4,11 @@ export type NoteSection = {
   bullets?: string[];
 };
 
+export type NoteReference = {
+  label: string;
+  href: string;
+};
+
 export const AUTHORED_NOTE_SLUGS = [
   "human-respiration",
   "excretion-and-kidney-function",
@@ -403,6 +408,58 @@ const noteContent: Record<string, NoteSection[]> = {
   ],
 };
 
+const defaultReferences: NoteReference[] = [
+  { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+  { label: "Khan Academy Biology library", href: "https://www.khanacademy.org/science/biology" },
+];
+
+const noteReferences: Record<string, NoteReference[]> = {
+  "human-respiration": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "Khan Academy: The respiratory system", href: "https://www.khanacademy.org/science/health-and-medicine/respiratory-system" },
+    { label: "NCBI Bookshelf: Respiratory physiology overview", href: "https://www.ncbi.nlm.nih.gov/books/" },
+  ],
+  "excretion-and-kidney-function": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "Khan Academy: Renal system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/renal-system" },
+    { label: "NCBI Bookshelf: Kidney physiology references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+  ],
+  "immunity-pathogens-vaccines": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "WHO: Vaccines and immunization", href: "https://www.who.int/health-topics/vaccines-and-immunization" },
+    { label: "CDC: Immune system and vaccines", href: "https://www.cdc.gov/vaccines/" },
+  ],
+  "endocrine-system-and-hormones": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "Khan Academy: Endocrine system", href: "https://www.khanacademy.org/science/health-and-medicine/endocrine-system" },
+    { label: "NCBI Bookshelf: Endocrine physiology references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+  ],
+  "neuron-nerve-impulse-synapse": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "Khan Academy: Nervous system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor" },
+    { label: "NCBI Bookshelf: Neuroscience and synapse references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+  ],
+  "dna-rna-replication-transcription-translation": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
+    { label: "Khan Academy: Central dogma", href: "https://www.khanacademy.org/science/biology/gene-expression-central-dogma" },
+  ],
+  "cell-theory-and-cell-organelles": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
+    { label: "Khan Academy: Cell structures", href: "https://www.khanacademy.org/science/biology/structure-of-a-cell" },
+  ],
+  "mutation-and-gene-expression": [
+    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCBI Bookshelf: Genes and disease references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "Khan Academy: Gene regulation", href: "https://www.khanacademy.org/science/biology/gene-regulation" },
+  ],
+};
+
 export function getNoteContent(slug: string) {
   return noteContent[slug] || null;
+}
+
+export function getNoteReferences(slug: string) {
+  return noteReferences[slug] || defaultReferences;
 }
