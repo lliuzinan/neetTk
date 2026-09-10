@@ -1,6 +1,7 @@
 import reviewerData from "@/data/editorial-reviewer.json";
 
 export type EditorialReviewer = {
+  authorName: string;
   name: string;
   role: string;
   credentials: string;
@@ -13,6 +14,10 @@ export type EditorialReviewer = {
 };
 
 export const editorialReviewer = reviewerData as EditorialReviewer;
+
+export function hasNamedAuthor(reviewer: EditorialReviewer = editorialReviewer) {
+  return Boolean(reviewer.authorName?.trim());
+}
 
 export function hasPublishedReviewer(reviewer: EditorialReviewer = editorialReviewer) {
   return Boolean(

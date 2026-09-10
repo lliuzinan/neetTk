@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialByline } from "@/components/EditorialByline";
-import { editorialReviewer, hasPublishedReviewer } from "@/lib/editorialReviewer";
+import { editorialReviewer, hasNamedAuthor, hasPublishedReviewer } from "@/lib/editorialReviewer";
 import { LAST_UPDATED_DISPLAY } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   const hasReviewer = hasPublishedReviewer();
+  const hasAuthor = hasNamedAuthor();
 
   return (
     <main className="page articlePage">
@@ -24,6 +25,13 @@ export default function TeamPage() {
       </header>
 
       <article className="articleBody">
+        {hasAuthor && (
+          <section>
+            <h2>{editorialReviewer.authorName}</h2>
+            <p><strong>Named author</strong></p>
+            <p>{editorialReviewer.authorName} is the named author of MedQGo's independently prepared NEET-UG Biology revision guides.</p>
+          </section>
+        )}
         {hasReviewer ? (
           <section>
             <h2>{editorialReviewer.name}</h2>
