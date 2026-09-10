@@ -84,7 +84,7 @@ export default async function TopicPage({ params }: Props) {
     .map((item) => item.topic);
   const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) }] };
   const articleAuthor = hasNamedAuthor()
-    ? { "@type": "Person", name: editorialReviewer.authorName, ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
+    ? { "@type": "Person", name: editorialReviewer.authorName, url: absoluteUrl("/authors/dongfeng"), ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
     : { "@type": "Organization", name: "MedQGo Editorial Team" };
   const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: `${topic.name} revision guide`, description: note.description, datePublished: dates.publishedIso, dateModified: dates.modifiedIso, image: heroImage, about: topic.name, author: articleAuthor, publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") } };
 
@@ -162,7 +162,7 @@ export default async function TopicPage({ params }: Props) {
         </section>
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>
-          <p><strong>Written by:</strong> DongFeng. <strong>Reviewed by:</strong> MedQGo Editorial Team. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
+          <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Editorial review:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
           <p><strong>Disclaimer:</strong> This guide is a revision aid for NEET-UG aspirants and does not constitute medical advice. For clinical or health-related queries, consult a qualified medical professional.</p>
         </section>
         <section>

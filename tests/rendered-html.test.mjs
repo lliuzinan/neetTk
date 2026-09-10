@@ -50,12 +50,13 @@ test("renders the revision workbook early-access page without a question downloa
 });
 
 test("renders in-depth topic guides and the trust pages", async () => {
-  const [topicHtml, endocrineHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
+  const [topicHtml, endocrineHtml, aboutHtml, privacyHtml, termsHtml, authorHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology/endocrine-system-and-hormones.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/authors/dongfeng.html", import.meta.url), "utf8"),
   ]);
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
@@ -71,10 +72,13 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /Feedback direction: use the arrow test/);
   assert.match(endocrineHtml, /kebo119\.pdf/);
   assert.match(endocrineHtml, /Written by:.*DongFeng/);
+  assert.match(endocrineHtml, /authors\/dongfeng/);
   assert.match(endocrineHtml, /University Biology Instructor/);
   assert.match(endocrineHtml, /2026-09-10/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);
+  assert.match(authorHtml, /Role at MedQGo/);
+  assert.match(authorHtml, /does not invent degrees, institutional affiliations, endorsements, or student testimonials/);
 });

@@ -24,8 +24,8 @@ export default function AboutPage() {
         {
           title: "Editorial Process",
           body: [
-            "Each public guide is checked for clarity, topic fit, and unsupported claims before publication. We revise or remove a guide when a credible correction identifies an error or a source concern.",
-            "Read the Editorial Policy and Copyright page for the way we prepare revision content and handle correction or rights-holder requests.",
+            "Every public guide has a named author, a publication date, a last-updated date, an NCERT reference, and a way for readers to report a correction. The author is responsible for the final explanatory text; MedQGo records editorial updates on the page.",
+            "We publish focused study guides instead of reproducing past papers, textbook pages, or official examination content. Read the Editorial Policy and Copyright page for the way we handle sources, corrections, and rights-holder requests.",
           ],
         },
         {

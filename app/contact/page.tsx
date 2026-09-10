@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/InfoPage";
 
 export const metadata: Metadata = {
   title: "Contact MedQGo",
-  description: "Contact MedQGo for NEET Biology question corrections, feedback, partnerships, and content review requests.",
+  description: "Contact MedQGo for NEET Biology revision-guide corrections, feedback, partnerships, and content review requests.",
   alternates: { canonical: "/contact" },
 };
 
@@ -18,14 +18,14 @@ export default function ContactPage() {
           title: "Email",
           body: [
             "For support, corrections, and general questions, email: a9665670@163.com.",
-            "When reporting a question issue, include the page URL, the question text, and the reason you think the answer or explanation needs review. This helps us check the item quickly.",
+            "When reporting a guide issue, include the page URL, the sentence or diagram you are querying, and the supporting NCERT or official-reference detail. This helps us check the point quickly.",
           ],
         },
         {
           title: "Content Corrections",
           body: [
-            "MedQGo is actively improving its NEET-UG Biology content. If you find a confusing translation, a possible answer mismatch, or a topic that feels outside NCERT scope, please send the specific page URL for review.",
-            "We may update, hide, or re-check questions after receiving credible feedback. Accuracy and usefulness matter more than keeping every page live.",
+            "MedQGo is actively improving its NEET-UG Biology revision guides. If you find unclear wording, a factual issue, or a topic that feels outside NCERT scope, please send the specific page URL for review.",
+            "We may update, hide, or re-check a guide after receiving credible feedback. Accuracy and usefulness matter more than keeping every page live.",
           ],
         },
         {

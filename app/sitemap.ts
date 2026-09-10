@@ -3,7 +3,7 @@ import { absoluteUrl, getSeoNotes, getTopics } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 import { LAST_UPDATED_ISO, topicDates } from "@/lib/seo";
 
-const trustPages = ["/about", "/contact", "/privacy", "/terms", "/team", "/editorial-policy", "/copyright", "/site-map"];
+const trustPages = ["/about", "/contact", "/privacy", "/terms", "/team", "/authors/dongfeng", "/editorial-policy", "/copyright", "/site-map"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date(`${LAST_UPDATED_ISO}T00:00:00.000Z`);

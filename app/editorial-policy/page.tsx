@@ -15,23 +15,23 @@ export default function EditorialPolicyPage() {
       intro="This policy explains how MedQGo prepares NEET-UG Biology learning material and how students can report a correction."
       sections={[
         {
-          title: "Independent MedQGo Revision Content",
+          title: "Who Creates the Guides",
           body: [
+            "Published Biology guides identify their named author and link to the author profile. MedQGo currently lists DongFeng, a University Biology Instructor, as the author of its public Biology revision guides. We do not invent qualifications, institutional affiliations, endorsements, or testimonials.",
             "MedQGo publishes independently prepared revision notes, topic guides, and planned printable learning resources. We do not present public material as official NCERT, NTA, or NEET content.",
-            "A guide is not published when its wording, topic fit, supporting explanation, or source treatment fails our review. We revise or remove material when a credible correction identifies an error or rights concern.",
           ],
         },
         {
-          title: "Quality Checks",
+          title: "How a Guide Is Prepared",
           body: [
-            "MedQGo uses structured editorial checks for selected revision resources. These checks include topic mapping, clarity review, deterministic validation for formatting and metadata, and correction review when readers report an issue.",
-            "Corrections are prioritised when readers report an issue. We revise or remove material when a credible correction identifies an error.",
+            "A guide starts from a defined NEET-UG Biology topic, then explains the central concept, nearby distinctions that students commonly mix up, and a short recall routine. The author checks the guide against the cited NCERT chapter or another clearly identified reference before publication.",
+            "We use digital publishing tools for formatting, metadata, and routine checks. A tool does not supply an examination-authority endorsement, replace source checking, or turn a draft into official study material. The named author remains accountable for the final published explanation.",
           ],
         },
         {
           title: "Corrections and Updates",
           body: [
-            "To report a possible error, use the Contact page and include the page URL, the proposed correction, and supporting NCERT or official-reference details. We review actionable reports and update the affected page when appropriate.",
+            "To report a possible error, use the Contact page and include the page URL, the proposed correction, and supporting NCERT or official-reference details. We acknowledge actionable reports, check the cited point, and update or remove the affected material when appropriate.",
             "Dates displayed on pages show the latest editorial update. They do not imply endorsement by an examination authority.",
             "MedQGo is an independent study resource and is not affiliated with NCERT, NTA, or any examination authority.",
           ],
