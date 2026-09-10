@@ -11,6 +11,14 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props { params: Promise<{ topicSlug: string }>; }
 
+const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "endocrine-system-and-hormones": {
+    src: "/images/biology/endocrine-blood-glucose-feedback-v1.png",
+    alt: "Negative-feedback regulation of blood glucose through insulin and glucagon",
+    caption: "Insulin and glucagon act in opposing directions to help maintain blood glucose within a useful range.",
+  },
+};
+
 function isPublishedNote(slug: string) {
   return AUTHORED_NOTE_SLUGS.includes(slug as (typeof AUTHORED_NOTE_SLUGS)[number]);
 }
@@ -41,6 +49,7 @@ export default async function TopicPage({ params }: Props) {
   const heroImage = ogImage(`${topic.name} revision guide`, "NCERT-aligned NEET Biology notes");
   const comparisonTable = getNoteComparisonTable(note.slug, topic.name);
   const editorialBlock = getNoteEditorialBlock(note.slug, topic.name);
+  const articleIllustration = articleIllustrations[note.slug];
   const noteTopicSlugs = new Set(notes.filter((item) => isPublishedNote(item.slug)).map((item) => item.topicSlug));
   const relatedTopics = allTopics
     .filter((item) => item.slug !== topic.slug && noteTopicSlugs.has(item.slug))
@@ -70,6 +79,12 @@ export default async function TopicPage({ params }: Props) {
       <section className="contentBand"><h2>Concept focus</h2><ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul></section>
       <article className="articleBody">
         {sections.slice(0, 2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        {articleIllustration && (
+          <figure className="articleIllustration">
+            <img src={articleIllustration.src} alt={articleIllustration.alt} width={1600} height={1000} />
+            <figcaption>{articleIllustration.caption}</figcaption>
+          </figure>
+        )}
         <section className="editorialAside">
           <h2>{editorialBlock.heading}</h2>
           {editorialBlock.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
