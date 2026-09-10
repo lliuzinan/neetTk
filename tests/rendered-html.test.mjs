@@ -50,8 +50,9 @@ test("renders the revision workbook early-access page without a question downloa
 });
 
 test("renders in-depth topic guides and the trust pages", async () => {
-  const [topicHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
+  const [topicHtml, endocrineHtml, aboutHtml, privacyHtml, termsHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/endocrine-system-and-hormones.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
@@ -64,6 +65,9 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Exam-style checkpoints/);
   assert.match(topicHtml, /Article/);
   assert.doesNotMatch(topicHtml, /Quick MCQ practice/);
+  assert.match(endocrineHtml, /endocrine-blood-glucose-feedback-v1\.png/);
+  assert.match(endocrineHtml, /Negative-feedback regulation of blood glucose through insulin and glucagon/);
+  assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);

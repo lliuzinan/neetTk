@@ -214,6 +214,10 @@ function mapSeoPage(row: SeoPageRow): SeoNote {
   };
 }
 
+function revisionDescription(topicName: string) {
+  return `Review ${topicName} for NEET-UG Biology with independently prepared NCERT-aligned concepts, common confusions, and a focused recall routine.`;
+}
+
 export async function getTopics() {
   const rows = await readSupabase<TopicRow>(
     "/rest/v1/topics?select=*&order=sort_order.asc&limit=1000",
@@ -240,14 +244,15 @@ export async function getSeoNotes() {
   const rows = await readSupabase<SeoPageRow>(
     "/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc&limit=1000",
   );
-  if (!rows?.length) return seoNotes;
+  if (!rows?.length) return seoNotes.map((note) => ({ ...note, description: revisionDescription(note.title.split(":")[0]) }));
 
   const remoteNotes = rows.map(mapSeoPage);
   const remoteById = new Map(remoteNotes.map((note) => [note.id, note]));
   const merged = seoNotes.map((note) => remoteById.get(note.id) || note);
   const localIds = new Set(seoNotes.map((note) => note.id));
 
-  return [...merged, ...remoteNotes.filter((note) => !localIds.has(note.id))];
+  return [...merged, ...remoteNotes.filter((note) => !localIds.has(note.id))]
+    .map((note) => ({ ...note, description: revisionDescription(note.title.split(":")[0]) }));
 }
 
 export async function findTopic(slug: string) {

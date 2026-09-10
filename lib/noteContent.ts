@@ -472,7 +472,7 @@ const noteReferences: Record<string, NoteReference[]> = {
 const noteTables: Record<string, NoteComparisonTable> = {
   "dna-rna-replication-transcription-translation": {
     heading: "DNA, RNA, transcription and translation: keep the jobs separate",
-    intro: "Most mistakes in this chapter come from choosing a correct word for the wrong job. Use this table before MCQ practice.",
+    intro: "Most mistakes in this chapter come from choosing a correct word for the wrong job. Use this table before a recall check.",
     columns: ["Term", "Main job", "Place to watch", "Common wrong swap"],
     rows: [
       ["DNA", "Stores genetic information", "Nucleus in eukaryotes", "Treated as the molecule being translated directly"],
@@ -601,7 +601,7 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     heading: "Put arrows on every kidney fact",
     paragraphs: [
       "Kidney revision gets much cleaner when every process has an arrow. Filtration points from blood to capsule. Reabsorption points back to blood. Secretion points from blood into the tubule.",
-      "If you cannot draw the arrow, you probably do not own the concept yet. That is the moment to return to the nephron diagram instead of doing ten more MCQs blindly.",
+      "If you cannot draw the arrow, you probably do not own the concept yet. That is the moment to return to the nephron diagram instead of memorising another list blindly.",
     ],
   },
   "neuron-nerve-impulse-synapse": {
