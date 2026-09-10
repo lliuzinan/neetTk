@@ -178,7 +178,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Endocrine control: map gland, hormone and target",
       paragraphs: [
-        "The quickest way to organise this NEET chapter is to make a three-part map for every hormone: the gland or tissue that releases it, its major target, and its principal effect. This prevents a common error in which a correct hormone is paired with the wrong gland or an effect belonging to another regulatory system.",
+        "Start this NEET chapter with a three-part map for every hormone: the gland or tissue that releases it, its major target, and its principal effect. Mixing up gland and effect is a frequent endocrine error, and this map gives you a quick way to catch it.",
         "Endocrine glands release hormones into blood, so their effects reach distant target tissues through circulation. A target cell responds only when it carries the appropriate receptor. Do not treat every circulating hormone as if it acts equally on every cell in the body.",
       ],
       bullets: [
@@ -197,7 +197,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Thyroid, pancreas and adrenal connections",
       paragraphs: [
-        "Thyroid hormones set basal metabolic activity and support normal development. Iodine availability is an important NCERT connection because the thyroid needs iodine to synthesise thyroid hormones. In close options, separate thyroid hormones from calcitonin: both come from the thyroid region, but they do different jobs.",
+        "Thyroid hormones help regulate basal metabolic activity and support normal development. Iodine availability is an important NCERT connection because the thyroid needs iodine to synthesise thyroid hormones. When calcitonin and thyroxine appear together, read the hormone name before matching an effect: sharing a thyroid location does not give them the same job.",
         "The endocrine pancreas regulates blood glucose. Insulin lowers blood glucose by supporting uptake and storage processes, whereas glucagon raises it by mobilising stored reserves. The adrenal medulla drives rapid emergency responses, while the adrenal cortex releases a different group of steroid hormones.",
       ],
       bullets: [
@@ -216,7 +216,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "The hypothalamus and pituitary: read the control hierarchy",
       paragraphs: [
-        "The hypothalamus connects nervous-system input with endocrine control. It releases regulatory signals that influence the anterior pituitary, while the posterior pituitary releases hormones made in the hypothalamus and transported to it. This division matters because a hormone can appear under the pituitary in a diagram without being synthesised there.",
+        "The hypothalamus connects nervous-system input with endocrine control. It releases regulatory signals that influence the anterior pituitary, while the posterior pituitary releases hormones made in the hypothalamus and transported to it. This is the key split to check whenever ADH or oxytocin appears under a pituitary heading: the posterior pituitary releases them, but does not synthesise them.",
         "The anterior pituitary releases several hormones that control growth, thyroid activity, adrenal cortex activity and gonadal function. The safer revision method is not to memorise a long isolated list. Instead, draw a control line from hypothalamus to pituitary to target gland, then draw the feedback arrow back. This explains why the same system coordinates several distant organs without every hormone acting on every tissue.",
       ],
       bullets: [
@@ -230,14 +230,14 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "Calcium balance and reproductive hormones: separate the comparisons",
       paragraphs: [
         "Calcium regulation is a useful example of why the source, trigger and effect must be kept together. Calcitonin can lower blood calcium in the relevant physiological context. Parathyroid glands release parathyroid hormone to raise blood calcium. Similar gland names do not mean the hormones do the same job.",
-        "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones drive reproductive function and feed back to the pituitary. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. This prevents a correct term from being placed at the wrong level of the system.",
+        "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones drive reproductive function and feed back to the pituitary. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. That keeps a pituitary hormone from being placed where a gonadal hormone belongs.",
       ],
     },
     {
       heading: "A 15-minute revision method",
       paragraphs: [
-        "Draw a table with four columns: gland, hormone, target and one effect. Fill it from memory, then compare it with NCERT and correct only the mismatched cells. Next, draw arrows for insulin versus glucagon and for a simple negative-feedback loop involving the hypothalamus, pituitary and target gland.",
-        "While checking recall, label each error as a gland mismatch, hormone-effect mismatch, or feedback-direction error. This turns a long list of hormone names into a small set of clear relationships.",
+        "Set a 15-minute timer. In the first five minutes, draw four columns labelled gland, hormone, target and effect, then fill the cells from memory. The blank cells are the first facts to revisit. In the next five minutes, check the NCERT chapter and rewrite only the cells that were missing or wrong.",
+        "Use the final five minutes for two arrows: high blood glucose to insulin to uptake and storage, then low blood glucose to glucagon to liver mobilisation. Add one control line from hypothalamus to anterior pituitary to thyroid, then draw feedback toward the control centres. Label each error as a gland mismatch, hormone-effect mismatch, or feedback-direction error. Once you can name the pattern, the chapter becomes much easier to revise.",
       ],
     },
   ],

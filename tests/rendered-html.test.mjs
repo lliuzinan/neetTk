@@ -66,9 +66,13 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Article/);
   assert.doesNotMatch(topicHtml, /Quick MCQ practice/);
   assert.match(endocrineHtml, /endocrine-blood-glucose-feedback-v1\.png/);
+  assert.match(endocrineHtml, /endocrine-hypothalamus-pituitary-thyroid-axis-v1\.png/);
   assert.match(endocrineHtml, /Negative-feedback regulation of blood glucose through insulin and glucagon/);
   assert.match(endocrineHtml, /Feedback direction: use the arrow test/);
   assert.match(endocrineHtml, /kebo119\.pdf/);
+  assert.match(endocrineHtml, /Written by:.*DongFeng/);
+  assert.match(endocrineHtml, /University Biology Instructor/);
+  assert.match(endocrineHtml, /2026-09-10/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);

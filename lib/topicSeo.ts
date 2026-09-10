@@ -91,9 +91,9 @@ const topicContent: Record<string, TopicSeoContent> = {
       "Common NCERT examples such as thyroid, pituitary, adrenal, pancreatic, and gonadal hormones.",
     ],
     traps: [
-      "Confusing anterior pituitary regulation with hormones from other endocrine glands.",
-      "Mixing steroid, peptide, and amine hormone examples.",
-      "Forgetting target-organ effects when the question asks for function rather than source.",
+      "Posterior pituitary stores and releases ADH and oxytocin, but the hypothalamus synthesises them. Anterior pituitary produces its own hormones, including GH, TSH, ACTH, FSH, LH and prolactin.",
+      "Peptide hormones such as insulin and ADH are water-soluble and act through cell-surface receptors. Steroid hormones are lipid-soluble and can act through intracellular receptors.",
+      "Growth hormone, thyroxine and insulin can all appear in growth-related statements. Check whether the wording asks about skeletal growth, basal metabolic activity, or nutrient uptake before choosing.",
     ],
     practicePlan:
       "Make a gland-hormone-function table, revise it twice, then solve MCQs by identifying whether the question asks source, function, or regulation.",

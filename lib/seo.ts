@@ -13,7 +13,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "mutation-and-gene-expression": { published: "2026-07-22", modified: "2026-08-07" },
   "cell-theory-and-cell-organelles": { published: "2026-07-24", modified: "2026-08-09" },
   "mitosis-and-meiosis": { published: "2026-07-26", modified: "2026-08-11" },
-  "endocrine-system-and-hormones": { published: "2026-07-28", modified: "2026-08-13" },
+  "endocrine-system-and-hormones": { published: "2026-07-28", modified: "2026-09-10" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
   "immunity-pathogens-vaccines": { published: "2026-08-01", modified: "2026-08-17" },
   "neuron-nerve-impulse-synapse": { published: "2026-08-03", modified: "2026-08-19" },

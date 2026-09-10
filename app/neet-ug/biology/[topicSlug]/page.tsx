@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
+import { editorialReviewer, hasNamedAuthor } from "@/lib/editorialReviewer";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findTopic, getSeoNotes, getTopics } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS, getNoteComparisonTable, getNoteContent, getNoteEditorialBlock, getNoteReferences } from "@/lib/noteContent";
@@ -29,6 +30,15 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
       "ADH and oxytocin are synthesised in the hypothalamus and stored and released from the posterior pituitary. A shared release site does not mean a shared function.",
       "Peptide hormones such as insulin act through cell-surface receptors, whereas steroid hormones can enter target cells and act through intracellular receptors.",
     ],
+  },
+};
+
+const articleSupplementalFigures: Record<string, { afterHeading: string; src: string; alt: string; caption: string }> = {
+  "endocrine-system-and-hormones": {
+    afterHeading: "The hypothalamus and pituitary: read the control hierarchy",
+    src: "/images/biology/endocrine-hypothalamus-pituitary-thyroid-axis-v1.png",
+    alt: "Simplified hypothalamus-pituitary-thyroid axis with negative feedback from thyroid hormones",
+    caption: "A simplified control-axis overview: the hypothalamus and anterior pituitary influence thyroid activity, while thyroid hormones provide negative feedback.",
   },
 };
 
@@ -64,6 +74,7 @@ export default async function TopicPage({ params }: Props) {
   const editorialBlock = getNoteEditorialBlock(note.slug, topic.name);
   const articleIllustration = articleIllustrations[note.slug];
   const articleStudyNote = articleStudyNotes[note.slug];
+  const articleSupplementalFigure = articleSupplementalFigures[note.slug];
   const noteTopicSlugs = new Set(notes.filter((item) => isPublishedNote(item.slug)).map((item) => item.topicSlug));
   const relatedTopics = allTopics
     .filter((item) => item.slug !== topic.slug && noteTopicSlugs.has(item.slug))
@@ -72,7 +83,10 @@ export default async function TopicPage({ params }: Props) {
     .slice(0, 4)
     .map((item) => item.topic);
   const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) }] };
-  const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: `${topic.name} revision guide`, description: note.description, datePublished: dates.publishedIso, dateModified: dates.modifiedIso, image: heroImage, about: topic.name, author: { "@type": "Organization", name: "MedQGo Editorial Team" }, publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") } };
+  const articleAuthor = hasNamedAuthor()
+    ? { "@type": "Person", name: editorialReviewer.authorName, ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
+    : { "@type": "Organization", name: "MedQGo Editorial Team" };
+  const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: `${topic.name} revision guide`, description: note.description, datePublished: dates.publishedIso, dateModified: dates.modifiedIso, image: heroImage, about: topic.name, author: articleAuthor, publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") } };
 
   return (
     <main className="page">
@@ -127,7 +141,19 @@ export default async function TopicPage({ params }: Props) {
             </table>
           </div>
         </section>
-        {sections.slice(2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        {sections.slice(2).map((section) => (
+          <section key={section.heading}>
+            <h2>{section.heading}</h2>
+            {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+            {articleSupplementalFigure?.afterHeading === section.heading && (
+              <figure className="articleIllustration">
+                <img src={articleSupplementalFigure.src} alt={articleSupplementalFigure.alt} width={1600} height={1000} />
+                <figcaption>{articleSupplementalFigure.caption}</figcaption>
+              </figure>
+            )}
+          </section>
+        ))}
         <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section>
           <h2>Exam-style checkpoints</h2>
