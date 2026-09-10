@@ -3,6 +3,7 @@
 Fill `data/editorial-reviewer.json` only with facts the named person has agreed to publish.
 
 - `authorName`: real public name of the named author. A name alone may be published as an author byline; it must not be presented as a credential or reviewer qualification.
+- `authorRole`: factual public role the named author has agreed to publish, such as `University Biology Instructor`. Add an institution only when the author wants it published and it can be supported by records.
 - `name`: real full name used publicly by the reviewer.
 - `role`: accurate role, such as `Biology Content Reviewer`.
 - `credentials`: verified degree or professional qualification. Do not use a planned, honorary, or unverified qualification.

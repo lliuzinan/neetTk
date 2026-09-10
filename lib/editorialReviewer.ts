@@ -2,6 +2,7 @@ import reviewerData from "@/data/editorial-reviewer.json";
 
 export type EditorialReviewer = {
   authorName: string;
+  authorRole: string;
   name: string;
   role: string;
   credentials: string;

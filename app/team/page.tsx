@@ -28,7 +28,7 @@ export default function TeamPage() {
         {hasAuthor && (
           <section>
             <h2>{editorialReviewer.authorName}</h2>
-            <p><strong>Named author</strong></p>
+            <p><strong>{editorialReviewer.authorRole || "Named author"}</strong></p>
             <p>{editorialReviewer.authorName} is the named author of MedQGo's independently prepared NEET-UG Biology revision guides.</p>
           </section>
         )}
