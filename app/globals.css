@@ -727,6 +727,13 @@ h3 {
   padding: 12px 16px;
 }
 
+.articleStudyNote {
+  background: #edf8f5;
+  border-left: 4px solid var(--brand);
+  margin: 24px 0;
+  padding: 20px;
+}
+
 .inlineMcqList {
   display: grid;
   gap: 16px;

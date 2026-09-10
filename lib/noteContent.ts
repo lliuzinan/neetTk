@@ -443,7 +443,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "CDC: Immune system and vaccines", href: "https://www.cdc.gov/vaccines/" },
   ],
   "endocrine-system-and-hormones": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 11 Biology, Chapter 19: Chemical Coordination and Integration", href: "https://ncert.nic.in/textbook/pdf/kebo119.pdf" },
     { label: "Khan Academy: Endocrine system", href: "https://www.khanacademy.org/science/health-and-medicine/endocrine-system" },
     { label: "NCBI Bookshelf: Physiology, Endocrine Hormones", href: "https://www.ncbi.nlm.nih.gov/books/NBK538498/" },
   ],

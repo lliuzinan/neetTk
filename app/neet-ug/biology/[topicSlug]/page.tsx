@@ -19,6 +19,19 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
   },
 };
 
+const articleStudyNotes: Record<string, { heading: string; intro: string; points: string[] }> = {
+  "endocrine-system-and-hormones": {
+    heading: "Feedback direction: use the arrow test",
+    intro: "A hormone name can look familiar while the direction is wrong. Before accepting an option, say the full sequence aloud and check which change comes next.",
+    points: [
+      "High blood glucose -> insulin release -> uptake and storage of glucose -> blood glucose falls toward its usual range.",
+      "Low blood glucose -> glucagon release -> liver mobilises stored glucose -> blood glucose rises toward its usual range.",
+      "ADH and oxytocin are synthesised in the hypothalamus and stored and released from the posterior pituitary. A shared release site does not mean a shared function.",
+      "Peptide hormones such as insulin act through cell-surface receptors, whereas steroid hormones can enter target cells and act through intracellular receptors.",
+    ],
+  },
+};
+
 function isPublishedNote(slug: string) {
   return AUTHORED_NOTE_SLUGS.includes(slug as (typeof AUTHORED_NOTE_SLUGS)[number]);
 }
@@ -50,6 +63,7 @@ export default async function TopicPage({ params }: Props) {
   const comparisonTable = getNoteComparisonTable(note.slug, topic.name);
   const editorialBlock = getNoteEditorialBlock(note.slug, topic.name);
   const articleIllustration = articleIllustrations[note.slug];
+  const articleStudyNote = articleStudyNotes[note.slug];
   const noteTopicSlugs = new Set(notes.filter((item) => isPublishedNote(item.slug)).map((item) => item.topicSlug));
   const relatedTopics = allTopics
     .filter((item) => item.slug !== topic.slug && noteTopicSlugs.has(item.slug))
@@ -84,6 +98,13 @@ export default async function TopicPage({ params }: Props) {
             <img src={articleIllustration.src} alt={articleIllustration.alt} width={1600} height={1000} />
             <figcaption>{articleIllustration.caption}</figcaption>
           </figure>
+        )}
+        {articleStudyNote && (
+          <section className="articleStudyNote">
+            <h2>{articleStudyNote.heading}</h2>
+            <p>{articleStudyNote.intro}</p>
+            <ul className="seoList">{articleStudyNote.points.map((point) => <li key={point}>{point}</li>)}</ul>
+          </section>
         )}
         <section className="editorialAside">
           <h2>{editorialBlock.heading}</h2>
