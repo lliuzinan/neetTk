@@ -73,6 +73,9 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /Endocrine quick-reference table: source, action and mix-up/);
   assert.match(endocrineHtml, /Pancreatic beta cells/);
   assert.match(endocrineHtml, /OpenStax Anatomy and Physiology: Hormones and feedback loops/);
+  assert.match(endocrineHtml, /Three self-checks before you close the chapter/);
+  assert.match(endocrineHtml, /Endocrine glands are ductless/);
+  assert.match(endocrineHtml, /National Institute of General Medical Sciences: What is a hormone/);
   assert.match(endocrineHtml, /kebo119\.pdf/);
   assert.match(endocrineHtml, /Written by:.*DongFeng/);
   assert.match(endocrineHtml, /authors\/dongfeng/);

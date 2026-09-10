@@ -179,7 +179,8 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "Endocrine control: map gland, hormone and target",
       paragraphs: [
         "Start this NEET chapter with a three-part map for every hormone: the gland or tissue that releases it, its major target, and its principal effect. Mixing up gland and effect is a frequent endocrine error, and this map gives you a quick way to catch it.",
-        "Endocrine glands release hormones into blood, so their effects reach distant target tissues through circulation. A target cell responds only when it carries the appropriate receptor. Do not treat every circulating hormone as if it acts equally on every cell in the body.",
+        "Endocrine glands are ductless: they release hormones into the surrounding fluid and then into blood, allowing signals to reach distant target tissues. That route is different from an exocrine gland, which sends a secretion through a duct. The pancreas is a useful reminder that one organ can have both roles: digestive secretions travel through ducts, while insulin and glucagon enter blood.",
+        "A hormone can travel widely without acting on every cell. A target cell responds because it has the appropriate receptor. When an option says a hormone affects every tissue equally, pause and check whether it has confused circulation with receptor-based response.",
       ],
       bullets: [
         "Hypothalamus: links neural control with endocrine regulation.",
@@ -191,7 +192,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "Feedback regulation is the central pattern",
       paragraphs: [
         "Many endocrine questions are best solved through negative feedback. When the level or effect of a regulated variable rises sufficiently, the stimulus for further hormone release is reduced. This keeps internal conditions within a useful range rather than allowing a response to increase without limit.",
-        "Use the direction of the loop, not a memorised phrase. Ask what increases first, what hormone responds, and what change feeds back to the control centre. Positive feedback is an exception used in specific physiological situations, so do not label every hormone sequence as positive feedback.",
+        "The word negative does not mean harmful. It means that the response counteracts the original change. Use the direction of the loop, not a memorised phrase: ask what changes first, what signal responds, and what result feeds back to the control centre. Positive feedback is an exception used in specific physiological situations, so do not label every hormone sequence as positive feedback.",
       ],
     },
     {
@@ -231,6 +232,17 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "Calcium regulation is a useful example of why the source, trigger and effect must be kept together. Calcitonin can lower blood calcium in the relevant physiological context. Parathyroid glands release parathyroid hormone to raise blood calcium. Similar gland names do not mean the hormones do the same job.",
         "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones drive reproductive function and feed back to the pituitary. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. That keeps a pituitary hormone from being placed where a gonadal hormone belongs.",
+      ],
+    },
+    {
+      heading: "Three self-checks before you close the chapter",
+      paragraphs: [
+        "Use these as retrieval prompts, not as another list to reread. Cover the table and complete each answer from memory before checking the guide or NCERT.",
+      ],
+      bullets: [
+        "Draw one negative-feedback loop from a control centre to a target gland and back. Label the direction of every arrow.",
+        "Write one sentence that separates endocrine secretion from exocrine secretion, then use the pancreas as your example.",
+        "Choose one hormone pair with opposing effects and explain what happens when the regulated variable moves in each direction.",
       ],
     },
     {
@@ -444,8 +456,9 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "endocrine-system-and-hormones": [
     { label: "NCERT Class 11 Biology, Chapter 19: Chemical Coordination and Integration", href: "https://ncert.nic.in/textbook/pdf/kebo119.pdf" },
+    { label: "OpenStax Anatomy and Physiology: Overview of endocrine signalling", href: "https://openstax.org/books/anatomy-and-physiology/pages/17-1-an-overview-of-the-endocrine-system" },
     { label: "OpenStax Anatomy and Physiology: Hormones and feedback loops", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-2-hormones" },
-    { label: "NCBI Bookshelf: Physiology, Endocrine Hormones", href: "https://www.ncbi.nlm.nih.gov/books/NBK538498/" },
+    { label: "National Institute of General Medical Sciences: What is a hormone?", href: "https://nigms.nih.gov/biobeat/2024/07/what-is-a-hormone" },
   ],
   "neuron-nerve-impulse-synapse": [
     { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
