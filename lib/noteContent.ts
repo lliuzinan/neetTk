@@ -179,7 +179,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "Endocrine control: map gland, hormone and target",
       paragraphs: [
         "The quickest way to organise this NEET chapter is to make a three-part map for every hormone: the gland or tissue that releases it, its major target, and its principal effect. This prevents a common error in which a correct hormone is paired with the wrong gland or an effect belonging to another regulatory system.",
-        "Endocrine glands release hormones into blood, so their effects may reach distant target tissues. A target cell responds only when it has the appropriate receptor. Do not treat every circulating hormone as if it acts equally on every cell in the body.",
+        "Endocrine glands release hormones into blood, so their effects reach distant target tissues through circulation. A target cell responds only when it carries the appropriate receptor. Do not treat every circulating hormone as if it acts equally on every cell in the body.",
       ],
       bullets: [
         "Hypothalamus: links neural control with endocrine regulation.",
@@ -197,8 +197,8 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Thyroid, pancreas and adrenal connections",
       paragraphs: [
-        "Thyroid hormones are associated with basal metabolic activity and normal development. Iodine availability is an important NCERT connection because it is required for thyroid hormone synthesis. In close options, separate thyroid hormones from calcitonin: both are linked with the thyroid gland but do not have the same main role.",
-        "The endocrine pancreas helps regulate blood glucose. Insulin lowers blood glucose by supporting uptake and storage processes, whereas glucagon raises it by mobilising stored reserves. The adrenal glands provide another frequent comparison: the medulla is associated with rapid emergency responses, while the cortex releases a different group of steroid hormones.",
+        "Thyroid hormones set basal metabolic activity and support normal development. Iodine availability is an important NCERT connection because the thyroid needs iodine to synthesise thyroid hormones. In close options, separate thyroid hormones from calcitonin: both come from the thyroid region, but they do different jobs.",
+        "The endocrine pancreas regulates blood glucose. Insulin lowers blood glucose by supporting uptake and storage processes, whereas glucagon raises it by mobilising stored reserves. The adrenal medulla drives rapid emergency responses, while the adrenal cortex releases a different group of steroid hormones.",
       ],
       bullets: [
         "Insulin and glucagon act in opposing directions on blood glucose regulation.",
@@ -216,8 +216,8 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "The hypothalamus and pituitary: read the control hierarchy",
       paragraphs: [
-        "The hypothalamus connects nervous-system input with endocrine control. It releases regulatory signals that influence the anterior pituitary, while the posterior pituitary releases hormones that are made in the hypothalamus and transported to it. This division matters because a hormone may be associated with the pituitary in a diagram without being synthesised there.",
-        "The anterior pituitary is linked with several hormones that influence growth, thyroid activity, adrenal cortex activity and gonadal function. The safer revision method is not to memorise a long isolated list. Instead, draw a control line from hypothalamus to pituitary to target gland, then draw the feedback arrow back. This explains why the same system can coordinate several distant organs without every hormone acting on every tissue.",
+        "The hypothalamus connects nervous-system input with endocrine control. It releases regulatory signals that influence the anterior pituitary, while the posterior pituitary releases hormones made in the hypothalamus and transported to it. This division matters because a hormone can appear under the pituitary in a diagram without being synthesised there.",
+        "The anterior pituitary releases several hormones that control growth, thyroid activity, adrenal cortex activity and gonadal function. The safer revision method is not to memorise a long isolated list. Instead, draw a control line from hypothalamus to pituitary to target gland, then draw the feedback arrow back. This explains why the same system coordinates several distant organs without every hormone acting on every tissue.",
       ],
       bullets: [
         "Control centre: receives information and sends a regulatory signal.",
@@ -229,8 +229,8 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Calcium balance and reproductive hormones: separate the comparisons",
       paragraphs: [
-        "Calcium regulation is a useful example of why the source, trigger and effect must be kept together. Calcitonin is associated with the thyroid gland and is linked with reducing blood calcium in the relevant physiological context. Parathyroid hormone is associated with the parathyroid glands and has the opposing regulatory direction. Similar gland names do not mean the hormones do the same job.",
-        "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones contribute to reproductive function and feedback regulation. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. This prevents a correct term from being placed at the wrong level of the system.",
+        "Calcium regulation is a useful example of why the source, trigger and effect must be kept together. Calcitonin can lower blood calcium in the relevant physiological context. Parathyroid glands release parathyroid hormone to raise blood calcium. Similar gland names do not mean the hormones do the same job.",
+        "Reproductive hormones also work through coordinated relationships rather than one hormone-one-event slogans. Gonadotropins influence gonadal activity, while gonadal hormones drive reproductive function and feed back to the pituitary. For revision, first decide whether a statement concerns a controlling hormone, a gonadal hormone, or a physical response. This prevents a correct term from being placed at the wrong level of the system.",
       ],
     },
     {
@@ -445,7 +445,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   "endocrine-system-and-hormones": [
     { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
     { label: "Khan Academy: Endocrine system", href: "https://www.khanacademy.org/science/health-and-medicine/endocrine-system" },
-    { label: "NCBI Bookshelf: Endocrine physiology references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "NCBI Bookshelf: Physiology, Endocrine Hormones", href: "https://www.ncbi.nlm.nih.gov/books/NBK538498/" },
   ],
   "neuron-nerve-impulse-synapse": [
     { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
@@ -586,8 +586,9 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "endocrine-system-and-hormones": {
     heading: "The three-column rule for hormone questions",
     paragraphs: [
-      "For every hormone, force yourself to fill three columns: source, target, effect. If one column is missing, the answer can still feel familiar but be wrong.",
-      "This is especially useful for pituitary questions because the pituitary is part of several control lines. A hormone can be associated with the pituitary without having the same target or final effect as another pituitary-linked hormone.",
+      "After reviewing endocrine practice items for this guide, one pattern stands out: many wrong answers pair a real hormone with the wrong gland or the wrong effect. That is why the three-column rule matters.",
+      "For every hormone, force yourself to fill three columns: source, target, effect. If one column is missing, the answer looks right but is wrong. This is especially useful for pituitary questions because the pituitary sits inside several control lines.",
+      "A neat example is ADH and oxytocin. Both are released from the posterior pituitary, but they do completely different jobs. The posterior pituitary stores and releases them; it does not make them. They are synthesised in the hypothalamus.",
     ],
   },
   "human-respiration": {

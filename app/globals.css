@@ -768,6 +768,13 @@ h3 {
   padding: 20px;
 }
 
+.articleMetaBox {
+  background: #f7fbff;
+  border: 1px solid #d7e7f1;
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .comparisonTableWrap {
   border: 1px solid var(--line);
   border-radius: 8px;
