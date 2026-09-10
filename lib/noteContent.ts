@@ -444,7 +444,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "endocrine-system-and-hormones": [
     { label: "NCERT Class 11 Biology, Chapter 19: Chemical Coordination and Integration", href: "https://ncert.nic.in/textbook/pdf/kebo119.pdf" },
-    { label: "Khan Academy: Endocrine system", href: "https://www.khanacademy.org/science/health-and-medicine/endocrine-system" },
+    { label: "OpenStax Anatomy and Physiology: Hormones and feedback loops", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-2-hormones" },
     { label: "NCBI Bookshelf: Physiology, Endocrine Hormones", href: "https://www.ncbi.nlm.nih.gov/books/NBK538498/" },
   ],
   "neuron-nerve-impulse-synapse": [
@@ -504,14 +504,19 @@ const noteTables: Record<string, NoteComparisonTable> = {
     ],
   },
   "endocrine-system-and-hormones": {
-    heading: "Gland, hormone, effect: the minimum table",
-    intro: "For hormones, never learn a single column. The exam normally swaps one cell in the row.",
-    columns: ["Gland or tissue", "Example hormone", "Main idea", "Likely distractor"],
+    heading: "Endocrine quick-reference table: source, action and mix-up",
+    intro: "Read each row across. Most close endocrine options keep three facts correct and swap the remaining source, action, or control relationship.",
+    columns: ["Source", "Hormone or signal", "NEET-level action", "Quick distinction"],
     rows: [
-      ["Pancreas", "Insulin", "Lowers blood glucose", "Swapped with glucagon"],
-      ["Thyroid", "Thyroxine", "Metabolic regulation", "Mixed with calcitonin"],
-      ["Adrenal medulla", "Adrenaline", "Emergency response", "Confused with cortical steroid hormones"],
-      ["Posterior pituitary", "ADH", "Water balance", "Confused with oxytocin"],
+      ["Hypothalamus", "Regulatory hormones; synthesises ADH and oxytocin", "Links neural input with endocrine control", "The posterior pituitary releases ADH and oxytocin but does not synthesise them"],
+      ["Anterior pituitary", "TSH", "Stimulates thyroid activity", "TSH is a tropic signal; it is not thyroid hormone"],
+      ["Posterior pituitary", "ADH", "Increases water reabsorption when conservation is needed", "ADH is not a blood-glucose hormone and is distinct from oxytocin"],
+      ["Thyroid", "Thyroxine", "Supports metabolic regulation and normal development", "Do not give thyroxine the calcium-regulation role of calcitonin"],
+      ["Parathyroid glands", "Parathyroid hormone", "Raises blood calcium in the relevant physiological context", "Parathyroid glands are not the thyroid; PTH and calcitonin act in opposing directions"],
+      ["Pancreatic beta cells", "Insulin", "Helps lower blood glucose through uptake and storage", "The direction is opposite to glucagon"],
+      ["Pancreatic alpha cells", "Glucagon", "Raises blood glucose by mobilising stored reserves", "Glucagon is not released to lower blood glucose"],
+      ["Adrenal medulla", "Adrenaline", "Supports a rapid emergency response", "Do not confuse medullary adrenaline with steroid hormones of the adrenal cortex"],
+      ["Gonads", "Sex hormones", "Support reproductive functions and participate in feedback relationships", "Separate a gonadal hormone from pituitary gonadotropins such as FSH and LH"],
     ],
   },
   "human-respiration": {
@@ -586,7 +591,7 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "endocrine-system-and-hormones": {
     heading: "The three-column rule for hormone questions",
     paragraphs: [
-      "After reviewing endocrine practice items for this guide, one pattern stands out: many wrong answers pair a real hormone with the wrong gland or the wrong effect. That is why the three-column rule matters.",
+      "In close endocrine options, a real hormone is often paired with the wrong gland or the wrong effect. That is why the three-column rule matters.",
       "For every hormone, force yourself to fill three columns: source, target, effect. If one column is missing, the answer looks right but is wrong. This is especially useful for pituitary questions because the pituitary sits inside several control lines.",
       "A neat example is ADH and oxytocin. Both are released from the posterior pituitary, but they do completely different jobs. The posterior pituitary stores and releases them; it does not make them. They are synthesised in the hypothalamus.",
     ],

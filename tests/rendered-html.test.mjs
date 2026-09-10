@@ -70,6 +70,9 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /endocrine-hypothalamus-pituitary-thyroid-axis-v1\.png/);
   assert.match(endocrineHtml, /Negative-feedback regulation of blood glucose through insulin and glucagon/);
   assert.match(endocrineHtml, /Feedback direction: use the arrow test/);
+  assert.match(endocrineHtml, /Endocrine quick-reference table: source, action and mix-up/);
+  assert.match(endocrineHtml, /Pancreatic beta cells/);
+  assert.match(endocrineHtml, /OpenStax Anatomy and Physiology: Hormones and feedback loops/);
   assert.match(endocrineHtml, /kebo119\.pdf/);
   assert.match(endocrineHtml, /Written by:.*DongFeng/);
   assert.match(endocrineHtml, /authors\/dongfeng/);
