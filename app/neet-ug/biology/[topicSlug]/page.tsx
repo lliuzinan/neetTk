@@ -260,7 +260,7 @@ export default async function TopicPage({ params }: Props) {
               </thead>
               <tbody>
                 {comparisonTable.rows.map((row) => (
-                  <tr key={row.join("|")}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>
+                  <tr key={row.join("|")}>{row.map((cell, index) => <td data-label={comparisonTable.columns[index]} key={cell}>{cell}</td>)}</tr>
                 ))}
               </tbody>
             </table>

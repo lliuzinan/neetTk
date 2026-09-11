@@ -121,6 +121,7 @@ test("publishes four complete NCERT-aligned revision guides", async () => {
   assert.match(photosynthesisHtml, /Photosystems: keep the numbering and sequence apart/);
   assert.match(photosynthesisHtml, /kebo111\.pdf/);
   assert.match(photosynthesisHtml, /photosynthesis-chloroplast-route-v1\.png/);
+  assert.match(photosynthesisHtml, /data-label="Process"/);
   assert.match(plantRespirationHtml, /Glycolysis is the shared starting route/);
   assert.match(plantRespirationHtml, /kebo112\.pdf/);
   assert.match(plantRespirationHtml, /plant-respiration-route-v1\.png/);

@@ -1094,6 +1094,49 @@ h3 {
   .footerLinks a {
     min-height: 44px;
   }
+
+  .comparisonTableWrap {
+    border: 0;
+    margin-top: 12px;
+    overflow: visible;
+  }
+
+  .comparisonTable,
+  .comparisonTable tbody,
+  .comparisonTable tr,
+  .comparisonTable td {
+    display: block;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .comparisonTable thead {
+    display: none;
+  }
+
+  .comparisonTable tr {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .comparisonTable td {
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    gap: 6px;
+    padding: 11px 12px;
+  }
+
+  .comparisonTable td::before {
+    color: var(--brand-dark);
+    content: attr(data-label);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 360px) {
