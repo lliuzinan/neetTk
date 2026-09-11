@@ -48,6 +48,22 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["The nephron flow from glomerular filtration through selective reabsorption, secretion, and urine concentration.", "The direction of movement between blood, filtrate, and the outside of the body.", "How water balance and waste removal overlap without being the same process."],
     traps: ["Filtration is blood to Bowman's capsule; reabsorption returns substances from tubule to blood.", "The urinary bladder stores urine; kidneys form it.", "ADH supports water conservation in the distal nephron and collecting ducts; it does not create the initial filtrate."],
   },
+  "photosynthesis-in-higher-plants": {
+    focus: ["Chloroplast compartments and the linked roles of light reactions and carbon fixation.", "Pigments, photosystems, ATP and NADPH as a connected energy-transfer route.", "C3 and C4 pathways, photorespiration, and factors that affect the rate of photosynthesis."],
+    traps: ["PSII is named before PSI in the non-cyclic pathway even though its number is higher.", "The Calvin cycle does not require darkness; it uses ATP and NADPH made by light reactions.", "C4 plants initially fix carbon dioxide in mesophyll cells before the Calvin cycle operates in bundle-sheath cells."],
+  },
+  "plant-respiration": {
+    focus: ["The path from glucose through glycolysis to pyruvate, followed by aerobic or anaerobic routes.", "Where each main stage occurs and why plants exchange gases without specialised respiratory organs.", "Respiratory quotient and the difference between energy release, gas exchange, and photosynthesis."],
+    traps: ["Glycolysis occurs in the cytoplasm, while later aerobic stages are associated with mitochondria.", "Fermentation is not the same as complete aerobic oxidation of glucose.", "Respiration continues in plant cells in light and dark; it is not the reverse name for photosynthesis."],
+  },
+  "digestion-and-absorption": {
+    focus: ["The food route, accessory glands, and the distinct jobs of mechanical and chemical digestion.", "How carbohydrates, proteins, and lipids reach absorbable products.", "Small-intestinal adaptations and the separate routes taken by many nutrients and lipid products."],
+    traps: ["Digestion breaks complex food into absorbable units; absorption moves those units across the intestinal lining.", "Bile aids fat emulsification but is not itself a digestive enzyme.", "Most absorption occurs in the small intestine, not the stomach or large intestine."],
+  },
+  "blood-and-circulation": {
+    focus: ["Blood components, double circulation, and the path through the heart, lungs, and body tissues.", "The functional difference between arteries, veins, capillaries, and the cardiac chambers.", "How clotting, blood groups, and cardiac rhythm fit into the chapter without becoming one list."],
+    traps: ["Arteries carry blood away from the heart and veins carry it toward the heart; oxygen content is not the defining rule.", "Pulmonary circulation is heart to lungs to heart, while systemic circulation is heart to body to heart.", "Platelets support clotting; they are not a type of white blood cell."],
+  },
 };
 
 export function getTopicSeoContent(slug: string) {

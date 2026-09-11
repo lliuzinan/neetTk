@@ -129,7 +129,14 @@ export async function getTopics() {
   );
   if (!rows?.length) return topics;
 
-  return rows.map(mapTopic);
+  const remoteTopics = rows.map(mapTopic);
+  const remoteById = new Map(remoteTopics.map((topic) => [topic.id, topic]));
+  const localIds = new Set(topics.map((topic) => topic.id));
+
+  return [
+    ...topics.map((topic) => ({ ...remoteById.get(topic.id), ...topic })),
+    ...remoteTopics.filter((topic) => !localIds.has(topic.id)),
+  ].sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
 export async function getSeoNotes() {

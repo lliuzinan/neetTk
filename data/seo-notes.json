@@ -111,10 +111,37 @@
     "id": "note-plant-respiration",
     "slug": "plant-respiration",
     "title": "Plant respiration: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Plant respiration for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "description": "Review plant respiration with NCERT-aligned pathway maps, close comparisons, and a focused recall routine.",
     "topicSlug": "plant-respiration",
-    "targetKeyword": "Plant respiration NEET UG Biology questions",
+    "targetKeyword": "Plant respiration NEET UG Biology revision guide",
     "sortOrder": 13
+  },
+  {
+    "id": "note-photosynthesis-in-higher-plants",
+    "slug": "photosynthesis-in-higher-plants",
+    "title": "Photosynthesis in higher plants: NEET-UG Biology NCERT Revision Notes",
+    "description": "Review photosynthesis with NCERT-aligned chloroplast maps, C3-C4 comparisons, and a focused recall routine.",
+    "topicSlug": "photosynthesis-in-higher-plants",
+    "targetKeyword": "Photosynthesis in higher plants NEET UG Biology revision guide",
+    "sortOrder": 18
+  },
+  {
+    "id": "note-digestion-and-absorption",
+    "slug": "digestion-and-absorption",
+    "title": "Digestion and absorption: NEET-UG Biology NCERT Revision Notes",
+    "description": "Review digestion and absorption with NCERT-aligned route maps, enzyme distinctions, and a focused recall routine.",
+    "topicSlug": "digestion-and-absorption",
+    "targetKeyword": "Digestion and absorption NEET UG Biology revision guide",
+    "sortOrder": 19
+  },
+  {
+    "id": "note-blood-and-circulation",
+    "slug": "blood-and-circulation",
+    "title": "Body fluids and circulation: NEET-UG Biology NCERT Revision Notes",
+    "description": "Review body fluids and circulation with NCERT-aligned route maps, blood-component comparisons, and a focused recall routine.",
+    "topicSlug": "blood-and-circulation",
+    "targetKeyword": "Body fluids and circulation NEET UG Biology revision guide",
+    "sortOrder": 20
   },
   {
     "id": "note-animal-tissues",

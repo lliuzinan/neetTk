@@ -55,7 +55,7 @@
     "subject": "Biology",
     "name": "Blood and circulation",
     "slug": "blood-and-circulation",
-    "ncertRef": "NCERT Biology Class 11, Chapter 15",
+    "ncertRef": "NCERT Biology Class 11, Chapter 18",
     "questionCount": 4,
     "sortOrder": 6
   },
@@ -148,6 +148,26 @@
     "ncertRef": "NCERT Biology Class 11, Chapter 12",
     "questionCount": 13,
     "sortOrder": 15
+  },
+  {
+    "id": "photosynthesis-in-higher-plants",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Photosynthesis in higher plants",
+    "slug": "photosynthesis-in-higher-plants",
+    "ncertRef": "NCERT Biology Class 11, Chapter 11",
+    "questionCount": 0,
+    "sortOrder": 14
+  },
+  {
+    "id": "digestion-and-absorption",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Digestion and absorption",
+    "slug": "digestion-and-absorption",
+    "ncertRef": "NCERT Biology Class 11, Chapter 16",
+    "questionCount": 0,
+    "sortOrder": 16
   },
   {
     "id": "animal-tissues",

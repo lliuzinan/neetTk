@@ -31,6 +31,10 @@ export const AUTHORED_NOTE_SLUGS = [
   "dna-rna-replication-transcription-translation",
   "cell-theory-and-cell-organelles",
   "mutation-and-gene-expression",
+  "photosynthesis-in-higher-plants",
+  "plant-respiration",
+  "digestion-and-absorption",
+  "blood-and-circulation",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -431,6 +435,155 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "photosynthesis-in-higher-plants": [
+    {
+      heading: "Photosynthesis begins with a chloroplast map",
+      paragraphs: [
+        "Start by locating the two linked parts of the process. Light-dependent reactions are associated with thylakoid membranes, where pigments capture light energy and water is split. The Calvin cycle takes place in the stroma and uses carbon dioxide together with ATP and NADPH from the light reactions to build carbohydrate.",
+        "This map explains why oxygen is linked with water splitting, why ATP and NADPH are intermediates rather than food, and why carbon dioxide fixation belongs in a different chloroplast space.",
+      ],
+      bullets: ["Thylakoid membrane: photosystems, electron transfer, ATP and NADPH formation.", "Stroma: carbon dioxide fixation and carbohydrate-forming reactions.", "Water supplies electrons in the light-dependent reactions; oxygen is released.", "Carbon dioxide supplies carbon during the Calvin cycle."],
+    },
+    {
+      heading: "Photosystems: keep the numbering and sequence apart",
+      paragraphs: [
+        "In non-cyclic electron flow, photosystem II acts before photosystem I. The numbers reflect their order of discovery, not the order in which they act. Electrons lost by photosystem II are replaced through photolysis of water, while electrons reaching photosystem I can contribute to NADPH formation.",
+        "Cyclic photophosphorylation should be kept separate: it involves photosystem I and produces ATP without the same NADPH formation or oxygen release associated with non-cyclic flow. Draw two short arrow paths rather than learning the difference as a paragraph.",
+      ],
+    },
+    {
+      heading: "C3, C4 and photorespiration: read the locations",
+      paragraphs: [
+        "In C4 plants, carbon dioxide is first fixed in mesophyll cells into a four-carbon compound and then delivered to bundle-sheath cells, where the Calvin cycle proceeds. This spatial separation helps reduce photorespiration under suitable conditions.",
+        "The central comparison is enough for a first revision: initial fixation in mesophyll, then carbon dioxide concentration around the Calvin cycle in bundle-sheath cells. Avoid turning it into a claim that C4 plants never photorespire.",
+      ],
+    },
+    {
+      heading: "Factors affect a rate, not a single switch",
+      paragraphs: [
+        "Light, carbon dioxide concentration, temperature and water availability influence the rate of photosynthesis. A limiting factor is the factor closest to restricting the rate under the stated conditions; changing another factor may not increase the rate once a different condition becomes limiting.",
+        "Severe water shortage can lead to stomatal closure and reduced carbon dioxide entry. That is more accurate than saying water simply acts as an on-off switch for a leaf.",
+      ],
+    },
+    {
+      heading: "A 15-minute recall routine",
+      paragraphs: [
+        "Draw a chloroplast with thylakoid and stroma. Put water and light on one side, carbon dioxide on the other, and place ATP plus NADPH between the two compartments. Then add a small C3-versus-C4 location sketch without looking at notes.",
+        "Finish with three corrections aloud: PSII can act before PSI; the Calvin cycle is not a darkness-only process; and released oxygen is linked with water splitting.",
+      ],
+    },
+  ],
+  "plant-respiration": [
+    {
+      heading: "Plant respiration is cellular energy release",
+      paragraphs: [
+        "Plants exchange gases through surfaces such as stomata, lenticels and roots, but they do not use specialised respiratory organs in the way mammals use lungs. Respiration is a cellular process that releases usable energy from organic substrates, and it occurs in living plant cells in both light and dark conditions.",
+        "Keep it separate from photosynthesis. Photosynthesis stores light-derived energy in organic molecules; respiration releases energy from those molecules through enzyme-controlled pathways. The processes are connected in a plant, but neither is simply the reverse label of the other.",
+      ],
+    },
+    {
+      heading: "Glycolysis is the shared starting route",
+      paragraphs: [
+        "Glycolysis occurs in the cytoplasm and converts glucose to pyruvate. It is the common starting stage before pyruvate follows an aerobic route when oxygen is available or an anaerobic route under limited oxygen conditions.",
+        "Write glucose -> glycolysis -> pyruvate first, then branch the diagram. This prevents the error of placing the whole pathway inside mitochondria or treating fermentation as a step after complete aerobic oxidation.",
+      ],
+    },
+    {
+      heading: "Aerobic and anaerobic routes answer different conditions",
+      paragraphs: [
+        "With adequate oxygen, pyruvate enters mitochondria for later stages of aerobic respiration. Oxygen acts as the terminal electron acceptor in electron transport, and the route extracts more energy from glucose than fermentation does.",
+        "Under anaerobic conditions, pyruvate can be converted through fermentation. In plant tissues and yeast, alcoholic fermentation produces ethanol and carbon dioxide. The useful comparison is incomplete breakdown with much less energy capture, not a memorised ATP total detached from the pathway.",
+      ],
+    },
+    {
+      heading: "Respiratory quotient is a ratio with a context",
+      paragraphs: [
+        "The respiratory quotient compares carbon dioxide released with oxygen consumed. Carbohydrate respiration commonly gives an RQ close to one, whereas fats tend to give a value below one because they require relatively more oxygen.",
+        "An RQ is an observation about gas exchange, not a substitute for the pathway. Glycolysis, later aerobic stages and electron transport explain how a substrate is being processed.",
+      ],
+    },
+    {
+      heading: "A 15-minute recall routine",
+      paragraphs: [
+        "Make a three-part pathway: glucose in the cytoplasm, pyruvate as the branch point, and an aerobic or fermentation destination. Add the location and whether oxygen is required beside every arrow.",
+        "Explain why a green leaf can photosynthesise in light and still respire. If the explanation contains both energy storage and energy release, the distinction is secure.",
+      ],
+    },
+  ],
+  "digestion-and-absorption": [
+    {
+      heading: "Use one food route before learning enzymes",
+      paragraphs: [
+        "The alimentary canal is easiest to revise as a route: mouth, pharynx, oesophagus, stomach, small intestine, large intestine, rectum and anus. Accessory glands add secretions, but food does not pass through the liver or pancreas. That distinction removes a common diagram error.",
+        "Mechanical handling and chemical digestion work together. Chewing increases surface area, muscular movements mix and move food, and enzymes help convert large food molecules into forms that can be absorbed. Digestion and absorption are not interchangeable words.",
+      ],
+    },
+    {
+      heading: "Match each nutrient to an absorbable outcome",
+      paragraphs: [
+        "Carbohydrate digestion produces simple sugars, proteins are broken into amino acids, and fats are handled as fatty acids and glycerol-related products before uptake. The names matter because an option may give a correct enzyme but pair it with the wrong substrate or product.",
+        "Bile is a classic check. It helps emulsify fats, increasing the surface available for enzyme action, but it is not itself a digestive enzyme. A statement can be partly correct about fat digestion and still fail at that distinction.",
+      ],
+    },
+    {
+      heading: "The small intestine is built for absorption",
+      paragraphs: [
+        "Most absorption occurs in the small intestine. Its length, folds, villi and microscopic surface features increase contact area, while blood vessels and lacteals support transport away from the intestinal lining. Structure and function should be learnt together here.",
+        "Many water-soluble nutrients enter blood capillaries after absorption. Lipid products follow a different early route through lacteals before reaching the wider circulation. This is a transport distinction, not a claim that every nutrient follows one identical path.",
+      ],
+    },
+    {
+      heading: "Secretion and control: keep the job with the organ",
+      paragraphs: [
+        "The stomach provides an acidic environment and receives gastric secretions; the liver produces bile; the pancreas contributes digestive secretions to the small intestine. The small intestine is where digestion is completed for many nutrients and where absorption is especially important.",
+        "When revising a gland, say its product, destination and immediate role. This prevents the shortcut that every digestive secretion comes from the stomach, or that the liver is part of the food passage because it produces bile.",
+      ],
+    },
+    {
+      heading: "A 15-minute recall routine",
+      paragraphs: [
+        "Draw the food route as a single line and add liver and pancreas as side branches only. Under the small intestine, write three pairs: carbohydrate to simple sugars, protein to amino acids, and lipids to absorbable products. Then mark blood capillary and lacteal as separate exit routes.",
+        "Finish with three corrections: bile is not an enzyme, the liver is an accessory organ rather than a food passage, and absorption is not the same event as digestion.",
+      ],
+    },
+  ],
+  "blood-and-circulation": [
+    {
+      heading: "Start with the two loops of double circulation",
+      paragraphs: [
+        "Human double circulation is best recalled as two connected loops. In pulmonary circulation, blood travels from the right side of the heart to the lungs and returns to the left side. In systemic circulation, blood leaves the left side for body tissues and returns to the right side.",
+        "An artery carries blood away from the heart, while a vein carries blood toward it. Oxygen content is often associated with the vessels but does not define them; pulmonary vessels are the useful exception that tests the rule.",
+      ],
+    },
+    {
+      heading: "Blood has a fluid part and formed elements",
+      paragraphs: [
+        "Plasma is the fluid component that carries dissolved substances. Red blood cells are closely linked with oxygen transport through haemoglobin, white blood cells participate in defence, and platelets support clotting. Learn the function beside the component rather than treating every cell in blood as a transport cell.",
+        "Clotting is a protective sequence. At NEET level, platelets and clotting factors participate in forming a clot that helps limit blood loss after vessel damage.",
+      ],
+    },
+    {
+      heading: "Follow blood through the chambers and valves",
+      paragraphs: [
+        "A chamber route is more reliable than a labelled heart picture: venae cavae -> right atrium -> right ventricle -> pulmonary artery -> lungs -> pulmonary veins -> left atrium -> left ventricle -> aorta -> body tissues. Valves support one-way flow by preventing backward movement when pressure changes.",
+        "Do not confuse the chamber with the vessel that follows it. The right ventricle sends blood toward the lungs, while the left ventricle supplies systemic circulation. That division follows the two-loop map.",
+      ],
+    },
+    {
+      heading: "Capillaries connect transport with exchange",
+      paragraphs: [
+        "Arteries branch into smaller vessels and capillary networks, where exchange with tissues can occur across thin walls. Veins collect blood for the return journey. This connects large-scale circulation with the local exchange of gases, nutrients and wastes described in neighbouring chapters.",
+        "For blood groups, retain that red-cell surface antigens and plasma antibodies must be considered together in transfusion compatibility. Do not reduce the topic to a single letter without checking the antigen-antibody relationship in the question.",
+      ],
+    },
+    {
+      heading: "A 15-minute recall routine",
+      paragraphs: [
+        "Draw two loops around a four-chamber heart, using words rather than colour alone: pulmonary to lungs and systemic to body. On a second line, list plasma, red blood cell, white blood cell and platelet with one function each. Then redraw the chamber route from memory.",
+        "Explain why a pulmonary artery can carry deoxygenated blood without ceasing to be an artery. If the answer is direction away from the heart, the definition is secure.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -439,6 +592,22 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "photosynthesis-in-higher-plants": [
+    { label: "NCERT Class 11 Biology, Chapter 11: Photosynthesis in Higher Plants", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
+    { label: "OpenStax Biology 2e: Overview of photosynthesis", href: "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis" },
+  ],
+  "plant-respiration": [
+    { label: "NCERT Class 11 Biology, Chapter 12: Respiration in Plants", href: "https://ncert.nic.in/textbook/pdf/kebo112.pdf" },
+    { label: "OpenStax Biology 2e: Glycolysis", href: "https://openstax.org/books/biology-2e/pages/7-2-glycolysis" },
+  ],
+  "digestion-and-absorption": [
+    { label: "NCERT Class 11 Biology, Chapter 16: Digestion and Absorption", href: "https://ncert.nic.in/textbook/pdf/kebo116.pdf" },
+    { label: "OpenStax Anatomy and Physiology: Digestive system processes", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-2-digestive-system-processes-and-regulation" },
+  ],
+  "blood-and-circulation": [
+    { label: "NCERT Class 11 Biology, Chapter 18: Body Fluids and Circulation", href: "https://ncert.nic.in/textbook/pdf/kebo118.pdf" },
+    { label: "OpenStax Anatomy and Physiology: Blood flow and blood pressure", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance" },
+  ],
   "human-respiration": [
     { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
     { label: "Khan Academy: The respiratory system", href: "https://www.khanacademy.org/science/health-and-medicine/respiratory-system" },
@@ -483,6 +652,30 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "photosynthesis-in-higher-plants": {
+    heading: "Photosynthesis: location and output check",
+    intro: "Use the compartment first. It is the quickest way to reject a true fact placed in the wrong part of the chloroplast.",
+    columns: ["Process", "Main location", "What it provides", "Common mix-up"],
+    rows: [["Light reactions", "Thylakoid membranes", "ATP, NADPH and released oxygen", "Placed in the stroma"], ["Calvin cycle", "Stroma", "Carbon fixation and carbohydrate formation", "Called a darkness-only process"], ["C3 pathway", "Mesophyll cells", "Initial carbon fixation and Calvin cycle", "Confused with the C4 location split"], ["C4 pathway", "Mesophyll then bundle-sheath cells", "Initial four-carbon fixation then Calvin cycle", "Said to remove all photorespiration"]],
+  },
+  "plant-respiration": {
+    heading: "Respiration route: locate the stage before naming it",
+    intro: "The most reliable distinction is glucose to pyruvate first, followed by a branch that depends on oxygen availability.",
+    columns: ["Stage", "Location", "Main outcome", "Common mix-up"],
+    rows: [["Glycolysis", "Cytoplasm", "Glucose to pyruvate", "Placed entirely in mitochondria"], ["Aerobic route", "Mitochondria after glycolysis", "More complete oxidation and greater energy capture", "Treated as fermentation"], ["Alcoholic fermentation", "Cytoplasm", "Ethanol and carbon dioxide from pyruvate", "Called complete oxidation"], ["Respiratory quotient", "Gas-exchange measurement", "CO2 released divided by O2 consumed", "Used as the pathway itself"]],
+  },
+  "digestion-and-absorption": {
+    heading: "Digestion and absorption: keep the action separate",
+    intro: "A nutrient can be chemically digested without yet being absorbed. This table keeps the route and outcome visible.",
+    columns: ["Material or stage", "Main action", "Result", "Common mix-up"],
+    rows: [["Carbohydrate", "Enzymatic digestion", "Simple sugars", "Named as amino acids"], ["Protein", "Enzymatic digestion", "Amino acids", "Said to enter a lacteal as the main route"], ["Fat and bile", "Emulsification then enzyme action", "Absorbable lipid products", "Bile called an enzyme"], ["Small intestine", "Absorption across villi", "Nutrients enter blood or lacteal routes", "Confused with the stomach"]],
+  },
+  "blood-and-circulation": {
+    heading: "Circulation: follow the direction, then the oxygen state",
+    intro: "Vessel names are defined by their direction relative to the heart. Add oxygen content only after that first check.",
+    columns: ["Part", "Direction or role", "High-yield fact", "Common mix-up"],
+    rows: [["Artery", "Away from the heart", "Pulmonary artery carries deoxygenated blood", "Defined as always oxygenated"], ["Vein", "Toward the heart", "Pulmonary veins carry oxygenated blood", "Defined as always deoxygenated"], ["Right ventricle", "To pulmonary artery and lungs", "Begins the pulmonary outflow", "Paired with the aorta"], ["Left ventricle", "To aorta and body", "Begins systemic outflow", "Confused with right-side circulation"]],
+  },
   "dna-rna-replication-transcription-translation": {
     heading: "DNA, RNA, transcription and translation: keep the jobs separate",
     intro: "Most mistakes in this chapter come from choosing a correct word for the wrong job. Use this table before a recall check.",
@@ -579,6 +772,22 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "photosynthesis-in-higher-plants": {
+    heading: "The PSII-before-PSI trap",
+    paragraphs: ["The numbering is the trap. Photosystem II acts first in non-cyclic flow even though II looks as though it should come after I. Write the route once and the question loses its shortcut.", "A second check is to ask where oxygen comes from. In this chapter it is linked with water splitting, not with carbon dioxide entering the leaf."],
+  },
+  "plant-respiration": {
+    heading: "Do not let a green leaf hide respiration",
+    paragraphs: ["A leaf in daylight can photosynthesise and respire at the same time. One process stores energy in organic molecules; the other releases usable energy from them.", "When an option says respiration happens only in darkness, return to the word cellular. Living cells need energy in light as well as dark."],
+  },
+  "digestion-and-absorption": {
+    heading: "The liver is beside the route, not on it",
+    paragraphs: ["Students often draw food moving through the liver because the liver is central to digestion. It is an accessory organ: it contributes bile, while food stays in the alimentary canal.", "That spatial picture also protects the bile distinction. Bile helps emulsify fats; it is not a digestive enzyme."],
+  },
+  "blood-and-circulation": {
+    heading: "Name the direction before the colour",
+    paragraphs: ["The shortcut 'artery means oxygenated' fails as soon as pulmonary circulation appears. An artery takes blood away from the heart; a vein returns it.", "Once the direction is secure, oxygenation becomes a second fact to add, not the definition that can mislead the whole route."],
+  },
   "dna-rna-replication-transcription-translation": {
     heading: "The recipe-book shortcut",
     paragraphs: [

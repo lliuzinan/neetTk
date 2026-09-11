@@ -38,6 +38,10 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.doesNotMatch(sitemapXml, /\/q\//);
   assert.doesNotMatch(sitemapXml, /\/practice/);
   assert.match(sitemapXml, /human-respiration/);
+  assert.match(sitemapXml, /photosynthesis-in-higher-plants/);
+  assert.match(sitemapXml, /plant-respiration/);
+  assert.match(sitemapXml, /digestion-and-absorption/);
+  assert.match(sitemapXml, /blood-and-circulation/);
   assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
   assert.doesNotMatch(sitemapXml, /recombinant-dna-technology/);
 });
@@ -105,4 +109,26 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(termsHtml, /Educational Use/);
   assert.match(authorHtml, /Role at MedQGo/);
   assert.match(authorHtml, /does not invent degrees, institutional affiliations, endorsements, or student testimonials/);
+});
+
+test("publishes four complete NCERT-aligned revision guides", async () => {
+  const [photosynthesisHtml, plantRespirationHtml, digestionHtml, circulationHtml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/photosynthesis-in-higher-plants.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/plant-respiration.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/digestion-and-absorption.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/blood-and-circulation.html", import.meta.url), "utf8"),
+  ]);
+  assert.match(photosynthesisHtml, /Photosystems: keep the numbering and sequence apart/);
+  assert.match(photosynthesisHtml, /kebo111\.pdf/);
+  assert.match(plantRespirationHtml, /Glycolysis is the shared starting route/);
+  assert.match(plantRespirationHtml, /kebo112\.pdf/);
+  assert.match(digestionHtml, /The small intestine is built for absorption/);
+  assert.match(digestionHtml, /kebo116\.pdf/);
+  assert.match(circulationHtml, /Start with the two loops of double circulation/);
+  assert.match(circulationHtml, /kebo118\.pdf/);
+  for (const html of [photosynthesisHtml, plantRespirationHtml, digestionHtml, circulationHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /A 15-minute recall routine/);
+  }
 });
