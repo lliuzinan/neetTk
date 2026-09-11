@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/InfoPage";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "MedQGo privacy policy covering analytics, waitlist submissions, email, optional WhatsApp numbers, and data use.",
+  description: "MedQGo privacy policy covering analytics, revision-workbook waitlist emails, and data use.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -18,21 +18,21 @@ export default function PrivacyPage() {
           title: "Information We Collect",
           body: [
             "When you browse MedQGo, we may collect basic analytics information such as page views, device category, country or region, referring pages, and engagement events through Google Analytics 4.",
-            "When you join the PDF or waitlist form, we collect the email address you submit, optional name, optional WhatsApp number, source page, referrer, and browser user agent. This is used to manage early access and understand which pages produce student interest.",
+            "When you join the revision-workbook early-access form, we collect the email address you submit, the source page, referrer, and browser user agent. This is used to manage early access and understand which pages produce student interest.",
           ],
         },
         {
           title: "How We Use Information",
           body: [
             "Analytics data helps us improve NEET Biology revision pages, prioritize topics, fix technical issues, and understand whether students are finding useful study material.",
-            "Waitlist information is used to send or prepare access to the NEET Biology revision workbook, future independent study resources, and related product updates. We do not sell your submitted contact information.",
+            "Waitlist information is used to send or prepare access to the NEET Biology revision workbook. We do not sell your submitted contact information or request a phone number through this form.",
           ],
         },
         {
           title: "Third-Party Services",
           body: [
             "MedQGo uses Google Analytics 4 for traffic measurement, Google AdSense for advertising where enabled, and Supabase for storing waitlist submissions. These services may process data according to their own privacy and security policies.",
-            "You can use browser controls, ad blockers, or privacy settings to limit some analytics collection. If you want a waitlist record removed, contact us with the email address used in the form.",
+            "If you want a waitlist record removed, contact us with the email address used in the form. You can also use browser controls or privacy settings to limit some analytics collection where those controls are available.",
           ],
         },
         {
@@ -45,8 +45,8 @@ export default function PrivacyPage() {
         {
           title: "Cookie Consent",
           body: [
-            "MedQGo shows a cookie notice to visitors so they can acknowledge the use of essential, analytics, and advertising cookies where applicable.",
-            "You can clear local browser storage or adjust browser cookie settings if you want to reset your consent choice on this device.",
+            "Where consent is required for advertising or analytics cookies, MedQGo uses the consent message and controls supplied through its advertising provider. Your choices are presented before the applicable consent-dependent processing takes place.",
+            "You can also use browser controls or privacy settings to manage cookies and local storage on your device.",
           ],
         },
       ]}

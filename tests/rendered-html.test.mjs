@@ -46,7 +46,9 @@ test("renders the revision workbook early-access page without a question downloa
   const pdfHtml = await readFile(new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url), "utf8");
   assert.match(pdfHtml, /NEET Biology revision workbook/);
   assert.match(pdfHtml, /Join early access/);
-  assert.match(pdfHtml, /WhatsApp number/);
+  assert.match(pdfHtml, /I agree to the processing of my email for revision-workbook early access/);
+  assert.match(pdfHtml, /Privacy Policy/);
+  assert.doesNotMatch(pdfHtml, /WhatsApp number/);
   assert.doesNotMatch(pdfHtml, /30 original, reviewed/);
   assert.doesNotMatch(pdfHtml, /Download free PDF sample/);
 });

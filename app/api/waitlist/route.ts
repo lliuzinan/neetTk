@@ -26,11 +26,14 @@ export async function POST(request: Request) {
   if (!validEmail(email)) {
     return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 });
   }
+  if (body.legalConsent !== true) {
+    return NextResponse.json({ error: "Please agree to the Privacy Policy and Terms of Use." }, { status: 400 });
+  }
 
   const row = {
     email,
-    name: clean(body.name, 120) || null,
-    whatsapp: clean(body.whatsapp, 40) || null,
+    name: null,
+    whatsapp: null,
     offer: "neet_biology_pdf",
     source: clean(body.source, 80) || "pdf_landing",
     topic_slug: clean(body.topicSlug, 160) || null,

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
-import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAdSense } from "@/components/GoogleAdSense";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { absoluteUrl, siteConfig } from "@/lib/content";
@@ -79,7 +78,6 @@ export default function RootLayout({
         <GoogleAnalytics />
         {children}
         <Footer />
-        <CookieConsent />
       </body>
     </html>
   );

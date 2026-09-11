@@ -465,6 +465,30 @@ h3 {
   padding: 12px 14px;
 }
 
+.waitlistForm label:has(input[type="checkbox"]) {
+  align-items: start;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.waitlistForm input[type="checkbox"] {
+  accent-color: var(--brand);
+  flex: 0 0 auto;
+  height: 18px;
+  margin: 2px 0 0;
+  padding: 0;
+  width: 18px;
+}
+
+.waitlistForm label a {
+  color: var(--brand);
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .waitlistForm button {
   background: var(--brand);
   border: 0;
@@ -841,50 +865,6 @@ h3 {
   line-height: 1.4;
 }
 
-.cookieConsent {
-  align-items: center;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  bottom: 18px;
-  box-shadow: 0 18px 50px rgba(16, 37, 28, 0.18);
-  display: flex;
-  gap: 18px;
-  left: 50%;
-  max-width: min(920px, calc(100vw - 32px));
-  padding: 16px;
-  position: fixed;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 50;
-}
-
-.cookieConsent p {
-  color: var(--muted);
-  line-height: 1.55;
-  margin: 6px 0 0;
-}
-
-.cookieConsent a {
-  color: var(--brand);
-  font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.cookieConsent button {
-  background: var(--brand);
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  flex: 0 0 auto;
-  font: inherit;
-  font-weight: 850;
-  min-height: 44px;
-  padding: 12px 18px;
-}
-
 .siteFooter {
   background: #10251c;
   color: #fff;
@@ -978,11 +958,6 @@ h3 {
   }
 
   .pdfCta {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .cookieConsent {
     align-items: stretch;
     flex-direction: column;
   }

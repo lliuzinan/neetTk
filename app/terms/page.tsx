@@ -32,7 +32,7 @@ export default function TermsPage() {
           title: "Acceptable Use",
           body: [
             "You may use MedQGo for personal study. Do not scrape the site at scale, republish the revision library as your own, interfere with site operation, or misuse the waitlist form.",
-            "By using the site or submitting a waitlist form, you agree to these terms, the Privacy Policy, Editorial Policy, and Copyright page.",
+            "Submitting the waitlist form requires your agreement to the stated early-access email processing, these Terms of Use, and the Privacy Policy. You may ask us to remove a waitlist record using the contact details on the Contact page.",
           ],
         },
       ]}

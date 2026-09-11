@@ -23,9 +23,8 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
 
     const form = new FormData(formElement);
     const payload = {
-      name: String(form.get("name") || ""),
       email: String(form.get("email") || ""),
-      whatsapp: String(form.get("whatsapp") || ""),
+      legalConsent: form.get("legalConsent") === "on",
       source,
       topicSlug,
       questionId,
@@ -59,16 +58,12 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
   return (
     <form className="waitlistForm" onSubmit={onSubmit}>
       <label>
-        Name
-        <input name="name" type="text" autoComplete="name" placeholder="Your name" maxLength={120} />
-      </label>
-      <label>
         Email
         <input name="email" type="email" autoComplete="email" placeholder="you@example.com" required maxLength={180} />
       </label>
       <label>
-        WhatsApp number
-        <input name="whatsapp" type="tel" autoComplete="tel" placeholder="+91..." maxLength={40} />
+        <input name="legalConsent" type="checkbox" required />
+        <span>I agree to the processing of my email for revision-workbook early access, as described in the <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Use</a>.</span>
       </label>
       <button type="submit" disabled={state === "submitting"}>
         {state === "submitting" ? "Joining..." : "Join early access"}
