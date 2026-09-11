@@ -1,166 +1,52 @@
 export type TopicSeoContent = {
   focus: string[];
   traps: string[];
-  practicePlan: string;
-  faqs: Array<{ question: string; answer: string }>;
 };
 
 const defaultContent: TopicSeoContent = {
   focus: [
-    "Revise the NCERT definitions first, then explain each concept aloud without looking at the text.",
-    "Mark examples and exceptions because NEET Biology questions often test exact wording.",
-    "Use a short recall check after revision so close concepts become easier to separate.",
+    "Start from the NCERT definition, then rebuild the relationship or process in your own words.",
+    "Keep examples and exceptions beside the main idea so similar concepts do not collapse into one list.",
+    "Finish with a short recall check rather than another passive reread.",
   ],
   traps: [
-    "Do not rely on memorized keywords without checking the full statement.",
-    "Separate NCERT-level facts from advanced details that are not needed for NEET-UG.",
-  ],
-  practicePlan:
-    "Start by mapping the topic from memory, compare it with the NCERT paragraph, then repeat the recall routine after correcting the gaps.",
-  faqs: [
-    {
-      question: "Are these questions useful for NEET-UG Biology revision?",
-      answer:
-        "Yes. The published MCQs are mapped to NEET-UG Biology topics and include visible answers with concise explanations for revision.",
-    },
-    {
-      question: "Should I read NCERT before solving these MCQs?",
-      answer:
-        "Yes. Read the NCERT section first, then use the MCQs to test recall, process order, examples, and common distractors.",
-    },
+    "A familiar keyword is not enough; check the full relationship before accepting a statement.",
+    "Keep NCERT-level facts separate from advanced detail that does not help the stated revision goal.",
   ],
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
   "cell-theory-and-cell-organelles": {
-    focus: [
-      "Cell theory, cell structure, and differences between prokaryotic and eukaryotic cells.",
-      "Ribosomes, nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, lysosomes, and other organelles.",
-      "Organelle functions such as protein synthesis, packaging, respiration, storage, and genetic control.",
-    ],
-    traps: [
-      "Confusing ribosomes with the nucleus for protein synthesis.",
-      "Mixing up mitochondria, chloroplasts, and nucleus when questions ask where DNA is present.",
-      "Treating advanced organelle-processing details as NEET-UG facts unless they are directly NCERT aligned.",
-    ],
-    practicePlan:
-      "Revise NCERT cell structure tables first, then solve organelle-function MCQs in short sets of 10. Revisit every wrong option and attach it to the correct organelle.",
-    faqs: [
-      {
-        question: "Which cell organelles are most important for NEET Biology?",
-        answer:
-          "Ribosomes, nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, lysosomes, chloroplasts, and cell membrane are high-yield for NEET-UG Biology.",
-      },
-      {
-        question: "How should I practice cell organelle MCQs?",
-        answer:
-          "Make a one-line function map for each organelle, then solve MCQs that test location, structure, and function differences.",
-      },
-    ],
+    focus: ["Cell theory and the structural difference between prokaryotic and eukaryotic cells.", "How ribosomes, nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, lysosomes, and chloroplasts contribute different functions.", "A structure-to-function map instead of an isolated list of organelle names."],
+    traps: ["Protein synthesis begins at ribosomes; later processing and packaging are different jobs.", "Mitochondria, chloroplasts, and nucleus can all be linked with genetic material in different contexts, so identify the structure being described.", "Do not turn advanced organelle-processing detail into a claimed NCERT fact without checking the source chapter."],
   },
   "dna-rna-replication-transcription-translation": {
-    focus: [
-      "DNA replication, transcription, translation, genetic code, codons, and anticodons.",
-      "Central dogma flow from DNA to RNA to protein.",
-      "Basic gene expression regulation at NCERT level.",
-    ],
-    traps: [
-      "Confusing transcription with translation.",
-      "Forgetting that eukaryotic transcription mainly occurs in the nucleus.",
-      "Mixing codon, anticodon, and amino acid relationships.",
-    ],
-    practicePlan:
-      "Draw the central dogma flow once, revise codon and anticodon terms, then solve MCQs that ask process location, sequence, and molecular role.",
-    faqs: [
-      {
-        question: "Is molecular basis of inheritance important for NEET?",
-        answer:
-          "Yes. DNA, RNA, replication, transcription, translation, and genetic code are recurring NEET Biology areas from NCERT Class 12.",
-      },
-      {
-        question: "What is the best way to revise transcription and translation?",
-        answer:
-          "Revise the sequence, location, template, product, and enzyme or machinery involved in each process, then practice statement-based MCQs.",
-      },
-    ],
+    focus: ["The information route from DNA to RNA to protein, with replication kept separate from expression.", "The input, output, location, and main machinery of replication, transcription, and translation.", "How codons, anticodons, and amino acids relate without being the same thing."],
+    traps: ["Transcription makes RNA from a DNA template; translation makes a polypeptide from mRNA information.", "A codon is an information unit in mRNA, not an amino acid itself.", "Replication produces DNA from DNA and is not another name for transcription."],
+  },
+  "mutation-and-gene-expression": {
+    focus: ["The difference between changing DNA information and regulating when information is used.", "How substitution, insertion, and deletion can have different consequences.", "The route from DNA change to RNA and protein consequence."],
+    traps: ["A mutation is not automatically harmful or automatically visible in phenotype.", "An insertion or deletion can alter later codon grouping; a substitution does not necessarily do so.", "Gene regulation is not the same as a change in DNA sequence."],
+  },
+  "immunity-pathogens-vaccines": {
+    focus: ["The order from physical barriers to innate responses to antigen-specific acquired immunity.", "The difference between antigens, antibodies, B lymphocytes, and T lymphocytes.", "Why active and passive immunity produce different timing and memory patterns."],
+    traps: ["Fast does not automatically mean antigen-specific; innate immunity is fast and broadly protective.", "A pathogen, disease symptom, vector, reservoir, and transmission route are different categories.", "Passive immunity provides ready-made antibodies but does not create the same lasting memory as active immunity."],
   },
   "endocrine-system-and-hormones": {
-    focus: [
-      "Major endocrine glands and the hormones they secrete.",
-      "Hormone functions, feedback control, and target organs.",
-      "Common NCERT examples such as thyroid, pituitary, adrenal, pancreatic, and gonadal hormones.",
-    ],
-    traps: [
-      "Posterior pituitary stores and releases ADH and oxytocin, but the hypothalamus synthesises them. Anterior pituitary produces its own hormones, including GH, TSH, ACTH, FSH, LH and prolactin.",
-      "Peptide hormones such as insulin and ADH are water-soluble and act through cell-surface receptors. Steroid hormones are lipid-soluble and can act through intracellular receptors.",
-      "Growth hormone, thyroxine and insulin can all appear in growth-related statements. Check whether the wording asks about skeletal growth, basal metabolic activity, or nutrient uptake before choosing.",
-    ],
-    practicePlan:
-      "Make a gland-hormone-function table, revise it twice, then solve MCQs by identifying whether the question asks source, function, or regulation.",
-    faqs: [
-      {
-        question: "Which endocrine topics are high-yield for NEET Biology?",
-        answer:
-          "Pituitary, thyroid, adrenal, pancreas, reproductive hormones, feedback control, and hormone functions are high-yield NEET Biology areas.",
-      },
-      {
-        question: "How can I avoid mistakes in hormone questions?",
-        answer:
-          "Always identify three things: the gland, the hormone, and the target effect. Most wrong options swap one of these.",
-      },
-    ],
+    focus: ["Major endocrine sources, their signals, target tissues, and physiological effects.", "Feedback control and the direction of a regulatory loop.", "The difference between endocrine circulation, receptor response, and duct-based exocrine secretion."],
+    traps: ["The posterior pituitary releases ADH and oxytocin; the hypothalamus synthesises them.", "Peptide hormones such as insulin and ADH act through cell-surface receptors, whereas steroid hormones can act through intracellular receptors.", "Growth hormone, thyroxine, and insulin should be separated by the specific effect named in the statement."],
   },
-  "plant-respiration": {
-    focus: [
-      "Glycolysis, Krebs cycle, electron transport chain, and ATP formation.",
-      "Aerobic and anaerobic respiration differences.",
-      "Respiratory quotient and basic NCERT pathway sequence.",
-    ],
-    traps: [
-      "Mixing the site of glycolysis with mitochondrial reactions.",
-      "Confusing respiration with photosynthesis terminology.",
-      "Memorizing ATP numbers without understanding the process order.",
-    ],
-    practicePlan:
-      "Revise the pathway sequence and reaction sites, then solve MCQs that ask where each step occurs and what product is formed.",
-    faqs: [
-      {
-        question: "Is respiration in plants important for NEET?",
-        answer:
-          "Yes. NEET often tests pathway order, reaction site, ATP production, and differences between aerobic and anaerobic respiration.",
-      },
-      {
-        question: "What should I memorize in plant respiration?",
-        answer:
-          "Memorize the major pathway sequence, cellular location of each step, key products, and NCERT-level definitions.",
-      },
-    ],
+  "neuron-nerve-impulse-synapse": {
+    focus: ["The direction of information flow through a neuron, synapse, and reflex arc.", "The sequence from resting state through depolarisation and recovery.", "Why myelin changes conduction speed without being the source of an impulse."],
+    traps: ["Dendrites mainly receive signals; axons carry impulses away from the cell body.", "A chemical synapse is a directional signalling junction, not a direct electrical wire.", "A receptor detects a stimulus; an effector produces the response."],
   },
-  "pedigree-analysis-and-inheritance-patterns": {
-    focus: [
-      "Mendelian inheritance, autosomal and sex-linked patterns, and pedigree symbols.",
-      "Dominant and recessive trait identification across generations.",
-      "Basic genetic disease examples used to understand inheritance patterns.",
-    ],
-    traps: [
-      "Assuming a trait is dominant just because it appears often.",
-      "Missing carrier logic in recessive inheritance.",
-      "Confusing autosomal inheritance with sex-linked inheritance.",
-    ],
-    practicePlan:
-      "Start by identifying affected and unaffected individuals, then check whether the trait skips generations and whether males or females are affected differently.",
-    faqs: [
-      {
-        question: "How do I solve pedigree questions for NEET?",
-        answer:
-          "First decide whether the trait is dominant or recessive, then check if the pattern is autosomal or sex-linked using generation and gender clues.",
-      },
-      {
-        question: "Are pedigree questions common in NEET Biology?",
-        answer:
-          "Pedigree analysis is a useful practice area because it tests inheritance logic, not just memorization.",
-      },
-    ],
+  "human-respiration": {
+    focus: ["The sequence from ventilation to alveolar exchange, blood transport, and tissue exchange.", "The partial-pressure gradients that set the direction of oxygen and carbon dioxide diffusion.", "The different major transport forms of oxygen and carbon dioxide in blood."],
+    traps: ["Ventilation moves air; gas exchange moves gases across a respiratory membrane.", "At rest, inspiration requires muscle activity while quiet expiration is largely elastic recoil.", "Oxygen is mainly haemoglobin-bound, whereas carbon dioxide is mainly transported as bicarbonate."],
+  },
+  "excretion-and-kidney-function": {
+    focus: ["The nephron flow from glomerular filtration through selective reabsorption, secretion, and urine concentration.", "The direction of movement between blood, filtrate, and the outside of the body.", "How water balance and waste removal overlap without being the same process."],
+    traps: ["Filtration is blood to Bowman's capsule; reabsorption returns substances from tubule to blood.", "The urinary bladder stores urine; kidneys form it.", "ADH supports water conservation in the distal nephron and collecting ducts; it does not create the initial filtrate."],
   },
 };
 

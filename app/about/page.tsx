@@ -31,7 +31,7 @@ export default function AboutPage() {
         {
           title: "Contact",
           body: [
-            "For corrections, feedback, or collaboration, use the contact page. We welcome reports about unclear wording, answer issues, or topic coverage gaps.",
+            "For corrections, feedback, or collaboration, use the contact page. We welcome reports about unclear wording, factual issues, source gaps, or topic coverage gaps.",
           ],
         },
       ]}

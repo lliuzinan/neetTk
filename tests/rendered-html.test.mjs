@@ -7,6 +7,8 @@ test("keeps legacy GSC routes pointed at a live revision hub", async () => {
   const redirects = await nextConfig.redirects();
   assert.equal(redirects.find((redirect) => redirect.source === "/mock-test")?.destination, "/neet-ug/biology");
   assert.equal(redirects.find((redirect) => redirect.source === "/daily-mcq")?.destination, "/neet-ug/biology");
+  assert.equal(redirects.find((redirect) => redirect.source === "/neet-ug/biology/:topicSlug/q/:questionId")?.destination, "/neet-ug/biology/:topicSlug");
+  assert.equal(redirects.find((redirect) => redirect.source === "/neet-ug/biology/practice/:topicSlug")?.destination, "/neet-ug/biology/:topicSlug");
 });
 
 test("renders the independent revision home and topic library", async () => {
@@ -50,9 +52,16 @@ test("renders the revision workbook early-access page without a question downloa
 });
 
 test("renders in-depth topic guides and the trust pages", async () => {
-  const [topicHtml, endocrineHtml, aboutHtml, privacyHtml, termsHtml, authorHtml] = await Promise.all([
+  const [topicHtml, endocrineHtml, respirationHtml, excretionHtml, immunityHtml, neuronHtml, dnaHtml, cellHtml, mutationHtml, aboutHtml, privacyHtml, termsHtml, authorHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology/endocrine-system-and-hormones.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/excretion-and-kidney-function.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/immunity-pathogens-vaccines.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/neuron-nerve-impulse-synapse.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/dna-rna-replication-transcription-translation.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/cell-theory-and-cell-organelles.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/mutation-and-gene-expression.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
@@ -61,7 +70,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
   assert.match(topicHtml, /Published: .*August 5, 2026/);
-  assert.match(topicHtml, /Last updated: .*August 21, 2026/);
+  assert.match(topicHtml, /Last updated: .*September 11, 2026/);
   assert.match(topicHtml, /Related revision guides/);
   assert.match(topicHtml, /Exam-style checkpoints/);
   assert.match(topicHtml, /Article/);
@@ -82,6 +91,13 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /University Biology Instructor/);
   assert.match(endocrineHtml, /2026-09-10/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
+  assert.match(respirationHtml, /human-respiration-gas-route-v1\.png/);
+  assert.match(excretionHtml, /excretion-nephron-arrows-v1\.png/);
+  assert.match(immunityHtml, /immunity-barrier-memory-v1\.png/);
+  assert.match(neuronHtml, /neuron-signal-direction-v1\.png/);
+  assert.match(dnaHtml, /dna-rna-information-flow-v1\.png/);
+  assert.match(cellHtml, /cell-organelles-protein-route-v1\.png/);
+  assert.match(mutationHtml, /mutation-expression-change-use-v2\.png/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(termsHtml, /Educational Use/);

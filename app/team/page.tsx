@@ -53,7 +53,7 @@ export default function TeamPage() {
 
         <section>
           <h2>How content is reviewed</h2>
-          <p>MedQGo checks revision resources for topic relevance, clarity, answer consistency, and alignment with the intended NEET-UG Biology learning objective. Readers can report a correction through the Contact page.</p>
+          <p>MedQGo checks revision resources for topic relevance, clarity, source treatment, and alignment with the intended NEET-UG Biology learning objective. Readers can report a correction through the Contact page.</p>
           <EditorialByline />
         </section>
       </article>

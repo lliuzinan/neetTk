@@ -13,6 +13,41 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "human-respiration": {
+    src: "/images/biology/human-respiration-gas-route-v1.png",
+    alt: "Four-stage route showing ventilation, alveolar gas exchange, blood transport, and tissue exchange",
+    caption: "An original route map: air enters alveoli, oxygen and carbon dioxide cross the respiratory surface in opposite directions, blood transports the gases, and exchange continues at tissues.",
+  },
+  "excretion-and-kidney-function": {
+    src: "/images/biology/excretion-nephron-arrows-v1.png",
+    alt: "Simplified nephron showing filtration, selective reabsorption, secretion, and urine flow directions",
+    caption: "An original nephron direction map. The key is not the shape alone: name the two spaces and follow each transport arrow.",
+  },
+  "immunity-pathogens-vaccines": {
+    src: "/images/biology/immunity-barrier-memory-v1.png",
+    alt: "Progression from physical barriers through innate and acquired immunity to vaccination-associated memory cells",
+    caption: "An original overview of the learning sequence from barriers to antigen-specific responses and immunological memory. It is a revision map, not a clinical treatment guide.",
+  },
+  "neuron-nerve-impulse-synapse": {
+    src: "/images/biology/neuron-signal-direction-v1.png",
+    alt: "Simplified direction of nerve impulse from dendrite through axon and synapse to the next cell",
+    caption: "An original simplified signal-direction map. It highlights the one-way route through a chemical synapse rather than every detail of action-potential initiation.",
+  },
+  "dna-rna-replication-transcription-translation": {
+    src: "/images/biology/dna-rna-information-flow-v1.png",
+    alt: "DNA replication branch and DNA to RNA to protein information flow through a ribosome",
+    caption: "An original information-flow map: replication makes DNA from DNA, while gene expression follows DNA to RNA to protein.",
+  },
+  "cell-theory-and-cell-organelles": {
+    src: "/images/biology/cell-organelles-protein-route-v1.png",
+    alt: "Simplified eukaryotic cell showing nucleus, ribosome, rough endoplasmic reticulum, Golgi apparatus, vesicle, mitochondrion, and lysosome",
+    caption: "An original structure-function map. Follow the protein-related route to separate synthesis, later handling, transport, energy release, and intracellular digestion.",
+  },
+  "mutation-and-gene-expression": {
+    src: "/images/biology/mutation-expression-change-use-v2.png",
+    alt: "Comparison showing a DNA sequence change as mutation and DNA to RNA to protein as gene expression",
+    caption: "An original comparison: mutation changes genetic information, while gene expression uses information through RNA to make a product. The outcome of a DNA change depends on context.",
+  },
   "endocrine-system-and-hormones": {
     src: "/images/biology/endocrine-blood-glucose-feedback-v1.png",
     alt: "Negative-feedback regulation of blood glucose through insulin and glucagon",
@@ -21,6 +56,36 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
 };
 
 const articleStudyNotes: Record<string, { heading: string; intro: string; points: string[] }> = {
+  "human-respiration": {
+    heading: "Gas movement: trace the route before naming a molecule",
+    intro: "Respiration becomes much clearer when each event is placed on the same route instead of treated as a loose fact.",
+    points: [
+      "Ventilation moves air between the atmosphere and alveoli; it is not itself diffusion across a membrane.",
+      "At the alveoli, oxygen moves into pulmonary blood while carbon dioxide moves into alveolar air along their partial-pressure gradients.",
+      "In systemic tissues, the direction reverses: oxygen leaves blood for tissues and carbon dioxide enters blood from tissues.",
+      "For transport, attach oxygen mainly to haemoglobin and carbon dioxide mainly to bicarbonate before adding smaller transport fractions.",
+    ],
+  },
+  "excretion-and-kidney-function": {
+    heading: "The nephron arrow test",
+    intro: "Most kidney mix-ups disappear when you name the two spaces first, then draw the direction of movement.",
+    points: [
+      "Filtration: blood in the glomerulus -> fluid in Bowman's capsule.",
+      "Reabsorption: tubular fluid -> nearby blood, returning useful substances and water.",
+      "Secretion: nearby blood -> tubular fluid, adding selected substances to the forming urine.",
+      "Excretion is the final removal of urine from the body; it is not a substitute word for every nephron step.",
+    ],
+  },
+  "immunity-pathogens-vaccines": {
+    heading: "Immunity: identify the kind of protection first",
+    intro: "Before matching a cell or molecule to a statement, decide whether the prompt is about a barrier, a rapid broad response, or an antigen-specific response with memory.",
+    points: [
+      "Physical barriers and innate responses are available without a previous encounter with one particular antigen.",
+      "Acquired immunity is antigen-specific and can form immunological memory.",
+      "Vaccination supports active acquired immunity because the body develops its own response after antigenic stimulation.",
+      "Ready-made antibodies give passive immunity: the protection can be immediate, but the receiver does not build the same long-term memory from it.",
+    ],
+  },
   "endocrine-system-and-hormones": {
     heading: "Feedback direction: use the arrow test",
     intro: "A hormone name can look familiar while the direction is wrong. Before accepting an option, say the full sequence aloud and check which change comes next.",
@@ -29,6 +94,46 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
       "Low blood glucose -> glucagon release -> liver mobilises stored glucose -> blood glucose rises toward its usual range.",
       "ADH and oxytocin are synthesised in the hypothalamus and stored and released from the posterior pituitary. A shared release site does not mean a shared function.",
       "Peptide hormones such as insulin act through cell-surface receptors, whereas steroid hormones can enter target cells and act through intracellular receptors.",
+    ],
+  },
+  "neuron-nerve-impulse-synapse": {
+    heading: "Signal direction: use one continuous route",
+    intro: "A diagram becomes easier to remember when every part answers one question: where did the signal come from, where does it go next, and what changes form at the synapse?",
+    points: [
+      "Dendrites receive inputs toward the cell body; the axon carries an impulse away from it.",
+      "Depolarisation and recovery are successive changes of membrane state, not two names for the same instant.",
+      "At a chemical synapse, the presynaptic side releases neurotransmitter and the postsynaptic side carries the corresponding receptors.",
+      "In a reflex arc, the receptor detects the stimulus and the effector carries out the response; neither role belongs to the other.",
+    ],
+  },
+  "dna-rna-replication-transcription-translation": {
+    heading: "The four-box information check",
+    intro: "Write four labels from memory: input, output, location, and purpose. If two processes share a word but differ in one of these boxes, they are not interchangeable.",
+    points: [
+      "Replication uses DNA as a template to make DNA before cell division.",
+      "Transcription uses a DNA template to make RNA; in eukaryotes it is mainly associated with the nucleus.",
+      "Translation reads mRNA information at ribosomes to assemble a polypeptide.",
+      "A codon is read on mRNA, while a tRNA anticodon pairs with it during translation.",
+    ],
+  },
+  "cell-theory-and-cell-organelles": {
+    heading: "Follow a protein instead of memorising a list",
+    intro: "A structure is easier to retain when it is placed in a route. Use a protein-related pathway to separate synthesis, processing, transport, and breakdown functions.",
+    points: [
+      "The nucleus holds genetic information that can be used to make RNA; ribosomes assemble polypeptides.",
+      "Rough endoplasmic reticulum and Golgi apparatus are associated with later handling of many proteins, but they do not replace ribosomes as the synthesis site.",
+      "Mitochondria support aerobic energy release; chloroplasts are associated with photosynthesis in plant cells.",
+      "A lysosome is linked with intracellular digestion, while a vacuole is primarily discussed as a storage compartment in this comparison.",
+    ],
+  },
+  "mutation-and-gene-expression": {
+    heading: "Separate a change in information from a change in use",
+    intro: "The shortest reliable distinction is this: mutation changes genetic information or its arrangement; gene regulation changes when, where, or how much information is used.",
+    points: [
+      "A substitution changes one base-pair position and may or may not change the resulting amino-acid sequence.",
+      "An insertion or deletion can alter downstream codon grouping when it changes the reading frame.",
+      "Gene expression follows the route from DNA information to RNA and, for protein-coding genes, to a polypeptide product.",
+      "A visible trait depends on context; a DNA change is not automatically a disease statement.",
     ],
   },
 };
