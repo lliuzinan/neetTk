@@ -16,9 +16,12 @@ test("renders the independent revision home and topic library", async () => {
     readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology.html", import.meta.url), "utf8"),
   ]);
-  assert.match(homeHtml, /Build a clearer NEET Biology revision routine/);
+  assert.match(homeHtml, /NEET Biology revision notes/);
   assert.match(homeHtml, /in-depth revision notes/);
   assert.match(homeHtml, /Join workbook early access/);
+  assert.match(homeHtml, /Start reading/);
+  assert.match(homeHtml, /Photosynthesis in higher plants/);
+  assert.match(homeHtml, /Digestion and absorption/);
   assert.doesNotMatch(homeHtml, /verified MCQs live/);
   assert.doesNotMatch(homeHtml, /Protein synthesis occurs in the/);
   assert.match(biologyHtml, /NEET Biology revision library/);

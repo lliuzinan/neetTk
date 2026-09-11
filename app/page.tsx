@@ -15,6 +15,10 @@ export default async function Home() {
   const [topicList, noteList] = await Promise.all([getTopics(), getSeoNotes()]);
   const notes = noteList.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
   const topics = topicList.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
+  const mobileQuickStartSlugs = ["photosynthesis-in-higher-plants", "digestion-and-absorption"];
+  const mobileQuickStartTopics = mobileQuickStartSlugs
+    .map((slug) => topics.find((topic) => topic.slug === slug))
+    .filter((topic): topic is (typeof topics)[number] => Boolean(topic));
   const homeJsonLd = [
     { "@context": "https://schema.org", "@type": "Organization", name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description },
     { "@context": "https://schema.org", "@type": "WebSite", name: "MedQGo", url: absoluteUrl("/"), inLanguage: "en-IN" },
@@ -37,11 +41,19 @@ export default async function Home() {
         <div className="heroGrid">
           <div>
             <p className="eyebrow">NEET-UG Biology | Independent study resource</p>
-            <h1>Build a clearer NEET Biology revision routine.</h1>
-            <p className="lede">MedQGo publishes focused Biology revision notes for Indian students. Use the concept maps, common-confusion checks, and short revision routines alongside your NCERT textbook and school learning.</p>
+            <h1>NEET Biology revision notes</h1>
+            <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Browse revision topics</Link>
               <Link href="/neet-biology-pdf" className="secondaryButton">Join workbook early access</Link>
+            </div>
+            <div className="mobileQuickStart" aria-label="Start reading a revision guide">
+              <p>Start reading</p>
+              <div>
+                {mobileQuickStartTopics.map((topic) => (
+                  <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id}>{topic.name}</Link>
+                ))}
+              </div>
             </div>
           </div>
           <div className="heroPanel" aria-label="Revision library status">

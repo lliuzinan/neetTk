@@ -141,6 +141,10 @@ h3 {
   margin-top: 32px;
 }
 
+.mobileQuickStart {
+  display: none;
+}
+
 .primaryButton,
 .secondaryButton {
   border-radius: 8px;
@@ -973,14 +977,15 @@ h3 {
 
 @media (max-width: 520px) {
   .hero {
-    padding: 18px clamp(14px, 5vw, 20px) 44px;
+    min-height: 0;
+    padding: 12px clamp(14px, 5vw, 20px) 24px;
   }
 
   .nav {
     align-items: flex-start;
     flex-direction: column;
-    gap: 14px;
-    margin-bottom: 36px;
+    gap: 4px;
+    margin-bottom: 22px;
   }
 
   .brand {
@@ -990,23 +995,27 @@ h3 {
   }
 
   .navLinks {
-    display: grid;
-    gap: 8px;
+    display: flex;
+    gap: 12px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     opacity: 1;
     width: 100%;
   }
 
   .navLinks a {
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 8px;
-    justify-content: center;
-    padding: 0 10px;
+    font-size: 0.85rem;
+    min-height: 36px;
+    padding: 0 2px;
+  }
+
+  .navLinks a:nth-child(3),
+  .navLinks a:nth-child(4) {
+    display: none;
   }
 
   h1 {
-    font-size: 2rem;
-    line-height: 1.08;
+    font-size: 1.9rem;
+    line-height: 1.06;
   }
 
   .pageHeader h1 {
@@ -1028,9 +1037,21 @@ h3 {
     line-height: 1.62;
   }
 
+  .hero .lede {
+    display: none;
+  }
+
   .actions,
   .questionNav {
     flex-direction: column;
+  }
+
+  .hero .actions {
+    margin-top: 18px;
+  }
+
+  .hero .secondaryButton {
+    display: none;
   }
 
   .primaryButton,
@@ -1047,7 +1068,7 @@ h3 {
 
   .section,
   .page {
-    padding: 44px clamp(14px, 5vw, 20px);
+    padding: 36px clamp(14px, 5vw, 20px);
   }
 
   .heroPanel,
@@ -1093,6 +1114,42 @@ h3 {
 
   .footerLinks a {
     min-height: 44px;
+  }
+
+  .heroPanel {
+    display: none;
+  }
+
+  .mobileQuickStart {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .mobileQuickStart p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .mobileQuickStart > div {
+    display: grid;
+    gap: 8px;
+  }
+
+  .mobileQuickStart a {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 0.92rem;
+    font-weight: 750;
+    min-height: 44px;
+    padding: 0 14px;
   }
 
   .comparisonTableWrap {
