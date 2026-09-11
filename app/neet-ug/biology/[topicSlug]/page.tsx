@@ -13,6 +13,26 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "photosynthesis-in-higher-plants": {
+    src: "/images/biology/photosynthesis-chloroplast-route-v1.png",
+    alt: "Chloroplast route showing light and water at thylakoids, ATP and NADPH transfer to the stroma, and carbon dioxide fixation",
+    caption: "An original chloroplast route map: light reactions at thylakoid membranes provide ATP and NADPH for carbon-fixation reactions in the stroma.",
+  },
+  "plant-respiration": {
+    src: "/images/biology/plant-respiration-route-v1.png",
+    alt: "Glucose moving through cytoplasmic glycolysis to pyruvate, then branching to aerobic mitochondrial respiration or fermentation",
+    caption: "An original pathway map: glycolysis makes pyruvate in the cytoplasm before aerobic and anaerobic routes diverge.",
+  },
+  "digestion-and-absorption": {
+    src: "/images/biology/digestion-absorption-route-v1.png",
+    alt: "Food route from mouth through stomach to small intestine with liver and pancreas side secretions and a villus containing a blood capillary and lacteal",
+    caption: "An original route map: food stays in the alimentary canal, while liver and pancreas contribute secretions to the small intestine where most absorption occurs.",
+  },
+  "blood-and-circulation": {
+    src: "/images/biology/blood-double-circulation-v1.png",
+    alt: "Double circulation route from right heart to lungs to left heart to body and back to right heart",
+    caption: "An original double-circulation map. Read the arrows as two connected loops: pulmonary circulation through lungs and systemic circulation through body tissues.",
+  },
   "human-respiration": {
     src: "/images/biology/human-respiration-gas-route-v1.png",
     alt: "Four-stage route showing ventilation, alveolar gas exchange, blood transport, and tissue exchange",

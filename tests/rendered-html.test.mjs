@@ -120,12 +120,16 @@ test("publishes four complete NCERT-aligned revision guides", async () => {
   ]);
   assert.match(photosynthesisHtml, /Photosystems: keep the numbering and sequence apart/);
   assert.match(photosynthesisHtml, /kebo111\.pdf/);
+  assert.match(photosynthesisHtml, /photosynthesis-chloroplast-route-v1\.png/);
   assert.match(plantRespirationHtml, /Glycolysis is the shared starting route/);
   assert.match(plantRespirationHtml, /kebo112\.pdf/);
+  assert.match(plantRespirationHtml, /plant-respiration-route-v1\.png/);
   assert.match(digestionHtml, /The small intestine is built for absorption/);
   assert.match(digestionHtml, /kebo116\.pdf/);
+  assert.match(digestionHtml, /digestion-absorption-route-v1\.png/);
   assert.match(circulationHtml, /Start with the two loops of double circulation/);
   assert.match(circulationHtml, /kebo118\.pdf/);
+  assert.match(circulationHtml, /blood-double-circulation-v1\.png/);
   for (const html of [photosynthesisHtml, plantRespirationHtml, digestionHtml, circulationHtml]) {
     assert.match(html, /Written by:.*DongFeng/);
     assert.match(html, /Common confusions to check/);
