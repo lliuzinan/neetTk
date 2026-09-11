@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: "%s | MedQGo",
   },
   description: siteConfig.description,
+  other: {
+    "google-adsense-account": "ca-pub-7031362773027237",
+  },
   keywords: [
     "NEET-UG Biology",
     "NEET Biology revision",
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
       "en-IN": absoluteUrl("/"),
     },
   },
+  referrer: "strict-origin-when-cross-origin",
   openGraph: {
     title: "NEET Biology Revision Notes",
     description: siteConfig.description,
