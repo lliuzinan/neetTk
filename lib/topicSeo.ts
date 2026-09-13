@@ -16,6 +16,10 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "mitosis-and-meiosis": {
+    focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
+    traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],
+  },
   "cell-theory-and-cell-organelles": {
     focus: ["Cell theory and the structural difference between prokaryotic and eukaryotic cells.", "How ribosomes, nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, lysosomes, and chloroplasts contribute different functions.", "A structure-to-function map instead of an isolated list of organelle names."],
     traps: ["Protein synthesis begins at ribosomes; later processing and packaging are different jobs.", "Mitochondria, chloroplasts, and nucleus can all be linked with genetic material in different contexts, so identify the structure being described.", "Do not turn advanced organelle-processing detail into a claimed NCERT fact without checking the source chapter."],

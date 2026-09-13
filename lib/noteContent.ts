@@ -31,6 +31,7 @@ export const AUTHORED_NOTE_SLUGS = [
   "dna-rna-replication-transcription-translation",
   "cell-theory-and-cell-organelles",
   "mutation-and-gene-expression",
+  "mitosis-and-meiosis",
   "photosynthesis-in-higher-plants",
   "plant-respiration",
   "digestion-and-absorption",
@@ -584,6 +585,44 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "mitosis-and-meiosis": [
+    {
+      heading: "Cell cycle: copy the genome, then share it accurately",
+      paragraphs: [
+        "The cell cycle is the coordinated sequence in which a cell grows, duplicates its genome and other components, and divides into daughter cells. Interphase is not an empty pause: G1 supports growth and metabolism, S phase is when DNA replication occurs, and G2 prepares the cell for division.",
+        "The useful first checkpoint is DNA content versus chromosome number. During S phase, DNA content doubles, but chromosome number does not double because each replicated chromosome still has one centromere and two sister chromatids. Counting the wrong thing is the fastest route into a close-option error.",
+      ],
+      bullets: ["G1: active growth before DNA replication.", "S: DNA replication; each chromosome gains a sister chromatid.", "G2: growth and protein synthesis before division.", "M phase: nuclear division followed by cytokinesis in the usual cell cycle."],
+    },
+    {
+      heading: "Mitosis: one division that preserves chromosome number",
+      paragraphs: [
+        "Mitosis is an equational division: a replicated set of chromosomes is distributed so that the daughter cells retain the parental chromosome number. The nuclear events are described as prophase, metaphase, anaphase and telophase, followed by cytokinesis that separates the cytoplasm.",
+        "Use one visual sequence. Chromosomes condense in prophase; they align at the metaphase plate; centromeres split and sister chromatids move to opposite poles in anaphase; nuclei reform in telophase. In animal cells cytokinesis occurs through a cleavage furrow, whereas plant cells form a cell plate from the centre outward.",
+      ],
+    },
+    {
+      heading: "Meiosis I: the reduction happens when homologues part",
+      paragraphs: [
+        "Meiosis begins after a single round of DNA replication but includes two sequential divisions. In prophase I, homologous chromosomes pair. Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene, producing recombined genetic material before the homologues separate.",
+        "The key reduction event is anaphase I: homologous chromosomes move to opposite poles while sister chromatids remain joined at their centromeres. This is why meiosis I reduces chromosome number. A diagram that labels every X-shaped chromosome as a 'chromosome pair' without showing homologues can conceal the actual event.",
+      ],
+    },
+    {
+      heading: "Meiosis II: a second division without another replication",
+      paragraphs: [
+        "Meiosis II follows meiosis I without a fresh S phase. Its broad chromosome-separation pattern resembles mitosis because sister chromatids separate, but it starts from haploid cells. By the end, four haploid cells are formed from the original diploid cell.",
+        "Do not say meiosis II reduces chromosome number again. The number was reduced in meiosis I. Meiosis II separates the duplicated chromatids so each final cell receives one chromatid from each replicated chromosome present at the start of that division.",
+      ],
+    },
+    {
+      heading: "A chromosome-accounting recall routine",
+      paragraphs: [
+        "Draw one diploid pair of homologous chromosomes in two colours. First duplicate each one during S phase. Next show what moves apart in anaphase of mitosis, anaphase I and anaphase II. Label every arrow with either 'sister chromatids' or 'homologous chromosomes'.",
+        "Finish by answering three checks without notes: Why does DNA double in S phase without doubling chromosome number? Which stage gives crossing over its named location? Which division first produces haploid cells? These questions test the relations, not a list of stage names.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -592,6 +631,10 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "mitosis-and-meiosis": [
+    { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
+    { label: "OpenStax Biology 2e: The cell cycle", href: "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle" },
+  ],
   "photosynthesis-in-higher-plants": [
     { label: "NCERT Class 11 Biology, Chapter 11: Photosynthesis in Higher Plants", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
     { label: "OpenStax Biology 2e: Overview of photosynthesis", href: "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis" },
@@ -652,6 +695,12 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "mitosis-and-meiosis": {
+    heading: "Mitosis and meiosis: identify what separates",
+    intro: "The dependable comparison is not just the number of cells at the end. Follow which chromosome partners separate at each division.",
+    columns: ["Checkpoint", "Mitosis", "Meiosis I", "Meiosis II"],
+    rows: [["Main separating units", "Sister chromatids", "Homologous chromosomes", "Sister chromatids"], ["Chromosome-number effect", "Maintained in daughter cells", "Reduced by half", "Remains haploid"], ["DNA replication before it", "One S phase before mitosis", "One S phase before meiosis I", "No new S phase before meiosis II"], ["High-yield purpose", "Growth, repair and replacement", "Reduction and genetic recombination context", "Completes formation of four haploid cells"]],
+  },
   "photosynthesis-in-higher-plants": {
     heading: "Photosynthesis: location and output check",
     intro: "Use the compartment first. It is the quickest way to reject a true fact placed in the wrong part of the chloroplast.",
@@ -772,6 +821,10 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "mitosis-and-meiosis": {
+    heading: "Count chromosomes by centromeres, not by DNA copies",
+    paragraphs: ["After S phase, DNA content has doubled, but chromosome number has not doubled because each replicated chromosome still has one centromere. This is why a 2n cell remains 2n after replication even though each chromosome has two sister chromatids.", "When a question feels crowded, first ask whether it is counting chromosomes, chromatids, DNA content, or cells. Those are related measurements, not interchangeable ones."],
+  },
   "photosynthesis-in-higher-plants": {
     heading: "The PSII-before-PSI trap",
     paragraphs: ["The numbering is the trap. Photosystem II acts first in non-cyclic flow even though II looks as though it should come after I. Write the route once and the question loses its shortcut.", "A second check is to ask where oxygen comes from. In this chapter it is linked with water splitting, not with carbon dioxide entering the leaf."],

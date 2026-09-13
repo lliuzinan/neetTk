@@ -13,6 +13,11 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "mitosis-and-meiosis": {
+    src: "/images/biology/cell-division-separation-v1.png",
+    alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
+    caption: "An original chromosome-separation map. The key distinction is what moves apart: homologous chromosomes in meiosis I, sister chromatids in mitosis and meiosis II.",
+  },
   "photosynthesis-in-higher-plants": {
     src: "/images/biology/photosynthesis-chloroplast-route-v1.png",
     alt: "Chloroplast route showing light and water at thylakoids, ATP and NADPH transfer to the stroma, and carbon dioxide fixation",

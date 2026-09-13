@@ -11,7 +11,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "dna-rna-replication-transcription-translation": { published: "2026-07-20", modified: "2026-09-11" },
   "mutation-and-gene-expression": { published: "2026-07-22", modified: "2026-09-11" },
   "cell-theory-and-cell-organelles": { published: "2026-07-24", modified: "2026-09-11" },
-  "mitosis-and-meiosis": { published: "2026-07-26", modified: "2026-08-11" },
+  "mitosis-and-meiosis": { published: "2026-09-13", modified: "2026-09-13" },
   "endocrine-system-and-hormones": { published: "2026-07-28", modified: "2026-09-10" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
   "immunity-pathogens-vaccines": { published: "2026-08-01", modified: "2026-09-11" },

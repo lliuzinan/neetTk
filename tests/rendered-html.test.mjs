@@ -45,6 +45,7 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /plant-respiration/);
   assert.match(sitemapXml, /digestion-and-absorption/);
   assert.match(sitemapXml, /blood-and-circulation/);
+  assert.match(sitemapXml, /mitosis-and-meiosis/);
   assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
   assert.doesNotMatch(sitemapXml, /recombinant-dna-technology/);
 });
@@ -139,4 +140,14 @@ test("publishes four complete NCERT-aligned revision guides", async () => {
     assert.match(html, /Common confusions to check/);
     assert.match(html, /A 15-minute recall routine/);
   }
+});
+
+test("publishes the cell cycle, mitosis and meiosis revision guide", async () => {
+  const html = await readFile(new URL("../.next/server/app/neet-ug/biology/mitosis-and-meiosis.html", import.meta.url), "utf8");
+  assert.match(html, /Cell cycle: copy the genome, then share it accurately/);
+  assert.match(html, /Meiosis I: the reduction happens when homologues part/);
+  assert.match(html, /cell-division-separation-v1\.png/);
+  assert.match(html, /kebo110\.pdf/);
+  assert.match(html, /Mitosis and meiosis: identify what separates/);
+  assert.match(html, /Written by:.*DongFeng/);
 });
