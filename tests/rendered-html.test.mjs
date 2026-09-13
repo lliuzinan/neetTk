@@ -110,6 +110,9 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(mutationHtml, /mutation-expression-change-use-v2\.png/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
+  assert.match(privacyHtml, /currently awaiting its Google AdSense site review/);
+  assert.match(privacyHtml, /Google&#x27;s My Ad Center/);
+  assert.match(privacyHtml, /How Google uses information from sites or apps that use its services/);
   assert.match(termsHtml, /Educational Use/);
   assert.match(authorHtml, /Role at MedQGo/);
   assert.match(authorHtml, /does not invent degrees, institutional affiliations, endorsements, or student testimonials/);

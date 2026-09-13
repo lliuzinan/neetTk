@@ -38,14 +38,17 @@ export default function PrivacyPage() {
         {
           title: "Advertising",
           body: [
-            "If Google ads are served on MedQGo, Google and its partners may use cookies or similar technologies to deliver and measure ads, subject to applicable consent requirements.",
-            "You can manage ad personalisation through Google Ads Settings. Where consent is required for advertising cookies or personalised ads, MedQGo will use an appropriate consent solution before serving those ads.",
+            "MedQGo is currently awaiting its Google AdSense site review. Google AdSense ads are not displayed on this site unless and until that review is approved and advertising is enabled.",
+            "If Google ads are served on MedQGo in the future, Google and other third-party vendors may use cookies, web beacons, IP addresses, or similar technologies to serve and measure advertising. Where permitted, this may include using prior visits to MedQGo or other websites to make ads more relevant.",
+            <>
+              You can control personalised advertising in <a href="https://myadcenter.google.com/" target="_blank" rel="noreferrer">Google&apos;s My Ad Center</a>. For more detail about data collected when Google services are used on partner sites, read <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer">How Google uses information from sites or apps that use its services</a>.
+            </>,
           ],
         },
         {
           title: "Cookie Consent",
           body: [
-            "Where consent is required for advertising or analytics cookies, MedQGo uses the consent message and controls supplied through its advertising provider. Your choices are presented before the applicable consent-dependent processing takes place.",
+            "Where consent is required for advertising or analytics cookies, MedQGo uses the consent message and controls supplied through its advertising provider. Your choices are presented before consent-dependent advertising or analytics processing takes place.",
             "You can also use browser controls or privacy settings to manage cookies and local storage on your device.",
           ],
         },

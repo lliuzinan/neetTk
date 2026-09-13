@@ -1,9 +1,10 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { LAST_UPDATED_DISPLAY } from "@/lib/seo";
 
 type Section = {
   title: string;
-  body: string[];
+  body: ReactNode[];
 };
 
 type Props = {
@@ -27,8 +28,8 @@ export function InfoPage({ eyebrow, title, intro, sections }: Props) {
         {sections.map((section) => (
           <section key={section.title}>
             <h2>{section.title}</h2>
-            {section.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+            {section.body.map((paragraph, index) => (
+              <p key={`${section.title}-${index}`}>{paragraph}</p>
             ))}
           </section>
         ))}
