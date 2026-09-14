@@ -36,6 +36,9 @@ export const AUTHORED_NOTE_SLUGS = [
   "plant-respiration",
   "digestion-and-absorption",
   "blood-and-circulation",
+  "mendelian-inheritance",
+  "recombinant-dna-technology",
+  "sexual-reproduction-in-flowering-plants",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -623,6 +626,96 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "sexual-reproduction-in-flowering-plants": [
+    {
+      heading: "Begin at the flower, but follow the reproductive cells",
+      paragraphs: [
+        "A flowering-plant question becomes manageable when the parts of a flower are treated as a route rather than as a labelled diagram. The anther produces pollen grains, the stigma receives compatible pollen, and the ovary contains ovules. Each ovule contains the female gametophyte, the embryo sac.",
+        "Keep the two gametophytes distinct. A pollen grain is the male gametophyte and forms a pollen tube after a suitable pollen-pistil interaction. The embryo sac is the female gametophyte within the ovule. Pollen is not the male gamete itself, and an ovule is not the same structure as an ovary.",
+      ],
+    },
+    {
+      heading: "Pollination starts a route; fertilisation completes it",
+      paragraphs: [
+        "Pollination is transfer of pollen from anther to stigma. It can occur within the same flower or between flowers, depending on the route. Fertilisation is later: it requires the male gametes delivered through a pollen tube to reach the embryo sac. A pollen grain on a stigma therefore tells you that pollination has occurred, not that a seed has already formed.",
+        "After germination on a receptive stigma, the pollen tube grows through the style toward an ovule. It enters the embryo sac and releases two male gametes. In sequence questions, check whether an option has quietly placed the pollen tube after fertilisation or sent pollen directly into the ovary without the stigma-style route.",
+      ],
+    },
+    {
+      heading: "Double fertilisation has two fusion events and two products",
+      paragraphs: [
+        "Angiosperms show double fertilisation because the two male gametes take part in two separate fusions inside the embryo sac. One male gamete fuses with the egg cell to form the diploid zygote. The zygote later develops into the embryo.",
+        "The other male gamete fuses with the two polar nuclei in the central cell to form the primary endosperm nucleus, which is typically triploid. Endosperm nourishes the developing embryo. The two events happen in the same embryo sac, but embryo and endosperm should never be treated as the same product.",
+      ],
+    },
+    {
+      heading: "After fertilisation, name the structure that changes",
+      paragraphs: [
+        "Following fertilisation, the ovule develops into a seed and the ovary develops into a fruit. The integuments of the ovule contribute to the seed coats. This structure-to-product map is more dependable than a loose list of post-fertilisation terms.",
+        "For a quick recall task, draw a vertical route with five stops: anther, stigma, pollen tube, embryo sac, and seed. Add the two fusion arrows at the embryo sac, then state aloud which fusion produces embryo and which produces its nutritive tissue. Finish by writing ovule to seed and ovary to fruit without looking back.",
+      ],
+    },
+  ],
+  "mendelian-inheritance": [
+    {
+      heading: "Inheritance questions begin with alleles entering gametes",
+      paragraphs: [
+        "Mendelian crosses are not ratio-recitation exercises. Start with the genotype of each parent and ask what alleles can appear in its gametes. An individual with genotype Aa carries two alleles for the same gene, but a gamete receives only one of them after segregation.",
+        "This is the practical meaning of the law of segregation: paired alleles separate during gamete formation, so each gamete carries one allele of a gene. Fertilisation then brings one allele from each parent together in an offspring. Build this route before drawing any Punnett square.",
+      ],
+    },
+    {
+      heading: "Genotype, phenotype, dominant and recessive answer different questions",
+      paragraphs: [
+        "A genotype is an allele combination, such as AA, Aa, or aa. A phenotype is the observable expression associated with that genotype in the stated inheritance pattern. With complete dominance, AA and Aa can share a phenotype even though their genotypes differ; aa expresses the recessive phenotype.",
+        "Do not use dominant to mean common, stronger, healthier, or more important. In a standard Mendelian context, it describes which allele is expressed in a heterozygote. The allele frequency in a population is a separate question.",
+      ],
+    },
+    {
+      heading: "Use the Punnett square as a probability map, not a memory card",
+      paragraphs: [
+        "For Aa x Aa, each parent can produce A and a gametes. Combining the two gamete sets gives AA, Aa, Aa, and aa as the four equally likely genotype combinations in the usual simple model. This yields a 1:2:1 genotype ratio and, under complete dominance, a 3:1 phenotype ratio.",
+        "The ratios are consequences of the gamete combinations. If a question changes the parental genotypes or the dominance relationship, the familiar 3:1 pattern may no longer apply. Rebuild the gametes instead of forcing a remembered ratio onto a different cross.",
+      ],
+    },
+    {
+      heading: "A two-minute cross check before choosing an answer",
+      paragraphs: [
+        "Write three lines: parent genotypes, possible gametes, and offspring combinations. Only after those lines are complete should you count genotypes or phenotypes. For a dihybrid context, keep the two gene pairs visibly separate until you have listed the allowed gametes.",
+        "A useful final check is to ask whether the question wants a genotype, a phenotype, a carrier status, or a probability. Those four requests can produce different correct answers from the same cross, and confusing the requested output is more common than a drawing error.",
+      ],
+    },
+  ],
+  "recombinant-dna-technology": [
+    {
+      heading: "Recombinant DNA is a controlled sequence, not a single tool",
+      paragraphs: [
+        "The core idea is to join a chosen DNA fragment with a vector so that the combined DNA can enter a suitable host cell and be copied or expressed. Each tool has one job in the sequence: isolate or prepare DNA, cut at a recognised sequence, join compatible fragments, introduce the construct into a host, and identify cells carrying the desired construct.",
+        "Calling every enzyme a restriction enzyme hides the workflow. Restriction endonucleases cut DNA at specific recognition sequences. DNA ligase joins DNA fragments by forming phosphodiester bonds. A vector carries the insert into a host; it is not the host cell itself.",
+      ],
+    },
+    {
+      heading: "Match the molecular tool to the change it makes",
+      paragraphs: [
+        "A plasmid is a commonly used vector because it can carry an inserted DNA fragment and replicate in an appropriate bacterial host. When both donor DNA and vector are cut to make compatible ends, the desired fragment can be inserted and ligated to produce recombinant DNA.",
+        "An inserted fragment is not automatically present in every host cell. Transformation introduces DNA into host cells, while selection and screening help distinguish cells likely to carry the intended recombinant molecule. This distinction matters: introducing DNA, selecting a transformed cell, and checking the insert are separate stages.",
+      ],
+    },
+    {
+      heading: "From host cell to product: copy first, then consider expression",
+      paragraphs: [
+        "Once a suitable host has taken up the recombinant DNA, the host can multiply the construct along with its own cells. This cloning stage provides many copies of the DNA. If the goal is a gene product, expression depends on the construct and host being arranged so that the inserted gene can be used by the host machinery.",
+        "Downstream processing refers to recovering and purifying a useful product after it has been produced. It is not the same as cutting and ligating DNA at the beginning of the workflow. Read whether the wording asks about construction, host introduction, selection, multiplication, or product recovery.",
+      ],
+    },
+    {
+      heading: "A workflow recall routine",
+      paragraphs: [
+        "Draw five boxes from left to right: donor DNA, vector, recombinant DNA, host cell, and selected clone or product. Between donor DNA and vector, add restriction endonuclease; between prepared pieces and recombinant DNA, add ligase. Do not add a tool unless you can state its action in one verb.",
+        "For a final check, cover the labels and reconstruct the route. Then answer: What carries an insert? What joins DNA fragments? What step puts recombinant DNA into a cell? What happens after a cell carrying the right construct has been identified? This is a process map, not a list of buzzwords.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -631,6 +724,18 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "sexual-reproduction-in-flowering-plants": [
+    { label: "NCERT Class 12 Biology, Chapter 2: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo102.pdf" },
+    { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
+  ],
+  "mendelian-inheritance": [
+    { label: "NCERT Class 12 Biology, Chapter 5: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "OpenStax Biology 2e: Laws of inheritance", href: "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance" },
+  ],
+  "recombinant-dna-technology": [
+    { label: "NCERT Class 12 Biology, Chapter 11: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
+    { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
+  ],
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
     { label: "OpenStax Biology 2e: The cell cycle", href: "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle" },
@@ -695,6 +800,24 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "sexual-reproduction-in-flowering-plants": {
+    heading: "Flowering-plant reproduction: location to outcome",
+    intro: "Read down the route. Each row identifies one location, its event, and the product that follows.",
+    columns: ["Location or structure", "Event", "Direct result", "Do not swap with"],
+    rows: [["Anther", "Produces pollen grains", "Male gametophyte available for transfer", "Stigma"], ["Stigma and style", "Receives pollen and supports tube growth", "Pollen tube travels toward an ovule", "Fertilisation site"], ["Embryo sac", "One male gamete fuses with egg", "Diploid zygote, then embryo", "Primary endosperm nucleus"], ["Central cell of embryo sac", "Other male gamete fuses with polar nuclei", "Typically triploid primary endosperm nucleus", "Zygote"]],
+  },
+  "mendelian-inheritance": {
+    heading: "One cross, four different things a question may ask",
+    intro: "For Aa x Aa under complete dominance, do not stop after one familiar ratio. Identify the requested output first.",
+    columns: ["Requested output", "Result from Aa x Aa", "How it is obtained", "Common error"],
+    rows: [["Possible gametes", "A and a from each parent", "Segregation of paired alleles", "Putting Aa itself into a gamete"], ["Genotype ratio", "1 AA : 2 Aa : 1 aa", "Four combinations in the square", "Writing the phenotype ratio"], ["Phenotype ratio", "3 dominant : 1 recessive", "Complete dominance only", "Using it for every inheritance pattern"], ["Probability of aa", "1 in 4", "One aa outcome among four equal combinations", "Calling every recessive-phenotype individual a carrier"]],
+  },
+  "recombinant-dna-technology": {
+    heading: "Recombinant DNA workflow: tool, action, checkpoint",
+    intro: "The terms are most useful when attached to an action in the workflow rather than learned as a flat list.",
+    columns: ["Step", "Main tool or component", "What happens", "Common wrong substitution"],
+    rows: [["Prepare DNA", "Restriction endonuclease", "Cuts DNA at recognised sequences", "DNA ligase"], ["Build construct", "Vector plus insert and ligase", "Insert is joined into carrier DNA", "Host cell acting as vector"], ["Introduce DNA", "Host cell", "Recombinant DNA enters a suitable cell", "Selection treated as introduction"], ["Identify useful cells", "Selectable marker or screening step", "Desired transformants are distinguished", "Assuming every host contains the insert"], ["Recover output", "Downstream processing", "Useful product is separated and purified", "Initial DNA cutting"]],
+  },
   "mitosis-and-meiosis": {
     heading: "Mitosis and meiosis: identify what separates",
     intro: "The dependable comparison is not just the number of cells at the end. Follow which chromosome partners separate at each division.",
@@ -821,6 +944,18 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "sexual-reproduction-in-flowering-plants": {
+    heading: "Two sperm does not mean two embryos",
+    paragraphs: ["The two male gametes enter the same embryo sac, which can make the outcomes look symmetrical. They are not. One fusion initiates the embryo through the zygote; the other produces the endosperm-forming nucleus that supports development.", "When a label looks familiar, make it earn its place by naming both the fusion partners and the product. That simple check prevents zygote and endosperm from being swapped."],
+  },
+  "mendelian-inheritance": {
+    heading: "Ratios are outputs, not starting facts",
+    paragraphs: ["A 3:1 phenotype ratio is useful only after the parent genotypes and dominance condition have been stated. Starting with the ratio makes it easy to carry it into incomplete dominance, codominance, or a different parental cross where it does not belong.", "The steadier habit is to write gametes first. The rest of the cross then has a visible reason instead of relying on a remembered pattern."],
+  },
+  "recombinant-dna-technology": {
+    heading: "One verb per tool keeps the workflow honest",
+    paragraphs: ["Restriction endonuclease cuts. Ligase joins. A vector carries. A host cell receives and copies. Selection identifies useful cells. When an option gives one of these components a neighbour's action, the error is easier to see than if the tools are memorised as a list.", "The workflow also protects against a common overstatement: a cell that has received DNA has not necessarily been shown to carry the intended construct. That is why selection and screening have their own place."],
+  },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",
     paragraphs: ["After S phase, DNA content has doubled, but chromosome number has not doubled because each replicated chromosome still has one centromere. This is why a 2n cell remains 2n after replication even though each chromosome has two sister chromatids.", "When a question feels crowded, first ask whether it is counting chromosomes, chromatids, DNA content, or cells. Those are related measurements, not interchangeable ones."],

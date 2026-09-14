@@ -12,6 +12,9 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "mutation-and-gene-expression": { published: "2026-07-22", modified: "2026-09-11" },
   "cell-theory-and-cell-organelles": { published: "2026-07-24", modified: "2026-09-11" },
   "mitosis-and-meiosis": { published: "2026-09-13", modified: "2026-09-13" },
+  "sexual-reproduction-in-flowering-plants": { published: "2026-09-14", modified: "2026-09-14" },
+  "mendelian-inheritance": { published: "2026-09-14", modified: "2026-09-14" },
+  "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-14" },
   "endocrine-system-and-hormones": { published: "2026-07-28", modified: "2026-09-10" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
   "immunity-pathogens-vaccines": { published: "2026-08-01", modified: "2026-09-11" },
@@ -24,7 +27,6 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "digestion-and-absorption": { published: "2026-09-11", modified: "2026-09-11" },
   "blood-and-circulation": { published: "2026-09-11", modified: "2026-09-11" },
   "animal-tissues": { published: "2026-08-13", modified: "2026-08-29" },
-  "recombinant-dna-technology": { published: "2026-08-15", modified: "2026-08-31" },
   "molecular-tools-and-dna-analysis": { published: "2026-08-17", modified: "2026-09-02" },
   "pedigree-analysis-and-inheritance-patterns": { published: "2026-08-19", modified: "2026-09-04" },
 };

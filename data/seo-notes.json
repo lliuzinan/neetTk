@@ -155,10 +155,10 @@
   {
     "id": "note-recombinant-dna-technology",
     "slug": "recombinant-dna-technology",
-    "title": "Recombinant DNA technology: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Recombinant DNA technology for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "title": "Recombinant DNA Technology: NEET-UG Biology Revision Guide",
+    "description": "Build a reliable recombinant DNA workflow by separating restriction enzymes, vectors, ligase, host cells, selection, and downstream processing.",
     "topicSlug": "recombinant-dna-technology",
-    "targetKeyword": "Recombinant DNA technology NEET UG Biology questions",
+    "targetKeyword": "Recombinant DNA technology NEET UG Biology revision guide",
     "sortOrder": 15
   },
   {
@@ -178,5 +178,23 @@
     "topicSlug": "pedigree-analysis-and-inheritance-patterns",
     "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
     "sortOrder": 17
+  },
+  {
+    "id": "note-mendelian-inheritance",
+    "slug": "mendelian-inheritance",
+    "title": "Mendelian Inheritance: NEET-UG Biology Revision Guide",
+    "description": "Use gamete formation, Punnett squares, and phenotype-genotype checks to reason through Mendelian inheritance rather than memorising ratios.",
+    "topicSlug": "mendelian-inheritance",
+    "targetKeyword": "Mendelian inheritance NEET UG Biology revision guide",
+    "sortOrder": 25
+  },
+  {
+    "id": "note-sexual-reproduction-in-flowering-plants",
+    "slug": "sexual-reproduction-in-flowering-plants",
+    "title": "Sexual Reproduction in Flowering Plants: NEET-UG Biology Revision Guide",
+    "description": "Trace pollination, pollen-pistil interaction, double fertilisation, and seed formation with a clear event map for NEET Biology revision.",
+    "topicSlug": "sexual-reproduction-in-flowering-plants",
+    "targetKeyword": "Sexual reproduction in flowering plants NEET UG Biology revision guide",
+    "sortOrder": 26
   }
 ]

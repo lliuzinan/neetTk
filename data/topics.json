@@ -258,5 +258,15 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 7,
     "sortOrder": 24
+  },
+  {
+    "id": "sexual-reproduction-in-flowering-plants",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Sexual reproduction in flowering plants",
+    "slug": "sexual-reproduction-in-flowering-plants",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "questionCount": 0,
+    "sortOrder": 25
   }
 ]

@@ -13,6 +13,21 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "sexual-reproduction-in-flowering-plants": {
+    src: "/images/biology/flowering-plant-double-fertilisation-v1.png",
+    alt: "Pollen tube entering an embryo sac, with one male gamete joining the egg and another joining polar nuclei to form endosperm",
+    caption: "An original double-fertilisation route map. The two male gametes fuse with different cells and begin two different developmental outcomes.",
+  },
+  "mendelian-inheritance": {
+    src: "/images/biology/mendelian-segregation-v1.png",
+    alt: "Alleles A and a separating into gametes before fertilisation, followed by AA, Aa, Aa, and aa offspring combinations",
+    caption: "An original segregation map. Build the gametes first, then combine them to obtain genotype combinations rather than memorising a ratio alone.",
+  },
+  "recombinant-dna-technology": {
+    src: "/images/biology/recombinant-dna-workflow-v1.png",
+    alt: "Donor DNA gene inserted into a plasmid vector, then introduced into a host cell and selected as part of recombinant DNA workflow",
+    caption: "An original recombinant-DNA workflow. Each stage has a different purpose: construct the DNA, introduce it into a host, then identify and use a suitable clone.",
+  },
   "mitosis-and-meiosis": {
     src: "/images/biology/cell-division-separation-v1.png",
     alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
@@ -81,6 +96,21 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
 };
 
 const articleStudyNotes: Record<string, { heading: string; intro: string; points: string[] }> = {
+  "sexual-reproduction-in-flowering-plants": {
+    heading: "The two-fusion check",
+    intro: "Use one question at every stage: which cells meet, and what does their fusion become?",
+    points: ["Pollen grain is the male gametophyte; the embryo sac is the female gametophyte in an ovule.", "Pollen transfer to stigma is pollination, not fertilisation.", "One male gamete plus egg gives the zygote; the other plus polar nuclei gives the primary endosperm nucleus.", "After fertilisation, ovule becomes seed and ovary becomes fruit."],
+  },
+  "mendelian-inheritance": {
+    heading: "The gamete-first method",
+    intro: "A cross becomes a small probability exercise when each line follows from the previous one.",
+    points: ["Write the parental genotype before naming a trait.", "List one allele per gamete.", "Combine gametes in a square and count the requested output only.", "State whether the question asks for genotype, phenotype, carrier status, or probability."],
+  },
+  "recombinant-dna-technology": {
+    heading: "The one-verb workflow",
+    intro: "Pair a component with an action to avoid mixing adjacent stages of the process.",
+    points: ["Restriction endonuclease cuts at recognised DNA sequences.", "Ligase joins compatible DNA fragments.", "Vector carries the insert into a host cell.", "Selection and screening distinguish useful transformants from other cells."],
+  },
   "human-respiration": {
     heading: "Gas movement: trace the route before naming a molecule",
     intro: "Respiration becomes much clearer when each event is placed on the same route instead of treated as a loose fact.",

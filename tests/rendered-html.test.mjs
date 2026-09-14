@@ -46,8 +46,10 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /digestion-and-absorption/);
   assert.match(sitemapXml, /blood-and-circulation/);
   assert.match(sitemapXml, /mitosis-and-meiosis/);
+  assert.match(sitemapXml, /sexual-reproduction-in-flowering-plants/);
+  assert.match(sitemapXml, /mendelian-inheritance/);
+  assert.match(sitemapXml, /recombinant-dna-technology/);
   assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
-  assert.doesNotMatch(sitemapXml, /recombinant-dna-technology/);
 });
 
 test("renders the revision workbook early-access page without a question download", async () => {
@@ -153,4 +155,25 @@ test("publishes the cell cycle, mitosis and meiosis revision guide", async () =>
   assert.match(html, /kebo110\.pdf/);
   assert.match(html, /Mitosis and meiosis: identify what separates/);
   assert.match(html, /Written by:.*DongFeng/);
+});
+
+test("publishes three distinct NCERT Biology revision guides with original teaching visuals", async () => {
+  const [floweringPlantsHtml, mendelianHtml, recombinantHtml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/sexual-reproduction-in-flowering-plants.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/mendelian-inheritance.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/recombinant-dna-technology.html", import.meta.url), "utf8"),
+  ]);
+  assert.match(floweringPlantsHtml, /Double fertilisation has two fusion events and two products/);
+  assert.match(floweringPlantsHtml, /flowering-plant-double-fertilisation-v1\.png/);
+  assert.match(floweringPlantsHtml, /lebo102\.pdf/);
+  assert.match(mendelianHtml, /Inheritance questions begin with alleles entering gametes/);
+  assert.match(mendelianHtml, /mendelian-segregation-v1\.png/);
+  assert.match(mendelianHtml, /lebo105\.pdf/);
+  assert.match(recombinantHtml, /Recombinant DNA is a controlled sequence, not a single tool/);
+  assert.match(recombinantHtml, /recombinant-dna-workflow-v1\.png/);
+  assert.match(recombinantHtml, /lebo111\.pdf/);
+  for (const html of [floweringPlantsHtml, mendelianHtml, recombinantHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /September 14, 2026/);
+  }
 });

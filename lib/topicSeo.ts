@@ -16,6 +16,18 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "sexual-reproduction-in-flowering-plants": {
+    focus: ["The route from anther and stigma to pollen-tube entry into an ovule.", "The two fertilisation events in an embryo sac and the distinct products they produce.", "Post-fertilisation changes from ovule to seed and ovary to fruit."],
+    traps: ["Pollination is pollen transfer; fertilisation occurs later inside the embryo sac.", "One male gamete fuses with the egg to form zygote, while the other joins polar nuclei to begin endosperm formation.", "An ovule develops into a seed; an ovary develops into a fruit."],
+  },
+  "mendelian-inheritance": {
+    focus: ["How paired alleles segregate into gametes before fertilisation.", "The difference between genotype, phenotype, dominant expression, and recessive expression.", "How a Punnett square follows from gametes and produces a probability model."],
+    traps: ["A dominant allele is not automatically more common, stronger, or healthier.", "A gamete from Aa carries A or a, not both alleles together.", "A 3:1 phenotype ratio requires the stated complete-dominance and parental-cross conditions."],
+  },
+  "recombinant-dna-technology": {
+    focus: ["The sequence from donor DNA and vector preparation through host introduction and selection.", "The distinct actions of restriction endonuclease, DNA ligase, vector, host, and selectable marker.", "The difference between producing recombinant DNA, cloning it in cells, and recovering a useful product."],
+    traps: ["Restriction endonuclease cuts DNA; DNA ligase joins fragments.", "A vector carries the insert; it is not the host cell that receives the construct.", "Transformation, selection, screening, and downstream processing are different workflow stages."],
+  },
   "mitosis-and-meiosis": {
     focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
     traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],
