@@ -18,7 +18,9 @@ test("renders the independent revision home and topic library", async () => {
   ]);
   assert.match(homeHtml, /NEET Biology revision notes/);
   assert.match(homeHtml, /in-depth revision notes/);
-  assert.match(homeHtml, /Join workbook early access/);
+  assert.match(homeHtml, /View free workbook sample/);
+  assert.match(homeHtml, /Build one connected topic at a time/);
+  assert.match(homeHtml, /Inheritance and variation/);
   assert.match(homeHtml, /Start reading/);
   assert.match(homeHtml, /Photosynthesis in higher plants/);
   assert.match(homeHtml, /Digestion and absorption/);
@@ -53,9 +55,13 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
 });
 
-test("renders the revision workbook early-access page without a question download", async () => {
+test("renders the revision workbook with a free sample and optional early access", async () => {
   const pdfHtml = await readFile(new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url), "utf8");
   assert.match(pdfHtml, /NEET Biology revision workbook/);
+  assert.match(pdfHtml, /A 12-minute gene-expression recall sheet/);
+  assert.match(pdfHtml, /Transcription/);
+  assert.match(pdfHtml, /Translation/);
+  assert.match(pdfHtml, /This is an original MedQGo revision exercise/);
   assert.match(pdfHtml, /Join early access/);
   assert.match(pdfHtml, /I agree to the processing of my email for revision-workbook early access/);
   assert.match(pdfHtml, /Privacy Policy/);

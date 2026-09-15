@@ -12,7 +12,7 @@ export function EditorialByline({ lastUpdated = LAST_UPDATED_DISPLAY }: { lastUp
           Written by <Link href="/authors/dongfeng">{editorialReviewer.authorName}{editorialReviewer.authorRole ? `, ${editorialReviewer.authorRole}` : ""}</Link> | {" "}
         </>
       )}
-      Editorial review: MedQGo | Last updated: {lastUpdated}
+      Published by MedQGo | Last updated: {lastUpdated}
     </p>
   );
 }

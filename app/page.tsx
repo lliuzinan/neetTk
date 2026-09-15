@@ -19,6 +19,25 @@ export default async function Home() {
   const mobileQuickStartTopics = mobileQuickStartSlugs
     .map((slug) => topics.find((topic) => topic.slug === slug))
     .filter((topic): topic is (typeof topics)[number] => Boolean(topic));
+  const learningClusters = [
+    {
+      title: "Inheritance and variation",
+      description: "Start with Mendel's patterns, then connect them to chromosome behaviour before moving into pedigree questions.",
+      slugs: ["mendelian-inheritance", "chromosomal-basis-of-inheritance"],
+    },
+    {
+      title: "Biotechnology",
+      description: "Follow the logic of recombinant DNA first. Molecular tools and applications are added as connected guides, not isolated facts.",
+      slugs: ["recombinant-dna-technology"],
+    },
+    {
+      title: "Reproduction",
+      description: "Use flowering-plant reproduction to practise sequence, structure and fertilisation before taking up related human Biology topics.",
+      slugs: ["sexual-reproduction-in-flowering-plants"],
+    },
+  ];
+  const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
+  const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));
   const homeJsonLd = [
     { "@context": "https://schema.org", "@type": "Organization", name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description },
     { "@context": "https://schema.org", "@type": "WebSite", name: "MedQGo", url: absoluteUrl("/"), inLanguage: "en-IN" },
@@ -45,7 +64,7 @@ export default async function Home() {
             <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
             <div className="actions">
               <Link href="/neet-ug/biology" className="primaryButton">Browse revision topics</Link>
-              <Link href="/neet-biology-pdf" className="secondaryButton">Join workbook early access</Link>
+              <Link href="/neet-biology-pdf" className="secondaryButton">View free workbook sample</Link>
             </div>
             <div className="mobileQuickStart" aria-label="Start reading a revision guide">
               <p>Start reading</p>
@@ -64,14 +83,23 @@ export default async function Home() {
         </div>
       </section>
       <section className="section">
-        <div className="sectionHeader"><p className="eyebrow">Revision library</p><h2>Start with a focused Biology topic</h2></div>
+        <div className="sectionHeader"><p className="eyebrow">Study sequences</p><h2>Build one connected topic at a time</h2><p>These sequences make it easier to carry an idea from its starting point to a harder related chapter.</p></div>
+        <div className="clusterGrid">
+          {learningClusters.map((cluster) => {
+            const clusterTopics = cluster.slugs.map((slug) => topics.find((topic) => topic.slug === slug)).filter((topic): topic is (typeof topics)[number] => Boolean(topic));
+            return <section className="clusterPanel" key={cluster.title}><h3>{cluster.title}</h3><p>{cluster.description}</p><div>{clusterTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id}>{topic.name}</Link>)}</div></section>;
+          })}
+        </div>
+      </section>
+      <section className="section">
+        <div className="sectionHeader"><p className="eyebrow">Revision library</p><h2>Explore other Biology guides</h2></div>
         <div className="topicGrid">
-          {topics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Concept focus, common confusions, and a short revision routine.</p></Link>)}
+          {otherTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Read a complete guide with a concept path, close comparisons, and a focused recall task.</p></Link>)}
         </div>
       </section>
       <section className="section split">
-        <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then use a compact recall routine.</h2><p className="muted">Each note is written as a learning aid, not as official exam material. Check definitions and diagrams against your current NCERT textbook.</p></div>
-        <div className="listPanel">{notes.map((note) => <Link href={`/neet-ug/biology/${note.topicSlug}`} key={note.id}>{note.title}</Link>)}</div>
+        <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then test your recall.</h2><p className="muted">Each guide is an independent learning aid, not official exam material. Check definitions and diagrams against your current NCERT textbook, then use the guide to explain the process without looking back.</p></div>
+        <div className="listPanel"><strong>New to the library?</strong><Link href="/neet-ug/biology/cell-theory-and-cell-organelles">Begin with cell organelles and protein routing</Link><Link href="/neet-ug/biology/mitosis-and-meiosis">Then connect chromosomes with cell division</Link><Link href="/neet-biology-pdf">Try the free workbook recall-sheet sample</Link></div>
       </section>
       <section className="section"><PdfCta source="home_midpage" /></section>
     </main>

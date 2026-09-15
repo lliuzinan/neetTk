@@ -308,6 +308,109 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
 }
 
+.clusterGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.clusterPanel,
+.workbookSample {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.clusterPanel {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+}
+
+.clusterPanel h3,
+.workbookSample h2,
+.workbookSample h3 {
+  margin: 0;
+}
+
+.clusterPanel p,
+.workbookSample p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.clusterPanel div {
+  display: grid;
+  gap: 10px;
+}
+
+.clusterPanel a,
+.textLink {
+  color: var(--brand);
+  font-weight: 750;
+}
+
+.workbookSample {
+  margin-bottom: 28px;
+  padding: 28px;
+}
+
+.workbookSampleIntro {
+  max-width: 760px;
+}
+
+.workbookSampleIntro h2 {
+  margin-bottom: 12px;
+}
+
+.sampleSteps {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.sampleSteps section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.sampleSteps span {
+  color: var(--blue);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 850;
+  margin-bottom: 12px;
+}
+
+.sampleSteps h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.sampleSteps table {
+  border-collapse: collapse;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.sampleSteps th,
+.sampleSteps td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 6px;
+  text-align: left;
+}
+
+.sampleNote {
+  font-size: 0.9rem;
+  margin-top: 20px !important;
+}
+
 .faqBlock {
   display: grid;
   gap: 16px;
@@ -959,6 +1062,8 @@ h3 {
   .heroGrid,
   .split,
   .splitContent,
+  .clusterGrid,
+  .sampleSteps,
   .footerInner {
     grid-template-columns: 1fr;
   }
