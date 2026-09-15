@@ -221,7 +221,7 @@ h3 {
 .topicGrid {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
 }
 
 .topicCard,
@@ -230,8 +230,14 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   display: block;
+  min-width: 0;
   padding: 20px;
   transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.topicCard h2,
+.topicCard h3 {
+  overflow-wrap: anywhere;
 }
 
 .topicCard:hover,
