@@ -13,6 +13,11 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "chromosomal-basis-of-inheritance": {
+    src: "/images/biology/chromosomal-linkage-crossing-over-v1.png",
+    alt: "Homologous chromosomes with linked AB and ab alleles crossing over between non-sister chromatids to produce parental and recombinant gamete combinations",
+    caption: "An original linkage map: without exchange, AB and ab remain parental combinations; crossing over between the gene positions can create Ab and aB recombinant combinations.",
+  },
   "sexual-reproduction-in-flowering-plants": {
     src: "/images/biology/flowering-plant-double-fertilisation-v1.png",
     alt: "Pollen tube entering an embryo sac, with one male gamete joining the egg and another joining polar nuclei to form endosperm",
@@ -96,6 +101,11 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
 };
 
 const articleStudyNotes: Record<string, { heading: string; intro: string; points: string[] }> = {
+  "chromosomal-basis-of-inheritance": {
+    heading: "The chromosome-first check",
+    intro: "Before accepting a genetics ratio, decide what physical chromosome relationship the question describes.",
+    points: ["Homologues carry the same genes in the same order but can carry different alleles.", "Meiosis I separates homologues; meiosis II separates sister chromatids.", "Linked genes give parental combinations more often, while crossing over can create recombinant combinations.", "A crossover exchanges corresponding segments between non-sister chromatids during prophase I."],
+  },
   "sexual-reproduction-in-flowering-plants": {
     heading: "The two-fusion check",
     intro: "Use one question at every stage: which cells meet, and what does their fusion become?",

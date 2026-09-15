@@ -49,6 +49,7 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /sexual-reproduction-in-flowering-plants/);
   assert.match(sitemapXml, /mendelian-inheritance/);
   assert.match(sitemapXml, /recombinant-dna-technology/);
+  assert.match(sitemapXml, /chromosomal-basis-of-inheritance/);
   assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
 });
 
@@ -176,4 +177,13 @@ test("publishes three distinct NCERT Biology revision guides with original teach
     assert.match(html, /Written by:.*DongFeng/);
     assert.match(html, /September 14, 2026/);
   }
+});
+
+test("publishes the chromosomal basis of inheritance guide with its original linkage visual", async () => {
+  const html = await readFile(new URL("../.next/server/app/neet-ug/biology/chromosomal-basis-of-inheritance.html", import.meta.url), "utf8");
+  assert.match(html, /Chromosomes give inheritance its physical route/);
+  assert.match(html, /chromosomal-linkage-crossing-over-v1\.png/);
+  assert.match(html, /lebo105\.pdf/);
+  assert.match(html, /The chromosome-first check/);
+  assert.match(html, /Written by:.*DongFeng/);
 });

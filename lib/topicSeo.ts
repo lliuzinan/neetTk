@@ -16,6 +16,10 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "chromosomal-basis-of-inheritance": {
+    focus: ["How homologous chromosome behaviour during meiosis explains allele segregation.", "Why independent orientation of chromosome pairs can create new gamete combinations.", "How linkage and crossing over change parental and recombinant combinations."],
+    traps: ["Homologous chromosomes separate in meiosis I; sister chromatids separate in meiosis II.", "Crossing over is between non-sister chromatids of homologous chromosomes during prophase I.", "A 50 percent recombination frequency can reflect unlinked genes or genes far apart on the same chromosome; it does not prove linkage."],
+  },
   "sexual-reproduction-in-flowering-plants": {
     focus: ["The route from anther and stigma to pollen-tube entry into an ovule.", "The two fertilisation events in an embryo sac and the distinct products they produce.", "Post-fertilisation changes from ovule to seed and ovary to fruit."],
     traps: ["Pollination is pollen transfer; fertilisation occurs later inside the embryo sac.", "One male gamete fuses with the egg to form zygote, while the other joins polar nuclei to begin endosperm formation.", "An ovule develops into a seed; an ovary develops into a fruit."],

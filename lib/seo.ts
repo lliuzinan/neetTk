@@ -15,6 +15,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "sexual-reproduction-in-flowering-plants": { published: "2026-09-14", modified: "2026-09-14" },
   "mendelian-inheritance": { published: "2026-09-14", modified: "2026-09-14" },
   "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-14" },
+  "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-15" },
   "endocrine-system-and-hormones": { published: "2026-07-28", modified: "2026-09-10" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
   "immunity-pathogens-vaccines": { published: "2026-08-01", modified: "2026-09-11" },

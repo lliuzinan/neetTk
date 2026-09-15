@@ -235,7 +235,7 @@
     "subject": "Biology",
     "name": "Mendelian inheritance",
     "slug": "mendelian-inheritance",
-    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 1,
     "sortOrder": 22
   },
@@ -245,7 +245,7 @@
     "subject": "Biology",
     "name": "Chromosomal basis of inheritance",
     "slug": "chromosomal-basis-of-inheritance",
-    "ncertRef": "NCERT Biology Class 12, Chapter 4",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 4,
     "sortOrder": 23
   },

@@ -196,5 +196,14 @@
     "topicSlug": "sexual-reproduction-in-flowering-plants",
     "targetKeyword": "Sexual reproduction in flowering plants NEET UG Biology revision guide",
     "sortOrder": 26
+  },
+  {
+    "id": "note-chromosomal-basis-of-inheritance",
+    "slug": "chromosomal-basis-of-inheritance",
+    "title": "Chromosomal Basis of Inheritance: NEET-UG Biology Revision Guide",
+    "description": "Connect chromosome behaviour in meiosis with segregation, independent assortment, linkage, crossing over, and recombinant combinations.",
+    "topicSlug": "chromosomal-basis-of-inheritance",
+    "targetKeyword": "Chromosomal basis of inheritance NEET UG Biology revision guide",
+    "sortOrder": 27
   }
 ]

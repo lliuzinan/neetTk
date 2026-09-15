@@ -39,6 +39,7 @@ export const AUTHORED_NOTE_SLUGS = [
   "mendelian-inheritance",
   "recombinant-dna-technology",
   "sexual-reproduction-in-flowering-plants",
+  "chromosomal-basis-of-inheritance",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -716,6 +717,43 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "chromosomal-basis-of-inheritance": [
+    {
+      heading: "Chromosomes give inheritance its physical route",
+      paragraphs: [
+        "Chromosomal theory connects the patterns seen in crosses with events inside cells. Genes occupy particular positions on chromosomes, and homologous chromosomes carry the same genes in the same order while potentially carrying different alleles. In a diploid organism, one member of each homologous pair comes from each parent.",
+        "During meiosis, homologous chromosomes pair and then separate into different cells. This provides the cellular basis for allele segregation: the two alleles of a gene are carried on homologues and are separated when those homologues move apart in meiosis I. The rule is easier to trust when you can draw the chromosomes that perform it.",
+      ],
+    },
+    {
+      heading: "Independent assortment depends on how pairs line up",
+      paragraphs: [
+        "At metaphase I, each homologous pair can orient independently of the other pairs. When pairs separate, different maternal and paternal chromosome combinations can enter gametes. This chromosome behaviour provides the physical basis for independent assortment when the genes being considered are on different chromosomes, or effectively behave as unlinked.",
+        "Independent assortment does not mean every gene in the genome is physically independent. A chromosome contains many genes. Before applying an expected dihybrid ratio, ask whether the question gives a reason to treat the genes as unlinked or whether it is instead testing genes that lie on the same chromosome.",
+      ],
+    },
+    {
+      heading: "Linkage keeps nearby genes together more often",
+      paragraphs: [
+        "Genes on the same chromosome are linked. If two alleles are arranged as AB on one homologue and ab on the other, gametes AB and ab preserve the parental combinations. Linkage therefore makes parental combinations more frequent than would be expected if the two gene pairs assorted independently.",
+        "Linked does not mean permanently inseparable. The likelihood of separation depends on whether a crossover occurs between the two gene positions during meiosis. Genes close together have a smaller interval in which a crossover can separate them, so they tend to show stronger linkage than genes farther apart on the same chromosome.",
+      ],
+    },
+    {
+      heading: "Crossing over creates recombinant combinations",
+      paragraphs: [
+        "During prophase I, homologous chromosomes pair. Crossing over is a reciprocal exchange of corresponding segments between non-sister chromatids of homologous chromosomes. In the AB/ab arrangement, a crossover between the two gene positions can produce recombinant chromatids carrying Ab and aB combinations.",
+        "Keep the words separate: homologous chromosomes are the paired maternal and paternal chromosomes; sister chromatids are duplicated copies of one chromosome; non-sister chromatids belong to different homologues. The exchange relevant to recombination occurs between non-sister chromatids, not between sister chromatids.",
+      ],
+    },
+    {
+      heading: "A chromosome-map recall routine",
+      paragraphs: [
+        "Draw two homologues with AB on one and ab on the other. First draw the no-crossover outcome and list the parental gametes. Next draw one crossover between A and B on non-sister chromatids and list the recombinant gametes. Use colours or marks to show which segments changed origin.",
+        "Finish with four checks: Which division separates homologues? Which chromatids exchange segments? Why can linked genes still yield recombinant types? Why does a recombination frequency of 50 percent not prove that two genes are on the same chromosome? The answers should follow from the drawing, not from a memorised phrase.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -724,6 +762,10 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "chromosomal-basis-of-inheritance": [
+    { label: "NCERT Class 12 Biology, Chapter 5: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "OpenStax Biology 2e: Chromosomal theory and genetic linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" },
+  ],
   "sexual-reproduction-in-flowering-plants": [
     { label: "NCERT Class 12 Biology, Chapter 2: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo102.pdf" },
     { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
@@ -800,6 +842,12 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "chromosomal-basis-of-inheritance": {
+    heading: "Chromosome behaviour: which event explains which pattern?",
+    intro: "Use the physical event first. It keeps segregation, independent assortment, linkage, and recombination from becoming interchangeable labels.",
+    columns: ["Pattern or term", "Chromosome event", "Gamete consequence", "Common confusion"],
+    rows: [["Segregation", "Homologous chromosomes separate in meiosis I", "One allele of a gene enters each gamete", "Sister chromatids separating in meiosis II"], ["Independent assortment", "Different homologous pairs orient independently at metaphase I", "Different chromosome combinations can enter gametes", "Assuming every pair of genes is unlinked"], ["Linkage", "Genes occupy the same chromosome", "Parental allele combinations are common", "Saying linked genes can never separate"], ["Crossing over", "Non-sister chromatids exchange corresponding segments in prophase I", "Recombinant combinations may appear", "Exchange between sister chromatids"]],
+  },
   "sexual-reproduction-in-flowering-plants": {
     heading: "Flowering-plant reproduction: location to outcome",
     intro: "Read down the route. Each row identifies one location, its event, and the product that follows.",
@@ -944,6 +992,10 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "chromosomal-basis-of-inheritance": {
+    heading: "The chromosome drawing should answer the ratio question",
+    paragraphs: ["When a genetics ratio feels mysterious, move one level down from letters to chromosomes. If the genes are on different chromosome pairs, independent orientation makes the combinations easier to justify. If they occupy the same chromosome, start from parental arrangements and then ask whether a crossover can intervene.", "This avoids a tempting shortcut: treating every two-gene problem as an automatic 9:3:3:1 problem. A familiar ratio is not evidence that the chromosome arrangement supports it."],
+  },
   "sexual-reproduction-in-flowering-plants": {
     heading: "Two sperm does not mean two embryos",
     paragraphs: ["The two male gametes enter the same embryo sac, which can make the outcomes look symmetrical. They are not. One fusion initiates the embryo through the zygote; the other produces the endosperm-forming nucleus that supports development.", "When a label looks familiar, make it earn its place by naming both the fusion partners and the product. That simple check prevents zygote and endosperm from being swapped."],
