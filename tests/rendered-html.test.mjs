@@ -193,3 +193,30 @@ test("publishes the chromosomal basis of inheritance guide with its original lin
   assert.match(html, /The chromosome-first check/);
   assert.match(html, /Written by:.*DongFeng/);
 });
+
+test("publishes three connected inheritance and biotechnology guides with original teaching visuals", async () => {
+  const [pedigreeHtml, molecularToolsHtml, applicationsHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/pedigree-analysis-and-inheritance-patterns.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/molecular-tools-and-dna-analysis.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/biotechnology-applications.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+  assert.match(pedigreeHtml, /Read a pedigree as evidence across generations/);
+  assert.match(pedigreeHtml, /pedigree-inheritance-clues-v1\.png/);
+  assert.match(pedigreeHtml, /lebo104\.pdf/);
+  assert.match(molecularToolsHtml, /Molecular analysis asks a sequence of different questions/);
+  assert.match(molecularToolsHtml, /molecular-tools-dna-analysis-v1\.png/);
+  assert.match(molecularToolsHtml, /lebo109\.pdf/);
+  assert.match(applicationsHtml, /Applications begin after the biotechnology workflow/);
+  assert.match(applicationsHtml, /biotechnology-applications-map-v1\.png/);
+  assert.match(applicationsHtml, /lebo110\.pdf/);
+  for (const html of [pedigreeHtml, molecularToolsHtml, applicationsHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:.*MedQGo/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+  }
+  assert.match(sitemapXml, /pedigree-analysis-and-inheritance-patterns/);
+  assert.match(sitemapXml, /molecular-tools-and-dna-analysis/);
+  assert.match(sitemapXml, /biotechnology-applications/);
+});

@@ -32,6 +32,18 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["The sequence from donor DNA and vector preparation through host introduction and selection.", "The distinct actions of restriction endonuclease, DNA ligase, vector, host, and selectable marker.", "The difference between producing recombinant DNA, cloning it in cells, and recovering a useful product."],
     traps: ["Restriction endonuclease cuts DNA; DNA ligase joins fragments.", "A vector carries the insert; it is not the host cell that receives the construct.", "Transformation, selection, screening, and downstream processing are different workflow stages."],
   },
+  "pedigree-analysis-and-inheritance-patterns": {
+    focus: ["How a family diagram records relationships, generations and the stated trait.", "How parent-offspring observations can rule simple inheritance models in or out.", "Why X-linked patterns require a chromosome route check rather than a count of affected people."],
+    traps: ["A shaded pedigree symbol indicates the stated trait; it does not automatically reveal the genotype.", "One branch of a pedigree is not enough to establish an inheritance model when the rest of the family disagrees.", "A father passes an X chromosome to daughters and a Y chromosome to sons, so direct father-to-son transmission is not an X-linked route."],
+  },
+  "molecular-tools-and-dna-analysis": {
+    focus: ["The different jobs of restriction enzymes, PCR and gel electrophoresis.", "How a PCR cycle amplifies a primer-defined DNA region.", "Why DNA migrates toward a positive electrode and smaller fragments usually travel farther in an agarose gel."],
+    traps: ["PCR amplifies a target sequence; it does not separate DNA fragments by size.", "DNA ligase joins fragments, whereas a restriction endonuclease cuts DNA at recognised sequences.", "DNA is negatively charged and migrates toward the positive electrode in a gel."],
+  },
+  "biotechnology-applications": {
+    focus: ["How to separate a biotechnology method from its product or intended application.", "NCERT-linked examples in health-related products, crop traits and gene-based intervention.", "Why biosafety, biopiracy and patents belong beside the application examples."],
+    traps: ["A biotechnology application is not the same thing as a laboratory tool such as a vector or restriction enzyme.", "A named crop trait should not be enlarged into a claim of resistance to every pest or environmental condition.", "Gene therapy is a gene-based application category, not another name for routine drug treatment."],
+  },
   "mitosis-and-meiosis": {
     focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
     traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],

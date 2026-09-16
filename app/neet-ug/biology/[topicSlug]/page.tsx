@@ -33,6 +33,21 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     alt: "Donor DNA gene inserted into a plasmid vector, then introduced into a host cell and selected as part of recombinant DNA workflow",
     caption: "An original recombinant-DNA workflow. Each stage has a different purpose: construct the DNA, introduce it into a host, then identify and use a suitable clone.",
   },
+  "pedigree-analysis-and-inheritance-patterns": {
+    src: "/images/biology/pedigree-inheritance-clues-v1.png",
+    alt: "Three-generation pedigree with affected and unaffected family members alongside clues used to test an inheritance pattern",
+    caption: "An original pedigree-reading map. Use the whole family pattern to test a simple inheritance model; no single symbol supplies the full answer.",
+  },
+  "molecular-tools-and-dna-analysis": {
+    src: "/images/biology/molecular-tools-dna-analysis-v1.png",
+    alt: "DNA sample moving through restriction cutting, PCR amplification and gel electrophoresis toward visible DNA bands at a positive electrode",
+    caption: "An original DNA-analysis map: cutting, copying and separating are different operations with different outputs.",
+  },
+  "biotechnology-applications": {
+    src: "/images/biology/biotechnology-applications-map-v1.png",
+    alt: "DNA-based biotechnology applications grouped as medicine, agriculture and diagnosis with a note that use requires evaluation",
+    caption: "An original applications map. The guide separates a biotechnology method from the purpose, context and evaluation of an application.",
+  },
   "mitosis-and-meiosis": {
     src: "/images/biology/cell-division-separation-v1.png",
     alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
@@ -120,6 +135,21 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     heading: "The one-verb workflow",
     intro: "Pair a component with an action to avoid mixing adjacent stages of the process.",
     points: ["Restriction endonuclease cuts at recognised DNA sequences.", "Ligase joins compatible DNA fragments.", "Vector carries the insert into a host cell.", "Selection and screening distinguish useful transformants from other cells."],
+  },
+  "pedigree-analysis-and-inheritance-patterns": {
+    heading: "The observation-first method",
+    intro: "Treat each branch as evidence. Write the observable fact first, then test whether a simple inheritance model can account for it.",
+    points: ["A shaded symbol reports the stated trait, not a complete genotype.", "Unaffected parents with an affected child can fit a simple recessive model when both parents carry the allele.", "A father cannot pass an X-linked allele directly to a son because he passes a Y chromosome to sons.", "A family diagram can suggest a model, but it is not a personal clinical prediction tool."],
+  },
+  "molecular-tools-and-dna-analysis": {
+    heading: "The cut-copy-separate check",
+    intro: "Before naming a technique, identify whether the sample needs to be changed, amplified or compared by size.",
+    points: ["Restriction endonucleases cut DNA at recognised sequences.", "PCR uses repeated denaturation, primer binding and extension to amplify a defined region.", "DNA migrates toward the positive electrode in an agarose gel because its phosphate backbone is negatively charged.", "Smaller DNA fragments generally move farther through the gel during the same run."],
+  },
+  "biotechnology-applications": {
+    heading: "The purpose-and-boundary check",
+    intro: "For each example, say what is made or changed, what purpose is stated, and which wider question the chapter asks you to keep in view.",
+    points: ["Recombinant DNA technology can support production of a selected biological protein.", "Bt crops are discussed through a specified insect-pest-control trait, not as a universal crop solution.", "Gene therapy is a gene-based application category, not a synonym for every medical treatment.", "Biosafety, biopiracy and patents concern responsible use, resources and ownership."],
   },
   "human-respiration": {
     heading: "Gas movement: trace the route before naming a molecule",
@@ -332,7 +362,7 @@ export default async function TopicPage({ params }: Props) {
         </section>
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>
-          <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Editorial review:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
+          <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Published by:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
           <p><strong>Disclaimer:</strong> This guide is a revision aid for NEET-UG aspirants and does not constitute medical advice. For clinical or health-related queries, consult a qualified medical professional.</p>
         </section>
         <section>

@@ -268,5 +268,15 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 2",
     "questionCount": 0,
     "sortOrder": 25
+  },
+  {
+    "id": "biotechnology-applications",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Biotechnology applications",
+    "slug": "biotechnology-applications",
+    "ncertRef": "NCERT Biology Class 12, Chapter 10",
+    "questionCount": 0,
+    "sortOrder": 26
   }
 ]

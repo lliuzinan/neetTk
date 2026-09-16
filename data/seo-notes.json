@@ -205,5 +205,14 @@
     "topicSlug": "chromosomal-basis-of-inheritance",
     "targetKeyword": "Chromosomal basis of inheritance NEET UG Biology revision guide",
     "sortOrder": 27
+  },
+  {
+    "id": "note-biotechnology-applications",
+    "slug": "biotechnology-applications",
+    "title": "Biotechnology Applications: NEET-UG Biology Revision Guide",
+    "description": "Separate biotechnology methods from their applications in health, agriculture and diagnosis, then revise biosafety, biopiracy and patents with clear boundaries.",
+    "topicSlug": "biotechnology-applications",
+    "targetKeyword": "Biotechnology applications NEET UG Biology revision guide",
+    "sortOrder": 28
   }
 ]

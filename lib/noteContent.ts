@@ -40,6 +40,9 @@ export const AUTHORED_NOTE_SLUGS = [
   "recombinant-dna-technology",
   "sexual-reproduction-in-flowering-plants",
   "chromosomal-basis-of-inheritance",
+  "pedigree-analysis-and-inheritance-patterns",
+  "molecular-tools-and-dna-analysis",
+  "biotechnology-applications",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -754,6 +757,102 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "pedigree-analysis-and-inheritance-patterns": [
+    {
+      heading: "Read a pedigree as evidence across generations",
+      paragraphs: [
+        "A pedigree is a compact record of how a stated trait appears in a family. Begin with the key, then read generation by generation: a horizontal line joins partners, a vertical line leads to their offspring, and the symbols indicate the sex convention used in the diagram. A shaded symbol shows an individual described as having the trait; it does not, by itself, reveal the genotype.",
+        "The useful task is not to name a pattern from one symbol. Look for repeated clues: whether unaffected parents have an affected child, whether the trait appears in successive generations, whether males and females occur in comparable ways, and whether a father-to-son route is present. Each clue narrows possibilities; a conclusion should fit the whole family, not one striking branch.",
+      ],
+    },
+    {
+      heading: "Start with parent-offspring combinations that rule patterns out",
+      paragraphs: [
+        "For a simple autosomal dominant model, an affected person usually has an affected parent. If two unaffected parents are shown with an affected child, that observation does not fit the usual fully penetrant dominant model, but it can fit a recessive model when both parents carry the allele. Treat this as a model check, not as a statement about every real family.",
+        "For a simple autosomal recessive model, the phenotype can appear among siblings while both parents are unaffected carriers. The trait may therefore seem to skip generations. An affected person has two recessive alleles in the basic model, while an unaffected carrier has one dominant and one recessive allele. Keep phenotype and carrier status separate: a pedigree may establish the former before it can establish the latter for every person.",
+      ],
+    },
+    {
+      heading: "Sex-linked clues need a direction check",
+      paragraphs: [
+        "Autosomal traits are not tied to the sex chromosomes, so the basic model allows the trait in people of either sex with similar probability. X-linked patterns need a different question: which parent can pass an X chromosome to which child? A father passes his X chromosome to daughters and his Y chromosome to sons, so an X-linked trait does not travel directly from father to son.",
+        "For an X-linked recessive pattern, a male with the allele on his single X chromosome expresses the stated trait in the simple model. A female generally needs the relevant recessive allele on both X chromosomes to express it. Do not use a count of males alone as proof. Use the inheritance route, then see whether the observed pattern agrees with it.",
+      ],
+    },
+    {
+      heading: "A pedigree-reading routine that shows your reasoning",
+      paragraphs: [
+        "Cover any label that names the pattern. On paper, mark every affected person first. Next write one observation under the diagram: for example, 'unaffected parents have an affected child' or 'there is no father-to-son transmission'. Then cross out the models that contradict the observation before assigning possible genotypes.",
+        "For a two-minute recall check, draw a small three-generation family with two unaffected parents and one affected child. State one inheritance model that can explain it and one simple dominant model it does not support. Then draw an X-linked route from a father to a daughter and from a father to a son; the route itself should make the chromosome rule visible.",
+      ],
+      bullets: [
+        "Read the legend before using the symbols.",
+        "Use more than one clue before naming a model.",
+        "Write possible genotypes only after the phenotype pattern has been checked.",
+        "Keep classroom inheritance models separate from clinical prediction for a real family.",
+      ],
+    },
+  ],
+  "molecular-tools-and-dna-analysis": [
+    {
+      heading: "Molecular analysis asks a sequence of different questions",
+      paragraphs: [
+        "A DNA sample is not automatically ready to answer every laboratory question. A revision-friendly route is: obtain a DNA-containing sample, focus on a chosen sequence when needed, make enough copies for observation, and separate fragments when their sizes need to be compared. The method changes because the question changes.",
+        "Restriction enzymes, PCR and gel electrophoresis often appear together, but they do not do the same job. A restriction endonuclease recognises particular DNA sequences and cuts DNA. PCR amplifies a selected region. Gel electrophoresis separates DNA fragments after an electric field moves them through a gel. Say the verb beside each tool before choosing an option.",
+      ],
+    },
+    {
+      heading: "PCR copies a target; it does not sort fragments",
+      paragraphs: [
+        "Polymerase chain reaction is designed to amplify a selected DNA region. In each cycle, double-stranded DNA is separated, primers bind to complementary target sequences, and a DNA polymerase extends from the primers. Repeating the cycle produces many copies of the region defined by the primers.",
+        "The distinction matters because PCR is about increasing the amount of a chosen sequence, whereas a gel is about separating molecules already present in a sample. A primer is not the enzyme that copies DNA, and a thermal cycle is not a step of gel electrophoresis. Track the input and output: target DNA enters PCR; more copies of that target leave it.",
+      ],
+    },
+    {
+      heading: "A gel turns fragment size into a visible pattern",
+      paragraphs: [
+        "DNA carries a negative charge because of its phosphate backbone. In an agarose gel, DNA fragments move toward the positive electrode when an electric field is applied. The gel acts as a molecular sieve, so smaller fragments generally travel farther through it than larger fragments during the same run.",
+        "A lane is one sample path; a band marks DNA fragments that have travelled a similar distance. The migration pattern can help compare fragment sizes, but it does not provide the DNA sequence merely by looking at a band. Before interpreting a gel, check the direction of travel, the sample wells, and whether the prompt asks about size, copying, cutting, or detection.",
+      ],
+    },
+    {
+      heading: "Build a tool-to-output map from memory",
+      paragraphs: [
+        "Draw three boxes labelled cut, copy and separate. Put a restriction endonuclease above the first box, PCR above the second, and agarose gel electrophoresis above the third. Under each, write one output: fragments, many target copies, and separated bands. This turns a vocabulary list into a usable decision map.",
+        "Then add a fourth box labelled detect a specific sequence. This reminds you that a gel pattern alone and a sequence-specific identification are different levels of analysis. The point is not to memorise every laboratory technique beyond the chapter; it is to protect the role of each NCERT-linked tool.",
+      ],
+    },
+  ],
+  "biotechnology-applications": [
+    {
+      heading: "Applications begin after the biotechnology workflow",
+      paragraphs: [
+        "The principles-and-processes chapter explains how DNA can be handled; applications ask what a biological product or modified organism is intended to do. Keep the two chapters connected but distinct. An enzyme, vector or host cell is part of a method. A therapeutic protein, an insect-resistant crop or a diagnostic approach is an intended use of that method.",
+        "For revision, sort each application by its target and purpose: a health-related product, a crop trait, a diagnostic use, or a broader biosafety and ownership question. This prevents a familiar word such as 'gene' or 'plasmid' from being treated as an application in itself.",
+      ],
+    },
+    {
+      heading: "Health-related applications: distinguish product from method",
+      paragraphs: [
+        "Recombinant DNA methods can enable cells to produce a selected protein. In the NCERT context, recombinant human insulin is a useful example of a biotechnology-derived product. The study point is the relationship: genetic information is introduced into a suitable production system, and the desired protein is recovered after appropriate processing. It is not a guide to treatment, dose, or personal health decisions.",
+        "Gene therapy is discussed as an application of introducing a functional gene into cells to address a genetic condition. At NEET revision level, keep the idea separate from routine drug administration and avoid extending it into claims about individual medical outcomes. The question is usually about the category of intervention or the sequence of a biotechnology application.",
+      ],
+    },
+    {
+      heading: "Agricultural applications: name the trait and the biological reason",
+      paragraphs: [
+        "A genetically modified crop carries a deliberately introduced or altered genetic feature. In the familiar Bt-crop example, a gene associated with Bacillus thuringiensis is used so that the plant can produce an insecticidal protein active against specified insect pests. The useful distinction is between an organism engineered for a trait and a chemical pesticide applied from outside.",
+        "A crop trait should always be read with its stated target. Resistance to one pest does not mean a plant is automatically resistant to every disease, drought condition or herbicide. Overbroad statements are a common source of error because they replace a named trait with a general claim that biotechnology makes every crop better.",
+      ],
+    },
+    {
+      heading: "Biosafety, biopiracy and patents are part of the chapter boundary",
+      paragraphs: [
+        "Biotechnology applications are not only about what can be made. NCERT also frames questions of evaluation, biosafety, biopiracy and patents. A useful study distinction is that biosafety considers possible effects and responsible use, while a patent concerns legal rights over an invention or process. Biopiracy refers to the unauthorised use of biological resources or traditional knowledge without fair recognition or benefit-sharing.",
+        "For a final recall routine, make four cards: product, crop trait, diagnostic use and governance question. Place one chapter example under each card, then explain why it belongs there. Finish by linking back to the recombinant-DNA guide: the workflow supplies a method; an application supplies a purpose and a context for evaluation.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -777,6 +876,18 @@ const noteReferences: Record<string, NoteReference[]> = {
   "recombinant-dna-technology": [
     { label: "NCERT Class 12 Biology, Chapter 11: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
     { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
+  ],
+  "pedigree-analysis-and-inheritance-patterns": [
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "MedlinePlus Genetics: Understanding genetic conditions and inheritance", href: "https://medlineplus.gov/genetics/understanding/inheritance/" },
+  ],
+  "molecular-tools-and-dna-analysis": [
+    { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
+    { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
+  ],
+  "biotechnology-applications": [
+    { label: "NCERT Class 12 Biology, Chapter 10: Biotechnology and its Applications", href: "https://ncert.nic.in/textbook/pdf/lebo110.pdf" },
+    { label: "NCERT Biology syllabus: Biotechnology and its applications", href: "https://www.ncert.nic.in/pdf/syllabus/desm_s_Biology.pdf" },
   ],
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
@@ -865,6 +976,24 @@ const noteTables: Record<string, NoteComparisonTable> = {
     intro: "The terms are most useful when attached to an action in the workflow rather than learned as a flat list.",
     columns: ["Step", "Main tool or component", "What happens", "Common wrong substitution"],
     rows: [["Prepare DNA", "Restriction endonuclease", "Cuts DNA at recognised sequences", "DNA ligase"], ["Build construct", "Vector plus insert and ligase", "Insert is joined into carrier DNA", "Host cell acting as vector"], ["Introduce DNA", "Host cell", "Recombinant DNA enters a suitable cell", "Selection treated as introduction"], ["Identify useful cells", "Selectable marker or screening step", "Desired transformants are distinguished", "Assuming every host contains the insert"], ["Recover output", "Downstream processing", "Useful product is separated and purified", "Initial DNA cutting"]],
+  },
+  "pedigree-analysis-and-inheritance-patterns": {
+    heading: "Pedigree clues: what each observation can and cannot tell you",
+    intro: "Use a family observation to test a model. A single clue is rarely the whole answer, so read the next row before deciding.",
+    columns: ["Pedigree observation", "Model it can support", "Reasoning move", "Do not conclude"],
+    rows: [["Unaffected parents with an affected child", "Simple autosomal recessive model", "Both parents can be unaffected carriers", "That every unaffected relative is definitely a carrier"], ["Trait in successive generations", "Simple dominant model can fit", "An affected person may have an affected parent", "That it proves dominance without checking all branches"], ["No direct father-to-son route", "An X-linked model remains possible", "Fathers pass Y, not X, to sons", "That absence alone proves X linkage"], ["Affected people of more than one sex", "Autosomal model remains possible", "Autosomal genes are not tied to sex chromosomes", "That sex counts alone identify the pattern"]],
+  },
+  "molecular-tools-and-dna-analysis": {
+    heading: "DNA analysis: match the question to the tool",
+    intro: "A method is easier to identify when you name the change it makes to the sample or the observation it produces.",
+    columns: ["Question about the sample", "Useful tool or step", "What the output shows", "Nearby but different tool"],
+    rows: [["Where can DNA be cut?", "Restriction endonuclease", "Fragments formed at recognised sequences", "DNA ligase, which joins fragments"], ["How can one target region be made plentiful?", "PCR", "Many copies of a primer-defined DNA region", "Gel electrophoresis, which separates fragments"], ["How can fragment sizes be compared?", "Gel electrophoresis", "Band positions after migration through a gel", "PCR, which amplifies rather than sorts"], ["Which way does DNA move in an agarose gel?", "Electric field", "Toward the positive electrode", "Movement toward the negative electrode"]],
+  },
+  "biotechnology-applications": {
+    heading: "Applications: purpose, example and boundary",
+    intro: "Place an example in its purpose category before adding the method that made it possible. This keeps products, traits and policy terms from becoming interchangeable.",
+    columns: ["Application area", "NCERT-linked example", "What is being used or changed", "Boundary to remember"],
+    rows: [["Health-related product", "Recombinant human insulin", "A selected protein is produced using recombinant-DNA methods", "Not personal treatment advice"], ["Agricultural trait", "Bt crop", "Plant carries a trait associated with insect-pest control", "Not resistance to every pest or condition"], ["Gene-based intervention", "Gene therapy concept", "Functional genetic information is introduced into cells", "Not the same as ordinary drug administration"], ["Governance question", "Biopiracy and patents", "Use, ownership and benefit-sharing are considered", "Not a laboratory tool or crop trait"]],
   },
   "mitosis-and-meiosis": {
     heading: "Mitosis and meiosis: identify what separates",
@@ -1007,6 +1136,18 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "recombinant-dna-technology": {
     heading: "One verb per tool keeps the workflow honest",
     paragraphs: ["Restriction endonuclease cuts. Ligase joins. A vector carries. A host cell receives and copies. Selection identifies useful cells. When an option gives one of these components a neighbour's action, the error is easier to see than if the tools are memorised as a list.", "The workflow also protects against a common overstatement: a cell that has received DNA has not necessarily been shown to carry the intended construct. That is why selection and screening have their own place."],
+  },
+  "pedigree-analysis-and-inheritance-patterns": {
+    heading: "A pedigree is a hypothesis test, not a symbol-matching game",
+    paragraphs: ["A family diagram can look decisive before it has been read carefully. The steadier approach is to write down an observation, ask which simple models conflict with it, and only then attach letters for possible genotypes.", "That order matters because the same shaded symbol can occur in more than one inheritance model. A conclusion becomes stronger when it accounts for partners, siblings and generations together rather than relying on one person in the diagram."],
+  },
+  "molecular-tools-and-dna-analysis": {
+    heading: "Do not let three laboratory verbs collapse into one",
+    paragraphs: ["Cutting, copying and separating can happen in the same broader investigation, but each answers a different question. A restriction enzyme changes a DNA molecule at a recognition sequence; PCR raises the number of copies of a selected region; an electric field separates fragments in a gel.", "When an option combines a correct tool with the wrong outcome, return to the sample. Did it become fragments, many copies, or visible bands? That single check usually restores the method."],
+  },
+  "biotechnology-applications": {
+    heading: "A useful application includes a purpose and a responsibility question",
+    paragraphs: ["It is tempting to learn biotechnology applications as a celebratory list of products. The chapter is stronger than that: it also asks what trait or product is intended, what biological system is involved, and why evaluation or ownership questions may arise.", "Keeping those parts together prevents two opposite mistakes: treating every application as risk-free, or treating a responsible-use question as proof that the biological method has not been defined. In revision, name the application first, then its boundary."],
   },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",
