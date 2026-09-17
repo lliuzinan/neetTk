@@ -48,6 +48,21 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     alt: "DNA-based biotechnology applications grouped as medicine, agriculture and diagnosis with a note that use requires evaluation",
     caption: "An original applications map. The guide separates a biotechnology method from the purpose, context and evaluation of an application.",
   },
+  "human-reproduction": {
+    src: "/images/biology/human-reproduction-sequence-v1.png",
+    alt: "Simplified route from gametes to fertilisation, implantation and placental exchange in human reproduction",
+    caption: "An original sequence map: cell events and locations are separated so fertilisation, implantation and placental exchange do not collapse into one stage.",
+  },
+  "reproductive-health": {
+    src: "/images/biology/reproductive-health-foundations-v1.png",
+    alt: "Education-focused reproductive health diagram showing information, prevention, care and consent as separate foundations",
+    caption: "An original educational framework. It distinguishes general information and prevention concepts from individual clinical care.",
+  },
+  "molecular-basis-of-inheritance": {
+    src: "/images/biology/molecular-inheritance-information-routes-v1.png",
+    alt: "DNA information routes showing replication to DNA copies, transcription to RNA and translation to a polypeptide chain",
+    caption: "An original information map. DNA can be copied before division or used as the starting point for gene expression through RNA and protein production.",
+  },
   "mitosis-and-meiosis": {
     src: "/images/biology/cell-division-separation-v1.png",
     alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
@@ -150,6 +165,21 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     heading: "The purpose-and-boundary check",
     intro: "For each example, say what is made or changed, what purpose is stated, and which wider question the chapter asks you to keep in view.",
     points: ["Recombinant DNA technology can support production of a selected biological protein.", "Bt crops are discussed through a specified insect-pest-control trait, not as a universal crop solution.", "Gene therapy is a gene-based application category, not a synonym for every medical treatment.", "Biosafety, biopiracy and patents concern responsible use, resources and ownership."],
+  },
+  "human-reproduction": {
+    heading: "The place-before-stage check",
+    intro: "Attach every term to a location before you memorise a sequence. A cell event, a developmental stage and an anatomical structure are not interchangeable answers.",
+    points: ["Gametes are produced in gonads; a zygote forms only when sperm and ovum fuse.", "Fertilisation is normally described in the ampullary-isthmic region of the oviduct.", "The blastocyst implants in the uterine endometrium after early cleavage stages.", "The placenta is an exchange interface; the umbilical cord connects the developing foetus to it."],
+  },
+  "reproductive-health": {
+    heading: "The scope-and-purpose check",
+    intro: "Before learning a term, decide whether it names a prevention principle, a clinical service or an assisted-reproduction concept.",
+    points: ["Reproductive health includes accurate information, hygiene, responsible behaviour and access to appropriate healthcare.", "STI awareness, prevention and professional care are different categories of a public-health response.", "Contraceptive methods are studied by their biological principle; this guide does not recommend any method for an individual.", "Assisted reproductive technologies are elementary syllabus concepts and require medical supervision in real settings."],
+  },
+  "molecular-basis-of-inheritance": {
+    heading: "The store-package-copy check",
+    intro: "One DNA molecule can be described at several scales. Keep the sequence, its organisation and its duplication as separate questions.",
+    points: ["A DNA nucleotide includes a sugar, phosphate and nitrogenous base; base sequence carries information.", "Histones and nucleosomes describe DNA packaging in eukaryotic cells.", "Semiconservative replication gives each daughter DNA molecule one parental and one newly made strand.", "Leading and lagging synthesis differ because DNA polymerase builds new DNA in one direction along antiparallel templates."],
   },
   "human-respiration": {
     heading: "Gas movement: trace the route before naming a molecule",

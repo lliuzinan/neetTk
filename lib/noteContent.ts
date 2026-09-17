@@ -43,6 +43,9 @@ export const AUTHORED_NOTE_SLUGS = [
   "pedigree-analysis-and-inheritance-patterns",
   "molecular-tools-and-dna-analysis",
   "biotechnology-applications",
+  "human-reproduction",
+  "reproductive-health",
+  "molecular-basis-of-inheritance",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -853,6 +856,96 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "human-reproduction": [
+    {
+      heading: "Follow the reproductive cells, then locate each event",
+      paragraphs: [
+        "Human reproduction is easier to revise as a sequence of locations and cell events than as two disconnected anatomy lists. The broad route is gamete formation, transfer of sperm into the female reproductive tract, fertilisation, early development, implantation and placental connection. A structure matters because it enables one part of that route.",
+        "Keep gamete formation distinct from fertilisation. Spermatogenesis produces sperm in the testes, while oogenesis produces ova in the ovaries. Fertilisation is the fusion of a sperm and an ovum, normally described in the ampullary-isthmic region of the oviduct. A zygote exists only after that fusion; it is not another name for a gamete.",
+      ],
+    },
+    {
+      heading: "From zygote to implantation: sequence before terminology",
+      paragraphs: [
+        "After fertilisation, the zygote undergoes cleavage while moving toward the uterus. The early dividing cells form a morula, and a later blastocyst has an outer trophoblast layer and an inner cell mass. The terms are related by sequence, not interchangeable labels for the same stage.",
+        "Implantation occurs when the blastocyst becomes embedded in the uterine endometrium. Do not place implantation in the oviduct merely because fertilisation happens there. A reliable location check is: fertilisation in the oviduct, then early divisions during transit, then implantation in the uterus.",
+      ],
+    },
+    {
+      heading: "Placenta links two circulations without mixing them directly",
+      paragraphs: [
+        "The placenta forms an exchange interface between the developing foetus and the pregnant person's body. It supports transfer of materials such as nutrients and gases and is associated with hormone production during pregnancy. The revision point is the interface: maternal and foetal blood do not simply become one circulating pool.",
+        "The umbilical cord connects the developing foetus with the placenta. In a route question, distinguish the cord as the connection from the placenta as the exchange surface. The amnion and amniotic fluid provide a protective environment around the developing foetus; they are not substitutes for the placenta's transport role.",
+      ],
+    },
+    {
+      heading: "A location-and-stage recall map",
+      paragraphs: [
+        "Draw three place labels in a row: gonad, oviduct and uterus. Under them, place gamete formation, fertilisation and implantation respectively. Add one final side box for placenta and join it to the developing foetus with a cord. This four-place map is enough to check most sequence errors without copying a detailed anatomical diagram.",
+        "Finish with three verbal checks: Which cells fuse at fertilisation? Which stage implants? What is the difference between a placenta and an umbilical cord? The answer should name both the event and its location.",
+      ],
+    },
+  ],
+  "reproductive-health": [
+    {
+      heading: "Reproductive health is an education and wellbeing concept",
+      paragraphs: [
+        "In the NCERT chapter, reproductive health is framed around informed decision-making, hygiene, responsible behaviour, awareness of reproductive processes and access to appropriate healthcare. For revision, begin with the purpose of a public-health approach: reliable information can help people understand biological processes and reduce preventable harms.",
+        "This guide is an educational revision resource, not personal medical guidance. The useful NEET distinction is between a health-education principle, a prevention strategy and a clinical service. A statement can be scientifically relevant without being advice for an individual's circumstances.",
+      ],
+    },
+    {
+      heading: "Prevention depends on knowing the category of risk",
+      paragraphs: [
+        "Sexually transmitted infections are a public-health topic because some can be transmitted through sexual contact and may be preventable with informed, responsible practices and timely professional care. In a biology question, distinguish an infection, its route of transmission, a prevention measure and a symptom. These are different categories of information.",
+        "Do not turn a list of infections into a diagnosis exercise. The chapter supports awareness and prevention, while an actual concern calls for qualified healthcare rather than self-assessment from a revision page. In answer choices, look for the exact level being tested: awareness, prevention, testing or treatment are not interchangeable words.",
+      ],
+    },
+    {
+      heading: "Contraception and assisted reproduction: identify the stated purpose",
+      paragraphs: [
+        "Contraceptive methods are discussed as ways of preventing pregnancy; their categories include natural, barrier, intrauterine, oral and surgical approaches. At revision level, compare the principle named in a statement rather than treating every method as the same physical action. This article does not recommend a method for any individual.",
+        "Assisted reproductive technologies are introduced as elementary concepts for addressing infertility under medical supervision. Terms such as IVF, ZIFT and GIFT describe different steps or locations in a clinical process. Their presence in the syllabus does not make them general lifestyle choices or home procedures; learn the terminology and its basic biological route only.",
+      ],
+    },
+    {
+      heading: "Use a four-card boundary check",
+      paragraphs: [
+        "Make four cards labelled information, prevention, clinical care and technology. Put one NCERT-linked example under each: awareness programme, prevention of infection, professional diagnosis or treatment, and an assisted reproductive technology. Then ask what the statement is actually claiming before you select an answer.",
+        "For a second recall pass, write one sentence separating a public-health message from a medical recommendation. The first gives accurate general information; the second requires individual assessment by a qualified professional. That boundary keeps this topic scientifically clear and responsibly scoped.",
+      ],
+    },
+  ],
+  "molecular-basis-of-inheritance": [
+    {
+      heading: "Inheritance needs DNA to be stored, copied and used",
+      paragraphs: [
+        "The molecular basis of inheritance is a chapter about information management in cells. DNA must store a sequence, fit into the cell, be copied before division and provide information for RNA and protein production. Treat these as linked jobs rather than one long list of molecules and enzymes.",
+        "A nucleotide contains a sugar, phosphate group and nitrogenous base. In DNA, complementary base pairing gives each strand information about the other: adenine pairs with thymine and guanine pairs with cytosine. The sequence carries information; the sugar-phosphate backbone provides the repeating structural framework.",
+      ],
+    },
+    {
+      heading: "Packaging changes the scale, not the identity of DNA",
+      paragraphs: [
+        "In eukaryotic cells, long DNA molecules associate with histone proteins to form nucleosomes. Further levels of coiling and organisation allow DNA to fit within the nucleus. Packaging should not be confused with replication: packaging arranges existing DNA, whereas replication makes DNA copies before cell division.",
+        "A chromosome is a highly organised DNA-protein structure, while a gene is a DNA segment associated with a functional product or RNA. A chromosome can contain many genes. When an option swaps chromosome and gene, return to scale: one is a large organised carrier, the other is a defined information segment within the DNA.",
+      ],
+    },
+    {
+      heading: "Semiconservative replication preserves a template relationship",
+      paragraphs: [
+        "DNA replication uses each parental strand as a template for a new complementary strand. Each resulting double helix therefore contains one old strand and one newly synthesised strand; this is the semiconservative model. The base-pairing rule explains why a template sequence can guide the sequence of a new strand.",
+        "DNA polymerase adds nucleotides in a defined direction, and the two template strands are antiparallel. This creates a leading strand that is synthesised continuously and a lagging strand that is assembled in segments. The essential revision distinction is not a long enzyme list: both strands are copied, but their synthesis is organised differently because of strand orientation.",
+      ],
+    },
+    {
+      heading: "A storage-to-copy recall routine",
+      paragraphs: [
+        "Draw one central DNA molecule and make three outward arrows: package, replicate and express. Under package, write histones and nucleosome; under replicate, write template plus complementary pairing; under express, write RNA then protein. This map shows where the molecular-basis chapter connects to the separate gene-expression guide without repeating it.",
+        "Close the page and answer four checks: What is the difference between a gene and a chromosome? What changes during packaging? What makes replication semiconservative? Why is the lagging strand made in segments? Each answer should name a relationship, not just a term.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -888,6 +981,18 @@ const noteReferences: Record<string, NoteReference[]> = {
   "biotechnology-applications": [
     { label: "NCERT Class 12 Biology, Chapter 10: Biotechnology and its Applications", href: "https://ncert.nic.in/textbook/pdf/lebo110.pdf" },
     { label: "NCERT Biology syllabus: Biotechnology and its applications", href: "https://www.ncert.nic.in/pdf/syllabus/desm_s_Biology.pdf" },
+  ],
+  "human-reproduction": [
+    { label: "NCERT Class 12 Biology, Chapter 2: Human Reproduction", href: "https://ncert.nic.in/textbook/pdf/lebo102.pdf" },
+    { label: "OpenStax Concepts of Biology: Human reproduction", href: "https://openstax.org/books/concepts-biology/pages/18-3-human-reproduction" },
+  ],
+  "reproductive-health": [
+    { label: "NCERT Class 12 Biology, Chapter 3: Reproductive Health", href: "https://ncert.nic.in/textbook/pdf/lebo103.pdf" },
+    { label: "WHO: Sexual and reproductive health and rights", href: "https://www.who.int/health-topics/sexual-health" },
+  ],
+  "molecular-basis-of-inheritance": [
+    { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "OpenStax Concepts of Biology: DNA replication", href: "https://openstax.org/books/concepts-biology/pages/9-2-dna-replication" },
   ],
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
@@ -994,6 +1099,24 @@ const noteTables: Record<string, NoteComparisonTable> = {
     intro: "Place an example in its purpose category before adding the method that made it possible. This keeps products, traits and policy terms from becoming interchangeable.",
     columns: ["Application area", "NCERT-linked example", "What is being used or changed", "Boundary to remember"],
     rows: [["Health-related product", "Recombinant human insulin", "A selected protein is produced using recombinant-DNA methods", "Not personal treatment advice"], ["Agricultural trait", "Bt crop", "Plant carries a trait associated with insect-pest control", "Not resistance to every pest or condition"], ["Gene-based intervention", "Gene therapy concept", "Functional genetic information is introduced into cells", "Not the same as ordinary drug administration"], ["Governance question", "Biopiracy and patents", "Use, ownership and benefit-sharing are considered", "Not a laboratory tool or crop trait"]],
+  },
+  "human-reproduction": {
+    heading: "Human reproduction: event, location and direct outcome",
+    intro: "Follow the cell event through its location. This prevents fertilisation, implantation and placental exchange from being placed in the same structure.",
+    columns: ["Biological event", "Main location", "Direct outcome", "Do not swap with"],
+    rows: [["Gamete formation", "Testes or ovaries", "Sperm or ova are produced", "Fertilisation"], ["Fertilisation", "Ampullary-isthmic region of oviduct", "Zygote forms after gamete fusion", "Implantation in uterus"], ["Implantation", "Uterine endometrium", "Blastocyst becomes embedded", "Early cleavage during transit"], ["Placental exchange", "Placenta", "Maternal and foetal exchange interface", "Umbilical cord, which connects foetus and placenta"]],
+  },
+  "reproductive-health": {
+    heading: "Reproductive health: identify the level of the statement",
+    intro: "A topic label can sound broad. Match it to whether the statement is about education, prevention, professional care or a biotechnology concept.",
+    columns: ["Level", "Main purpose", "NCERT-linked context", "Boundary check"],
+    rows: [["Information", "Build accurate awareness", "Reproductive health education", "Not an individual diagnosis"], ["Prevention", "Reduce avoidable risk", "Awareness of STIs and responsible practices", "Not a symptom list"], ["Clinical care", "Assess or manage an individual's health concern", "Professional consultation and services", "Not self-treatment from a study note"], ["Assisted technology", "Support reproduction under medical supervision", "Elementary IVF, ZIFT and GIFT concepts", "Not a home procedure or personal recommendation"]],
+  },
+  "molecular-basis-of-inheritance": {
+    heading: "DNA information: object, action and result",
+    intro: "Use the action to distinguish a DNA structure question from a copying or expression question.",
+    columns: ["Object or action", "What changes", "What remains the key idea", "Common mix-up"],
+    rows: [["Nucleotide", "Bases occur in a sequence on a sugar-phosphate backbone", "Base sequence carries information", "Calling a base alone a nucleotide"], ["Packaging", "DNA associates with histones and folds into higher organisation", "DNA is organised to fit in the nucleus", "Saying new DNA copies are produced"], ["Replication", "Each template strand guides a complementary new strand", "Each product has one parental and one new strand", "Calling both product strands newly made"], ["Gene expression", "DNA information is used through RNA and protein synthesis", "Information is read for a product", "Treating it as another name for replication"]],
   },
   "mitosis-and-meiosis": {
     heading: "Mitosis and meiosis: identify what separates",
@@ -1148,6 +1271,18 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "biotechnology-applications": {
     heading: "A useful application includes a purpose and a responsibility question",
     paragraphs: ["It is tempting to learn biotechnology applications as a celebratory list of products. The chapter is stronger than that: it also asks what trait or product is intended, what biological system is involved, and why evaluation or ownership questions may arise.", "Keeping those parts together prevents two opposite mistakes: treating every application as risk-free, or treating a responsible-use question as proof that the biological method has not been defined. In revision, name the application first, then its boundary."],
+  },
+  "human-reproduction": {
+    heading: "A route is more useful than a crowded anatomical drawing",
+    paragraphs: ["The most common sequence error is to group fertilisation, cleavage and implantation under the uterus because the later stages occur there. Keeping the oviduct-to-uterus transition visible makes the stages easier to place.", "Use the route to test every unfamiliar word: does it name a cell, a developmental stage, a place or an exchange structure? Those categories cannot occupy the same position in the sequence."],
+  },
+  "reproductive-health": {
+    heading: "Accuracy includes knowing when a revision note stops",
+    paragraphs: ["This chapter contains terms that overlap with real healthcare, but the NEET task is to understand concepts and prevention principles, not to turn a textbook page into clinical guidance. That distinction protects both factual precision and the reader.", "When a statement sounds like it wants a personal decision, it has left the scope of a revision guide. In the chapter, focus on the biology category and the public-health purpose described by NCERT."],
+  },
+  "molecular-basis-of-inheritance": {
+    heading: "A DNA copy is not just another chromosome label",
+    paragraphs: ["DNA, gene, chromosome, chromatin and nucleosome belong to the same information system but name different scales or states. The words become manageable when each one answers a different question: what is the molecule, what is the segment, and how is it organised?", "Replication adds a second question: how can sequence information be copied accurately? Complementary pairing and the semiconservative model provide the connection, while packaging explains where the long molecule fits."],
   },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",

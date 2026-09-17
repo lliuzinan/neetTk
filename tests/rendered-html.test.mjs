@@ -220,3 +220,30 @@ test("publishes three connected inheritance and biotechnology guides with origin
   assert.match(sitemapXml, /molecular-tools-and-dna-analysis/);
   assert.match(sitemapXml, /biotechnology-applications/);
 });
+
+test("publishes the connected reproduction and molecular-inheritance revision guides", async () => {
+  const [humanReproductionHtml, reproductiveHealthHtml, molecularInheritanceHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/human-reproduction.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/reproductive-health.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/molecular-basis-of-inheritance.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+  assert.match(humanReproductionHtml, /Follow the reproductive cells, then locate each event/);
+  assert.match(humanReproductionHtml, /human-reproduction-sequence-v1\.png/);
+  assert.match(humanReproductionHtml, /lebo102\.pdf/);
+  assert.match(reproductiveHealthHtml, /Reproductive health is an education and wellbeing concept/);
+  assert.match(reproductiveHealthHtml, /reproductive-health-foundations-v1\.png/);
+  assert.match(reproductiveHealthHtml, /lebo103\.pdf/);
+  assert.match(molecularInheritanceHtml, /Inheritance needs DNA to be stored, copied and used/);
+  assert.match(molecularInheritanceHtml, /molecular-inheritance-information-routes-v1\.png/);
+  assert.match(molecularInheritanceHtml, /lebo105\.pdf/);
+  for (const html of [humanReproductionHtml, reproductiveHealthHtml, molecularInheritanceHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:.*MedQGo/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+  }
+  assert.match(sitemapXml, /human-reproduction/);
+  assert.match(sitemapXml, /reproductive-health/);
+  assert.match(sitemapXml, /molecular-basis-of-inheritance/);
+});

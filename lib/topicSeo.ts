@@ -44,6 +44,18 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["How to separate a biotechnology method from its product or intended application.", "NCERT-linked examples in health-related products, crop traits and gene-based intervention.", "Why biosafety, biopiracy and patents belong beside the application examples."],
     traps: ["A biotechnology application is not the same thing as a laboratory tool such as a vector or restriction enzyme.", "A named crop trait should not be enlarged into a claim of resistance to every pest or environmental condition.", "Gene therapy is a gene-based application category, not another name for routine drug treatment."],
   },
+  "human-reproduction": {
+    focus: ["The route from gamete formation through fertilisation, cleavage, implantation and placental exchange.", "The difference between a cell event, a developmental stage, a location and an exchange structure.", "A location-first map for separating oviduct, uterus, placenta and umbilical cord."],
+    traps: ["A gamete is not a zygote; a zygote forms only after sperm and ovum fuse.", "Fertilisation is normally described in the oviduct, while implantation occurs in the uterine endometrium.", "Placenta and umbilical cord have linked but different roles: exchange surface versus connection."],
+  },
+  "reproductive-health": {
+    focus: ["Reproductive health as education, wellbeing, prevention and access to appropriate healthcare.", "The distinction between an STI, a route of transmission, a prevention measure and a symptom.", "Contraception and assisted reproductive technologies as NCERT-level concepts with defined purposes."],
+    traps: ["A study guide can explain a prevention principle but cannot diagnose or recommend care for an individual.", "Awareness, prevention, testing and treatment are different public-health categories.", "Assisted reproductive technologies are not interchangeable terms and are not general lifestyle procedures."],
+  },
+  "molecular-basis-of-inheritance": {
+    focus: ["DNA base pairing, nucleotide structure and the information carried by sequence.", "How DNA packaging into nucleosomes differs from making DNA copies.", "Why replication is semiconservative and how leading and lagging strands arise."],
+    traps: ["A gene is a defined DNA segment; a chromosome is a larger organised DNA-protein structure containing many genes.", "Packaging folds existing DNA; replication makes new complementary DNA strands.", "Each replicated DNA double helix has one parental and one newly synthesised strand, not two entirely new strands."],
+  },
   "mitosis-and-meiosis": {
     focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
     traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],

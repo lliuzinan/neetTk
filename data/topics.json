@@ -278,5 +278,35 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 10",
     "questionCount": 0,
     "sortOrder": 26
+  },
+  {
+    "id": "human-reproduction",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Human reproduction",
+    "slug": "human-reproduction",
+    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "questionCount": 0,
+    "sortOrder": 27
+  },
+  {
+    "id": "reproductive-health",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Reproductive health",
+    "slug": "reproductive-health",
+    "ncertRef": "NCERT Biology Class 12, Chapter 3",
+    "questionCount": 0,
+    "sortOrder": 28
+  },
+  {
+    "id": "molecular-basis-of-inheritance",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Molecular basis of inheritance",
+    "slug": "molecular-basis-of-inheritance",
+    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "questionCount": 0,
+    "sortOrder": 29
   }
 ]

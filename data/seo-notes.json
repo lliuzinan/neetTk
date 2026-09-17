@@ -214,5 +214,32 @@
     "topicSlug": "biotechnology-applications",
     "targetKeyword": "Biotechnology applications NEET UG Biology revision guide",
     "sortOrder": 28
+  },
+  {
+    "id": "note-human-reproduction",
+    "slug": "human-reproduction",
+    "title": "Human Reproduction: NEET-UG Biology Revision Guide",
+    "description": "Trace gamete formation, fertilisation, early development, implantation and placental exchange with a location-first Biology revision map.",
+    "topicSlug": "human-reproduction",
+    "targetKeyword": "Human reproduction NEET UG Biology revision guide",
+    "sortOrder": 29
+  },
+  {
+    "id": "note-reproductive-health",
+    "slug": "reproductive-health",
+    "title": "Reproductive Health: NEET-UG Biology Revision Guide",
+    "description": "Separate reproductive health education, prevention, clinical care and assisted-reproduction concepts with clear NCERT-level boundaries.",
+    "topicSlug": "reproductive-health",
+    "targetKeyword": "Reproductive health NEET UG Biology revision guide",
+    "sortOrder": 30
+  },
+  {
+    "id": "note-molecular-basis-of-inheritance",
+    "slug": "molecular-basis-of-inheritance",
+    "title": "Molecular Basis of Inheritance: NEET-UG Biology Revision Guide",
+    "description": "Connect DNA sequence, packaging and semiconservative replication without confusing genes, chromosomes and gene expression.",
+    "topicSlug": "molecular-basis-of-inheritance",
+    "targetKeyword": "Molecular basis of inheritance NEET UG Biology revision guide",
+    "sortOrder": 31
   }
 ]
