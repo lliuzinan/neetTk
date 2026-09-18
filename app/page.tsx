@@ -23,17 +23,17 @@ export default async function Home() {
     {
       title: "Inheritance and variation",
       description: "Start with Mendel's patterns, then connect them to chromosome behaviour before moving into pedigree questions.",
-      slugs: ["mendelian-inheritance", "chromosomal-basis-of-inheritance"],
+      slugs: ["mendelian-inheritance", "chromosomal-basis-of-inheritance", "pedigree-analysis-and-inheritance-patterns"],
     },
     {
       title: "Biotechnology",
-      description: "Follow the logic of recombinant DNA first. Molecular tools and applications are added as connected guides, not isolated facts.",
-      slugs: ["recombinant-dna-technology"],
+      description: "Trace a gene-transfer workflow, identify the tools at each step, then explain the purpose of a biotechnology application.",
+      slugs: ["recombinant-dna-technology", "molecular-tools-and-dna-analysis", "biotechnology-applications"],
     },
     {
       title: "Reproduction",
-      description: "Use flowering-plant reproduction to practise sequence, structure and fertilisation before taking up related human Biology topics.",
-      slugs: ["sexual-reproduction-in-flowering-plants"],
+      description: "Compare reproductive events in plants and humans, then use the human sequence to understand reproductive-health terminology.",
+      slugs: ["sexual-reproduction-in-flowering-plants", "human-reproduction", "reproductive-health"],
     },
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PrivacySettingsButton } from "@/components/PrivacySettingsButton";
 
 export function Footer() {
   return (
@@ -20,6 +21,7 @@ export function Footer() {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
+          <PrivacySettingsButton />
           <Link href="/terms">Terms</Link>
           <Link href="/team">Editorial Team</Link>
           <Link href="/authors/dongfeng">Author: DongFeng</Link>

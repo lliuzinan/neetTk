@@ -863,7 +863,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "Follow the reproductive cells, then locate each event",
       paragraphs: [
         "Human reproduction is easier to revise as a sequence of locations and cell events than as two disconnected anatomy lists. The broad route is gamete formation, transfer of sperm into the female reproductive tract, fertilisation, early development, implantation and placental connection. A structure matters because it enables one part of that route.",
-        "Keep gamete formation distinct from fertilisation. Spermatogenesis produces sperm in the testes, while oogenesis produces ova in the ovaries. Fertilisation is the fusion of a sperm and an ovum, normally described in the ampullary-isthmic region of the oviduct. A zygote exists only after that fusion; it is not another name for a gamete.",
+        "Keep gamete formation distinct from fertilisation. Spermatogenesis produces sperm in the testes. Oogenesis begins in the ovaries, but the cell released at ovulation is a secondary oocyte, arrested in metaphase II. Sperm entry triggers completion of that division. Fertilisation normally occurs at the ampullary-isthmic junction of the oviduct; fusion of the haploid nuclei establishes the diploid zygote.",
       ],
     },
     {
@@ -881,6 +881,28 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
     {
+      heading: "Count the products of meiosis, not just the divisions",
+      paragraphs: [
+        "One primary spermatocyte completes meiosis I to give two secondary spermatocytes; meiosis II produces four haploid spermatids. Their transformation into sperm is spermiogenesis. Release from Sertoli cells into the tubule lumen is spermiation. These last two events describe different actions and neither is another chromosome-reduction division.",
+        "Oogenesis distributes the cytoplasm unequally. A primary oocyte begins meiosis before birth and arrests in prophase I. Completion of meiosis I produces a large secondary oocyte and a much smaller polar body. Keeping most of the cytoplasm in one cell supports early development. The parallel with four equally sized spermatids therefore breaks down even though both pathways involve meiosis.",
+        "As an original counting exercise, start with three primary spermatocytes. Assuming every meiotic product survives, they yield twelve spermatids, each haploid. Three primary oocytes do not yield twelve functional ova. Explain the unequal cytoplasmic division before trying to count the polar bodies.",
+      ],
+    },
+    {
+      heading: "Read the ovarian cycle alongside the uterine cycle",
+      paragraphs: [
+        "FSH and LH come from the anterior pituitary, whereas developing ovarian follicles produce oestrogens. During the follicular phase, follicle development is accompanied by rebuilding of the endometrium. Sustained high oestrogen near mid-cycle contributes to positive feedback and the LH surge that triggers ovulation. An ovulation arrow belongs at the follicle, not at the uterine lining.",
+        "After ovulation the ruptured follicle forms the corpus luteum, which secretes progesterone and supports a secretory endometrium. In a cycle without pregnancy, corpus-luteum regression lowers ovarian hormone levels and the lining is shed. During early pregnancy, hCG supports the corpus luteum. A textbook 28-day diagram is a model for understanding the sequence, not a universal timetable or a way to predict an individual's fertility.",
+      ],
+    },
+    {
+      heading: "Cleavage increases cell number before it increases embryo size",
+      paragraphs: [
+        "During early cleavage, repeated mitotic divisions partition the zygote into smaller blastomeres. The total structure does not double in size each time a cell divides. A 16-cell morula is not sixteen full-sized zygotes joined together. Later, fluid accumulation helps establish the blastocyst cavity and separates the outer trophoblast from the inner cell mass.",
+        "Test the route with three statements: a secondary oocyte is ovulated; a blastocyst implants; the placenta provides an exchange interface. Replacing any of those stages with 'egg' hides a different biological event. At birth, uterine contractions involve positive feedback with oxytocin. After birth, prolactin supports milk production while oxytocin supports milk ejection: production and movement are separate functions.",
+      ],
+    },
+    {
       heading: "A location-and-stage recall map",
       paragraphs: [
         "Draw three place labels in a row: gonad, oviduct and uterus. Under them, place gamete formation, fertilisation and implantation respectively. Add one final side box for placenta and join it to the developing foetus with a cord. This four-place map is enough to check most sequence errors without copying a detailed anatomical diagram.",
@@ -890,31 +912,46 @@ const noteContent: Record<string, NoteSection[]> = {
   ],
   "reproductive-health": [
     {
-      heading: "Reproductive health is an education and wellbeing concept",
+      heading: "Start with the biological event a method changes",
       paragraphs: [
-        "In the NCERT chapter, reproductive health is framed around informed decision-making, hygiene, responsible behaviour, awareness of reproductive processes and access to appropriate healthcare. For revision, begin with the purpose of a public-health approach: reliable information can help people understand biological processes and reduce preventable harms.",
-        "This guide is an educational revision resource, not personal medical guidance. The useful NEET distinction is between a health-education principle, a prevention strategy and a clinical service. A statement can be scientifically relevant without being advice for an individual's circumstances.",
+        "Use the normal sequence as an organising line: gamete formation, gamete transfer, fertilisation, then implantation. Contraceptive methods interrupt parts of this sequence; assisted reproductive technologies help accomplish particular steps. Reproductive health also includes wellbeing, reliable education and prevention of infection, so it cannot be reduced to whether pregnancy occurs.",
+        "This guide compares syllabus-level mechanisms. It does not select a contraceptive method, interpret symptoms or recommend a procedure for an individual. The study task is to identify what is transferred, which event is affected and where that event takes place.",
       ],
     },
     {
-      heading: "Prevention depends on knowing the category of risk",
+      heading: "Pregnancy prevention and infection prevention are different outcomes",
       paragraphs: [
-        "Sexually transmitted infections are a public-health topic because some can be transmitted through sexual contact and may be preventable with informed, responsible practices and timely professional care. In a biology question, distinguish an infection, its route of transmission, a prevention measure and a symptom. These are different categories of information.",
-        "Do not turn a list of infections into a diagnosis exercise. The chapter supports awareness and prevention, while an actual concern calls for qualified healthcare rather than self-assessment from a revision page. In answer choices, look for the exact level being tested: awareness, prevention, testing or treatment are not interchangeable words.",
+        "A method can prevent fertilisation without preventing transmission of an infectious agent. For example, blocking the vas deferens interrupts sperm transport but is not a barrier to infection. Condoms have a physical-barrier role and can reduce the risk of many sexually transmitted infections when correctly used, although they do not eliminate every infection risk.",
+        "Keep pathogen categories separate: gonorrhoea and syphilis are bacterial examples, while HIV infection and hepatitis B involve viruses. Absence of obvious symptoms does not establish absence of infection. These distinctions explain why awareness and professional testing belong in the chapter; they do not support diagnosis from a revision checklist.",
       ],
     },
     {
-      heading: "Contraception and assisted reproduction: identify the stated purpose",
+      heading: "Compare contraception by mechanism rather than brand name",
       paragraphs: [
-        "Contraceptive methods are discussed as ways of preventing pregnancy; their categories include natural, barrier, intrauterine, oral and surgical approaches. At revision level, compare the principle named in a statement rather than treating every method as the same physical action. This article does not recommend a method for any individual.",
-        "Assisted reproductive technologies are introduced as elementary concepts for addressing infertility under medical supervision. Terms such as IVF, ZIFT and GIFT describe different steps or locations in a clinical process. Their presence in the syllabus does not make them general lifestyle choices or home procedures; learn the terminology and its basic biological route only.",
+        "A barrier method physically limits sperm passage. Hormonal methods act through reproductive physiology, including suppression of ovulation; describing them as a wall between sperm and oocyte misses their mechanism. Copper-releasing intrauterine devices affect sperm motility and fertilising capacity. Different IUD categories need not share every mechanism.",
+        "In vasectomy, the vas deferens is interrupted; in tubectomy, the oviduct is interrupted. Neither description means removal of the gonads. This distinction connects anatomy to mechanism: preventing gamete transport is different from removing the tissue that makes gametes and secretes hormones. Learn these as anatomical comparisons, not as recommendations about suitability.",
       ],
     },
     {
-      heading: "Use a four-card boundary check",
+      heading: "Decode IVF, ZIFT, IUT and GIFT using material and destination",
       paragraphs: [
-        "Make four cards labelled information, prevention, clinical care and technology. Put one NCERT-linked example under each: awareness programme, prevention of infection, professional diagnosis or treatment, and an assisted reproductive technology. Then ask what the statement is actually claiming before you select an answer.",
-        "For a second recall pass, write one sentence separating a public-health message from a medical recommendation. The first gives accurate general information; the second requires individual assessment by a qualified professional. That boundary keeps this topic scientifically clear and responsibly scoped.",
+        "IVF describes fertilisation outside the body; it does not describe the entire pregnancy occurring outside the body. Embryo transfer is a subsequent event. In NCERT terminology, ZIFT transfers a zygote or early embryo with up to eight blastomeres into the fallopian tube, while IUT transfers an embryo with more than eight blastomeres into the uterus. These are syllabus distinctions, not instructions for clinical practice.",
+        "GIFT involves transfer of gametes rather than an already formed embryo; the NCERT example describes transferring an ovum from a donor into the fallopian tube. ICSI identifies the introduction of a sperm into an ovum, not the site of embryo transfer. To decode an unfamiliar description, underline the material first and circle the destination second.",
+        "Try two original classification prompts. An embryo has already formed before transfer: this is not a transfer of unfertilised gametes. A description names the uterus as the destination: distinguish it from a tubal transfer before considering the abbreviation. The location-and-stage map in Human reproduction supplies the prerequisite for both decisions.",
+      ],
+    },
+    {
+      heading: "Distinguish contraception from terminating an established pregnancy",
+      paragraphs: [
+        "Contraception aims to prevent pregnancy; medical termination of pregnancy concerns a pregnancy that already exists. The timing and purpose are therefore different. An amniocentesis example belongs to prenatal investigation, not to either category of contraception or assisted fertilisation. It involves sampling amniotic fluid for diagnostic assessment under medical supervision.",
+        "The NCERT discussion of misuse of prenatal testing concerns sex selection. Learning the biological basis of a test does not justify its misuse. For revision, keep three separate labels on your page: diagnostic purpose, possible misuse and ethical or legal restriction. A textbook summary is not a substitute for current law or individual clinical guidance.",
+      ],
+    },
+    {
+      heading: "Check the claim, the mechanism and the limit",
+      paragraphs: [
+        "Make three columns on blank paper. In the first write the claim 'interrupts gamete transport'; in the second name the relevant duct; in the third explain why this is not removal of a gonad. Repeat with 'fertilisation occurs outside the body', then explain why the statement says nothing by itself about the later transfer site.",
+        "Finally compare two purposes: reducing an infection risk and preventing a pregnancy. List why success at one does not automatically establish the other. A useful answer names the biological route involved. Describing every intervention as simply 'prevention' loses the distinction the chapter is asking you to understand.",
       ],
     },
   ],
@@ -938,6 +975,28 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "DNA replication uses each parental strand as a template for a new complementary strand. Each resulting double helix therefore contains one old strand and one newly synthesised strand; this is the semiconservative model. The base-pairing rule explains why a template sequence can guide the sequence of a new strand.",
         "DNA polymerase adds nucleotides in a defined direction, and the two template strands are antiparallel. This creates a leading strand that is synthesised continuously and a lagging strand that is assembled in segments. The essential revision distinction is not a long enzyme list: both strands are copied, but their synthesis is organised differently because of strand orientation.",
+      ],
+    },
+    {
+      heading: "What would distinguish DNA from protein as hereditary material?",
+      paragraphs: [
+        "A convincing experiment must distinguish competing explanations. Transformation alone showed that a heritable property could pass from one bacterial preparation to another; it did not by itself identify the molecule. In the Avery, MacLeod and McCarty work, removing DNA with DNase prevented transformation, whereas the corresponding protein- and RNA-digesting treatments did not. The comparison makes DNA necessary for that transforming activity.",
+        "Hershey and Chase used different radioactive labels for phage DNA and protein. Phosphorus-32 traced DNA, while sulfur-35 traced protein. Following infection, separation of bacterial cells from the external phage coats showed which labelled material entered the cells. The inference comes from the label's location after separation, not simply from detecting radioactivity somewhere in the tube.",
+      ],
+    },
+    {
+      heading: "Predict the bands before naming semiconservative replication",
+      paragraphs: [
+        "In the Meselson-Stahl experiment, bacteria first incorporated heavy nitrogen into DNA and were then grown with light nitrogen. After one replication, semiconservative copying predicts double helices with one heavy parental strand and one light new strand: an intermediate-density band. A conservative model would instead predict separate heavy and light DNA populations at that stage.",
+        "One intermediate band alone does not distinguish semiconservative copying from every alternative: a dispersive model could also give intermediate material. After the second replication, semiconservative copying predicts both light DNA and hybrid DNA, whereas dispersive copying predicts DNA that remains mixed within its strands. Comparing successive generations is what makes the reasoning stronger.",
+        "Use a simple original strand count: label two parental strands H and supply only L for new strands. One round gives two HL molecules. Copy each again and obtain two HL and two LL molecules. There is no HH molecule after the first round, and the parental H strands have not changed into L strands.",
+      ],
+    },
+    {
+      heading: "Use base composition as a check on the double-stranded model",
+      paragraphs: [
+        "For a double-stranded DNA sample, A equals T and G equals C. If an original worked example gives 18 percent adenine, thymine is also 18 percent. The remaining 64 percent is divided equally between guanine and cytosine, so each is 32 percent. The total must be 100 percent, not 200 percent; the proportions refer to the whole sample.",
+        "Do not impose these equalities on the composition of a single isolated strand. Its complementary partner supplies the balancing bases. Likewise, a complementary strand must be written with the opposite polarity. Writing the correct letters without the 5-prime and 3-prime ends can conceal a direction error. Transcription and translation are developed in the separate DNA-to-protein guide; here the goal is to establish why DNA can store and copy a sequence.",
       ],
     },
     {
@@ -971,6 +1030,27 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
     {
+      heading: "A change in frequency is not the same as a larger population",
+      paragraphs: [
+        "Consider a hypothetical diploid population of 100 individuals: 36 are AA, 48 are Aa and 16 are aa. There are 200 copies of this autosomal locus. The number of A copies is twice 36 plus 48, or 120, giving an A frequency of 0.60. Counting the 84 individuals with at least one A allele would answer a different question.",
+        "If a later generation of 100 has 49 AA, 42 Aa and 9 aa, the A frequency is 0.70. Population size stayed fixed while allele frequency changed. The counts alone do not prove natural selection: evidence about reproductive differences, migration and chance is needed to identify the mechanism. This is why an evolutionary explanation needs more than the observation that one colour has become common.",
+      ],
+    },
+    {
+      heading: "Hardy-Weinberg equilibrium supplies a comparison baseline",
+      paragraphs: [
+        "For two alleles, write p + q = 1. Under the idealised equilibrium assumptions, the genotype frequencies are p squared, 2pq and q squared. Using p = 0.60 and q = 0.40 gives 0.36, 0.48 and 0.16. Random mating, a very large population and absence of selection, mutation and migration are part of the model; the equation is not a claim that all real populations satisfy those conditions.",
+        "For a fully recessive phenotype in a population assumed to be at equilibrium, a frequency of 0.09 corresponds to q squared, not q. Thus q = 0.30, p = 0.70 and the expected heterozygote frequency is 0.42. State the equilibrium assumption before using this shortcut. The formula cannot identify which evolutionary force acted merely because observed frequencies differ.",
+      ],
+    },
+    {
+      heading: "Separate the origin of variation from the environment selecting it",
+      paragraphs: [
+        "A mutation is not generated because a population needs a useful trait. Selection can increase an existing heritable variant when its carriers contribute more descendants in a particular environment. A bottleneck, by contrast, can alter frequencies because the survivors happen to be an unrepresentative sample. The same final proportion could therefore result from different histories.",
+        "Evidence also needs a precise comparison. Homologous structures share an evolutionary origin even when their present functions differ; analogous features can perform similar functions despite different origins. Neither resemblance nor complexity alone proves that one living species is the ancestor of another. Close the guide by explaining what evidence would distinguish advantage-driven reproduction from chance sampling in the hypothetical population above.",
+      ],
+    },
+    {
       heading: "Draw one generation boundary before you reason",
       paragraphs: [
         "Draw two rows of simple organisms, labelled generation one and generation two. In the first row, use two heritable colour variants. Add one environmental condition between the rows, then draw more descendants from the variant that has higher reproductive success in that condition. The second row should show a changed proportion, not a transformed individual.",
@@ -998,6 +1078,29 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "Exponential growth produces a J-shaped curve in a simplified situation with abundant resources and no effective limit on growth. It describes what a population could do under favourable conditions; it is not a promise that a real population will rise indefinitely.",
         "Logistic growth includes environmental resistance and a carrying capacity, often represented by K. As population size approaches the supportable level for that environment, growth slows and the curve becomes S-shaped. Carrying capacity is tied to a particular habitat and its available resources, so it can change when environmental conditions change.",
+      ],
+    },
+    {
+      heading: "Work a population balance with an explicit time interval",
+      paragraphs: [
+        "Suppose a defined study area starts a month with 120 individuals. During that month there are 18 births, 7 deaths, 5 immigrants and 11 emigrants. The end count is 120 + 18 - 7 + 5 - 11 = 125. The increase is five individuals, even though births alone were eighteen. This is a hypothetical bookkeeping example; each count must refer to the same area and interval.",
+        "If the area is 5 square kilometres, the starting density is 24 individuals per square kilometre and the ending density is 25. Population size and density are interchangeable only if the area is fixed. Counts are not always the most useful measure: percentage cover can describe a spreading plant population better than attempting to separate every connected shoot.",
+      ],
+    },
+    {
+      heading: "Read the axes and slope before deciding which curve you see",
+      paragraphs: [
+        "On the growth sketch, the horizontal axis is time and the vertical axis is population size N. For the simple exponential model, dN/dt = rN: the per-capita rate r is fixed, but the absolute increase grows as N increases. For logistic growth, dN/dt = rN(1 - N/K); the additional factor reduces growth as the population approaches K.",
+        "For an original comparison, set r to 0.2 per year and K to 200. At N = 50 the logistic instantaneous growth rate is 7.5 individuals per year. At N = 100 it is 10, and at N = 150 it returns to 7.5. The largest total growth rate in this model occurs halfway to K, not at K. These are model rates at particular population sizes, not exact one-year census predictions.",
+        "At N = K the model gives zero net growth, which does not imply that every birth and death stops. Births and losses can balance. A real population may fluctuate around its resource limit, and a change in the habitat can shift that limit. The smooth S curve is a simplified explanation of regulation rather than a tracing of every natural population.",
+      ],
+    },
+    {
+      heading: "Use two signs to keep species interactions distinct",
+      paragraphs: [
+        "Assign one sign to each species: a benefit is positive, a cost is negative and no appreciable effect is zero. Mutualism is positive for both; competition is negative for both; predation and parasitism benefit one participant while harming the other. Commensalism benefits one without an appreciable effect on the other. Always keep the species order fixed when interpreting the signs.",
+        "A lichen combines fungal and photosynthetic partners, while an orchid growing as an epiphyte uses a tree for support without taking its nutrients as a parasite would. Both examples involve close association, but that observation alone does not identify the interaction. State what each partner gains or loses. Population interactions connect this chapter to natural selection when differences in survival and reproduction affect inherited variants over generations.",
+        "As a final check, explain why a population with many prereproductive individuals may have growth potential without its current count already being high. Age composition describes who can contribute to future reproduction; a census total gives only how many individuals are present now.",
       ],
     },
     {
@@ -1047,18 +1150,20 @@ const noteReferences: Record<string, NoteReference[]> = {
   "human-reproduction": [
     { label: "NCERT Class 12 Biology, Chapter 2: Human Reproduction", href: "https://ncert.nic.in/textbook/pdf/lebo102.pdf" },
     { label: "OpenStax Concepts of Biology: Human reproduction", href: "https://openstax.org/books/concepts-biology/pages/18-3-human-reproduction" },
+    { label: "OpenStax Biology 2e: Hormonal control of human reproduction", href: "https://openstax.org/books/biology-2e/pages/43-4-hormonal-control-of-human-reproduction" },
   ],
   "reproductive-health": [
     { label: "NCERT Class 12 Biology, Chapter 3: Reproductive Health", href: "https://ncert.nic.in/textbook/pdf/lebo103.pdf" },
-    { label: "WHO: Sexual and reproductive health and rights", href: "https://www.who.int/health-topics/sexual-health" },
+    { label: "WHO: Sexually transmitted infections, transmission and prevention", href: "https://www.who.int/news-room/fact-sheets/detail/sexually-transmitted-infections-(stis)" },
   ],
   "molecular-basis-of-inheritance": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "OpenStax Concepts of Biology: DNA replication", href: "https://openstax.org/books/concepts-biology/pages/9-2-dna-replication" },
+    { label: "OpenStax Biology 2e: Experimental evidence for DNA replication", href: "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication" },
   ],
   "evolution-and-natural-selection": [
     { label: "NCERT Class 12 Biology, Chapter 6: Evolution", href: "https://ncert.nic.in/textbook/pdf/lebo106.pdf" },
-    { label: "OpenStax Concepts of Biology: Evolution and population change", href: "https://openstax.org/books/concepts-biology/pages/11-chapter-summary" },
+    { label: "OpenStax Biology 2e: Population evolution and Hardy-Weinberg equilibrium", href: "https://openstax.org/books/biology-2e/pages/19-1-population-evolution" },
   ],
   "organisms-and-populations": [
     { label: "NCERT Class 12 Biology, Chapter 11: Organisms and Populations", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
@@ -1177,10 +1282,10 @@ const noteTables: Record<string, NoteComparisonTable> = {
     rows: [["Gamete formation", "Testes or ovaries", "Sperm or ova are produced", "Fertilisation"], ["Fertilisation", "Ampullary-isthmic region of oviduct", "Zygote forms after gamete fusion", "Implantation in uterus"], ["Implantation", "Uterine endometrium", "Blastocyst becomes embedded", "Early cleavage during transit"], ["Placental exchange", "Placenta", "Maternal and foetal exchange interface", "Umbilical cord, which connects foetus and placenta"]],
   },
   "reproductive-health": {
-    heading: "Reproductive health: identify the level of the statement",
-    intro: "A topic label can sound broad. Match it to whether the statement is about education, prevention, professional care or a biotechnology concept.",
-    columns: ["Level", "Main purpose", "NCERT-linked context", "Boundary check"],
-    rows: [["Information", "Build accurate awareness", "Reproductive health education", "Not an individual diagnosis"], ["Prevention", "Reduce avoidable risk", "Awareness of STIs and responsible practices", "Not a symptom list"], ["Clinical care", "Assess or manage an individual's health concern", "Professional consultation and services", "Not self-treatment from a study note"], ["Assisted technology", "Support reproduction under medical supervision", "Elementary IVF, ZIFT and GIFT concepts", "Not a home procedure or personal recommendation"]],
+    heading: "Assisted reproduction: what is transferred, and where?",
+    intro: "Read the material and destination together. These are NCERT terminology distinctions, not a comparison of treatment suitability.",
+    columns: ["Term", "Material or event", "Location named", "Decisive distinction"],
+    rows: [["IVF", "Fertilisation of gametes", "Outside the body", "Names the fertilisation step, not the eventual transfer destination"], ["ZIFT", "Zygote or early embryo up to eight blastomeres", "Fallopian tube", "Transfers an already fertilised stage"], ["IUT", "Embryo with more than eight blastomeres", "Uterus", "Uterine destination in the NCERT comparison"], ["GIFT", "Gametes; an ovum in the NCERT example", "Fallopian tube", "Does not transfer an already formed embryo"], ["ICSI", "A sperm introduced into an ovum", "Laboratory procedure", "Describes sperm introduction, not embryo transfer"]],
   },
   "molecular-basis-of-inheritance": {
     heading: "DNA information: object, action and result",

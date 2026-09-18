@@ -3,6 +3,33 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import nextConfig from "../next.config.ts";
 
+test("keeps consent defaults ahead of advertising and does not preload GA", async () => {
+  const html = await readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
+  const scripts = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)].map((match) => match[0]);
+  const defaults = scripts.findIndex((script) => script.includes('id="consent-defaults"'));
+  const ads = scripts.findIndex((script) => script.includes('src="https://pagead2.googlesyndication.com'));
+  assert.ok(defaults >= 0 && ads > defaults);
+  assert.ok(!scripts.some((script) => /src="https:\/\/www.googletagmanager.com\/gtag/.test(script)));
+});
+
+test("keeps article first publication and modification dates consistent across HTML and sitemap", async () => {
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  for (const [slug, published] of [
+    ["human-reproduction", "2026-09-17"], ["reproductive-health", "2026-09-17"],
+    ["molecular-basis-of-inheritance", "2026-09-17"], ["evolution-and-natural-selection", "2026-09-18"],
+    ["organisms-and-populations", "2026-09-18"], ["pedigree-analysis-and-inheritance-patterns", "2026-09-16"],
+    ["molecular-tools-and-dna-analysis", "2026-09-16"], ["biotechnology-applications", "2026-09-16"],
+  ]) {
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
+    const ld = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((match) => JSON.parse(match[1]));
+    const article = ld.find((item) => item["@type"] === "Article");
+    assert.equal(article.datePublished, published, slug);
+    assert.equal(article.dateModified, "2026-09-18", slug);
+    const entry = sitemap.split("<url>").find((item) => item.includes(`/biology/${slug}</loc>`));
+    assert.ok(entry?.includes("2026-09-18T00:00:00.000Z"), slug);
+  }
+});
+
 test("keeps legacy GSC routes pointed at a live revision hub", async () => {
   const redirects = await nextConfig.redirects();
   assert.equal(redirects.find((redirect) => redirect.source === "/mock-test")?.destination, "/neet-ug/biology");
@@ -88,7 +115,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   ]);
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
-  assert.match(topicHtml, /Published: .*August 5, 2026/);
+  assert.match(topicHtml, /Published: .*September 5, 2026/);
   assert.match(topicHtml, /Last updated: .*September 11, 2026/);
   assert.match(topicHtml, /Related revision guides/);
   assert.match(topicHtml, /Exam-style checkpoints/);
@@ -231,7 +258,7 @@ test("publishes the connected reproduction and molecular-inheritance revision gu
   assert.match(humanReproductionHtml, /Follow the reproductive cells, then locate each event/);
   assert.match(humanReproductionHtml, /human-reproduction-sequence-v1\.png/);
   assert.match(humanReproductionHtml, /lebo102\.pdf/);
-  assert.match(reproductiveHealthHtml, /Reproductive health is an education and wellbeing concept/);
+  assert.match(reproductiveHealthHtml, /Start with the biological event a method changes/);
   assert.match(reproductiveHealthHtml, /reproductive-health-foundations-v1\.png/);
   assert.match(reproductiveHealthHtml, /lebo103\.pdf/);
   assert.match(molecularInheritanceHtml, /Inheritance needs DNA to be stored, copied and used/);

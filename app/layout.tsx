@@ -75,11 +75,12 @@ export default function RootLayout({
   return (
     <html lang="en-IN">
       <head>
+        <script id="consent-defaults" dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});` }} />
         <GoogleAdSense />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd, websiteLd]) }} />
       </head>
       <body>
-        <GoogleAnalytics />
+        <GoogleAnalytics gaId={siteConfig.gaId} />
         {children}
         <Footer />
       </body>

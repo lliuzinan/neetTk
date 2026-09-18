@@ -11,6 +11,7 @@ export default function PrivacyPage() {
   return (
     <InfoPage
       eyebrow="Privacy"
+      lastUpdated="September 18, 2026"
       title="Privacy Policy"
       intro="This Privacy Policy explains how MedQGo collects and uses information when students browse NEET Biology revision pages or join the revision-workbook early access list."
       sections={[
@@ -48,8 +49,8 @@ export default function PrivacyPage() {
         {
           title: "Cookie Consent",
           body: [
-            "Where consent is required for advertising or analytics cookies, MedQGo uses the consent message and controls supplied through its advertising provider. Your choices are presented before consent-dependent advertising or analytics processing takes place.",
-            "You can also use browser controls or privacy settings to manage cookies and local storage on your device.",
+            "Google Analytics is not loaded until you allow optional analytics through our privacy controls. Rejecting analytics does not restrict access to any revision guide. Advertising consent is managed separately through Google's consent message where available and required; allowing analytics does not grant advertising consent.",
+            "Use Privacy settings in the footer to change your analytics choice or open Google's advertising choices when available. Withdrawing analytics permission disables further GA measurement and removes the first-party GA cookies accessible to this site; it does not delete information previously collected by Google. We store your analytics choice in local storage for up to 180 days. If storage is unavailable, your choice lasts only for the current page visit.",
           ],
         },
       ]}

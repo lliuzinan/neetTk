@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { studyLinks } from "@/lib/studyLinks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -326,7 +327,11 @@ export default async function TopicPage({ params }: Props) {
   const articleStudyNote = articleStudyNotes[note.slug];
   const articleSupplementalFigure = articleSupplementalFigures[note.slug];
   const noteTopicSlugs = new Set(notes.filter((item) => isPublishedNote(item.slug)).map((item) => item.topicSlug));
-  const relatedTopics = allTopics
+  const curatedLinks = studyLinks[topic.slug];
+  const relatedTopics = curatedLinks ? curatedLinks.flatMap((link) => {
+    const match = allTopics.find((item) => item.slug === link.slug && noteTopicSlugs.has(item.slug));
+    return match ? [match] : [];
+  }) : allTopics
     .filter((item) => item.slug !== topic.slug && noteTopicSlugs.has(item.slug))
     .map((item) => ({ topic: item, distance: Math.abs(item.sortOrder - topic.sortOrder), sameClass: item.ncertRef.slice(0, 24) === topic.ncertRef.slice(0, 24) }))
     .sort((a, b) => Number(b.sameClass) - Number(a.sameClass) || a.distance - b.distance)
@@ -405,11 +410,11 @@ export default async function TopicPage({ params }: Props) {
           </section>
         ))}
         <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section>
+        {!curatedLinks && <section>
           <h2>Exam-style checkpoints</h2>
           <p>Before leaving this page, check whether you can explain {topic.name} without opening your textbook. A good checkpoint is to define the main term, give one NCERT-linked example, and state one nearby idea that students commonly confuse with it.</p>
           <p>For a second pass, mix this guide with a neighbouring Biology topic instead of revising it alone. NEET-UG Biology often tests whether students can keep similar processes, structures, molecules, or examples separate under time pressure.</p>
-        </section>
+        </section>}
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>
           <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Published by:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
@@ -432,7 +437,7 @@ export default async function TopicPage({ params }: Props) {
               {relatedTopics.map((related) => (
                 <Link href={`/neet-ug/biology/${related.slug}`} className="relatedGuide" key={related.id}>
                   <strong>{related.name}</strong>
-                  <span>{related.ncertRef}</span>
+                  <span>{curatedLinks?.find((link) => link.slug === related.slug)?.reason || related.ncertRef}</span>
                 </Link>
               ))}
             </div>
