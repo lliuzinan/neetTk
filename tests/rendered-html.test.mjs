@@ -247,3 +247,25 @@ test("publishes the connected reproduction and molecular-inheritance revision gu
   assert.match(sitemapXml, /reproductive-health/);
   assert.match(sitemapXml, /molecular-basis-of-inheritance/);
 });
+
+test("publishes evolution and population ecology guides with original comparison visuals", async () => {
+  const [evolutionHtml, populationsHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/evolution-and-natural-selection.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/organisms-and-populations.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+  assert.match(evolutionHtml, /Evolution is a population change across generations/);
+  assert.match(evolutionHtml, /evolution-natural-selection-route-v1\.png/);
+  assert.match(evolutionHtml, /lebo106\.pdf/);
+  assert.match(populationsHtml, /Begin with an organism in its environment/);
+  assert.match(populationsHtml, /organisms-populations-growth-v1\.png/);
+  assert.match(populationsHtml, /lebo111\.pdf/);
+  for (const html of [evolutionHtml, populationsHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:.*MedQGo/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+  }
+  assert.match(sitemapXml, /evolution-and-natural-selection/);
+  assert.match(sitemapXml, /organisms-and-populations/);
+});

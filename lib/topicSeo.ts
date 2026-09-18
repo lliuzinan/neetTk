@@ -56,6 +56,14 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["DNA base pairing, nucleotide structure and the information carried by sequence.", "How DNA packaging into nucleosomes differs from making DNA copies.", "Why replication is semiconservative and how leading and lagging strands arise."],
     traps: ["A gene is a defined DNA segment; a chromosome is a larger organised DNA-protein structure containing many genes.", "Packaging folds existing DNA; replication makes new complementary DNA strands.", "Each replicated DNA double helix has one parental and one newly synthesised strand, not two entirely new strands."],
   },
+  "evolution-and-natural-selection": {
+    focus: ["Evolution as a population-level change in allele frequency across generations.", "The linked conditions of variation, heritability, selection pressure and unequal reproductive success.", "How selection, drift, gene flow and mutation provide different explanations for change."],
+    traps: ["Natural selection acts through individuals but evolutionary change is measured in populations over generations.", "A trait must be heritable and linked with differential reproduction to change in frequency by natural selection.", "Evolution is not a statement that every change is progress, purpose or increased complexity."],
+  },
+  "organisms-and-populations": {
+    focus: ["How abiotic and biotic factors connect an organism to its habitat and niche.", "Population attributes and the four processes that add or remove individuals.", "Why exponential and logistic models make different resource assumptions."],
+    traps: ["Habitat is the place an organism lives; niche is its functional role and resource relationship.", "Density is a population property, not a characteristic of one organism.", "Carrying capacity belongs to an environment and can change; it is not a permanent universal number for a species."],
+  },
   "mitosis-and-meiosis": {
     focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
     traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],

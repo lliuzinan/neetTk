@@ -46,6 +46,8 @@ export const AUTHORED_NOTE_SLUGS = [
   "human-reproduction",
   "reproductive-health",
   "molecular-basis-of-inheritance",
+  "evolution-and-natural-selection",
+  "organisms-and-populations",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -946,6 +948,66 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "evolution-and-natural-selection": [
+    {
+      heading: "Evolution is a population change across generations",
+      paragraphs: [
+        "Evolution is not a change that one individual organism chooses during its lifetime. In population genetics, evolution is described as a change in allele frequencies in a population over generations. The unit that changes is therefore the population, while natural selection acts through differences among individuals.",
+        "Start with variation. Individuals in a population can differ in traits, and some of those differences can be inherited. If an environment makes one heritable variant more likely to contribute offspring than another, the representation of that variant can increase in later generations. That change in representation is the evolutionary outcome to track.",
+      ],
+    },
+    {
+      heading: "Natural selection has a cause-and-consequence route",
+      paragraphs: [
+        "The route can be written as variation, heritability, environmental context and unequal reproductive success. A trait is not selected because it is morally better, more complex or more advanced. Its effect depends on the conditions in which organisms live, survive and reproduce.",
+        "Selection pressure is a feature of the environment that changes the relative success of variants. It can involve resources, predators, climate or another ecological condition. The important comparison is between reproductive contribution, not merely which individual survives for a short time. A variant becomes more common only when it is inherited and contributes disproportionately to later generations.",
+      ],
+    },
+    {
+      heading: "Selection, drift and migration change populations in different ways",
+      paragraphs: [
+        "Natural selection is one mechanism of evolutionary change, but it is not the only one. Genetic drift is a change in allele frequency caused by chance, especially noticeable in small populations. Gene flow occurs when individuals or gametes move between populations and introduce or remove alleles. Mutation supplies new genetic variation by changing DNA sequence.",
+        "A useful question is whether the explanation requires an advantage. If an allele becomes common because carriers leave more offspring under stated conditions, selection is relevant. If a small group happened to carry a different sample of alleles, chance and drift may be the better explanation. Do not use 'adaptation' as a substitute word for every population change.",
+      ],
+    },
+    {
+      heading: "Draw one generation boundary before you reason",
+      paragraphs: [
+        "Draw two rows of simple organisms, labelled generation one and generation two. In the first row, use two heritable colour variants. Add one environmental condition between the rows, then draw more descendants from the variant that has higher reproductive success in that condition. The second row should show a changed proportion, not a transformed individual.",
+        "For a final recall check, answer four questions without notes: What is the population-level measure that changes? What makes a trait relevant to natural selection? How does drift differ from selection? Why is evolution not a ladder of progress? The answers should rely on population and generation language.",
+      ],
+    },
+  ],
+  "organisms-and-populations": [
+    {
+      heading: "Begin with an organism in its environment",
+      paragraphs: [
+        "Ecology begins by asking how an organism responds to its surroundings. Abiotic factors such as temperature, water and light influence where organisms can survive and reproduce. Biotic factors include other organisms, whether they are competitors, predators, prey, parasites or mutualistic partners.",
+        "An organism's habitat is the place where it lives; its niche describes its functional role and relationship with resources and other organisms. These terms are connected but not identical. A habitat gives the physical setting, while a niche asks how the organism uses that setting.",
+      ],
+    },
+    {
+      heading: "A population has attributes that one organism cannot have",
+      paragraphs: [
+        "A population consists of individuals of the same species living in a defined area at a given time. Population density, birth rate, death rate, age structure and sex ratio describe the group rather than a single individual. When a prompt gives a number, first ask whether it is measuring an organism, a population or a community.",
+        "Population size can change when births and immigration add individuals, while deaths and emigration remove them. This four-arrow accounting step is more useful than learning growth curves in isolation because it tells you why the number might rise or fall.",
+      ],
+    },
+    {
+      heading: "J-shaped and S-shaped curves answer different resource questions",
+      paragraphs: [
+        "Exponential growth produces a J-shaped curve in a simplified situation with abundant resources and no effective limit on growth. It describes what a population could do under favourable conditions; it is not a promise that a real population will rise indefinitely.",
+        "Logistic growth includes environmental resistance and a carrying capacity, often represented by K. As population size approaches the supportable level for that environment, growth slows and the curve becomes S-shaped. Carrying capacity is tied to a particular habitat and its available resources, so it can change when environmental conditions change.",
+      ],
+    },
+    {
+      heading: "A population-accounting recall routine",
+      paragraphs: [
+        "Make a two-part sketch. On the left, write births and immigration with arrows into a population circle, then deaths and emigration with arrows out. On the right, draw a J curve and an S curve, adding a dashed horizontal line only to the S curve for carrying capacity. State what resource assumption distinguishes the curves.",
+        "Finish with three checks: Is density a property of one organism or a population? What does K describe? Why can carrying capacity change? These questions force the model back into an actual environmental context.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -993,6 +1055,14 @@ const noteReferences: Record<string, NoteReference[]> = {
   "molecular-basis-of-inheritance": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "OpenStax Concepts of Biology: DNA replication", href: "https://openstax.org/books/concepts-biology/pages/9-2-dna-replication" },
+  ],
+  "evolution-and-natural-selection": [
+    { label: "NCERT Class 12 Biology, Chapter 6: Evolution", href: "https://ncert.nic.in/textbook/pdf/lebo106.pdf" },
+    { label: "OpenStax Concepts of Biology: Evolution and population change", href: "https://openstax.org/books/concepts-biology/pages/11-chapter-summary" },
+  ],
+  "organisms-and-populations": [
+    { label: "NCERT Class 12 Biology, Chapter 11: Organisms and Populations", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
+    { label: "OpenStax Biology 2e: Environmental limits to population growth", href: "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth" },
   ],
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
@@ -1117,6 +1187,18 @@ const noteTables: Record<string, NoteComparisonTable> = {
     intro: "Use the action to distinguish a DNA structure question from a copying or expression question.",
     columns: ["Object or action", "What changes", "What remains the key idea", "Common mix-up"],
     rows: [["Nucleotide", "Bases occur in a sequence on a sugar-phosphate backbone", "Base sequence carries information", "Calling a base alone a nucleotide"], ["Packaging", "DNA associates with histones and folds into higher organisation", "DNA is organised to fit in the nucleus", "Saying new DNA copies are produced"], ["Replication", "Each template strand guides a complementary new strand", "Each product has one parental and one new strand", "Calling both product strands newly made"], ["Gene expression", "DNA information is used through RNA and protein synthesis", "Information is read for a product", "Treating it as another name for replication"]],
+  },
+  "evolution-and-natural-selection": {
+    heading: "Population change: mechanism, evidence and wrong shortcut",
+    intro: "Use the cause of the allele-frequency change to separate selection from chance and movement between populations.",
+    columns: ["Mechanism", "What shifts", "Key condition", "Wrong shortcut"],
+    rows: [["Natural selection", "Frequency of heritable variants", "Variants differ in reproductive success in a stated environment", "Calling every surviving individual an adaptation"], ["Genetic drift", "Allele frequencies by chance", "Sampling effects, often stronger in small populations", "Assuming an advantage is required"], ["Gene flow", "Alleles enter or leave a population", "Individuals or gametes move between populations", "Calling it a mutation"], ["Mutation", "DNA sequence can create a new allele", "A sequence change occurs", "Treating every mutation as automatically advantageous"]],
+  },
+  "organisms-and-populations": {
+    heading: "Population growth: start with the resource assumption",
+    intro: "The curve is an output of assumptions about resources and environmental limits, not merely a shape to memorise.",
+    columns: ["Model or measure", "Main assumption", "What the pattern shows", "Do not confuse with"],
+    rows: [["Population density", "Individuals are counted in a stated area or volume", "How crowded a population is in its habitat", "The size of one organism"], ["Exponential growth", "Resources are effectively unlimited in the model", "J-shaped increase", "A permanent real-world outcome"], ["Logistic growth", "Resources become limiting as population rises", "S-shaped growth toward carrying capacity", "A fixed number unrelated to environment"], ["Carrying capacity (K)", "Habitat resources set a supportable population level", "Environmental limit in the logistic model", "A universal constant for a species"]],
   },
   "mitosis-and-meiosis": {
     heading: "Mitosis and meiosis: identify what separates",
@@ -1283,6 +1365,14 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "molecular-basis-of-inheritance": {
     heading: "A DNA copy is not just another chromosome label",
     paragraphs: ["DNA, gene, chromosome, chromatin and nucleosome belong to the same information system but name different scales or states. The words become manageable when each one answers a different question: what is the molecule, what is the segment, and how is it organised?", "Replication adds a second question: how can sequence information be copied accurately? Complementary pairing and the semiconservative model provide the connection, while packaging explains where the long molecule fits."],
+  },
+  "evolution-and-natural-selection": {
+    heading: "Do not make an individual evolve inside the diagram",
+    paragraphs: ["Natural selection can look like a story about one organism changing to meet a challenge. The crucial scientific step is different: heritable variation already exists, and the relative contribution of variants to the next generation differs.", "A clear answer always includes the generation boundary. It explains why a trait can become more common in a population without claiming that every individual changes in the same direction."],
+  },
+  "organisms-and-populations": {
+    heading: "A curve without a habitat is only half an explanation",
+    paragraphs: ["A J curve or S curve becomes useful only after its resource assumption is stated. The models are tools for relating a changing population to the conditions in its habitat, not labels that replace ecological reasoning.", "The most important boundary is that K belongs to an environment at a time. A shift in water, food, space, disease pressure or another ecological factor can change the supportable population level."],
   },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",

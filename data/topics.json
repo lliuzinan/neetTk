@@ -308,5 +308,25 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 5",
     "questionCount": 0,
     "sortOrder": 29
+  },
+  {
+    "id": "evolution-and-natural-selection",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Evolution and natural selection",
+    "slug": "evolution-and-natural-selection",
+    "ncertRef": "NCERT Biology Class 12, Chapter 6",
+    "questionCount": 0,
+    "sortOrder": 30
+  },
+  {
+    "id": "organisms-and-populations",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Organisms and populations",
+    "slug": "organisms-and-populations",
+    "ncertRef": "NCERT Biology Class 12, Chapter 11",
+    "questionCount": 0,
+    "sortOrder": 31
   }
 ]

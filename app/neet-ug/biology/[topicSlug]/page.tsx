@@ -63,6 +63,16 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     alt: "DNA information routes showing replication to DNA copies, transcription to RNA and translation to a polypeptide chain",
     caption: "An original information map. DNA can be copied before division or used as the starting point for gene expression through RNA and protein production.",
   },
+  "evolution-and-natural-selection": {
+    src: "/images/biology/evolution-natural-selection-route-v1.png",
+    alt: "Heritable variants in a population passing through selection pressure to unequal reproduction and a changed population composition across generations",
+    caption: "An original natural-selection route. What changes across generations is the relative representation of heritable variants in a population.",
+  },
+  "organisms-and-populations": {
+    src: "/images/biology/organisms-populations-growth-v1.png",
+    alt: "Habitat with a population and a comparison of an exponential J-shaped curve with a logistic S-shaped curve approaching carrying capacity",
+    caption: "An original population-growth comparison. The curve depends on resource assumptions: logistic growth introduces an environmental limit represented by carrying capacity.",
+  },
   "mitosis-and-meiosis": {
     src: "/images/biology/cell-division-separation-v1.png",
     alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
@@ -180,6 +190,16 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     heading: "The store-package-copy check",
     intro: "One DNA molecule can be described at several scales. Keep the sequence, its organisation and its duplication as separate questions.",
     points: ["A DNA nucleotide includes a sugar, phosphate and nitrogenous base; base sequence carries information.", "Histones and nucleosomes describe DNA packaging in eukaryotic cells.", "Semiconservative replication gives each daughter DNA molecule one parental and one newly made strand.", "Leading and lagging synthesis differ because DNA polymerase builds new DNA in one direction along antiparallel templates."],
+  },
+  "evolution-and-natural-selection": {
+    heading: "The generation-and-frequency check",
+    intro: "Keep the individual-level event and the population-level result in the same explanation, but do not treat them as the same thing.",
+    points: ["Individuals vary, but evolution is described as a change in allele frequencies within a population over generations.", "Natural selection requires heritable variation and differential reproductive success in a stated environment.", "Genetic drift changes allele frequencies by chance and can be especially influential in small populations.", "Evolution does not imply a fixed direction toward complexity, progress or perfection."],
+  },
+  "organisms-and-populations": {
+    heading: "The population-and-resource check",
+    intro: "Put a measure back into its ecological context before accepting an answer about growth or regulation.",
+    points: ["Population attributes such as density, birth rate and age structure belong to groups, not individual organisms.", "Births and immigration add individuals; deaths and emigration remove them.", "Exponential growth is a model for abundant resources, while logistic growth includes environmental resistance.", "Carrying capacity describes what a particular habitat can support and can change as conditions change."],
   },
   "human-respiration": {
     heading: "Gas movement: trace the route before naming a molecule",

@@ -241,5 +241,23 @@
     "topicSlug": "molecular-basis-of-inheritance",
     "targetKeyword": "Molecular basis of inheritance NEET UG Biology revision guide",
     "sortOrder": 31
+  },
+  {
+    "id": "note-evolution-and-natural-selection",
+    "slug": "evolution-and-natural-selection",
+    "title": "Evolution and Natural Selection: NEET-UG Biology Revision Guide",
+    "description": "Trace how heritable variation, selection pressure and unequal reproduction can change a population across generations.",
+    "topicSlug": "evolution-and-natural-selection",
+    "targetKeyword": "Evolution and natural selection NEET UG Biology revision guide",
+    "sortOrder": 32
+  },
+  {
+    "id": "note-organisms-and-populations",
+    "slug": "organisms-and-populations",
+    "title": "Organisms and Populations: NEET-UG Biology Revision Guide",
+    "description": "Connect habitat, niche and population attributes with exponential versus logistic growth and carrying capacity.",
+    "topicSlug": "organisms-and-populations",
+    "targetKeyword": "Organisms and populations NEET UG Biology revision guide",
+    "sortOrder": 33
   }
 ]
