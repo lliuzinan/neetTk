@@ -17,6 +17,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: absoluteUrl("/neet-ug/biology"), lastModified: libraryModified, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl("/neet-biology-pdf"), lastModified, changeFrequency: "weekly", priority: 0.8 },
     ...topics.map((topic) => ({ url: absoluteUrl(`/neet-ug/biology/${topic.slug}`), lastModified: new Date(`${topicDates(topic.slug).modifiedIso}T00:00:00.000Z`), changeFrequency: "monthly" as const, priority: 0.8 })),
-    ...trustPages.map((path) => ({ url: absoluteUrl(path), lastModified: path === "/privacy" ? new Date("2026-09-18T00:00:00Z") : lastModified, changeFrequency: "monthly" as const, priority: 0.4 })),
+    ...trustPages.map((path) => ({ url: absoluteUrl(path), lastModified: path === "/privacy" ? new Date("2026-09-20T00:00:00Z") : lastModified, changeFrequency: "monthly" as const, priority: 0.4 })),
   ];
 }

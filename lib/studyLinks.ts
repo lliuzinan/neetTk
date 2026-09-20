@@ -1,6 +1,10 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "digestion-and-absorption": [
+    { slug: "blood-and-circulation", reason: "Follow absorbed nutrients from intestinal vessels into the circulation." },
+    { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
+  ],
   "mendelian-inheritance": [
     { slug: "chromosomal-basis-of-inheritance", reason: "Connect segregation of alleles with the movement of homologous chromosomes." },
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Apply inheritance rules when the evidence is a family tree." },

@@ -11,7 +11,7 @@ export default function PrivacyPage() {
   return (
     <InfoPage
       eyebrow="Privacy"
-      lastUpdated="September 18, 2026"
+      lastUpdated="September 20, 2026"
       title="Privacy Policy"
       intro="This Privacy Policy explains how MedQGo collects and uses information when students browse NEET Biology revision pages or join the revision-workbook early access list."
       sections={[
@@ -39,8 +39,8 @@ export default function PrivacyPage() {
         {
           title: "Advertising",
           body: [
-            "MedQGo is currently awaiting its Google AdSense site review. Google AdSense ads are not displayed on this site unless and until that review is approved and advertising is enabled.",
-            "If Google ads are served on MedQGo in the future, Google and other third-party vendors may use cookies, web beacons, IP addresses, or similar technologies to serve and measure advertising. Where permitted, this may include using prior visits to MedQGo or other websites to make ads more relevant.",
+            "MedQGo has integrated the Google AdSense script while its site review is pending. Loading that script contacts Google even when no advertisement is visible and can disclose technical request information, including an IP address and browser information. Visible advertising depends on approval and our advertising settings.",
+            "Google and other third-party advertising vendors use cookies or similar technologies to serve and measure ads, subject to applicable consent requirements. Google's advertising cookies enable Google and its partners to personalise ads using prior visits to this site or other websites. Advertising storage and personalisation consent default to denied; where required, Google's consent message provides advertising choices.",
             <>
               You can control personalised advertising in <a href="https://myadcenter.google.com/" target="_blank" rel="noreferrer">Google&apos;s My Ad Center</a>. For more detail about data collected when Google services are used on partner sites, read <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer">How Google uses information from sites or apps that use its services</a>.
             </>,

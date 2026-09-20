@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { Topic } from "@/lib/content";
-import { absoluteUrl, getTopicPath } from "@/lib/content";
+import { absoluteUrl, getTopicPath, getNote } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 
 export const LAST_UPDATED_ISO = "2026-09-11";
@@ -9,29 +9,29 @@ export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revis
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
   "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-07-18", modified: "2026-08-03" },
-  "dna-rna-replication-transcription-translation": { published: "2026-09-08", modified: "2026-09-11" },
-  "mutation-and-gene-expression": { published: "2026-09-08", modified: "2026-09-11" },
-  "cell-theory-and-cell-organelles": { published: "2026-09-08", modified: "2026-09-11" },
+  "dna-rna-replication-transcription-translation": { published: "2026-09-08", modified: "2026-09-20" },
+  "mutation-and-gene-expression": { published: "2026-09-08", modified: "2026-09-20" },
+  "cell-theory-and-cell-organelles": { published: "2026-09-08", modified: "2026-09-20" },
   "mitosis-and-meiosis": { published: "2026-09-13", modified: "2026-09-13" },
-  "sexual-reproduction-in-flowering-plants": { published: "2026-09-14", modified: "2026-09-18" },
-  "mendelian-inheritance": { published: "2026-09-14", modified: "2026-09-18" },
-  "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-18" },
-  "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-18" },
+  "sexual-reproduction-in-flowering-plants": { published: "2026-09-14", modified: "2026-09-20" },
+  "mendelian-inheritance": { published: "2026-09-14", modified: "2026-09-20" },
+  "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-20" },
+  "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-20" },
   "endocrine-system-and-hormones": { published: "2026-09-06", modified: "2026-09-10" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
-  "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-09-11" },
-  "neuron-nerve-impulse-synapse": { published: "2026-09-06", modified: "2026-09-11" },
-  "human-respiration": { published: "2026-09-05", modified: "2026-09-11" },
-  "excretion-and-kidney-function": { published: "2026-09-05", modified: "2026-09-11" },
+  "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-09-20" },
+  "neuron-nerve-impulse-synapse": { published: "2026-09-06", modified: "2026-09-20" },
+  "human-respiration": { published: "2026-09-05", modified: "2026-09-20" },
+  "excretion-and-kidney-function": { published: "2026-09-05", modified: "2026-09-20" },
   "human-reproductive-system-and-gametogenesis": { published: "2026-08-09", modified: "2026-08-25" },
   "plant-respiration": { published: "2026-09-11", modified: "2026-09-11" },
   "photosynthesis-in-higher-plants": { published: "2026-09-11", modified: "2026-09-11" },
-  "digestion-and-absorption": { published: "2026-09-11", modified: "2026-09-11" },
-  "blood-and-circulation": { published: "2026-09-11", modified: "2026-09-11" },
+  "digestion-and-absorption": { published: "2026-09-11", modified: "2026-09-20" },
+  "blood-and-circulation": { published: "2026-09-11", modified: "2026-09-20" },
   "animal-tissues": { published: "2026-08-13", modified: "2026-08-29" },
   // Authored revision guides first shipped in 4e31247, 9845779 and e90f71a.
-  "molecular-tools-and-dna-analysis": { published: "2026-09-16", modified: "2026-09-18" },
-  "pedigree-analysis-and-inheritance-patterns": { published: "2026-09-16", modified: "2026-09-18" },
+  "molecular-tools-and-dna-analysis": { published: "2026-09-16", modified: "2026-09-20" },
+  "pedigree-analysis-and-inheritance-patterns": { published: "2026-09-16", modified: "2026-09-20" },
   "biotechnology-applications": { published: "2026-09-16", modified: "2026-09-18" },
   "human-reproduction": { published: "2026-09-17", modified: "2026-09-18" },
   "reproductive-health": { published: "2026-09-17", modified: "2026-09-18" },
@@ -63,11 +63,13 @@ export function topicDates(slug: string) {
 }
 
 export function topicDescription(topic: Topic) {
+  const note = getNote(topic.slug);
+  if (note && AUTHORED_NOTE_SLUGS.some((slug) => slug === topic.slug)) return note.description;
   return `Review ${topic.name} for NEET-UG Biology with an independent revision guide, NCERT-aligned concept focus, common confusions, and a recall routine.`;
 }
 
 export function topicMetadata(topic: Topic): Metadata {
-  const title = `${topic.name} Revision Guide for NEET-UG Biology`;
+  const title = topic.slug === "digestion-and-absorption" ? "Digestion and Absorption: Supplementary Physiology Notes" : `${topic.name} Revision Guide for NEET-UG Biology`;
   const description = topicDescription(topic);
   const url = absoluteUrl(getTopicPath(topic));
   const image = ogImage(title, "Concept focus and a compact recall routine");

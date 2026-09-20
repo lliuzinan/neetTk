@@ -143,15 +143,15 @@ export async function getSeoNotes() {
   const rows = await readSupabase<SeoPageRow>(
     "/rest/v1/seo_pages?select=*&status=eq.published&order=published_at.asc&limit=1000",
   );
-  if (!rows?.length) return seoNotes.map((note) => ({ ...note, description: revisionDescription(note.title.split(":")[0]) }));
+  if (!rows?.length) return seoNotes;
 
   const remoteNotes = rows.map(mapSeoPage);
   const remoteById = new Map(remoteNotes.map((note) => [note.id, note]));
-  const merged = seoNotes.map((note) => remoteById.get(note.id) || note);
+  const merged = seoNotes.map((note) => ({ ...remoteById.get(note.id), ...note }));
   const localIds = new Set(seoNotes.map((note) => note.id));
 
-  return [...merged, ...remoteNotes.filter((note) => !localIds.has(note.id))]
-    .map((note) => ({ ...note, description: revisionDescription(note.title.split(":")[0]) }));
+  return [...merged, ...remoteNotes.filter((note) => !localIds.has(note.id))
+    .map((note) => ({ ...note, description: revisionDescription(note.title.split(":")[0]) }))];
 }
 
 export async function findTopic(slug: string) {

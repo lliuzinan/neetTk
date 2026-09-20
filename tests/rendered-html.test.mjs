@@ -24,9 +24,10 @@ test("keeps article first publication and modification dates consistent across H
     const ld = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((match) => JSON.parse(match[1]));
     const article = ld.find((item) => item["@type"] === "Article");
     assert.equal(article.datePublished, published, slug);
-    assert.equal(article.dateModified, "2026-09-18", slug);
+    const modified = ["pedigree-analysis-and-inheritance-patterns", "molecular-tools-and-dna-analysis"].includes(slug) ? "2026-09-20" : "2026-09-18";
+    assert.equal(article.dateModified, modified, slug);
     const entry = sitemap.split("<url>").find((item) => item.includes(`/biology/${slug}</loc>`));
-    assert.ok(entry?.includes("2026-09-18T00:00:00.000Z"), slug);
+    assert.ok(entry?.includes(`${modified}T00:00:00.000Z`), slug);
   }
 });
 
@@ -116,7 +117,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
   assert.match(topicHtml, /Published: .*September 5, 2026/);
-  assert.match(topicHtml, /Last updated: .*September 11, 2026/);
+  assert.match(topicHtml, /Last updated: .*September 20, 2026/);
   assert.match(topicHtml, /Related revision guides/);
   assert.match(topicHtml, /Exam-style checkpoints/);
   assert.match(topicHtml, /Article/);
@@ -146,7 +147,8 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(mutationHtml, /mutation-expression-change-use-v2\.png/);
   assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
   assert.match(privacyHtml, /Google Analytics 4/);
-  assert.match(privacyHtml, /currently awaiting its Google AdSense site review/);
+  assert.match(privacyHtml, /AdSense script while its site review is pending/);
+  assert.match(privacyHtml, /even when no advertisement is visible/);
   assert.match(privacyHtml, /Google&#x27;s My Ad Center/);
   assert.match(privacyHtml, /How Google uses information from sites or apps that use its services/);
   assert.match(termsHtml, /Educational Use/);
@@ -169,10 +171,10 @@ test("publishes four complete NCERT-aligned revision guides", async () => {
   assert.match(plantRespirationHtml, /kebo112\.pdf/);
   assert.match(plantRespirationHtml, /plant-respiration-route-v1\.png/);
   assert.match(digestionHtml, /The small intestine is built for absorption/);
-  assert.match(digestionHtml, /kebo116\.pdf/);
+  assert.match(digestionHtml, /kebo1ps\.pdf/);
   assert.match(digestionHtml, /digestion-absorption-route-v1\.png/);
   assert.match(circulationHtml, /Start with the two loops of double circulation/);
-  assert.match(circulationHtml, /kebo118\.pdf/);
+  assert.match(circulationHtml, /kebo115\.pdf/);
   assert.match(circulationHtml, /blood-double-circulation-v1\.png/);
   for (const html of [photosynthesisHtml, plantRespirationHtml, digestionHtml, circulationHtml]) {
     assert.match(html, /Written by:.*DongFeng/);
@@ -199,13 +201,13 @@ test("publishes three distinct NCERT Biology revision guides with original teach
   ]);
   assert.match(floweringPlantsHtml, /Double fertilisation has two fusion events and two products/);
   assert.match(floweringPlantsHtml, /flowering-plant-double-fertilisation-v1\.png/);
-  assert.match(floweringPlantsHtml, /lebo102\.pdf/);
+  assert.match(floweringPlantsHtml, /lebo101\.pdf/);
   assert.match(mendelianHtml, /Inheritance questions begin with alleles entering gametes/);
   assert.match(mendelianHtml, /mendelian-segregation-v1\.png/);
-  assert.match(mendelianHtml, /lebo105\.pdf/);
+  assert.match(mendelianHtml, /lebo104\.pdf/);
   assert.match(recombinantHtml, /Recombinant DNA is a controlled sequence, not a single tool/);
   assert.match(recombinantHtml, /recombinant-dna-workflow-v1\.png/);
-  assert.match(recombinantHtml, /lebo111\.pdf/);
+  assert.match(recombinantHtml, /lebo109\.pdf/);
   for (const html of [floweringPlantsHtml, mendelianHtml, recombinantHtml]) {
     assert.match(html, /Written by:.*DongFeng/);
     assert.match(html, /September 14, 2026/);
@@ -216,7 +218,7 @@ test("publishes the chromosomal basis of inheritance guide with its original lin
   const html = await readFile(new URL("../.next/server/app/neet-ug/biology/chromosomal-basis-of-inheritance.html", import.meta.url), "utf8");
   assert.match(html, /Chromosomes give inheritance its physical route/);
   assert.match(html, /chromosomal-linkage-crossing-over-v1\.png/);
-  assert.match(html, /lebo105\.pdf/);
+  assert.match(html, /lebo104\.pdf/);
   assert.match(html, /The chromosome-first check/);
   assert.match(html, /Written by:.*DongFeng/);
 });
@@ -304,7 +306,7 @@ test("publishes the ecosystem energy guide with a source-grounded visual and eco
   ]);
   assert.match(html, /An ecosystem has two linked accounting systems/);
   assert.match(html, /ecosystem-energy-and-pyramids-v1\.png/);
-  assert.match(html, /lebo114\.pdf/);
+  assert.match(html, /lebo112\.pdf/);
   assert.match(html, /The unit-and-arrow check/);
   assert.match(html, /Organisms and populations/);
   assert.match(html, /Photosynthesis in higher plants/);

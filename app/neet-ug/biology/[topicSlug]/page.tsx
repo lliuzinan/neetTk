@@ -453,7 +453,7 @@ export default async function TopicPage({ params }: Props) {
             </div>
           </section>
         )}
-        <section><h2>How to use this guide</h2><p>Read the relevant NCERT chapter first. Then redraw the relationships or process described here from memory, compare your version with the textbook, and correct only the gaps. This is an independent revision aid, not official NCERT, NTA, or NEET material.</p></section>
+        <section><h2>How to use this guide</h2><p>{topic.slug === "digestion-and-absorption" ? "Use the linked physiology references to check this supplementary topic. Draw the food route and explain where digestion ends and uptake begins; check the current examination syllabus before allocating revision time." : "Read the relevant NCERT chapter first. Then redraw the relationships or process described here from memory, compare your version with the textbook, and correct only the gaps."} This is an independent revision aid, not official NCERT, NTA, or NEET material.</p></section>
       </article>
       <PdfCta source="topic_page" topicSlug={topic.slug} />
     </main>

@@ -526,6 +526,10 @@ const noteContent: Record<string, NoteSection[]> = {
   ],
   "digestion-and-absorption": [
     {
+      heading: "Where this supplementary guide fits",
+      paragraphs: ["Digestion and Absorption appeared as a separate chapter in older Class 11 NCERT editions. It is not a separate chapter in the 2026-27 contents. Use this guide as background human physiology alongside the current textbook and examination syllabus, rather than as a claim that every detail is currently examinable."],
+    },
+    {
       heading: "Use one food route before learning enzymes",
       paragraphs: [
         "The alimentary canal is easiest to revise as a route: mouth, pharynx, oesophagus, stomach, small intestine, large intestine, rectum and anus. Accessory glands add secretions, but food does not pass through the liver or pancreas. That distinction removes a common diagram error.",
@@ -543,15 +547,19 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "The small intestine is built for absorption",
       paragraphs: [
         "Most absorption occurs in the small intestine. Its length, folds, villi and microscopic surface features increase contact area, while blood vessels and lacteals support transport away from the intestinal lining. Structure and function should be learnt together here.",
-        "Many water-soluble nutrients enter blood capillaries after absorption. Lipid products follow a different early route through lacteals before reaching the wider circulation. This is a transport distinction, not a claim that every nutrient follows one identical path.",
+        "Glucose and amino acids enter intestinal blood capillaries and reach the liver through the hepatic portal circulation. Many products of long-chain fat digestion first enter absorptive cells, are reassembled into triglycerides and packaged into chylomicrons. These particles enter lacteals and travel in lymph before reaching the blood. Short-chain fatty acids can enter portal blood more directly, so 'all fats go into lymph' is too broad.",
       ],
     },
     {
-      heading: "Secretion and control: keep the job with the organ",
+      heading: "Follow starch and protein through a changing chemical environment",
       paragraphs: [
-        "The stomach provides an acidic environment and receives gastric secretions; the liver produces bile; the pancreas contributes digestive secretions to the small intestine. The small intestine is where digestion is completed for many nutrients and where absorption is especially important.",
-        "When revising a gland, say its product, destination and immediate role. This prevents the shortcut that every digestive secretion comes from the stomach, or that the liver is part of the food passage because it produces bile.",
+        "Starch breakdown begins with salivary amylase. As the swallowed material becomes acidified in the stomach, this enzyme loses activity; carbohydrate digestion is then continued by pancreatic amylase in the small intestine and enzymes at the intestinal surface. An enzyme's presence in a swallowed mouthful does not mean it remains active throughout the route.",
+        "Protein takes a different sequence. Gastric acid helps denature proteins and supports conversion of pepsinogen to pepsin, which cuts proteins into smaller peptides. Pancreatic proteases and intestinal peptidases continue the breakdown. This is why 'protein becomes amino acids in the stomach' skips the later stages needed to complete the explanation.",
       ],
+    },
+    {
+      heading: "Three short reasoning checks",
+      paragraphs: ["If a food sample has been broken into small molecules but those molecules remain in the intestinal lumen, has absorption occurred? No: chemical breakdown and crossing the intestinal lining are separate events. If villus surface area falls, which step is directly impaired? Uptake capacity falls even if digestive enzymes are still present.", "Why do glucose and a chylomicron have different early transport routes? Glucose can enter villus blood capillaries, whereas the assembled lipid particle enters a lacteal. Name the transported form before choosing the vessel; the word nutrient alone is not specific enough."],
     },
     {
       heading: "A 15-minute recall routine",
@@ -1147,6 +1155,10 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
     {
+      heading: "Work a productivity budget before applying ten percent",
+      paragraphs: ["For an invented annual budget, suppose producers fix 20,000 kJ per square metre and use 12,000 kJ per square metre in respiration. NPP is 8,000 kJ per square metre per year. All three values must cover the same area and interval. Subtracting a monthly respiration figure from annual GPP would not give a meaningful NPP.", "If a simplified exercise assumes ten-percent transfer from this producer NPP, primary-consumer production would be 800 kJ per square metre per year and secondary-consumer production 80. The assumption is part of the exercise, not a measured efficiency. Applying ten percent directly to GPP would skip the stated producer respiration loss.", "The remainder is not all immediately released as heat at a single transfer. Some material is uneaten or egested and can enter the detritus pathway; respiratory activity dissipates energy as heat. Distinguishing these destinations helps connect the budget to an actual food web."],
+    },
+    {
       heading: "Read the pyramid name before deciding its shape",
       paragraphs: [
         "Pyramids of number and biomass answer different questions from a pyramid of energy. A terrestrial biomass pyramid is commonly upright because producer standing biomass is large. In an aquatic ecosystem, a biomass pyramid may be inverted at a particular time because phytoplankton have a small standing crop but can reproduce and turn over quickly enough to support a larger consumer biomass.",
@@ -1170,19 +1182,19 @@ const defaultReferences: NoteReference[] = [
 
 const noteReferences: Record<string, NoteReference[]> = {
   "chromosomal-basis-of-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 5: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal theory and genetic linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" },
   ],
   "sexual-reproduction-in-flowering-plants": [
-    { label: "NCERT Class 12 Biology, Chapter 2: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo102.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
     { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
   ],
   "mendelian-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 5: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Laws of inheritance", href: "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance" },
   ],
   "recombinant-dna-technology": [
-    { label: "NCERT Class 12 Biology, Chapter 11: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology: Principles and Processes (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
     { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
   ],
   "pedigree-analysis-and-inheritance-patterns": [
@@ -1220,7 +1232,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Environmental limits to population growth", href: "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth" },
   ],
   "ecosystem-energy-flow-and-ecological-pyramids": [
-    { label: "NCERT Class 12 Biology, Chapter 14: Ecosystem", href: "https://ncert.nic.in/textbook/pdf/lebo114.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 12: Ecosystem (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
     { label: "OpenStax Biology 2e: Energy flow through ecosystems", href: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems" },
   ],
   "mitosis-and-meiosis": [
@@ -1236,25 +1248,26 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Glycolysis", href: "https://openstax.org/books/biology-2e/pages/7-2-glycolysis" },
   ],
   "digestion-and-absorption": [
-    { label: "NCERT Class 11 Biology, Chapter 16: Digestion and Absorption", href: "https://ncert.nic.in/textbook/pdf/kebo116.pdf" },
+    { label: "NCERT Class 11 Biology: current contents (digestion is supplementary reading)", href: "https://ncert.nic.in/textbook/pdf/kebo1ps.pdf" },
     { label: "OpenStax Anatomy and Physiology: Digestive system processes", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-2-digestive-system-processes-and-regulation" },
+    { label: "OpenStax Anatomy and Physiology: Chemical digestion and absorption", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look" },
   ],
   "blood-and-circulation": [
-    { label: "NCERT Class 11 Biology, Chapter 18: Body Fluids and Circulation", href: "https://ncert.nic.in/textbook/pdf/kebo118.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 15: Body Fluids and Circulation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
     { label: "OpenStax Anatomy and Physiology: Blood flow and blood pressure", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance" },
   ],
   "human-respiration": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 11 Biology, Chapter 14: Breathing and Exchange of Gases", href: "https://ncert.nic.in/textbook/pdf/kebo114.pdf" },
     { label: "Khan Academy: The respiratory system", href: "https://www.khanacademy.org/science/health-and-medicine/respiratory-system" },
     { label: "NCBI Bookshelf: Respiratory physiology overview", href: "https://www.ncbi.nlm.nih.gov/books/" },
   ],
   "excretion-and-kidney-function": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 11 Biology, Chapter 16: Excretory Products and their Elimination", href: "https://ncert.nic.in/textbook/pdf/kebo116.pdf" },
     { label: "Khan Academy: Renal system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/renal-system" },
     { label: "NCBI Bookshelf: Kidney physiology references", href: "https://www.ncbi.nlm.nih.gov/books/" },
   ],
   "immunity-pathogens-vaccines": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 12 Biology, Chapter 7: Human Health and Disease", href: "https://ncert.nic.in/textbook/pdf/lebo107.pdf" },
     { label: "WHO: Vaccines and immunization", href: "https://www.who.int/health-topics/vaccines-and-immunization" },
     { label: "CDC: Immune system and vaccines", href: "https://www.cdc.gov/vaccines/" },
   ],
@@ -1265,22 +1278,22 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "National Institute of General Medical Sciences: What is a hormone?", href: "https://nigms.nih.gov/biobeat/2024/07/what-is-a-hormone" },
   ],
   "neuron-nerve-impulse-synapse": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 11 Biology, Chapter 18: Neural Control and Coordination", href: "https://ncert.nic.in/textbook/pdf/kebo118.pdf" },
     { label: "Khan Academy: Nervous system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor" },
     { label: "NCBI Bookshelf: Neuroscience and synapse references", href: "https://www.ncbi.nlm.nih.gov/books/" },
   ],
   "dna-rna-replication-transcription-translation": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
     { label: "Khan Academy: Central dogma", href: "https://www.khanacademy.org/science/biology/gene-expression-central-dogma" },
   ],
   "cell-theory-and-cell-organelles": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 11 Biology, Chapter 8: Cell: The Unit of Life", href: "https://ncert.nic.in/textbook/pdf/kebo108.pdf" },
     { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
     { label: "Khan Academy: Cell structures", href: "https://www.khanacademy.org/science/biology/structure-of-a-cell" },
   ],
   "mutation-and-gene-expression": [
-    { label: "NCERT Biology textbooks and official learning resources", href: "https://ncert.nic.in/textbook.php" },
+    { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "NCBI Bookshelf: Genes and disease references", href: "https://www.ncbi.nlm.nih.gov/books/" },
     { label: "Khan Academy: Gene regulation", href: "https://www.khanacademy.org/science/biology/gene-regulation" },
   ],
@@ -1540,8 +1553,8 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     paragraphs: ["A J curve or S curve becomes useful only after its resource assumption is stated. The models are tools for relating a changing population to the conditions in its habitat, not labels that replace ecological reasoning.", "The most important boundary is that K belongs to an environment at a time. A shift in water, food, space, disease pressure or another ecological factor can change the supportable population level."],
   },
   "ecosystem-energy-flow-and-ecological-pyramids": {
-    heading: "An arrow leaving a decomposer does not carry energy back to a plant",
-    paragraphs: ["A decomposer arrow is often drawn back toward the producer, which is useful only when its label is precise. The return is of inorganic nutrients to an environmental pool that a producer can use; the energy in the original organic material has been used and ultimately dissipated as heat.", "This distinction also explains why an ecosystem needs a continuing energy input but can reuse matter. When an option uses the words flow and cycle as though they are interchangeable, first ask whether it is following energy or a chemical element."],
+    heading: "What the simplified drawing leaves out",
+    paragraphs: ["Decomposers receive dead material and wastes from producers and consumers at every trophic level. The bird-to-decomposer arrow in this drawing represents just one possible input; decomposers are not a single final trophic level above all predators.", "To extend the drawing, add arrows from grass and herbivores into the detritus pool. A fallen leaf can enter that pool without first being eaten. The grazing and detritus pathways are therefore connected routes, not a compulsory sequence through every box."],
   },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",
@@ -1556,8 +1569,8 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     paragraphs: ["A leaf in daylight can photosynthesise and respire at the same time. One process stores energy in organic molecules; the other releases usable energy from them.", "When an option says respiration happens only in darkness, return to the word cellular. Living cells need energy in light as well as dark."],
   },
   "digestion-and-absorption": {
-    heading: "The liver is beside the route, not on it",
-    paragraphs: ["Students often draw food moving through the liver because the liver is central to digestion. It is an accessory organ: it contributes bile, while food stays in the alimentary canal.", "That spatial picture also protects the bile distinction. Bile helps emulsify fats; it is not a digestive enzyme."],
+    heading: "Emulsification changes droplets; hydrolysis changes molecules",
+    paragraphs: ["Imagine dividing one large fat droplet into many smaller droplets while keeping the total amount of fat the same. More surface becomes accessible to lipase, but the triglyceride molecules have not yet been chemically cleaved. Bile salts help make that surface available.", "Lipase then catalyses hydrolysis of chemical bonds. Naming the physical change and the chemical change separately explains how bile assists an enzyme without being an enzyme itself."],
   },
   "blood-and-circulation": {
     heading: "Name the direction before the colour",

@@ -55,7 +55,7 @@
     "subject": "Biology",
     "name": "Blood and circulation",
     "slug": "blood-and-circulation",
-    "ncertRef": "NCERT Biology Class 11, Chapter 18",
+    "ncertRef": "NCERT Biology Class 11, Chapter 15",
     "questionCount": 4,
     "sortOrder": 6
   },
@@ -165,7 +165,7 @@
     "subject": "Biology",
     "name": "Digestion and absorption",
     "slug": "digestion-and-absorption",
-    "ncertRef": "NCERT Biology Class 11, Chapter 16",
+    "ncertRef": "Supplementary human physiology: digestion and absorption",
     "questionCount": 0,
     "sortOrder": 16
   },
@@ -235,7 +235,7 @@
     "subject": "Biology",
     "name": "Mendelian inheritance",
     "slug": "mendelian-inheritance",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 1,
     "sortOrder": 22
   },
@@ -245,7 +245,7 @@
     "subject": "Biology",
     "name": "Chromosomal basis of inheritance",
     "slug": "chromosomal-basis-of-inheritance",
-    "ncertRef": "NCERT Biology Class 12, Chapter 5",
+    "ncertRef": "NCERT Biology Class 12, Chapter 4",
     "questionCount": 4,
     "sortOrder": 23
   },
@@ -265,7 +265,7 @@
     "subject": "Biology",
     "name": "Sexual reproduction in flowering plants",
     "slug": "sexual-reproduction-in-flowering-plants",
-    "ncertRef": "NCERT Biology Class 12, Chapter 2",
+    "ncertRef": "NCERT Biology Class 12, Chapter 1",
     "questionCount": 0,
     "sortOrder": 25
   },
@@ -335,7 +335,7 @@
     "subject": "Biology",
     "name": "Ecosystem: energy flow and ecological pyramids",
     "slug": "ecosystem-energy-flow-and-ecological-pyramids",
-    "ncertRef": "NCERT Biology Class 12, Chapter 14",
+    "ncertRef": "NCERT Biology Class 12, Chapter 12",
     "questionCount": 0,
     "sortOrder": 32
   }

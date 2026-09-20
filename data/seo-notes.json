@@ -128,8 +128,8 @@
   {
     "id": "note-digestion-and-absorption",
     "slug": "digestion-and-absorption",
-    "title": "Digestion and absorption: NEET-UG Biology NCERT Revision Notes",
-    "description": "Review digestion and absorption with NCERT-aligned route maps, enzyme distinctions, and a focused recall routine.",
+    "title": "Digestion and Absorption: Supplementary Human Physiology Notes",
+    "description": "Follow food breakdown, enzyme activity and nutrient uptake into blood or lymph in this supplementary human physiology guide.",
     "topicSlug": "digestion-and-absorption",
     "targetKeyword": "Digestion and absorption NEET UG Biology revision guide",
     "sortOrder": 19
@@ -165,7 +165,7 @@
     "id": "note-molecular-tools-and-dna-analysis",
     "slug": "molecular-tools-and-dna-analysis",
     "title": "Molecular tools and DNA analysis: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Molecular tools and DNA analysis for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "description": "Distinguish restriction cutting, PCR amplification and gel electrophoresis by the change each method makes to a DNA sample.",
     "topicSlug": "molecular-tools-and-dna-analysis",
     "targetKeyword": "Molecular tools and DNA analysis NEET UG Biology questions",
     "sortOrder": 16
@@ -174,7 +174,7 @@
     "id": "note-pedigree-analysis-and-inheritance-patterns",
     "slug": "pedigree-analysis-and-inheritance-patterns",
     "title": "Pedigree analysis and inheritance patterns: NEET-UG Biology NCERT Revision Notes",
-    "description": "Revise Pedigree analysis and inheritance patterns for NEET-UG Biology with NCERT-aligned concepts, MCQ practice, and answer explanations.",
+    "description": "Use observations across a family tree to test autosomal and sex-linked inheritance models and explain which genotypes remain possible.",
     "topicSlug": "pedigree-analysis-and-inheritance-patterns",
     "targetKeyword": "Pedigree analysis and inheritance patterns NEET UG Biology questions",
     "sortOrder": 17
