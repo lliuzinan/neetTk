@@ -328,5 +328,15 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 11",
     "questionCount": 0,
     "sortOrder": 31
+  },
+  {
+    "id": "ecosystem-energy-flow-and-ecological-pyramids",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Ecosystem: energy flow and ecological pyramids",
+    "slug": "ecosystem-energy-flow-and-ecological-pyramids",
+    "ncertRef": "NCERT Biology Class 12, Chapter 14",
+    "questionCount": 0,
+    "sortOrder": 32
   }
 ]

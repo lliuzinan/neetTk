@@ -64,6 +64,10 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["How abiotic and biotic factors connect an organism to its habitat and niche.", "Population attributes and the four processes that add or remove individuals.", "Why exponential and logistic models make different resource assumptions."],
     traps: ["Habitat is the place an organism lives; niche is its functional role and resource relationship.", "Density is a population property, not a characteristic of one organism.", "Carrying capacity belongs to an environment and can change; it is not a permanent universal number for a species."],
   },
+  "ecosystem-energy-flow-and-ecological-pyramids": {
+    focus: ["Energy enters most ecosystems through producer photosynthesis, then passes through trophic levels with loss at each transfer.", "GPP, producer respiration and NPP as a sequence; NPP is the fraction available to heterotrophs.", "Food chains, food webs and ecological pyramids separated by the quantity each one describes."],
+    traps: ["Energy flows one way and needs continuing input; nutrients can return to producers through environmental cycles.", "An energy pyramid is always upright, while biomass can be inverted in an aquatic ecosystem.", "Standing biomass describes an amount at a time; productivity includes an area-and-time rate."],
+  },
   "mitosis-and-meiosis": {
     focus: ["The G1, S, G2 and M phases, with DNA content kept separate from chromosome number.", "Mitosis as equational division and the sequence from prophase through cytokinesis.", "Meiosis I versus meiosis II, including homologous pairing, crossing over and the reduction of chromosome number."],
     traps: ["DNA replication during S phase doubles DNA content but does not double chromosome number.", "Homologous chromosomes separate in anaphase I; sister chromatids separate in anaphase II and mitosis.", "Crossing over occurs between non-sister chromatids of homologous chromosomes during pachytene of prophase I."],

@@ -38,6 +38,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "molecular-basis-of-inheritance": { published: "2026-09-17", modified: "2026-09-18" },
   "evolution-and-natural-selection": { published: "2026-09-18", modified: "2026-09-18" },
   "organisms-and-populations": { published: "2026-09-18", modified: "2026-09-18" },
+  "ecosystem-energy-flow-and-ecological-pyramids": { published: "2026-09-20", modified: "2026-09-20" },
 };
 
 export function ogImage(title: string, subtitle = "Independent NEET Biology revision resource") {

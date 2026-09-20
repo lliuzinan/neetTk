@@ -53,5 +53,11 @@ export const studyLinks: Record<string, StudyLink[]> = {
   "organisms-and-populations": [
     { slug: "evolution-and-natural-selection", reason: "Distinguish a change in population size from a change in allele frequency." },
     { slug: "photosynthesis-in-higher-plants", reason: "Connect light availability with the physiology of primary producers." },
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Move from population counts to trophic roles and resource transfer in an ecosystem." },
+  ],
+  "ecosystem-energy-flow-and-ecological-pyramids": [
+    { slug: "photosynthesis-in-higher-plants", reason: "Start with how producers capture light energy before tracing transfers through trophic levels." },
+    { slug: "plant-respiration", reason: "Compare energy captured by producers with the cellular release of stored chemical energy." },
+    { slug: "organisms-and-populations", reason: "Use habitat and population ideas to place trophic roles in an ecological setting." },
   ],
 };

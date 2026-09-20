@@ -296,3 +296,19 @@ test("publishes evolution and population ecology guides with original comparison
   assert.match(sitemapXml, /evolution-and-natural-selection/);
   assert.match(sitemapXml, /organisms-and-populations/);
 });
+
+test("publishes the ecosystem energy guide with a source-grounded visual and ecology study route", async () => {
+  const [html, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/ecosystem-energy-flow-and-ecological-pyramids.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+  assert.match(html, /An ecosystem has two linked accounting systems/);
+  assert.match(html, /ecosystem-energy-and-pyramids-v1\.png/);
+  assert.match(html, /lebo114\.pdf/);
+  assert.match(html, /The unit-and-arrow check/);
+  assert.match(html, /Organisms and populations/);
+  assert.match(html, /Photosynthesis in higher plants/);
+  assert.match(html, /Published:\s*(?:<!-- -->)?September 20, 2026/);
+  assert.match(sitemapXml, /ecosystem-energy-flow-and-ecological-pyramids/);
+  assert.match(sitemapXml, /2026-09-20T00:00:00\.000Z/);
+});

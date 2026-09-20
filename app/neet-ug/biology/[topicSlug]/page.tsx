@@ -74,6 +74,11 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     alt: "Habitat with a population and a comparison of an exponential J-shaped curve with a logistic S-shaped curve approaching carrying capacity",
     caption: "An original population-growth comparison. The curve depends on resource assumptions: logistic growth introduces an environmental limit represented by carrying capacity.",
   },
+  "ecosystem-energy-flow-and-ecological-pyramids": {
+    src: "/images/biology/ecosystem-energy-and-pyramids-v1.png",
+    alt: "Sunlight reaching a grass producer, then a grasshopper primary consumer, bird secondary consumer and decomposers, with a separate mineral nutrient arrow returning toward the producer",
+    caption: "An original ecosystem map. Energy decreases along feeding transfers, while mineral nutrients can return from decomposition to producers.",
+  },
   "mitosis-and-meiosis": {
     src: "/images/biology/cell-division-separation-v1.png",
     alt: "Comparison showing sister chromatids separating in mitosis and meiosis II, and homologous chromosomes separating in meiosis I",
@@ -201,6 +206,11 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     heading: "The population-and-resource check",
     intro: "Put a measure back into its ecological context before accepting an answer about growth or regulation.",
     points: ["Population attributes such as density, birth rate and age structure belong to groups, not individual organisms.", "Births and immigration add individuals; deaths and emigration remove them.", "Exponential growth is a model for abundant resources, while logistic growth includes environmental resistance.", "Carrying capacity describes what a particular habitat can support and can change as conditions change."],
+  },
+  "ecosystem-energy-flow-and-ecological-pyramids": {
+    heading: "The unit-and-arrow check",
+    intro: "Before choosing a pyramid or following an arrow, name what is being measured and whether time is part of its unit.",
+    points: ["GPP is the total rate of producer fixation; NPP is what remains after producer respiration.", "Biomass is an amount at a particular time, while productivity includes area and time.", "A food web joins many feeding routes; a food chain is one route within that web.", "Decomposers return inorganic nutrients to the environmental pool, but energy leaves the system as heat rather than cycling back."],
   },
   "human-respiration": {
     heading: "Gas movement: trace the route before naming a molecule",

@@ -48,6 +48,7 @@ export const AUTHORED_NOTE_SLUGS = [
   "molecular-basis-of-inheritance",
   "evolution-and-natural-selection",
   "organisms-and-populations",
+  "ecosystem-energy-flow-and-ecological-pyramids",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -1111,6 +1112,55 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "ecosystem-energy-flow-and-ecological-pyramids": [
+    {
+      heading: "An ecosystem has two linked accounting systems",
+      paragraphs: [
+        "A useful way to enter this chapter is to keep two questions on the page at once. Where does energy enter, and where do chemical nutrients go? Energy reaches most ecosystems as sunlight, is captured by producers, passes through feeding relationships and is eventually lost as heat. Elements such as carbon, nitrogen and minerals can return to the environment and be used again.",
+        "This is why a curved arrow from decomposers to plants must be labelled as nutrients, not energy. Decomposition can make inorganic nutrients available in soil or water; it cannot send the heat released by respiration back into a leaf. One pathway is a flow, the other is a cycle.",
+      ],
+    },
+    {
+      heading: "Start at producers: production is a rate, not a pile of biomass",
+      paragraphs: [
+        "Producers convert a fraction of incoming light energy into chemical energy through photosynthesis. Gross primary productivity, or GPP, is the total rate at which a producer community fixes organic material. Producers also respire, so not all of that captured material remains available to the next trophic level.",
+        "Net primary productivity is the remainder after producer respiration: NPP = GPP - R. It is the part that can support herbivores, decomposers and later trophic levels. The word productivity matters here: it describes a rate over area and time, whereas standing biomass is the amount of living material present at one moment.",
+      ],
+      bullets: [
+        "GPP: total organic material fixed by producers per unit area per unit time.",
+        "R: energy used by producers for their own respiration.",
+        "NPP: organic material left after producer respiration and available to heterotrophs.",
+      ],
+    },
+    {
+      heading: "A food chain is one route through a web, not the whole ecosystem",
+      paragraphs: [
+        "A grazing food chain begins with living producers and moves to herbivores and their consumers. A detritus food chain begins with dead organic material and involves decomposers and detritus-feeding organisms. These routes overlap in real communities, so a food web is usually the better picture of how many species are connected.",
+        "Trophic level means feeding position, not a permanent label attached to a species. An organism feeding in different chains can occupy different trophic positions. In a NEET question, identify what the organism is eating in the stated relationship before assigning its level.",
+      ],
+    },
+    {
+      heading: "Why an energy pyramid cannot turn upside down",
+      paragraphs: [
+        "At each trophic transfer, much of the energy in food is used in life processes and dissipated as heat. The NCERT ten-percent law is a useful approximate revision rule: only a small fraction, often expressed as about ten percent, becomes available to the next level. It is not a fixed universal conversion for every ecosystem.",
+        "An energy pyramid therefore narrows from producers upward and is always upright. It represents the energy flow or productivity at successive trophic levels, so an upper level cannot receive more usable energy than the level below it supplied. The reason is the one-way loss at every transfer, not the relative body size of organisms.",
+      ],
+    },
+    {
+      heading: "Read the pyramid name before deciding its shape",
+      paragraphs: [
+        "Pyramids of number and biomass answer different questions from a pyramid of energy. A terrestrial biomass pyramid is commonly upright because producer standing biomass is large. In an aquatic ecosystem, a biomass pyramid may be inverted at a particular time because phytoplankton have a small standing crop but can reproduce and turn over quickly enough to support a larger consumer biomass.",
+        "Do not use an inverted biomass example to argue that energy moves upward. The examples differ because biomass is a snapshot, while an energy pyramid tracks a rate of transfer. Name the measured quantity first; only then judge the shape.",
+      ],
+    },
+    {
+      heading: "Decomposers close nutrient loops without reversing energy flow",
+      paragraphs: [
+        "Dead organic material enters the detritus pathway. Decomposers and detritus-feeding organisms break it down, and mineralisation returns inorganic nutrients to the environmental pool. Producers can then take up those nutrients again. This link makes decomposers central to ecosystem functioning rather than an optional final box in a food chain.",
+        "For a fast recall sketch, draw sunlight above a producer, then three arrows to a primary consumer, a secondary consumer and decomposers. Add a separate curved arrow labelled mineral nutrients from decomposers toward the producer. Finally write GPP - R = NPP beside the producer. If every arrow has a named meaning, the common confusions are much harder to make.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -1168,6 +1218,10 @@ const noteReferences: Record<string, NoteReference[]> = {
   "organisms-and-populations": [
     { label: "NCERT Class 12 Biology, Chapter 11: Organisms and Populations", href: "https://ncert.nic.in/textbook/pdf/lebo111.pdf" },
     { label: "OpenStax Biology 2e: Environmental limits to population growth", href: "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth" },
+  ],
+  "ecosystem-energy-flow-and-ecological-pyramids": [
+    { label: "NCERT Class 12 Biology, Chapter 14: Ecosystem", href: "https://ncert.nic.in/textbook/pdf/lebo114.pdf" },
+    { label: "OpenStax Biology 2e: Energy flow through ecosystems", href: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems" },
   ],
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
@@ -1304,6 +1358,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
     intro: "The curve is an output of assumptions about resources and environmental limits, not merely a shape to memorise.",
     columns: ["Model or measure", "Main assumption", "What the pattern shows", "Do not confuse with"],
     rows: [["Population density", "Individuals are counted in a stated area or volume", "How crowded a population is in its habitat", "The size of one organism"], ["Exponential growth", "Resources are effectively unlimited in the model", "J-shaped increase", "A permanent real-world outcome"], ["Logistic growth", "Resources become limiting as population rises", "S-shaped growth toward carrying capacity", "A fixed number unrelated to environment"], ["Carrying capacity (K)", "Habitat resources set a supportable population level", "Environmental limit in the logistic model", "A universal constant for a species"]],
+  },
+  "ecosystem-energy-flow-and-ecological-pyramids": {
+    heading: "Ecological pyramids: choose the quantity before judging the shape",
+    intro: "A pyramid's name tells you what is measured. That is the first fact needed to reason about its form.",
+    columns: ["Pyramid", "What it represents", "Can it be inverted?", "Decisive check"],
+    rows: [["Number", "Number of individuals at trophic levels", "It can vary with the organisms involved", "Count organisms, not their mass or energy"], ["Biomass", "Standing living material at a stated time", "Yes, including some aquatic systems", "A snapshot of phytoplankton can be small despite rapid turnover"], ["Energy", "Rate of usable energy transfer through trophic levels", "No", "Energy is lost at every transfer, so the next level receives less"], ["Productivity", "Organic material formed per unit area per unit time", "Not a standing crop", "Look for a time unit before calling it biomass"]],
   },
   "mitosis-and-meiosis": {
     heading: "Mitosis and meiosis: identify what separates",
@@ -1478,6 +1538,10 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
   "organisms-and-populations": {
     heading: "A curve without a habitat is only half an explanation",
     paragraphs: ["A J curve or S curve becomes useful only after its resource assumption is stated. The models are tools for relating a changing population to the conditions in its habitat, not labels that replace ecological reasoning.", "The most important boundary is that K belongs to an environment at a time. A shift in water, food, space, disease pressure or another ecological factor can change the supportable population level."],
+  },
+  "ecosystem-energy-flow-and-ecological-pyramids": {
+    heading: "An arrow leaving a decomposer does not carry energy back to a plant",
+    paragraphs: ["A decomposer arrow is often drawn back toward the producer, which is useful only when its label is precise. The return is of inorganic nutrients to an environmental pool that a producer can use; the energy in the original organic material has been used and ultimately dissipated as heat.", "This distinction also explains why an ecosystem needs a continuing energy input but can reuse matter. When an option uses the words flow and cycle as though they are interchangeable, first ask whether it is following energy or a chemical element."],
   },
   "mitosis-and-meiosis": {
     heading: "Count chromosomes by centromeres, not by DNA copies",

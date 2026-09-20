@@ -259,5 +259,14 @@
     "topicSlug": "organisms-and-populations",
     "targetKeyword": "Organisms and populations NEET UG Biology revision guide",
     "sortOrder": 33
+  },
+  {
+    "id": "note-ecosystem-energy-flow-and-ecological-pyramids",
+    "slug": "ecosystem-energy-flow-and-ecological-pyramids",
+    "title": "Ecosystem Energy Flow and Ecological Pyramids: NEET-UG Biology Revision Guide",
+    "description": "Follow energy from sunlight through trophic levels, separate GPP from NPP, and explain why ecological pyramids answer different questions.",
+    "topicSlug": "ecosystem-energy-flow-and-ecological-pyramids",
+    "targetKeyword": "Ecosystem energy flow ecological pyramids NEET UG Biology revision guide",
+    "sortOrder": 34
   }
 ]

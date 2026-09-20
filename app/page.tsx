@@ -35,6 +35,11 @@ export default async function Home() {
       description: "Compare reproductive events in plants and humans, then use the human sequence to understand reproductive-health terminology.",
       slugs: ["sexual-reproduction-in-flowering-plants", "human-reproduction", "reproductive-health"],
     },
+    {
+      title: "Ecology",
+      description: "Begin with organisms in their habitats, then trace how energy and nutrients connect populations across an ecosystem.",
+      slugs: ["organisms-and-populations", "ecosystem-energy-flow-and-ecological-pyramids"],
+    },
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
   const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));
