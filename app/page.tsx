@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
+import { absoluteUrl, getSeoNotes, getTopics } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 import { LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -44,8 +44,6 @@ export default async function Home() {
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
   const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));
   const homeJsonLd = [
-    { "@context": "https://schema.org", "@type": "Organization", name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description },
-    { "@context": "https://schema.org", "@type": "WebSite", name: "MedQGo", url: absoluteUrl("/"), inLanguage: "en-IN" },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }], dateModified: LAST_UPDATED_ISO },
   ];
 

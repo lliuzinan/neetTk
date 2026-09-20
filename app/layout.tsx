@@ -61,7 +61,6 @@ export default function RootLayout({
     name: "MedQGo",
     url: absoluteUrl("/"),
     logo: absoluteUrl("/favicon.svg"),
-    sameAs: ["https://medqgo.com"],
   };
   const websiteLd = {
     "@context": "https://schema.org",
