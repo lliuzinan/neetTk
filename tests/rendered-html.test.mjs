@@ -3,6 +3,14 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import nextConfig from "../next.config.ts";
 
+function jsonLdItems(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((match) => {
+    const parsed = JSON.parse(match[1]);
+    const items = Array.isArray(parsed) ? parsed : [parsed];
+    return items.flatMap((item) => item["@graph"] || item);
+  });
+}
+
 test("keeps consent defaults ahead of advertising and does not preload GA", async () => {
   const html = await readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
   const scripts = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)].map((match) => match[0]);
@@ -21,7 +29,7 @@ test("keeps article first publication and modification dates consistent across H
     ["molecular-tools-and-dna-analysis", "2026-09-16"], ["biotechnology-applications", "2026-09-16"],
   ]) {
     const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
-    const ld = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((match) => JSON.parse(match[1]));
+    const ld = jsonLdItems(html);
     const article = ld.find((item) => item["@type"] === "Article");
     assert.equal(article.datePublished, published, slug);
     const modified = ["pedigree-analysis-and-inheritance-patterns", "molecular-tools-and-dna-analysis"].includes(slug) ? "2026-09-20" : "2026-09-18";
@@ -29,6 +37,20 @@ test("keeps article first publication and modification dates consistent across H
     const entry = sitemap.split("<url>").find((item) => item.includes(`/biology/${slug}</loc>`));
     assert.ok(entry?.includes(`${modified}T00:00:00.000Z`), slug);
   }
+});
+
+test("keeps site JSON-LD in one page-level graph without duplicate Organization or WebSite entities", async () => {
+  const [homeHtml, topicHtml] = await Promise.all([
+    readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/ecosystem-energy-flow-and-ecological-pyramids.html", import.meta.url), "utf8"),
+  ]);
+  for (const [label, html] of [["home", homeHtml], ["article", topicHtml]]) {
+    const ld = jsonLdItems(html);
+    assert.equal(ld.filter((item) => item["@type"] === "Organization").length, 1, label);
+    assert.equal(ld.filter((item) => item["@type"] === "WebSite").length, 1, label);
+    assert.equal([...html.matchAll(/<script type="application\/ld\+json">/g)].length, 1, label);
+  }
+  assert.ok(jsonLdItems(topicHtml).some((item) => item["@type"] === "Article"));
 });
 
 test("keeps legacy GSC routes pointed at a live revision hub", async () => {

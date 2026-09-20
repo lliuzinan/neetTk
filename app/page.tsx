@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getSeoNotes, getTopics } from "@/lib/content";
+import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 import { LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -43,9 +43,14 @@ export default async function Home() {
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
   const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));
-  const homeJsonLd = [
-    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }], dateModified: LAST_UPDATED_ISO },
-  ];
+  const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": absoluteUrl("/#organization"), name: "MedQGo", url: absoluteUrl("/"), logo: absoluteUrl("/favicon.svg") },
+      { "@type": "WebSite", "@id": absoluteUrl("/#website"), name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description, inLanguage: "en-IN", publisher: { "@id": absoluteUrl("/#organization") } },
+      { "@type": "BreadcrumbList", "@id": absoluteUrl("/#breadcrumb"), itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }], dateModified: LAST_UPDATED_ISO },
+    ],
+  };
 
   return (
     <main>

@@ -55,28 +55,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const organizationLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "MedQGo",
-    url: absoluteUrl("/"),
-    logo: absoluteUrl("/favicon.svg"),
-  };
-  const websiteLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "MedQGo",
-    url: absoluteUrl("/"),
-    description: siteConfig.description,
-    inLanguage: "en-IN",
-  };
-
   return (
     <html lang="en-IN">
       <head>
         <script id="consent-defaults" dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});` }} />
         <GoogleAdSense />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd, websiteLd]) }} />
       </head>
       <body>
         <GoogleAnalytics gaId={siteConfig.gaId} />

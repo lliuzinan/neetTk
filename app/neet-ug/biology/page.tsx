@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getSeoNotes, getTopics } from "@/lib/content";
+import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
 import { DEFAULT_OG_IMAGE, LAST_UPDATED_ISO } from "@/lib/seo";
 
@@ -18,7 +18,14 @@ export default async function BiologyTopicsPage() {
   const [allTopics, allNotes] = await Promise.all([getTopics(), getSeoNotes()]);
   const notes = allNotes.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
   const topics = allTopics.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
-  const itemListLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: "NEET Biology Revision Library", url: absoluteUrl("/neet-ug/biology"), inLanguage: "en-IN", dateModified: LAST_UPDATED_ISO, mainEntity: { "@type": "ItemList", numberOfItems: topics.length, itemListElement: topics.map((topic, index) => ({ "@type": "ListItem", position: index + 1, name: `${topic.name} revision guide`, url: absoluteUrl(`/neet-ug/biology/${topic.slug}`) })) } };
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": absoluteUrl("/#organization"), name: "MedQGo", url: absoluteUrl("/"), logo: absoluteUrl("/favicon.svg") },
+      { "@type": "WebSite", "@id": absoluteUrl("/#website"), name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description, inLanguage: "en-IN", publisher: { "@id": absoluteUrl("/#organization") } },
+      { "@type": "CollectionPage", "@id": absoluteUrl("/neet-ug/biology#collection"), name: "NEET Biology Revision Library", url: absoluteUrl("/neet-ug/biology"), inLanguage: "en-IN", dateModified: LAST_UPDATED_ISO, isPartOf: { "@id": absoluteUrl("/#website") }, mainEntity: { "@type": "ItemList", numberOfItems: topics.length, itemListElement: topics.map((topic, index) => ({ "@type": "ListItem", position: index + 1, name: `${topic.name} revision guide`, url: absoluteUrl(`/neet-ug/biology/${topic.slug}`) })) } },
+    ],
+  };
 
   return (
     <main className="page">

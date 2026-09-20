@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
 import { editorialReviewer, hasNamedAuthor } from "@/lib/editorialReviewer";
 import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, findTopic, getSeoNotes, getTopics } from "@/lib/content";
+import { absoluteUrl, findTopic, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS, getNoteComparisonTable, getNoteContent, getNoteEditorialBlock, getNoteReferences } from "@/lib/noteContent";
 import { ogImage, topicDates, topicMetadata } from "@/lib/seo";
 import { getTopicSeoContent } from "@/lib/topicSeo";
@@ -347,15 +347,24 @@ export default async function TopicPage({ params }: Props) {
     .sort((a, b) => Number(b.sameClass) - Number(a.sameClass) || a.distance - b.distance)
     .slice(0, 4)
     .map((item) => item.topic);
-  const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: absoluteUrl(`/neet-ug/biology/${topic.slug}`) }] };
+  const pageUrl = absoluteUrl(`/neet-ug/biology/${topic.slug}`);
+  const breadcrumbLd = { "@type": "BreadcrumbList", "@id": `${pageUrl}#breadcrumb`, itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: pageUrl }] };
   const articleAuthor = hasNamedAuthor()
-    ? { "@type": "Person", name: editorialReviewer.authorName, url: absoluteUrl("/authors/dongfeng"), ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
-    : { "@type": "Organization", name: "MedQGo Editorial Team" };
-  const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: `${topic.name} revision guide`, description: note.description, datePublished: dates.publishedIso, dateModified: dates.modifiedIso, image: heroImage, about: topic.name, author: articleAuthor, publisher: { "@type": "Organization", name: "MedQGo", url: absoluteUrl("/") } };
+    ? { "@type": "Person", "@id": absoluteUrl("/authors/dongfeng#person"), name: editorialReviewer.authorName, url: absoluteUrl("/authors/dongfeng"), ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
+    : { "@id": absoluteUrl("/#organization") };
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": absoluteUrl("/#organization"), name: "MedQGo", url: absoluteUrl("/"), logo: absoluteUrl("/favicon.svg") },
+      { "@type": "WebSite", "@id": absoluteUrl("/#website"), name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description, inLanguage: "en-IN", publisher: { "@id": absoluteUrl("/#organization") } },
+      breadcrumbLd,
+      { "@type": "Article", "@id": `${pageUrl}#article`, headline: `${topic.name} revision guide`, description: note.description, datePublished: dates.publishedIso, dateModified: dates.modifiedIso, image: heroImage, about: topic.name, mainEntityOfPage: pageUrl, author: articleAuthor, publisher: { "@id": absoluteUrl("/#organization") }, isPartOf: { "@id": absoluteUrl("/#website") } },
+    ],
+  };
 
   return (
     <main className="page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbLd, articleLd]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <header className="pageHeader">
         <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-ug/biology", label: "NEET Biology" }, { href: `/neet-ug/biology/${topic.slug}`, label: topic.name }]} />
         <Link href="/neet-ug/biology" className="backLink">All Biology topics</Link>
