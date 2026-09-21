@@ -68,6 +68,8 @@ test("renders the independent revision home and topic library", async () => {
   ]);
   assert.match(homeHtml, /NEET Biology revision notes/);
   assert.match(homeHtml, /in-depth revision notes/);
+  assert.match(homeHtml, /medqgo-biology-study-journey-v1\.webp/);
+  assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
   assert.match(homeHtml, /View free workbook sample/);
   assert.match(homeHtml, /Build one connected topic at a time/);
   assert.match(homeHtml, /Inheritance and variation/);

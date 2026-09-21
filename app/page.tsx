@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
@@ -66,7 +67,7 @@ export default async function Home() {
           </div>
         </nav>
         <div className="heroGrid">
-          <div>
+          <div className="heroCopy">
             <p className="eyebrow">NEET-UG Biology | Independent study resource</p>
             <h1>NEET Biology revision notes</h1>
             <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
@@ -83,11 +84,20 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="heroPanel" aria-label="Revision library status">
-            <div className="metricRow"><span>{notes.length}</span><p>in-depth revision notes</p></div>
-            <div className="metricRow"><span>{topics.length}</span><p>focused Biology topics</p></div>
-            <div className="metricRow"><span>1</span><p>clear study goal: better recall</p></div>
-          </div>
+          <figure className="heroVisual">
+            <Image
+              src="/images/biology/medqgo-biology-study-journey-v1.webp"
+              alt="A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem"
+              width={1440}
+              height={901}
+              sizes="(max-width: 760px) 100vw, 44vw"
+              priority
+            />
+            <figcaption>
+              <strong>Connect ideas across scales</strong>
+              <span>{notes.length} in-depth revision notes across {topics.length} focused Biology topics</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <section className="section">
