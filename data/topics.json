@@ -338,5 +338,25 @@
     "ncertRef": "NCERT Biology Class 12, Chapter 12",
     "questionCount": 0,
     "sortOrder": 32
+  },
+  {
+    "id": "morphology-of-flowering-plants",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Morphology of flowering plants",
+    "slug": "morphology-of-flowering-plants",
+    "ncertRef": "NCERT Biology Class 11, Chapter 5",
+    "questionCount": 0,
+    "sortOrder": 33
+  },
+  {
+    "id": "anatomy-of-flowering-plants",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Anatomy of flowering plants",
+    "slug": "anatomy-of-flowering-plants",
+    "ncertRef": "NCERT Biology Class 11, Chapter 6",
+    "questionCount": 0,
+    "sortOrder": 34
   }
 ]

@@ -41,6 +41,11 @@ export default async function Home() {
       description: "Begin with organisms in their habitats, then trace how energy and nutrients connect populations across an ecosystem.",
       slugs: ["organisms-and-populations", "ecosystem-energy-flow-and-ecological-pyramids"],
     },
+    {
+      title: "Plant structure and function",
+      description: "Identify the organ from external landmarks, read its internal tissues, then connect leaf structure with plant physiology.",
+      slugs: ["morphology-of-flowering-plants", "anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "plant-respiration"],
+    },
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
   const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));

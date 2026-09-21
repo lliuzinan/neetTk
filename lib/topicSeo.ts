@@ -120,6 +120,14 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["Blood components, double circulation, and the path through the heart, lungs, and body tissues.", "The functional difference between arteries, veins, capillaries, and the cardiac chambers.", "How clotting, blood groups, and cardiac rhythm fit into the chapter without becoming one list."],
     traps: ["Arteries carry blood away from the heart and veins carry it toward the heart; oxygen content is not the defining rule.", "Pulmonary circulation is heart to lungs to heart, while systemic circulation is heart to body to heart.", "Platelets support clotting; they are not a type of white blood cell."],
   },
+  "morphology-of-flowering-plants": {
+    focus: ["External landmarks that distinguish roots, stems, leaves and flowers.", "How modified organs retain evidence of their developmental origin while taking on storage, support, defence or climbing roles.", "The sequence from inflorescence and floral whorls to fruit and seed development."],
+    traps: ["An underground storage structure is not automatically a root; nodes and buds identify potato as a stem tuber.", "Phyllotaxy describes leaf arrangement on a stem, while venation describes veins within a leaf blade.", "After fertilisation, ovules develop into seeds and the ovary generally develops into a fruit."],
+  },
+  "anatomy-of-flowering-plants": {
+    focus: ["Meristematic versus permanent tissues and the roles of parenchyma, collenchyma and sclerenchyma.", "The cellular components and living-state distinctions within xylem and phloem.", "How vascular arrangement, cambium and pith identify dicot and monocot roots, stems and leaves."],
+    traps: ["Xylem parenchyma is living even though the main xylem conducting elements are dead at maturity.", "Roots have radial xylem and phloem, whereas typical stem bundles are conjoint and collateral.", "Dicot stem bundles are commonly arranged in a ring and open; monocot stem bundles are scattered and closed."],
+  },
 };
 
 export function getTopicSeoContent(slug: string) {

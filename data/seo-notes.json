@@ -268,5 +268,23 @@
     "topicSlug": "ecosystem-energy-flow-and-ecological-pyramids",
     "targetKeyword": "Ecosystem energy flow ecological pyramids NEET UG Biology revision guide",
     "sortOrder": 34
+  },
+  {
+    "id": "note-morphology-of-flowering-plants",
+    "slug": "morphology-of-flowering-plants",
+    "title": "Morphology of Flowering Plants: NEET-UG Biology Revision Guide",
+    "description": "Identify flowering-plant organs from visible landmarks, distinguish root, stem and leaf modifications, and connect floral structure with fruit and seed development.",
+    "topicSlug": "morphology-of-flowering-plants",
+    "targetKeyword": "Morphology of flowering plants NEET UG Biology revision guide",
+    "sortOrder": 35
+  },
+  {
+    "id": "note-anatomy-of-flowering-plants",
+    "slug": "anatomy-of-flowering-plants",
+    "title": "Anatomy of Flowering Plants: NEET-UG Biology Revision Guide",
+    "description": "Read plant transverse sections from the outside inward and distinguish tissues, vascular arrangements, and dicot-monocot anatomy using visible structural clues.",
+    "topicSlug": "anatomy-of-flowering-plants",
+    "targetKeyword": "Anatomy of flowering plants NEET UG Biology revision guide",
+    "sortOrder": 36
   }
 ]

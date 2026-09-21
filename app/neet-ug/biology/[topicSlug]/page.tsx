@@ -14,6 +14,16 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "morphology-of-flowering-plants": {
+    src: "/images/biology/morphology-of-flowering-plants-organ-map-v1.webp",
+    alt: "Flowering plant with a tap root, stem nodes and internode, axillary bud, leaves and flower labelled as external organ landmarks",
+    caption: "An original organ-identity map. Nodes, internodes and axillary buds diagnose the shoot system, while a tap root lacks those stem landmarks.",
+  },
+  "anatomy-of-flowering-plants": {
+    src: "/images/biology/anatomy-of-flowering-plants-stem-sections-v1.webp",
+    alt: "Comparison of a dicot stem with vascular bundles in a ring and a monocot stem with scattered vascular bundles",
+    caption: "An original stem-section comparison. Dicot vascular bundles form a ring and include cambium; monocot bundles are scattered through ground tissue and are closed.",
+  },
   "chromosomal-basis-of-inheritance": {
     src: "/images/biology/chromosomal-linkage-crossing-over-v1.png",
     alt: "Homologous chromosomes with linked AB and ab alleles crossing over between non-sister chromatids to produce parental and recombinant gamete combinations",

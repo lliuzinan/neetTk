@@ -39,6 +39,8 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "evolution-and-natural-selection": { published: "2026-09-18", modified: "2026-09-18" },
   "organisms-and-populations": { published: "2026-09-18", modified: "2026-09-18" },
   "ecosystem-energy-flow-and-ecological-pyramids": { published: "2026-09-20", modified: "2026-09-20" },
+  "morphology-of-flowering-plants": { published: "2026-09-21", modified: "2026-09-21" },
+  "anatomy-of-flowering-plants": { published: "2026-09-21", modified: "2026-09-21" },
 };
 
 export function ogImage(title: string, subtitle = "Independent NEET Biology revision resource") {

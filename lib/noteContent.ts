@@ -49,6 +49,8 @@ export const AUTHORED_NOTE_SLUGS = [
   "evolution-and-natural-selection",
   "organisms-and-populations",
   "ecosystem-energy-flow-and-ecological-pyramids",
+  "morphology-of-flowering-plants",
+  "anatomy-of-flowering-plants",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -1173,6 +1175,136 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "morphology-of-flowering-plants": [
+    {
+      heading: "Read a flowering plant as a map of organs and landmarks",
+      paragraphs: [
+        "Plant morphology becomes manageable when every unfamiliar structure is traced back to an organ. Begin with the root system and the shoot system. Roots usually anchor the plant and absorb water and minerals; the shoot bears stems, leaves, flowers and fruits. A modification may look unusual, but its origin still matters more than its appearance.",
+        "Use positional landmarks before naming a specimen. A stem has nodes, internodes and buds. A leaf normally arises at a node and carries an axillary bud in its axil. A root does not have nodes, internodes or axillary buds. These observations let you distinguish a storage root from an underground stem without relying on colour, shape or the fact that both may grow below ground.",
+      ],
+      bullets: [
+        "Root landmark: root cap and root-hair region, without nodes or buds.",
+        "Stem landmark: nodes, internodes, terminal or axillary buds.",
+        "Leaf landmark: leaf base, petiole and lamina, with an axillary bud at the point of attachment.",
+        "Flower landmark: reproductive shoot with floral whorls arranged on a receptacle.",
+      ],
+    },
+    {
+      heading: "Root systems and modifications: identify origin before function",
+      paragraphs: [
+        "The primary root develops from the radicle. In a tap-root system it persists as a main axis with lateral branches, a pattern commonly associated with dicotyledonous plants. In a fibrous system, many similarly sized roots arise near the stem base, a common monocot pattern. Adventitious roots arise from plant parts other than the radicle and can serve support, storage or other specialised roles.",
+        "Function alone cannot identify the organ. Carrot is a storage tap root, while sweet potato is an adventitious storage root. Prop roots descending from banyan branches and stilt roots arising from lower stem nodes both support the plant, but they differ in origin and arrangement. Pneumatophores grow upward in certain swamp plants and help roots exchange gases in oxygen-poor soil.",
+        "When two examples seem similar, write a two-part answer: where the structure originates and what it does. That prevents the broad statement 'all swollen underground organs are roots' from replacing the anatomical evidence.",
+      ],
+    },
+    {
+      heading: "Stem identity survives even when the stem moves underground",
+      paragraphs: [
+        "A stem connects roots with leaves and bears branches, flowers and fruits. Its repeating units are nodes and internodes, and buds provide decisive evidence of stem identity. Underground stems store food and support perennation or vegetative propagation, but they still retain stem landmarks.",
+        "A potato tuber bears eyes, which are buds arranged at nodes; that makes it a modified stem rather than a root. Ginger is a rhizome with nodes, internodes and scale leaves. An onion bulb has a short stem and fleshy scale leaves, so its storage tissue is not described in exactly the same way as a tuber. Above ground, tendrils can support climbing and thorns can protect the plant, but the chapter expects the organ of origin to be checked rather than guessed from function.",
+      ],
+      bullets: [
+        "Tuber: swollen underground stem with buds, as in potato.",
+        "Rhizome: horizontal underground stem with nodes and internodes, as in ginger.",
+        "Stem tendril: slender climbing modification arising from a stem or branch position.",
+        "Thorn: hard, pointed stem or axillary-bud modification in the named NCERT examples.",
+      ],
+    },
+    {
+      heading: "A leaf can be described without memorising a photograph",
+      paragraphs: [
+        "A typical leaf has a base, petiole and lamina. Venation describes the arrangement of veins and veinlets, while phyllotaxy describes how leaves are arranged on the stem. These are different observation levels: one belongs within a leaf blade and the other compares leaves around a shoot.",
+        "In a simple leaf, incisions do not reach the midrib or petiole. In a compound leaf, the lamina is divided into leaflets, but the axillary bud occurs at the base of the whole leaf, not at the base of each leaflet. That bud check separates a leaflet from a small simple leaf on a branch.",
+        "Leaf modifications must also be tied to origin. Pea tendrils are leaf modifications, while a tendril in another named plant may be a stem modification. Spines, storage leaves and insect-trapping leaves show that one organ can be reshaped for different functions without losing its developmental identity.",
+      ],
+    },
+    {
+      heading: "From inflorescence to flower: keep axis growth and whorls separate",
+      paragraphs: [
+        "An inflorescence is the arrangement of flowers on a floral axis. In a racemose inflorescence, the main axis continues to grow and younger flowers occur toward the apex or centre. In a cymose inflorescence, the main axis ends in a flower, limiting further extension, and the order of flower age is reversed. The decisive clue is what happens to the main axis, not whether the cluster looks dense.",
+        "A typical flower is organised into calyx, corolla, androecium and gynoecium. Sepals form the calyx and petals form the corolla. Stamens make up the androecium; each stamen has a filament and anther. The gynoecium consists of one or more carpels, with stigma, style and ovary as key regions. These whorls describe parts of one flower, while an inflorescence describes how multiple flowers are arranged.",
+        "Ovary position is read relative to the attachment of the other floral parts. In a hypogynous flower the ovary is superior; in epigynous flowers it is inferior; perigynous construction places other parts around a cup-like thalamus while the ovary remains half inferior or is described according to the NCERT example. Draw the attachment level rather than memorising the prefixes alone.",
+      ],
+    },
+    {
+      heading: "Fruit and seed terms belong to a developmental sequence",
+      paragraphs: [
+        "After fertilisation, the ovary generally develops into a fruit and ovules develop into seeds. The fruit wall is the pericarp, derived from the ovary wall. A true fruit develops from the ovary, while an accessory or false fruit includes another floral part such as the thalamus in addition to the ovary-derived tissue.",
+        "Seed comparisons should begin with cotyledon number and the distribution of stored food. A dicot embryo commonly has two cotyledons, a plumule and a radicle. A monocot grain has one cotyledon called the scutellum, with protective sheaths associated with the plumule and radicle. Endosperm may persist in some mature seeds and be consumed during development in others, so 'all seeds store food in cotyledons' is too broad.",
+      ],
+    },
+    {
+      heading: "A specimen-first recall routine",
+      paragraphs: [
+        "Draw a blank flowering plant and mark only six checkpoints: root origin, stem node, axillary bud, leaf blade, floral axis and ovary. Then place one modification beside the organ it comes from. The output should be a labelled diagnostic map, not a list of examples.",
+        "For a second pass, choose potato, sweet potato, pea tendril and ginger. For each, write 'organ evidence -> function'. Finish by sketching one racemose and one cymose axis, adding the oldest and youngest flower positions. If the landmark supports the name, the example is much harder to swap under exam pressure.",
+      ],
+    },
+  ],
+  "anatomy-of-flowering-plants": [
+    {
+      heading: "Build every plant section from three tissue systems",
+      paragraphs: [
+        "Plant anatomy asks where tissues are placed and how that arrangement supports function. Begin with three systems. Dermal tissue forms the outer boundary, ground tissue fills or differentiates much of the interior, and vascular tissue conducts water, minerals and organic solutes. A root, stem and leaf contain these systems in different spatial arrangements.",
+        "Read a transverse section from outside inward. First locate the epidermal boundary, then identify cortex or other ground tissue, and finally find the vascular region. This outside-to-inside route is more reliable than searching immediately for a single memorised shape, because the same tissue name can occupy a different geometry in another organ.",
+      ],
+      bullets: [
+        "Dermal system: protection and exchange at the outer surface.",
+        "Ground system: photosynthesis, storage and mechanical support depending on organ and cell type.",
+        "Vascular system: xylem and phloem arranged as bundles or a central vascular cylinder.",
+      ],
+    },
+    {
+      heading: "Meristematic and permanent tissues answer different questions",
+      paragraphs: [
+        "Meristematic cells retain the capacity for division. Apical meristems extend roots and shoots, intercalary meristems contribute to growth at bases or nodes in grasses, and lateral meristems increase girth. Permanent tissues are differentiated for particular roles and are classified as simple or complex according to their cellular composition.",
+        "Parenchyma cells are generally living and thin-walled, with roles in storage, photosynthesis and repair. Collenchyma provides flexible support through uneven wall thickening and is commonly associated with growing parts. Sclerenchyma has thick, lignified walls and provides mechanical strength; its cells are usually dead at maturity. The useful comparison is wall character plus living state plus function, not hardness alone.",
+      ],
+    },
+    {
+      heading: "Xylem and phloem are complex tissues with unequal living states",
+      paragraphs: [
+        "Xylem conducts water and minerals and also contributes support. Tracheids and vessel elements are the principal conducting elements and are dead at maturity; xylem fibres are also dead, while xylem parenchyma is living. Phloem transports organic material. Sieve-tube elements work with companion cells in angiosperms, while phloem parenchyma and fibres complete the tissue described in the chapter.",
+        "Avoid the shortcut that every xylem element is dead or every phloem element is living. Xylem parenchyma is the living exception within xylem, and phloem fibres are dead. In a vascular bundle, xylem usually lies toward the inner side and phloem toward the outer side in a stem, but roots arrange the tissues on different radii rather than as the same collateral bundle.",
+      ],
+    },
+    {
+      heading: "Root sections: use xylem geometry and pith as anchors",
+      paragraphs: [
+        "A young root has an epiblema or piliferous layer, cortex, endodermis, pericycle and a central vascular region. The endodermis forms the innermost cortical layer, while the pericycle lies just inside it and can give rise to lateral roots. Xylem and phloem occur on alternate radii, a radial arrangement that distinguishes the root from a typical stem bundle.",
+        "In a typical dicot root, central xylem forms relatively few arms and the pith is small or inconspicuous. In a monocot root, xylem is polyarch and a large pith occupies the centre. Both can show an exarch xylem condition, with protoxylem toward the outside. Therefore the presence of radial bundles alone identifies a root; the number of xylem arms and the size of the pith help separate the two root types.",
+      ],
+    },
+    {
+      heading: "Stem sections: ring versus scattered bundles is the first split",
+      paragraphs: [
+        "A dicot stem typically shows a distinct cortex, vascular bundles arranged in a ring and a central pith. The bundles are conjoint and collateral, with phloem outside and xylem inside. Cambium lies between them in an open bundle, allowing the possibility of secondary growth.",
+        "A monocot stem has numerous vascular bundles scattered through undifferentiated ground tissue. The bundles are conjoint, collateral and closed because vascular cambium is absent within them. Each bundle has a sclerenchymatous sheath, and a protoxylem lacuna may be visible. Scattered does not mean disorganised; bundle size and density can vary from the outer to inner ground tissue.",
+        "The clean diagnostic order is therefore arrangement, cambium and ground-tissue differentiation. Starting with a single vessel diameter can mislead because section quality and age alter visual detail.",
+      ],
+    },
+    {
+      heading: "Leaf anatomy links surface, mesophyll and vascular orientation",
+      paragraphs: [
+        "A dorsiventral dicot leaf has upper and lower epidermis with mesophyll differentiated into palisade and spongy regions. Stomata are usually more numerous on the lower surface. Vascular bundles run through the mesophyll, and xylem faces the upper, adaxial side while phloem faces the lower, abaxial side.",
+        "An isobilateral monocot leaf has less sharply differentiated mesophyll and commonly shows stomata on both surfaces. Bulliform cells in the upper epidermis are associated with leaf rolling under water stress in grasses. Parallel venation at the morphological level corresponds with multiple vascular bundles seen in section, but venation and internal tissue arrangement remain different observations.",
+      ],
+    },
+    {
+      heading: "Secondary growth changes girth by adding tissues in rings",
+      paragraphs: [
+        "In a typical dicot stem, interfascicular and intrafascicular cambial regions form a continuous vascular cambium ring. Cambium produces secondary xylem toward the inside and secondary phloem toward the outside. Because much more secondary xylem accumulates, the woody region expands inward from the cambial boundary.",
+        "Cork cambium develops in outer tissues and forms protective derivatives as the original epidermis can no longer accommodate increasing girth. Annual-ring interpretation belongs to seasonal differences in secondary xylem, not to a new set of primary vascular bundles. Keep this overview at the chapter level; detailed wood identification is outside the revision goal.",
+      ],
+    },
+    {
+      heading: "An outside-in transverse-section recall routine",
+      paragraphs: [
+        "Make four empty circles labelled dicot root, monocot root, dicot stem and monocot stem. In each, place xylem and phloem before adding cortex or pith. Then mark radial versus conjoint arrangement, ring versus scattered bundles, and open versus closed bundles. The finished page should let another learner identify each section from three visible clues.",
+        "Finish by drawing one leaf rectangle with upper and lower surfaces. Add palisade tissue, spongy tissue and a vascular bundle with xylem above phloem. Say aloud why this is a dorsiventral leaf, then list the two features you would change for an isobilateral monocot leaf.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -1296,6 +1428,16 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "NCBI Bookshelf: Genes and disease references", href: "https://www.ncbi.nlm.nih.gov/books/" },
     { label: "Khan Academy: Gene regulation", href: "https://www.khanacademy.org/science/biology/gene-regulation" },
+  ],
+  "morphology-of-flowering-plants": [
+    { label: "NCERT Class 11 Biology, Chapter 5: Morphology of Flowering Plants (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo105.pdf" },
+    { label: "OpenStax Biology 2e: Angiosperms and flower structure", href: "https://openstax.org/books/biology-2e/pages/26-3-angiosperms" },
+    { label: "OpenStax Biology 2e: Roots and root modifications", href: "https://openstax.org/books/biology-2e/pages/30-3-roots" },
+  ],
+  "anatomy-of-flowering-plants": [
+    { label: "NCERT Class 11 Biology, Chapter 6: Anatomy of Flowering Plants (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo106.pdf" },
+    { label: "OpenStax Biology 2e: The plant body and tissue systems", href: "https://openstax.org/books/biology-2e/pages/30-1-the-plant-body" },
+    { label: "OpenStax Biology 2e: Stem tissues and vascular bundles", href: "https://openstax.org/books/biology-2e/pages/30-2-stems" },
   ],
 };
 
@@ -1501,6 +1643,29 @@ const noteTables: Record<string, NoteComparisonTable> = {
       ["Insertion/deletion", "Added or removed bases", "Can shift reading frame", "Ignored after the first codon"],
     ],
   },
+  "morphology-of-flowering-plants": {
+    heading: "Modified organs: use visible evidence before naming the function",
+    intro: "The same function can be performed by structures of different origin. Diagnose the organ from landmarks, then add the adaptive role.",
+    columns: ["Example", "Organ identity", "Evidence of origin", "Main role and trap"],
+    rows: [
+      ["Potato tuber", "Stem", "Eyes are buds associated with nodes", "Food storage; not a swollen root"],
+      ["Sweet potato", "Adventitious root", "Develops from a root arising away from the radicle", "Food storage; not a stem tuber"],
+      ["Ginger rhizome", "Stem", "Nodes, internodes and scale leaves", "Storage and perennation; not a horizontal root"],
+      ["Pea tendril", "Leaf part", "Position and continuity with the compound leaf", "Climbing; do not generalise all tendrils as leaves"],
+      ["Banyan prop root", "Adventitious root", "Descends from a branch toward soil", "Mechanical support; not a stem branch"],
+    ],
+  },
+  "anatomy-of-flowering-plants": {
+    heading: "Four transverse sections: the clues that identify them",
+    intro: "Start with vascular arrangement, then check cambium and pith. These axes separate root from stem and dicot from monocot without relying on one memorised picture.",
+    columns: ["Section", "Vascular arrangement", "Pith and cambium", "Decisive distinction"],
+    rows: [
+      ["Dicot root", "Radial; few xylem arms alternate with phloem", "Pith small or inconspicuous; no bundle cambium pattern", "Central star-like xylem with exarch development"],
+      ["Monocot root", "Radial and polyarch", "Large central pith", "Many xylem groups around the pith"],
+      ["Dicot stem", "Conjoint collateral bundles in a ring", "Open bundles with cambium; distinct pith", "Ring arrangement supports secondary growth"],
+      ["Monocot stem", "Conjoint collateral bundles scattered in ground tissue", "Closed bundles; no distinct central pith", "Bundle sheath and scattered distribution"],
+    ],
+  },
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
@@ -1632,6 +1797,20 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     paragraphs: [
       "A mutation can be harmful, neutral, or occasionally useful. The exam may quietly test this by offering a dramatic option that says every mutation causes disease.",
       "The safer habit is to ask what level changed: a base, a reading frame, a chromosome segment, or chromosome number. The effect depends on that level and context.",
+    ],
+  },
+  "morphology-of-flowering-plants": {
+    heading: "A plant part keeps its origin when its job changes",
+    paragraphs: [
+      "Storage, climbing and defence describe functions, not organ identities. A potato and a sweet potato can both store food while one is a stem and the other is a root. The reliable evidence is anatomical position: nodes and buds point to stem identity, while root origin and the absence of those landmarks point elsewhere.",
+      "Use this rule cautiously with named examples. Similar-looking structures in different plants may arise from different organs, so the chapter is testing homology and modification rather than a universal visual shortcut.",
+    ],
+  },
+  "anatomy-of-flowering-plants": {
+    heading: "Do not identify a section from one isolated feature",
+    paragraphs: [
+      "A large pith, an open bundle or an exarch xylem pattern is useful only when placed beside the rest of the section. Root-versus-stem identity comes first from vascular geometry; dicot-versus-monocot identity is then strengthened by xylem number, pith, bundle arrangement and cambium.",
+      "The same discipline applies to tissues. Xylem is not entirely dead because its parenchyma is living, and phloem is not entirely living because its fibres are dead. A precise answer names the component rather than extending one property to the whole complex tissue.",
     ],
   },
 };

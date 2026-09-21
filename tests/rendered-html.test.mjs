@@ -338,3 +338,34 @@ test("publishes the ecosystem energy guide with a source-grounded visual and eco
   assert.match(sitemapXml, /ecosystem-energy-flow-and-ecological-pyramids/);
   assert.match(sitemapXml, /2026-09-20T00:00:00\.000Z/);
 });
+
+test("publishes connected flowering-plant morphology and anatomy guides", async () => {
+  const [morphologyHtml, anatomyHtml, homeHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/morphology-of-flowering-plants.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/anatomy-of-flowering-plants.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(morphologyHtml, /Read a flowering plant as a map of organs and landmarks/);
+  assert.match(morphologyHtml, /morphology-of-flowering-plants-organ-map-v1\.webp/);
+  assert.match(morphologyHtml, /Modified organs: use visible evidence before naming the function/);
+  assert.match(morphologyHtml, /kebo105\.pdf/);
+  assert.match(anatomyHtml, /Build every plant section from three tissue systems/);
+  assert.match(anatomyHtml, /anatomy-of-flowering-plants-stem-sections-v1\.webp/);
+  assert.match(anatomyHtml, /Four transverse sections: the clues that identify them/);
+  assert.match(anatomyHtml, /kebo106\.pdf/);
+
+  for (const html of [morphologyHtml, anatomyHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:.*MedQGo/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+    assert.match(html, /Published:\s*(?:<!-- -->)?September 21, 2026/);
+  }
+
+  assert.match(homeHtml, /Plant structure and function/);
+  assert.match(sitemapXml, /morphology-of-flowering-plants/);
+  assert.match(sitemapXml, /anatomy-of-flowering-plants/);
+  assert.match(sitemapXml, /2026-09-21T00:00:00\.000Z/);
+});
