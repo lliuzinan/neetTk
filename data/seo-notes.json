@@ -286,5 +286,23 @@
     "topicSlug": "anatomy-of-flowering-plants",
     "targetKeyword": "Anatomy of flowering plants NEET UG Biology revision guide",
     "sortOrder": 36
+  },
+  {
+    "id": "note-five-kingdom-classification",
+    "slug": "five-kingdom-classification",
+    "title": "Five Kingdom Classification: NEET-UG Biology Revision Guide",
+    "description": "Classify Monera, Protista, Fungi, Plantae and Animalia using cell organisation, walls and nutrition, then place viruses, viroids and lichens at the correct boundary.",
+    "topicSlug": "five-kingdom-classification",
+    "targetKeyword": "Five kingdom classification NEET UG Biology revision guide",
+    "sortOrder": 37
+  },
+  {
+    "id": "note-plant-kingdom",
+    "slug": "plant-kingdom",
+    "title": "Plant Kingdom: NEET-UG Biology Revision Guide",
+    "description": "Compare algae, bryophytes, pteridophytes, gymnosperms and angiosperms through vascular tissue, seeds, life-cycle dominance and reproductive boundaries.",
+    "topicSlug": "plant-kingdom",
+    "targetKeyword": "Plant kingdom NEET UG Biology revision guide",
+    "sortOrder": 38
   }
 ]

@@ -14,6 +14,16 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+  "five-kingdom-classification": {
+    src: "/images/biology/five-kingdom-classification-decision-map-v1.webp",
+    alt: "Decision map separating Monera, Protista, Fungi, Plantae and Animalia by cell organisation and mode of nutrition",
+    caption: "An original classification map. Cell organisation makes the first split; among eukaryotes, body organisation, wall characteristics and nutrition refine the placement.",
+  },
+  "plant-kingdom": {
+    src: "/images/biology/plant-kingdom-trait-staircase-v1.webp",
+    alt: "Comparison of algae, bryophytes, pteridophytes, gymnosperms and angiosperms with vascular tissue, seed and enclosed-ovule transitions",
+    caption: "An original trait staircase for comparison, not a claim that one modern group transforms into another. Vascular tissue, seeds and enclosed ovules provide the major checkpoints.",
+  },
   "morphology-of-flowering-plants": {
     src: "/images/biology/morphology-of-flowering-plants-organ-map-v1.webp",
     alt: "Flowering plant with a tap root, stem nodes and internode, axillary bud, leaves and flower labelled as external organ landmarks",

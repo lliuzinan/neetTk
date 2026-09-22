@@ -358,5 +358,15 @@
     "ncertRef": "NCERT Biology Class 11, Chapter 6",
     "questionCount": 0,
     "sortOrder": 34
+  },
+  {
+    "id": "plant-kingdom",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Plant kingdom",
+    "slug": "plant-kingdom",
+    "ncertRef": "NCERT Biology Class 11, Chapter 3",
+    "questionCount": 0,
+    "sortOrder": 35
   }
 ]

@@ -22,6 +22,11 @@ export default async function Home() {
     .filter((topic): topic is (typeof topics)[number] => Boolean(topic));
   const learningClusters = [
     {
+      title: "Diversity and plant groups",
+      description: "Start with kingdom-level evidence, then compare the structural and reproductive transitions across the major plant groups.",
+      slugs: ["five-kingdom-classification", "plant-kingdom", "morphology-of-flowering-plants"],
+    },
+    {
       title: "Inheritance and variation",
       description: "Start with Mendel's patterns, then connect them to chromosome behaviour before moving into pedigree questions.",
       slugs: ["mendelian-inheritance", "chromosomal-basis-of-inheritance", "pedigree-analysis-and-inheritance-patterns"],
@@ -44,7 +49,7 @@ export default async function Home() {
     {
       title: "Plant structure and function",
       description: "Identify the organ from external landmarks, read its internal tissues, then connect leaf structure with plant physiology.",
-      slugs: ["morphology-of-flowering-plants", "anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "plant-respiration"],
+      slugs: ["anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "plant-respiration"],
     },
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));

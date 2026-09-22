@@ -369,3 +369,34 @@ test("publishes connected flowering-plant morphology and anatomy guides", async 
   assert.match(sitemapXml, /anatomy-of-flowering-plants/);
   assert.match(sitemapXml, /2026-09-21T00:00:00\.000Z/);
 });
+
+test("publishes biological classification and plant kingdom as a connected diversity cluster", async () => {
+  const [classificationHtml, plantKingdomHtml, homeHtml, sitemapXml] = await Promise.all([
+    readFile(new URL("../.next/server/app/neet-ug/biology/five-kingdom-classification.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/plant-kingdom.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(classificationHtml, /Classification works as a grid of biological evidence/);
+  assert.match(classificationHtml, /five-kingdom-classification-decision-map-v1\.webp/);
+  assert.match(classificationHtml, /Five kingdoms: use the combination, not one familiar feature/);
+  assert.match(classificationHtml, /kebo102\.pdf/);
+  assert.match(plantKingdomHtml, /Read the plant kingdom through four structural transitions/);
+  assert.match(plantKingdomHtml, /plant-kingdom-trait-staircase-v1\.webp/);
+  assert.match(plantKingdomHtml, /Plant groups: the feature that changes the classification/);
+  assert.match(plantKingdomHtml, /kebo103\.pdf/);
+
+  for (const html of [classificationHtml, plantKingdomHtml]) {
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:.*MedQGo/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+    assert.match(html, /Published:\s*(?:<!-- -->)?September 22, 2026/);
+  }
+
+  assert.match(homeHtml, /Diversity and plant groups/);
+  assert.match(sitemapXml, /five-kingdom-classification/);
+  assert.match(sitemapXml, /plant-kingdom/);
+  assert.match(sitemapXml, /2026-09-22T00:00:00\.000Z/);
+});

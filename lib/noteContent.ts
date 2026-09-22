@@ -51,6 +51,8 @@ export const AUTHORED_NOTE_SLUGS = [
   "ecosystem-energy-flow-and-ecological-pyramids",
   "morphology-of-flowering-plants",
   "anatomy-of-flowering-plants",
+  "five-kingdom-classification",
+  "plant-kingdom",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
@@ -1305,6 +1307,129 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "five-kingdom-classification": [
+    {
+      heading: "Classification works as a grid of biological evidence",
+      paragraphs: [
+        "The five-kingdom system becomes useful when it is treated as a set of decisions rather than five memorised names. Start with cell organisation: is the organism prokaryotic or eukaryotic? Then check whether it is mainly unicellular or multicellular, whether a cell wall is present and what it contains, and how nutrition is obtained. Reproduction and ecological role add supporting evidence.",
+        "R. H. Whittaker's system placed Monera, Protista, Fungi, Plantae and Animalia in separate kingdoms using several of these criteria together. No single feature is enough for every boundary. A cell wall occurs in bacteria, fungi and plants, for example, but its composition and the organism's nutrition separate those groups.",
+      ],
+      bullets: [
+        "Cell type: prokaryotic or eukaryotic.",
+        "Body organisation: unicellular, colonial or multicellular.",
+        "Nutrition: photosynthetic, absorptive or ingestive heterotrophy.",
+        "Cell covering: absent, variable, or a wall with a characteristic composition.",
+        "Reproduction and ecological role: supporting evidence, not a one-word shortcut.",
+      ],
+    },
+    {
+      heading: "Monera begins with the absence of a membrane-bound nucleus",
+      paragraphs: [
+        "Members of Monera are prokaryotic. Their DNA is not enclosed by a nuclear membrane, and membrane-bound organelles are absent. The group includes organisms with wide metabolic diversity: some are photosynthetic or chemosynthetic autotrophs, while many are heterotrophs. A prokaryotic cell should not be called structurally simple in the sense of being biologically inactive; bacteria carry out sophisticated metabolism without eukaryotic compartments.",
+        "NCERT separates archaebacteria from eubacteria by features that include their habitats and cell-envelope characteristics. Methanogens, halophiles and thermoacidophiles illustrate archaeal adaptations. Cyanobacteria are photosynthetic eubacteria, not algae with a eukaryotic nucleus. Mycoplasma are notable for lacking a cell wall, which prevents the broad claim that every moneran has one.",
+      ],
+    },
+    {
+      heading: "Protista is united by eukaryotic cells, not by one mode of life",
+      paragraphs: [
+        "Protists are predominantly unicellular eukaryotes. Their nuclei and membrane-bound organelles distinguish them from Monera, but their nutrition, movement and coverings vary greatly. Some are photosynthetic, some ingest food, some absorb dissolved material and some combine nutritional modes. This diversity is why a protist cannot be identified merely as 'an organism that lives in water.'",
+        "Within the NCERT framework, chrysophytes include diatoms with silica-rich walls; dinoflagellates commonly have two flagella and cellulose plates; euglenoids have a flexible pellicle rather than a cellulose wall; slime moulds form aggregations under suitable conditions; and protozoan groups are organised by locomotion or lifestyle. The study goal is to attach the diagnostic feature to the named group without making it universal for all protists.",
+      ],
+    },
+    {
+      heading: "Fungi feed by absorption and build bodies from hyphae",
+      paragraphs: [
+        "Fungi are eukaryotic heterotrophs that release enzymes into their surroundings and absorb the resulting soluble nutrients. Their walls contain chitin, not cellulose as a defining plant wall component. Most have thread-like hyphae that together form a mycelium, although yeast is unicellular. Saprophytic, parasitic and symbiotic nutrition describe relationships with the food source; they do not turn fungi into different kingdoms.",
+        "Fungal grouping in this chapter uses features of the mycelium, spore formation and sexual reproduction. Asexual spores such as conidia or sporangiospores should not be confused with the sexual spores used to distinguish major classes. Lichens and mycorrhizae show associations involving fungi, but the partnership does not erase the identity of the fungal component.",
+      ],
+    },
+    {
+      heading: "Plantae and Animalia separate two multicellular strategies",
+      paragraphs: [
+        "In the five-kingdom model, Plantae contains multicellular eukaryotes that are predominantly photosynthetic and possess cell walls, whereas Animalia contains multicellular eukaryotes that lack cell walls and obtain nutrition by ingestion. These are broad kingdom-level patterns. Parasitic plants and unusual animals do not justify replacing the full evidence grid with one feature such as movement or green colour.",
+        "Fungi are the important third comparison. Like plants, most fungi have walls and are generally non-motile; like animals, they are heterotrophic. Their absorptive nutrition, chitinous walls and mycelial organisation provide the decisive combination. This is why 'cannot move' is a poor rule for calling an organism a plant.",
+      ],
+    },
+    {
+      heading: "Viruses, viroids and lichens sit beside the kingdom grid",
+      paragraphs: [
+        "Viruses are acellular infectious entities with nucleic acid enclosed in a protein coat; they depend on host cells for replication and are not placed as a cellular kingdom in Whittaker's system. A viroid is even simpler in this comparison: it consists of a small infectious RNA molecule without the protein coat of a virus. These distinctions concern biological organisation, not personal diagnosis or treatment.",
+        "A lichen is an association between a fungus and a photosynthetic partner, usually an alga or cyanobacterium. It is therefore not a sixth kingdom or a single cell type. Identify the partners and the relationship before deciding where each component belongs in the classification framework.",
+      ],
+    },
+    {
+      heading: "A two-pass kingdom sorting routine",
+      paragraphs: [
+        "Draw five columns and fill only four rows from memory: nucleus, organisation, wall or covering, and nutrition. Sort one representative example into each column and write the feature that excludes its nearest alternative. The output should be a reasoned matrix, not a list of kingdom names.",
+        "On the second pass, classify cyanobacterium, diatom, yeast, moss and earthworm. Then add virus, viroid and lichen below the grid and explain why each needs a boundary note. If you can state both the placement and the excluding clue, the classification is doing explanatory work.",
+      ],
+    },
+  ],
+  "plant-kingdom": [
+    {
+      heading: "Read the plant kingdom through four structural transitions",
+      paragraphs: [
+        "A long list of plant groups becomes a coherent map when four questions are asked in order. Is the body differentiated into root, stem and leaf? Is vascular tissue present? Are seeds formed? If seeds occur, are they exposed or enclosed within an ovary? These checkpoints separate algae, bryophytes, pteridophytes, gymnosperms and angiosperms without treating every characteristic as equally diagnostic.",
+        "Life-cycle dominance provides a second axis. The conspicuous plant may be a gametophyte or a sporophyte, and the two generations differ in chromosome number and reproductive role. Keep this axis beside the structural one: vascular tissue and seed habit describe the body and reproduction, while gametophyte-sporophyte relations describe the life cycle.",
+      ],
+      bullets: [
+        "Body plan: thallus or differentiated organs.",
+        "Conducting system: non-vascular or vascular.",
+        "Propagule: spores or seeds.",
+        "Seed position: exposed or enclosed in an ovary.",
+        "Dominant generation: gametophyte or sporophyte.",
+      ],
+    },
+    {
+      heading: "Algal classes are separated by pigments, reserves and walls",
+      paragraphs: [
+        "Algae are mostly aquatic, photosynthetic organisms with a relatively simple thallus. In the NCERT treatment, Chlorophyceae, Phaeophyceae and Rhodophyceae are compared through pigment combinations, stored food, flagella and cell-wall features. Habitat alone is not decisive because representatives can occupy marine, freshwater or moist terrestrial settings.",
+        "Green algae contain chlorophyll a and b and commonly store starch. Brown algae contain chlorophyll a and c with fucoxanthin and store laminarin and mannitol. Red algae contain chlorophyll a and pigments including phycoerythrin, with floridean starch as the reserve. The visible colour follows the accessory pigment mixture; it does not mean that chlorophyll is absent from brown or red algae.",
+      ],
+    },
+    {
+      heading: "Bryophytes keep the gametophyte in the foreground",
+      paragraphs: [
+        "Bryophytes lack true vascular tissues and do not form seeds. Their gametophyte is the dominant, independent plant body. The sporophyte remains attached to and nutritionally dependent on the gametophyte. Rhizoids provide anchorage but should not be renamed true roots with vascular organisation.",
+        "Motile male gametes require a film of water to reach the egg, which explains the phrase 'amphibians of the plant kingdom' without implying that bryophytes are animals. Liverworts and mosses differ in body form and development, yet both retain the chapter's central pattern: dominant gametophyte, dependent sporophyte and water-dependent fertilisation.",
+      ],
+    },
+    {
+      heading: "Pteridophytes add vascular tissue but not seeds",
+      paragraphs: [
+        "Pteridophytes have true roots, stems and leaves with xylem and phloem. Their dominant plant body is the independent sporophyte, while spores develop into a smaller gametophyte called a prothallus. Fertilisation still generally requires water because the male gametes are motile.",
+        "Most pteridophytes are homosporous, but Selaginella and Salvinia are heterosporous, producing microspores and megaspores. Heterospory is important because the two spore types lead toward separate male and female gametophytes and retention of the female gametophyte. It is a step associated with the seed habit, not evidence that these pteridophytes already make seeds.",
+      ],
+    },
+    {
+      heading: "Gymnosperms package reproduction into pollen, ovules and naked seeds",
+      paragraphs: [
+        "Gymnosperms are vascular seed plants whose ovules are not enclosed by an ovary before fertilisation; their seeds are therefore described as naked. The dominant plant is the sporophyte, while highly reduced male and female gametophytes develop in association with cones or strobili. Pollen transfer reduces dependence on external water for the movement of male gametes to the female reproductive structure.",
+        "Gymnosperm roots, stems and leaves often show adaptations to their habitats. At the chapter level, remember the important conducting-tissue qualifications: xylem generally lacks vessels and phloem lacks companion cells, with named exceptions treated carefully. A cone is not a fruit, because fruit formation requires an ovary.",
+      ],
+    },
+    {
+      heading: "Angiosperms enclose ovules and link flowers to fruits",
+      paragraphs: [
+        "Angiosperms bear flowers, with ovules enclosed inside an ovary. After fertilisation, ovules become seeds and the ovary generally develops into a fruit. Double fertilisation produces a zygote and initiates endosperm formation through two different fusion events, a feature specific to flowering plants in this comparison.",
+        "Monocots and dicots can be separated by cotyledon number and a suite of vegetative and anatomical patterns, but no single loose observation should replace the whole comparison. The morphology and anatomy guides continue that analysis at organ and tissue level; the plant-kingdom guide is concerned first with the defining reproductive boundary of enclosed ovules and seeds.",
+      ],
+    },
+    {
+      heading: "Life cycles ask where meiosis and fertilisation change ploidy",
+      paragraphs: [
+        "In a haplontic cycle, the multicellular plant body is haploid and the zygote is the main diploid stage; meiosis restores haploid spores. In a diplontic cycle, the multicellular body is diploid and meiosis produces haploid gametes, which are the limited haploid phase. In a haplodiplontic cycle, both haploid gametophyte and diploid sporophyte are multicellular.",
+        "Do not infer the life cycle from size alone. Mark fertilisation as the transition from n to 2n and meiosis as the transition from 2n to n. Then identify which side grows by mitosis into a multicellular generation. This arrow method is steadier than memorising a circular diagram without ploidy labels.",
+      ],
+    },
+    {
+      heading: "Build a trait staircase and a ploidy strip",
+      paragraphs: [
+        "Draw five steps labelled algae, bryophytes, pteridophytes, gymnosperms and angiosperms. Add only the first major checkpoint that separates each step: differentiated land body, vascular tissue, seed, and enclosed ovule. Beside the staircase, mark the dominant generation for bryophytes and vascular plants.",
+        "For a second output, draw a straight strip from n to 2n and back to n. Place fertilisation over the upward change and meiosis over the downward change. Use the strip to explain one haplontic, one diplontic and one haplodiplontic example from the chapter. The aim is to reconstruct the logic, not to reproduce a textbook figure.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -1438,6 +1563,18 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "NCERT Class 11 Biology, Chapter 6: Anatomy of Flowering Plants (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo106.pdf" },
     { label: "OpenStax Biology 2e: The plant body and tissue systems", href: "https://openstax.org/books/biology-2e/pages/30-1-the-plant-body" },
     { label: "OpenStax Biology 2e: Stem tissues and vascular bundles", href: "https://openstax.org/books/biology-2e/pages/30-2-stems" },
+  ],
+  "five-kingdom-classification": [
+    { label: "NCERT Class 11 Biology, Chapter 2: Biological Classification (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo102.pdf" },
+    { label: "OpenStax Biology 2e: Prokaryotic diversity and the three-domain context", href: "https://openstax.org/books/biology-2e/pages/22-introduction" },
+    { label: "OpenStax Biology 2e: Characteristics and diversity of protists", href: "https://openstax.org/books/biology-2e/pages/23-2-characteristics-of-protists" },
+    { label: "OpenStax Biology 2e: Characteristics of fungi", href: "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi" },
+  ],
+  "plant-kingdom": [
+    { label: "NCERT Class 11 Biology, Chapter 3: Plant Kingdom (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo103.pdf" },
+    { label: "OpenStax Biology 2e: Early plant life and adaptation to land", href: "https://openstax.org/books/biology-2e/pages/25-1-early-plant-life" },
+    { label: "OpenStax Biology 2e: Seedless vascular plants", href: "https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants" },
+    { label: "OpenStax Biology 2e: Evolution of seed plants", href: "https://openstax.org/books/biology-2e/pages/26-1-evolution-of-seed-plants" },
   ],
 };
 
@@ -1666,6 +1803,30 @@ const noteTables: Record<string, NoteComparisonTable> = {
       ["Monocot stem", "Conjoint collateral bundles scattered in ground tissue", "Closed bundles; no distinct central pith", "Bundle sheath and scattered distribution"],
     ],
   },
+  "five-kingdom-classification": {
+    heading: "Five kingdoms: use the combination, not one familiar feature",
+    intro: "Each row gives the broad NCERT pattern. The last column identifies the nearest tempting misclassification.",
+    columns: ["Kingdom", "Cell and organisation", "Wall and nutrition", "Decisive check"],
+    rows: [
+      ["Monera", "Prokaryotic; mostly unicellular", "Wall common but absent in Mycoplasma; varied nutrition", "No membrane-bound nucleus"],
+      ["Protista", "Eukaryotic; predominantly unicellular", "Covering and nutrition vary", "Eukaryotic cell without the multicellular organisation of plants, fungi or animals"],
+      ["Fungi", "Eukaryotic; usually filamentous, yeast unicellular", "Chitinous wall; absorptive heterotrophy", "External digestion followed by absorption"],
+      ["Plantae", "Eukaryotic; multicellular", "Cellulose-rich wall; mainly photosynthetic", "Multicellular photosynthetic body in this model"],
+      ["Animalia", "Eukaryotic; multicellular", "No cell wall; ingestive heterotrophy", "Food is ingested rather than absorbed through a fungal mycelium"],
+    ],
+  },
+  "plant-kingdom": {
+    heading: "Plant groups: the feature that changes the classification",
+    intro: "Read from body plan to reproduction. The final column is the shortest reliable separator from the previous group.",
+    columns: ["Plant group", "Vascular system", "Reproductive unit", "Key separator"],
+    rows: [
+      ["Algae", "Absent", "Spores or gametes; life cycles vary", "Mainly aquatic thalloid body"],
+      ["Bryophytes", "Absent", "Spores; gametophyte dominant", "Land plants with dependent sporophyte and no true vascular tissue"],
+      ["Pteridophytes", "Present", "Spores; sporophyte dominant", "True vascular organs but no seeds"],
+      ["Gymnosperms", "Present", "Exposed ovules and naked seeds", "Seed plant without an ovary or fruit"],
+      ["Angiosperms", "Present", "Ovules enclosed in ovary; seeds in fruit", "Flowers and double fertilisation"],
+    ],
+  },
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
@@ -1811,6 +1972,20 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     paragraphs: [
       "A large pith, an open bundle or an exarch xylem pattern is useful only when placed beside the rest of the section. Root-versus-stem identity comes first from vascular geometry; dicot-versus-monocot identity is then strengthened by xylem number, pith, bundle arrangement and cambium.",
       "The same discipline applies to tissues. Xylem is not entirely dead because its parenchyma is living, and phloem is not entirely living because its fibres are dead. A precise answer names the component rather than extending one property to the whole complex tissue.",
+    ],
+  },
+  "five-kingdom-classification": {
+    heading: "A classification model is not the organism itself",
+    paragraphs: [
+      "Whittaker's five kingdoms organise a large diversity of life using evidence available at several biological levels. The later three-domain framework uses molecular and cellular evidence to separate Bacteria and Archaea more fundamentally. The two systems answer related questions but should not be pasted together as though 'domain' and 'kingdom' were the same rank.",
+      "For this revision guide, use the five-kingdom criteria expected by the NCERT chapter, then recognise where viruses, viroids and symbiotic associations need a boundary note. Precision is stronger than forcing every biological entity into one of five boxes.",
+    ],
+  },
+  "plant-kingdom": {
+    heading: "The trait staircase is not a ladder of living species",
+    paragraphs: [
+      "The five-group sequence is a revision device for comparing features, not a claim that a modern moss changes into a modern fern or that one living group is an unfinished version of another. Present-day lineages share ancestors and retain their own adaptations.",
+      "Use the staircase only to track diagnostic innovations such as vascular tissue, seeds and enclosed ovules. Then use the ploidy strip for life cycles. Keeping those two diagrams separate prevents an evolutionary comparison from being mistaken for an individual's developmental sequence.",
     ],
   },
 };

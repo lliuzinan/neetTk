@@ -1,6 +1,16 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "five-kingdom-classification": [
+    { slug: "plant-kingdom", reason: "Apply kingdom-level criteria before comparing the major plant groups in more detail." },
+    { slug: "cell-theory-and-cell-organelles", reason: "Review the structural boundary between prokaryotic and eukaryotic cells." },
+    { slug: "morphology-of-flowering-plants", reason: "Continue from Plantae as a kingdom to the external organisation of flowering plants." },
+  ],
+  "plant-kingdom": [
+    { slug: "five-kingdom-classification", reason: "Revisit why Plantae is separated from fungi, protists and photosynthetic prokaryotes." },
+    { slug: "morphology-of-flowering-plants", reason: "Move from plant-group boundaries to the diagnostic organs of flowering plants." },
+    { slug: "sexual-reproduction-in-flowering-plants", reason: "Continue from enclosed ovules and double fertilisation to the complete reproductive sequence." },
+  ],
   "digestion-and-absorption": [
     { slug: "blood-and-circulation", reason: "Follow absorbed nutrients from intestinal vessels into the circulation." },
     { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
@@ -37,6 +47,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "mitosis-and-meiosis", reason: "Track chromosome reduction and subsequent mitotic divisions." },
   ],
   "morphology-of-flowering-plants": [
+    { slug: "plant-kingdom", reason: "Place flowering-plant organs within the broader transition from spore-bearing groups to seed plants." },
     { slug: "anatomy-of-flowering-plants", reason: "Move from external organ landmarks to the tissue arrangements visible in transverse sections." },
     { slug: "sexual-reproduction-in-flowering-plants", reason: "Continue from floral whorls and ovules to pollination, double fertilisation and seed formation." },
     { slug: "photosynthesis-in-higher-plants", reason: "Connect leaf form and venation with the physiology carried out inside the leaf." },

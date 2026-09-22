@@ -128,6 +128,14 @@ const topicContent: Record<string, TopicSeoContent> = {
     focus: ["Meristematic versus permanent tissues and the roles of parenchyma, collenchyma and sclerenchyma.", "The cellular components and living-state distinctions within xylem and phloem.", "How vascular arrangement, cambium and pith identify dicot and monocot roots, stems and leaves."],
     traps: ["Xylem parenchyma is living even though the main xylem conducting elements are dead at maturity.", "Roots have radial xylem and phloem, whereas typical stem bundles are conjoint and collateral.", "Dicot stem bundles are commonly arranged in a ring and open; monocot stem bundles are scattered and closed."],
   },
+  "five-kingdom-classification": {
+    focus: ["How cell type, body organisation, wall composition and nutrition work together in Whittaker's five-kingdom system.", "The diagnostic boundaries among Monera, Protista, Fungi, Plantae and Animalia.", "Why viruses, viroids and lichens need boundary notes rather than a forced kingdom label."],
+    traps: ["Cyanobacteria are photosynthetic prokaryotes in Monera, not eukaryotic algae.", "Fungi are absorptive heterotrophs with chitinous walls; lack of movement does not make them plants.", "Viruses and viroids are acellular and are not extra kingdoms in Whittaker's five-kingdom system."],
+  },
+  "plant-kingdom": {
+    focus: ["The structural checkpoints that separate algae, bryophytes, pteridophytes, gymnosperms and angiosperms.", "How vascular tissue, spores, seeds and enclosed ovules change the reproductive comparison.", "Gametophyte-sporophyte dominance and the ploidy transitions in major life-cycle patterns."],
+    traps: ["Pteridophytes have vascular tissue but do not produce seeds.", "Gymnosperm ovules and seeds are not enclosed by an ovary, so cones are not fruits.", "Bryophyte gametophytes are dominant, whereas the conspicuous vascular-plant body is the sporophyte."],
+  },
 };
 
 export function getTopicSeoContent(slug: string) {
