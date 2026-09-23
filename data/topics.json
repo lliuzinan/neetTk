@@ -368,5 +368,55 @@
     "ncertRef": "NCERT Biology Class 11, Chapter 3",
     "questionCount": 0,
     "sortOrder": 35
+  },
+  {
+    "id": "biodiversity-and-conservation",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Biodiversity and conservation",
+    "slug": "biodiversity-and-conservation",
+    "ncertRef": "NCERT Biology Class 12, Chapter 13",
+    "questionCount": 0,
+    "sortOrder": 36
+  },
+  {
+    "id": "microbes-in-human-welfare",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Microbes in human welfare",
+    "slug": "microbes-in-human-welfare",
+    "ncertRef": "NCERT Biology Class 12, Chapter 8",
+    "questionCount": 0,
+    "sortOrder": 37
+  },
+  {
+    "id": "enzymes-and-enzyme-action",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Enzymes and enzyme action",
+    "slug": "enzymes-and-enzyme-action",
+    "ncertRef": "NCERT Biology Class 11, Chapter 9",
+    "questionCount": 0,
+    "sortOrder": 38
+  },
+  {
+    "id": "plant-growth-and-development",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Plant growth and development",
+    "slug": "plant-growth-and-development",
+    "ncertRef": "NCERT Biology Class 11, Chapter 13",
+    "questionCount": 0,
+    "sortOrder": 39
+  },
+  {
+    "id": "locomotion-and-movement",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Locomotion and movement",
+    "slug": "locomotion-and-movement",
+    "ncertRef": "NCERT Biology Class 11, Chapter 17",
+    "questionCount": 0,
+    "sortOrder": 40
   }
 ]

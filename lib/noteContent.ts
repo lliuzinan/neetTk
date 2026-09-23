@@ -23,6 +23,9 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "enzymes-and-enzyme-action",
+  "plant-growth-and-development",
+  "locomotion-and-movement",
   "human-respiration",
   "excretion-and-kidney-function",
   "immunity-pathogens-vaccines",
@@ -53,9 +56,248 @@ export const AUTHORED_NOTE_SLUGS = [
   "anatomy-of-flowering-plants",
   "five-kingdom-classification",
   "plant-kingdom",
+  "biodiversity-and-conservation",
+  "microbes-in-human-welfare",
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "enzymes-and-enzyme-action": [
+    { heading: "A faster reaction is not a different destination", paragraphs: [
+      "Two reaction mixtures contain the same starting materials. One produces a detectable amount of product within a minute; the other changes too slowly to measure during the lesson. Adding an enzyme can explain that difference without changing which products are chemically possible. Catalysis concerns the route and its activation barrier, not a new supply of energy that makes every reaction favourable.",
+      "This guide approaches enzymes through observations: what changes when substrate, temperature or an inhibitor changes? The useful question is not just which enzyme name belongs to which substrate. It is whether the proposed explanation accounts for the rate you observed. Most enzymes are proteins, but catalytic RNA molecules, called ribozymes, prevent us from making that description an absolute definition."
+    ] },
+    { heading: "Follow one catalytic cycle before interpreting a graph", paragraphs: [
+      "A substrate interacts with an enzyme's active site, a region whose shape and chemical properties support binding and reaction. Binding can involve adjustments in the enzyme rather than a perfectly rigid fit. A temporary enzyme-substrate association is followed by conversion and product release. The enzyme is available for another cycle; it is not consumed as a stoichiometric ingredient of the product.",
+      "The illustration uses a splitting reaction to make product release visible. Many enzymes instead join molecules, transfer groups or rearrange bonds. Do not infer that all catalysis cuts one molecule into two. Similarly, an enzyme being reusable does not mean it survives every temperature or pH indefinitely. A damaged enzyme may no longer catalyse effectively even though the reaction itself does not use it up.",
+      "Activation energy is the barrier to reaching a reaction's transition state. Enzymes provide a lower-barrier route, so more reactant molecules can undergo reaction per unit time under suitable conditions. They do not change the energy difference between reactants and products or move the equilibrium position. A catalyst can help a system approach equilibrium sooner; it cannot continually force net conversion after equilibrium has been reached."
+    ] },
+    { heading: "Calculate a rate before calling an enzyme more active", paragraphs: [
+      "Here is an invented initial-rate comparison, not laboratory data. Mixture A produces 12 micromoles of product in 30 seconds. Mixture B produces 18 micromoles in 60 seconds. Assume the measured interval is linear, starting product is zero, and the volumes and enzyme amounts are equal. A's rate is 12/30 = 0.4 micromoles per second; B's rate is 18/60 = 0.3 micromoles per second. A is faster even though B's final product amount is larger.",
+      "The wrong conclusion, '18 is larger than 12, so B is faster', compares amounts while ignoring time. If enzyme amounts or volumes differed, the comparison would also need appropriate normalisation. Before interpreting a figure, read the axes: product accumulated, product per time and product per enzyme amount are different measurements.",
+      "Short initial measurements help reduce complications from substrate depletion and accumulating product. They do not eliminate the need for controls. If temperature and substrate concentration both differ between tubes, a rate difference cannot be assigned to temperature alone. A simple explanation is only persuasive when the experimental comparison isolates its cause."
+    ] },
+    { heading: "Why adding substrate eventually gives little extra speed", paragraphs: [
+      "At a fixed enzyme concentration, supplying more substrate often increases initial reaction rate. At sufficiently high substrate concentrations, the available catalytic capacity becomes limiting: enzymes spend most of their time processing bound substrate. Further substrate addition then produces little increase, giving the familiar approach to a plateau.",
+      "Saturation does not mean all substrate has disappeared or the enzyme has stopped working. Product can still be forming rapidly at the plateau. Nor does it mean every enzyme follows an identical curve; the simple rising-to-plateau model is the starting case, not a description of all regulation. Keep substrate concentration on the horizontal axis separate from elapsed time in a single tube.",
+      "Adding more active enzyme can raise the attainable rate when other conditions and sufficient substrate are maintained. That is a different intervention from adding more substrate to the same enzyme amount. An experiment that changes both at once cannot show which one removed the limitation."
+    ] },
+    { heading: "Temperature and pH act through the catalyst's condition", paragraphs: [
+      "A moderate temperature increase can accelerate molecular encounters and reaction. Beyond a suitable range, loss of the protein structure required for catalysis can outweigh that gain. The resulting activity curve reflects competing effects, not a rule that hotter always means faster. Different enzymes operate in different environments, so there is no single optimum temperature for every enzyme.",
+      "Low activity in the cold is not automatically denaturation. Activity may recover on warming if structure remains functional. After severe heat exposure, recovery is not assured. To distinguish these situations, measure activity after returning samples to the same test conditions rather than comparing them only while they are at different temperatures.",
+      "pH affects the ionisation of groups involved in binding and catalysis and can also affect protein structure. An optimum belongs to an enzyme under specified conditions. Memorising one numerical pH for all digestive enzymes would erase the very environmental differences that the examples are meant to teach."
+    ] },
+    { heading: "An inhibitor and a missing helper are different explanations", paragraphs: [
+      "In the simple competitive model, inhibitor and substrate compete for access to the enzyme's active site. Increasing substrate concentration can reduce the inhibitor's effect on observed rate. This does not imply that more substrate reverses every kind of inhibition, or that an inhibitor must permanently destroy the enzyme. The location and reversibility of the interaction matter.",
+      "Some enzymes require a non-protein component for activity. Cofactor is the broad category; metal ions and organic helpers are important examples. A coenzyme is organic, while a prosthetic group is tightly associated with its enzyme. These terms describe composition or association, not extra products that the enzyme manufactures during every turnover.",
+      "If activity returns after a required cofactor is restored, that supports a missing-component explanation. It does not establish competitive inhibition. Treat these as alternative hypotheses to test, not interchangeable vocabulary for any reduction in rate."
+    ] },
+    { heading: "Check the reaction, not the name ending", paragraphs: [
+      "Enzyme names often end in -ase, but a suffix is not a mechanism. NCERT's introductory classification distinguishes reaction types such as oxidation-reduction, transfer, hydrolysis, non-hydrolytic bond removal, rearrangement and joining. Use those actions to interpret an unfamiliar example rather than inventing a substrate from its name. This guide follows that textbook grouping without claiming it is the complete modern classification system.",
+      "For a final retrieval check, explain three observations without looking back: an enzyme raises initial rate without changing equilibrium; a substrate-rate curve plateaus while product continues forming; a cold-treated sample regains activity after warming. The explanations are respectively a lower activation barrier, limited catalytic capacity and potentially reversible temperature slowing. None requires the enzyme to become part of the final product.",
+      "NCERT anchor: Biomolecules, sections 9.8.2-9.8.6 in the 2025-26 reprint, connects catalytic rate, action, conditions and cofactors. Use the molecular-tools note next to see how particular enzymes serve a laboratory task; that article is an application, not a replacement for these rate distinctions."
+    ] }
+  ],
+  "plant-growth-and-development": [
+    { heading: "Two leaves grow by the same area. Did they grow equally?", paragraphs: [
+      "Suppose a small leaf increases from 4 to 8 square centimetres over two days, while a larger leaf increases from 20 to 24. Both gain 4 square centimetres, but only the small leaf doubles. A description of plant growth can therefore be numerically correct and still incomplete: absolute increase and increase relative to the starting size answer different questions.",
+      "Growth is an irreversible increase in size associated with living processes. Development is broader, including changes in form and function as well as growth. A plant becoming taller, a cell acquiring a specialised role and a bud entering dormancy are not three measurements of the same event. This note separates those events before considering the regulators that coordinate them."
+    ] },
+    { heading: "Read a root from its protective tip towards older cells", paragraphs: [
+      "The root cap protects the tip. Immediately behind it is a region with actively dividing cells; farther back, cells elongate, and then acquire mature features. Root hairs belong to the differentiation region, not the protective cap. The diagram deliberately separates position from activity so that the word 'tip' does not become a substitute for identifying the correct zone.",
+      "Cell division increases cell number; elongation increases cell dimensions. A longer root can result from both. Differentiation supplies specialised structure and function rather than simply adding another equal increment of length. The zones are a useful developmental map, not sharply fenced compartments with identical boundaries in every root.",
+      "Meristems allow plants to retain growing regions through much of life. This indeterminate capacity does not mean every leaf grows forever or every mature cell continues dividing. Particular organs can stop increasing in size while other regions of the same plant remain active. Whole-plant potential and the behaviour of one organ must be described separately."
+    ] },
+    { heading: "Work the leaf calculation in two different ways", paragraphs: [
+      "Return to the invented leaf records. The mean absolute area-growth rate for either leaf is (final area - initial area)/time = 4/2 = 2 square centimetres per day. On this measure they are equal. The fractional increase over the interval is 4/4 = 1, or 100%, for the small leaf, and 4/20 = 0.2, or 20%, for the large leaf. On that measure they are not equal.",
+      "These percentages describe the whole two-day interval. They are not automatically a continuously compounded relative growth rate. If a problem explicitly requests that logarithmic measure, use (ln final size - ln initial size)/time: ln(2)/2 is about 0.347 per day for the small leaf, whereas ln(1.2)/2 is about 0.091 per day for the large one. Do not silently switch between definitions.",
+      "A tempting mistake is to choose the larger final leaf as the faster grower. Final size includes its head start. Another is to compare a mass increase in one plant with a length increase in another. Choose one measurement, one interval and an explicit definition before ranking growth."
+    ] },
+    { heading: "What a growth curve can and cannot tell you", paragraphs: [
+      "Arithmetic growth adds a constant amount per unit time in the idealised model, producing a straight size-time relationship. Geometric growth increases in proportion to the amount already present under favourable conditions. Its increments become larger as the growing system becomes larger. Constant addition and constant proportional increase should not be used as synonyms.",
+      "Unlimited geometric growth is not a realistic lifetime description of an organ. Resource and developmental limitations can produce an S-shaped, or sigmoid, pattern with an initially slow phase, a rapid phase and a levelling phase. Levelling indicates that the measured increase has slowed; it does not show that every cell has died.",
+      "A curve alone rarely identifies the controlling hormone. Similar changes in size can arise from water availability, nutrition, temperature or developmental state. To infer a regulator's effect, compare suitable controls and specify the tissue, dose and conditions rather than reading a hormone name directly off a graph."
+    ] },
+    { heading: "A change of cell role is not necessarily a size increase", paragraphs: [
+      "Differentiation gives cells characteristics suited to particular functions. Dedifferentiation describes differentiated living cells regaining the capacity to divide under appropriate circumstances. Redifferentiation follows when the resulting cells specialise again. The sequence is about developmental capacity and identity, not a plant reversing its chronological age.",
+      "For an original diagram exercise, draw a mature living cell, then a dividing population, then specialised descendants. Label the first transition dedifferentiation and the second redifferentiation. Do not draw a dead conducting element returning to division: the word living is essential to this explanation. Growth may accompany these transitions, but extra size alone would not prove either one.",
+      "Development integrates such changes with growth and environmental responses. Plasticity means that form can vary with developmental stage or surroundings. It is not evidence that the plant's inherited information has necessarily changed whenever the shape of a leaf differs."
+    ] },
+    { heading: "Give each regulator a context instead of a personality", paragraphs: [
+      "Auxin is associated with processes including shoot elongation and apical dominance, but its effect depends on tissue and concentration. Removing an apical bud can release lateral buds from suppression; that observation is about branching control, not proof that auxin inhibits all growth. A root and a shoot need not respond identically to the same concentration.",
+      "Gibberellins can promote axis elongation and bolting in suitable plants. Cytokinins are associated with cell division and can delay senescence. Neither label means a hormone acts alone: responses depend on other signals and the developmental state of the target tissue. A named association is the beginning of an explanation, not a universal instruction to every cell.",
+      "Ethylene is gaseous and is associated with fruit ripening, among other responses. Calling it only an inhibitor misses contexts where it promotes growth, such as elongation responses in deep-water rice. Abscisic acid is important in dormancy and water-stress responses, including stomatal closure. These are biological relationships for revision, not recommendations for applying growth regulators to crops."
+    ] },
+    { heading: "Test a prediction against what was actually measured", paragraphs: [
+      "Imagine two otherwise comparable shoots, one retaining its apical bud and the other having that bud removed. More lateral branching in the second supports release from apical dominance. It does not show that every cell in that shoot divided faster, because the observation concerns which buds developed. Matching the conclusion to the recorded outcome prevents an overclaim.",
+      "Close the note and sketch a root with its cap, division, elongation and differentiation regions. Then explain why equal absolute leaf-area gains can represent unequal proportional growth. Finally, give one reason why 'ethylene always suppresses growth' is too broad. These tasks check location, measurement and conditional reasoning rather than another isolated hormone list.",
+      "NCERT anchor: Plant Growth and Development, sections 13.1-13.4 in the 2025-26 reprint. Pair this with plant anatomy to identify the tissues being discussed and with flowering-plant reproduction to follow the later developmental outcome. Section numbers can change between editions; use headings as well as numbers when locating the passage."
+    ] }
+  ],
+  "locomotion-and-movement": [
+    { heading: "The muscle gets shorter. Which part actually changes length?", paragraphs: [
+      "A skeletal muscle can shorten without shortening the actin and myosin filaments inside it. The apparent puzzle disappears when you distinguish the length of a component from the length of the repeating unit assembled from overlapping components. Sliding changes their arrangement. It does not require the filaments to collapse like a telescope.",
+      "This guide concentrates on skeletal-muscle contraction, then reconnects it to movement types, muscle classes and joints. Movement is a change in position of a body or part; locomotion moves the organism from place to place. A limb movement can contribute to locomotion, whereas moving food along the gut is movement without locomotion of the person."
+    ] },
+    { heading: "Build a sarcomere from its boundaries", paragraphs: [
+      "A muscle contains bundles of fibres; a skeletal-muscle fibre is a cell containing many myofibrils. Repeating sarcomeres run along each myofibril. The distance from one Z disc to the next defines a sarcomere. Thin filaments attach to those boundaries, while thick filaments occupy the central region. This hierarchy prevents a myofibril from being mistaken for an entire muscle cell.",
+      "The A band spans the thick-filament length, including regions where thin filaments overlap it. The I band contains thin filaments without thick ones. The H zone is the central thick-only region. Consequently, 'A band' does not mean a region containing only myosin, and 'H zone' is not another name for the whole A band.",
+      "As the sarcomere shortens, its Z discs approach, thin-thick overlap increases, and the I band and H zone narrow. The A-band width remains essentially unchanged in this introductory sliding-filament model. The illustration is schematic: parallel coloured rods make overlap visible, but do not represent the full three-dimensional arrangement or the many myosin heads."
+    ] },
+    { heading: "Use a ruler to reject the wrong mechanism", paragraphs: [
+      "In an invented measurement, a sarcomere changes from 2.5 to 2.0 micrometres while the A band remains 1.6 micrometres wide. Sarcomere shortening is 0.5/2.5 x 100 = 20%. The unchanged A band supports unchanged thick-filament length. Reporting 'myosin shortened by 20%' would apply the percentage to the wrong structure.",
+      "The sarcomere lengths alone do not give the exact width of the H zone: additional information about thin-filament length and overlap is needed. Nor can one measurement determine whole-muscle force. This example is a geometry check, not a physiological dataset or a claim that every active muscle shortens by that fraction.",
+      "A useful drawing test is to keep every coloured filament the same length in both panels, move the boundaries closer, and increase overlap. If your drawing achieves shortening by erasing the ends of the filaments, it depicts the wrong mechanism even if the labels are correct."
+    ] },
+    { heading: "The nerve signal opens access; calcium does not pull actin", paragraphs: [
+      "At the neuromuscular junction, a motor-neuron signal leads to acetylcholine release and an electrical response in the muscle membrane. Excitation within the fibre triggers calcium release from the sarcoplasmic reticulum. The electrical event and the mechanical response are connected, but they are not identical events occurring at a single structure.",
+      "Calcium binds to troponin in the thin-filament regulatory system, changing the position of tropomyosin so that myosin-binding sites on actin become accessible. Calcium therefore permits cross-bridge activity. It is not a hook that directly drags a thin filament towards the centre, and it does not replace ATP as an energy source.",
+      "A motor unit comprises a motor neuron and the muscle fibres it supplies. It is a functional grouping, unlike a sarcomere, which is a repeating structural unit within a myofibril. Confusing those two units joins levels of organisation that should remain separate."
+    ] },
+    { heading: "ATP is needed for release as well as repeated pulling", paragraphs: [
+      "An energised myosin head can bind exposed actin. Changes in the head during the cross-bridge cycle pull the thin filament relative to the thick filament. A new ATP molecule binding to myosin allows detachment from actin. ATP hydrolysis then helps reset the head for another cycle. Saying only 'ATP makes contraction happen' hides the especially important detachment step.",
+      "For a reasoning check, suppose binding sites are accessible but no new ATP can bind to an attached head. The immediate textbook prediction is failure of normal detachment, not an extra-fast power stroke. This isolates one step conceptually; it is not an experiment to perform on a person or an explanation of every cause of muscle stiffness.",
+      "Relaxation also requires calcium to be removed from the sarcoplasm, mainly by pumping it back into the sarcoplasmic reticulum. As regulatory sites lose calcium, access to actin is restricted again. ATP supports calcium pumping as well as cross-bridge cycling, so relaxation should not be described as a process requiring no energy anywhere."
+    ] },
+    { heading: "Striated does not automatically mean voluntary", paragraphs: [
+      "Skeletal muscle is striated and generally under voluntary control, although reflex activity also uses it. Cardiac muscle is striated but involuntary. Smooth muscle lacks the same visible banding pattern and is involuntary, with roles in the walls of hollow organs. Appearance and control are separate classification axes: one cannot be deduced reliably from the other.",
+      "Other movement mechanisms also belong in this chapter. Amoeboid movement uses changing cell shape and pseudopodia; cilia can move material along an epithelial surface. These movements should not be explained by sarcomeres simply because both involve motion. The appropriate structural mechanism depends on the cell or tissue involved.",
+      "For retrieval, place heart muscle and skeletal muscle beside each other and state one shared feature and one difference. Both are striated; their control and cellular organisation differ. That comparison is more useful than treating 'striated' and 'skeletal' as interchangeable words."
+    ] },
+    { heading: "Bones and joints turn fibre activity into a body movement", paragraphs: [
+      "Skeletal muscles exert pulls through their attachments; opposite movements at a joint commonly use opposing muscle groups. A flexor and an extensor are named for their actions, not because one is always active and the other always inactive. The joint and arrangement of attachments constrain the movement that a pull can produce.",
+      "Fibrous, cartilaginous and synovial joints differ in their connections and permitted movement. A hinge permits movement mainly in one plane, whereas a ball-and-socket joint allows movement in several planes. Those descriptions concern joint geometry, not a different biochemical ATP cycle for each joint. The axial skeleton and appendicular skeleton likewise classify location, not muscle-control type.",
+      "To reconstruct the complete explanation, trace motor-neuron signal, muscle excitation, calcium availability, cross-bridge cycling, sarcomere shortening and joint movement. Then point out where ATP participates and which length stays constant. NCERT anchor: Locomotion and Movement, sections 17.2.1-17.2.2 and 17.4 in the 2025-26 reprint. This is an educational mechanism guide, not advice for investigating pain or treating a movement disorder."
+    ] }
+  ],
+  "biodiversity-and-conservation": [
+    {
+      heading: "What would a seed collection fail to protect?",
+      paragraphs: [
+        "Imagine a woodland is cleared after seeds from its trees have been placed in storage. Some plant material survives, but the woodland has not been conserved as a functioning community. Pollination, nesting sites, decomposer activity and the conditions that let seedlings establish do not fit inside a seed jar. This difference between preserving selected material and maintaining a living system is the starting point for biodiversity conservation.",
+        "There are three questions to keep apart: what variation is present, what is removing it, and what a proposed protection measure actually preserves. A reserve can address habitat loss without eliminating every threat. A seed bank can provide a valuable safeguard without replacing the reserve. The task is to match the response to the biological problem, not to choose one universally superior method.",
+      ],
+    },
+    {
+      heading: "In situ and ex situ describe where protection happens",
+      paragraphs: [
+        "In situ conservation protects organisms within their natural habitats. National parks, wildlife sanctuaries and biosphere reserves are familiar syllabus examples, although they have different management arrangements. Protecting the habitat can retain interactions among species as well as populations exposed to their local environment. The important word is habitat, not simply outdoors.",
+        "Ex situ conservation maintains organisms or biological material outside their natural habitats. Botanical gardens, managed breeding collections and seed banks illustrate different forms. A botanical garden is outdoors but remains ex situ for plants maintained outside their natural setting. Seed storage is useful only when the material remains viable; not every species tolerates the same storage method.",
+        "The two approaches can support each other. An outside collection may safeguard material during a crisis, while habitat protection addresses conditions required for survival in the wild. Keeping a species alive in a managed collection does not, by itself, establish a self-sustaining wild population. That distinction matters when evaluating what the word 'saved' is claiming.",
+      ],
+    },
+    {
+      heading: "Count species, but do not lose sight of genes and ecosystems",
+      paragraphs: [
+        "Genetic diversity concerns differences within a species. Species diversity concerns the variety of species in a community or region. Ecological diversity concerns the variety of ecosystems. These are different levels of description, not three alternative labels for the same count. A collection of many varieties of one crop is evidence of within-species variation, not automatically evidence of many species.",
+        "Consider an original bookkeeping example: a garden holds eight varieties of one species, then adds one plant belonging to a second species. The species count rises from one to two. It is not now nine species. Equally, replacing all eight original varieties with one clone could remove substantial within-species variation while leaving the original species present. A species list alone would miss that loss.",
+        "Species richness specifically counts species. It does not tell you the abundance of each, the genetic differences within them, or all their ecological roles. Before comparing two places, check whether the observation describes a count, a population size, or a different level of biodiversity. Two sites with the same richness need not be equivalent communities.",
+      ],
+    },
+    {
+      heading: "Read the species-area equation as a proportional change",
+      paragraphs: [
+        "The species-area relationship connects sampled area A with species richness S through S = C A^Z. C and Z belong to the fitted relationship; they are not universal constants for every place and scale. Taking logarithms gives log S = log C + Z log A, so Z is the slope when both axes are logarithmic. The intercept on that plot is log C, not the species count itself.",
+        "For a made-up comparison, suppose A increases by a factor of 16 and the fitted exponent is Z = 0.25, with C unchanged. Divide the two equations: S2/S1 = (A2/A1)^Z = 16^0.25 = 2. The model predicts twice as many species, not sixteen times as many. If the starting model value was 40 species, the second value would be 80. The exponent here is chosen for arithmetic practice, not presented as a typical measured value.",
+        "Why is 'sixteen times as many' a tempting wrong answer? It silently replaces the exponent with 1. Check the exponent before calculating. A larger positive Z produces a stronger richness response to the same proportional increase in area. Do not turn this fitted sampling relationship into a precise prediction that clearing a particular fraction of one forest must immediately extinguish a particular number of species.",
+      ],
+    },
+    {
+      heading: "Latitude is a pattern, not an explanation on its own",
+      paragraphs: [
+        "Many groups show greater species richness in tropical than in temperate or polar regions. Latitude records the pattern; it does not name a single mechanism that guarantees it. Longer evolutionary histories without repeated major glaciation, environmental stability and energy availability are explanations discussed in the syllabus. They can contribute together and should not be reduced to 'warm means diverse'.",
+        "A useful correction is to separate a geographical trend from an absolute rule. The trend does not prove that every tropical patch contains more species than every temperate patch. Comparisons must consider the organism group, sampling area and local conditions. Likewise, an old inventory figure should be read with its stated source date rather than relabelled as a current global census.",
+      ],
+    },
+    {
+      heading: "Diagnose the loss before naming the conservation response",
+      paragraphs: [
+        "Habitat destruction removes suitable living space. Fragmentation breaks a larger habitat into separated pieces; a landscape can still look partly green while movement and population connections are disrupted. Over-exploitation instead describes removal faster than a population can replace itself. A protected boundary cannot solve that problem if damaging extraction continues within it.",
+        "Alien species are introduced outside their native range; some become invasive and harm native populations. 'Alien' and 'invasive' therefore should not be treated as identical claims. Co-extinction focuses on dependency: loss of one species can threaten another that requires it. An obligately dependent partner has fewer alternatives than a generalist with several usable resources or partners.",
+        "In an invented conservation note, a flowering plant is present in a reserve but produces no new seeds after its only effective pollinator disappears locally. The plant count alone initially hides the reproductive problem. A seed collection safeguards some material, but recovery of reproduction requires examining the missing interaction. This illustrates vulnerability through dependency; it is not a report about a real reserve or proof that the plant is already globally extinct.",
+      ],
+    },
+    {
+      heading: "Endemism, hotspots and the reasons for protection",
+      paragraphs: [
+        "An endemic species has a restricted natural geographical distribution. Endangered describes extinction risk. A species can be both, but neither term is a definition of the other. A biodiversity hotspot combines exceptional endemism with substantial habitat loss; it is not merely a place with a large total number of organisms. These distinctions explain why conservation priorities cannot be built from abundance alone.",
+        "Reasons to conserve biodiversity extend beyond useful products. Direct resources, ecological services and ethical responsibility answer different questions. Pollination is a process that supports reproduction; a harvested product is a direct benefit; the argument that other species have value independent of human profit is ethical. Protecting only species with a known immediate commercial use would miss the other two arguments.",
+        "Greater biodiversity can support ecological functioning and stability, but avoid making it a guarantee that no disturbance can cause damage. A conservation explanation is stronger when it names the process being protected and acknowledges what the evidence does not establish.",
+      ],
+    },
+    {
+      heading: "Finish with a three-sentence conservation decision",
+      paragraphs: [
+        "Choose the imagined woodland from the opening and write three sentences without looking back. First name one level of biodiversity at risk. Next identify the mechanism of loss. Finally name a protection measure and one thing that measure cannot achieve by itself. A checkable answer could link habitat destruction with ecological diversity, propose in situ protection, and recognise that enforcement and functioning interactions still matter.",
+        "For the numerical part, explain why a sixteen-fold area change gave only a two-fold richness change in the practice model. If your explanation includes the exponent and the assumption of a shared C, you have reconstructed the calculation rather than memorised its answer.",
+        "NCERT reading anchor: Class 12 Biology, Chapter 13, Reprint 2026-27. Use section 13.1.2 for geographical and species-area patterns, 13.1.4 for causes of loss, and 13.2.2 for conservation approaches. Read those sections alongside the linked chapter rather than using this guide as a substitute for the textbook.",
+      ],
+    },
+  ],
+  "microbes-in-human-welfare": [
+    {
+      heading: "Follow the oxygen through a sewage-treatment plant",
+      paragraphs: [
+        "A sewage-treatment plant can supply air in one tank and deliberately exclude it in another. That is not a contradiction. The two compartments support different microbial activities and receive different material. Following this change in conditions is a more useful starting point than memorising a long list of helpful microbes without knowing what they do.",
+        "Keep three descriptions together: the biological agent, the transformation, and the useful outcome. In an aeration tank, a community uses organic matter under oxygenated conditions. In a sludge digester, an anaerobic community processes settled biomass and produces gases. Elsewhere, microbes change food, supply industrial products or assist plant nutrition. None of these roles means that every microbe is harmless or useful in every setting.",
+      ],
+    },
+    {
+      heading: "The liquid route and the sludge route separate after settling",
+      paragraphs: [
+        "Primary treatment is mainly physical separation. Screening and sedimentation remove material from sewage; the liquid leaving primary settling continues to biological treatment. Removing particles does not establish that dissolved biodegradable material or pathogens have disappeared. 'Looks clearer' and 'requires less biological treatment' are not interchangeable observations.",
+        "During secondary treatment, aeration supports aerobic microbes that consume much of the organic load. Flocs contain bacteria associated with fungal filaments. After aeration, settling separates these aggregates from the liquid. The sediment is activated sludge. A portion returns to the aeration tank as an inoculum; the remaining sludge can enter anaerobic digestion. The returned material contains a microbial community, not a newly manufactured disinfectant.",
+        "Read the illustration as a deliberately simplified split: the downward branch carries sludge, not the entire liquid effluent. The return-sludge loop and later effluent treatment are omitted so that the contrast between aeration and anaerobic digestion stays visible. Real treatment and discharge decisions require more checks than the simplified school-level route supplies.",
+      ],
+    },
+    {
+      heading: "BOD measures demand, not the oxygen already present",
+      paragraphs: [
+        "Biochemical oxygen demand, or BOD, expresses oxygen used by microorganisms as they break down biodegradable material under specified test conditions. It is an indirect indicator of biodegradable organic load, not a direct count of bacteria and not a reading of dissolved oxygen already in the water. Compare results only when their test conditions are comparable.",
+        "Here is an original process check. Comparable samples from before and after a treatment stage have BOD values of 180 and 36 mg/L. The reduction is 144 mg/L, and the percentage reduction is (180 - 36) / 180 x 100 = 80%. This calculation describes the change in measured demand. It does not say that 80% of all pollutants or 80% of pathogens have been removed.",
+        "Reject the explanation 'BOD fell because the microbes stopped needing oxygen'. In the treatment model, the microbes have used much of the biodegradable substrate, so the treated sample supports less subsequent oxygen demand. Also reject 'low BOD proves drinking safety'. BOD alone cannot establish the absence of pathogens, toxic chemicals or other hazards. These limits are part of interpreting the result correctly, not extra clinical advice.",
+      ],
+    },
+    {
+      heading: "Methane belongs to the anaerobic branch, not the bread dough",
+      paragraphs: [
+        "Anaerobic digestion involves cooperating microorganisms rather than one organism performing every step. Methanogens contribute methane production under oxygen-free conditions; Methanobacterium is a familiar syllabus example. Biogas is a mixture rich in methane, not pure methane and not a generic name for every gas released by a microbe.",
+        "NCERT uses older wording such as methanogenic bacteria, while modern classification places methanogens among Archaea. Preserve the chapter's named example, but do not infer that it belongs to the bacterial groups responsible for curd formation. Similarly, the presence of cellulose-rich waste does not mean a methanogen alone carries out the whole breakdown from cellulose to gas.",
+        "Yeast fermentation provides a different gas comparison. Carbon dioxide can expand bread dough, whereas methane is the fuel-rich component emphasised in biogas. The bubbles do not identify the process by themselves. Name the organism or community and its conditions before naming the product. This guide explains those biological distinctions, not how to build or operate a gas plant.",
+      ],
+    },
+    {
+      heading: "Curd, bread and industrial products ask different questions",
+      paragraphs: [
+        "Lactic acid bacteria help convert milk into curd by producing acid that alters milk proteins. A starter introduces living organisms that multiply under suitable conditions; it is not simply a measured dose of acid. Baker's yeast, Saccharomyces cerevisiae, supports dough fermentation. For bread texture, carbon dioxide is the useful product to identify; for an ethanol-production example, the product being collected is different even when yeast is involved.",
+        "An industrial fermentor is a controlled culture vessel, not evidence that its contents must be undergoing oxygen-free fermentation in the strict metabolic sense. Depending on the organism and intended product, oxygen provision can be important. The operational label should not override the biological conditions stated in a question or explanation.",
+        "Separate a microbial producer from a harvested molecule. Aspergillus niger is associated with citric acid production, and Acetobacter aceti with acetic acid production. Pectinases used in juice clarification are enzymes: the product's useful activity is not the same thing as adding a live microbial culture to the final drink. Identifying the agent, molecule and use separately prevents three columns of facts from collapsing into one.",
+        "The chapter also introduces microbially derived antibiotics and other bioactive products. Their biological sources belong to revision; choosing medicines or giving treatment instructions does not. Do not reason that a useful microbial product makes its producing organism appropriate for direct consumption or self-treatment.",
+      ],
+    },
+    {
+      heading: "On a root, ask whether the benefit is nutrition or pest control",
+      paragraphs: [
+        "Biofertilisers assist nutrient availability. Rhizobium in legume root nodules supplies a symbiotic nitrogen-fixation example; Azotobacter provides a free-living example. Mycorrhizal fungi, including the chapter's Glomus example, can improve phosphorus uptake in association with roots. Phosphorus uptake and nitrogen fixation are not two names for the same service.",
+        "Biocontrol instead targets a pest or pathogen through biological interactions. Bacillus thuringiensis and selected baculoviruses provide microbial examples. Their effects have target boundaries: 'biological' does not mean that every agent kills all pests or that all possible uses are automatically harmless. A conventional microbial preparation and a plant engineered with a microbial gene are also different applications, even when they draw on the same biological source.",
+        "A tempting but wrong explanation says that any beneficial fungus around a root must be a biofertiliser. Consider what benefit is stated. Helping phosphorus acquisition points to a nutritional role; suppressing a plant pathogen points to biocontrol. The chapter discusses Trichoderma in the latter context. The location is not enough to identify the function.",
+      ],
+    },
+    {
+      heading: "Use a process fault to test your understanding",
+      paragraphs: [
+        "Imagine an aeration unit loses its air supply while the flow continues. Predicting 'more oxygen automatically dissolves because fewer microbes are working' skips the essential issue: the aerobic treatment community no longer has its intended oxygen supply. Biological removal of organic load can be impaired. The exact outlet BOD cannot be calculated from the fault alone; flow, loading and operating conditions are missing.",
+        "Now change only the compartment. Supplying air to a methane-producing anaerobic digester does not improve the same process by the same logic. The community and metabolic conditions differ. These two thought experiments test whether you understand the purpose of each compartment, rather than whether you can reproduce the order of labels in a diagram.",
+      ],
+    },
+    {
+      heading: "Rebuild the plant, then sort four useful microbial roles",
+      paragraphs: [
+        "On blank paper, draw an aeration tank and a settling tank connected by a liquid arrow. Add a return arrow for some settled sludge and a separate branch to an anaerobic digester for the remainder. Label the oxygen condition in each biological compartment. Finally, write one sentence explaining why lower BOD does not certify potable water.",
+        "Make four small entries headed food transformation, product synthesis, nutrient support and biocontrol. For each, supply one microbial example, its specific action and one nearby wrong interpretation. Check your reconstruction against the source chapter instead of treating the number of remembered names as your only measure of progress.",
+        "NCERT reading anchor: Class 12 Biology, Chapter 8, Reprint 2026-27. Section 8.3 explains sewage treatment and activated sludge; 8.4 connects anaerobic activity with biogas; 8.5 and 8.6 separate biocontrol from biofertilisers. Sections 8.1 and 8.2 supply the household and industrial context. The linked supplementary fermentation reading clarifies why acid, ethanol and gas are distinct outcomes.",
+      ],
+    },
+  ],
   "human-respiration": [
     {
       heading: "Human respiration: the high-yield sequence",
@@ -1438,6 +1680,19 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+"enzymes-and-enzyme-action": [{"label":"NCERT Biomolecules, 2025-26 reprint: sections 9.8.2-9.8.6","href":"https://ncert.nic.in/textbook/pdf/kebo109.pdf"},{"label":"OpenStax Biology 2e: 6.5 Enzymes","href":"https://openstax.org/books/biology-2e/pages/6-5-enzymes"}],
+"plant-growth-and-development": [{"label":"NCERT Plant Growth and Development, 2025-26 reprint: sections 13.1-13.4","href":"https://ncert.nic.in/textbook/pdf/kebo113.pdf"},{"label":"OpenStax Biology 2e: 30.6 Plant sensory systems and responses","href":"https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses"}],
+"locomotion-and-movement": [{"label":"NCERT Locomotion and Movement, 2025-26 reprint: sections 17.2 and 17.4","href":"https://ncert.nic.in/textbook/pdf/kebo117.pdf"},{"label":"OpenStax Anatomy and Physiology 2e: 10.3 Muscle fiber contraction and relaxation","href":"https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"}],
+  "biodiversity-and-conservation": [
+    { label: "NCERT Class 12 Biology, Chapter 13 (Reprint 2026-27): sections 13.1.2, 13.1.4 and 13.2.2", href: "https://ncert.nic.in/textbook/pdf/lebo113.pdf" },
+    { label: "OpenStax Biology 2e, 47.3: Threats to Biodiversity", href: "https://openstax.org/books/biology-2e/pages/47-3-threats-to-biodiversity" },
+    { label: "OpenStax Biology 2e, 47.4: Preserving Biodiversity", href: "https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity" },
+  ],
+  "microbes-in-human-welfare": [
+    { label: "NCERT Class 12 Biology, Chapter 8 (Reprint 2026-27): sections 8.1-8.6, especially sewage treatment in 8.3", href: "https://www.ncert.nic.in/textbook/pdf/lebo108.pdf" },
+    { label: "OpenStax Microbiology, 8.4: Fermentation", href: "https://openstax.org/books/microbiology/pages/8-4-fermentation" },
+    { label: "OpenStax Microbiology, 4.6: Archaea and methanogens", href: "https://openstax.org/books/microbiology/pages/4-6-archaea" },
+  ],
   "chromosomal-basis-of-inheritance": [
     { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal theory and genetic linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" },
@@ -1579,6 +1834,31 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+"enzymes-and-enzyme-action": {"heading":"Which observation distinguishes the explanations?","intro":"Use matched conditions before attributing a rate change to one variable.","columns":["Observation","Possible interpretation","Check before concluding"],"rows":[["More substrate, little extra initial rate","Catalytic capacity approaches saturation","Keep enzyme amount constant"],["Activity returns after a cold sample warms","Reversible slowing is plausible","Test both samples at the same temperature"],["Extra substrate reduces an inhibitor's effect","Consistent with simple competition","Do not generalise to every inhibitor"],["Activity returns with a required cofactor","A necessary component was missing","Rule out changes in other conditions"]]},
+"plant-growth-and-development": {"heading":"A regulator claim needs a qualifying context","intro":"These associations guide revision; they are not treatment or crop-application instructions.","columns":["Regulator","Useful association","Overstatement to avoid"],"rows":[["Auxin","Apical dominance and context-dependent elongation","It promotes every tissue at every concentration"],["Gibberellins","Axis elongation and bolting in suitable plants","It is the only signal required for growth"],["Cytokinins","Cell division and delayed senescence","All mature cells must begin dividing"],["Ethylene","Ripening; some elongation responses","It always inhibits growth"],["Abscisic acid","Dormancy and water-stress responses","Dormancy means the seed is dead"]]},
+"locomotion-and-movement": {"heading":"Measure the right structure","intro":"Predictions apply to shortening in the introductory sliding-filament model.","columns":["Feature","During shortening","Why"],"rows":[["Z-disc separation","Decreases","Defines sarcomere length"],["A-band width","Remains essentially unchanged","Tracks thick-filament length"],["I-band width","Decreases","Less thin-only region"],["H-zone width","Decreases and may disappear","Less central thick-only region"],["Individual filament lengths","Remain unchanged","Sliding changes overlap instead"]]},
+  "biodiversity-and-conservation": {
+    heading: "What each conservation action retains, and what it leaves unresolved",
+    intro: "Evaluate the biological coverage of an action instead of assuming its label proves success.",
+    columns: ["Proposed action", "Biological coverage", "Unresolved risk"],
+    rows: [
+      ["Protect an intact natural habitat", "Populations and many interactions in their existing setting", "Extraction, invasion or other pressures may still require management"],
+      ["Keep viable seed collections outside the habitat", "Selected plant genetic material", "Pollination, food webs and habitat conditions are not stored with the seeds"],
+      ["Maintain a managed breeding population", "Living individuals and opportunities for reproduction", "Wild survival and successful re-establishment are not demonstrated"],
+      ["Retain several varieties of one crop", "Within-species variation represented by those varieties", "This does not establish high species richness or ecosystem diversity"],
+    ],
+  },
+  "microbes-in-human-welfare": {
+    heading: "Treatment compartments: name the material before the microbe",
+    intro: "The same plant contains physical separation, aerobic consumption and anaerobic processing. They should not share one undifferentiated label.",
+    columns: ["Compartment", "Material being handled", "Condition and operation", "Meaning of the output"],
+    rows: [
+      ["Primary settling", "Incoming sewage with suspended matter", "Physical separation", "Sludge separates from liquid; biological demand can remain"],
+      ["Aeration tank", "Primary effluent plus active microbial inoculum", "Air supplied; aerobic community consumes organics", "Reduced biodegradable load, not certified drinking water"],
+      ["Secondary settling", "Liquid containing microbial flocs", "Aggregates settle", "Activated sludge separates; some is returned as inoculum"],
+      ["Anaerobic digester", "Sludge diverted from the settled fraction", "Oxygen excluded; microbial community processes biomass", "Gas mixture including methane; not yeast-derived dough gas"],
+    ],
+  },
   "chromosomal-basis-of-inheritance": {
     heading: "Chromosome behaviour: which event explains which pattern?",
     intro: "Use the physical event first. It keeps segregation, independent assortment, linkage, and recombination from becoming interchangeable labels.",
@@ -1830,6 +2110,17 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+"enzymes-and-enzyme-action": {"heading":"Amount, rate and capacity are three different claims","paragraphs":["A bottle can contain more product because it was left longer. An enzyme can work at a high rate while extra substrate has almost no effect. Separate how much has accumulated, how fast it is forming and what limits further acceleration before explaining any curve."]},
+"plant-growth-and-development": {"heading":"Decide what your denominator means","paragraphs":["For a percentage increase, divide the change by the starting size. For a rate, also state the time interval. A logarithmic relative rate uses a different calculation. Writing the denominator before inserting numbers prevents three distinct measures from being called simply 'growth'."]},
+"locomotion-and-movement": {"heading":"Contraction and shortening are not perfect synonyms","paragraphs":["An activated muscle can develop tension without appreciable overall shortening, as when holding a load still. The diagrams explain a shortening sarcomere. They should not be read as a claim that every active muscle must visibly shorten or move a joint."]},
+  "biodiversity-and-conservation": {
+    heading: "A surviving specimen is not the same as a recovered population",
+    paragraphs: ["The phrase 'the species has been protected' needs a follow-up: what is now possible that was not possible before? Stored material, reproduction in a managed collection and successful reproduction in a natural habitat are different outcomes. Each can matter, but one does not automatically demonstrate the next.", "When comparing conservation measures, state both the gain and the remaining problem. This makes an answer more precise than calling in situ good and ex situ bad, or assuming a collection removes the need to protect habitat."],
+  },
+  "microbes-in-human-welfare": {
+    heading: "Do not let the word fermentation decide the oxygen condition",
+    paragraphs: ["A fermentor describes equipment used to grow a culture; fermentation also has a narrower metabolic meaning. Those uses of the word overlap but are not identical. In revision, take the oxygen condition from the process being described, not merely from the vessel's name.", "The same caution applies to 'useful microbe'. Usefulness describes an action in a context. It is not a permanent safety label and does not turn a biological-source fact into a recommendation to consume a culture or use a medicine."],
+  },
   "chromosomal-basis-of-inheritance": {
     heading: "The chromosome drawing should answer the ratio question",
     paragraphs: ["When a genetics ratio feels mysterious, move one level down from letters to chromosomes. If the genes are on different chromosome pairs, independent orientation makes the combinations easier to justify. If they occupy the same chromosome, start from parental arrangements and then ask whether a crossover can intervene.", "This avoids a tempting shortcut: treating every two-gene problem as an automatic 9:3:3:1 problem. A familiar ratio is not evidence that the chromosome arrangement supports it."],

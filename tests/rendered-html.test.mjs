@@ -11,6 +11,32 @@ function jsonLdItems(html) {
   });
 }
 
+test("publishes the conservation and microbes guides with original assets and complete learning resources", async () => {
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  const fixtures = [
+    { slug: "biodiversity-and-conservation", image: "biodiversity-conservation-in-situ-ex-situ-v1.webp", source: "lebo113.pdf", examples: ["16^0.25 = 2", "13.1.2"], related: ["organisms-and-populations", "ecosystem-energy-flow-and-ecological-pyramids", "evolution-and-natural-selection"] },
+    { slug: "microbes-in-human-welfare", image: "microbes-sewage-oxygen-route-v1.webp", source: "lebo108.pdf", examples: ["(180 - 36) / 180 x 100 = 80%", "8.3"], related: ["five-kingdom-classification", "plant-respiration", "biotechnology-applications"] },
+  ];
+  for (const item of fixtures) {
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${item.slug}.html`, import.meta.url), "utf8");
+    const article = jsonLdItems(html).find((entry) => entry["@type"] === "Article");
+    assert.equal(article.datePublished, "2026-09-23");
+    assert.equal(article.dateModified, article.datePublished);
+    assert.equal(article.author.name, "DongFeng");
+    assert.ok(html.includes(`src="/images/biology/${item.image}"`));
+    assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
+    assert.ok(html.includes(item.source));
+    for (const example of item.examples) assert.ok(html.includes(example), `${item.slug}: ${example}`);
+    for (const related of item.related) {
+      assert.ok(html.includes(`href="/neet-ug/biology/${related}"`));
+      await readFile(new URL(`../.next/server/app/neet-ug/biology/${related}.html`, import.meta.url));
+    }
+    assert.match(html, /<table/);
+    assert.match(html, /Editorial note and disclaimer/);
+    assert.ok(sitemap.includes(`/neet-ug/biology/${item.slug}</loc>`));
+  }
+});
+
 test("keeps consent defaults ahead of advertising and does not preload GA", async () => {
   const html = await readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
   const scripts = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)].map((match) => match[0]);
@@ -399,4 +425,18 @@ test("publishes biological classification and plant kingdom as a connected diver
   assert.match(sitemapXml, /five-kingdom-classification/);
   assert.match(sitemapXml, /plant-kingdom/);
   assert.match(sitemapXml, /2026-09-22T00:00:00\.000Z/);
+});
+test("publishes three distinct physiology guides with illustrations and learning routes", async () => {
+  const cases = [{"slug":"enzymes-and-enzyme-action","image":"enzyme-catalytic-cycle-v1.webp","pdf":"kebo109.pdf","links":["molecular-tools-and-dna-analysis","plant-respiration","digestion-and-absorption"]},{"slug":"plant-growth-and-development","image":"root-growth-zones-v1.webp","pdf":"kebo113.pdf","links":["anatomy-of-flowering-plants","photosynthesis-in-higher-plants","sexual-reproduction-in-flowering-plants"]},{"slug":"locomotion-and-movement","image":"sarcomere-sliding-filaments-v1.webp","pdf":"kebo117.pdf","links":["neuron-nerve-impulse-synapse","blood-and-circulation","cell-theory-and-cell-organelles"]}];
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  for (const item of cases) {
+    const html = await readFile(new URL("../.next/server/app/neet-ug/biology/" + item.slug + ".html", import.meta.url), "utf8");
+    for (const token of [item.image, item.pdf, "NCERT anchor", "Related revision guides", ...item.links]) assert.ok(html.includes(token), item.slug + ": " + token);
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /September 23, 2026/);
+    assert.ok(html.includes('datePublished'));
+    assert.ok(html.includes('2026-09-23'));
+    assert.ok(sitemap.includes(item.slug));
+    assert.ok((await readFile(new URL("../public/images/biology/" + item.image, import.meta.url))).length > 1000);
+  }
 });

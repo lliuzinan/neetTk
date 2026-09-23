@@ -1,6 +1,19 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+"enzymes-and-enzyme-action": [{"slug":"molecular-tools-and-dna-analysis","reason":"Apply catalytic specificity to enzymes used in DNA workflows."},{"slug":"plant-respiration","reason":"Place catalysed reactions within energy-releasing pathways."},{"slug":"digestion-and-absorption","reason":"Compare reaction conditions in a physiological setting."}],
+"plant-growth-and-development": [{"slug":"anatomy-of-flowering-plants","reason":"Identify the meristems and tissues whose activity underlies growth."},{"slug":"photosynthesis-in-higher-plants","reason":"Connect resource supply with the limits on sustained growth."},{"slug":"sexual-reproduction-in-flowering-plants","reason":"Follow development into reproductive structures and seeds."}],
+"locomotion-and-movement": [{"slug":"neuron-nerve-impulse-synapse","reason":"Review how a neural signal reaches the neuromuscular junction."},{"slug":"blood-and-circulation","reason":"Contrast cardiac muscle with skeletal muscle without treating striation as voluntary control."},{"slug":"cell-theory-and-cell-organelles","reason":"Locate the membrane, cytoplasm and specialised calcium-storage compartment."}],
+  "biodiversity-and-conservation": [
+    { slug: "organisms-and-populations", reason: "Use population interactions to explain why losing a dependent partner can threaten reproduction." },
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Distinguish ecosystem processes from a simple inventory of species." },
+    { slug: "evolution-and-natural-selection", reason: "Connect within-species variation with evolutionary change rather than treating it as a species count." },
+  ],
+  "microbes-in-human-welfare": [
+    { slug: "five-kingdom-classification", reason: "Separate bacteria, fungi and the classification boundary for methanogens before memorising useful examples." },
+    { slug: "plant-respiration", reason: "Revisit fermentation and distinguish carbon dioxide release from methane production." },
+    { slug: "biotechnology-applications", reason: "Compare using microbial activity with deliberately transferring a microbial gene into another organism." },
+  ],
   "five-kingdom-classification": [
     { slug: "plant-kingdom", reason: "Apply kingdom-level criteria before comparing the major plant groups in more detail." },
     { slug: "cell-theory-and-cell-organelles", reason: "Review the structural boundary between prokaryotic and eukaryotic cells." },
@@ -12,6 +25,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "sexual-reproduction-in-flowering-plants", reason: "Continue from enclosed ovules and double fertilisation to the complete reproductive sequence." },
   ],
   "digestion-and-absorption": [
+    { slug: "enzymes-and-enzyme-action", reason: "Distinguish enzyme rate, saturation and environmental effects before comparing digestion reactions." },
     { slug: "blood-and-circulation", reason: "Follow absorbed nutrients from intestinal vessels into the circulation." },
     { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
   ],
@@ -38,6 +52,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-basis-of-inheritance", reason: "Review complementary strands and template copying before studying PCR." },
   ],
   "biotechnology-applications": [
+    { slug: "microbes-in-human-welfare", reason: "Compare engineered applications with the use of microbial communities in food, wastewater and soil." },
     { slug: "recombinant-dna-technology", reason: "Trace how a desired gene can be introduced into a host." },
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
@@ -53,6 +68,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "photosynthesis-in-higher-plants", reason: "Connect leaf form and venation with the physiology carried out inside the leaf." },
   ],
   "anatomy-of-flowering-plants": [
+    { slug: "plant-growth-and-development", reason: "Follow meristem activity into measurable growth and changing cell roles." },
     { slug: "morphology-of-flowering-plants", reason: "Use nodes, buds, roots and leaves to identify the organ before reading its internal section." },
     { slug: "photosynthesis-in-higher-plants", reason: "Connect mesophyll and vascular orientation with chloroplast function and carbon fixation." },
     { slug: "sexual-reproduction-in-flowering-plants", reason: "Shift from vegetative tissue organisation to the specialised structures of the flower." },
@@ -82,6 +98,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Move from population counts to trophic roles and resource transfer in an ecosystem." },
   ],
   "ecosystem-energy-flow-and-ecological-pyramids": [
+    { slug: "biodiversity-and-conservation", reason: "Ask which species interactions and habitats conservation measures can retain." },
     { slug: "photosynthesis-in-higher-plants", reason: "Start with how producers capture light energy before tracing transfers through trophic levels." },
     { slug: "plant-respiration", reason: "Compare energy captured by producers with the cellular release of stored chemical energy." },
     { slug: "organisms-and-populations", reason: "Use habitat and population ideas to place trophic roles in an ecological setting." },

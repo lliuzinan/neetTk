@@ -304,5 +304,50 @@
     "topicSlug": "plant-kingdom",
     "targetKeyword": "Plant kingdom NEET UG Biology revision guide",
     "sortOrder": 38
+  },
+  {
+    "id": "note-biodiversity-and-conservation",
+    "slug": "biodiversity-and-conservation",
+    "title": "Biodiversity and Conservation: From Species Counts to Protection | MedQGo",
+    "description": "Compare in situ and ex situ conservation, work through a species-area calculation, and distinguish genetic diversity, endemism and extinction risk.",
+    "topicSlug": "biodiversity-and-conservation",
+    "targetKeyword": "Biodiversity and conservation NEET Biology notes",
+    "sortOrder": 39
+  },
+  {
+    "id": "note-microbes-in-human-welfare",
+    "slug": "microbes-in-human-welfare",
+    "title": "Microbes in Human Welfare: Sewage, Fermentation and Soil Roles | MedQGo",
+    "description": "Trace aerobic sewage treatment and anaerobic digestion, calculate BOD reduction, and separate fermentation, biofertilisers and biocontrol.",
+    "topicSlug": "microbes-in-human-welfare",
+    "targetKeyword": "Microbes in human welfare NEET Biology notes",
+    "sortOrder": 40
+  },
+  {
+    "id": "note-enzymes-and-enzyme-action",
+    "slug": "enzymes-and-enzyme-action",
+    "title": "Enzymes and enzyme action: NEET Biology Revision Notes | MedQGo",
+    "description": "Interpret enzyme rates, substrate saturation, activation energy and inhibition with an original calculation and catalytic-cycle diagram.",
+    "topicSlug": "enzymes-and-enzyme-action",
+    "targetKeyword": "Enzymes and enzyme action NEET Biology notes",
+    "sortOrder": 41
+  },
+  {
+    "id": "note-plant-growth-and-development",
+    "slug": "plant-growth-and-development",
+    "title": "Plant growth and development: NEET Biology Revision Notes | MedQGo",
+    "description": "Compare absolute and relative plant growth, locate root growth zones, and interpret differentiation and plant regulators without blanket rules.",
+    "topicSlug": "plant-growth-and-development",
+    "targetKeyword": "Plant growth and development NEET Biology notes",
+    "sortOrder": 42
+  },
+  {
+    "id": "note-locomotion-and-movement",
+    "slug": "locomotion-and-movement",
+    "title": "Locomotion and movement: NEET Biology Revision Notes | MedQGo",
+    "description": "Trace skeletal-muscle contraction from calcium to cross-bridges, calculate sarcomere shortening, and distinguish bands, muscle types and joints.",
+    "topicSlug": "locomotion-and-movement",
+    "targetKeyword": "Locomotion and movement NEET Biology notes",
+    "sortOrder": 43
   }
 ]

@@ -16,6 +16,9 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+"enzymes-and-enzyme-action": {"focus":["Calculate rate using both product amount and elapsed time.","Separate activation energy from reaction energy and equilibrium.","Interpret saturation at a fixed enzyme concentration."],"traps":["A larger final product amount is not necessarily a faster rate.","Substrate saturation does not mean catalysis has stopped.","More substrate cannot reverse every type of inhibition."]},
+"plant-growth-and-development": {"focus":["Distinguish absolute gain from gain relative to initial size.","Locate division, elongation and differentiation along a root.","Describe regulator effects with tissue and developmental context."],"traps":["Equal absolute increases need not mean equal relative growth.","Indeterminate growth does not mean every organ grows indefinitely.","Ethylene is not exclusively growth-inhibiting."]},
+"locomotion-and-movement": {"focus":["Track what changes length during sarcomere shortening.","Distinguish calcium regulation from ATP-dependent cycling.","Separate muscle appearance, control and joint movement."],"traps":["An A band includes overlap; it is not all thick-only territory.","Cardiac muscle is striated but involuntary.","ATP binding permits detachment rather than permanently fixing the cross-bridge."]},
   "chromosomal-basis-of-inheritance": {
     focus: ["How homologous chromosome behaviour during meiosis explains allele segregation.", "Why independent orientation of chromosome pairs can create new gamete combinations.", "How linkage and crossing over change parental and recombinant combinations."],
     traps: ["Homologous chromosomes separate in meiosis I; sister chromatids separate in meiosis II.", "Crossing over is between non-sister chromatids of homologous chromosomes during prophase I.", "A 50 percent recombination frequency can reflect unlinked genes or genes far apart on the same chromosome; it does not prove linkage."],
@@ -135,6 +138,14 @@ const topicContent: Record<string, TopicSeoContent> = {
   "plant-kingdom": {
     focus: ["The structural checkpoints that separate algae, bryophytes, pteridophytes, gymnosperms and angiosperms.", "How vascular tissue, spores, seeds and enclosed ovules change the reproductive comparison.", "Gametophyte-sporophyte dominance and the ploidy transitions in major life-cycle patterns."],
     traps: ["Pteridophytes have vascular tissue but do not produce seeds.", "Gymnosperm ovules and seeds are not enclosed by an ovary, so cones are not fruits.", "Bryophyte gametophytes are dominant, whereas the conspicuous vascular-plant body is the sporophyte."],
+  },
+  "biodiversity-and-conservation": {
+    focus: ["Choose a conservation approach by identifying what it preserves and what remains at risk.", "Separate genetic variation, species richness and ecosystem diversity.", "Use the species-area exponent to explain a proportional change rather than assuming direct proportionality."],
+    traps: ["A botanical garden is ex situ even though it is outdoors.", "Endemic means geographically restricted, not automatically endangered.", "A species-area sampling model does not predict an exact immediate extinction count after habitat removal."],
+  },
+  "microbes-in-human-welfare": {
+    focus: ["Trace the liquid and sludge routes through aerobic treatment and anaerobic digestion.", "Calculate BOD reduction while recognising what the measurement cannot prove.", "Distinguish microbial food processing, product synthesis, nutrient support and pest control."],
+    traps: ["BOD is oxygen demand under test conditions, not dissolved oxygen already present.", "The carbon dioxide that expands bread dough is not the methane emphasised in biogas.", "Mycorrhizal phosphorus uptake is different from nitrogen fixation or pathogen suppression."],
   },
 };
 

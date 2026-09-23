@@ -8,6 +8,11 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+"enzymes-and-enzyme-action": {"published":"2026-09-23","modified":"2026-09-23"},
+"plant-growth-and-development": {"published":"2026-09-23","modified":"2026-09-23"},
+"locomotion-and-movement": {"published":"2026-09-23","modified":"2026-09-23"},
+  "biodiversity-and-conservation": { published: "2026-09-23", modified: "2026-09-23" },
+  "microbes-in-human-welfare": { published: "2026-09-23", modified: "2026-09-23" },
   "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-07-18", modified: "2026-08-03" },
   "dna-rna-replication-transcription-translation": { published: "2026-09-08", modified: "2026-09-20" },
   "mutation-and-gene-expression": { published: "2026-09-08", modified: "2026-09-20" },

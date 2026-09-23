@@ -14,6 +14,19 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+"enzymes-and-enzyme-action": {"src":"/images/biology/enzyme-catalytic-cycle-v1.webp","alt":"Three stages show a substrate binding to an enzyme, conversion and release of products while the enzyme remains available.","caption":"Original conceptual splitting reaction. This is one catalytic example, not a claim that every enzyme splits substrates. Shapes are schematic."},
+"plant-growth-and-development": {"src":"/images/biology/root-growth-zones-v1.webp","alt":"Root schematic places the cap at the tip, followed by cell division, elongation and differentiation with root hairs.","caption":"Original root-zone schematic, not to scale. Read upward from the protective cap to older differentiating cells; developmental boundaries are gradual."},
+"locomotion-and-movement": {"src":"/images/biology/sarcomere-sliding-filaments-v1.webp","alt":"Relaxed and shortened sarcomeres show unchanged thin and thick filament lengths with closer Z discs and increased overlap.","caption":"Original sliding-filament schematic. The coloured filament lengths stay unchanged while Z discs move closer and overlap increases. Not a scale measurement."},
+  "biodiversity-and-conservation": {
+    src: "/images/biology/biodiversity-conservation-in-situ-ex-situ-v1.webp",
+    alt: "Natural woodland with interacting organisms beside a managed seed collection, comparing in situ habitat protection with ex situ conservation",
+    caption: "An original comparison: in situ protection retains organisms in their natural habitat; an ex situ collection safeguards selected material outside it. A seed collection does not preserve an entire food web.",
+  },
+  "microbes-in-human-welfare": {
+    src: "/images/biology/microbes-sewage-oxygen-route-v1.webp",
+    alt: "Primary effluent flows into an aerated tank and a settling tank, with settled sludge branching to an oxygen-free digester that produces biogas",
+    caption: "A simplified original process map: air supports aerobic treatment, while the sludge branch enters anaerobic digestion. The return-sludge loop and later liquid-effluent treatment are omitted; the diagram does not imply drinking-water safety.",
+  },
   "five-kingdom-classification": {
     src: "/images/biology/five-kingdom-classification-decision-map-v1.webp",
     alt: "Decision map separating Monera, Protista, Fungi, Plantae and Animalia by cell organisation and mode of nutrition",
