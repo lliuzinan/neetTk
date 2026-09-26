@@ -349,5 +349,35 @@
     "topicSlug": "locomotion-and-movement",
     "targetKeyword": "Locomotion and movement NEET Biology notes",
     "sortOrder": 43
-  }
+  },
+  {
+    "id": "note-animal-kingdom",
+    "slug": "animal-kingdom",
+    "title": "Animal Kingdom: Evidence-Based NEET Biology Revision | MedQGo",
+    "description": "Classify animal phyla using organisation, symmetry, germ layers, coelom and chordate features through a comparison map and evidence checks.",
+    "topicSlug": "animal-kingdom",
+    "targetKeyword": "Animal kingdom NEET Biology revision notes",
+    "sortOrder": 44
+  },
+  {
+    "id": "note-structural-organisation-in-animals",
+    "slug": "structural-organisation-in-animals",
+    "title": "Structural Organisation in Animals: Tissue to System Guide | MedQGo",
+    "description": "Move from cells to tissues, organs and systems, then distinguish epithelial, connective, muscle and nervous tissue by their defining clues.",
+    "topicSlug": "structural-organisation-in-animals",
+    "targetKeyword": "Structural organisation in animals NEET Biology notes",
+    "sortOrder": 45
+  },
+  {
+    "id": "note-biotechnology-principles-and-processes",
+    "slug": "biotechnology-principles-and-processes",
+    "title": "Biotechnology Principles and Processes: NEET Biology Notes | MedQGo",
+    "description": "Trace cutting, ligation, vector design, host selection and downstream processing in a clear recombinant-DNA concept workflow.",
+    "topicSlug": "biotechnology-principles-and-processes",
+    "targetKeyword": "Biotechnology principles and processes NEET Biology notes",
+    "sortOrder": 46
+  },
+  { "id": "note-living-world-taxonomy-and-hierarchy", "slug": "living-world-taxonomy-and-hierarchy", "title": "Taxonomy and Hierarchy: Read a Scientific Name | MedQGo", "description": "Distinguish rank from taxon, read binomial names and test what shared species, genus and family tell you with an original specimen-register exercise.", "topicSlug": "living-world-taxonomy-and-hierarchy", "targetKeyword": "Living world taxonomy hierarchy Biology notes", "sortOrder": 47 },
+  { "id": "note-protein-structure-and-peptide-bonds", "slug": "protein-structure-and-peptide-bonds", "title": "Protein Structure and Peptide Bonds: Chain-Counting Guide | MedQGo", "description": "Count peptide bonds across separate chains, distinguish protein structural levels, and separate denaturation from hydrolysis using checkable examples.", "topicSlug": "protein-structure-and-peptide-bonds", "targetKeyword": "Protein structure peptide bonds Biology notes", "sortOrder": 48 },
+  { "id": "note-decomposition-and-mineralisation", "slug": "decomposition-and-mineralisation", "title": "Decomposition and Mineralisation: Follow the Evidence | MedQGo", "description": "Separate fragmentation, leaching, humification and mineralisation, then calculate litter mass loss without mistaking it for nutrient release.", "topicSlug": "decomposition-and-mineralisation", "targetKeyword": "Decomposition mineralisation Biology notes", "sortOrder": 49 }
 ]

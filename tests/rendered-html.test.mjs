@@ -440,3 +440,24 @@ test("publishes three distinct physiology guides with illustrations and learning
     assert.ok((await readFile(new URL("../public/images/biology/" + item.image, import.meta.url))).length > 1000);
   }
 });
+
+test("publishes animal classification, tissue organisation and biotechnology process guides", async () => {
+  const cases = [
+    { slug: "animal-kingdom", image: "animal-kingdom-evidence-map-v1.webp", source: "kebo104.pdf", marker: "bilateral and triploblastic" },
+    { slug: "structural-organisation-in-animals", image: "structural-organisation-animal-hierarchy-v1.webp", source: "kebo107.pdf", marker: "muscle -&gt; tendon -&gt; bone" },
+    { slug: "biotechnology-principles-and-processes", image: "biotechnology-recombinant-dna-order-v1.webp", source: "lebo109.pdf", marker: "two junctions to be joined" },
+  ];
+  const sitemapXml = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+
+  for (const item of cases) {
+    const html = await readFile(new URL("../.next/server/app/neet-ug/biology/" + item.slug + ".html", import.meta.url), "utf8");
+    assert.ok(html.includes(item.image), item.slug + ": image");
+    assert.ok(html.includes(item.source), item.slug + ": source");
+    assert.ok(html.includes(item.marker), item.slug + ": worked distinction");
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published:\s*(?:<!-- -->)?September 24, 2026/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+    assert.ok(sitemapXml.includes(item.slug), item.slug + ": sitemap");
+  }
+});

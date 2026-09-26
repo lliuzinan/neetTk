@@ -8,6 +8,12 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "living-world-taxonomy-and-hierarchy": { published: "2026-09-26", modified: "2026-09-26" },
+  "protein-structure-and-peptide-bonds": { published: "2026-09-26", modified: "2026-09-26" },
+  "decomposition-and-mineralisation": { published: "2026-09-26", modified: "2026-09-26" },
+"animal-kingdom": {"published":"2026-09-24","modified":"2026-09-24"},
+"structural-organisation-in-animals": {"published":"2026-09-24","modified":"2026-09-24"},
+"biotechnology-principles-and-processes": {"published":"2026-09-24","modified":"2026-09-24"},
 "enzymes-and-enzyme-action": {"published":"2026-09-23","modified":"2026-09-23"},
 "plant-growth-and-development": {"published":"2026-09-23","modified":"2026-09-23"},
 "locomotion-and-movement": {"published":"2026-09-23","modified":"2026-09-23"},

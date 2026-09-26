@@ -23,6 +23,12 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "living-world-taxonomy-and-hierarchy",
+  "protein-structure-and-peptide-bonds",
+  "decomposition-and-mineralisation",
+  "animal-kingdom",
+  "structural-organisation-in-animals",
+  "biotechnology-principles-and-processes",
   "enzymes-and-enzyme-action",
   "plant-growth-and-development",
   "locomotion-and-movement",
@@ -61,6 +67,228 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "living-world-taxonomy-and-hierarchy": [
+    { heading: "A specimen label contains several different claims", paragraphs: [
+      "Imagine receiving three specimen records with a common name, a scientific name and a family on each. Before comparing them, ask which field identifies the organism and which places it within a larger group. A familiar name is not enough: different regions can use different common names, while similar-looking organisms need not belong to the same species. Taxonomy makes these comparisons explicit.",
+      "The practical goal here is to read a classification record without asking it to prove too much. You should be able to distinguish a rank from the group occupying it, extract the two parts of a species name, and work out which shared categories follow from the information supplied. These are the foundations needed before learning the diagnostic characters of kingdoms and phyla."
+    ] },
+    { heading: "Read the hierarchy as nested membership", paragraphs: [
+      "The standard NCERT sequence runs from species through genus, family, order, class and phylum to kingdom. Division is the corresponding term commonly used for plants. Moving upward broadens the group under discussion; moving downward narrows it. These are levels of classification, not stages through which an individual grows.",
+      "In a given classification, two organisms assigned to the same genus also share its family and the categories above that family. The reverse inference fails: sharing a family leaves open the possibility of different genera. The illustration deliberately shows only family, genus and species so that this one-way implication stays visible. It is a containment model, not a proposed family tree of named organisms.",
+      "Broader groups generally share fewer diagnostic features across all their members than narrower groups do. That does not make a kingdom less real or a species more evolved. Nor can the names of ranks tell you an exact percentage of shared DNA. A rank answers where a group sits in the classification, not how much molecular difference separates every pair of members."
+    ] },
+    { heading: "Rank is the address field; taxon is its entry", paragraphs: [
+      "Genus is a rank. A named genus, such as Panthera, is a taxon at that rank. Family is another rank; Felidae is a named group placed there. Using this distinction, 'What category is Panthera?' and 'Which genus is listed?' are different questions even when both concern the same record.",
+      "Taxon is singular and taxa is plural. The term is not reserved for species: a genus, family or kingdom can also be a taxon. A useful annotation is to write a field and its value together, for example genus: Panthera. This prevents a list of rank words from being mistaken for the actual classification of an organism.",
+      "Taxonomic placements can be revised when evidence changes. When comparing two sources, first check that they use compatible classifications. An apparent contradiction between records may reflect a revision, not a rule that organisms can freely move between categories during their lifetime. For revision work, use the classification framework specified by the source rather than silently mixing systems."
+    ] },
+    { heading: "The second word is not the complete species name", paragraphs: [
+      "A binomial combines a generic name with a specific epithet. In Panthera leo, Panthera names the genus and leo is the epithet; the complete combination identifies the species. The genus begins with a capital letter, the epithet with a lower-case letter. Scientific binomials are conventionally italicised in print and their two words separately underlined when handwritten.",
+      "An epithet can recur in different genera, so matching the second word alone does not establish that two records describe one species. Conversely, matching the genus but finding different epithets normally identifies different species within that genus. Read both words before counting names.",
+      "An abbreviated author name may follow a binomial. It records naming authorship and is not a third part of the binomial or the name of a subspecies. Likewise, shortening the genus to an initial is useful only when the context makes that genus unambiguous. A revision list with several genera beginning with the same letter should retain enough information to avoid confusion."
+    ] },
+    { heading: "Sort a small register without inventing relationships", paragraphs: [
+      "Use this invented register: samples 1 and 2 belong to species A1 in genus A; sample 3 belongs to species A2 in genus A; sample 4 belongs to species B1 in genus B. Both genera are assigned to family F. These are symbolic labels for the exercise, not newly proposed scientific names.",
+      "The register contains four samples, three species, two genera and one family. Count distinct memberships rather than rows. Samples 1 and 2 do not create two species simply because they were collected separately. Samples 1 and 3 share genus A but not a species; samples 1 and 4 share family F but not a genus.",
+      "Now remove the genus entry for sample 4 while retaining its family. Could you still conclude that it belongs to genus B? No. That information was lost. It could belong to another genus within F. The defensible statement is only that its family is shared. This small deletion test reveals whether an answer comes from the supplied evidence or from an assumption added by the reader.",
+      "A tempting wrong answer is 'one family, therefore one genus'. The illustration supplies a counterexample: both genus A and genus B fit inside the same family. One valid counterexample is enough to defeat that proposed implication."
+    ] },
+    { heading: "Identification, naming and grouping do different work", paragraphs: [
+      "Identification connects a specimen with a recognised organism or group using evidence. Nomenclature supplies the rules for names. Classification organises organisms into groups, while systematics also considers their evolutionary relationships. They cooperate, but succeeding at one task does not automatically complete the others.",
+      "A label can be correctly capitalised yet attached to the wrong specimen. That is an identification problem, not a typography problem. Conversely, an organism may be correctly recognised while its label uses a local common name that another reader cannot interpret. That is why a useful record needs both biological evidence and a standard naming convention.",
+      "Similarity should also be interpreted cautiously. Sharing a habitat, colour or use to humans is not by itself a sufficient basis for a taxonomic placement. The next step is to examine diagnostic characters; the five-kingdom guide develops that evidence-based comparison rather than repeating this hierarchy exercise."
+    ] },
+    { heading: "Reconstruct a label, then test its limits", paragraphs: [
+      "Close the guide and write the seven standard ranks from narrowest to broadest. Beneath genus, add a named example and label which part is the rank and which is the taxon. Then write a complete binomial and identify its generic name and specific epithet. Finally give one conclusion allowed by shared genus and one conclusion not allowed by shared family.",
+      "Check your last two statements against these criteria: common genus supports common family within the same classification; common family does not force common genus. This is a stronger check than repeating a rank mnemonic because it tests what the hierarchy lets you infer.",
+      "NCERT anchor: Class 11 Biology, The Living World, sections 1.1 and 1.2, Reprint 2026-27. This note focuses on names and nested categories. Kingdom characters and plant-group life cycles are separate study tasks linked below."
+    ] }
+  ],
+  "protein-structure-and-peptide-bonds": [
+    { heading: "A sequence and a folded protein are different descriptions", paragraphs: [
+      "A chain can retain the same order of amino acids while losing the shape needed for its usual activity. That observation is the reason protein structure needs more than one level of description. Knowing the ingredients or even their sequence does not, by itself, show how the chain is arranged in space under particular conditions.",
+      "Begin with three questions: what connects neighbouring residues, how does one chain fold, and how many chains form the functional assembly? Keeping those questions separate makes bond-counting exercises and descriptions of denaturation much easier to interpret. This guide concerns protein architecture; reaction rates and the steps of translation belong to the linked guides."
+    ] },
+    { heading: "Count backbones before naming structural levels", paragraphs: [
+      "Amino acids have a shared basic framework and a variable side chain. When incorporated into a polypeptide they are called residues. Peptide bonds join successive residues along the backbone, giving the chain an amino-terminal end and a carboxyl-terminal end. Side chains project from that backbone and contribute different chemical properties.",
+      "Folding bends a chain into a spatial arrangement; it does not require the backbone to be cut into new chains. In the illustration, one continuous chain remains one chain after folding. Beside it, an assembly contains two separately folded chains. Their association is a different structural fact from the folding within either chain.",
+      "Do not use the number of visible loops in a drawing as a subunit count. A single chain can loop many times. To establish multiple polypeptide subunits, you need evidence of distinct chains, not simply several coloured regions or several functions assigned to one molecule."
+    ] },
+    { heading: "A short chain makes peptide-bond counting checkable", paragraphs: [
+      "Take an invented linear chain of eight residues. Join residue 1 to 2, then 2 to 3, continuing until 7 joins 8. There are seven connections, so the backbone contains seven peptide bonds. For an ordinary unbranched, non-cyclic chain with n residues, the count is n - 1.",
+      "Now consider an assembly of two separate linear chains, one with eight residues and one with five. Their peptide-bond counts are seven and four, making eleven in total. The incorrect answer twelve treats thirteen residues as if they were a single continuous chain. Association between the chains does not automatically add another peptide bond.",
+      "In general, N residues distributed across c separate ordinary linear chains give N - c backbone peptide bonds. This accounting assumes every chain has its own two ends and excludes cyclic peptides and unusual crosslinks. A disulphide linkage, when present, is chemically different and must not be counted as an extra peptide bond.",
+      "Check the formula by separating the longer chain at one peptide bond. The residue total stays the same, the number of chains rises by one, and the number of remaining peptide bonds falls by one. The formula predicts exactly that change."
+    ] },
+    { heading: "Local patterns do not specify the whole fold", paragraphs: [
+      "Primary structure records residue order. Secondary structure describes recurring local backbone arrangements, including alpha helices and beta sheets, stabilised by backbone hydrogen bonding. These terms describe different kinds of information about the same chain; secondary structure does not mean a second polypeptide has arrived.",
+      "Tertiary structure concerns the overall three-dimensional arrangement of one polypeptide. Interactions involving side chains help organise and stabilise that fold. A protein can contain both helical and sheet regions within a single tertiary structure, so identifying one helix does not classify the whole molecule as only secondary structure.",
+      "Use the scale of the observation to choose the term. A list of residue positions supplies sequence information. A local coil supplies information about a local pattern. The relationship between distant portions of a folded chain concerns its overall architecture. None of these observations alone establishes an assembly of multiple chains."
+    ] },
+    { heading: "Quaternary structure requires more than one polypeptide", paragraphs: [
+      "Quaternary structure describes how separate polypeptide subunits associate. Adult haemoglobin is a familiar NCERT example: its assembly contains two alpha and two beta subunits. Four subunits do not mean four different types of chain; here there are two types represented twice each.",
+      "A single-chain protein does not need quaternary structure to function. The four structural levels are therefore not four compulsory boxes that every protein must fill. Nor is a small non-protein component automatically a polypeptide subunit. The word subunit must be read in the context of the structure being described.",
+      "For a schematic two-chain assembly, first identify the fold within each chain, then the arrangement between chains. The former is tertiary organisation, the latter quaternary organisation. That two-step description prevents the whole assembly from being mistaken for one unusually complicated backbone."
+    ] },
+    { heading: "Unfolding is not the same operation as hydrolysis", paragraphs: [
+      "Denaturation disrupts the organisation responsible for a protein's native properties, often affecting its folding and, where present, subunit association. It need not break the peptide backbone or change residue order. Hydrolysis of peptide bonds instead cleaves the chain. These are distinct processes even though either can destroy the original activity.",
+      "Suppose a hypothetical sample loses activity after heating, but analysis still finds the same full-length chain. That observation is compatible with altered folding. It does not support the claim that heating necessarily released free amino acids. To establish backbone cleavage, evidence of shorter chains or corresponding products would be needed.",
+      "Recovery after returning to suitable conditions is possible for some proteins but cannot be assumed. Aggregation or other changes can prevent recovery. Equally, a loss of activity by itself does not prove denaturation: an inhibitor or missing required component could also reduce activity. The structural evidence must match the structural claim."
+    ] },
+    { heading: "Test three statements against the chain model", paragraphs: [
+      "First, 'equal amino-acid composition means equal primary structure'. This is false because order matters: a chain with residues A-B-C and one with A-C-B have the same inventory but different sequences. The letters here are placeholders, not a claim about a particular natural protein.",
+      "Second, 'a protein with two helical regions has two subunits'. This is unsupported because both regions may be part of one continuous chain. Third, 'loss of shape proves all peptide bonds were hydrolysed'. This confuses spatial organisation with backbone connectivity. In each case, identify exactly which observation is missing before accepting the conclusion."
+    ] },
+    { heading: "Finish with a chain-count and evidence sketch", paragraphs: [
+      "Draw two separate strings containing six and four residues. Mark their peptide connections, fold each without erasing any connection, and bring them together without drawing a new backbone bond. Your total should remain eight peptide bonds. Label residue order, local fold, whole-chain fold and between-chain arrangement beside the appropriate features.",
+      "NCERT anchor: Class 11 Biology, Biomolecules, sections 9.4 and 9.7, Reprint 2026-27. OpenStax's protein section provides a complementary explanation of folding and denaturation. The counting examples above are original simplified models; they are not reproduced examination questions or a simulation of cellular protein synthesis."
+    ] }
+  ],
+  "decomposition-and-mineralisation": [
+    { heading: "A disappearing leaf has more than one possible destination", paragraphs: [
+      "A leaf placed on damp soil gradually becomes difficult to recognise. Some of it may have been broken into smaller pieces, some dissolved material may have moved with water, and some compounds may have been transformed by organisms. A photograph showing a smaller leaf cannot tell you how much of each process occurred.",
+      "Decomposition is easier to understand when appearance, chemical change and transport are recorded separately. The question in this guide is not how energy pyramids are shaped. It is what has actually happened to detritus, and what evidence would support an inference about nutrient release."
+    ] },
+    { heading: "Fragmentation changes size; mineralisation changes chemical form", paragraphs: [
+      "Detritus includes dead biological material and organic wastes. Detritivores can break this material into smaller particles, increasing the surfaces accessible to further activity. The particles remain organic material: making a leaf smaller does not by itself turn its compounds into inorganic nutrients.",
+      "Mineralisation refers to the release of nutrients in inorganic form through breakdown of organic matter. It is therefore a chemical distinction, not a measurement of fragment size. The two panels in the illustration deliberately show different outcomes rather than consecutive compulsory stages. A litter sample can undergo several processes at once.",
+      "The distinction suggests two different observations. Sieving or imaging could describe particle sizes; chemical measurements would be needed to establish a change in nutrient forms. Neither method on its own answers the other question. That separation is useful when reading any experimental description about decomposing material."
+    ] },
+    { heading: "Water can transport material without finishing its breakdown", paragraphs: [
+      "Leaching moves soluble substances with water. In the NCERT treatment, water-soluble inorganic nutrients can be carried into deeper soil and become unavailable through precipitation. Movement away from the original litter is therefore not equivalent to immediate uptake by nearby roots.",
+      "Catabolism concerns enzymatic breakdown. Fungi and bacteria contribute enzymes that transform compounds in detritus. A smaller particle can offer more accessible surface, but physical fragmentation and enzymatic transformation still name different actions. It is useful to record the agent and the result separately: who or what acted, and what changed?",
+      "A strict five-box conveyor belt is misleading here. Fragmentation, leaching and microbial breakdown can overlap in time, and different portions of one leaf may follow different routes. A diagram should not require every fragment to become humus before any nutrient is released."
+    ] },
+    { heading: "Humus is a persistent organic pool, not a bag of mineral salts", paragraphs: [
+      "Humification produces relatively resistant organic material described in NCERT as dark, amorphous humus. Its persistence helps distinguish it from readily decomposed litter. It can act as a nutrient reservoir, but a reservoir is not the same thing as nutrients already present in immediately available inorganic forms.",
+      "Further microbial breakdown can release inorganic nutrients through mineralisation. Some material therefore persists while other material is transformed more quickly. Humification and mineralisation need not be competing labels for the entire soil sample; both can describe processes occurring within it.",
+      "The wrong inference is 'humus is dark, so its nutrients are already mineralised'. Colour supplies no such chemical proof. Instead ask whether the nutrient remains associated with organic material or has been released in an inorganic form. This also explains why a visible organic layer cannot be translated directly into a measurement of nutrient availability."
+    ] },
+    { heading: "Work a litter-bag result before explaining its cause", paragraphs: [
+      "Consider an invented comparison using identical litter initially weighing 12 g dry in each bag. After the same exposure period, bag A contains 9 g dry material and bag B contains 6 g. A has lost 3 g, or 25% of its initial dry mass; B has lost 6 g, or 50%. The proportional loss in B is twice that in A over this interval.",
+      "That calculation does not show that B released 6 g of mineral nutrients. Mass can leave through dissolved substances, escaped fragments or gases produced during metabolism. Material can also be incorporated into organisms. Without additional measurements, the result establishes loss of recovered litter mass, not the chemical destination of every missing gram.",
+      "Use dry mass because different water contents would confound a wet-mass comparison. Keep litter type, starting mass, bag mesh, exposure interval and drying method comparable. If the two bags also differ in temperature and moisture, the result cannot isolate which variable explains the difference.",
+      "A defensible conclusion is 'B showed greater proportional dry-mass loss under the stated conditions'. A stronger conclusion about microbial activity, mineralisation or a temperature effect needs corresponding controls and measurements. The arithmetic is the beginning of interpretation, not permission to invent the mechanism."
+    ] },
+    { heading: "Moisture helps until oxygen becomes limiting", paragraphs: [
+      "Temperature and moisture influence decomposer activity. The textbook pattern is faster breakdown under suitably warm, moist conditions and slower breakdown in cold or oxygen-poor conditions. Waterlogging can restrict oxygen supply, so 'wetter always means faster' is not a reliable rule.",
+      "Composition matters too. Under otherwise comparable conditions, detritus rich in resistant components such as lignin or chitin generally breaks down more slowly than material richer in readily usable soluble compounds and nitrogen. Comparing a woody fragment with a soft leaf while changing their environments would combine two explanations.",
+      "To test a moisture hypothesis conceptually, hold litter and temperature constant, compare several moisture conditions, and include replicate samples. Do not assume the warmest or wettest treatment must win. The mechanism predicts a suitable range of conditions, not unlimited acceleration at either extreme. No handling of unknown microbes is needed for this paper-based reasoning exercise."
+    ] },
+    { heading: "Nutrient return does not send energy back into leaves", paragraphs: [
+      "Nutrients released from organic matter can re-enter biological use, while decomposer metabolism dissipates energy as heat. These are different fates. Labelling an arrow from soil nutrients to plant roots as recycled energy would confuse a material transfer with an energy process.",
+      "Nor does decomposition guarantee that every released nutrient reaches a plant. Transport, soil chemistry and uptake by other organisms affect its destination. The useful study boundary is to distinguish release from availability and availability from actual uptake. The linked ecosystem guide explains the separate energy-flow account in more detail."
+    ] },
+    { heading: "Audit a claim in four lines", paragraphs: [
+      "Write these four entries for the litter-bag example: observation, calculation, supported conclusion and missing evidence. Your observation is a change in recovered dry mass; your calculation is 25% versus 50%; your conclusion concerns relative mass loss over the same interval. Missing evidence includes chemical measurements needed to assign that loss specifically to mineralisation.",
+      "Then classify three independent observations: smaller organic particles indicate fragmentation; dissolved material moving downward indicates leaching; release of inorganic nutrients from organic matter supports mineralisation. A single sample may show all three. This recall task tests the meaning of the processes without forcing them into a rigid order.",
+      "NCERT anchor: Class 12 Biology, Ecosystem, section 12.3, Reprint 2025-26. OpenStax's treatment of biogeochemical cycles supplies a complementary nutrient-return perspective. All quantities in the litter-bag example are invented for reasoning practice, not reported field measurements."
+    ] }
+  ],
+  "animal-kingdom": [
+    { heading: "Classification starts with a combination of clues", paragraphs: [
+      "Animal diversity is too large for one familiar feature to organise reliably. Colour, habitat and size can describe an organism, but they do not set out the shared structural plan used in the NCERT overview. A useful classification begins by asking how cells are arranged, whether a body has a plane of symmetry, what lies between its body wall and gut, and whether segmentation or a notochord is present.",
+      "This is a guide to the comparison logic behind the phyla, not a catalogue of every species. By the end, you should be able to explain why two animals can both be multicellular yet belong on different branches of a classification key, and why a single feature rarely gives a final answer."
+    ] },
+    { heading: "The level of organisation asks how work is divided", paragraphs: [
+      "All animals are multicellular, but their cells are not arranged with the same degree of division of labour. Sponges show a cellular level of organisation: their cells form loose groupings rather than true tissues. Cnidarians show a tissue level, in which similar cells work together. In more complex animals, tissues combine into organs, and organs can coordinate as organ systems.",
+      "The sequence cellular, tissue, organ, organ system describes increasing integration. It is not a ladder of moral value or a rule that every body function becomes more efficient in exactly the same way. The question is what structural unit carries a named function. A stomach is an organ, whereas digestion is carried out by an organ system with associated structures.",
+      "A quick correction: a multicellular animal is not automatically at organ-system level. If an option only tells you that it is multicellular, there is not enough information to place its level of organisation."
+    ] },
+    { heading: "Symmetry is a plane test, not a label for body complexity", paragraphs: [
+      "An asymmetrical body cannot be split into equal halves by any plane through its centre; many sponges fit this description. Radial symmetry permits similar halves through more than one plane around a central axis, as in many cnidarians and adult echinoderms. Bilateral symmetry produces matching right and left halves through one plane and is common in many animal phyla.",
+      "The adult stage matters when using this comparison. Echinoderm larvae are bilateral while adults are radially arranged, so an answer that ignores life stage can be misleading. Similarly, radial symmetry does not itself determine the number of germ layers or the type of body cavity. The diagram places these criteria side by side precisely because they must be checked separately.",
+      "For a paper cut-out test, imagine folding a silhouette. If one vertical fold gives matching sides, that supports bilateral symmetry. If several planes through a central axis could do so, radial symmetry is plausible. Do not use 'moves quickly' or 'has a head' as replacements for the plane test."
+    ] },
+    { heading: "Germ layers and the body cavity answer different questions", paragraphs: [
+      "Diploblastic animals develop from two primary germ layers, ectoderm and endoderm, with an intervening non-cellular layer in the introductory comparison. Triploblastic animals have a third germ layer, mesoderm, between ectoderm and endoderm. Germ-layer count concerns early body construction; it is not the same claim as the presence of a coelom.",
+      "A coelom is a body cavity lined by mesoderm. In the NCERT comparison, platyhelminthes are acoelomate, nematodes are pseudocoelomate, and annelids onward include coelomate examples. A pseudocoel is not simply 'a smaller coelom'; its relationship to mesoderm is the distinction. If an option uses the word cavity, ask whether it is asking about the cavity itself or its lining.",
+      "Consider an invented sorting card: an animal is bilateral and triploblastic, but no information about a body cavity is supplied. You may infer neither coelomate nor acoelomate from those two facts alone. Adding a familiar phylum name from memory would be guessing beyond the evidence."
+    ] },
+    { heading: "A complete gut, segmentation and notochord refine the comparison", paragraphs: [
+      "A blind-sac digestive arrangement has one opening serving as the route for intake and egestion; a complete digestive tract has separate mouth and anus. This feature helps distinguish some groups, but it should be used with other evidence. A digestive opening is not automatically proof of a particular symmetry or cavity type.",
+      "Segmentation means a repeated series of body units. It is prominent in annelids and occurs in modified forms in arthropods and chordates. Repetition of body parts is different from simply having many limbs. A notochord is a flexible supporting rod characteristic of chordates at least during development. A vertebral column is not a synonym for the notochord; vertebrates are a chordate subgroup.",
+      "Use these features as checkpoints. They make a phylum comparison more precise than a collection of examples, and they prevent the common jump from 'segmented' directly to 'vertebrate'."
+    ] },
+    { heading: "Read major phyla through a diagnostic bundle", paragraphs: [
+      "Porifera have a canal system and cellular level of organisation. Cnidaria are diploblastic with radial symmetry and characteristic stinging cells. Platyhelminthes are dorsoventrally flattened triploblasts without a coelom; nematodes are pseudocoelomate and typically show a complete digestive tract. Annelids are segmented coelomates.",
+      "Arthropods combine segmented organisation with jointed appendages and an exoskeleton. Molluscs have a soft body that often includes a muscular foot and mantle. Adult echinoderms show radial symmetry and a water vascular system. Chordates are defined by a set of characters including a notochord, dorsal hollow nerve cord, pharyngeal gill slits and post-anal tail at some stage; no single one should replace the full set.",
+      "These are broad study anchors, not rules for identifying animals in the field. An answer should state the named feature and its comparison, rather than treating a familiar example as the definition of its entire phylum."
+    ] },
+    { heading: "Build a three-pass classification answer", paragraphs: [
+      "First write the evidence in separate rows: organisation, symmetry, germ layers, coelom, gut, segmentation and chordate characters. Second, cross out any phylum whose diagnostic bundle contradicts the evidence. Third, explain the remaining choice in one sentence using two independent features. That final sentence makes it easier to notice when you have relied on one attractive but insufficient clue.",
+      "NCERT anchor: Animal Kingdom, sections 4.1 and 4.2 in the 2025-26 reprint. Study five-kingdom classification first for the kingdom boundary, then use structural organisation in animals to move from broad phyla to tissues and organs. This guide does not provide wildlife identification or veterinary advice."
+    ] }
+  ],
+  "structural-organisation-in-animals": [
+    { heading: "A tissue is not a small organ", paragraphs: [
+      "A group of similar cells, together with intercellular material where relevant, forms a tissue. An organ contains more than one tissue arranged for a particular job. An organ system coordinates multiple organs. This hierarchy is simple to state but easy to blur when a question names a familiar structure such as skin, stomach or a blood vessel.",
+      "Instead of memorising a list from largest to smallest, trace what changes at each step. Cells specialise; similar cells contribute a shared role; different tissues build a working organ; organs cooperate across a route. The purpose is division of labour, not merely an increase in physical size."
+    ] },
+    { heading: "Read the hierarchy as a change in composition", paragraphs: [
+      "An epithelial sheet is a tissue because its similar cells form a covering or lining. A piece of intestinal wall is an organ because epithelial, connective, muscular and nervous components are arranged together. The digestive system is an organ system because multiple organs coordinate movement, secretion, digestion and absorption. An organism contains many interacting systems.",
+      "The illustration uses a digestive example to show that an organ does not arise by enlarging one cell type. It is assembled from multiple tissues. The image is a conceptual hierarchy rather than a detailed anatomical map. A learner should be able to replace the digestive example with a different system while preserving the relationships."
+    ] },
+    { heading: "Epithelial tissue is defined by position and arrangement", paragraphs: [
+      "Epithelial tissues cover external surfaces and line internal spaces. Their cells are closely packed with little intercellular material, creating a continuous layer. The shape and number of layers are linked to location and function: simple squamous epithelium provides a thin lining, cuboidal and columnar forms occur in different lining or secretory roles, and stratified epithelium provides protection where wear is greater.",
+      "Glandular epithelium specialises in secretion. It should not be called connective tissue simply because its product may enter a fluid or support another organ. The defining question is whether the cells form a covering, lining or secretory epithelial arrangement, not whether the named organ is inside the body.",
+      "A plausible wrong shortcut is 'all thin epithelium is for absorption'. Thin sheets can support exchange or lining functions depending on location. Match tissue form and placement before assigning a single verb."
+    ] },
+    { heading: "Connective tissue depends on its matrix", paragraphs: [
+      "Connective tissues connect, support, bind or transport, and their cells are set in varying amounts of intercellular matrix. Areolar tissue fills spaces, adipose tissue stores fat, tendon joins muscle to bone, and ligament joins bone to bone. The last pair is often reversed because both are strong connective tissues; their attachments are the decisive difference.",
+      "Cartilage provides flexible support and differs from bone, whose matrix is hard and mineralised. Blood is a fluid connective tissue: formed elements are suspended in plasma, and its transport role does not remove it from the connective category. Calling blood 'only a liquid' overlooks both its cells and its tissue-level role.",
+      "For a checkable contrast, write two arrows: muscle -> tendon -> bone and bone -> ligament -> bone. If either arrow starts or ends with the wrong structure, correct the attachment before adding details about elasticity."
+    ] },
+    { heading: "Muscle tissue shortens, but its types do not share the same control", paragraphs: [
+      "Muscle tissue is specialised for contraction. Skeletal muscle is striated and usually voluntary; smooth muscle lacks striations and is involuntary; cardiac muscle is striated and involuntary. The combination matters. 'Striated' alone cannot identify skeletal muscle because cardiac muscle is also striated.",
+      "The cells also differ in organisation. Skeletal fibres are long and multinucleate; cardiac cells branch and connect through specialised junctions; smooth muscle cells are spindle-shaped. In an introductory tissue guide, these shape cues support classification, but they do not replace the functional distinction between control and location.",
+      "Link this section to locomotion and movement for the sliding-filament mechanism in skeletal muscle. Tissue classification tells you what type of muscle is present; it does not by itself explain every movement of a joint."
+    ] },
+    { heading: "Nervous tissue coordinates rapid communication", paragraphs: [
+      "Nervous tissue contains neurons, specialised for receiving and transmitting signals, and supporting neuroglial cells. A neuron has a cell body, dendrites that commonly receive input, and an axon that conducts impulses away from the cell body. Direction is a useful general map, not an invitation to label every branched projection in a diagram without context.",
+      "Nervous tissue occurs in the brain, spinal cord and peripheral nerves. It coordinates responses with other tissues: a motor signal can activate muscle, but a neuron is not itself a muscle fibre. Keeping signal transmission separate from contraction prevents a mechanism from being assigned to the wrong tissue.",
+      "A final sorting test: name one tissue for lining, one for binding, one for contraction and one for signalling. Then give one structural clue for each. This produces a functional grid rather than four isolated definitions."
+    ] },
+    { heading: "Move outward, then rebuild from memory", paragraphs: [
+      "Draw four boxes labelled epithelial, connective, muscular and nervous. Add one location, one structural clue and one function to each. Next, choose an organ and mark at least two tissues it contains. Your output should demonstrate that organs are mixed constructions, not oversized tissues.",
+      "NCERT anchor: Structural Organisation in Animals, section 7.1 in the 2026-27 reprint. Use animal kingdom for the broader phylum framework, and revisit cell theory and cell organelles to distinguish a cell from a tissue. This is a Biology revision resource, not guidance for interpreting symptoms or tissue samples."
+    ] }
+  ],
+  "biotechnology-principles-and-processes": [
+    { heading: "A biotechnology product is the end of a chain, not the beginning", paragraphs: [
+      "A useful biotechnology explanation begins with a defined biological task: obtain a DNA fragment, place it in a suitable carrier, introduce the construct into a host, identify the desired cells, and recover the intended product or information. The final product is important, but it cannot explain why a vector, selection marker or downstream processing step was needed.",
+      "This guide focuses on the NCERT process logic behind recombinant DNA technology. It does not reproduce a laboratory protocol or provide instructions for creating modified organisms. The learning aim is to distinguish the purpose of each component in a conceptual workflow and to catch steps that are placed in the wrong order."
+    ] },
+    { heading: "Start by naming the jobs, not the brand of tool", paragraphs: [
+      "The central operations are isolation of genetic material, cutting DNA at defined sites, amplification where needed, joining a DNA fragment to a vector, introducing recombinant DNA into a host, selecting or screening suitable cells, and using the resulting material. One enzyme or device may support more than one operation, but the operation itself is the stronger revision anchor.",
+      "A restriction endonuclease identifies a specific DNA target and cleaves its backbone. DNA ligase then makes a covalent link between prepared fragments. These actions are complementary, not interchangeable. A restriction enzyme does not seal an inserted fragment into a vector, and ligase does not create the initial site-specific cuts.",
+      "The diagram shows one simplified order. It does not claim that all projects use a circular plasmid, that every cut forms sticky ends, or that introducing DNA alone guarantees expression. The purpose of a concept map is to preserve essential dependencies without pretending every laboratory system is identical."
+    ] },
+    { heading: "A vector is a carrier with usable control points", paragraphs: [
+      "A cloning vector carries a chosen DNA fragment into a host and has features that make the construct manageable. NCERT highlights an origin of replication, selectable marker and cloning sites. The origin supports replication in the host; a selectable marker helps distinguish cells associated with the vector; suitable cloning sites allow insertion without destroying a necessary function.",
+      "A plasmid is a common vector in the introductory model, but vector and plasmid are not synonyms. A plasmid can be used as a vector, while other systems can carry DNA for different purposes. Likewise, a selectable marker helps identify a useful population; it is not a statement that every selected cell contains the intended insert in the intended orientation.",
+      "Here is a reasoning check. If a construct has an origin and an insert site but no way to distinguish host cells that received the vector, the missing function is selection or screening, not cutting. Identify the missing job before naming a molecule."
+    ] },
+    { heading: "Compatible ends help joining, but they are not the final product", paragraphs: [
+      "When a vector and a DNA fragment are cut so their ends can pair through complementarity, the temporary association positions them for joining. Ligase then establishes the covalent linkage. The fact that two ends can align does not mean a stable recombinant molecule has already been produced.",
+      "For an invented paper model, imagine a circular vector opened once and one fragment whose ends match the vector ends. After pairing, there are two junctions to be joined. A final circular recombinant vector therefore needs both junctions sealed; one joined side and one open side is not a complete circular construct. This is a logic exercise, not an experimental instruction.",
+      "The misleading statement is 'sticky ends are enzymes that join DNA'. Sticky ends describe DNA end geometry. Restriction enzymes can generate particular ends, and ligase performs the joining. Keeping material, recognition and catalytic action in separate boxes prevents this mix-up."
+    ] },
+    { heading: "Host entry, selection and expression are separate checkpoints", paragraphs: [
+      "Introducing recombinant DNA into host cells is commonly called transformation in the bacterial context. It creates a population in which only some cells may receive the vector. Selection enriches for cells with a relevant marker, while screening asks whether a selected cell has the desired construct or trait. These steps have different questions: did DNA enter, which cells carry the vector, and which clone is the right one?",
+      "Expression adds another layer. A host carrying a DNA construct may not automatically make the intended product at the desired level. Regulatory sequences, host compatibility and processing affect whether a gene is expressed appropriately. At NEET level, the key distinction is simply that DNA entry, cloning and expression are not one event renamed three ways.",
+      "Follow the molecular-tools guide for amplification and gel-based analysis, then recombinant DNA technology for a focused workflow. This page provides the framework that explains why those individual tools appear in a larger process."
+    ] },
+    { heading: "Bioreactors and downstream processing come after the biological system works", paragraphs: [
+      "A bioreactor provides controlled conditions for large-scale biological production. In NCERT's framing, the aim is to support the chosen cells or enzymes under conditions that allow the desired process to proceed. A stirred-tank design may include mixing, aeration, temperature and pH control, but its presence does not itself purify the final product.",
+      "Downstream processing refers to recovery and purification steps after the biological production phase. It is therefore a later stage than constructing a recombinant molecule or selecting a host. A question that asks where purification belongs should not be answered with restriction digestion simply because both are part of a biotechnology story.",
+      "This distinction is also a boundary for the guide: process concepts can be learned without treating them as instructions for handling cells, genes or products outside an appropriate educational setting."
+    ] },
+    { heading: "Use a dependency map to audit your explanation", paragraphs: [
+      "Draw six boxes: target DNA, cutting, vector, joining, host, recovery. Add an arrow only when the earlier box supplies something required by the next. Then write a short explanation of why a marker belongs near the host-selection stage and why purification belongs after production. This map makes missing dependencies visible.",
+      "NCERT anchor: Biotechnology: Principles and Processes, sections 9.1-9.3 in the 2025-26 reprint. Follow it with biotechnology applications to distinguish a method from its use, and with molecular basis of inheritance to refresh DNA structure and replication. This is an independent educational overview, not a lab manual or a claim of official NCERT status."
+    ] }
+  ],
   "enzymes-and-enzyme-action": [
     { heading: "A faster reaction is not a different destination", paragraphs: [
       "Two reaction mixtures contain the same starting materials. One produces a detectable amount of product within a minute; the other changes too slowly to measure during the lesson. Adding an enzyme can explain that difference without changing which products are chemically possible. Catalysis concerns the route and its activation barrier, not a new supply of energy that makes every reaction favourable.",
@@ -1680,6 +1908,21 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "living-world-taxonomy-and-hierarchy": [
+    { label: "NCERT Class 11: The Living World, sections 1.1-1.2 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo101.pdf" },
+    { label: "OpenStax Biology 2e: Organizing Life on Earth", href: "https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth" },
+  ],
+  "protein-structure-and-peptide-bonds": [
+    { label: "NCERT Class 11: Biomolecules, sections 9.4 and 9.7 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
+    { label: "OpenStax Biology 2e: Proteins", href: "https://openstax.org/books/biology-2e/pages/3-4-proteins" },
+  ],
+  "decomposition-and-mineralisation": [
+    { label: "NCERT Class 12: Ecosystem, section 12.3 (2025-26 edition consulted)", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
+    { label: "OpenStax Biology 2e: Biogeochemical Cycles", href: "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles" },
+  ],
+"animal-kingdom": [{"label":"NCERT Class 11 Biology, Chapter 4: Animal Kingdom","href":"https://ncert.nic.in/textbook/pdf/kebo104.pdf"},{"label":"OpenStax Biology 2e: Features of the Animal Kingdom","href":"https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom"}],
+"structural-organisation-in-animals": [{"label":"NCERT Class 11 Biology, Chapter 7: Structural Organisation in Animals","href":"https://ncert.nic.in/textbook/pdf/kebo107.pdf"},{"label":"OpenStax Biology 2e: Connections between cells and cellular activities","href":"https://openstax.org/books/biology-2e/pages/4-6-connections-between-cells-and-cellular-activities"}],
+"biotechnology-principles-and-processes": [{"label":"NCERT Class 12 Biology, Chapter 9: Biotechnology - Principles and Processes","href":"https://ncert.nic.in/textbook/pdf/lebo109.pdf"},{"label":"OpenStax Biology 2e: Biotechnology","href":"https://openstax.org/books/biology-2e/pages/17-1-biotechnology"}],
 "enzymes-and-enzyme-action": [{"label":"NCERT Biomolecules, 2025-26 reprint: sections 9.8.2-9.8.6","href":"https://ncert.nic.in/textbook/pdf/kebo109.pdf"},{"label":"OpenStax Biology 2e: 6.5 Enzymes","href":"https://openstax.org/books/biology-2e/pages/6-5-enzymes"}],
 "plant-growth-and-development": [{"label":"NCERT Plant Growth and Development, 2025-26 reprint: sections 13.1-13.4","href":"https://ncert.nic.in/textbook/pdf/kebo113.pdf"},{"label":"OpenStax Biology 2e: 30.6 Plant sensory systems and responses","href":"https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses"}],
 "locomotion-and-movement": [{"label":"NCERT Locomotion and Movement, 2025-26 reprint: sections 17.2 and 17.4","href":"https://ncert.nic.in/textbook/pdf/kebo117.pdf"},{"label":"OpenStax Anatomy and Physiology 2e: 10.3 Muscle fiber contraction and relaxation","href":"https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"}],
@@ -1834,6 +2077,46 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "living-world-taxonomy-and-hierarchy": {
+    heading: "What does a shared label permit you to infer?",
+    intro: "Apply these statements within the same classification framework; the direction of implication matters.",
+    columns: ["Information supplied", "Conclusion permitted", "Conclusion still unsupported"],
+    rows: [
+      ["Same genus", "Shared family and higher categories", "Same species"],
+      ["Same family", "Shared order and higher categories", "Same genus"],
+      ["Same complete species name", "Same named species, if identification is correct", "Same individual specimen"],
+      ["Same specific epithet alone", "The second words match", "Same species or genus"],
+      ["Correctly formatted binomial", "Naming format follows the convention", "Specimen was correctly identified"],
+    ],
+  },
+  "protein-structure-and-peptide-bonds": {
+    heading: "Choose the structural claim that the observation supports",
+    intro: "The same protein can be described at several levels. Evidence about one level does not automatically determine the others.",
+    columns: ["Observed evidence", "Level or change described", "What else would need checking?"],
+    rows: [
+      ["Residue identities in their order", "Primary structure", "The spatial arrangement under the stated conditions"],
+      ["A local helix or sheet", "Secondary structure", "How the full chain folds"],
+      ["Overall arrangement of one folded chain", "Tertiary structure", "Whether other polypeptides join the assembly"],
+      ["Two separate folded chains associated", "Quaternary structure", "The sequence and fold of each chain"],
+      ["Loss of native fold with intact backbone", "Denaturation compatible with retained sequence", "Whether structure and activity can recover"],
+      ["Peptide bonds cleaved into shorter products", "Backbone hydrolysis", "Which bonds were cleaved and what products formed"],
+    ],
+  },
+  "decomposition-and-mineralisation": {
+    heading: "Match the process to the evidence you would measure",
+    intro: "These are overlapping processes, not five compulsory stations that every piece of litter visits in order.",
+    columns: ["Process", "Observable change", "Useful measurement", "What it does not establish"],
+    rows: [
+      ["Fragmentation", "Organic particles become smaller", "Particle-size distribution", "Nutrients have become inorganic"],
+      ["Leaching", "Soluble substances move with water", "Solutes in water leaving the litter", "Nearby plants absorbed those substances"],
+      ["Catabolism", "Enzymatic transformation of compounds", "Change in substrates and products", "A fixed quantity of mineral release from appearance alone"],
+      ["Humification", "Relatively persistent organic material accumulates", "Characterisation of the organic pool", "All nutrients are immediately plant-available"],
+      ["Mineralisation", "Organic-bound nutrients are released in inorganic form", "Nutrient-form measurements", "All lost litter mass became mineral nutrients"],
+    ],
+  },
+"animal-kingdom": {"heading":"Do not let one criterion answer another","intro":"Each row asks a different anatomical or developmental question.","columns":["Criterion","What it describes","Useful comparison","Wrong shortcut"],"rows":[["Level of organisation","How cells cooperate","Cellular, tissue, organ or organ system","All multicellular animals have organ systems"],["Symmetry","Planes that create matching halves","Asymmetrical, radial or bilateral","Bilateral means coelomate"],["Germ layers","Primary embryonic layers","Diploblastic or triploblastic","Third layer is a body cavity"],["Body cavity","Cavity and its mesodermal lining","Acoelomate, pseudocoelomate or coelomate","Any internal space is a coelom"],["Notochord","Supportive chordate feature","Chordates at some stage","Only vertebrates have a notochord"]]},
+"structural-organisation-in-animals": {"heading":"Four tissues, four different clues","intro":"Use the structural clue and the job together; a location by itself is rarely enough.","columns":["Tissue category","Structural clue","Main role","Distinguish it from"],"rows":[["Epithelial","Closely packed cells forming a sheet","Covering, lining or secretion","Connective tissue with abundant matrix"],["Connective","Cells within variable extracellular matrix","Binding, support or transport","Epithelial covering"],["Muscle","Elongated contractile cells","Contraction and movement","Neuron signal transmission"],["Nervous","Neurons with supporting glia","Communication and coordination","Muscle fibre contraction"]]},
+"biotechnology-principles-and-processes": {"heading":"One workflow, distinct jobs","intro":"A correct term in the wrong stage is still a wrong explanation.","columns":["Component or stage","Immediate job","What it does not establish","Quick check"],"rows":[["Restriction endonuclease","Cuts DNA at recognised sequences","That fragments are permanently joined","Creates ends; does not ligate"],["DNA ligase","Forms covalent DNA junctions","That the right host cell was selected","Seals a prepared junction"],["Vector origin","Supports replication in a host","That an insert is present","Lets the carrier persist"],["Selectable marker","Enriches for relevant host cells","That every clone has the desired insert","Selection is not full screening"],["Downstream processing","Recovers and purifies output","That recombinant DNA was constructed","Occurs after production"]]},
 "enzymes-and-enzyme-action": {"heading":"Which observation distinguishes the explanations?","intro":"Use matched conditions before attributing a rate change to one variable.","columns":["Observation","Possible interpretation","Check before concluding"],"rows":[["More substrate, little extra initial rate","Catalytic capacity approaches saturation","Keep enzyme amount constant"],["Activity returns after a cold sample warms","Reversible slowing is plausible","Test both samples at the same temperature"],["Extra substrate reduces an inhibitor's effect","Consistent with simple competition","Do not generalise to every inhibitor"],["Activity returns with a required cofactor","A necessary component was missing","Rule out changes in other conditions"]]},
 "plant-growth-and-development": {"heading":"A regulator claim needs a qualifying context","intro":"These associations guide revision; they are not treatment or crop-application instructions.","columns":["Regulator","Useful association","Overstatement to avoid"],"rows":[["Auxin","Apical dominance and context-dependent elongation","It promotes every tissue at every concentration"],["Gibberellins","Axis elongation and bolting in suitable plants","It is the only signal required for growth"],["Cytokinins","Cell division and delayed senescence","All mature cells must begin dividing"],["Ethylene","Ripening; some elongation responses","It always inhibits growth"],["Abscisic acid","Dormancy and water-stress responses","Dormancy means the seed is dead"]]},
 "locomotion-and-movement": {"heading":"Measure the right structure","intro":"Predictions apply to shortening in the introductory sliding-filament model.","columns":["Feature","During shortening","Why"],"rows":[["Z-disc separation","Decreases","Defines sarcomere length"],["A-band width","Remains essentially unchanged","Tracks thick-filament length"],["I-band width","Decreases","Less thin-only region"],["H-zone width","Decreases and may disappear","Less central thick-only region"],["Individual filament lengths","Remain unchanged","Sliding changes overlap instead"]]},
@@ -2110,6 +2393,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "living-world-taxonomy-and-hierarchy": { heading: "Try the inference backwards", paragraphs: ["When a classification statement seems obvious, reverse it. Shared genus implies shared family, but shared family does not imply shared genus. Finding where the reversal fails is a quick way to test whether you understand the nesting rather than only remember the rank order."] },
+  "protein-structure-and-peptide-bonds": { heading: "Keep a separate count for each chain", paragraphs: ["Before counting peptide bonds in an assembly, mark every independent backbone. Subtract one connection for each ordinary linear chain, not just one for the whole protein complex. Folding and subunit association do not erase the separate chain ends."] },
+  "decomposition-and-mineralisation": { heading: "Write the measurement before the explanation", paragraphs: ["A smaller recovered mass is an observation. Mineralisation is one possible process requiring chemical evidence. Keeping those statements separate lets you calculate confidently while remaining honest about what the experiment has not measured."] },
+"animal-kingdom": {"heading":"A phylum answer needs two checks","paragraphs":["Before settling on a phylum, state two independent supporting features. This small discipline prevents a familiar feature such as radial symmetry, segmentation or an exoskeleton from doing more classificatory work than it can."]},
+"structural-organisation-in-animals": {"heading":"Use arrows for tendon and ligament","paragraphs":["Write muscle -> tendon -> bone, then bone -> ligament -> bone. This tests attachment directly, rather than relying on a vague memory that both are strong connective tissues."]},
+"biotechnology-principles-and-processes": {"heading":"Trace dependencies, not an equipment list","paragraphs":["A biotechnology workflow is easier to reconstruct when each stage supplies a condition for the next. Start with the desired DNA and ask what must be true before a host can be selected or a product can be recovered."]},
 "enzymes-and-enzyme-action": {"heading":"Amount, rate and capacity are three different claims","paragraphs":["A bottle can contain more product because it was left longer. An enzyme can work at a high rate while extra substrate has almost no effect. Separate how much has accumulated, how fast it is forming and what limits further acceleration before explaining any curve."]},
 "plant-growth-and-development": {"heading":"Decide what your denominator means","paragraphs":["For a percentage increase, divide the change by the starting size. For a rate, also state the time interval. A logarithmic relative rate uses a different calculation. Writing the denominator before inserting numbers prevents three distinct measures from being called simply 'growth'."]},
 "locomotion-and-movement": {"heading":"Contraction and shortening are not perfect synonyms","paragraphs":["An activated muscle can develop tension without appreciable overall shortening, as when holding a load still. The diagrams explain a shortening sarcomere. They should not be read as a claim that every active muscle must visibly shorten or move a joint."]},

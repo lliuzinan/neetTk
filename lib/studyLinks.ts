@@ -1,6 +1,37 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "living-world-taxonomy-and-hierarchy": [
+    { slug: "five-kingdom-classification", reason: "Use diagnostic cell and nutrition characters after learning what a taxonomic category means." },
+    { slug: "plant-kingdom", reason: "Apply the hierarchy to plant groups and separate their structural and life-cycle traits." },
+    { slug: "biodiversity-and-conservation", reason: "Distinguish species counts from within-species variation when interpreting biodiversity." },
+  ],
+  "protein-structure-and-peptide-bonds": [
+    { slug: "enzymes-and-enzyme-action", reason: "Connect protein folding with catalytic activity without confusing structure with reaction rate." },
+    { slug: "dna-rna-replication-transcription-translation", reason: "Study how a polypeptide sequence is assembled from genetic information." },
+    { slug: "cell-theory-and-cell-organelles", reason: "Locate protein synthesis and processing within the cell's compartments." },
+  ],
+  "decomposition-and-mineralisation": [
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Separate material recycling from the one-way energy account of an ecosystem." },
+    { slug: "microbes-in-human-welfare", reason: "Compare oxygen-dependent breakdown in litter with microbial activity in treatment systems." },
+    { slug: "organisms-and-populations", reason: "Review environmental factors before attributing a decomposition result to one condition." },
+  ],
+  "animal-kingdom": [
+    { slug: "five-kingdom-classification", reason: "Place Animalia within the broader five-kingdom framework before comparing phyla." },
+    { slug: "structural-organisation-in-animals", reason: "Move from phylum-level body plans to the tissues and organs that divide work within an animal." },
+    { slug: "locomotion-and-movement", reason: "Connect chordate and animal-body organisation with a focused mechanism for skeletal movement." },
+  ],
+  "structural-organisation-in-animals": [
+    { slug: "animal-kingdom", reason: "Use the phylum overview to place tissue-level and organ-system-level organisation in a broader animal comparison." },
+    { slug: "cell-theory-and-cell-organelles", reason: "Revisit the boundary between an individual cell and a tissue built from many cells." },
+    { slug: "locomotion-and-movement", reason: "Apply muscle-tissue classification to the sliding-filament mechanism and joint movement." },
+  ],
+  "biotechnology-principles-and-processes": [
+    { slug: "molecular-basis-of-inheritance", reason: "Review DNA structure and replication before tracing a recombinant construct." },
+    { slug: "molecular-tools-and-dna-analysis", reason: "Match PCR and gel electrophoresis to the individual analysis tasks they perform." },
+    { slug: "recombinant-dna-technology", reason: "Follow the concept route through a focused workflow and selection logic." },
+    { slug: "biotechnology-applications", reason: "Separate the engineering method from a particular application and its evaluation." },
+  ],
 "enzymes-and-enzyme-action": [{"slug":"molecular-tools-and-dna-analysis","reason":"Apply catalytic specificity to enzymes used in DNA workflows."},{"slug":"plant-respiration","reason":"Place catalysed reactions within energy-releasing pathways."},{"slug":"digestion-and-absorption","reason":"Compare reaction conditions in a physiological setting."}],
 "plant-growth-and-development": [{"slug":"anatomy-of-flowering-plants","reason":"Identify the meristems and tissues whose activity underlies growth."},{"slug":"photosynthesis-in-higher-plants","reason":"Connect resource supply with the limits on sustained growth."},{"slug":"sexual-reproduction-in-flowering-plants","reason":"Follow development into reproductive structures and seeds."}],
 "locomotion-and-movement": [{"slug":"neuron-nerve-impulse-synapse","reason":"Review how a neural signal reaches the neuromuscular junction."},{"slug":"blood-and-circulation","reason":"Contrast cardiac muscle with skeletal muscle without treating striation as voluntary control."},{"slug":"cell-theory-and-cell-organelles","reason":"Locate the membrane, cytoplasm and specialised calcium-storage compartment."}],

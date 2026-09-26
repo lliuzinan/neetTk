@@ -418,5 +418,38 @@
     "ncertRef": "NCERT Biology Class 11, Chapter 17",
     "questionCount": 0,
     "sortOrder": 40
-  }
+  },
+  {
+    "id": "animal-kingdom",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Animal kingdom",
+    "slug": "animal-kingdom",
+    "ncertRef": "NCERT Biology Class 11, Chapter 4",
+    "questionCount": 0,
+    "sortOrder": 41
+  },
+  {
+    "id": "structural-organisation-in-animals",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Structural organisation in animals",
+    "slug": "structural-organisation-in-animals",
+    "ncertRef": "NCERT Biology Class 11, Chapter 7",
+    "questionCount": 0,
+    "sortOrder": 42
+  },
+  {
+    "id": "biotechnology-principles-and-processes",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "Biotechnology: principles and processes",
+    "slug": "biotechnology-principles-and-processes",
+    "ncertRef": "NCERT Biology Class 12, Chapter 9",
+    "questionCount": 0,
+    "sortOrder": 43
+  },
+  { "id": "living-world-taxonomy-and-hierarchy", "exam": "NEET-UG", "subject": "Biology", "name": "Living world: taxonomy and hierarchy", "slug": "living-world-taxonomy-and-hierarchy", "ncertRef": "NCERT Biology Class 11, Chapter 1", "questionCount": 0, "sortOrder": 44 },
+  { "id": "protein-structure-and-peptide-bonds", "exam": "NEET-UG", "subject": "Biology", "name": "Protein structure and peptide bonds", "slug": "protein-structure-and-peptide-bonds", "ncertRef": "NCERT Biology Class 11, Chapter 9", "questionCount": 0, "sortOrder": 45 },
+  { "id": "decomposition-and-mineralisation", "exam": "NEET-UG", "subject": "Biology", "name": "Decomposition and mineralisation", "slug": "decomposition-and-mineralisation", "ncertRef": "NCERT Biology Class 12, Chapter 12", "questionCount": 0, "sortOrder": 46 }
 ]
