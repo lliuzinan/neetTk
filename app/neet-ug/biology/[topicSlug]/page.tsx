@@ -13,7 +13,10 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props { params: Promise<{ topicSlug: string }>; }
 
-const articleIllustrations: Record<string, { src: string; alt: string; caption: string }> = {
+const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "linkage-and-recombination-frequency": { src: "/images/biology/linkage-and-recombination-frequency-v1.webp", alt: "Four testcross bars show parental AB and ab at 42 percent each and recombinant Ab and aB at 8 percent each.", caption: "Invented AB/ab x ab/ab testcross data: the two recombinant classes together account for 16% of offspring. The bars describe recovered combinations, not the number of crossing-over events." },
+  "sex-determination-systems": { src: "/images/biology/sex-determination-systems-v1.webp", alt: "The XY panel pairs X-bearing eggs with X- or Y-bearing sperm; the ZW panel pairs Z- or W-bearing eggs with Z-bearing sperm.", caption: "In the conventional XY model, sperm provide two sex-chromosome classes; in the ZW model, eggs do. Only sex-chromosome contributions are shown, not complete gamete genomes." },
+  "genetic-code-and-reading-frames": { src: "/images/biology/genetic-code-and-reading-frames-v1.webp", width: 1600, height: 640, alt: "An invented RNA sequence grouped as AUG GCU UAC GGA UAA is regrouped as AUG CGC UUA CGG AUA plus a single A after C is inserted after AUG.", caption: "Adding one base after the stated start changes all later triplet boundaries in this fragment. The trailing single base is incomplete; the altered fragment contains no complete in-frame stop codon." },
   "living-world-taxonomy-and-hierarchy": { src: "/images/biology/living-world-taxonomy-and-hierarchy-v1.webp", alt: "One family contains two genera; genus A contains species A1 and A2 while genus B contains species B1.", caption: "A symbolic hierarchy with three species and two genera in one family. The dots represent individuals; the enclosing boundaries represent classification, not evolutionary progress." },
   "protein-structure-and-peptide-bonds": { src: "/images/biology/protein-structure-and-peptide-bonds-v1.webp", alt: "One continuous chain folds on the left; two distinct folded chains form a schematic subunit assembly on the right.", caption: "Folding within one backbone differs from association between separate polypeptides. This conceptual ribbon sketch is not an atomic model; colours distinguish the two chains, not amino-acid types." },
   "decomposition-and-mineralisation": { src: "/images/biology/decomposition-and-mineralisation-v1.webp", alt: "Separate panels contrast breaking a leaf into organic fragments with releasing inorganic nutrients from organic material.", caption: "Fragmentation changes particle size; mineralisation releases inorganic nutrients. The coloured symbols are schematic nutrient markers. These panels compare processes, not compulsory consecutive stages." },
@@ -422,7 +425,7 @@ export default async function TopicPage({ params }: Props) {
         {sections.slice(0, 2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
         {articleIllustration && (
           <figure className="articleIllustration">
-            <img src={articleIllustration.src} alt={articleIllustration.alt} width={1600} height={1000} />
+            <img src={articleIllustration.src} alt={articleIllustration.alt} width={articleIllustration.width ?? 1600} height={articleIllustration.height ?? 1000} />
             <figcaption>{articleIllustration.caption}</figcaption>
           </figure>
         )}

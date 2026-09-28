@@ -1,6 +1,21 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "linkage-and-recombination-frequency": [
+    { slug: "chromosomal-basis-of-inheritance", reason: "Locate the homologues and non-sister chromatids behind the testcross counts." },
+    { slug: "mendelian-inheritance", reason: "Revisit gamete formation and why the double-recessive tester makes contributions readable." },
+    { slug: "mitosis-and-meiosis", reason: "Place crossing over and chromosome separation at their distinct meiotic stages." }
+  ],
+  "sex-determination-systems": [
+    { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Apply the chromosome routes to a separate task: tracking a trait through a family." },
+    { slug: "human-reproduction", reason: "Connect the usual human chromosome model with the formation of gametes." },
+    { slug: "chromosomal-basis-of-inheritance", reason: "Review how homologous chromosomes separate before reasoning about gamete classes." }
+  ],
+  "genetic-code-and-reading-frames": [
+    { slug: "dna-rna-replication-transcription-translation", reason: "Recover the transcription context before converting template DNA into an RNA sequence." },
+    { slug: "mutation-and-gene-expression", reason: "Place sequence edits alongside other changes that affect gene expression." },
+    { slug: "protein-structure-and-peptide-bonds", reason: "Continue from residue counting to backbone bonds, folding and subunit organisation." }
+  ],
   "living-world-taxonomy-and-hierarchy": [
     { slug: "five-kingdom-classification", reason: "Use diagnostic cell and nutrition characters after learning what a taxonomic category means." },
     { slug: "plant-kingdom", reason: "Apply the hierarchy to plant groups and separate their structural and life-cycle traits." },
@@ -65,11 +80,13 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Apply inheritance rules when the evidence is a family tree." },
   ],
   "chromosomal-basis-of-inheritance": [
+    { slug: "linkage-and-recombination-frequency", reason: "Turn the chromosome arrangement into a numerical testcross analysis." },
     { slug: "mendelian-inheritance", reason: "Revisit the probability rules before explaining their chromosome basis." },
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Distinguish autosomal and sex-linked patterns in families." },
     { slug: "mitosis-and-meiosis", reason: "Locate the cell divisions that separate homologues and chromatids." },
   ],
   "pedigree-analysis-and-inheritance-patterns": [
+    { slug: "sex-determination-systems", reason: "Check which parent supplies alternative sex chromosomes before assigning a transmission route." },
     { slug: "mendelian-inheritance", reason: "Use allele notation to test possible parental genotypes." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Explain why sex chromosomes change transmission patterns." },
   ],
@@ -114,6 +131,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "immunity-pathogens-vaccines", reason: "Separate infection, transmission and immune protection." },
   ],
   "molecular-basis-of-inheritance": [
+    { slug: "genetic-code-and-reading-frames", reason: "Practise decoding a short RNA sequence and tracing changed codon boundaries." },
     { slug: "dna-rna-replication-transcription-translation", reason: "Continue from DNA evidence and copying to transcription and translation." },
     { slug: "mutation-and-gene-expression", reason: "Follow what can happen when a DNA sequence or its regulation changes." },
     { slug: "molecular-tools-and-dna-analysis", reason: "Apply strand complementarity to laboratory amplification and analysis." },

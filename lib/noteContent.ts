@@ -23,6 +23,9 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "linkage-and-recombination-frequency",
+  "sex-determination-systems",
+  "genetic-code-and-reading-frames",
   "living-world-taxonomy-and-hierarchy",
   "protein-structure-and-peptide-bonds",
   "decomposition-and-mineralisation",
@@ -67,6 +70,115 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "linkage-and-recombination-frequency": [
+    { heading: "Four offspring classes can reveal an arrangement", paragraphs: [
+      "Two individuals can both be written AaBb and still carry different combinations along their homologous chromosomes. In one arrangement, A shares a homologue with B and a shares its partner with b; the alternative pairs A with b and a with B. The ordinary genotype tells you which alleles are present, but leaves this arrangement, called phase, unstated. That missing detail decides which gametes count as recombinant.",
+      "This guide starts with an invented testcross record and works backwards to the gametes that produced it. The aim is to calculate a recombination frequency, defend the choice of numerator and recognise what the result cannot establish. Before using a ratio, write the chromosome arrangement with a slash separating the homologues: AB/ab or Ab/aB."
+    ] },
+    { heading: "Why a double-recessive tester makes gametes readable", paragraphs: [
+      "Cross a double heterozygote with an aabb individual. The tester supplies only ab gametes. Under the stated model of complete dominance at both loci and distinguishable phenotypes, each offspring class therefore identifies the gamete contributed by the heterozygote. An AB gamete makes AaBb; Ab makes Aabb; aB makes aaBb; ab makes aabb.",
+      "Suppose an AB/ab parent produces the following 500 offspring: 210 AaBb, 210 aabb, 40 Aabb and 40 aaBb. The first two classes preserve AB and ab. The last two contain Ab and aB, the combinations absent from the stated parental homologues. These are the recombinant classes. The illustration converts these counts into percentages so that both the classification and denominator remain visible.",
+      "This reading assumes that the classes survive and are detected comparably. If one genotype is less viable, or a phenotype is misclassified, offspring counts can be a biased representation of gametes. An unexplained unequal count is a reason to inspect the experiment, not a licence to treat every departure from an expected ratio as linkage."
+    ] },
+    { heading: "Calculate the fraction before interpreting its size", paragraphs: [
+      "Add the two recombinant classes: 40 + 40 = 80. Divide by all offspring, not by the parental classes: 80/500 = 0.16. The recombination frequency is therefore 16%. Each recombinant class contributes 8%; neither class alone represents the whole recombinant fraction.",
+      "A result of 8% misses one recombinant class. A result of about 19% comes from dividing 80 by the 420 parental offspring. Both calculations use numbers from the record, but answer the wrong counting question. The denominator must include every scored outcome because the measure asks what proportion of the total is recombinant.",
+      "The reciprocal calculation is a useful check. Parental offspring total 420/500 = 84%; 84% plus 16% equals 100%. If the totals fail that check, a class was omitted, counted twice or assigned to the wrong category. Counts need not be identical within each pair in a real finite sample, even when the model predicts equal probabilities."
+    ] },
+    { heading: "Change the phase and the labels change with it", paragraphs: [
+      "For an Ab/aB parent, the parental combinations are Ab and aB. Now AB and ab are recombinant. Capital letters do not make a gamete parental, and recessive alleles do not make it recombinant. The criterion is whether the combination matches one of the original homologues.",
+      "If this second arrangement also has a recombination fraction of 0.16, a simple symmetric model predicts Ab and aB at 0.42 each, and AB and ab at 0.08 each. The same four possible gametes occur, but their expected frequencies exchange places. The overall AaBb genotype and total recombinant fraction have stayed the same.",
+      "When phase is not supplied, the two abundant reciprocal classes can suggest it in a suitable testcross. State the supporting assumptions before inferring the arrangement. A small or strongly distorted sample may not justify declaring the largest two counts to be the parental pair without further evidence."
+    ] },
+    { heading: "Recombination frequency is not a tally of meiotic exchanges", paragraphs: [
+      "Crossing over exchanges corresponding segments between non-sister chromatids of paired homologues. Recombination frequency is measured from the resulting allele combinations at the loci being followed. One is a cellular event; the other is an observed proportion. They are related, but not numerically interchangeable.",
+      "For example, one crossover between two loci involving two of the four chromatids produces two recombinant chromatids and leaves two parental chromatids in that meiotic event. It would be wrong to describe every product as recombinant merely because the cell experienced a crossover. A testcross usually pools products from many meioses.",
+      "Multiple exchanges can also leave the outer marker combination looking parental. Two-point offspring scoring does not reveal every exchange within the interval. For this reason, recombination is useful for relative genetic mapping, but an observed percentage is not a direct physical measurement of the DNA between two genes. No conversion to base pairs follows from these counts alone."
+    ] },
+    { heading: "What a result near one half can and cannot show", paragraphs: [
+      "Genes on different chromosome pairs are expected to assort independently, giving a recombinant fraction of one half in the usual two-locus model. Widely separated loci on the same chromosome can also behave as effectively unlinked in this test. A value near 50% therefore does not prove that the genes occupy different chromosomes.",
+      "For relatively short intervals, 1% recombination is used as approximately one map unit, or one centimorgan. Our 16% exercise can support an approximate two-point genetic distance under the mapping assumptions. It does not establish a distance of sixteen nucleotides or an exact number of crossing-over events.",
+      "Expected two-point recombination fractions range up to 50%. Sampling fluctuation can put a raw estimate slightly above one half; a large excess should prompt a check of phase, class assignment and experimental assumptions. It should not be interpreted as evidence that greater than half is the usual expectation for increasingly distant loci."
+    ] },
+    { heading: "Rebuild the record from a blank page", paragraphs: [
+      "Write AB/ab x ab/ab, then make four rows headed AB, ab, Ab and aB. Without looking back, add the offspring genotypes, mark parental or recombinant and recover the 16% calculation. Change only the heterozygote to Ab/aB and repeat the labels. Your percentage should remain 16% only if the corresponding class frequencies are also rearranged as described above.",
+      "Finish with a sentence that the data support and a sentence they do not support. 'Recombinant offspring constitute 16% of this scored sample' is supported. 'Sixteen percent of meiotic cells had exactly one crossover' is not. That final distinction is the point of the exercise: a correct arithmetic result still needs a correctly limited biological interpretation.",
+      "NCERT anchor: Principles of Inheritance and Variation, subsection Linkage and Recombination. Use the chromosome-basis guide below for the meiotic mechanism and the Mendelian guide for why a tester reveals gamete contributions."
+    ] }
+  ],
+  "sex-determination-systems": [
+    { heading: "Find the parent that makes two chromosome classes", paragraphs: [
+      "Memorising that males are XY works for one model, but fails as soon as a bird or an XO insect enters the comparison. A more reliable starting point is to list the sex-chromosome contribution of each parent's gametes. The parent producing two different classes is heterogametic; the parent producing one class is homogametic.",
+      "These words refer to sex-chromosome classes, not to all genetic variation in gametes. Eggs carrying X chromosomes can still differ at many other loci. Likewise, heterogametic does not mean heterozygous at every gene. Keep the scope of the description narrow before drawing the possible fertilisation outcomes."
+    ] },
+    { heading: "XY and ZW reverse which parent supplies the alternative", paragraphs: [
+      "In the usual human XX/XY chromosome model, eggs contribute an X chromosome, while sperm contribute either X or Y. Combining the contributions gives XX or XY. The sperm-producing parent is heterogametic in this model because there are two sex-chromosome classes of sperm.",
+      "In the usual bird ZZ/ZW model, the male is ZZ and produces Z-bearing sperm; the female is ZW and produces Z-bearing or W-bearing eggs. Fertilisation produces ZZ or ZW. Here the egg-producing parent is heterogametic. The illustration places these models side by side so that the changing source of the alternatives is easy to check.",
+      "Do not obtain the bird model simply by relabelling X as Z and Y as W while leaving the parental roles unchanged. The key difference is which parent has unlike sex chromosomes. The symbols identify a model; the gamete list explains its inheritance."
+    ] },
+    { heading: "The O in XO is a missing chromosome, not a new one", paragraphs: [
+      "In the XX/XO system described for certain insects, females are XX and males have one X without a second sex chromosome. O, sometimes written 0, denotes that absence. A male can produce a gamete carrying X or a gamete without a sex chromosome; eggs carry X. The resulting combinations are XX and XO.",
+      "A gamete without X is not an empty gamete. It still contains its autosomal contribution. To make the arithmetic concrete, imagine a species with ten autosomes and XX in a female somatic cell, and ten autosomes plus X in a male. Eggs contain five autosomes plus X. The two sperm classes contain five autosomes plus X, or five autosomes without X.",
+      "Fertilisation then restores ten autosomes in either case, with either XX or one X. The invented counts demonstrate why the two sexes can differ by one chromosome without one sex lacking an entire genome set. They are an accounting exercise, not chromosome numbers assigned to a named insect."
+    ] },
+    { heading: "A one-to-one expectation does not schedule individual offspring", paragraphs: [
+      "If the two relevant gamete classes contribute equally and have equal chances of successful fertilisation and survival in the simple model, each chromosome outcome has probability one half. This is a probabilistic expectation across many outcomes, not an instruction that consecutive offspring must alternate.",
+      "For an invented sequence of three independent fertilisations under those assumptions, the probability of the same specified outcome on all three is (1/2) x (1/2) x (1/2) = 1/8. Seeing two identical outcomes beforehand does not make the opposite outcome certain next time. The third probability remains one half within this model.",
+      "Actual population ratios can be influenced by biological and sampling factors beyond this classroom calculation. The model describes chromosome transmission; it does not give anyone control over a child's sex or justify blame directed at either parent. It is also not a complete account of human sex development or its variations."
+    ] },
+    { heading: "Honeybees require a ploidy question instead", paragraphs: [
+      "The NCERT honeybee example introduces haplodiploidy. Fertilised eggs develop into diploid females, whereas unfertilised eggs develop into haploid males. The immediate distinction is the number of chromosome sets and whether fertilisation occurred, rather than a switch between X-bearing and Y-bearing gametes.",
+      "In the standard honeybee example, females have 32 chromosomes and males 16. A female egg contributes 16; addition of a sperm contribution restores 32. An unfertilised egg retains a single set and can develop as a male. Do not interpret that male's sixteen chromosomes as half of each chromosome: each is a chromosome, and together they form one set.",
+      "This model also exposes a shortcut that fails: 'every multicellular animal is diploid throughout its adult body'. Haploid males are a counterexample. However, it does not follow that all insects use haplodiploidy; the XO model above already provides a different system. Always attach the mechanism to the organism or group specified.",
+      "Queens and workers are both female and diploid. Their caste difference is not explained by calling one fertilised and the other unfertilised. This guide stops at the chromosome-set comparison; it does not replace the separate developmental explanation of caste."
+    ] },
+    { heading: "Sex determination and sex-linked inheritance ask different questions", paragraphs: [
+      "A sex-determination model describes how a chromosome or ploidy outcome relates to sex in the stated organism. Sex-linked inheritance tracks an allele carried on a sex chromosome. Establishing an XX/XY system does not tell you whether a particular trait is dominant, recessive or even sex-linked.",
+      "For instance, following a father's X to a daughter in the ordinary XX/XY model is a transmission statement. Deciding whether an allele on that X produces a phenotype needs further information about the allele and the other relevant copy. A diagram of chromosome contributions is not, by itself, a pedigree diagnosis.",
+      "Keep a two-line annotation beside a problem: first write the organism's sex-chromosome system; then, only if required, place the trait allele on the stated chromosome. Doing these in the opposite order invites the assumption that every trait more common in one sex must be X-linked. Sex-biased expression alone does not establish gene location."
+    ] },
+    { heading: "Identify an unfamiliar system from its gametes", paragraphs: [
+      "Try an original symbolic exercise. Parent P produces only M-bearing gametes. Parent Q produces M-bearing and N-bearing gametes. Without assigning male or female yet, identify the heterogametic parent and write the possible combinations. Q is heterogametic; the combinations are MM and MN. Only a statement about the organism can tell you which corresponds to which sex.",
+      "Now substitute Z for M and W for N and apply the bird model. Q is the female. Finally return to XX/XO and explain why O cannot be handled as a physical chromosome labelled N. This sequence checks whether you can use the rule after the familiar symbols are removed.",
+      "NCERT anchor: Principles of Inheritance and Variation, Sex Determination and Sex Determination in Humans. Use the direct chapter reference below, then compare chromosome transmission with the linked pedigree guide. The examples here are educational models, not personal reproductive advice."
+    ] }
+  ],
+  "genetic-code-and-reading-frames": [
+    { heading: "A codon lookup is only as good as the grouping", paragraphs: [
+      "An RNA sequence can contain familiar triplets and still be translated incorrectly on paper. The trouble often begins before the lookup: the strand is read backwards, the starting position is assumed, or a stop triplet is counted as an amino acid. Establish direction and reading frame before opening a codon table.",
+      "Our worked sequence is deliberately short and invented: 5'-AUG GCU UAC GGA UAA-3'. Assume that the first AUG is the initiation codon for this exercise. That condition matters: an isolated AUG appearing somewhere in an RNA molecule is not enough to prove that translation starts there in its biological context."
+    ] },
+    { heading: "Follow fifteen bases into four amino-acid residues", paragraphs: [
+      "Read the supplied mRNA from its 5' end towards its 3' end in the stated frame. AUG specifies methionine, GCU alanine, UAC tyrosine and GGA glycine. UAA is a termination signal in the standard genetic code. The initial translated sequence is therefore Met-Ala-Tyr-Gly: four residues, not five.",
+      "The fifteen nucleotides include a three-nucleotide stop codon. Subtract that codon before turning the remaining twelve bases into four residues. A chain of four residues has three peptide bonds. This checks the route from nucleotides to codons to residues to bonds without treating any of those counts as interchangeable.",
+      "The illustration compares this sequence with a one-base insertion after AUG. Its role is to show the movement of triplet boundaries. The spaces are marks added by the reader; the RNA itself does not contain blank separators. Keep the same initiation point while regrouping the altered sequence."
+    ] },
+    { heading: "Degeneracy allows different spellings of one amino acid", paragraphs: [
+      "There are 64 possible triplets made from four RNA bases. In the standard code, 61 specify amino acids and three specify termination. Several amino acids have more than one codon. This is degeneracy: different codons can converge on the same amino acid.",
+      "Unambiguous has a different meaning. A particular sense codon specifies one amino acid in the stated code; it is not a free choice among all the amino acids that have multiple codons. GCU and GCC both specify alanine, but GCU does not randomly alternate between alanine and glycine.",
+      "Consequently, a protein sequence usually cannot be converted back into one uniquely determined mRNA sequence. The alanine position in our example could have more than one codon. Finding the protein sequence constrains its coding sequence but normally leaves alternatives. The code is nearly universal, with known exceptions; use the standard code unless the exercise supplies a different context."
+    ] },
+    { heading: "One inserted base moves the boundaries downstream", paragraphs: [
+      "Insert a C immediately after AUG in the original sequence. Regrouping from the unchanged start gives 5'-AUG CGC UUA CGG AUA A-3'. The first codon remains AUG, but the following codons are now CGC, UUA, CGG and AUA, followed by one leftover base in this short fragment. The downstream grouping has shifted.",
+      "There is no complete in-frame stop codon in the altered fragment shown. You cannot infer the final protein length from it; more downstream sequence would be needed. In particular, the old UAA cannot still be counted as a stop simply because those letters existed consecutively before the insertion. Termination requires a stop codon in the frame being read.",
+      "Now make a different change: insert the three bases CCG after AUG. The sequence reads AUG CCG GCU UAC GGA UAA. It adds a proline codon at that boundary while preserving the later triplet grouping. The downstream frame is retained, but the peptide is still changed. 'In frame' does not mean 'no effect on protein function'."
+    ] },
+    { heading: "A substitution changes a letter without moving the dividers", paragraphs: [
+      "Change GCU to GCC in the original sequence. Both specify alanine, so the encoded amino-acid sequence is unchanged in this example. This is a synonymous substitution at that position, not a frameshift: the sequence length and downstream triplet boundaries have not moved.",
+      "A different single-base substitution can change an amino acid or introduce a stop. If UAC becomes UAA, translation terminates after Met-Ala in the stated frame. That change reduces the predicted initial product to two residues, although no nucleotide was inserted or deleted.",
+      "These examples separate the type of sequence edit from its consequence. An insertion of one base shifts the frame here; a substitution can be synonymous, amino-acid changing or stop creating. Do not classify severity from the number of changed bases alone. Function requires information beyond the short sequence calculations supplied."
+    ] },
+    { heading: "Codon, anticodon and DNA triplet need their own directions", paragraphs: [
+      "A codon table is normally read using mRNA written 5' to 3'. If a DNA coding strand is supplied in that direction, the corresponding RNA sequence matches it with U in place of T. If the template strand is supplied, construct the complementary, antiparallel RNA first. Merely replacing every T with U in a template strand gives the wrong result.",
+      "For the RNA codon 5'-GCU-3', a strictly complementary anticodon aligned beneath it is 3'-CGA-5'. Written in the usual 5'-to-3' direction, that same anticodon is 5'-AGC-3'. The two written strings describe the same pairing when their directions are included. Omitting the end labels can make a correct complement appear contradictory.",
+      "This is a base-pairing exercise, not a claim that every codon requires a separate tRNA species; wobble pairing adds flexibility. Stop codons are recognised by release factors in standard translation rather than by an amino-acid-carrying stop tRNA. A termination signal therefore contributes neither a fifth residue nor a hypothetical 'stop amino acid'."
+    ] },
+    { heading: "Audit a decoding answer in three passes", paragraphs: [
+      "First check the input: RNA or DNA, coding or template, end labels and the stated start. Second mark triplets from that start and translate only complete in-frame codons up to termination. Third check the output count, distinguishing residues from peptide bonds and noting whether the provided fragment contains a stop.",
+      "For recall, take the original fifteen bases and independently perform three edits: GCU to GCC, UAC to UAA, and insertion of C after AUG. Predict respectively unchanged peptide sequence, earlier termination and changed downstream grouping. Explain why the third fragment leaves final length unresolved. That explanation matters more than memorising the three mutation labels.",
+      "NCERT anchor: Molecular Basis of Inheritance, Reprint 2026-27, sections 5.6 through 5.7, especially Mutations and Genetic Code and tRNA as the adapter. The linked DNA/RNA overview supplies the transcription context; the protein guide explains the separate question of structure after synthesis."
+    ] }
+  ],
   "living-world-taxonomy-and-hierarchy": [
     { heading: "A specimen label contains several different claims", paragraphs: [
       "Imagine receiving three specimen records with a common name, a scientific name and a family on each. Before comparing them, ask which field identifies the organism and which places it within a larger group. A familiar name is not enough: different regions can use different common names, while similar-looking organisms need not belong to the same species. Taxonomy makes these comparisons explicit.",
@@ -1908,6 +2020,18 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "linkage-and-recombination-frequency": [
+    { label: "NCERT: Principles of Inheritance and Variation, Linkage and Recombination", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "OpenStax Biology 2e: Chromosomal Theory and Genetic Linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" }
+  ],
+  "sex-determination-systems": [
+    { label: "NCERT: Principles of Inheritance and Variation, Sex Determination", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "OpenStax Biology 2e: Characteristics and Traits, sex chromosomes", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" }
+  ],
+  "genetic-code-and-reading-frames": [
+    { label: "NCERT Molecular Basis of Inheritance, sections 5.6-5.7 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "OpenStax Biology 2e: The Genetic Code", href: "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code" }
+  ],
   "living-world-taxonomy-and-hierarchy": [
     { label: "NCERT Class 11: The Living World, sections 1.1-1.2 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo101.pdf" },
     { label: "OpenStax Biology 2e: Organizing Life on Earth", href: "https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth" },
@@ -2077,6 +2201,24 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "linkage-and-recombination-frequency": {
+    heading: "The same gamete changes category when phase changes",
+    intro: "Use the original homologues as the reference. These probabilities assume r = 0.16, reciprocal classes of equal probability and unbiased recovery.",
+    columns: ["Gamete from heterozygote", "AB/ab parent: class and probability", "Ab/aB parent: class and probability"],
+    rows: [["AB", "Parental, 0.42", "Recombinant, 0.08"], ["ab", "Parental, 0.42", "Recombinant, 0.08"], ["Ab", "Recombinant, 0.08", "Parental, 0.42"], ["aB", "Recombinant, 0.08", "Parental, 0.42"]]
+  },
+  "sex-determination-systems": {
+    heading: "Identify the system through the gamete contribution",
+    intro: "These are the conventional NCERT models. Sex-chromosome symbols do not describe the entire chromosome complement.",
+    columns: ["System and example", "Egg contribution", "Sperm contribution", "Decisive distinction"],
+    rows: [["XX/XY, usual human model", "X", "X or Y", "Male heterogamety"], ["XX/XO, certain insects", "X", "X or no sex chromosome", "O denotes absence, not a chromosome"], ["ZZ/ZW, birds", "Z or W", "Z", "Female heterogamety"], ["Haplodiploidy, honeybee model", "One set: 16 chromosomes", "One set when fertilisation occurs", "Fertilised: diploid female; unfertilised: haploid male"]]
+  },
+  "genetic-code-and-reading-frames": {
+    heading: "Four descriptions of one alanine-coding position",
+    intro: "End labels are essential. The anticodon shown is the strictly complementary pairing example, without extending the exercise into wobble rules.",
+    columns: ["Representation", "Sequence with direction", "Operation before a codon-table lookup"],
+    rows: [["mRNA codon", "5'-GCU-3'", "Read directly: alanine"], ["DNA coding triplet", "5'-GCT-3'", "Replace T with U"], ["DNA template triplet", "3'-CGA-5'", "Build complementary RNA 5' to 3'"], ["Aligned tRNA anticodon", "3'-CGA-5' (RNA)", "Recover its paired mRNA codon; do not read anticodon as codon"]]
+  },
   "living-world-taxonomy-and-hierarchy": {
     heading: "What does a shared label permit you to infer?",
     intro: "Apply these statements within the same classification framework; the direction of implication matters.",
@@ -2393,6 +2535,9 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "linkage-and-recombination-frequency": { heading: "Name the reference before calling a combination new", paragraphs: ["A recombinant label is relative to the starting arrangement. Write the parental phase above the four offspring classes before adding any counts. This makes the classification auditable and prevents uppercase letters or a familiar ratio from silently choosing the numerator."] },
+  "sex-determination-systems": { heading: "Heterogamety is a contribution rule", paragraphs: ["When the symbols change from XY to ZW, return to the two gamete lists. The comparison concerns which parent contributes the alternative sex chromosome. It says nothing about one parent's importance, responsibility or ability to choose the outcome."] },
+  "genetic-code-and-reading-frames": { heading: "Keep the undecoded remainder visible", paragraphs: ["The final single A in our frameshift fragment is not a complete codon. Leave it marked as incomplete instead of borrowing letters or assuming a stop. Showing where the evidence ends is part of a correct decoding answer."] },
   "living-world-taxonomy-and-hierarchy": { heading: "Try the inference backwards", paragraphs: ["When a classification statement seems obvious, reverse it. Shared genus implies shared family, but shared family does not imply shared genus. Finding where the reversal fails is a quick way to test whether you understand the nesting rather than only remember the rank order."] },
   "protein-structure-and-peptide-bonds": { heading: "Keep a separate count for each chain", paragraphs: ["Before counting peptide bonds in an assembly, mark every independent backbone. Subtract one connection for each ordinary linear chain, not just one for the whole protein complex. Folding and subunit association do not erase the separate chain ends."] },
   "decomposition-and-mineralisation": { heading: "Write the measurement before the explanation", paragraphs: ["A smaller recovered mass is an observation. Mineralisation is one possible process requiring chemical evidence. Keeping those statements separate lets you calculate confidently while remaining honest about what the experiment has not measured."] },

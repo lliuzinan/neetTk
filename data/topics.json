@@ -451,5 +451,8 @@
   },
   { "id": "living-world-taxonomy-and-hierarchy", "exam": "NEET-UG", "subject": "Biology", "name": "Living world: taxonomy and hierarchy", "slug": "living-world-taxonomy-and-hierarchy", "ncertRef": "NCERT Biology Class 11, Chapter 1", "questionCount": 0, "sortOrder": 44 },
   { "id": "protein-structure-and-peptide-bonds", "exam": "NEET-UG", "subject": "Biology", "name": "Protein structure and peptide bonds", "slug": "protein-structure-and-peptide-bonds", "ncertRef": "NCERT Biology Class 11, Chapter 9", "questionCount": 0, "sortOrder": 45 },
-  { "id": "decomposition-and-mineralisation", "exam": "NEET-UG", "subject": "Biology", "name": "Decomposition and mineralisation", "slug": "decomposition-and-mineralisation", "ncertRef": "NCERT Biology Class 12, Chapter 12", "questionCount": 0, "sortOrder": 46 }
+  { "id": "decomposition-and-mineralisation", "exam": "NEET-UG", "subject": "Biology", "name": "Decomposition and mineralisation", "slug": "decomposition-and-mineralisation", "ncertRef": "NCERT Biology Class 12, Chapter 12", "questionCount": 0, "sortOrder": 46 },
+  { "id": "linkage-and-recombination-frequency", "exam": "NEET-UG", "subject": "Biology", "name": "Linkage and recombination frequency", "slug": "linkage-and-recombination-frequency", "ncertRef": "NCERT Biology Class 12, Chapter 4", "questionCount": 0, "sortOrder": 47 },
+  { "id": "sex-determination-systems", "exam": "NEET-UG", "subject": "Biology", "name": "Sex determination systems", "slug": "sex-determination-systems", "ncertRef": "NCERT Biology Class 12, Chapter 4", "questionCount": 0, "sortOrder": 48 },
+  { "id": "genetic-code-and-reading-frames", "exam": "NEET-UG", "subject": "Biology", "name": "Genetic code and reading frames", "slug": "genetic-code-and-reading-frames", "ncertRef": "NCERT Biology Class 12, Chapter 5", "questionCount": 0, "sortOrder": 49 }
 ]

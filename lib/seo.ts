@@ -8,6 +8,9 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "linkage-and-recombination-frequency": { published: "2026-09-28", modified: "2026-09-28" },
+  "sex-determination-systems": { published: "2026-09-28", modified: "2026-09-28" },
+  "genetic-code-and-reading-frames": { published: "2026-09-28", modified: "2026-09-28" },
   "living-world-taxonomy-and-hierarchy": { published: "2026-09-26", modified: "2026-09-26" },
   "protein-structure-and-peptide-bonds": { published: "2026-09-26", modified: "2026-09-26" },
   "decomposition-and-mineralisation": { published: "2026-09-26", modified: "2026-09-26" },
