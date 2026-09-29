@@ -23,6 +23,8 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "carbohydrates-proteins-lipids-nucleic-acids",
+  "basic-genetic-diseases-as-inheritance-examples",
   "linkage-and-recombination-frequency",
   "sex-determination-systems",
   "genetic-code-and-reading-frames",
@@ -70,6 +72,83 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": [
+    { heading: "Biomolecules are easier when you sort by building block", paragraphs: [
+      "The Biomolecules chapter can feel like a crowded catalogue: amino acids, sugars, bases, lipids, proteins, polysaccharides, nucleic acids and enzymes all appear close together. The safer revision route is to ask one question first: is the molecule a small building block, a large biological polymer, or a membrane-associated lipid?",
+      "NCERT separates an acid-soluble pool of smaller compounds from an acid-insoluble fraction that contains the main biological macromolecular material. That separation is not merely a laboratory detail. It gives a useful mental map. Amino acids, sugars, fatty acids, glycerol, nucleotides and nitrogen bases are small units or related small molecules. Proteins, polysaccharides and nucleic acids are the main polymeric macromolecules. Lipids need a special note because they are not true polymers in the same way, yet membrane fragments make them appear with the acid-insoluble fraction.",
+    ] },
+    { heading: "Three polymer routes and one lipid exception", paragraphs: [
+      "For NEET revision, proteins, polysaccharides and nucleic acids should not be memorised as three names in a row. Each has a different kind of building block and a different biological job. Proteins are heteropolymers of amino acids; their sequence and folding make enzymes, receptors, structural proteins and many other functional molecules possible. Polysaccharides are long chains of sugar units; cellulose, starch and glycogen show that similar glucose-based chemistry can support structure or storage. Nucleic acids are polynucleotides; DNA and RNA carry or use genetic information through ordered nucleotide sequences.",
+      "Lipids do not fit that polymer pattern cleanly. Fatty acids, glycerol, phospholipids and related molecules are water-insoluble and strongly associated with membranes. When a cell is disrupted, membrane pieces separate with the acid-insoluble fraction. That is why the exam-room statement 'all macromolecular-fraction molecules are polymers' needs care. Proteins, nucleic acids and polysaccharides are the true polymeric macromolecules in this comparison; lipids are included because of their association with cellular membranes.",
+      "Use the illustration as a route map, not as a chemical-structure chart. It shows which small units lead to which larger learning category and where the lipid exception sits."
+    ] },
+    { heading: "Protein structure: sequence first, shape later", paragraphs: [
+      "Protein questions often become untidy because sequence, folding and subunit assembly are mixed. The primary structure is the amino-acid sequence of one polypeptide chain. Secondary structure describes local folding patterns such as helices and sheets. Tertiary structure is the three-dimensional folding of one chain. Quaternary structure appears when more than one polypeptide subunit works together.",
+      "That order matters for enzymes. An enzyme's active site depends on folding, so a change in tertiary structure can affect activity even when the peptide backbone has not been hydrolysed. Heat denaturation is therefore not the same claim as breaking every peptide bond. If a question asks about catalytic activity, ask whether the active site shape remains suitable for substrate binding.",
+      "A small check: if a protein has one chain of 90 amino acids, it has 89 peptide bonds in that ordinary linear chain. If a functional protein has two separate chains of 90 amino acids each, count each backbone separately: 89 + 89. Subunit assembly does not create one continuous polypeptide unless a covalent connection is stated."
+    ] },
+    { heading: "Carbohydrates and nucleic acids: same idea, different evidence", paragraphs: [
+      "Polysaccharides and nucleic acids are both polymers, but their building blocks and evidence differ. In a polysaccharide, the unit is a sugar residue. Cellulose is a glucose polymer that supports plant cell walls. Starch stores energy in plant tissues, while glycogen is a storage form in animals. The word carbohydrate does not automatically mean quick energy; the role depends on the arrangement and biological context.",
+      "Nucleic acids use nucleotides, each built from a nitrogenous base, sugar and phosphate. DNA and RNA differ in sugar and base composition, but the NEET-level habit is simpler: read them as information polymers. A base sequence can store hereditary information, be copied, transcribed or translated depending on the chapter context.",
+      "A useful boundary check is this: sugar chains usually answer structure or storage questions; nucleotide chains usually answer information questions. Some molecules have additional roles, but that first distinction stops many option-level mix-ups."
+    ] },
+    { heading: "Worked example: classify by unit, polymer and role", paragraphs: [
+      "Imagine a four-row notebook table with these entries: glucose units in cellulose, amino acids in collagen, nucleotides in DNA and fatty acids with glycerol in a triglyceride. The task is not to recite definitions. The task is to decide the category and the reason.",
+      "Cellulose belongs under polysaccharide because sugar units make a long chain and the named role is structural in plant cell walls. Collagen belongs under protein because amino acids form a polypeptide and the named role is structural in animals. DNA belongs under nucleic acid because nucleotides form an information polymer. The triglyceride row should not be forced into the same polymer column. It is a lipid built from glycerol and fatty acids, useful in storage and membranes depending on lipid type, but not a true biological polymer in the same sense as proteins, polysaccharides and nucleic acids.",
+      "This example is deliberately plain. If you can classify a molecule from its building unit and role, most longer Biomolecules statements become shorter."
+    ] },
+    { heading: "Common confusion checks", bullets: [
+      "Lipids in the macromolecular fraction do not prove lipids are true polymers; membrane association explains the separation.",
+      "A protein's biological activity can depend on folding; denaturation is not automatically peptide-bond hydrolysis.",
+      "Carbohydrate is not a synonym for glucose. Polysaccharides can be structural or storage materials.",
+      "A nucleotide is not the same as a nucleoside. The phosphate group is the extra component in a nucleotide.",
+      "Enzymes lower activation-energy barriers and speed reactions, but they do not change the basic identity of substrate and product categories."
+    ] },
+    { heading: "A 12-minute recall routine", paragraphs: [
+      "Draw four columns from memory: small unit, large molecule, NCERT role and common trap. Fill rows for protein, polysaccharide, nucleic acid and lipid. Then close the notebook and explain aloud why lipid is the odd row.",
+      "Finish by writing one sentence for each link: amino acids to proteins, sugars to polysaccharides, nucleotides to nucleic acids, lipids to membranes. If one sentence becomes vague, return to the NCERT subsection rather than adding more examples."
+    ] },
+  ],
+  "basic-genetic-diseases-as-inheritance-examples": [
+    { heading: "Use disorder examples to revise inheritance, not diagnosis", paragraphs: [
+      "NCERT introduces named genetic disorders to show how altered genes or chromosome number can be inherited or detected through family and chromosome patterns. For this revision guide, keep the scope educational: the aim is to identify the inheritance category and the evidence used for classification. It is not a guide for diagnosis, treatment or personal risk assessment.",
+      "The first split is between Mendelian disorders and chromosomal disorders. Mendelian disorders are mainly determined by alteration in a single gene and can be traced through pedigree analysis. Chromosomal disorders involve absence, excess or abnormal arrangement of one or more chromosomes, often visible through karyotype-level reasoning. Mixing those two categories is the biggest avoidable error."
+    ] },
+    { heading: "Autosomal recessive examples need both copies in the model", paragraphs: [
+      "In an autosomal recessive model, the affected phenotype is usually shown when both copies of the gene carry the relevant altered allele. Two unaffected carrier parents can produce unaffected non-carrier, carrier and affected offspring in a Punnett-square model. The familiar 1:2:1 genotype pattern belongs to the stated carrier-cross model, not to every family in the world.",
+      "NCERT uses sickle-cell anaemia, phenylketonuria and thalassaemia as examples within the broader discussion of altered genes. For revision, focus on the inheritance logic and the specific molecular point only where NCERT states it. Sickle-cell anaemia is described as an autosome-linked recessive trait involving the haemoglobin beta chain; NCERT also contrasts it with thalassaemia by noting qualitative versus quantitative globin problems. Phenylketonuria is treated as an autosomal recessive inborn error involving phenylalanine metabolism.",
+      "A safe answer does not turn those facts into personal health advice. It says what kind of inheritance example is being used and what evidence supports the category."
+    ] },
+    { heading: "X-linked recessive examples change the transmission route", paragraphs: [
+      "X-linked recessive inheritance cannot be read like an autosomal recessive cross because males and females do not contribute sex chromosomes in the same way. A father passes his X chromosome to daughters and his Y chromosome to sons. A carrier mother can pass either X chromosome to each child. That route explains why some X-linked recessive traits are more commonly expressed in males.",
+      "Colour blindness and haemophilia are used as sex-linked recessive examples in the NCERT inheritance chapter. The key revision point is not the symptom detail. The key point is chromosome route: the altered allele is linked with the X chromosome, and expression depends on which sex chromosome combination the offspring receives.",
+      "Before choosing an option, write the route. Mother: X with normal allele or X with altered allele. Father: X or Y. Then ask which offspring class can express the recessive allele without a second X carrying a normal copy. This route check prevents the common father-to-son X-linked error."
+    ] },
+    { heading: "Chromosomal disorders are number or arrangement problems", paragraphs: [
+      "Chromosomal disorders sit at a different biological scale. Instead of one gene allele, the issue is an extra, missing or rearranged chromosome segment or chromosome. NCERT highlights aneuploidy as gain or loss of chromosome number following failure of proper segregation, and notes polyploidy as an increase in the whole set of chromosomes, often seen in plants.",
+      "Down syndrome is presented as trisomy of chromosome 21. Turner syndrome is linked with loss of one X chromosome, and Klinefelter syndrome with an XXY karyotype. The revision task is to recognise that these are chromosome-number examples, not simple single-gene recessive crosses.",
+      "That distinction matters in MCQs. A pedigree-style allele cross is useful for a Mendelian example; a karyotype-style count is useful for a chromosomal disorder. If the evidence names 47 chromosomes, trisomy, XO or XXY, start from chromosome number before trying to assign a single-gene genotype."
+    ] },
+    { heading: "Worked example: decide the evidence type first", paragraphs: [
+      "Consider three statements. Statement A says an unaffected couple are both carriers and one child expresses an autosomal recessive trait. Statement B says a carrier mother can transmit an X-linked recessive allele to a son. Statement C says an individual has an extra chromosome 21. These statements do not belong to the same reasoning tool.",
+      "A is a Mendelian autosomal recessive model, so a Punnett square with two carrier genotypes is appropriate. B is an X-linked recessive route, so the useful drawing is a sex-chromosome contribution map. C is a chromosomal-number case, so the useful evidence is a karyotype-style count. The mistake would be to force all three into one generic 'genetic disease' table.",
+      "This is the habit to practise: name the scale first. Gene allele, sex-linked allele or chromosome number. Once the scale is correct, the example becomes much less confusing."
+    ] },
+    { heading: "Comparison table before memorising names", paragraphs: [
+      "The table below keeps each named example tied to the kind of evidence that supports it. Do not use it as a medical list. Use it as a genetics filter: what changed, where the evidence is read and what trap the option may set."
+    ] },
+    { heading: "Common confusion checks", bullets: [
+      "Mendelian disorder does not mean every case is autosomal; haemophilia and colour blindness are sex-linked recessive examples in NCERT.",
+      "Carrier status and affected status are different categories in recessive inheritance.",
+      "Sickle-cell anaemia and thalassaemia are both linked with haemoglobin, but NCERT distinguishes qualitative and quantitative globin problems.",
+      "Down syndrome, Turner syndrome and Klinefelter syndrome are chromosome-number examples, not ordinary single-gene Punnett-square examples.",
+      "A revision note can explain inheritance categories, but personal medical questions require a qualified professional."
+    ] },
+    { heading: "A 15-minute recall routine", paragraphs: [
+      "Draw three boxes: autosomal recessive, X-linked recessive and chromosomal number. Put two NCERT examples in the first box, two in the second and three chromosome-number examples in the third. Then write the evidence beside each box: carrier cross, sex-chromosome route or karyotype count.",
+      "End with one spoken explanation: 'I would not test these examples with the same diagram because the biological scale is different.' That sentence is the heart of the guide."
+    ] },
+  ],
   "linkage-and-recombination-frequency": [
     { heading: "Four offspring classes can reveal an arrangement", paragraphs: [
       "Two individuals can both be written AaBb and still carry different combinations along their homologous chromosomes. In one arrangement, A shares a homologue with B and a shares its partner with b; the alternative pairs A with b and a with B. The ordinary genotype tells you which alleles are present, but leaves this arrangement, called phase, unstated. That missing detail decides which gametes count as recombinant.",
@@ -2020,6 +2099,15 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": [
+    { label: "NCERT Class 11 Biology, Chapter 9: Biomolecules (Reprint 2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
+    { label: "OpenStax Biology 2e: Biological Macromolecules", href: "https://openstax.org/books/biology-2e/pages/3-introduction" },
+  ],
+  "basic-genetic-diseases-as-inheritance-examples": [
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation, Genetic Disorders", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "OpenStax Biology 2e: Characteristics and Traits", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
+    { label: "MedlinePlus Genetics: Inheritance Patterns", href: "https://medlineplus.gov/genetics/understanding/inheritance/inheritancepatterns/" },
+  ],
   "linkage-and-recombination-frequency": [
     { label: "NCERT: Principles of Inheritance and Variation, Linkage and Recombination", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal Theory and Genetic Linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" }
@@ -2201,6 +2289,28 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": {
+    heading: "Biomolecule classes: classify by unit, polymer status and role",
+    intro: "Use the final column as the decision rule. It keeps the lipid exception and nucleic-acid information role visible.",
+    columns: ["Class", "Building unit or components", "Typical NCERT role", "Decision check"],
+    rows: [
+      ["Protein", "Amino acids in a polypeptide chain", "Enzymes, structure, receptors, hormones and other cell functions", "Ask whether sequence and folding are central"],
+      ["Polysaccharide", "Sugar units in long chains", "Storage or structure, such as starch, glycogen or cellulose", "Ask whether a sugar chain is being described"],
+      ["Nucleic acid", "Nucleotides containing base, sugar and phosphate", "Genetic information in DNA or RNA", "Ask whether sequence information is the key idea"],
+      ["Lipid", "Fatty acids, glycerol or related hydrophobic components", "Membranes, storage or other lipid functions", "Do not force it into the true-polymer column"],
+    ],
+  },
+  "basic-genetic-diseases-as-inheritance-examples": {
+    heading: "Genetic disorder examples: choose the evidence scale first",
+    intro: "The names are useful only after the inheritance scale is clear. Start from allele route or chromosome count, then add the example.",
+    columns: ["Category", "NCERT example", "Evidence scale", "Common trap"],
+    rows: [
+      ["Autosomal recessive", "Sickle-cell anaemia, phenylketonuria, thalassaemia", "Two altered gene copies or carrier-cross logic", "Treating a carrier as affected"],
+      ["X-linked recessive", "Colour blindness, haemophilia", "Sex-chromosome route through X contribution", "Assuming father-to-son X-linked transmission"],
+      ["Autosomal dominant", "Example category in pedigree analysis", "Affected pattern across generations", "Calling every pedigree recessive"],
+      ["Chromosomal disorder", "Down, Turner and Klinefelter syndromes", "Aneuploidy or sex-chromosome count", "Forcing a karyotype clue into a single-gene cross"],
+    ],
+  },
   "linkage-and-recombination-frequency": {
     heading: "The same gamete changes category when phase changes",
     intro: "Use the original homologues as the reference. These probabilities assume r = 0.16, reciprocal classes of equal probability and unbiased recovery.",
@@ -2535,6 +2645,8 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": { heading: "The lipid exception is worth saying aloud", paragraphs: ["When students rush this chapter, they often turn every big-looking biological molecule into the same kind of polymer. I prefer to make the exception visible: lipids travel with membrane fragments in the acid-insoluble fraction, but they are not polymers in the same direct way as proteins, polysaccharides and nucleic acids. That one sentence cleans up many otherwise messy options."] },
+  "basic-genetic-diseases-as-inheritance-examples": { heading: "A health example is still a genetics exercise here", paragraphs: ["Named conditions can make a revision page feel clinical, but the chapter is using them to teach inheritance. Keep the answer at that level unless a qualified medical context is explicitly involved. In a study note, the honest work is to identify the route of inheritance, the evidence and the boundary of what the textbook statement supports."] },
   "linkage-and-recombination-frequency": { heading: "Name the reference before calling a combination new", paragraphs: ["A recombinant label is relative to the starting arrangement. Write the parental phase above the four offspring classes before adding any counts. This makes the classification auditable and prevents uppercase letters or a familiar ratio from silently choosing the numerator."] },
   "sex-determination-systems": { heading: "Heterogamety is a contribution rule", paragraphs: ["When the symbols change from XY to ZW, return to the two gamete lists. The comparison concerns which parent contributes the alternative sex chromosome. It says nothing about one parent's importance, responsibility or ability to choose the outcome."] },
   "genetic-code-and-reading-frames": { heading: "Keep the undecoded remainder visible", paragraphs: ["The final single A in our frameshift fragment is not a complete codon. Leave it marked as incomplete instead of borrowing letters or assuming a stop. Showing where the evidence ends is part of a correct decoding answer."] },

@@ -130,7 +130,7 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /mendelian-inheritance/);
   assert.match(sitemapXml, /recombinant-dna-technology/);
   assert.match(sitemapXml, /chromosomal-basis-of-inheritance/);
-  assert.doesNotMatch(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
+  assert.match(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
 });
 
 test("renders the revision workbook with a free sample and optional early access", async () => {
@@ -459,5 +459,36 @@ test("publishes animal classification, tissue organisation and biotechnology pro
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
     assert.ok(sitemapXml.includes(item.slug), item.slug + ": sitemap");
+  }
+});
+
+test("publishes biomolecules and inheritance-disorder examples as authored guides", async () => {
+  const cases = [
+    {
+      slug: "carbohydrates-proteins-lipids-nucleic-acids",
+      image: "biomolecules-building-blocks-v1.webp",
+      source: "kebo109.pdf",
+      marker: "The lipid exception is worth saying aloud",
+    },
+    {
+      slug: "basic-genetic-diseases-as-inheritance-examples",
+      image: "inheritance-disorder-examples-v1.webp",
+      source: "lebo104.pdf",
+      marker: "A health example is still a genetics exercise here",
+    },
+  ];
+  const sitemapXml = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+
+  for (const item of cases) {
+    const html = await readFile(new URL("../.next/server/app/neet-ug/biology/" + item.slug + ".html", import.meta.url), "utf8");
+    assert.ok(html.includes(item.image), item.slug + ": image");
+    assert.ok(html.includes(item.source), item.slug + ": source");
+    assert.ok(html.includes(item.marker), item.slug + ": editorial marker");
+    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published:\s*(?:<!-- -->)?September 29, 2026/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+    assert.ok(sitemapXml.includes(item.slug), item.slug + ": sitemap");
+    assert.ok(sitemapXml.includes("2026-09-29T00:00:00.000Z"), item.slug + ": sitemap date");
   }
 });

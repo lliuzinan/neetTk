@@ -1,6 +1,16 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": [
+    { slug: "protein-structure-and-peptide-bonds", reason: "Continue from amino-acid building blocks to peptide-bond counts and folded protein levels." },
+    { slug: "enzymes-and-enzyme-action", reason: "Apply protein folding and active-site ideas to catalysed reaction rates." },
+    { slug: "genetic-code-and-reading-frames", reason: "Move from nucleotide building blocks to codons and reading-frame consequences." },
+  ],
+  "basic-genetic-diseases-as-inheritance-examples": [
+    { slug: "mendelian-inheritance", reason: "Rebuild the allele and carrier-cross logic before naming disorder examples." },
+    { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Use family evidence to test autosomal and sex-linked inheritance routes." },
+    { slug: "sex-determination-systems", reason: "Review X and Y chromosome contribution before reasoning about X-linked examples." },
+  ],
   "linkage-and-recombination-frequency": [
     { slug: "chromosomal-basis-of-inheritance", reason: "Locate the homologues and non-sister chromatids behind the testcross counts." },
     { slug: "mendelian-inheritance", reason: "Revisit gamete formation and why the double-recessive tester makes contributions readable." },
@@ -22,6 +32,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "biodiversity-and-conservation", reason: "Distinguish species counts from within-species variation when interpreting biodiversity." },
   ],
   "protein-structure-and-peptide-bonds": [
+    { slug: "carbohydrates-proteins-lipids-nucleic-acids", reason: "Start with the broader biomolecule classes before counting bonds in one protein chain." },
     { slug: "enzymes-and-enzyme-action", reason: "Connect protein folding with catalytic activity without confusing structure with reaction rate." },
     { slug: "dna-rna-replication-transcription-translation", reason: "Study how a polypeptide sequence is assembled from genetic information." },
     { slug: "cell-theory-and-cell-organelles", reason: "Locate protein synthesis and processing within the cell's compartments." },
@@ -86,6 +97,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "mitosis-and-meiosis", reason: "Locate the cell divisions that separate homologues and chromatids." },
   ],
   "pedigree-analysis-and-inheritance-patterns": [
+    { slug: "basic-genetic-diseases-as-inheritance-examples", reason: "Apply pedigree logic to named NCERT inheritance examples without turning them into medical advice." },
     { slug: "sex-determination-systems", reason: "Check which parent supplies alternative sex chromosomes before assigning a transmission route." },
     { slug: "mendelian-inheritance", reason: "Use allele notation to test possible parental genotypes." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Explain why sex chromosomes change transmission patterns." },

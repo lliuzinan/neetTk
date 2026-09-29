@@ -8,6 +8,8 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-09-29", modified: "2026-09-29" },
+  "basic-genetic-diseases-as-inheritance-examples": { published: "2026-09-29", modified: "2026-09-29" },
   "linkage-and-recombination-frequency": { published: "2026-09-28", modified: "2026-09-28" },
   "sex-determination-systems": { published: "2026-09-28", modified: "2026-09-28" },
   "genetic-code-and-reading-frames": { published: "2026-09-28", modified: "2026-09-28" },
@@ -22,7 +24,6 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
 "locomotion-and-movement": {"published":"2026-09-23","modified":"2026-09-23"},
   "biodiversity-and-conservation": { published: "2026-09-23", modified: "2026-09-23" },
   "microbes-in-human-welfare": { published: "2026-09-23", modified: "2026-09-23" },
-  "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-07-18", modified: "2026-08-03" },
   "dna-rna-replication-transcription-translation": { published: "2026-09-08", modified: "2026-09-20" },
   "mutation-and-gene-expression": { published: "2026-09-08", modified: "2026-09-20" },
   "cell-theory-and-cell-organelles": { published: "2026-09-08", modified: "2026-09-20" },
@@ -32,7 +33,6 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-20" },
   "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-20" },
   "endocrine-system-and-hormones": { published: "2026-09-06", modified: "2026-09-10" },
-  "basic-genetic-diseases-as-inheritance-examples": { published: "2026-07-30", modified: "2026-08-15" },
   "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-09-20" },
   "neuron-nerve-impulse-synapse": { published: "2026-09-06", modified: "2026-09-20" },
   "human-respiration": { published: "2026-09-05", modified: "2026-09-20" },
