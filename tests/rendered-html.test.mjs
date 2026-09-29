@@ -466,7 +466,7 @@ test("publishes biomolecules and inheritance-disorder examples as authored guide
   const cases = [
     {
       slug: "carbohydrates-proteins-lipids-nucleic-acids",
-      image: "biomolecules-building-blocks-v1.webp",
+      image: "biomolecules-nucleic-acid-strands-v2.webp",
       source: "kebo109.pdf",
       marker: "The lipid exception is worth saying aloud",
     },

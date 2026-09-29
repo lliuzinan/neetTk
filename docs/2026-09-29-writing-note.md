@@ -22,3 +22,10 @@
 - No NCERT diagrams, question stems, answer options, tables or clinical advice were copied.
 - Each guide has a topic-specific table, original figure, confusion checks, active recall routine, direct references and related guide links.
 - Publication date set to `2026-09-29`.
+
+## Same-day review corrections
+
+- Corrected the claim that glycerol is water-insoluble and separated triglyceride energy storage from phospholipid membrane roles in prose and table.
+- Replaced the biomolecule overview image with a versioned original DNA/RNA strand comparison, with matching alt text and a caption explaining the simplified scope.
+- Expanded the inheritance example with the Aa x Aa outcomes, per-fertilisation probabilities and the 2/3 conditional carrier probability among unaffected offspring in the stated model.
+- Publication and modification dates remain accurate for this same-day revision.
