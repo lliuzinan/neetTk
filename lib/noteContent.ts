@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "c3-c4-pathways-and-photorespiration",
   "carbohydrates-proteins-lipids-nucleic-acids",
   "basic-genetic-diseases-as-inheritance-examples",
   "linkage-and-recombination-frequency",
@@ -72,6 +73,43 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "c3-c4-pathways-and-photorespiration": [
+    { heading: "Two carbon-fixing steps, one carbohydrate-building cycle", paragraphs: [
+      "A C4 leaf has not discarded the Calvin cycle. In the usual two-cell model, it places a carbon-concentrating route ahead of that cycle. The useful question is therefore not which plant uses the Calvin cycle, but where incoming carbon is caught, how it travels and where it reaches Rubisco. This guide follows that journey rather than repeating the light-reaction sequence.",
+      "Keep three objects separate on paper: the initial carbon acceptor, the first stable product and the enzyme that catalyses the reaction. In a C3 leaf, RuBP is the five-carbon acceptor and Rubisco catalyses carboxylation, producing two molecules of three-carbon 3-PGA through an unstable intermediate. In the C4 entry step, PEP is a three-carbon acceptor, PEP carboxylase catalyses initial fixation and oxaloacetate is the four-carbon product. C3 and C4 name the first stable products, not the carbon count of their acceptors."
+    ] },
+    { heading: "Follow the shuttle across the cell boundary", paragraphs: [
+      "Begin in a mesophyll cell of a typical C4 leaf. PEP carboxylase incorporates inorganic carbon into oxaloacetate. At the biochemical level, the immediate inorganic substrate is bicarbonate derived from CO2; the school-level pathway is commonly described as initial CO2 fixation. Oxaloacetate is converted into a transport acid such as malate or aspartate. The particular transport and decarboxylation route varies among C4 subtypes.",
+      "The four-carbon acid reaches a bundle-sheath cell and is decarboxylated. Released CO2 becomes available near Rubisco, where the Calvin cycle runs. A three-carbon compound returns towards the mesophyll and supports regeneration of PEP at an energy cost. The drawing shows this carbon-count logic only: one added carbon travels with a reusable three-carbon framework, and the carrier framework returns.",
+      "Do not label the four-carbon transport acid as the final sugar output. Delivery to the bundle sheath and incorporation through Rubisco are different steps. The figure deliberately leaves out subtype-specific organelle transport and enzyme names so that the intercellular route remains visible."
+    ] },
+    { heading: "Kranz anatomy gives the chemistry a place to happen", paragraphs: [
+      "In the standard NCERT examples, maize and sorghum, conspicuous bundle-sheath cells surround the vascular bundles, with mesophyll outside them. This wreath-like arrangement is called Kranz anatomy. Chloroplast-rich bundle-sheath cells and restricted gas leakage help maintain the conditions needed for the concentrating mechanism. Merely writing 'two cells' does not explain the advantage; the cells exchange carbon compounds while Rubisco receives CO2 in the inner compartment.",
+      "Bundle-sheath tissue is not exclusive to C4 leaves. An identification argument needs the specialised arrangement together with the associated biochemical division of labour. Likewise, a leaf's outward shape alone cannot establish the pathway. For this revision model, locate initial fixation in mesophyll and the Calvin cycle in bundle sheath; unusual single-cell C4 mechanisms are outside the comparison being taught here."
+    ] },
+    { heading: "Rubisco's second reaction explains the need for concentration", paragraphs: [
+      "Rubisco can catalyse either carboxylation or oxygenation of RuBP. With CO2, the reaction produces two three-carbon 3-PGA molecules. With oxygen, the five-carbon substrate instead gives one three-carbon 3-PGA and one two-carbon phosphoglycolate. Recovering carbon from the latter involves the photorespiratory pathway, uses energy and releases some previously fixed carbon as CO2.",
+      "This is not the mitochondrial respiration described in the plant-respiration guide. Photorespiration begins with Rubisco's oxygenase reaction and does not provide a net sugar-building or ATP-producing substitute for photosynthesis. The name alone is insufficient: identify the starting reaction before naming the process.",
+      "When CO2 availability around Rubisco falls relative to oxygen, oxygenation becomes more competitive. Hot conditions and restricted CO2 entry can favour the loss associated with photorespiration in a C3 leaf. The C4 shuttle raises CO2 near Rubisco and strongly suppresses that competing reaction. It does not achieve the effect by replacing Rubisco with PEP carboxylase in the Calvin cycle."
+    ] },
+    { heading: "A carbon ledger catches the misleading answer 24", paragraphs: [
+      "Use an invented, idealised account with six rounds of the initial C4 capture step. Supply six three-carbon PEP molecules, containing eighteen carbon atoms in total, and six incoming inorganic carbon atoms. Six four-carbon products then contain twenty-four carbon atoms: eighteen in the starting acceptors plus six newly supplied atoms. This is an atom-count exercise, not a prediction about measured isotope positions.",
+      "If each carrier releases one carbon as CO2 in the bundle sheath, six CO2 molecules become available there and six three-carbon frameworks account for the remaining eighteen atoms. The frameworks participate in recycling; they are not six additional sugar products. In the ideal Calvin-cycle net account, six newly supplied CO2 molecules support one six-carbon carbohydrate equivalent, with ATP and NADPH required for reduction and regeneration.",
+      "The tempting answer 'six C4 products mean twenty-four carbons of newly made sugar' counts recycled acceptor carbon as new input. Recheck the system boundary: only six carbon atoms entered from outside in this model. Real leaves have metabolite mixing and leakage, so this simplified ledger is a conservation check rather than a complete flux measurement."
+    ] },
+    { heading: "Read 'no photorespiration' at the intended textbook scale", paragraphs: [
+      "NCERT presents C4 plants as lacking photorespiration in its standard C3/C4 contrast and explains this through concentrated CO2 at the enzyme site. The mechanism is the part to retain: high local CO2 favours Rubisco's carboxylase activity. For a broader biological claim, strong suppression is more precise than saying that no C4 plant can ever show any photorespiratory activity under any conditions.",
+      "A research study of maize, linked below as a supplementary source, examines oxygen responses and photorespiration in a C4 plant. It qualifies an absolute statement without changing the basic revision comparison. Keep the NCERT model and the boundary of its simplification visible rather than replacing one short slogan with another."
+    ] },
+    { heading: "Extra carbon concentration is useful, but it is not free", paragraphs: [
+      "The shuttle adds transport and regeneration work before carbon reduction. That is why 'C4 is always better' is too broad. Its advantage is especially relevant where avoiding photorespiration compensates for the concentrating mechanism's energy cost. Light, temperature, water availability and the surrounding CO2 concentration all matter; the pathway name by itself does not determine the performance of every plant in every environment.",
+      "A useful distinction from stomatal behaviour is spatial separation: this guide's C4 model separates operations between mesophyll and bundle-sheath cells. Do not convert that into a claim that every C4 plant fixes carbon only at night. The two-cell carbon route, not a day-night schedule, is the organising idea here."
+    ] },
+    { heading: "Rebuild the route using only six labels", paragraphs: [
+      "Close the figure and draw two compartments. Use these labels once each: mesophyll, bundle sheath, PEP, four-carbon acid, released CO2 and Calvin cycle. Add an outward carrier arrow and a return arrow. Then place Rubisco at the reaction that uses released CO2, not at the first mesophyll capture step.",
+      "Check three results: the carrier has four carbons but the acceptor had three; the Calvin cycle still operates; and reduced oxygenation follows from CO2 concentration near Rubisco. Finally, rerun the six-round ledger and account separately for the six new atoms and eighteen recycled atoms. Read NCERT Class 11 Biology, Chapter 11, sections 11.8 and 11.9 in the 2026-27 reprint to verify the pathway and photorespiration comparison."
+    ] },
+  ],
   "carbohydrates-proteins-lipids-nucleic-acids": [
     { heading: "Biomolecules are easier when you sort by building block", paragraphs: [
       "The Biomolecules chapter can feel like a crowded catalogue: amino acids, sugars, bases, lipids, proteins, polysaccharides, nucleic acids and enzymes all appear close together. The safer revision route is to ask one question first: is the molecule a small building block, a large biological polymer, or a membrane-associated lipid?",
@@ -2104,6 +2142,11 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "c3-c4-pathways-and-photorespiration": [
+    { label: "NCERT Class 11 Biology, Chapter 11, sections 11.8-11.9: The C4 Pathway and Photorespiration (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
+    { label: "Plant Physiology: C4 Photosynthesis (The CO2-Concentrating Mechanism and Photorespiration)", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC158949/" },
+    { label: "Journal of Experimental Botany: C4 photosynthesis and water stress", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2707343/" },
+  ],
   "carbohydrates-proteins-lipids-nucleic-acids": [
     { label: "NCERT Class 11 Biology, Chapter 9: Biomolecules (Reprint 2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
     { label: "OpenStax Biology 2e: Biological Macromolecules", href: "https://openstax.org/books/biology-2e/pages/3-introduction" },
@@ -2294,6 +2337,18 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "c3-c4-pathways-and-photorespiration": {
+    heading: "Identify a stage from its carbon input and destination",
+    intro: "Read each row as a reaction or transfer in the model, not as interchangeable names for photosynthesis.",
+    columns: ["Stage being described", "Carbon account", "Location in the usual C4 model", "Inference the evidence supports"],
+    rows: [
+      ["Initial capture by PEP carboxylase", "Three-carbon PEP plus one inorganic carbon gives four-carbon oxaloacetate", "Mesophyll", "Identifies the concentrating entry step, not the Calvin cycle"],
+      ["Transport and decarboxylation", "Four-carbon carrier delivers CO2; a three-carbon framework remains", "Transfer to bundle sheath", "Raises CO2 availability near Rubisco"],
+      ["Rubisco carboxylation", "Five-carbon RuBP plus CO2 yields two three-carbon 3-PGA molecules", "Bundle-sheath chloroplast", "C4 plants retain the Calvin-cycle reaction"],
+      ["Rubisco oxygenation", "Five-carbon RuBP gives a three-carbon and a two-carbon product", "Where Rubisco reacts with oxygen", "Begins photorespiration, not additional carbon capture"],
+      ["Acceptor regeneration", "The returning three-carbon framework supports PEP regeneration", "Mesophyll in the simplified route", "The carrier pool is recycled at an energy cost"],
+    ],
+  },
   "carbohydrates-proteins-lipids-nucleic-acids": {
     heading: "Biomolecule classes: classify by unit, polymer status and role",
     intro: "Use the final column as the decision rule. It keeps the lipid exception and nucleic-acid information role visible.",
@@ -2650,6 +2705,7 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "c3-c4-pathways-and-photorespiration": { heading: "Ask what the four-carbon molecule is carrying", paragraphs: ["The four-carbon label is useful only with a starting point. Three atoms were already present in PEP before the incoming carbon was captured. Mark the incoming atom in a different colour on a rough sketch, then keep the carrier and net input in separate accounts. This explains why a transport intermediate cannot be counted wholesale as newly fixed carbon."] },
   "carbohydrates-proteins-lipids-nucleic-acids": { heading: "The lipid exception is worth saying aloud", paragraphs: ["When students rush this chapter, they often turn every big-looking biological molecule into the same kind of polymer. I prefer to make the exception visible: lipids travel with membrane fragments in the acid-insoluble fraction, but they are not polymers in the same direct way as proteins, polysaccharides and nucleic acids. That one sentence cleans up many otherwise messy options."] },
   "basic-genetic-diseases-as-inheritance-examples": { heading: "A health example is still a genetics exercise here", paragraphs: ["Named conditions can make a revision page feel clinical, but the chapter is using them to teach inheritance. Keep the answer at that level unless a qualified medical context is explicitly involved. In a study note, the honest work is to identify the route of inheritance, the evidence and the boundary of what the textbook statement supports."] },
   "linkage-and-recombination-frequency": { heading: "Name the reference before calling a combination new", paragraphs: ["A recombinant label is relative to the starting arrangement. Write the parental phase above the four offspring classes before adding any counts. This makes the classification auditable and prevents uppercase letters or a familiar ratio from silently choosing the numerator."] },

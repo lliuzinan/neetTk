@@ -49,7 +49,7 @@ export default async function Home() {
     {
       title: "Plant structure and function",
       description: "Identify the organ from external landmarks, read its internal tissues, then connect leaf structure with plant physiology.",
-      slugs: ["anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "plant-respiration"],
+      slugs: ["anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "c3-c4-pathways-and-photorespiration", "plant-respiration"],
     },
   ];
   const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));

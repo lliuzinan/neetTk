@@ -8,6 +8,7 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "c3-c4-pathways-and-photorespiration": { published: "2026-09-30", modified: "2026-09-30" },
   "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-09-29", modified: "2026-09-29" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-09-29", modified: "2026-09-29" },
   "linkage-and-recombination-frequency": { published: "2026-09-28", modified: "2026-09-28" },

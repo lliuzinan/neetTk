@@ -11,6 +11,25 @@ function jsonLdItems(html) {
   });
 }
 
+test("publishes the C4 shuttle guide with its original diagram and connected study route", async () => {
+  const slug = "c3-c4-pathways-and-photorespiration";
+  const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  assert.match(sitemap, new RegExp(slug));
+  assert.match(html, /c3-c4-carbon-shuttle-v1.webp/);
+  assert.match(html, /A carbon ledger catches the misleading answer 24/);
+  assert.match(html, /kebo111.pdf/);
+  assert.match(html, /PMC158949/);
+  assert.match(html, /three-carbon frameworks/);
+  assert.doesNotMatch(html, /Exam-style checkpoints/);
+  const article = jsonLdItems(html).find(item => item["@type"] === "Article");
+  assert.equal(article.datePublished, "2026-09-30");
+  for (const related of ["photosynthesis-in-higher-plants", "anatomy-of-flowering-plants", "plant-respiration"]) {
+    assert.ok(html.includes(`href="/neet-ug/biology/${related}"`));
+    await readFile(new URL(`../.next/server/app/neet-ug/biology/${related}.html`, import.meta.url));
+  }
+});
+
 test("replaces legacy generic checkpoints with topic-specific reasoning and keeps publication history", async () => {
   const slugs = ["plant-respiration", "photosynthesis-in-higher-plants", "blood-and-circulation", "human-respiration", "excretion-and-kidney-function", "mitosis-and-meiosis", "dna-rna-replication-transcription-translation", "mutation-and-gene-expression", "cell-theory-and-cell-organelles", "endocrine-system-and-hormones", "immunity-pathogens-vaccines", "neuron-nerve-impulse-synapse", "recombinant-dna-technology"];
   for (const slug of slugs) {

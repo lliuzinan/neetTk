@@ -1,12 +1,18 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "c3-c4-pathways-and-photorespiration": [
+    { slug: "photosynthesis-in-higher-plants", reason: "Review light reactions and the Calvin-cycle net account before adding a carbon-concentrating route." },
+    { slug: "anatomy-of-flowering-plants", reason: "Locate mesophyll and vascular bundle tissues before comparing their specialised roles." },
+    { slug: "plant-respiration", reason: "Separate Rubisco oxygenation from mitochondrial energy release and respiratory quotient." },
+  ],
   "plant-respiration": [
     { slug: "photosynthesis-in-higher-plants", reason: "Separate carbon fixation from respiratory gas exchange before interpreting a leaf measurement." },
     { slug: "enzymes-and-enzyme-action", reason: "Explain why respiration consists of controlled enzyme reactions rather than direct combustion." },
     { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Connect respiratory energy use with the difference between gross and net primary production." },
   ],
   "photosynthesis-in-higher-plants": [
+    { slug: "c3-c4-pathways-and-photorespiration", reason: "Trace the four-carbon shuttle and distinguish carrier recycling from net carbon fixation." },
     { slug: "plant-respiration", reason: "Compare carbon storage with oxidation and distinguish simultaneous gas fluxes in a leaf." },
     { slug: "anatomy-of-flowering-plants", reason: "Locate mesophyll, stomata and vascular tissues around the photosynthetic cells." },
     { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Follow primary production into the ecosystem energy account." },
@@ -185,6 +191,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "photosynthesis-in-higher-plants", reason: "Connect leaf form and venation with the physiology carried out inside the leaf." },
   ],
   "anatomy-of-flowering-plants": [
+    { slug: "c3-c4-pathways-and-photorespiration", reason: "Apply mesophyll and bundle-sheath organisation to the C4 concentrating mechanism." },
     { slug: "plant-growth-and-development", reason: "Follow meristem activity into measurable growth and changing cell roles." },
     { slug: "morphology-of-flowering-plants", reason: "Use nodes, buds, roots and leaves to identify the organ before reading its internal section." },
     { slug: "photosynthesis-in-higher-plants", reason: "Connect mesophyll and vascular orientation with chloroplast function and carbon fixation." },

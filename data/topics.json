@@ -1,5 +1,15 @@
 [
   {
+    "id": "c3-c4-pathways-and-photorespiration",
+    "exam": "NEET-UG",
+    "subject": "Biology",
+    "name": "C3 and C4 pathways: carbon transport and photorespiration",
+    "slug": "c3-c4-pathways-and-photorespiration",
+    "ncertRef": "NCERT Biology Class 11, Chapter 11",
+    "questionCount": 0,
+    "sortOrder": 50
+  },
+  {
     "id": "carbohydrates-proteins-lipids-nucleic-acids",
     "exam": "NEET-UG",
     "subject": "Biology",
