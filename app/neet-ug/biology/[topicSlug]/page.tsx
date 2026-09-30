@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { studyLinks } from "@/lib/studyLinks";
+import { noteExercises } from "@/lib/noteExercises";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -473,10 +474,9 @@ export default async function TopicPage({ params }: Props) {
           </section>
         ))}
         <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        {!curatedLinks && <section>
-          <h2>Exam-style checkpoints</h2>
-          <p>Before leaving this page, check whether you can explain {topic.name} without opening your textbook. A good checkpoint is to define the main term, give one NCERT-linked example, and state one nearby idea that students commonly confuse with it.</p>
-          <p>For a second pass, mix this guide with a neighbouring Biology topic instead of revising it alone. NEET-UG Biology often tests whether students can keep similar processes, structures, molecules, or examples separate under time pressure.</p>
+        {noteExercises[topic.slug] && <section>
+          <h2>{noteExercises[topic.slug].heading}</h2>
+          {noteExercises[topic.slug].paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </section>}
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>

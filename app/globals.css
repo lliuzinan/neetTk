@@ -1212,7 +1212,7 @@ h3 {
   }
 
   .heroVisual {
-    order: 3;
+    order: 5;
   }
 
   .heroCopy .actions {
@@ -1220,11 +1220,11 @@ h3 {
   }
 
   .heroCopy .mobileQuickStart {
-    order: 5;
+    order: 3;
   }
 
   .heroVisual img {
-    max-height: 176px;
+    max-height: 112px;
     object-fit: cover;
   }
 

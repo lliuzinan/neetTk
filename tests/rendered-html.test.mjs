@@ -11,6 +11,21 @@ function jsonLdItems(html) {
   });
 }
 
+test("replaces legacy generic checkpoints with topic-specific reasoning and keeps publication history", async () => {
+  const slugs = ["plant-respiration", "photosynthesis-in-higher-plants", "blood-and-circulation", "human-respiration", "excretion-and-kidney-function", "mitosis-and-meiosis", "dna-rna-replication-transcription-translation", "mutation-and-gene-expression", "cell-theory-and-cell-organelles", "endocrine-system-and-hormones", "immunity-pathogens-vaccines", "neuron-nerve-impulse-synapse", "recombinant-dna-technology"];
+  for (const slug of slugs) {
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
+    assert.doesNotMatch(html, /Before leaving this page|Exam-style checkpoints/);
+    const article = jsonLdItems(html).find(item => item["@type"] === "Article");
+    assert.equal(article.dateModified, "2026-09-30");
+    assert.ok(article.datePublished < article.dateModified);
+    assert.match(html, /Related revision guides/);
+  }
+  const contact = await readFile(new URL("../.next/server/app/contact.html", import.meta.url), "utf8");
+  assert.match(contact, /<!--email_off--><a href="mailto:a9665670@163.com">/);
+  assert.doesNotMatch(contact, /\/cdn-cgi\/l\/email-protection/);
+});
+
 test("publishes the conservation and microbes guides with original assets and complete learning resources", async () => {
   const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
   const fixtures = [
@@ -167,9 +182,10 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
   assert.match(topicHtml, /Published: .*September 5, 2026/);
-  assert.match(topicHtml, /Last updated: .*September 20, 2026/);
+  assert.match(topicHtml, /Last updated: .*September 30, 2026/);
   assert.match(topicHtml, /Related revision guides/);
-  assert.match(topicHtml, /Exam-style checkpoints/);
+  assert.match(topicHtml, /Equal minute ventilation can hide different useful airflow/);
+  assert.doesNotMatch(topicHtml, /Before leaving this page/);
   assert.match(topicHtml, /Article/);
   assert.doesNotMatch(topicHtml, /Quick MCQ practice/);
   assert.match(endocrineHtml, /endocrine-blood-glucose-feedback-v1\.png/);
@@ -186,7 +202,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /Written by:.*DongFeng/);
   assert.match(endocrineHtml, /authors\/dongfeng/);
   assert.match(endocrineHtml, /University Biology Instructor/);
-  assert.match(endocrineHtml, /2026-09-10/);
+  assert.match(endocrineHtml, /2026-09-30/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(respirationHtml, /human-respiration-gas-route-v1\.png/);
   assert.match(excretionHtml, /excretion-nephron-arrows-v1\.png/);

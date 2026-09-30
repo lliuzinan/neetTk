@@ -16,7 +16,7 @@ export default async function Home() {
   const [topicList, noteList] = await Promise.all([getTopics(), getSeoNotes()]);
   const notes = noteList.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
   const topics = topicList.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
-  const mobileQuickStartSlugs = ["photosynthesis-in-higher-plants", "digestion-and-absorption"];
+  const mobileQuickStartSlugs = ["photosynthesis-in-higher-plants", "mendelian-inheritance"];
   const mobileQuickStartTopics = mobileQuickStartSlugs
     .map((slug) => topics.find((topic) => topic.slug === slug))
     .filter((topic): topic is (typeof topics)[number] => Boolean(topic));

@@ -11,13 +11,14 @@ export default function ContactPage() {
   return (
     <InfoPage
       eyebrow="Contact"
+      lastUpdated="September 30, 2026"
       title="Contact MedQGo"
       intro="Use this page to reach MedQGo about NEET Biology content, corrections, partnerships, or student resource requests."
       sections={[
         {
           title: "Email",
           body: [
-            "For support, corrections, and general questions, email: a9665670@163.com.",
+            <>For support, corrections, and general questions, email: <span dangerouslySetInnerHTML={{ __html: '<!--email_off--><a href="mailto:a9665670@163.com">a9665670@163.com</a><!--/email_off-->' }} />.</>,
             "When reporting a guide issue, include the page URL, the sentence or diagram you are querying, and the supporting NCERT or official-reference detail. This helps us check the point quickly.",
           ],
         },

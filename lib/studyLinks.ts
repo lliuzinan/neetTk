@@ -1,6 +1,63 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "plant-respiration": [
+    { slug: "photosynthesis-in-higher-plants", reason: "Separate carbon fixation from respiratory gas exchange before interpreting a leaf measurement." },
+    { slug: "enzymes-and-enzyme-action", reason: "Explain why respiration consists of controlled enzyme reactions rather than direct combustion." },
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Connect respiratory energy use with the difference between gross and net primary production." },
+  ],
+  "photosynthesis-in-higher-plants": [
+    { slug: "plant-respiration", reason: "Compare carbon storage with oxidation and distinguish simultaneous gas fluxes in a leaf." },
+    { slug: "anatomy-of-flowering-plants", reason: "Locate mesophyll, stomata and vascular tissues around the photosynthetic cells." },
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Follow primary production into the ecosystem energy account." },
+  ],
+  "blood-and-circulation": [
+    { slug: "human-respiration", reason: "Place lung gas exchange between the pulmonary artery and pulmonary veins." },
+    { slug: "excretion-and-kidney-function", reason: "Follow blood to the kidney and distinguish renal circulation from tubular flow." },
+    { slug: "immunity-pathogens-vaccines", reason: "Separate red-cell transport from the immune roles of white cells and antibodies." },
+  ],
+  "human-respiration": [
+    { slug: "blood-and-circulation", reason: "Trace oxygen transport after diffusion across the respiratory membrane." },
+    { slug: "plant-respiration", reason: "Distinguish ventilation and gas exchange from cellular substrate oxidation." },
+  ],
+  "excretion-and-kidney-function": [
+    { slug: "blood-and-circulation", reason: "Trace the vascular side of filtration, reabsorption and secretion." },
+    { slug: "endocrine-system-and-hormones", reason: "Review ADH signalling before predicting a change in water reabsorption." },
+  ],
+  "mitosis-and-meiosis": [
+    { slug: "chromosomal-basis-of-inheritance", reason: "Connect homologue separation to allele segregation." },
+    { slug: "linkage-and-recombination-frequency", reason: "Relate meiotic crossing over to recombinant offspring counts." },
+    { slug: "human-reproduction", reason: "Apply chromosome reduction to gamete formation rather than embryonic cleavage." },
+  ],
+  "dna-rna-replication-transcription-translation": [
+    { slug: "genetic-code-and-reading-frames", reason: "Practise codon grouping after checking the RNA sequence and its polarity." },
+    { slug: "protein-structure-and-peptide-bonds", reason: "Move from translated residues to peptide bonds and folding." },
+    { slug: "molecular-basis-of-inheritance", reason: "Review the experimental evidence for DNA copying and information storage." },
+  ],
+  "mutation-and-gene-expression": [
+    { slug: "genetic-code-and-reading-frames", reason: "Check the specific coding consequence of a substitution or insertion." },
+    { slug: "dna-rna-replication-transcription-translation", reason: "Separate changes to a template from the steps that read it." },
+    { slug: "evolution-and-natural-selection", reason: "Distinguish the origin of variation from changes in its frequency." },
+  ],
+  "cell-theory-and-cell-organelles": [
+    { slug: "protein-structure-and-peptide-bonds", reason: "Connect ribosomal synthesis with polypeptide structure and folding." },
+    { slug: "dna-rna-replication-transcription-translation", reason: "Follow information from a nuclear DNA template to a translated product." },
+    { slug: "five-kingdom-classification", reason: "Apply the prokaryotic-eukaryotic distinction to classification." },
+  ],
+  "endocrine-system-and-hormones": [
+    { slug: "excretion-and-kidney-function", reason: "Apply ADH signalling to water movement in the distal nephron." },
+    { slug: "human-reproduction", reason: "Trace pituitary and gonadal signals through the reproductive cycle." },
+    { slug: "neuron-nerve-impulse-synapse", reason: "Compare endocrine delivery through blood with signalling across a synapse." },
+  ],
+  "immunity-pathogens-vaccines": [
+    { slug: "blood-and-circulation", reason: "Place immune cells and soluble antibodies within the transport system." },
+    { slug: "reproductive-health", reason: "Distinguish infection prevention from an immune response after exposure." },
+    { slug: "microbes-in-human-welfare", reason: "Contrast pathogenic examples with beneficial microbial roles." },
+  ],
+  "neuron-nerve-impulse-synapse": [
+    { slug: "locomotion-and-movement", reason: "Follow a neural signal into the neuromuscular junction and muscle contraction." },
+    { slug: "endocrine-system-and-hormones", reason: "Compare a local synaptic message with a blood-borne hormone signal." },
+  ],
   "carbohydrates-proteins-lipids-nucleic-acids": [
     { slug: "protein-structure-and-peptide-bonds", reason: "Continue from amino-acid building blocks to peptide-bond counts and folded protein levels." },
     { slug: "enzymes-and-enzyme-action", reason: "Apply protein folding and active-site ideas to catalysed reaction rates." },

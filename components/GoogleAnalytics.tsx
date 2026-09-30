@@ -82,7 +82,7 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
   return (
     <section className="analyticsConsent" aria-label="Analytics privacy choices">
       <h2>Optional analytics</h2>
-      <p>Allow Google Analytics cookies to help us understand how these notes are used? Reading works either way. Advertising choices are managed separately by Google. <a href="/privacy">Privacy policy</a></p>
+      <p>Allow Google Analytics to measure visits? Your choice does not affect reading. Ad choices are separate. <a href="/privacy">Privacy policy</a></p>
       <div className="consentActions">
         <button type="button" onClick={() => window.dispatchEvent(new CustomEvent("medqgo:analytics-choice", { detail: false }))}>Reject analytics</button>
         <button type="button" onClick={() => window.dispatchEvent(new CustomEvent("medqgo:analytics-choice", { detail: true }))}>Allow analytics</button>
