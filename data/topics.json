@@ -1,4 +1,8 @@
 [
+  { "id": "incomplete-dominance-and-codominance", "exam": "NEET-UG", "subject": "Biology", "name": "Incomplete dominance and codominance: from alleles to phenotypes", "slug": "incomplete-dominance-and-codominance", "ncertRef": "NCERT Biology Class 12, Chapter 4", "questionCount": 0, "sortOrder": 55 },
+  { "id": "lac-operon-and-induction", "exam": "NEET-UG", "subject": "Biology", "name": "Lac operon: repression, induction and gene control", "slug": "lac-operon-and-induction", "ncertRef": "NCERT Biology Class 12, Chapter 5", "questionCount": 0, "sortOrder": 51 },
+  { "id": "seed-development-and-ploidy", "exam": "NEET-UG", "subject": "Biology", "name": "Seed development: tissue origins and chromosome sets", "slug": "seed-development-and-ploidy", "ncertRef": "NCERT Biology Class 12, Chapter 1", "questionCount": 0, "sortOrder": 52 },
+  { "id": "primary-productivity-and-biomass", "exam": "NEET-UG", "subject": "Biology", "name": "Primary productivity: GPP, NPP and standing biomass", "slug": "primary-productivity-and-biomass", "ncertRef": "NCERT Biology Class 12, Chapter 12", "questionCount": 0, "sortOrder": 53 },
   {
     "id": "c3-c4-pathways-and-photorespiration",
     "exam": "NEET-UG",
@@ -233,10 +237,10 @@
     "id": "population-genetics",
     "exam": "NEET-UG",
     "subject": "Biology",
-    "name": "Population genetics",
+    "name": "Population genetics: allele counts and Hardy-Weinberg predictions",
     "slug": "population-genetics",
-    "ncertRef": "NCERT Biology Class 12, Chapter 4",
-    "questionCount": 1,
+    "ncertRef": "NCERT Biology Class 12, Chapter 6",
+    "questionCount": 0,
     "sortOrder": 21
   },
   {

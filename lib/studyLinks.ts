@@ -1,6 +1,31 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "incomplete-dominance-and-codominance": [
+    { slug: "mendelian-inheritance", reason: "Review segregation and gamete construction before changing the phenotype rule." },
+    { slug: "chromosomal-basis-of-inheritance", reason: "Locate alleles on homologous chromosomes and keep one locus distinct from several genes." },
+    { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Carry the distinction between observed phenotype and possible genotype into family-pattern reasoning." },
+  ],
+  "population-genetics": [
+    { slug: "mendelian-inheritance", reason: "Review allele segregation and genotype-phenotype distinctions before counting population copies." },
+    { slug: "evolution-and-natural-selection", reason: "Connect a measured change in allele frequencies with possible evolutionary processes." },
+    { slug: "organisms-and-populations", reason: "Distinguish the population head count from the genetic frequencies measured within it." },
+  ],
+  "lac-operon-and-induction": [
+    { slug: "dna-rna-replication-transcription-translation", reason: "Locate transcription between the DNA instructions and their protein products before adding regulation." },
+    { slug: "mutation-and-gene-expression", reason: "Separate a changed regulatory response from a changed coding sequence." },
+    { slug: "enzymes-and-enzyme-action", reason: "Compare enzyme-substrate binding with the distinct regulatory binding interactions in this guide." },
+  ],
+  "seed-development-and-ploidy": [
+    { slug: "sexual-reproduction-in-flowering-plants", reason: "Follow pollen delivery and the two fusion events before tracking tissue descendants." },
+    { slug: "mitosis-and-meiosis", reason: "Check chromosome-set reduction and distinguish chromosomes from chromatids before doing the seed audit." },
+    { slug: "morphology-of-flowering-plants", reason: "Locate ovule, ovary and fruit structures so their developmental names stay distinct." },
+  ],
+  "primary-productivity-and-biomass": [
+    { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Place the producer budget within grazing and detrital pathways." },
+    { slug: "plant-respiration", reason: "Review why producers use part of their captured organic material themselves." },
+    { slug: "decomposition-and-mineralisation", reason: "Follow material leaving the live biomass pool into decomposition and nutrient release." },
+  ],
   "c3-c4-pathways-and-photorespiration": [
     { slug: "photosynthesis-in-higher-plants", reason: "Review light reactions and the Calvin-cycle net account before adding a carbon-concentrating route." },
     { slug: "anatomy-of-flowering-plants", reason: "Locate mesophyll and vascular bundle tissues before comparing their specialised roles." },
@@ -41,6 +66,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-basis-of-inheritance", reason: "Review the experimental evidence for DNA copying and information storage." },
   ],
   "mutation-and-gene-expression": [
+    { slug: "lac-operon-and-induction", reason: "Work through a binding-change example to see how gene activity can change without deleting structural genes." },
     { slug: "genetic-code-and-reading-frames", reason: "Check the specific coding consequence of a substitution or insertion." },
     { slug: "dna-rna-replication-transcription-translation", reason: "Separate changes to a template from the steps that read it." },
     { slug: "evolution-and-natural-selection", reason: "Distinguish the origin of variation from changes in its frequency." },
@@ -150,6 +176,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
   ],
   "mendelian-inheritance": [
+    { slug: "incomplete-dominance-and-codominance", reason: "See why segregation can stay the same while the heterozygote changes the phenotype ratio." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Connect segregation of alleles with the movement of homologous chromosomes." },
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Apply inheritance rules when the evidence is a family tree." },
   ],
@@ -180,6 +207,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [
+    { slug: "seed-development-and-ploidy", reason: "Trace the embryo, endosperm and maternal tissues separately and calculate their chromosome sets." },
     { slug: "morphology-of-flowering-plants", reason: "Review floral whorls, ovary position, fruit and seed landmarks before tracing reproductive events." },
     { slug: "human-reproduction", reason: "Compare gamete formation and fertilisation while keeping double fertilisation specific to flowering plants." },
     { slug: "mitosis-and-meiosis", reason: "Track chromosome reduction and subsequent mitotic divisions." },
@@ -213,6 +241,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Apply strand complementarity to laboratory amplification and analysis." },
   ],
   "evolution-and-natural-selection": [
+    { slug: "population-genetics", reason: "Compare observed genotype counts with Hardy-Weinberg predictions and check when a phenotype permits an allele estimate." },
     { slug: "mendelian-inheritance", reason: "Review how alleles are passed on before counting them across generations." },
     { slug: "mutation-and-gene-expression", reason: "Separate the origin of a new variant from its later selection." },
     { slug: "organisms-and-populations", reason: "Connect environmental interactions with survival and reproductive success." },
@@ -223,6 +252,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Move from population counts to trophic roles and resource transfer in an ecosystem." },
   ],
   "ecosystem-energy-flow-and-ecological-pyramids": [
+    { slug: "primary-productivity-and-biomass", reason: "Audit productivity units and distinguish net production from a change in standing biomass." },
     { slug: "biodiversity-and-conservation", reason: "Ask which species interactions and habitats conservation measures can retain." },
     { slug: "photosynthesis-in-higher-plants", reason: "Start with how producers capture light energy before tracing transfers through trophic levels." },
     { slug: "plant-respiration", reason: "Compare energy captured by producers with the cellular release of stored chemical energy." },

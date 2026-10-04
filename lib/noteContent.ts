@@ -23,6 +23,11 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "incomplete-dominance-and-codominance",
+  "population-genetics",
+  "lac-operon-and-induction",
+  "seed-development-and-ploidy",
+  "primary-productivity-and-biomass",
   "c3-c4-pathways-and-photorespiration",
   "carbohydrates-proteins-lipids-nucleic-acids",
   "basic-genetic-diseases-as-inheritance-examples",
@@ -73,6 +78,176 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "incomplete-dominance-and-codominance": [
+    { heading: "The heterozygote is the comparison that matters", paragraphs: [
+      "Two parents have different versions of a gene. Knowing that their offspring receives one version from each parent tells you its genotype, but not yet its appearance. You still need a rule linking that genotype to the feature being observed. Complete dominance, incomplete dominance and codominance describe different relationships at this second step.",
+      "The useful comparison is between the heterozygote and both homozygotes. Does the heterozygote resemble one homozygote for the stated trait, show an intermediate phenotype, or express both distinguishable allele-associated features? Those observations separate the three models. They do not change the requirement to identify the parental genotypes and their gametes before calculating a cross."
+    ] },
+    { heading: "Pink flowers do not contain a newly blended allele", paragraphs: [
+      "NCERT's inheritance chapter uses snapdragon flower colour to illustrate incomplete dominance: the heterozygote has pink flowers between the red and white homozygous phenotypes. For the reasoning here, call the two alleles C-R and C-W. These are text labels for the red-associated and white-associated alleles, not an assertion that one is completely dominant.",
+      "A C-R/C-W plant is pink in this model, but its gametes carry C-R or C-W. They do not carry a third 'pink allele' manufactured by mixing the two. An intermediate phenotype is therefore compatible with particulate inheritance: the alleles retain their identities and segregate. In the figure, the uniformly pink flower represents the phenotype; it is not a picture of the contents of a gamete.",
+      "Avoid turning the example into a rule about every red and white flower. The genotype-to-colour relationship is specified for this teaching model. Other pigments, species and genetic backgrounds may behave differently. A colour description alone cannot establish an inheritance mechanism without a suitable comparison."
+    ] },
+    { heading: "Change the cross and the familiar ratio changes", paragraphs: [
+      "Consider an independently framed nursery exercise: a pink C-R/C-W plant is crossed with a white C-W/C-W plant. Assume equal segregation, random fertilisation and equal survival. The pink parent supplies C-R or C-W gametes, each with probability one half. The white parent supplies only C-W. Offspring are therefore C-R/C-W or C-W/C-W in equal expected proportions.",
+      "The predicted phenotype ratio is one pink to one white, with no red class. In a hypothetical group of 80 offspring, the expected counts are 40 pink and 40 white. These are expectations, not a requirement that every observed group divide exactly in half. Red would require C-R from both parents, which the white parent cannot supply in the stated model.",
+      "Now change only the second parent to another pink heterozygote. The possible combinations are C-R/C-R, C-R/C-W, C-W/C-R and C-W/C-W. The middle two are the same heterozygous genotype, giving a 1:2:1 genotype ratio and, here, red:pink:white in the same ratio. The wrong shortcut is to use 1:2:1 for every incomplete-dominance cross without checking the parents.",
+      "A different wrong shortcut is 3:1 for the two-pink cross. That groups the heterozygote with one homozygote as though their phenotypes were indistinguishable. They are distinguishable in the stipulated flower-colour model. The segregation calculation was not the problem; the error arose while converting genotypes into phenotype classes."
+    ] },
+    { heading: "AB means two antigen types, not an intermediate blood group", paragraphs: [
+      "In the standard ABO inheritance model, I-A and I-B are codominant with one another. An I-A/I-B individual has both A and B antigen types on red blood cells. This is not a halfway antigen formed by averaging A and B. The right side of the illustration uses two marker shapes to represent their simultaneous presence; the shapes are not actual carbohydrate structures.",
+      "The usual third allele is i. I-A/i gives group A, I-B/i gives group B, and i/i gives group O in this simplified model. Thus the same allele system contains more than one relationship: I-A and I-B are codominant to each other, while each is dominant to i for the usual ABO phenotype. Naming an allele without its comparison partner is not enough to specify a dominance relationship.",
+      "This is an inheritance explanation, not a transfusion guide or a method for assessing parentage. It deliberately leaves out rare variants, other blood-group systems and clinical interpretation. Those require information that a basic classroom cross does not provide."
+    ] },
+    { heading: "An AB-by-O cross exposes the gamete-level mistake", paragraphs: [
+      "Take a hypothetical I-A/I-B by i/i cross. The AB parent can supply I-A or I-B; the O parent supplies i. The two expected offspring genotypes are I-A/i and I-B/i, giving equal probabilities of the A and B phenotypes in this model. There is no I-A/I-B combination because the O parent supplies neither of those alleles.",
+      "Why is the answer 'half AB, half O' tempting? It treats parental phenotypes as intact packages passed through gametes. A gamete carries one allele at this locus, not the parent's two-allele blood-group label. Write the single-allele contributions and that proposed answer has no route through the cross.",
+      "For a second check, cross two AB genotypes in the same idealised model. I-A/I-A, I-A/I-B and I-B/I-B have expected frequencies one quarter, one half and one quarter. Their phenotypes are A, AB and B. The numerical pattern matches the two-pink flower cross, but the heterozygote observation differs: simultaneous antigen expression in one example, intermediate flower colour in the other. A 1:2:1 ratio alone cannot distinguish incomplete dominance from codominance."
+    ] },
+    { heading: "Three alleles in a population do not mean three in one person", paragraphs: [
+      "Multiple allelism describes more than two allele forms at a locus in a population. In the ordinary diploid model, one individual still has two copies of that autosomal locus and therefore at most two of those allele forms. ABO can illustrate multiple allelism and codominance at the same time because the terms answer different questions.",
+      "Multiple allelism asks how many alternative forms exist in the population. Codominance asks how a particular heterozygous combination is expressed. Neither term means that several separate genes must contribute to the trait; that is the different idea of polygenic inheritance. Keep locus count, population allele variety and heterozygote expression on separate lines in your notes."
+    ] },
+    { heading: "Build the phenotype key after the genotype list", paragraphs: [
+      "For a final recall task, draw two columns headed 'gamete combinations' and 'phenotype rule'. Fill the first with the pink-by-white example, then use the rule to label the results. Repeat with AB-by-O. Your checks are pink:white = 1:1 and A:B = 1:1 under the assumptions already stated, with no red and no AB offspring respectively.",
+      "Finish with one explanatory sentence: segregation tells you which allele combinations can form, while the dominance relationship tells you how to classify their phenotypes. Then explain why both a pink-flower heterozygote and an AB individual retain two distinct alleles. That distinction is more useful than remembering an isolated ratio without its cross."
+    ] },
+  ],
+  "population-genetics": [
+    { heading: "Count copies before assigning probabilities", paragraphs: [
+      "A population can contain many individuals that carry A without having the same proportion of A among its allele copies. An AA individual contributes two copies; an Aa individual contributes one. Counting carriers treats these individuals alike and loses information. The first decision in a population-genetics calculation is therefore what the denominator counts: individuals or copies of a particular locus.",
+      "Use a diploid, autosomal locus with only two alleles, A and a, throughout this guide. If there are N individuals, there are 2N copies of that locus. Let p denote the frequency of A and q the frequency of a. Because those are the only alleles in this model, p + q = 1. This accounting identity does not, by itself, demonstrate Hardy-Weinberg equilibrium."
+    ] },
+    { heading: "The same allele total can hide different pairings", paragraphs: [
+      "Take an invented sample of 100 individuals: 40 AA, 20 Aa and 40 aa. The A count is (2 x 40) + 20 = 100; the a count is (2 x 40) + 20 = 100. Divide each by 200, not by 100, to obtain p = 0.5 and q = 0.5. Direct counting does not require the sample to be at equilibrium.",
+      "Now calculate the Hardy-Weinberg expectations from these allele frequencies: p squared = 0.25, 2pq = 0.50 and q squared = 0.25. For a sample size of 100, those proportions correspond to expected counts of 25 AA, 50 Aa and 25 aa. They are clearly different from the observed 40, 20 and 40, even though both sets contain 100 A copies and 100 a copies.",
+      "In the figure, teal bars are the invented observations and amber bars are the model expectations. The discrepancy is in how allele copies are paired into genotypes. Do not overwrite the observations with the calculated bars: prediction and measurement occupy separate columns. This distinction is the main reason to learn the calculation rather than only the formula."
+    ] },
+    { heading: "Where the factor two in 2pq comes from", paragraphs: [
+      "Under the random-union model, a gamete carrying A can pair with one carrying a, with probability pq. The reverse parental contribution, a followed by A, has probability qp. These are two routes to the same heterozygous genotype, so their probabilities add to 2pq. AA has probability p times p, and aa has probability q times q.",
+      "This is a population-level model using allele frequencies in the gamete pools. It is not a statement that every individual is heterozygous or that every mating is Aa x Aa. In the familiar heterozygote cross, each parent's gametes happen to have equal allele probabilities. A population can have those same overall probabilities while containing many different parental genotypes.",
+      "The usual equilibrium baseline assumes random mating, enough individuals for drift to be negligible, no selection, no migration and no mutation. Treat these as assumptions to state, not observations proved by the algebra. NCERT Class 12 Biology, Chapter 6, introduces the Hardy-Weinberg principle within Evolution; the supplementary sources explain the distinction between allele counts and genotype expectations."
+    ] },
+    { heading: "A recessive phenotype permits an estimate only with assumptions", paragraphs: [
+      "Suppose an independently constructed exercise states that a fully expressed recessive phenotype occurs in 4% of a population at Hardy-Weinberg equilibrium. Assume one autosomal locus, two alleles, complete dominance, and no ambiguity in phenotype classification. The recessive phenotype identifies aa, so q squared = 0.04 and q = 0.20. It follows that p = 0.80 and the expected heterozygote frequency is 2 x 0.80 x 0.20 = 0.32.",
+      "For a population of 2,000 under that idealised model, the expectations are 1,280 AA, 640 Aa and 80 aa. The counts sum to 2,000. A second check counts a copies: 640 from heterozygotes plus 160 from aa gives 800 out of 4,000 copies, or 0.20. This returns the original q and checks that individuals have not been confused with alleles.",
+      "The wrong answer q = 0.04 treats a genotype frequency as an allele frequency. A different mistake is calling all 96% with the dominant phenotype AA. That group includes Aa as well. If equilibrium is not supplied or justified, the recessive phenotype alone does not determine how the remaining individuals split between AA and Aa. The missing heterozygote count prevents a unique allele-frequency calculation."
+    ] },
+    { heading: "Why a mismatch does not identify its own cause", paragraphs: [
+      "Return to the observed 40/20/40 sample. It contains fewer heterozygotes than the simple random-union expectation. That observation calls for explanation, but it does not tell us that A is advantageous or that a mutation has occurred. Sampling, population structure, mating patterns and other processes can affect the comparison. Assigning one cause requires evidence beyond the three genotype counts.",
+      "Nonrandom mating can change genotype proportions without necessarily changing allele frequencies when other influences are absent. Conversely, observing a set of proportions close to the model at one time does not prove that allele frequencies have remained unchanged across generations. A snapshot of pairing and a time series of allele frequencies answer different questions.",
+      "For NEET revision, explain the baseline and recognise the processes that can disturb it. For real data, a small departure from expected counts may simply reflect sampling variation; a formal assessment needs appropriate statistical treatment. The invented chart is not a statistical test, and its purpose is not to infer a real population's mating system."
+    ] },
+    { heading: "A dominant allele need not be the common allele", paragraphs: [
+      "Dominance describes the phenotype of a heterozygote, not an allele's share of the gene pool. Imagine p = 0.10 for A in the equilibrium model. The expected AA frequency is 0.01 and Aa frequency is 0.18, so a completely dominant A phenotype would occur in 0.19 of individuals. A can determine the heterozygote phenotype while remaining the less frequent allele.",
+      "There is also a useful boundary check on heterozygosity. With two alleles, 2pq reaches its model maximum of 0.50 when p and q are both 0.50. This is a limit on Hardy-Weinberg expected heterozygosity, not a prohibition against an observed sample containing more than 50% heterozygotes. A deliberately produced group consisting entirely of Aa offspring, for example, is not a random-mating population sample."
+    ] },
+    { heading: "Choose the valid starting line without looking at the formula", paragraphs: [
+      "Write three prompts on paper: genotype counts are known; only a recessive phenotype is known with equilibrium stated; only a dominant phenotype is known without equilibrium stated. For the first, start by counting allele copies. For the second, identify q squared before taking a square root. For the third, explain why the AA/Aa split is unresolved instead of inventing it.",
+      "Finally reproduce the 40/20/40 comparison and the 4% example on separate lines. Mark measured counts with O and expected counts with E. Verify that genotype frequencies sum to one and allele copies sum to 2N. End each solution with its assumption: direct counting, or a Hardy-Weinberg prediction. That final label keeps the mathematical result attached to the evidence that supports it."
+    ] },
+  ],
+  "lac-operon-and-induction": [
+    { heading: "A change in food can change transcription without changing DNA", paragraphs: [
+      "An E. coli cell does not need to acquire a new set of genes each time its surroundings change. It can alter how strongly an existing set is transcribed. The lac system is a useful way to reason about that distinction: the DNA instructions remain, while a protein's interaction with a control region changes. Follow the binding events before memorising the names z, y and a.",
+      "This guide concentrates on the negative-control model in NCERT Class 12 Biology, Chapter 5, section 5.8.1. Its central question is whether the repressor can occupy the operator and restrict transcription. That question is narrower than asking whether the cell is producing the greatest possible amount of the enzymes. The difference matters when glucose enters the discussion."
+    ] },
+    { heading: "Separate the DNA address from the protein that visits it", paragraphs: [
+      "The promoter and operator are regions of DNA. RNA polymerase recognises the promoter to initiate transcription; the repressor interacts with the operator. The regulatory i gene encodes the repressor protein. Neither the operator nor the promoter is a small protein that travels along the chromosome. The names describe different kinds of objects, even though a compact operon drawing places them close together.",
+      "With an active repressor bound, transcription of the structural genes is strongly restricted. When the inducer binds the repressor, it changes the protein's ability to bind the operator. The operator has not vanished, and the structural genes have not been rebuilt. An occupied regulatory site can become available because a binding partner has changed state. In the figure, compare the repressor's location before interpreting the arrow."
+    ] },
+    { heading: "What z, y and a contribute after the gate opens", paragraphs: [
+      "The structural genes share transcriptional control, but their products do different jobs. The z product, beta-galactosidase, hydrolyses lactose into glucose and galactose. The y product, permease, supports entry of beta-galactosides into the cell. The a product is transacetylase. Keep that last name attached to a rather than inventing an additional lactose-cutting step for it.",
+      "A polycistronic RNA contains information for more than one polypeptide. It is not one giant enzyme with three alternative names. Think of the distinction as one transcriptional message containing several coding regions. Translation can produce different proteins from those regions. The comparison table sorts the system by object and direct interaction, because a list of letters alone does not reveal what can bind what.",
+      "Permease also helps explain why transport and chemical breakdown should not be merged. Entry changes where a molecule is available. Hydrolysis changes its chemical structure. A defect in either process could interfere with lactose use, but the immediate failed step would be different. Naming that step is more informative than saying only that the operon is not working."
+    ] },
+    { heading: "Lactose in the textbook, allolactose at the binding step", paragraphs: [
+      "NCERT presents lactose as the inducer in its explanatory model. At the more specific biochemical level, allolactose, formed from lactose, is the physiological molecule that binds the lac repressor. The supplementary OpenStax source makes this distinction explicit. Keep the school-level signal and the immediate binding molecule on different lines of the same explanation rather than treating the descriptions as unrelated pathways.",
+      "Induction does not mean the inducer attaches to the operator and pushes a protein away mechanically. It acts through the repressor. Nor does induction mean the regulatory gene stops existing. The change being modelled is reversible protein binding. Basal expression supplies small amounts of relevant proteins, so a strongly repressed state should not be imagined as an absolute, permanent absence of every molecule needed to respond."
+    ] },
+    { heading: "An invented binding experiment: predict the failed step", paragraphs: [
+      "Consider two hypothetical preparations with identical operator DNA and functional transcription machinery. Preparation A contains an ordinary repressor. Preparation B contains a modified repressor that still binds the operator but cannot bind the inducer. Assume the inducer is supplied directly and all other conditions are held constant. This is a reasoning exercise, not a reported experiment or an examination question.",
+      "Before inducer is supplied, both repressors can occupy the operator. After it is supplied, A can lose operator occupancy because its repressor responds to the inducer. B remains repressive under the stated assumptions: adding more signal cannot repair the missing signal-binding ability. The discriminating observation is the response to inducer, not merely the presence of the repressor gene.",
+      "Now test the tempting explanation 'B must have deleted z, y and a.' Nothing in the setup says those coding regions are missing. The predicted problem lies upstream, in regulatory response. A second wrong explanation is 'the inducer will bind operator DNA instead.' That substitutes the wrong target. Resolve both by writing two pairs: repressor-operator and inducer-repressor.",
+      "For a separate hypothetical case, change only the operator so that it cannot bind the ordinary repressor. The negative-control block would be lost even without inducer. This does not establish maximum expression under every nutrient condition. It identifies the consequence of one altered interaction while leaving other controls outside the simplified experiment."
+    ] },
+    { heading: "Permitted transcription is not automatically maximum transcription", paragraphs: [
+      "Glucose availability supplies another layer of regulation. The broader account includes cAMP and CAP, which help promote strong transcription when glucose is scarce. Lactose-derived induction relieves repression; low-glucose signalling supports activation. The two conditions answer different questions. For the NCERT negative-control model, keep attention on repression and induction; use the second layer only to avoid an absolute claim about expression strength.",
+      "A statement such as 'lactose present means maximum enzyme production' skips this qualification. A more defensible statement is that an effective inducer reduces lac-repressor binding to the operator. That says exactly which link changed and does not pretend that every other influence has been measured."
+    ] },
+    { heading: "Explain induction with five verbs", paragraphs: [
+      "On a blank page, use encodes, binds, restricts, changes and permits. Construct a short account starting with the regulatory gene and ending with structural-gene transcription. Check that each verb has a physical subject: DNA encodes a protein, a protein binds a DNA region, and an inducer changes the repressor's binding behaviour.",
+      "Then cover the text and solve the modified-repressor example again. Your answer should name the unchanged operator, the defective inducer-binding step and the predicted persistence of repression. Finally distinguish permease-mediated entry from beta-galactosidase-mediated breakdown. If you can do these tasks without replacing every component with the word 'switch', the mechanism is secure."
+    ] },
+  ],
+  "seed-development-and-ploidy": [
+    { heading: "One seed contains tissues with different histories", paragraphs: [
+      "Calling a seed 'the product of fertilisation' is useful shorthand, but it hides an important distinction. Some tissues descend from fusion events; others were already part of the maternal plant. To determine chromosome number or parentage, identify the particular tissue first. An embryo, endosperm and seed coat cannot all be assigned the same origin merely because they occupy one seed.",
+      "Use the conventional diploid flowering-plant model with a typical embryo sac. The focus here is tissue ancestry after fertilisation, not the full route from anther to stigma. NCERT Class 12 Biology, Chapter 1, treats this under Double Fertilisation and Post-fertilisation: Structures and Events. Exceptional reproductive routes are useful boundary cases, but they should not be silently inserted into the ordinary model."
+    ] },
+    { heading: "Trace each tissue back before adding chromosome sets", paragraphs: [
+      "An egg nucleus and one male gamete contribute to the zygote. Both are haploid in the stated model, so the zygote is diploid and develops into the embryo. The second male gamete joins the two haploid polar nuclei, or their diploid fusion product, to establish the typically triploid primary endosperm nucleus. Endosperm development follows from this second route.",
+      "The integuments belong to the maternal sporophyte and form the seed coat. They do not become triploid when the nearby endosperm does. Nucellus is also maternal tissue; where a remnant persists in the seed, it is called perisperm. The original figure follows these separate origins. Its maternal branch bypasses fertilisation deliberately: protection and residual nourishment can come from tissues that were not created by either fusion."
+    ] },
+    { heading: "A chromosome audit with a maternal number of 18", paragraphs: [
+      "Here is an independently constructed example. Suppose the maternal plant and pollen donor are both diploid with 2n = 18. Assume ordinary meiosis, a typical embryo sac and normal double fertilisation. Each gametic nucleus then carries n = 9 chromosomes. Write the units as chromosomes per nucleus, rather than counting cells or chromatids.",
+      "The zygote receives 9 + 9 = 18 chromosomes. The primary endosperm nucleus receives 9 + 9 + 9 = 27. A seed-coat cell retains the maternal sporophyte count of 18. If nucellus persists as perisperm, its ordinary somatic nuclei also have 18 under this model. The fact that two tissues both have 18 does not establish the same parentage: embryo and seed coat reached that number through different histories.",
+      "Check the plausible wrong answer 'the coat has 27 because it encloses triploid tissue.' Position does not transfer chromosome sets between neighbouring tissues. The coat's count follows integument ancestry. Another wrong answer is 'triple fusion makes a triploid embryo.' Triple fusion belongs to the endosperm route; syngamy establishes the zygote. Label the products before calculating.",
+      "The numbers are idealised starting counts for this revision exercise. Later endoreduplication in some tissues is a separate biological issue and is not part of the stated assumptions. A careful calculation identifies its model rather than promising that every nucleus in every mature seed must match this simple count."
+    ] },
+    { heading: "Maternal contribution means two different things here", paragraphs: [
+      "In ordinary endosperm formation, two nuclear sets are maternally derived and one is paternally derived. That is not the same as saying endosperm is unchanged maternal sporophyte tissue. It arose through a fusion that included the second male gamete. By contrast, integument-derived seed coat is maternal tissue without that paternal nuclear contribution.",
+      "Imagine labelling the maternal sets M and the paternal set P. The embryo account is M + P; the usual endosperm account is M + M + P; the coat continues as maternal sporophyte tissue. These symbols describe origin, not which alleles are dominant or which genes will be expressed. They cannot, by themselves, predict seed colour or the outcome of a cross.",
+      "This ancestry method is useful whenever a statement switches between an entire seed and one of its parts. Ask which tissue was observed. A whole-seed description may combine properties of the coat, stored reserves and embryo; it is not automatically a direct reading of the embryo's genotype."
+    ] },
+    { heading: "Reserve location can change while the seed develops", paragraphs: [
+      "Endosperm supports embryo development, but its persistence at seed maturity varies. In albuminous seeds, appreciable endosperm remains; in non-albuminous seeds, the developing embryo has consumed it. Reserve material can be stored in cotyledons. Therefore the absence of a large endosperm in a mature seed does not show that the second fertilisation never occurred.",
+      "NCERT contrasts examples such as maize and castor, which retain endosperm, with pea and groundnut, in which it is used during development. The useful distinction is persistence, not a ranking of how successfully fertilisation happened. Perisperm needs its own label because a persistent nucellus is not endosperm left over under another name.",
+      "When looking at a seed diagram, separate three questions: where is food stored now, what tissue produced that store, and what is its developmental origin? A food-storage role alone cannot answer all three. This prevents the same shortcut that confuses two unrelated organs merely because both store starch."
+    ] },
+    { heading: "Do not exchange the ovule and ovary labels", paragraphs: [
+      "An ovule normally develops into a seed, while the ovary develops into the fruit and the ovary wall contributes the pericarp. These are nested structures, not interchangeable terms. Other floral parts can contribute to some fruits, so the whole fruit is not always derived from the ovary alone.",
+      "Parthenocarpy describes fruit formation without fertilisation. Apomixis concerns seed formation without the ordinary fertilisation route. Neither term means simply that a mature seed lacks persistent endosperm. Keep the definitions at this level: predicting the ploidy of an apomictic embryo would require details of the pathway, and the normal 9 + 9 calculation should not be applied automatically."
+    ] },
+    { heading: "Reconstruct a seed from its ancestry labels", paragraphs: [
+      "Draw four empty boxes marked embryo, endosperm, seed coat and perisperm. Add an origin arrow for each before writing any ploidy symbol. Then complete the 2n = 18 example without looking back. Your self-check is 18, 27, 18 and 18, with a different explanatory origin attached to each appropriate row.",
+      "Finish by crossing out two claims and replacing them precisely: 'all seed tissues are fertilisation products' and 'no mature endosperm means no double fertilisation'. The first fails because of maternal tissues; the second ignores developmental consumption. Those explanations are the learning outcome, rather than memorising four isolated numbers."
+    ] },
+  ],
+  "primary-productivity-and-biomass": [
+    { heading: "Start with the units, not the size of the number", paragraphs: [
+      "A vegetation survey reports 600 grams of dry biomass per square metre. Another reports 600 grams per square metre per year. The numbers look identical, but only the second includes a time interval and can describe a production rate. Before comparing ecosystems, underline the unit and decide whether the measurement is a stock at one time or an amount produced over an interval.",
+      "This guide is a measurement workshop for NCERT Class 12 Biology, Chapter 12, section 12.2, Productivity. The ecosystem overview explains trophic routes and pyramids. Here the task is narrower: keep the producer budget, the time basis and the standing crop separate, then decide which calculations the supplied evidence actually permits."
+    ] },
+    { heading: "The subtraction belongs inside the producer boundary", paragraphs: [
+      "Gross primary productivity, GPP, describes producers' total rate of organic-matter production through photosynthesis. Net primary productivity, NPP, is what remains after the producers' own respiratory use: NPP = GPP - R. All terms must use a matching area, time interval and measurement basis. In this equation, R is producer respiration, not respiration by every organism in the ecosystem.",
+      "The original budget diagram keeps respiration and NPP as separate destinations from GPP. It does not send all NPP straight into an animal. Net production can contribute to growth, reproduction, grazing or material that later reaches detrital pathways. Secondary productivity describes formation of new consumer biomass; it is not another name for producer NPP."
+    ] },
+    { heading: "Repair a calculation with mismatched time intervals", paragraphs: [
+      "An invented data sheet gives GPP as 1,200 kJ per square metre for a stated 30-day interval. Producer respiration is reported as an average of 18 kJ per square metre per day across that same interval. First put respiration on the 30-day basis: 18 x 30 = 540 kJ per square metre. The net production over the interval is therefore 1,200 - 540 = 660 kJ per square metre.",
+      "If a daily mean is requested, divide 660 by 30 to obtain 22 kJ per square metre per day. You can check the same result by dividing gross production first: 1,200/30 = 40, then 40 - 18 = 22. Agreement between these two routes checks the arithmetic and the time conversion.",
+      "The attractive wrong result, 1,182, comes from subtracting 18 directly from 1,200. It mixes a daily rate with a 30-day total. Another unsupported move is multiplying 660 by twelve and presenting it as measured annual production. Seasonal conditions may differ, and a 30-day interval is not an observed full year. A projection would need an explicit assumption; it is not contained in these data."
+    ] },
+    { heading: "A standing crop is a snapshot after gains and losses", paragraphs: [
+      "Standing crop records living material present at a particular time. A highly productive community may have little standing biomass if that material is rapidly grazed, shed or replaced. Conversely, a large accumulated stock does not specify how quickly new material is being produced today. The relation is similar to a tank's water level and its inflow rate: a level does not reveal the flow unless outflows and elapsed time are also known.",
+      "For a second invented account, a small producer patch starts an interval with 240 g dry mass per square metre. Net primary production contributes 90 g per square metre during the interval. Suppose 35 g is removed by grazing and 25 g becomes dead litter, with no other gains or losses. The ending live stock is 240 + 90 - 35 - 25 = 270 g per square metre.",
+      "The observed stock increased by only 30 g, although NPP was 90 g. Setting NPP equal to ending stock minus starting stock would miss the material produced and subsequently lost from the live pool. Producer respiration must not be subtracted again here: the contribution was already specified as net production. This budget is deliberately simple, with every loss stated so the result can be checked."
+    ] },
+    { heading: "Normalise area before ranking two study plots", paragraphs: [
+      "Suppose plot A produces 150 g of net dry matter over 2 square metres in ten days, while plot B produces 100 g over 1 square metre in the same ten days. Comparing total grams would rank A first. Converting to a common basis gives A = 7.5 g per square metre per day and B = 10 g per square metre per day. B has the greater area-normalised rate in this example.",
+      "This result does not establish that the species in B is universally more productive. Light, nutrients, water, temperature and the sampled interval may differ. The calculation supports a comparison of the stated observations, not a permanent biological ranking. The distinction between correcting units and explaining the cause of a difference is worth keeping explicit.",
+      "Dry mass and energy are also different measurement bases. If one source reports grams and another reports kilojoules, a conversion requires an appropriate energy content. There is no justified subtraction between 100 g and 40 kJ. Matching the time and area labels cannot repair a mismatch in the quantity being measured."
+    ] },
+    { heading: "Do not apply ten percent before defining the transfer", paragraphs: [
+      "A simplified trophic-transfer exercise may supply a ten-percent assumption. That concerns transfer between trophic levels; it does not define the subtraction from GPP to NPP. In the 30-day example, NPP is 660 because producer respiration was 540. Replacing that calculation with ten percent of 1,200 would discard information that was explicitly provided.",
+      "Even after NPP is known, consumer production cannot be recovered exactly unless a transfer relation or the relevant feeding and metabolic measurements are supplied. 'Available to heterotrophs' does not mean every unit is eaten by herbivores or converted to animal growth. Some reaches decomposers. The correct answer to an underspecified calculation can be that an additional quantity is required.",
+      "Likewise, subtracting total community respiration from gross production answers a different accounting question from producer NPP. If a data sheet labels R only as 'respiration', identify whose respiration it represents before calculating. A familiar formula is reliable only when the symbols refer to the intended boundary."
+    ] },
+    { heading: "Audit an unfamiliar productivity claim in four passes", paragraphs: [
+      "First circle the measured quantity: dry mass, carbon or energy. Next mark area and duration. Third identify the biological boundary: producers alone or a larger community. Finally list any losses already included in the word net. These four passes usually expose an invalid subtraction before a calculator is needed.",
+      "For recall, reproduce the 30-day calculation and the standing-crop calculation on separate lines. Explain why their answers are 660 kJ of net production per square metre and 270 g of ending biomass per square metre. Then name the missing assumption needed to predict consumer production. Being able to state what the data do not show is part of understanding the budget."
+    ] },
+  ],
   "c3-c4-pathways-and-photorespiration": [
     { heading: "Two carbon-fixing steps, one carbohydrate-building cycle", paragraphs: [
       "A C4 leaf has not discarded the Calvin cycle. In the usual two-cell model, it places a carbon-concentrating route ahead of that cycle. The useful question is therefore not which plant uses the Calvin cycle, but where incoming carbon is caught, how it travels and where it reaches Rubisco. This guide follows that journey rather than repeating the light-reaction sequence.",
@@ -2142,6 +2317,28 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "incomplete-dominance-and-codominance": [
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation - incomplete dominance and co-dominance", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "OpenStax Biology 2e, 12.2: Characteristics and Traits - alternatives to dominance and recessiveness", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
+    { label: "National Human Genome Research Institute: Codominance", href: "https://www.genome.gov/genetics-glossary/Codominance" },
+  ],
+  "population-genetics": [
+    { label: "NCERT Class 12 Biology, Chapter 6: Evolution - Hardy-Weinberg Principle", href: "https://ncert.nic.in/textbook/pdf/lebo106.pdf" },
+    { label: "OpenStax Biology 2e, 19.1: Population Evolution", href: "https://openstax.org/books/biology-2e/pages/19-1-population-evolution" },
+    { label: "Nature Education: The Hardy-Weinberg Principle (genotype proportions and mating assumptions)", href: "https://www.nature.com/scitable/knowledge/library/the-hardy-weinberg-principle-13235724/" },
+  ],
+  "lac-operon-and-induction": [
+    { label: "NCERT Class 12 Biology, Chapter 5, section 5.8.1: The Lac operon (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "OpenStax Biology 2e, 16.2: Prokaryotic Gene Regulation (allolactose and glucose control)", href: "https://openstax.org/books/biology-2e/pages/16-2-prokaryotic-gene-regulation" },
+  ],
+  "seed-development-and-ploidy": [
+    { label: "NCERT Class 12 Biology, Chapter 1: Double Fertilisation; Post-fertilisation: Structures and Events", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
+    { label: "OpenStax Biology 2e, 32.2: Pollination and Fertilization (seed development)", href: "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization" },
+  ],
+  "primary-productivity-and-biomass": [
+    { label: "NCERT Class 12 Biology, Chapter 12, section 12.2: Productivity (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
+    { label: "OpenStax Biology 2e, 46.2: Energy Flow through Ecosystems", href: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems" },
+  ],
   "c3-c4-pathways-and-photorespiration": [
     { label: "NCERT Class 11 Biology, Chapter 11, sections 11.8-11.9: The C4 Pathway and Photorespiration (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
     { label: "Plant Physiology: C4 Photosynthesis (The CO2-Concentrating Mechanism and Photorespiration)", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC158949/" },
@@ -2337,6 +2534,66 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "incomplete-dominance-and-codominance": {
+    heading: "Read the phenotype rule, not just the ratio",
+    intro: "These comparisons assume a stated single-locus teaching model. The observation used to classify the heterozygote is decisive.",
+    columns: ["Relationship", "Heterozygote observation", "How genotype classes are grouped", "What it does not mean"],
+    rows: [
+      ["Complete dominance", "Matches one homozygote for the named trait", "Heterozygote and that homozygote share a phenotype class", "The recessive allele disappears"],
+      ["Incomplete dominance", "Intermediate between the two homozygotes", "Heterozygote is a separate phenotype class", "Alleles fuse into a third allele"],
+      ["Codominance", "Both distinguishable allele-associated features are expressed", "Heterozygote is distinguishable from either homozygote", "A compulsory 50:50 spatial split or equal product quantities"],
+      ["Multiple allelism", "Not a heterozygote-expression rule", "Describes allele diversity at a locus in the population", "A diploid individual carries every population allele"],
+    ],
+  },
+  "population-genetics": {
+    heading: "Match the evidence to the operation",
+    intro: "The model is needed for predicting genotype proportions, not for counting allele copies from known genotypes.",
+    columns: ["Available evidence", "Valid starting operation", "Assumption or limit"],
+    rows: [
+      ["AA, Aa and aa counts", "A copies = 2(AA) + Aa; divide by 2N", "No equilibrium assumption needed for direct counting"],
+      ["p and q under Hardy-Weinberg conditions", "Expected genotypes: p squared, 2pq, q squared", "These are expectations, not replacement observations"],
+      ["Recessive phenotype frequency with equilibrium stated", "Identify q squared, then take its positive square root", "Requires the stated simple genotype-phenotype relationship"],
+      ["Dominant phenotype frequency without equilibrium", "Keep AA and Aa unresolved", "The phenotype alone does not count A copies"],
+      ["Observed counts unlike expected counts", "Describe the discrepancy before proposing a cause", "Counts alone do not identify selection, drift or mating history"],
+    ],
+  },
+  "lac-operon-and-induction": {
+    heading: "Which component interacts with which?",
+    intro: "Read across to keep DNA sites, regulatory molecules and enzyme products in separate categories.",
+    columns: ["Component", "Kind of object", "Immediate interaction or task"],
+    rows: [
+      ["Promoter", "DNA region", "Recognised by RNA polymerase for transcription initiation"],
+      ["Operator", "DNA region", "Binding site for the lac repressor"],
+      ["Repressor", "Protein encoded by i", "Operator binding restricts structural-gene transcription"],
+      ["Allolactose", "Small inducer molecule", "Binds repressor and reduces operator binding"],
+      ["Beta-galactosidase", "Protein encoded by z", "Hydrolyses lactose; not the membrane transport protein"],
+      ["Permease", "Protein encoded by y", "Supports beta-galactoside entry; not the operator-binding protein"],
+      ["Transacetylase", "Protein encoded by a", "A distinct structural-gene product, not the repressor"],
+    ],
+  },
+  "seed-development-and-ploidy": {
+    heading: "Tissue ancestry audit for a conventional diploid plant",
+    intro: "The counts assume ordinary meiosis and a typical embryo sac. Shared ploidy does not imply shared developmental origin.",
+    columns: ["Seed component", "Developmental ancestor", "Usual starting ploidy", "Paternal nuclear contribution?"],
+    rows: [
+      ["Embryo", "Zygote following egg-sperm fusion", "2n", "Yes: one gametic set"],
+      ["Endosperm", "Primary endosperm nucleus following triple fusion", "3n", "Yes: one of three sets"],
+      ["Seed coat", "Maternal integuments", "2n", "No new paternal contribution"],
+      ["Perisperm, if retained", "Maternal nucellus", "2n", "No new paternal contribution"],
+    ],
+  },
+  "primary-productivity-and-biomass": {
+    heading: "What each measurement allows you to infer",
+    intro: "A missing time unit or an unspecified respiration boundary can invalidate otherwise correct arithmetic.",
+    columns: ["Reported measurement", "Interpretation", "What is still needed?"],
+    rows: [
+      ["GPP in kJ per square metre per day", "Gross producer production rate", "Producer respiration on the same basis to obtain NPP"],
+      ["NPP in g dry mass per square metre per year", "Net producer production rate", "Losses and initial stock to calculate ending live biomass"],
+      ["Standing crop in g dry mass per square metre", "Live biomass at the sampling time", "Production and losses over time to explain change"],
+      ["Total production in g per plot", "Amount for that plot and interval", "Plot area and duration for a comparable rate"],
+      ["Consumer production rate", "New organic matter formed by consumers", "A separate feeding and metabolic budget to explain efficiency"],
+    ],
+  },
   "c3-c4-pathways-and-photorespiration": {
     heading: "Identify a stage from its carbon input and destination",
     intro: "Read each row as a reaction or transfer in the model, not as interchangeable names for photosynthesis.",
@@ -2705,6 +2962,11 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "incomplete-dominance-and-codominance": { heading: "Do not mistake a picture for the definition", paragraphs: ["Pink is useful evidence only because the two homozygous flower colours are specified for comparison. Two symbols on the cell mean distinguishable antigen types, not that half a cell belongs to one parent. Codominance need not look like coloured patches, and it does not promise equal quantities of two products. State what is observed before naming the relationship."] },
+  "population-genetics": { heading: "The denominator tells you what you counted", paragraphs: ["In the 100-individual sample, 60 individuals carry A, but there are 100 A copies among 200 locus copies. The resulting 60% and 50% are both legitimate quantities with different meanings. Write 'individuals carrying A' or 'copies of A' beside the numerator before reaching for p. A percentage without its counted object is incomplete."] },
+  "lac-operon-and-induction": { heading: "A switch diagram needs a named binding partner", paragraphs: ["Try erasing the words on and off from your sketch. Can the picture still tell you which molecule binds DNA and which molecule binds that protein? If it cannot, redraw those interactions. The useful simplification is the binding relationship; a switch icon alone hides the mechanism you need to explain."] },
+  "seed-development-and-ploidy": { heading: "A tissue label is stronger evidence than proximity", paragraphs: ["Two adjacent seed tissues can differ in origin and chromosome count. Start a ploidy explanation with 'this tissue develops from...' and finish that sentence before adding n symbols. This also exposes an ambiguity when a prompt says only 'seed cells': there is no single tissue history for the entire seed."] },
+  "primary-productivity-and-biomass": { heading: "Keep the unit attached to the answer", paragraphs: ["Writing only 660 loses part of the solution. In the example below, the answer is an energy amount per square metre over a stated 30-day interval; its daily average is 22. Retain the unit and interval on your final line so that a numerically correct result cannot be mistaken for a different measurement."] },
   "c3-c4-pathways-and-photorespiration": { heading: "Ask what the four-carbon molecule is carrying", paragraphs: ["The four-carbon label is useful only with a starting point. Three atoms were already present in PEP before the incoming carbon was captured. Mark the incoming atom in a different colour on a rough sketch, then keep the carrier and net input in separate accounts. This explains why a transport intermediate cannot be counted wholesale as newly fixed carbon."] },
   "carbohydrates-proteins-lipids-nucleic-acids": { heading: "The lipid exception is worth saying aloud", paragraphs: ["When students rush this chapter, they often turn every big-looking biological molecule into the same kind of polymer. I prefer to make the exception visible: lipids travel with membrane fragments in the acid-insoluble fraction, but they are not polymers in the same direct way as proteins, polysaccharides and nucleic acids. That one sentence cleans up many otherwise messy options."] },
   "basic-genetic-diseases-as-inheritance-examples": { heading: "A health example is still a genetics exercise here", paragraphs: ["Named conditions can make a revision page feel clinical, but the chapter is using them to teach inheritance. Keep the answer at that level unless a qualified medical context is explicitly involved. In a study note, the honest work is to identify the route of inheritance, the evidence and the boundary of what the textbook statement supports."] },
