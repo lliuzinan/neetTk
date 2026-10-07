@@ -23,6 +23,8 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "cardiac-cycle-and-valve-pressure",
+  "pcr-amplification-and-copy-number",
   "incomplete-dominance-and-codominance",
   "population-genetics",
   "lac-operon-and-induction",
@@ -78,6 +80,73 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "cardiac-cycle-and-valve-pressure": [
+    { heading: "A valve responds to pressure, not to a memorised phase name", paragraphs: [
+      "The circulation route tells you where blood goes; the cardiac cycle explains when it can move between compartments. Start with three places on one side of the heart: atrium, ventricle and outgoing artery. A valve between two of them responds to the pressure difference across it. Knowing only that a chamber is contracting is not enough to decide whether its outlet has opened.",
+      "Use the left side as a reference: the mitral valve lies between left atrium and ventricle, and the aortic valve guards the outlet. The corresponding right-sided valves are tricuspid and pulmonary. Both sides follow the same broad order of events, although their pressures differ. In the illustration, AV means atrioventricular and outlet means semilunar; the symbols are functional gates, not anatomical drawings."
+    ] },
+    { heading: "Four states make the closed-valve intervals visible", paragraphs: [
+      "During ventricular filling, atrial pressure exceeds ventricular pressure sufficiently to open the AV valve. The semilunar valve remains closed. Much filling occurs before the atrium contracts; atrial systole adds to it. Ventricular contraction then raises pressure, closing the AV valve. There is a short interval before ventricular pressure exceeds arterial pressure, so the outlet is still closed too.",
+      "That early interval is isovolumetric contraction: pressure rises while the enclosed ventricular blood volume stays approximately constant. Once ventricular pressure exceeds the outgoing artery's pressure, the semilunar valve opens and ejection occurs. The AV valve stays closed, preventing a route back towards the atrium.",
+      "As the ventricle relaxes, pressure falls below arterial pressure and the semilunar valve closes. Before it falls sufficiently below atrial pressure to reopen the AV valve, both valves are closed again. This is isovolumetric relaxation. Filling resumes after the AV valve opens. Read the four states as a sequence of pressure crossings, not four equal time blocks."
+    ] },
+    { heading: "Solve three pressure snapshots before naming their phases", paragraphs: [
+      "Consider an invented idealised left-heart model. Use arbitrary pressure units solely to compare compartments; these are not physiological reference values or clinical measurements. Assume competent valves that respond promptly to the pressure differences. In snapshot A, atrial pressure is 8, ventricular pressure 5 and arterial pressure 70. The atrium can drive flow into the ventricle, while the artery-to-ventricle gradient holds the outlet closed.",
+      "In snapshot B, keep atrial pressure at 8 and arterial pressure at 70, but let ventricular pressure rise to 25. The ventricle now exceeds the atrium but not the artery. The AV valve is closed and the outlet has not opened: both are closed. This is compatible with the rising-pressure interval before ejection. Without the stated rising trend, the three numbers alone would not establish whether the ventricle was contracting or relaxing.",
+      "In snapshot C, ventricular pressure reaches 85 while atrial and arterial values remain 8 and 70. The outlet can now open, and the AV valve remains closed. The wrong answer 'the outlet opens as soon as ventricular pressure exceeds atrial pressure' compares the wrong pair. Each valve has its own two-sided comparison.",
+      "To reverse the reasoning, imagine pressure falling after ejection through a value between arterial and atrial pressures. Both valves can again be closed, this time during relaxation. Identical valve states therefore do not uniquely identify the direction of pressure change. Add sequence information before deciding between the two isovolumetric intervals."
+    ] },
+    { heading: "Volume change and output are separate accounts", paragraphs: [
+      "End-diastolic volume is the ventricular volume after filling; end-systolic volume is the amount remaining after ejection. Their difference is stroke volume. In an invented arithmetic example, take 125 mL at the end of filling and 55 mL after ejection. Stroke volume is 125 - 55 = 70 mL per beat. The ventricle has not emptied completely.",
+      "If the model heart rate is 75 beats per minute, cardiac output is 70 x 75 = 5,250 mL per minute, or 5.25 litres per minute, for one ventricle. Check the units: mL per beat multiplied by beats per minute leaves mL per minute. A 75-beat rate also gives an average cycle duration of 60/75 = 0.8 seconds. This does not specify how that time is divided among the phases.",
+      "Do not add left and right outputs to claim 10.5 litres of fresh systemic flow per minute. The pulmonary and systemic circuits are connected in series, and their average outputs match in a steady-state model. The same circulating blood passes through both pumps. Likewise, the 55 mL residual volume is not another amount to subtract from cardiac output after stroke volume has already been calculated.",
+      "A higher rate alone does not guarantee a larger output in an arbitrary comparison. If a second hypothetical state has 100 beats per minute and 45 mL per beat, its output is 4.5 litres per minute. This is arithmetic using supplied values, not a claim about a particular person or a prescription for exercise. The two factors have to be considered together."
+    ] },
+    { heading: "Electrical activity, valve sounds and movement need different labels", paragraphs: [
+      "The sinoatrial node normally initiates the electrical sequence, which spreads through the atria and then the ventricular conduction pathway. Electrical activation precedes the associated mechanical response. An ECG records electrical activity; it is not a plot of ventricular pressure or the amount of blood being ejected.",
+      "At the NCERT level, P represents atrial depolarisation, QRS ventricular depolarisation and T ventricular repolarisation. Do not rename QRS 'the outlet-opening wave'. Pressure must still rise sufficiently for ejection after activation. The first and second heart sounds are associated respectively with AV-valve closure and semilunar-valve closure, rather than the sound of those valves opening.",
+      "This distinction also helps interpret the word systole. Specify atrial or ventricular systole rather than assuming all four chambers contract together. The guide is about normal sequence reasoning; recognising an abnormal tracing or evaluating symptoms requires clinical assessment and is outside its scope."
+    ] },
+    { heading: "Rebuild the cycle from two questions at each boundary", paragraphs: [
+      "Draw atrium, ventricle and artery in a row. At each valve ask which side currently has higher pressure. Then write the four states from memory: filling, closed-valve pressure rise, ejection, closed-valve pressure fall. Beneath each, mark whether ventricular volume increases, stays constant or decreases. Add atrial contraction to late filling, rather than making it the only source of filling.",
+      "Finally solve snapshot B twice: once with pressure rising and once with pressure falling. Both answers have closed valves, but different phase names. Check the sequence against NCERT Class 11 Biology, Chapter 15, section 15.3.2, and distinguish the electrical account in section 15.3.3. The output calculation should finish with units and one ventricle as its reference."
+    ] },
+  ],
+  "pcr-amplification-and-copy-number": [
+    { heading: "PCR selects a region rather than copying an entire organism", paragraphs: [
+      "A DNA sample can contain far more sequence than the region you want to study. PCR, the polymerase chain reaction, increases the amount of a selected region by repeated copying. The key reasoning questions are where copying starts, which templates can be used again, and what assumptions justify a numerical prediction. A positive signal is a separate question from whether a sequence has the identity or biological meaning you expect.",
+      "This guide develops the amplification part of NCERT Class 12 Biology, Chapter 9. The molecular-tools overview compares cutting, copying and separating; here we follow copying across cycles. No clinical test interpretation or laboratory recipe is intended. Exact reaction settings depend on the target, primers and enzyme, so memorising a universal set of temperatures would obscure the mechanism."
+    ] },
+    { heading: "Three operations change what can pair with the template", paragraphs: [
+      "Denaturation separates the paired DNA strands. It does not chop the DNA backbone into restriction fragments. When the temperature is lowered appropriately, primers can anneal to complementary sequences on the templates. Extension then uses DNA polymerase and nucleotides to build new complementary DNA from the primer ends. Repeating the temperature cycle makes the new molecules available as templates in later rounds.",
+      "The original figure is a simplified one-cycle account. Blue and teal distinguish the two complementary strands; amber marks the short primers. Each separated template receives a complementary strand, producing two duplexes. The purpose is to distinguish separating strands, positioning primers and making DNA. It omits strand-end notation, enzyme movement and early-cycle length differences, which are explained in the text rather than guessed from icon shapes."
+    ] },
+    { heading: "Primers supply starting ends and define the target boundaries", paragraphs: [
+      "A DNA polymerase extends an existing strand from an available 3-prime end; it does not choose a target merely because the whole sample contains it. Two primers bind opposite template strands so that extension proceeds into the region between them. New DNA is made in the 5-prime to 3-prime direction. Primer sequence and placement therefore matter to which region becomes amplified.",
+      "Think of two bookmarks that identify opposing boundaries, rather than two labels attached anywhere on a chromosome. If both proposed extension directions point away from the desired interval, calling the molecules 'forward' and 'reverse' does not fix their geometry. This is a conceptual orientation check, not instructions for designing an assay.",
+      "Thermostable polymerase can withstand the repeated heating that separates templates. Taq polymerase is the familiar textbook example. Heat separates the strands in PCR; helicase has that role in ordinary cellular replication. Confusing these two contexts can lead to the incorrect claim that adding helicase is what makes a PCR cycle work."
+    ] },
+    { heading: "An ideal count begins with an explicit starting definition", paragraphs: [
+      "Use an invented model starting with five double-stranded, target-length DNA molecules whose boundaries already match the intended product. Assume every molecule is copied successfully once during every cycle, both strand-derived products become usable templates, and no material is lost. Under perfect doubling, the molecule count after n cycles is N0 x 2^n.",
+      "After six ideal cycles, the count is 5 x 64 = 320 double-stranded molecules. That is the final total, not the number added. The net increase is 320 - 5 = 315. After three cycles there are 40; after three more there are 320. The second group of cycles acts on the enlarged pool, not just on the original five.",
+      "Two wrong calculations reveal different mistakes. Multiplying 5 by 2 by 6 gives 60 and treats each cycle as an identical addition rather than growth of the current pool. Reporting 640 double-stranded molecules counts the strands as though each were a complete duplex. There would be 640 individual strands in 320 duplexes, but the requested unit must stay unchanged.",
+      "If the starting material is a longer DNA template, the earliest products can extend beyond a primer-defined target boundary. Exactly bounded products accumulate through subsequent cycles. Our initial definition avoids pretending that every early molecule is already the exact amplicon. The common doubling equation is a useful idealised amplification model; the object being counted must be stated."
+    ] },
+    { heading: "Efficiency changes the multiplier before it changes the answer", paragraphs: [
+      "Real reactions do not double indefinitely. Reagent limitations, enzyme behaviour and competing reactions can reduce amplification efficiency and eventually produce a plateau. A hypothetical constant efficiency E gives the model Nn = N0 x (1 + E)^n, where E = 1 means perfect doubling. This relation is an explanatory extension, not a claim that a real run has constant efficiency.",
+      "For an independent arithmetic check, begin with 100 target-length molecules and assume E = 0.8 for two cycles. The multiplier is 1.8, giving 100 x 1.8 x 1.8 = 324 expected molecules, compared with 400 under perfect doubling. The expected increase per cycle is 80% of the current pool; 80% is not the fraction of DNA left after each cycle.",
+      "The calculation demonstrates sensitivity to an assumption. It cannot estimate an unknown sample's starting quantity from an endpoint band alone. That would require an appropriate measurement method and calibration, with the model's limitations considered. The labels total copies, newly added copies and expected copies should not be exchanged mid-solution."
+    ] },
+    { heading: "A band answers less than a complete identification claim", paragraphs: [
+      "Gel electrophoresis can help compare product sizes after amplification; it is not the copying step. A band near an expected size is compatible with the intended product, but size alone does not establish sequence identity. Similarly sized unintended products can exist. Amplification and identification are therefore related but distinct tasks.",
+      "Reason through a hypothetical control: a reaction intended to contain no template nevertheless produces a band. That finding calls the interpretation into question; contamination or primer-related products are possibilities, not conclusions that can be distinguished from the band statement alone. Conversely, no visible band in a sample reaction can reflect several causes and does not, by itself, prove that the original biological sample contained no target.",
+      "Ordinary DNA PCR does not directly copy RNA. When RNA is the starting information, conversion to complementary DNA precedes DNA amplification in a reverse-transcription approach. Keep this distinction conceptual: a method name is not enough to interpret a person's diagnostic result."
+    ] },
+    { heading: "Explain each answer with an input, an operation and a unit", paragraphs: [
+      "Close the diagram and reconstruct the three operations without temperature numbers. Identify what separates, what binds and what extends. Then explain why primers and polymerase are different inputs, why a new product can become a template, and why a gel is outside the copying cycle.",
+      "Redo the five-molecule calculation, explicitly writing double-stranded molecules beside 320 and net increase beside 315. Finally reject the sentence 'the expected-size band proves the sequence' by naming the missing identity evidence. These checks separate mechanistic understanding from a memorised power of two."
+    ] },
+  ],
   "incomplete-dominance-and-codominance": [
     { heading: "The heterozygote is the comparison that matters", paragraphs: [
       "Two parents have different versions of a gene. Knowing that their offspring receives one version from each parent tells you its genotype, but not yet its appearance. You still need a rule linking that genotype to the feature being observed. Complete dominance, incomplete dominance and codominance describe different relationships at this second step.",
@@ -2317,6 +2386,15 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "cardiac-cycle-and-valve-pressure": [
+    { label: "NCERT Class 11 Biology, Chapter 15, sections 15.3.2-15.3.3: Cardiac Cycle and ECG (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
+    { label: "OpenStax Anatomy and Physiology 2e, 19.3: Cardiac Cycle", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle" },
+    { label: "NHLBI: How the Heart Beats - electrical and pumping sequence", href: "https://www.nhlbi.nih.gov/health/heart/heart-beats" },
+  ],
+  "pcr-amplification-and-copy-number": [
+    { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology - Principles and Processes (PCR amplification)", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
+    { label: "NHGRI: Polymerase Chain Reaction Fact Sheet", href: "https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet" },
+  ],
   "incomplete-dominance-and-codominance": [
     { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation - incomplete dominance and co-dominance", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e, 12.2: Characteristics and Traits - alternatives to dominance and recessiveness", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
@@ -2534,6 +2612,8 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "cardiac-cycle-and-valve-pressure": { heading: "Read valve state alongside the volume change", intro: "This idealised ventricular sequence assumes competent valves. Both-closed states occur twice, so pressure direction is needed to distinguish them.", columns: ["Ventricular interval", "AV valve", "Semilunar valve", "Ventricular volume"], rows: [["Filling", "Open", "Closed", "Increases"], ["Isovolumetric contraction", "Closed", "Closed", "Approximately constant while pressure rises"], ["Ejection", "Closed", "Open", "Decreases"], ["Isovolumetric relaxation", "Closed", "Closed", "Approximately constant while pressure falls"]] },
+  "pcr-amplification-and-copy-number": { heading: "Which missing input breaks which part of the explanation?", intro: "These are conceptual roles, not a reaction-preparation protocol. A failed result can have more than one cause.", columns: ["Input or operation", "Role in the copying account", "Misleading substitute"], rows: [["Template DNA", "Provides sequence information for complementary copying", "A gel band is the measurement, not the starting sequence definition"], ["Primer pair", "Supplies extension starts and defines the amplified interval", "Polymerase alone does not choose the target"], ["Thermostable DNA polymerase", "Extends new DNA through repeated cycling", "A primer is not a copying enzyme"], ["Nucleotides", "Supply building material for new strands", "Heating alone cannot manufacture complementary DNA"], ["Denaturation", "Separates paired strands", "Not restriction cutting of the backbone"], ["Post-amplification separation", "Compares product migration and size", "Not a substitute for sequence identification"]] },
   "incomplete-dominance-and-codominance": {
     heading: "Read the phenotype rule, not just the ratio",
     intro: "These comparisons assume a stated single-locus teaching model. The observation used to classify the heterozygote is decisive.",
@@ -2962,6 +3042,8 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "cardiac-cycle-and-valve-pressure": { heading: "Closed does not mean motionless", paragraphs: ["With both valves closed, the ventricular wall can still change tension and pressure. Approximately constant blood volume is the feature named by isovolumetric, not an absence of muscle activity. State what is staying constant before interpreting the phase."] },
+  "pcr-amplification-and-copy-number": { heading: "Write the counted object beside the exponent", paragraphs: ["The expression 2^n cannot tell you whether a problem means strands, duplexes, added molecules or exactly bounded products. Specify that object before substituting a cycle count. A correct multiplication with an unstated unit can answer a different question from the one posed."] },
   "incomplete-dominance-and-codominance": { heading: "Do not mistake a picture for the definition", paragraphs: ["Pink is useful evidence only because the two homozygous flower colours are specified for comparison. Two symbols on the cell mean distinguishable antigen types, not that half a cell belongs to one parent. Codominance need not look like coloured patches, and it does not promise equal quantities of two products. State what is observed before naming the relationship."] },
   "population-genetics": { heading: "The denominator tells you what you counted", paragraphs: ["In the 100-individual sample, 60 individuals carry A, but there are 100 A copies among 200 locus copies. The resulting 60% and 50% are both legitimate quantities with different meanings. Write 'individuals carrying A' or 'copies of A' beside the numerator before reaching for p. A percentage without its counted object is incomplete."] },
   "lac-operon-and-induction": { heading: "A switch diagram needs a named binding partner", paragraphs: ["Try erasing the words on and off from your sketch. Can the picture still tell you which molecule binds DNA and which molecule binds that protein? If it cannot, redraw those interactions. The useful simplification is the binding relationship; a switch icon alone hides the mechanism you need to explain."] },

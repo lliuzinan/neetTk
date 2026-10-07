@@ -1,6 +1,16 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "cardiac-cycle-and-valve-pressure": [
+    { slug: "blood-and-circulation", reason: "Locate the chambers and two circulation loops before following pressure changes within one beat." },
+    { slug: "human-respiration", reason: "Connect right-ventricular output to gas exchange in the pulmonary circuit." },
+    { slug: "neuron-nerve-impulse-synapse", reason: "Review electrical signalling terminology while keeping cardiac nodal tissue distinct from neurons." },
+  ],
+  "pcr-amplification-and-copy-number": [
+    { slug: "molecular-tools-and-dna-analysis", reason: "Place amplification beside restriction cutting and gel separation without exchanging their roles." },
+    { slug: "dna-rna-replication-transcription-translation", reason: "Review complementary DNA synthesis and distinguish copying from transcription." },
+    { slug: "enzymes-and-enzyme-action", reason: "Connect polymerase catalysis and temperature tolerance with the requirements of repeated cycling." },
+  ],
   "incomplete-dominance-and-codominance": [
     { slug: "mendelian-inheritance", reason: "Review segregation and gamete construction before changing the phenotype rule." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Locate alleles on homologous chromosomes and keep one locus distinct from several genes." },
@@ -43,6 +53,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "ecosystem-energy-flow-and-ecological-pyramids", reason: "Follow primary production into the ecosystem energy account." },
   ],
   "blood-and-circulation": [
+    { slug: "cardiac-cycle-and-valve-pressure", reason: "Use pressure differences to predict when blood enters or leaves a ventricle." },
     { slug: "human-respiration", reason: "Place lung gas exchange between the pulmonary artery and pulmonary veins." },
     { slug: "excretion-and-kidney-function", reason: "Follow blood to the kidney and distinguish renal circulation from tubular flow." },
     { slug: "immunity-pathogens-vaccines", reason: "Separate red-cell transport from the immune roles of white cells and antibodies." },
@@ -197,6 +208,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "biotechnology-applications", reason: "Follow a laboratory method through to its biological purpose." },
   ],
   "molecular-tools-and-dna-analysis": [
+    { slug: "pcr-amplification-and-copy-number", reason: "Work through ideal amplification counts and separate copied amount from evidence of sequence identity." },
     { slug: "recombinant-dna-technology", reason: "Place each tool in the sequence from DNA isolation to expression." },
     { slug: "biotechnology-applications", reason: "See how amplification and gene transfer support different applications." },
     { slug: "molecular-basis-of-inheritance", reason: "Review complementary strands and template copying before studying PCR." },
