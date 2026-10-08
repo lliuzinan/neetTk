@@ -1,6 +1,6 @@
 # Two mechanism-focused revision guides
 
-Publication date: 2026-10-07. Author attribution uses the site's existing author configuration.
+Prepared: 2026-10-07. Publication date: 2026-10-08 after GitHub authentication was restored. Author attribution uses the site's existing author configuration.
 
 ## Scope and differentiation
 
