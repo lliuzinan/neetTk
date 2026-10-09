@@ -1,6 +1,16 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "special-modes-of-reproduction-in-flowering-plants": [
+    { slug: "sexual-reproduction-in-flowering-plants", reason: "Review pollination and double fertilisation before studying routes that alter the usual reproductive sequence." },
+    { slug: "seed-development-and-ploidy", reason: "Trace ovule-derived seed tissues and distinguish embryo origin from endosperm and seed-coat formation." },
+    { slug: "morphology-of-flowering-plants", reason: "Locate ovule, ovary, fruit and seed as distinct structures in the flowering plant." },
+  ],
+  "five-plant-families-floral-identification": [
+    { slug: "morphology-of-flowering-plants", reason: "Review floral whorls, aestivation, ovary position and fruit terminology used in the family clues." },
+    { slug: "anatomy-of-flowering-plants", reason: "Continue from external diagnostic characters to internal tissues and vascular arrangements." },
+    { slug: "plant-kingdom", reason: "Place these angiosperm families within the broader plant-group comparison." },
+  ],
   "cardiac-cycle-and-valve-pressure": [
     { slug: "blood-and-circulation", reason: "Locate the chambers and two circulation loops before following pressure changes within one beat." },
     { slug: "human-respiration", reason: "Connect right-ventricular output to gas exchange in the pulmonary circuit." },
@@ -219,12 +229,14 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [
+    { slug: "special-modes-of-reproduction-in-flowering-plants", reason: "Continue from the ordinary post-fertilisation route to apomixis, parthenocarpy and polyembryony." },
     { slug: "seed-development-and-ploidy", reason: "Trace the embryo, endosperm and maternal tissues separately and calculate their chromosome sets." },
     { slug: "morphology-of-flowering-plants", reason: "Review floral whorls, ovary position, fruit and seed landmarks before tracing reproductive events." },
     { slug: "human-reproduction", reason: "Compare gamete formation and fertilisation while keeping double fertilisation specific to flowering plants." },
     { slug: "mitosis-and-meiosis", reason: "Track chromosome reduction and subsequent mitotic divisions." },
   ],
   "morphology-of-flowering-plants": [
+    { slug: "five-plant-families-floral-identification", reason: "Apply floral-part and fruit terminology to the five families listed in the NEET-UG 2026 syllabus." },
     { slug: "plant-kingdom", reason: "Place flowering-plant organs within the broader transition from spore-bearing groups to seed plants." },
     { slug: "anatomy-of-flowering-plants", reason: "Move from external organ landmarks to the tissue arrangements visible in transverse sections." },
     { slug: "sexual-reproduction-in-flowering-plants", reason: "Continue from floral whorls and ovules to pollination, double fertilisation and seed formation." },

@@ -8,6 +8,8 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "special-modes-of-reproduction-in-flowering-plants": { published: "2026-10-09", modified: "2026-10-09" },
+  "five-plant-families-floral-identification": { published: "2026-10-09", modified: "2026-10-09" },
   "cardiac-cycle-and-valve-pressure": { published: "2026-10-08", modified: "2026-10-08" },
   "pcr-amplification-and-copy-number": { published: "2026-10-08", modified: "2026-10-08" },
   "incomplete-dominance-and-codominance": { published: "2026-10-04", modified: "2026-10-04" },

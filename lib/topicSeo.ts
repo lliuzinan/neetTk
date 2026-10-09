@@ -16,6 +16,14 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "special-modes-of-reproduction-in-flowering-plants": {
+    focus: ["Separate apomixis, parthenocarpy and polyembryony by the structure developing and the event described.", "Trace seed and fruit precursors independently before interpreting a seedless or multi-embryo outcome.", "Recognise that embryo number and reproductive route can describe different axes."],
+    traps: ["A seedless fruit does not by itself prove apomictic seed formation.", "Polyembryony describes multiple embryos in one seed; it does not name their origin.", "Apomixis can produce a seed without fertilisation and may overlap with polyembryony."],
+  },
+  "five-plant-families-floral-identification": {
+    focus: ["Use a diagnostic feature bundle to compare the five flowering-plant families named in NEET-UG 2026 Unit 2.", "Keep inflorescence, floret and individual-flower observations at the correct structural level.", "Pair petal or stamen arrangements with ovary and fruit clues."],
+    traps: ["A sunflower capitulum is an inflorescence composed of florets, not one large flower.", "Cruciferae has six tetradynamous stamens: four long and two short.", "Glumes surround a grass spikelet; lemma and palea are associated with individual florets."],
+  },
   "cardiac-cycle-and-valve-pressure": { focus: ["Compare the pressures on the two sides of each valve.", "Separate rising-pressure contraction from actual ejection.", "Keep electrical events, valve closure and pumped volume distinct."], traps: ["Both valves are closed during two different ventricular intervals.", "An ECG represents electrical activity, not a pressure trace.", "Stroke volume excludes blood remaining after ejection.", "Left and right outputs are not added as independent systemic supplies."] },
   "pcr-amplification-and-copy-number": { focus: ["Distinguish strand separation, primer binding and new DNA extension.", "Define the starting molecules and efficiency before calculating copies.", "Explain what product size can and cannot establish."], traps: ["Denaturation separates strands rather than cutting the backbone.", "Final total and net increase are different counts.", "Perfect doubling is an assumption, not an unlimited experimental guarantee.", "A band at the expected size does not by itself establish sequence identity."] },
   "incomplete-dominance-and-codominance": { focus: ["Compare the heterozygote with both homozygotes for the specified phenotype.", "Calculate gamete combinations before grouping phenotype classes.", "Separate population allele diversity from the two copies in one diploid individual."], traps: ["Intermediate colour does not create a blended allele.", "A 1:2:1 phenotype ratio alone cannot identify incomplete dominance.", "An AB parent contributes I-A or I-B in a gamete, not an intact AB label.", "Multiple allelism and polygenic inheritance count different things."] },

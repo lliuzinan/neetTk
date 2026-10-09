@@ -71,6 +71,42 @@ test("publishes the conservation and microbes guides with original assets and co
   }
 });
 
+test("publishes two distinct flowering-plant guides with original visuals and chapter links", async () => {
+  const fixtures = [
+    {
+      slug: "special-modes-of-reproduction-in-flowering-plants",
+      image: "special-modes-of-reproduction-v1.webp",
+      source: "lebo101.pdf",
+      concepts: ["Apomixis is seed formation without fertilisation", "Parthenocarpy describes fruit development without fertilisation", "Polyembryony means that more than one embryo occurs in a single seed"],
+      related: ["sexual-reproduction-in-flowering-plants", "seed-development-and-ploidy", "morphology-of-flowering-plants"],
+    },
+    {
+      slug: "five-plant-families-floral-identification",
+      image: "five-plant-families-floral-identification-v1.webp",
+      source: "kebo105.pdf",
+      concepts: ["Malvaceae", "Cruciferae", "Leguminosae", "Compositae", "Gramineae"],
+      related: ["morphology-of-flowering-plants", "anatomy-of-flowering-plants", "plant-kingdom"],
+    },
+  ];
+  for (const item of fixtures) {
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${item.slug}.html`, import.meta.url), "utf8");
+    const article = jsonLdItems(html).find((entry) => entry["@type"] === "Article");
+    assert.equal(article.datePublished, "2026-10-09");
+    assert.equal(article.dateModified, article.datePublished);
+    assert.equal(article.author.name, "DongFeng");
+    assert.ok(html.includes(`src="/images/biology/${item.image}"`));
+    assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
+    assert.ok(html.includes(item.source));
+    for (const concept of item.concepts) assert.ok(html.includes(concept), `${item.slug}: ${concept}`);
+    for (const related of item.related) {
+      assert.ok(html.includes(`href="/neet-ug/biology/${related}"`));
+      await readFile(new URL(`../.next/server/app/neet-ug/biology/${related}.html`, import.meta.url));
+    }
+    assert.match(html, /<table/);
+    assert.match(html, /Editorial note and disclaimer/);
+  }
+});
+
 test("keeps consent defaults ahead of advertising and does not preload GA", async () => {
   const html = await readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
   const scripts = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)].map((match) => match[0]);

@@ -25,6 +25,8 @@ export type NoteEditorialBlock = {
 export const AUTHORED_NOTE_SLUGS = [
   "cardiac-cycle-and-valve-pressure",
   "pcr-amplification-and-copy-number",
+  "special-modes-of-reproduction-in-flowering-plants",
+  "five-plant-families-floral-identification",
   "incomplete-dominance-and-codominance",
   "population-genetics",
   "lac-operon-and-induction",
@@ -2378,6 +2380,105 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
   ],
+  "special-modes-of-reproduction-in-flowering-plants": [
+    {
+      heading: "Three special modes answer three different questions",
+      paragraphs: [
+        "After ordinary pollination and fertilisation, a flowering plant can show special developmental outcomes that are easy to collapse into one phrase. Ask what is developing, whether fertilisation is required for that development, and how many embryos are present. Those questions point to seed formation, fruit formation, and embryo number respectively.",
+        "Apomixis is seed formation without fertilisation. It is a form of asexual reproduction through seeds, but the cellular route can vary: an embryo may arise without the usual fertilisation event, and in some plants embryos can arise from somatic ovular tissue. Do not assume every apomictic seed follows one identical cell lineage. The useful boundary is that fertilisation is bypassed in seed reproduction.",
+        "Parthenocarpy describes fruit development without fertilisation and commonly results in fruits without seeds. It names the fruit-development outcome, not a way of making an embryo. A seedless fruit is compatible with parthenocarpy, but the observation 'no seeds' alone does not identify the developmental cause.",
+        "Polyembryony means that more than one embryo occurs in a single seed. In nucellar embryony, additional embryos can arise from nucellar cells; citrus is a familiar example. Polyembryony describes embryo number, not by itself whether every embryo originated after fertilisation. These terms are therefore not three mutually exclusive bins: an apomictic route can also produce multiple embryos.",
+      ],
+    },
+    {
+      heading: "Trace the structure before you name the special mode",
+      paragraphs: [
+        "Start with the ovule and ovary as separate structures. The ovule is the seed precursor; the ovary is the fruit precursor. Fertilisation normally begins embryo development from the zygote and is associated with endosperm formation in angiosperms. A special mode changes one part of this expected route, so identify which structure still develops and which event is absent or repeated.",
+        "A useful way to read a short description is to underline the noun first. If it says 'seed develops without fertilisation', test apomixis. If it says 'ovary forms a fruit without fertilisation', test parthenocarpy. If it says 'one seed contains several embryos', test polyembryony. Only then check the stated cellular origin; don't infer it from the label alone.",
+        "These distinctions also prevent a false inference from the final product. A seedless fruit does not establish that a seed formed apomictically, because in that case no seed may have formed at all. Conversely, a seed can contain embryos even when their origins differ. Follow the developmental account, not just the harvest description.",
+      ],
+    },
+    {
+      heading: "Work through three independent descriptions",
+      paragraphs: [
+        "Description A says that an ovary grows into a fruit although fertilisation did not occur, and no seed is described. The named outcome is parthenocarpy. Calling this apomixis would confuse fruit with seed: apomixis concerns seed reproduction without fertilisation.",
+        "Description B says one seed contains a zygotic embryo plus additional embryos that developed from nucellar cells. The seed is polyembryonic because it contains multiple embryos. The nucellar origin identifies the additional route; embryo count is the classification requested. Do not replace that count with 'multiple seeds'.",
+        "Description C says a seed embryo develops without fusion of male and female gametes. That is apomictic seed formation. If the description also reports several embryos in that seed, polyembryony can apply as a second descriptor. The labels answer different questions, so using both is not a contradiction.",
+      ],
+    },
+    {
+      heading: "Keep the reproductive sequence and the exception in view",
+      paragraphs: [
+        "Apomixis matters conceptually in plant breeding because seed-based reproduction can preserve a selected genotype without the segregation expected after repeated sexual reproduction. This is a potential advantage of an apomictic system, not a guarantee that every crop hybrid can be propagated this way or a claim about a particular commercial variety.",
+        "Parthenocarpy changes fruit formation rather than the inheritance route of a seed. Polyembryony changes how many embryos share one seed, and embryo origin must be specified before discussing genetic similarity. These are different axes: reproductive route, developing organ, and embryo count.",
+      ],
+    },
+    {
+      heading: "A three-column retrieval check",
+      paragraphs: [
+        "Cover the table below and draw three columns labelled developing structure, fertilisation status, and embryo count. Place one definition in each column, then add the citrus nucellar example where appropriate. Finish by explaining aloud why seedlessness alone cannot prove apomixis.",
+        "For the prerequisite sequence, revisit the guide to double fertilisation and post-fertilisation events. For tissue origin in a mature seed, continue to the seed-development guide. This note stays with developmental exceptions and does not replace the full flowering-plant reproductive sequence.",
+      ],
+    },
+    {
+      heading: "How to avoid a convincing but wrong label",
+      paragraphs: [
+        "A tempting answer is 'seedless means apomixis'. It fails because apomixis still describes seed formation, whereas parthenocarpy can produce a fruit when fertilisation has not taken place. Check whether a seed exists before naming a seed-reproduction route.",
+        "Another tempting answer is 'multiple embryos means multiple fertilisations'. That is not required: additional embryos can arise from nucellar tissue. Use the stated origin and count, and keep the zygotic embryo distinct from extra embryos.",
+      ],
+    },
+  ],
+  "five-plant-families-floral-identification": [
+    {
+      heading: "Identify a floral pattern from its diagnostic structure",
+      paragraphs: [
+        "The NEET-UG 2026 Biology syllabus names five flowering-plant families for study: Malvaceae, Cruciferae, Leguminosae, Compositae and Gramineae. Their alternate botanical names are useful when reading references: Cruciferae is Brassicaceae, Leguminosae is Fabaceae, Compositae is Asteraceae, and Gramineae is Poaceae. The pair of names refers to one family in each case, not two separate syllabus groups.",
+        "A productive identification path begins with a high-contrast feature rather than a long list. Look for a grass spikelet, a head made of many florets, a papilionaceous pea flower, four cruciform petals, or the staminal tube typical of the familiar Malvaceae example. Then verify the ovary, fruit or stamen arrangement before settling on a family.",
+        "The original visual is a diagnostic route map, not a set of complete flower dissections. It highlights one recognition clue per family. The comparison table carries the supporting characters and common confusions that a small mobile illustration should not try to encode all at once.",
+      ],
+    },
+    {
+      heading: "Five families, five different recognition anchors",
+      paragraphs: [
+        "Malvaceae can be recognised in the syllabus-level Hibiscus example by an epicalyx outside the calyx and numerous stamens whose filaments unite into a tube. The stigma and superior ovary complete a useful floral check. Do not confuse the epicalyx with the true calyx: they are separate whorls or structures.",
+        "Cruciferae, also called Brassicaceae, is associated with four petals arranged like a cross and six tetradynamous stamens: four are longer and two are shorter. The superior ovary and siliqua-type fruit provide a second check. 'Four petals' is a count; 'cruciform' describes their arrangement.",
+        "Leguminosae or Fabaceae is exemplified by pea. Its papilionaceous corolla has a standard, two wings and a keel; the vexillary arrangement describes how these petals overlap in the bud. A common androecium pattern is nine stamens united with one free, and the fruit is a legume. Do not transfer the pea flower pattern to every legume without checking the floral form being asked about.",
+        "Compositae or Asteraceae is not identified by one large flower: its capitulum is a head containing many small florets. In a typical sunflower-type account, the ovary is inferior and the calyx can be modified into a pappus. Ray and disc florets can differ within one head, so describe the inflorescence before assigning a single flower's traits to the entire head.",
+        "Gramineae or Poaceae is recognised through spikelets and highly reduced grass florets. Glumes surround the spikelet, while lemma and palea are associated with each floret; lodicules represent a reduced perianth. A caryopsis is the characteristic fruit type, with the fruit wall closely associated with the seed coat. Identify the spikelet level before counting florets.",
+      ],
+    },
+    {
+      heading: "Use paired clues rather than a single memorised word",
+      paragraphs: [
+        "Suppose a specimen description mentions a compound-looking head and many small units. The first question is whether those units are florets: if so, a capitulum supports Asteraceae. A 'head' in casual language is not enough; the unit of inflorescence must be specified.",
+        "If the clue is six stamens, ask whether four are long and two short. That arrangement is tetradynamous and supports Cruciferae. If instead filaments form a tube around the style and an epicalyx is present, the clue bundle points toward Malvaceae. The number alone is weaker evidence than number plus arrangement.",
+        "If a flower has a standard, wings and keel, keep the petal arrangement and fruit in the same account: a legume fruit supports Fabaceae. If the description instead uses lemma, palea and glumes, it has moved to the grass-floret scale. These terms name bracts and floral parts at different organisational levels.",
+      ],
+    },
+    {
+      heading: "A worked identification without an answer bank",
+      paragraphs: [
+        "Consider an invented field note: a plant bears a flower head made from many small florets; some florets at the margin are strap-shaped, and the ovary of a typical floret is inferior. Start with the head as the inflorescence-level clue, then verify the florets. The combination supports Compositae/Asteraceae rather than a single large flower with many petals.",
+        "A tempting but incorrect shortcut is to see the word 'sunflower' and record 'one flower'. The visible head is an inflorescence composed of florets. Another error is to use the strap-shaped ray florets to describe every floret in the head; disc florets can have a different form. State the level being described before writing the family name.",
+        "Now contrast an invented description of four petals in a cross and six stamens, four long and two short. Those paired clues support Cruciferae. A four-petal count by itself would be weaker because floral part counts can recur in different groups.",
+      ],
+    },
+    {
+      heading: "Keep the level of observation consistent",
+      paragraphs: [
+        "A family description may mix whole-plant habit, inflorescence, individual-flower characters, ovary position and fruit. These observations can all help, but they do not refer to the same unit. A capitulum is an inflorescence; a floret is an individual flower within it; a caryopsis is a fruit type. Mixing these levels makes a correct clue sound contradictory.",
+        "The table below selects a small set of discriminating characters rather than claiming that every member of a large family is identical in every feature. Common names are orientation aids, not taxonomic evidence. When a prompt names a particular species or subgroup, follow that information instead of forcing a family stereotype.",
+        "For the organs and whorls used in these descriptions, revisit the flowering-plant morphology guide. For internal tissue and vascular organisation, the anatomy guide is the relevant next step. This family note focuses on external diagnostic comparison and does not repeat the complete organ-by-organ morphology account.",
+      ],
+    },
+    {
+      heading: "Reconstruct the five-way recognition grid",
+      paragraphs: [
+        "From memory, write five family names down the page. Add one column each for signature flower or inflorescence, stamen clue, ovary or fruit clue, and one named example. Check that the grass row is at the spikelet/floret level and that the sunflower row distinguishes a head from a single flower.",
+        "Then cover the family names and identify each row using only its strongest clue. Finally cover the clues and rebuild them in your own words. A correct family label with the wrong level of observation is not yet a reliable identification.",
+      ],
+    },
+  ],
 };
 
 const defaultReferences: NoteReference[] = [
@@ -2386,6 +2487,17 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "special-modes-of-reproduction-in-flowering-plants": [
+    { label: "National Medical Commission / NTA, NEET-UG 2026 Biology syllabus, Unit 6: Reproduction", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
+    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
+    { label: "NCERT Class 12 Biology Exemplar, Chapter 2: Sexual Reproduction in Flowering Plants", href: "https://www.ncert.nic.in/pdf/publication/exemplarproblem/classXII/biology/leep402.pdf" },
+  ],
+  "five-plant-families-floral-identification": [
+    { label: "National Medical Commission / NTA, NEET-UG 2026 Biology syllabus, Unit 2: Structural Organisation in Animals and Plants", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
+    { label: "NCERT Class 11 Biology, Chapter 5: Morphology of Flowering Plants (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/kebo105.pdf" },
+    { label: "Virginia Tech Extension: Botanical characteristics of Poaceae and other plant families", href: "https://www.pubs.ext.vt.edu/ANR/ANR-12/ANR-12.html" },
+    { label: "Royal Botanic Gardens, Kew: Asteraceae flower heads and florets", href: "https://www.kew.org/read-and-watch/how-plants-have-adapted" },
+  ],
   "cardiac-cycle-and-valve-pressure": [
     { label: "NCERT Class 11 Biology, Chapter 15, sections 15.3.2-15.3.3: Cardiac Cycle and ECG (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
     { label: "OpenStax Anatomy and Physiology 2e, 19.3: Cardiac Cycle", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle" },
@@ -2769,6 +2881,28 @@ const noteTables: Record<string, NoteComparisonTable> = {
 "enzymes-and-enzyme-action": {"heading":"Which observation distinguishes the explanations?","intro":"Use matched conditions before attributing a rate change to one variable.","columns":["Observation","Possible interpretation","Check before concluding"],"rows":[["More substrate, little extra initial rate","Catalytic capacity approaches saturation","Keep enzyme amount constant"],["Activity returns after a cold sample warms","Reversible slowing is plausible","Test both samples at the same temperature"],["Extra substrate reduces an inhibitor's effect","Consistent with simple competition","Do not generalise to every inhibitor"],["Activity returns with a required cofactor","A necessary component was missing","Rule out changes in other conditions"]]},
 "plant-growth-and-development": {"heading":"A regulator claim needs a qualifying context","intro":"These associations guide revision; they are not treatment or crop-application instructions.","columns":["Regulator","Useful association","Overstatement to avoid"],"rows":[["Auxin","Apical dominance and context-dependent elongation","It promotes every tissue at every concentration"],["Gibberellins","Axis elongation and bolting in suitable plants","It is the only signal required for growth"],["Cytokinins","Cell division and delayed senescence","All mature cells must begin dividing"],["Ethylene","Ripening; some elongation responses","It always inhibits growth"],["Abscisic acid","Dormancy and water-stress responses","Dormancy means the seed is dead"]]},
 "locomotion-and-movement": {"heading":"Measure the right structure","intro":"Predictions apply to shortening in the introductory sliding-filament model.","columns":["Feature","During shortening","Why"],"rows":[["Z-disc separation","Decreases","Defines sarcomere length"],["A-band width","Remains essentially unchanged","Tracks thick-filament length"],["I-band width","Decreases","Less thin-only region"],["H-zone width","Decreases and may disappear","Less central thick-only region"],["Individual filament lengths","Remain unchanged","Sliding changes overlap instead"]]},
+  "special-modes-of-reproduction-in-flowering-plants": {
+    heading: "Classify the developmental event, not just the final product",
+    intro: "Apomixis and parthenocarpy both bypass fertilisation in a stated developmental route, while polyembryony counts embryos within one seed. These labels can describe different axes.",
+    columns: ["Term", "What is being described?", "Fertilisation relation", "Check that prevents a mix-up"],
+    rows: [
+      ["Apomixis", "Seed reproduction / embryo route", "Seed forms without fertilisation", "A seed is part of the outcome; it is not simply a seedless fruit"],
+      ["Parthenocarpy", "Fruit development", "Fruit develops without fertilisation", "Names ovary-to-fruit development, not embryo formation"],
+      ["Polyembryony", "Embryo number per seed", "Origin must be checked separately", "More than one embryo can occur in one seed; additional embryos may be nucellar"],
+    ],
+  },
+  "five-plant-families-floral-identification": {
+    heading: "Five families: compare the unit, floral clue and fruit",
+    intro: "Use a clue bundle rather than one isolated word. Floral structures can be described at the whole-inflorescence, floret or individual-flower level.",
+    columns: ["Family and familiar name", "Strong recognition clue", "Second check", "Common mix-up to avoid"],
+    rows: [
+      ["Malvaceae (Hibiscus)", "Epicalyx; numerous stamens united into a tube", "Superior ovary", "Epicalyx is not the true calyx"],
+      ["Cruciferae / Brassicaceae (mustard)", "Four cruciform petals", "Six tetradynamous stamens; siliqua fruit", "Four petals alone are weaker than the count plus arrangement"],
+      ["Leguminosae / Fabaceae (pea)", "Standard, wings and keel", "Vexillary aestivation; legume fruit", "A papilionaceous flower is not the same thing as any pea-like leaf"],
+      ["Compositae / Asteraceae (sunflower)", "Capitulum composed of florets", "Typical inferior ovary; pappus may represent modified calyx", "The visible head is an inflorescence, not one large flower"],
+      ["Gramineae / Poaceae (wheat)", "Spikelets with glumes; florets with lemma and palea", "Reduced perianth; caryopsis fruit", "Glumes belong around a spikelet, not each individual floret"],
+    ],
+  },
   "biodiversity-and-conservation": {
     heading: "What each conservation action retains, and what it leaves unresolved",
     intro: "Evaluate the biological coverage of an action instead of assuming its label proves success.",
@@ -3037,11 +3171,14 @@ const noteTables: Record<string, NoteComparisonTable> = {
       ["Pteridophytes", "Present", "Spores; sporophyte dominant", "True vascular organs but no seeds"],
       ["Gymnosperms", "Present", "Exposed ovules and naked seeds", "Seed plant without an ovary or fruit"],
       ["Angiosperms", "Present", "Ovules enclosed in ovary; seeds in fruit", "Flowers and double fertilisation"],
-    ],
-  },
+      ],
+    },
+
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "special-modes-of-reproduction-in-flowering-plants": { heading: "Name both the missing event and the developing structure", paragraphs: ["'Without fertilisation' is not enough to identify a term. Ask whether the account is about a seed, a fruit, or the number of embryos in a seed. Apomixis, parthenocarpy and polyembryony answer those different questions, and an apomictic seed can also be polyembryonic."] },
+  "five-plant-families-floral-identification": { heading: "One visible head can contain many flowers", paragraphs: ["For Asteraceae, name the capitulum as an inflorescence and the small units as florets. If a prompt shifts to ray or disc floret details, stay at that level; a feature of one floret should not silently become a description of the whole head."] },
   "cardiac-cycle-and-valve-pressure": { heading: "Closed does not mean motionless", paragraphs: ["With both valves closed, the ventricular wall can still change tension and pressure. Approximately constant blood volume is the feature named by isovolumetric, not an absence of muscle activity. State what is staying constant before interpreting the phase."] },
   "pcr-amplification-and-copy-number": { heading: "Write the counted object beside the exponent", paragraphs: ["The expression 2^n cannot tell you whether a problem means strands, duplexes, added molecules or exactly bounded products. Specify that object before substituting a cycle count. A correct multiplication with an unstated unit can answer a different question from the one posed."] },
   "incomplete-dominance-and-codominance": { heading: "Do not mistake a picture for the definition", paragraphs: ["Pink is useful evidence only because the two homozygous flower colours are specified for comparison. Two symbols on the cell mean distinguishable antigen types, not that half a cell belongs to one parent. Codominance need not look like coloured patches, and it does not promise equal quantities of two products. State what is observed before naming the relationship."] },

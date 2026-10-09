@@ -15,6 +15,16 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "special-modes-of-reproduction-in-flowering-plants": {
+    src: "/images/biology/special-modes-of-reproduction-v1.webp",
+    alt: "Three panels compare apomictic seed development, parthenocarpic fruit development without a seed, and multiple embryos within one seed.",
+    caption: "Original developmental comparison. Apomixis concerns seed formation without fertilisation; parthenocarpy concerns fruit development without fertilisation; polyembryony counts embryos in one seed and does not by itself specify their origin.",
+  },
+  "five-plant-families-floral-identification": {
+    src: "/images/biology/five-plant-families-floral-identification-v1.webp",
+    alt: "Five schematic flower forms show Hibiscus with a staminal column, cruciform mustard, papilionaceous pea, sunflower capitulum, and grass spikelets.",
+    caption: "Original schematic comparison, not to scale. The sunflower head contains florets; the grass drawing shows spikelet and floret structures. Use the accompanying table for diagnostic details.",
+  },
   "cardiac-cycle-and-valve-pressure": { src: "/images/biology/cardiac-cycle-and-valve-pressure-v1.webp", alt: "Four stages show AV open and outlet closed for filling, both closed while pressure rises, AV closed and outlet open for ejection, and both closed while pressure falls.", caption: "Original conceptual ventricular sequence. AV means atrioventricular and outlet means semilunar. The closed-valve intervals differ in pressure direction; the diagram is not an anatomical drawing or a time-scaled trace." },
   "pcr-amplification-and-copy-number": { src: "/images/biology/pcr-amplification-and-copy-number-v1.webp", alt: "A conceptual PCR cycle separates template strands, attaches short primers and extends complementary DNA to produce two duplexes in the ideal copying model.", caption: "Original simplified PCR cycle: separate, bind, extend. Blue and teal distinguish complementary strands; amber marks primers. Polarity, enzyme movement and early-cycle product-length differences are omitted; copying efficiency is idealised." },
   "incomplete-dominance-and-codominance": { src: "/images/biology/incomplete-dominance-and-codominance-v1.webp", alt: "A uniformly pink flower represents an intermediate heterozygous phenotype; a schematic red blood cell bears two distinct marker types representing A and B antigens together.", caption: "Original comparison of two heterozygote outcomes: intermediate flower colour and simultaneous A/B antigen expression. Marker shapes are symbolic, not molecular structures; they do not indicate equal antigen quantities or separate halves of a cell." },
@@ -200,6 +210,16 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
 };
 
 const articleStudyNotes: Record<string, { heading: string; intro: string; points: string[] }> = {
+  "special-modes-of-reproduction-in-flowering-plants": {
+    heading: "The structure-first check",
+    intro: "Name the developing structure and the event before choosing a special-mode label.",
+    points: ["Seed develops without fertilisation: apomixis.", "Ovary develops into a fruit without fertilisation: parthenocarpy.", "More than one embryo occurs in one seed: polyembryony; check each embryo's origin separately.", "An apomictic seed can also be polyembryonic because reproductive route and embryo count are different axes."],
+  },
+  "five-plant-families-floral-identification": {
+    heading: "The five-clue recall strip",
+    intro: "Rebuild a family label from the strongest structural clue, then verify it with a second character.",
+    points: ["Malvaceae: epicalyx and a staminal tube.", "Cruciferae: four cruciform petals plus six tetradynamous stamens.", "Leguminosae: standard, wings and keel; check the fruit is a legume.", "Compositae: a capitulum composed of florets.", "Gramineae: spikelets, glumes, lemma and palea; check the caryopsis."],
+  },
   "chromosomal-basis-of-inheritance": {
     heading: "The chromosome-first check",
     intro: "Before accepting a genetics ratio, decide what physical chromosome relationship the question describes.",
