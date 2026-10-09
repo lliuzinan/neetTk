@@ -109,11 +109,11 @@ test("publishes two distinct flowering-plant guides with original visuals and ch
 
 test("keeps consent defaults ahead of advertising and does not preload GA", async () => {
   const html = await readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
-  const scripts = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)].map((match) => match[0]);
-  const defaults = scripts.findIndex((script) => script.includes('id="consent-defaults"'));
-  const ads = scripts.findIndex((script) => script.includes('src="https://pagead2.googlesyndication.com'));
+  const defaults = html.indexOf('id="consent-defaults"');
+  const ads = html.indexOf("medqgo-adsense");
   assert.ok(defaults >= 0 && ads > defaults);
-  assert.ok(!scripts.some((script) => /src="https:\/\/www.googletagmanager.com\/gtag/.test(script)));
+  assert.ok(html.includes("afterInteractive"));
+  assert.doesNotMatch(html, /src="https:\/\/www\.googletagmanager\.com\/gtag/);
 });
 
 test("keeps article first publication and modification dates consistent across HTML and sitemap", async () => {
@@ -162,9 +162,12 @@ test("renders the independent revision home and topic library", async () => {
     readFile(new URL("../.next/server/app/index.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology.html", import.meta.url), "utf8"),
   ]);
+  const homeSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
   assert.match(homeHtml, /NEET Biology revision notes/);
   assert.match(homeHtml, /in-depth revision notes/);
   assert.match(homeHtml, /medqgo-biology-study-journey-v1\.webp/);
+  assert.match(homeHtml, /fetchpriority="high"/i);
+  assert.ok((homeSource.match(/prefetch=\{false\}/g) || []).length >= 4);
   assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
   assert.match(homeHtml, /View free workbook sample/);
   assert.match(homeHtml, /Build one connected topic at a time/);

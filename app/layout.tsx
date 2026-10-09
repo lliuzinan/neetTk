@@ -59,9 +59,9 @@ export default function RootLayout({
     <html lang="en-IN">
       <head>
         <script id="consent-defaults" dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});` }} />
-        <GoogleAdSense />
       </head>
       <body>
+        <GoogleAdSense />
         <GoogleAnalytics gaId={siteConfig.gaId} />
         {children}
         <Footer />

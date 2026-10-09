@@ -89,7 +89,7 @@ export default async function Home() {
               <p>Start reading</p>
               <div>
                 {mobileQuickStartTopics.map((topic) => (
-                  <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id}>{topic.name}</Link>
+                  <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id} prefetch={false}>{topic.name}</Link>
                 ))}
               </div>
             </div>
@@ -101,6 +101,7 @@ export default async function Home() {
               width={1440}
               height={901}
               sizes="(max-width: 760px) 100vw, 44vw"
+              fetchPriority="high"
               priority
             />
             <figcaption>
@@ -115,19 +116,19 @@ export default async function Home() {
         <div className="clusterGrid">
           {learningClusters.map((cluster) => {
             const clusterTopics = cluster.slugs.map((slug) => topics.find((topic) => topic.slug === slug)).filter((topic): topic is (typeof topics)[number] => Boolean(topic));
-            return <section className="clusterPanel" key={cluster.title}><h3>{cluster.title}</h3><p>{cluster.description}</p><div>{clusterTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id}>{topic.name}</Link>)}</div></section>;
+            return <section className="clusterPanel" key={cluster.title}><h3>{cluster.title}</h3><p>{cluster.description}</p><div>{clusterTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id} prefetch={false}>{topic.name}</Link>)}</div></section>;
           })}
         </div>
       </section>
       <section className="section">
         <div className="sectionHeader"><p className="eyebrow">Revision library</p><h2>Explore other Biology guides</h2></div>
         <div className="topicGrid">
-          {otherTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Read a complete guide with a concept path, close comparisons, and a focused recall task.</p></Link>)}
+          {otherTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id} prefetch={false}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Read a complete guide with a concept path, close comparisons, and a focused recall task.</p></Link>)}
         </div>
       </section>
       <section className="section split">
         <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then test your recall.</h2><p className="muted">Each guide is an independent learning aid, not official exam material. Check definitions and diagrams against your current NCERT textbook, then use the guide to explain the process without looking back.</p></div>
-        <div className="listPanel"><strong>New to the library?</strong><Link href="/neet-ug/biology/cell-theory-and-cell-organelles">Begin with cell organelles and protein routing</Link><Link href="/neet-ug/biology/mitosis-and-meiosis">Then connect chromosomes with cell division</Link><Link href="/neet-biology-pdf">Try the free workbook recall-sheet sample</Link></div>
+        <div className="listPanel"><strong>New to the library?</strong><Link href="/neet-ug/biology/cell-theory-and-cell-organelles" prefetch={false}>Begin with cell organelles and protein routing</Link><Link href="/neet-ug/biology/mitosis-and-meiosis" prefetch={false}>Then connect chromosomes with cell division</Link><Link href="/neet-biology-pdf" prefetch={false}>Try the free workbook recall-sheet sample</Link></div>
       </section>
       <section className="section"><PdfCta source="home_midpage" /></section>
     </main>
