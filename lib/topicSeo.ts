@@ -16,6 +16,14 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "frog-organ-systems-and-structural-map": {
+    focus: ["Trace digestive and urinary routes to the cloaca without merging their upstream organs.", "Relate the two atria and one ventricle to pulmocutaneous and systemic circulation.", "Include skin, lungs and buccopharyngeal lining in the respiratory account."],
+    traps: ["The adult frog heart has three chambers, not two or four.", "The cloaca is a shared chamber; kidneys form urine and the intestine carries digested material.", "Frog respiration is not lung-only: moist skin and buccopharyngeal exchange also matter in the NCERT account."],
+  },
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": {
+    focus: ["Separate fossil, anatomical, embryological and molecular observations before drawing an evolutionary inference.", "Distinguish homology by shared structural plan from analogy by similar function and different origin.", "Read adaptive radiation and human history as branching patterns, not a ladder or a direct line inferred from one fossil."],
+    traps: ["Similar function alone does not establish homology; compare structure and origin.", "A fossil's position can support relative sequence but does not alone prove direct ancestor-descendant status.", "A beak or other adaptive feature is not produced because an organism needs it; explain inherited variation and differential reproduction across generations."],
+  },
   "special-modes-of-reproduction-in-flowering-plants": {
     focus: ["Separate apomixis, parthenocarpy and polyembryony by the structure developing and the event described.", "Trace seed and fruit precursors independently before interpreting a seedless or multi-embryo outcome.", "Recognise that embryo number and reproductive route can describe different axes."],
     traps: ["A seedless fruit does not by itself prove apomictic seed formation.", "Polyembryony describes multiple embryos in one seed; it does not name their origin.", "Apomixis can produce a seed without fertilisation and may overlap with polyembryony."],

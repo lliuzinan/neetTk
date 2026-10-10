@@ -23,6 +23,8 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "frog-organ-systems-and-structural-map",
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage",
   "cardiac-cycle-and-valve-pressure",
   "pcr-amplification-and-copy-number",
   "special-modes-of-reproduction-in-flowering-plants",
@@ -82,6 +84,88 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "frog-organ-systems-and-structural-map": [
+    { heading: "Use the body cavity as a map, not a list", paragraphs: [
+      "A frog's systems are easier to revise when each is followed from an entry point to an exit or destination. Food travels through a continuous canal; blood moves through a closed circulation; air exchange uses both lungs and skin; urine reaches the cloaca through the urinary route; and neural signals travel from the brain through the spinal cord and nerves. These routes occupy the same animal but answer different questions.",
+      "This guide follows the NCERT account of an adult frog as a structural-organisation example. The 2026 NEET syllabus lists brief anatomy and functions of the digestive, circulatory, respiratory, nervous and reproductive systems of an insect (frog), preserving the syllabus wording. The scope here is the frog model described in NCERT, not a dissection protocol or wildlife-care advice."
+    ] },
+    { heading: "Food follows one canal before wastes leave through the cloaca", paragraphs: [
+      "The digestive route begins at the mouth and continues through the buccal cavity, pharynx, oesophagus, stomach, intestine and rectum to the cloaca. Digestive glands contribute secretions: the liver produces bile, stored in the gall bladder, while the pancreas produces pancreatic juice. The alimentary canal is the route taken by food; a gland can aid digestion without being a segment through which food passes.",
+      "The NCERT text relates the comparatively short intestine to the frog's carnivorous diet. Keep that explanation attached to the stated model rather than turning it into a universal rule for every carnivore. A useful tracing task is to underline the canal organs in one colour and circle the accessory glands in another. If the liver appears in the food route, the map has confused secretion with passage.",
+      "In a simple invented route check, a labelled arrow runs mouth -> oesophagus -> stomach -> intestine -> cloaca but omits the buccal cavity and pharynx. The final destination is plausible, yet the route is incomplete. Restore the missing intermediate structures before describing where digestion or absorption occurs. This checks sequence, not a clinical or experimental procedure."
+    ] },
+    { heading: "One ventricle serves a three-chambered heart", paragraphs: [
+      "The adult frog heart has two atria and one ventricle. The right atrium receives deoxygenated blood returning from the body; the left atrium receives oxygenated blood from the lungs and skin. Both atria empty into the single ventricle. Unlike the four-chambered human heart, the ventricle is not divided into separate right and left chambers, so do not draw two ventricular cavities.",
+      "Frogs have a double circulation in the broad sense that blood passes through the heart on its way through the body and the respiratory surfaces. Pulmocutaneous circulation links the heart with lungs and skin, while systemic circulation supplies the body. Because the ventricle is single, the routes are not anatomically separated there as in a four-chambered mammalian heart. The diagram is a route map, not a detailed account of every flow pattern or mixing event.",
+      "A common incorrect answer calls the frog heart 'two-chambered' because it has one ventricle. Count all chambers: two atria plus one ventricle equals three. Another shortcut assumes that every double circulation requires four chambers. Here, name the two circulation routes and separately state the chamber arrangement."
+    ] },
+    { heading: "Gas exchange uses skin as well as lungs", paragraphs: [
+      "The respiratory account should include both cutaneous respiration through the moist skin and pulmonary respiration through the lungs. The skin's role is not a decorative add-on to the lung route. It is a respiratory surface, which is why moisture matters to gas exchange. Frogs can also exchange gases through the buccopharyngeal lining in the NCERT account; the relative contribution depends on the context described.",
+      "Keep three terms apart: ventilation moves air, exchange moves gases across a respiratory surface, and circulation transports gases in blood. A lung diagram alone cannot represent all frog respiration. Conversely, saying 'frogs breathe through skin' does not make lungs irrelevant. The question may be asking for a surface, a movement of air or a transport route; identify which level is requested before answering."
+    ] },
+    { heading: "Kidneys, urinary passages and reproductive ducts meet at a shared outlet", paragraphs: [
+      "The kidneys filter blood and form urine. Urine passes through the ureters toward the cloaca; the urinary bladder can store it before elimination. The cloaca is a common chamber that receives products from more than one system, but it does not make the digestive, urinary and reproductive pathways identical. Follow each route to the shared region, then name its origin.",
+      "Frog reproduction is sexual, with separate sexes in the standard NCERT description. Eggs and sperm are released into water, where fertilisation is external. The reproductive passage and urinary passage have sex-specific anatomical relations, so a single simplified diagram should not be used to infer every duct in both sexes. For a short recall answer, state the process (external fertilisation), the setting (water) and the gamete route at the level required by the text.",
+      "A likely mix-up is 'the cloaca produces urine'. It is an outlet chamber, not the kidney. Write the route as kidney -> ureter -> cloaca, with the bladder as a storage connection, and separately trace digestive contents from the intestine. The shared endpoint does not erase the distinct upstream organs."
+    ] },
+    { heading: "The nervous route coordinates rather than transporting material", paragraphs: [
+      "The brain and spinal cord form the central nervous system; nerves connect it with the rest of the body. A stimulus is detected, information is integrated, and an appropriate response is coordinated through neural pathways. This is a signal route, not a fluid pathway like blood or urine. The distinction matters when the same body map contains several kinds of arrows.",
+      "For active recall, draw five labelled lanes: food, blood, respiratory exchange, urine, and neural signalling. Add the start, key intermediate structures and destination for each. Then add one sentence explaining why the cloaca is shared but the canals remain distinct. Compare the heart route with [blood and circulation](/neet-ug/biology/blood-and-circulation), review tissue roles in [structural organisation in animals](/neet-ug/biology/structural-organisation-in-animals), and use [animal kingdom](/neet-ug/biology/animal-kingdom) for the broader chordate context."
+    ] },
+    { heading: "A quick route audit", bullets: [
+      "Food route: mouth -> buccal cavity -> pharynx -> oesophagus -> stomach -> intestine -> rectum -> cloaca.",
+      "Heart: two atria and one ventricle; distinguish pulmocutaneous from systemic circulation.",
+      "Respiration: include skin and lungs; distinguish gas exchange from blood transport.",
+      "Urinary route: kidneys -> ureters -> cloaca; the bladder stores urine.",
+      "Reproduction: separate sexes and external fertilisation in water in the NCERT model."
+    ] },
+    { heading: "A 12-minute redraw", paragraphs: [
+      "Spend four minutes drawing the five lanes from memory, four minutes checking the route endpoints against NCERT, and four minutes correcting only the arrows or organ roles you missed. Finish by explaining aloud why the liver is not part of the food canal, why the frog heart is not two-chambered, and why skin belongs in the respiratory answer. NCERT anchor: Class 11 Biology, Chapter 7, Structural Organisation in Animals, section 7.2, Reprint 2026-27."
+    ] }
+  ],
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": [
+    { heading: "An observation becomes evidence through a careful inference", paragraphs: [
+      "Evolutionary biology uses several kinds of evidence, each with a different strength and limitation. Fossils preserve a time-ordered but incomplete record; comparative anatomy reveals structural relationships; embryology compares development; and molecular comparisons examine similarities in biological sequences. No single resemblance supplies a complete family tree. Ask what was observed, what inference follows, and what additional evidence would make that inference stronger.",
+      "This guide extends beyond the allele-frequency and selection mechanisms in the existing [evolution and natural selection guide](/neet-ug/biology/evolution-and-natural-selection). Its learning goal is to distinguish evidence types, read divergence from common ancestry, and keep examples of adaptive radiation and human evolution in chronological context."
+    ] },
+    { heading: "Fossils provide a sequence, not a complete movie", paragraphs: [
+      "Fossils are preserved remains or traces of past organisms. Their position in geological strata can help establish relative order: in an undisturbed sequence, lower layers are generally older than layers above them. Fossil evidence can document forms that lived at different times and reveal changes in groups, but preservation is selective. Soft-bodied organisms and many environments leave fewer accessible remains, so gaps are expected.",
+      "A fossil's age, its anatomical features and its position among other fossils answer related but different questions. Stratigraphic order is not by itself an exact numerical date, and a resemblance does not prove that one fossilised individual directly produced another. A defensible explanation describes a sequence of related forms and the evidence used to place them, rather than drawing an unbroken line from one specimen to the next.",
+      "For example, if a hypothetical lower layer contains a fish-like fossil and a higher layer contains a tetrapod fossil, the order is consistent with a historical sequence. It does not alone establish the exact ancestor-descendant pair or the date of a transition. Those stronger claims need additional anatomical, geological and comparative evidence."
+    ] },
+    { heading: "Homology and analogy answer different comparison questions", paragraphs: [
+      "Homologous structures share an underlying structural plan or evolutionary origin, even when their present functions differ. Vertebrate forelimbs illustrate this: the same broad arrangement of upper limb, paired lower elements and distal bones is modified for grasping, walking, swimming or flight. Homology supports divergent evolution, in which related lineages become different under different histories and contexts.",
+      "Analogous structures perform similar functions but do not share the same structural origin in the relevant comparison. A bird wing is a modified vertebrate forelimb; an insect wing is an outgrowth of the exoskeleton. Both can enable flight, but matching function does not make their construction homologous. Convergent evolution describes independent acquisition of similar functions or features under comparable demands.",
+      "A common mistake is to classify any pair with the same job as homologous. Instead compare internal construction and origin first, then function. If the structures share the underlying plan despite different uses, homology is the stronger inference. If function is alike but construction and origin differ, analogy is the better description."
+    ] },
+    { heading: "Developmental and molecular comparisons add independent evidence", paragraphs: [
+      "Embryological comparison can reveal shared developmental features among groups, although similarities may be temporary and must not be overstated as identical adult anatomy. The useful inference is that patterns of development can provide evidence of relationship when interpreted alongside other observations. A single embryonic resemblance is not a complete proof of direct ancestry.",
+      "Molecular evidence compares DNA or protein sequences. More shared sequence features can support a closer relationship under an appropriate comparison, but the genes, organisms and method need to be specified. Sequence similarity is evidence to interpret, not a synonym for identical species or proof that one living species descended from another living species.",
+      "The evidence types complement one another: fossils add temporal context, anatomy compares structures, embryology examines development, and molecular data compare sequences. A strong synthesis asks whether distinct evidence sources are consistent, while acknowledging that they sample different parts of evolutionary history."
+    ] },
+    { heading: "Adaptive radiation branches from an ancestral lineage", paragraphs: [
+      "Adaptive radiation is the diversification of a lineage into forms associated with different ecological opportunities. The familiar finch example shows how descendants of a common ancestral population can diverge in traits such as beak form as they use different food resources. The branching pattern matters: the example is not one modern finch changing its beak during life, nor is each beak automatically a separate species without further evidence.",
+      "Darwin's finches are an example of adaptive radiation, while Australian marsupials are another classic pattern used in NCERT. The central inference is diversification from a common ancestral stock in a region or ecological setting, not simply the existence of many species. Connect the branches to variation and environmental context, but do not collapse this historical pattern into a single selection event.",
+      "Suppose four descendants occupy different feeding niches and show distinct beak shapes. The diagram supports a branching hypothesis if shared ancestry and divergence are independently justified. It does not establish that a particular food directly caused a mutation. Variation arises, and ecological conditions can affect which inherited variants leave more descendants over generations."
+    ] },
+    { heading: "Human evolution is a branching history with evidence at each step", paragraphs: [
+      "Human evolution belongs within primate and hominin history; it should not be represented as a ladder with modern humans at the inevitable top. Fossils, anatomical comparisons and molecular evidence contribute to reconstructions of relationships. Different lineages can coexist in time, and a named fossil group should not automatically be treated as the direct ancestor of every later group.",
+      "In the NCERT overview, the sequence of examples includes early hominins, forms associated with increasing brain capacity and tool use, and later members of the genus Homo. Learn the broad sequence presented in the textbook, while distinguishing the evidence-based reconstruction from a claim that every stage forms a simple straight chain. Exact dates and disputed classifications can change with new evidence and are not needed to make the core inference here.",
+      "This is an educational account of biological history, not a statement about the worth or ranking of present-day populations. Human variation does not divide living people into evolutionary grades. A careful answer describes populations and lineages, the evidence considered, and the limits of an inference."
+    ] },
+    { heading: "Use an evidence-to-inference grid", paragraphs: [
+      "Build a four-column grid from memory: observation, evidence type, inference supported, and limitation. Put a fossil sequence in the first row, homologous forelimbs in the second, an embryological comparison in the third, and a molecular sequence comparison in the fourth. Add adaptive radiation and human evolution as applications that require multiple lines of evidence rather than isolated labels.",
+      "Then contrast this guide with [population genetics](/neet-ug/biology/population-genetics), which calculates allele frequencies under stated assumptions, and [organisms and populations](/neet-ug/biology/organisms-and-populations), which covers interactions and population attributes. Revisit [chromosomal basis of inheritance](/neet-ug/biology/chromosomal-basis-of-inheritance) for the source of heritable variation that can be acted on across generations."
+    ] },
+    { heading: "A three-question evidence check", bullets: [
+      "What was directly observed: a fossil, a shared structure, a developmental feature or a sequence?",
+      "Does the comparison support common ancestry, similar function, temporal order or population change? Do not swap these conclusions.",
+      "What is the limit: incomplete preservation, temporary developmental similarity, or a comparison that does not establish direct descent?"
+    ] },
+    { heading: "A 15-minute retrieval routine", paragraphs: [
+      "Spend five minutes drawing the four evidence types as separate boxes. Spend five minutes placing homologous and analogous structures on different branches, with one sentence explaining each. Spend the last five minutes sketching adaptive radiation from a common ancestor and listing two reasons the human-history picture is a branching reconstruction rather than a ladder. NCERT anchor: Class 12 Biology, Chapter 6, Evolution, Reprint 2025-26; compare the current NEET-UG 2026 syllabus, Unit 7, for its stated evidence categories and evolutionary topics."
+    ] }
+  ],
   "cardiac-cycle-and-valve-pressure": [
     { heading: "A valve responds to pressure, not to a memorised phase name", paragraphs: [
       "The circulation route tells you where blood goes; the cardiac cycle explains when it can move between compartments. Start with three places on one side of the heart: atrium, ventricle and outgoing artery. A valve between two of them responds to the pressure difference across it. Knowing only that a chamber is contracting is not enough to decide whether its outlet has opened.",
@@ -2487,6 +2571,15 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "frog-organ-systems-and-structural-map": [
+    { label: "NMC / NTA, NEET-UG 2026 Biology syllabus, Unit 2: Structural Organisation in Animals and Plants", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
+    { label: "NCERT Class 11 Biology, Chapter 7: Structural Organisation in Animals (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/kebo107.pdf" },
+  ],
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": [
+    { label: "NMC / NTA, NEET-UG 2026 Biology syllabus, Unit 7: Genetics and Evolution", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
+    { label: "NCERT Class 12 Biology, Chapter 6: Evolution", href: "https://ncert.nic.in/textbook/pdf/lebo106.pdf" },
+    { label: "OpenStax Biology 2e, Evolution and the Origin of Species", href: "https://openstax.org/books/biology-2e/pages/18-introduction" },
+  ],
   "special-modes-of-reproduction-in-flowering-plants": [
     { label: "National Medical Commission / NTA, NEET-UG 2026 Biology syllabus, Unit 6: Reproduction", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
     { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
@@ -2724,6 +2817,31 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "frog-organ-systems-and-structural-map": {
+    heading: "Frog systems: route, structure and common mix-up",
+    intro: "Trace each system independently even when two routes meet at the cloaca.",
+    columns: ["System", "Key structure or route", "Functional checkpoint", "Do not confuse"],
+    rows: [
+      ["Digestive", "Mouth to buccal cavity, pharynx, oesophagus, stomach, intestine, rectum, cloaca", "Liver and pancreas add secretions", "Accessory glands are not food-canal segments"],
+      ["Circulatory", "Two atria and one ventricle; pulmocutaneous and systemic routes", "One ventricle receives blood from both atria", "Double circulation does not mean four chambers"],
+      ["Respiratory", "Moist skin, lungs and buccopharyngeal lining", "Gas exchange occurs at respiratory surfaces", "Gas exchange is not ventilation or blood transport"],
+      ["Urinary", "Kidneys to ureters to cloaca; bladder stores urine", "Kidneys form urine", "Cloaca is an outlet, not the urine-forming organ"],
+      ["Nervous", "Brain to spinal cord to peripheral nerves", "Carries and coordinates signals", "A signal route is not a fluid route"],
+    ],
+  },
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": {
+    heading: "Evidence type and the inference it can support",
+    intro: "State the observation first, then limit the conclusion to what that evidence can support.",
+    columns: ["Evidence", "What is compared", "Useful inference", "Limit to remember"],
+    rows: [
+      ["Fossils", "Preserved remains or traces across strata", "Historical forms and relative sequence", "Record is incomplete; order alone is not direct ancestry"],
+      ["Homologous anatomy", "Shared structural plan with modified functions", "Common ancestry and divergence are supported", "Shared function is not required"],
+      ["Analogous structures", "Similar function with different structural origin", "Convergent similarity", "Function alone does not establish homology"],
+      ["Embryology", "Developmental features across organisms", "Can add evidence of relationship", "Temporary resemblance is not a full family tree"],
+      ["Molecular", "DNA or protein sequence features", "Comparative relatedness under a defined method", "Similarity does not prove direct descent between living species"],
+      ["Adaptive radiation", "Related descendants using different ecological opportunities", "Branching diversification from an ancestral lineage", "A diagram is not proof of a specific mutation cause"],
+    ],
+  },
   "cardiac-cycle-and-valve-pressure": { heading: "Read valve state alongside the volume change", intro: "This idealised ventricular sequence assumes competent valves. Both-closed states occur twice, so pressure direction is needed to distinguish them.", columns: ["Ventricular interval", "AV valve", "Semilunar valve", "Ventricular volume"], rows: [["Filling", "Open", "Closed", "Increases"], ["Isovolumetric contraction", "Closed", "Closed", "Approximately constant while pressure rises"], ["Ejection", "Closed", "Open", "Decreases"], ["Isovolumetric relaxation", "Closed", "Closed", "Approximately constant while pressure falls"]] },
   "pcr-amplification-and-copy-number": { heading: "Which missing input breaks which part of the explanation?", intro: "These are conceptual roles, not a reaction-preparation protocol. A failed result can have more than one cause.", columns: ["Input or operation", "Role in the copying account", "Misleading substitute"], rows: [["Template DNA", "Provides sequence information for complementary copying", "A gel band is the measurement, not the starting sequence definition"], ["Primer pair", "Supplies extension starts and defines the amplified interval", "Polymerase alone does not choose the target"], ["Thermostable DNA polymerase", "Extends new DNA through repeated cycling", "A primer is not a copying enzyme"], ["Nucleotides", "Supply building material for new strands", "Heating alone cannot manufacture complementary DNA"], ["Denaturation", "Separates paired strands", "Not restriction cutting of the backbone"], ["Post-amplification separation", "Compares product migration and size", "Not a substitute for sequence identification"]] },
   "incomplete-dominance-and-codominance": {
@@ -3177,6 +3295,20 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "frog-organ-systems-and-structural-map": {
+    heading: "A shared chamber does not merge the routes",
+    paragraphs: [
+      "The cloaca receives material from more than one system, but each route has a distinct origin and function. Trace backward from the outlet before naming the system: intestine points to digestion, while ureters point to the urinary tract.",
+      "The circulatory diagram is intentionally simplified. Use the chamber count and major routes for revision; do not infer clinical significance or detailed flow measurements from it.",
+    ],
+  },
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": {
+    heading: "Keep the evidence separate from the story built from it",
+    paragraphs: [
+      "A fossil sequence, a homologous structure and a molecular comparison are different observations. Their value increases when they converge on a compatible explanation, but none should be made to prove more than it actually measures.",
+      "This guide summarises textbook-level evolutionary evidence for study. It does not rank living populations or present evolution as a ladder toward a predetermined endpoint.",
+    ],
+  },
   "special-modes-of-reproduction-in-flowering-plants": { heading: "Name both the missing event and the developing structure", paragraphs: ["'Without fertilisation' is not enough to identify a term. Ask whether the account is about a seed, a fruit, or the number of embryos in a seed. Apomixis, parthenocarpy and polyembryony answer those different questions, and an apomictic seed can also be polyembryonic."] },
   "five-plant-families-floral-identification": { heading: "One visible head can contain many flowers", paragraphs: ["For Asteraceae, name the capitulum as an inflorescence and the small units as florets. If a prompt shifts to ray or disc floret details, stay at that level; a feature of one floret should not silently become a description of the whole head."] },
   "cardiac-cycle-and-valve-pressure": { heading: "Closed does not mean motionless", paragraphs: ["With both valves closed, the ventricular wall can still change tension and pressure. Approximately constant blood volume is the feature named by isovolumetric, not an absence of muscle activity. State what is staying constant before interpreting the phase."] },

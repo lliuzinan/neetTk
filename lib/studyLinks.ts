@@ -1,6 +1,16 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "frog-organ-systems-and-structural-map": [
+    { slug: "blood-and-circulation", reason: "Compare the frog's three-chambered heart and circulation routes with the human double-circulation map." },
+    { slug: "structural-organisation-in-animals", reason: "Review how epithelial, connective, muscle and nervous tissues build organs." },
+    { slug: "animal-kingdom", reason: "Place the frog example within the broader chordate classification." },
+  ],
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": [
+    { slug: "evolution-and-natural-selection", reason: "Continue from the evidence for historical relationships to the population mechanism of natural selection." },
+    { slug: "population-genetics", reason: "Use allele counts and Hardy-Weinberg expectations to distinguish population change from individual change." },
+    { slug: "chromosomal-basis-of-inheritance", reason: "Review how chromosomes transmit heritable variation across generations." },
+  ],
   "special-modes-of-reproduction-in-flowering-plants": [
     { slug: "sexual-reproduction-in-flowering-plants", reason: "Review pollination and double fertilisation before studying routes that alter the usual reproductive sequence." },
     { slug: "seed-development-and-ploidy", reason: "Trace ovule-derived seed tissues and distinguish embryo origin from endosperm and seed-coat formation." },

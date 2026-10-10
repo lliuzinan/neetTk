@@ -15,6 +15,20 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "frog-organ-systems-and-structural-map": {
+    src: "/images/biology/frog-organ-systems-and-structural-map-v1.webp",
+    alt: "Original map of frog digestive, circulatory, respiratory, urinary and nervous system routes, with two atria and one ventricle",
+    caption: "A simplified system map, not a detailed anatomical plate. The reproductive route is discussed in the text; fine duct anatomy and precise flow patterns are outside this overview.",
+    width: 1600,
+    height: 1000,
+  },
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": {
+    src: "/images/biology/evolutionary-evidence-adaptive-radiation-and-human-lineage-v1.webp",
+    alt: "Comparison of homologous vertebrate forelimbs, analogous bird and insect wings, fossil strata and branching finch adaptive radiation",
+    caption: "Four evidence and inference maps. Similar function alone does not establish homology, and a branching diagram is a hypothesis supported by multiple lines of evidence.",
+    width: 1600,
+    height: 1000,
+  },
   "special-modes-of-reproduction-in-flowering-plants": {
     src: "/images/biology/special-modes-of-reproduction-v1.webp",
     alt: "Three panels compare apomictic seed development, parthenocarpic fruit development without a seed, and multiple embryos within one seed.",

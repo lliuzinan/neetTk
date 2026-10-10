@@ -1,6 +1,20 @@
 import type { NoteSection } from "@/lib/noteContent";
 
 export const noteExercises: Record<string, NoteSection> = {
+  "frog-organ-systems-and-structural-map": {
+    heading: "Worked route check: which system reaches the cloaca?",
+    paragraphs: [
+      "An invented diagram shows one arrow from kidney to ureter to cloaca and another from intestine through rectum to cloaca. Both arrows end at the same chamber, but they do not name the same process: the first is urinary and the second is digestive. The kidneys form urine; the cloaca receives it. The intestinal route carries digestive contents to the outlet.",
+      "The tempting wrong answer is 'the cloaca is part of the kidney because urine enters it'. Correct the claim by naming the origin, intermediate route and shared endpoint separately. Then check the heart: two atria plus one ventricle gives three chambers, while the lungs and moist skin provide respiratory surfaces. NCERT anchor: Class 11 Biology, Chapter 7, section 7.2, Structural Organisation in Animals."
+    ],
+  },
+  "evolutionary-evidence-adaptive-radiation-and-human-lineage": {
+    heading: "Worked inference: same job, different structure",
+    paragraphs: [
+      "An invented comparison describes a bird wing as a modified forelimb with the vertebrate limb-bone plan, and an insect wing as an exoskeletal outgrowth. Both support flight, but the shared job is not the same as shared structural origin. The useful classification is analogous function, not homologous wings.",
+      "The common wrong answer is 'both wings fly, so they are homologous'. Replace it with the evidence: compare construction and origin, then name function. For a separate fossil claim, a specimen in a lower undisturbed stratum supports older relative placement, not a direct parent-child relationship with a specimen above it. NCERT anchor: Class 12 Biology, Chapter 6, Evolution; the current NEET-UG 2026 Unit 7 also lists paleontological, comparative-anatomy, embryological and molecular evidence."
+    ],
+  },
   "recombinant-dna-technology": {
     heading: "A selected colony is evidence of a marker, not proof of an insert",
     paragraphs: [

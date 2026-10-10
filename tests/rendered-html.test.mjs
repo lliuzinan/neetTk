@@ -566,3 +566,39 @@ test("publishes biomolecules and inheritance-disorder examples as authored guide
     assert.ok(sitemapXml.includes("2026-09-29T00:00:00.000Z"), item.slug + ": sitemap date");
   }
 });
+
+test("publishes frog systems and evolutionary evidence guides with distinct learning assets", async () => {
+  const cases = [
+    {
+      slug: "frog-organ-systems-and-structural-map",
+      image: "frog-organ-systems-and-structural-map-v1.webp",
+      source: "kebo107.pdf",
+      markers: ["two atria and one ventricle", "moist skin", "urinary bladder", "carnivorous diet"],
+      links: ["blood-and-circulation", "structural-organisation-in-animals", "animal-kingdom"],
+    },
+    {
+      slug: "evolutionary-evidence-adaptive-radiation-and-human-lineage",
+      image: "evolutionary-evidence-adaptive-radiation-and-human-lineage-v1.webp",
+      source: "lebo106.pdf",
+      markers: ["Fossils provide a sequence", "Homology and analogy", "Adaptive radiation branches", "human evolution"],
+      links: ["evolution-and-natural-selection", "population-genetics", "chromosomal-basis-of-inheritance"],
+    },
+  ];
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  for (const item of cases) {
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${item.slug}.html`, import.meta.url), "utf8");
+    assert.ok(html.includes(item.image));
+    assert.ok(html.includes(item.source));
+    for (const marker of item.markers) assert.ok(html.toLowerCase().includes(marker.toLowerCase()), `${item.slug}: ${marker}`);
+    for (const related of item.links) {
+      assert.ok(html.includes(`href="/neet-ug/biology/${related}"`));
+      await readFile(new URL(`../.next/server/app/neet-ug/biology/${related}.html`, import.meta.url));
+    }
+    assert.match(html, /<table/);
+    assert.match(html, /Common confusions to check/);
+    assert.match(html, /Related revision guides/);
+    assert.match(html, /Published:\s*(?:<!-- -->)?October 10, 2026/);
+    assert.ok(sitemap.includes(`/neet-ug/biology/${item.slug}</loc>`));
+    assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
+  }
+});
