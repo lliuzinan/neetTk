@@ -68,12 +68,12 @@ export default async function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
       <section className="hero">
         <nav className="nav">
-          <Link href="/" className="brand">MedQGo</Link>
+          <Link href="/" className="brand" prefetch={false}>MedQGo</Link>
           <div className="navLinks">
-            <Link href="/neet-ug/biology">Revision library</Link>
-            <Link href="/neet-biology-pdf">Revision workbook</Link>
-            <Link href="/about">About</Link>
-            <Link href="/site-map">Sitemap</Link>
+            <Link href="/neet-ug/biology" prefetch={false}>Revision library</Link>
+            <Link href="/neet-biology-pdf" prefetch={false}>Revision workbook</Link>
+            <Link href="/about" prefetch={false}>About</Link>
+            <Link href="/site-map" prefetch={false}>Sitemap</Link>
           </div>
         </nav>
         <div className="heroGrid">
@@ -82,8 +82,8 @@ export default async function Home() {
             <h1>NEET Biology revision notes</h1>
             <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
             <div className="actions">
-              <Link href="/neet-ug/biology" className="primaryButton">Browse revision topics</Link>
-              <Link href="/neet-biology-pdf" className="secondaryButton">View free workbook sample</Link>
+              <Link href="/neet-ug/biology" className="primaryButton" prefetch={false}>Browse revision topics</Link>
+              <Link href="/neet-biology-pdf" className="secondaryButton" prefetch={false}>View free workbook sample</Link>
             </div>
             <div className="mobileQuickStart" aria-label="Start reading a revision guide">
               <p>Start reading</p>
@@ -100,7 +100,8 @@ export default async function Home() {
               alt="A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem"
               width={1440}
               height={901}
-              sizes="(max-width: 760px) 100vw, 44vw"
+              sizes="(max-width: 520px) 90vw, (max-width: 760px) calc(100vw - 76px), (max-width: 1264px) 41vw, 512px"
+              quality={60}
               fetchPriority="high"
               priority
             />

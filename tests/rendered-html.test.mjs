@@ -112,7 +112,7 @@ test("keeps consent defaults ahead of advertising and does not preload GA", asyn
   const defaults = html.indexOf('id="consent-defaults"');
   const ads = html.indexOf("medqgo-adsense");
   assert.ok(defaults >= 0 && ads > defaults);
-  assert.ok(html.includes("afterInteractive"));
+  assert.ok(html.includes("lazyOnload"));
   assert.doesNotMatch(html, /src="https:\/\/www\.googletagmanager\.com\/gtag/);
 });
 

@@ -12,6 +12,7 @@ type Props = ComponentProps<typeof Link> & {
 export function TrackedLink({ eventName, eventParams = {}, onClick, ...props }: Props) {
   return (
     <Link
+      prefetch={false}
       {...props}
       onClick={(event) => {
         trackEvent(eventName, eventParams);
