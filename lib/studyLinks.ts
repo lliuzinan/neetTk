@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "gel-electrophoresis-and-dna-band-reading": [
+  {
+    "slug": "molecular-tools-and-dna-analysis",
+    "reason": "Start with the different roles of cutting, copying and separating before interpreting a gel result."
+  },
+  {
+    "slug": "pcr-amplification-and-copy-number",
+    "reason": "Connect a post-PCR band to the separate process that increased the number of target copies."
+  },
+  {
+    "slug": "recombinant-dna-technology",
+    "reason": "Place fragment separation within the larger sequence of constructing and introducing recombinant DNA."
+  }
+],
   "frog-organ-systems-and-structural-map": [
     { slug: "blood-and-circulation", reason: "Compare the frog's three-chambered heart and circulation routes with the human double-circulation map." },
     { slug: "structural-organisation-in-animals", reason: "Review how epithelial, connective, muscle and nervous tissues build organs." },
@@ -228,6 +242,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "biotechnology-applications", reason: "Follow a laboratory method through to its biological purpose." },
   ],
   "molecular-tools-and-dna-analysis": [
+    { slug: "gel-electrophoresis-and-dna-band-reading", reason: "Practise reading a gel ladder and distinguish band evidence from sequence identification." },
     { slug: "pcr-amplification-and-copy-number", reason: "Work through ideal amplification counts and separate copied amount from evidence of sequence identity." },
     { slug: "recombinant-dna-technology", reason: "Place each tool in the sequence from DNA isolation to expression." },
     { slug: "biotechnology-applications", reason: "See how amplification and gene transfer support different applications." },

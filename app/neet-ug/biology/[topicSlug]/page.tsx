@@ -15,6 +15,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "gel-electrophoresis-and-dna-band-reading": {
+  "src": "/images/biology/gel-electrophoresis-and-dna-band-reading-v1.webp",
+  "alt": "A ladder places 2400, 1200 and 600 bp bands progressively farther from top wells toward the positive electrode; sample A aligns at 1200 and 600, and B at 1200.",
+  "caption": "Original schematic of linear DNA migration. A and B share a 1200 bp position, which supports similar length but not sequence identity. Colours distinguish lanes; spacing and intensity are illustrative, not calibrated measurements.",
+  "width": 1600,
+  "height": 1000
+},
   "frog-organ-systems-and-structural-map": {
     src: "/images/biology/frog-organ-systems-and-structural-map-v1.webp",
     alt: "Original map of frog digestive, circulatory, respiratory, urinary and nervous system routes, with two atria and one ventricle",

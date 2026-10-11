@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "gel-electrophoresis-and-dna-band-reading": {
+  "focus": [
+    "Orient the gel from wells to the positive electrode before ranking migration distances.",
+    "Estimate linear DNA lengths against a labelled reference ladder.",
+    "Separate resolved band positions from molecule counts and sequence identities."
+  ],
+  "traps": [
+    "A smaller linear fragment generally travels farther in the same run; its lower position does not mean greater length.",
+    "One detected band contains many molecules and may contain different sequences of indistinguishable migration.",
+    "Matching band heights support similar length, not identical nucleotide order.",
+    "Band brightness concerns signal and, under controlled comparisons, mass; it is not a direct molecule counter."
+  ]
+},
   "frog-organ-systems-and-structural-map": {
     focus: ["Trace digestive and urinary routes to the cloaca without merging their upstream organs.", "Relate the two atria and one ventricle to pulmocutaneous and systemic circulation.", "Include skin, lungs and buccopharyngeal lining in the respiratory account."],
     traps: ["The adult frog heart has three chambers, not two or four.", "The cloaca is a shared chamber; kidneys form urine and the intestine carries digested material.", "Frog respiration is not lung-only: moist skin and buccopharyngeal exchange also matter in the NCERT account."],
