@@ -15,6 +15,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "dihybrid-crosses-and-probability": {
+  "src": "/images/biology/dihybrid-crosses-and-probability-v1.webp",
+  "alt": "An AaBb gamete probability tree branches through A or a, each one half, to AB, Ab, aB and ab, each one quarter under independent assortment.",
+  "caption": "Original probability tree for an independently assorting AaBb parent. The two choices at each locus lead to four equally probable gamete types. Endpoints describe gametes across many meiotic events, not four guaranteed products of one meiosis.",
+  "width": 1600,
+  "height": 1000
+},
   "gel-electrophoresis-and-dna-band-reading": {
   "src": "/images/biology/gel-electrophoresis-and-dna-band-reading-v1.webp",
   "alt": "A ladder places 2400, 1200 and 600 bp bands progressively farther from top wells toward the positive electrode; sample A aligns at 1200 and 600, and B at 1200.",
@@ -23,9 +30,9 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
   "height": 1000
 },
   "frog-organ-systems-and-structural-map": {
-    src: "/images/biology/frog-organ-systems-and-structural-map-v1.webp",
+    src: "/images/biology/frog-organ-systems-and-structural-map-v2.webp",
     alt: "Original map of frog digestive, circulatory, respiratory, urinary and nervous system routes, with two atria and one ventricle",
-    caption: "A simplified system map, not a detailed anatomical plate. The reproductive route is discussed in the text; fine duct anatomy and precise flow patterns are outside this overview.",
+    caption: "A simplified system map, not a detailed anatomical plate. Correction, October 12: lung return enters the left atrium; skin return joins systemic veins toward the right atrium. The reproductive route is discussed in the text; fine duct anatomy and precise flow patterns are outside this overview.",
     width: 1600,
     height: 1000,
   },

@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "dihybrid-crosses-and-probability": [
+  {
+    "slug": "mendelian-inheritance",
+    "reason": "Review how segregation generates single-locus outcomes before combining two loci."
+  },
+  {
+    "slug": "linkage-and-recombination-frequency",
+    "reason": "Replace independent gamete assumptions with phase and recombination information when the loci are linked."
+  },
+  {
+    "slug": "incomplete-dominance-and-codominance",
+    "reason": "Check how changing the heterozygote's phenotype changes the grouping of otherwise valid genotype outcomes."
+  }
+],
   "gel-electrophoresis-and-dna-band-reading": [
   {
     "slug": "molecular-tools-and-dna-analysis",
@@ -221,6 +235,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
   ],
   "mendelian-inheritance": [
+    { slug: "dihybrid-crosses-and-probability", reason: "Extend single-locus segregation into two-locus probabilities and compare crosses with different mates." },
     { slug: "incomplete-dominance-and-codominance", reason: "See why segregation can stay the same while the heterozygote changes the phenotype ratio." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Connect segregation of alleles with the movement of homologous chromosomes." },
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Apply inheritance rules when the evidence is a family tree." },

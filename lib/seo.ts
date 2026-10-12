@@ -8,11 +8,15 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "dihybrid-crosses-and-probability": {
+  "published": "2026-10-12",
+  "modified": "2026-10-12"
+},
   "gel-electrophoresis-and-dna-band-reading": {
   "published": "2026-10-11",
   "modified": "2026-10-11"
 },
-  "frog-organ-systems-and-structural-map": { published: "2026-10-10", modified: "2026-10-10" },
+  "frog-organ-systems-and-structural-map": { published: "2026-10-10", modified: "2026-10-12" },
   "evolutionary-evidence-adaptive-radiation-and-human-lineage": { published: "2026-10-10", modified: "2026-10-10" },
   "special-modes-of-reproduction-in-flowering-plants": { published: "2026-10-09", modified: "2026-10-09" },
   "five-plant-families-floral-identification": { published: "2026-10-09", modified: "2026-10-09" },

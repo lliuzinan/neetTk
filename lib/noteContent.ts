@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "dihybrid-crosses-and-probability",
   "gel-electrophoresis-and-dna-band-reading",
   "frog-organ-systems-and-structural-map",
   "evolutionary-evidence-adaptive-radiation-and-human-lineage",
@@ -85,6 +86,60 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "dihybrid-crosses-and-probability": [
+  {
+    "heading": "Two loci do not identify the cross",
+    "paragraphs": [
+      "Writing AaBb tells you that an individual is heterozygous at two loci. It does not tell you the genotype of its mate, whether the loci assort independently, or how their combinations appear as phenotypes. All three pieces of information matter before a ratio can be predicted. The familiar 9:3:3:1 result belongs to a particular model, not to every problem containing four allele letters.",
+      "Here we use A/a and B/b for two autosomal loci. Unless a section changes the conditions, assume independent assortment, equal allele segregation, random fertilisation, equal survival of offspring classes and complete dominance at each locus, without interactions that alter their phenotype categories. This is the two-gene inheritance topic in NCERT Class 12 Biology, Chapter 4. The invented examples below make the assumptions visible rather than asking you to recognise a memorised cross."
+    ]
+  },
+  {
+    "heading": "One gamete takes one allele from each locus",
+    "paragraphs": [
+      "Begin with an AaBb parent. At the A locus a gamete receives A or a; at the B locus it receives B or b. Independence means the B-versus-b probabilities do not change when the gamete receives A instead of a. Combining the two choices gives AB, Ab, aB and ab, each with probability one quarter in this model.",
+      "The original tree draws these as two branches followed by two more branches. A complete path contains one choice at each locus. Its endpoint is a gamete type, not an offspring genotype: another parent's gamete must still join it at fertilisation. The tree is a probability diagram across gametes, not a claim that every individual meiosis must yield all four types.",
+      "An Aabb parent differs in a crucial way. It can supply A or a, but always supplies b at the second locus. Its gametes are Ab and ab, each with probability one half. Counting letter positions and mechanically writing four gametes would invent a B allele that this parent does not possess."
+    ]
+  },
+  {
+    "heading": "Factor AaBb x Aabb into two smaller calculations",
+    "paragraphs": [
+      "Consider an original teaching cross between AaBb and Aabb. At the first locus the cross is Aa x Aa, producing AA, Aa and aa with probabilities 1/4, 1/2 and 1/4. At the second locus it is Bb x bb, producing Bb and bb with probabilities 1/2 each. No BB offspring can occur because the second parent cannot contribute B.",
+      "Let A_ mean either AA or Aa, which share the dominant phenotype under our stated rule. Likewise B_ includes the genotypes expressing the B-associated dominant phenotype. For this cross, A_ has probability 3/4 and aa has probability 1/4; B_ and bb each have probability 1/2. Multiplying the independent locus outcomes gives A_B_ = 3/8, A_bb = 3/8, aaB_ = 1/8 and aabb = 1/8.",
+      "Among 64 hypothetical offspring, the expected counts are therefore 24, 24, 8 and 8 in that order. Their sum is 64 and their probabilities sum to one. The phenotype ratio is 3:3:1:1. Actual small groups can fluctuate around these expectations; a ratio describes the model's distribution, not a requirement that each successive block of eight offspring contains every class in exactly these numbers."
+    ]
+  },
+  {
+    "heading": "A precise genotype can sit inside a broader phenotype",
+    "paragraphs": [
+      "Ask a different question about the same cross: what is the probability of AaBb specifically? At A the required genotype Aa has probability 1/2; at B the required genotype Bb has probability 1/2. The answer is 1/4, corresponding to an expected 16 of the 64 offspring. This is less than the 24 expected with both dominant phenotypes because AABb also belongs to that phenotype category.",
+      "Check the missing contribution explicitly. AABb has probability 1/4 x 1/2 = 1/8, or eight expected offspring. Adding those eight to the sixteen AaBb offspring recovers the 24 A_B_ total. The underscore is not an extra allele and does not mean the genotype is necessarily heterozygous; it marks the fact that more than one genotype can satisfy the phenotype description."
+    ]
+  },
+  {
+    "heading": "Multiply requirements; add distinct alternatives",
+    "paragraphs": [
+      "For the AaBb x Aabb example, 'dominant at A and recessive at B' requires both events in the same offspring. Independence permits 3/4 x 1/2 = 3/8. By contrast, 'dominant at exactly one locus' can arise through A_bb or aaB_. These categories cannot both describe the same offspring, so their probabilities add: 3/8 + 1/8 = 1/2.",
+      "A common wrong move is to add 3/4 and 1/2 for the first question. The result, 5/4, exceeds one and exposes the mistake immediately. Another trap is adding the probabilities of 'dominant at A' and 'dominant at B' to obtain 'dominant at least once'. Those groups overlap. An easier route is the complement: only aabb has neither dominant phenotype, so the probability of at least one is 1 - 1/8 = 7/8.",
+      "Use these words as checks, not as automatic commands. Multiplication of simple probabilities requires the independence assumption; addition without subtraction requires disjoint alternatives. State the biological event before deciding which arithmetic operation represents it."
+    ]
+  },
+  {
+    "heading": "Change the second parent and recalculate the second locus",
+    "paragraphs": [
+      "If the second parent becomes AaBb, both loci now have a 3/4 dominant and 1/4 recessive phenotype distribution. Their products yield 9/16, 3/16, 3/16 and 1/16 for A_B_, A_bb, aaB_ and aabb. This is where 9:3:3:1 comes from. If the second parent is aabb instead, each locus yields equal dominant and recessive proportions, giving four equal phenotype probabilities.",
+      "These comparisons do not establish that every pair of genes behaves independently. Linked loci may produce unequal joint gamete frequencies even when each allele segregates normally. The independent tree must then be replaced by the appropriate joint frequencies. Nor does correct gamete arithmetic guarantee four phenotype categories if dominance or gene interactions change the expression rule."
+    ]
+  },
+  {
+    "heading": "Rebuild the cross without a sixteen-box grid",
+    "paragraphs": [
+      "Cover the comparison table and write AaBb x Aabb on a blank page. Under A write its three genotype probabilities; under B write its two. Recover aabb, AaBb and dominant-at-exactly-one-locus probabilities, then convert each to an expected count out of 64. The checks are 1/8 and 8; 1/4 and 16; 1/2 and 32, respectively.",
+      "Finally replace Aabb with aabb and keep the requested event 'dominant at exactly one locus'. Calculate from the new parental genotypes rather than borrowing the old ratio. The answer is again 1/2, but now it is the sum of 1/4 and 1/4. Equal final answers can conceal different component distributions; showing the components demonstrates that the cross, rather than the answer, was understood."
+    ]
+  }
+],
   "gel-electrophoresis-and-dna-band-reading": [
   {
     "heading": "Read the measurement before naming the molecule",
@@ -149,7 +204,7 @@ const noteContent: Record<string, NoteSection[]> = {
       "In a simple invented route check, a labelled arrow runs mouth -> oesophagus -> stomach -> intestine -> cloaca but omits the buccal cavity and pharynx. The final destination is plausible, yet the route is incomplete. Restore the missing intermediate structures before describing where digestion or absorption occurs. This checks sequence, not a clinical or experimental procedure."
     ] },
     { heading: "One ventricle serves a three-chambered heart", paragraphs: [
-      "The adult frog heart has two atria and one ventricle. The right atrium receives deoxygenated blood returning from the body; the left atrium receives oxygenated blood from the lungs and skin. Both atria empty into the single ventricle. Unlike the four-chambered human heart, the ventricle is not divided into separate right and left chambers, so do not draw two ventricular cavities.",
+      "The adult frog heart has two atria and one ventricle. The right atrium receives systemic venous return, including oxygenated blood draining the skin mixed with blood from other body tissues. The left atrium receives oxygenated blood from the lungs. Both atria empty into the single ventricle. Unlike the four-chambered human heart, the ventricle is not divided into separate right and left chambers, so do not draw two ventricular cavities.",
       "Frogs have a double circulation in the broad sense that blood passes through the heart on its way through the body and the respiratory surfaces. Pulmocutaneous circulation links the heart with lungs and skin, while systemic circulation supplies the body. Because the ventricle is single, the routes are not anatomically separated there as in a four-chambered mammalian heart. The diagram is a route map, not a detailed account of every flow pattern or mixing event.",
       "A common incorrect answer calls the frog heart 'two-chambered' because it has one ventricle. Count all chambers: two atria plus one ventricle equals three. Another shortcut assumes that every double circulation requires four chambers. Here, name the two circulation routes and separately state the chamber arrangement."
     ] },
@@ -2625,6 +2680,20 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "dihybrid-crosses-and-probability": [
+  {
+    "label": "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation - inheritance of two genes and independent assortment",
+    "href": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+  },
+  {
+    "label": "OpenStax Biology 2e, 12.3: Laws of Inheritance - independent assortment and probability methods",
+    "href": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+  },
+  {
+    "label": "OpenStax Biology 2e, 12.2: Characteristics and Traits - genotype and phenotype distinctions",
+    "href": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits"
+  }
+],
   "gel-electrophoresis-and-dna-band-reading": [
   {
     "label": "NCERT Class 12 Biology, Chapter 9: Biotechnology - Principles and Processes (2026-27), section 9.2.1",
@@ -2644,6 +2713,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   }
 ],
   "frog-organ-systems-and-structural-map": [
+    { label: "Cambridge University Press, Endothelial Biomedicine: Skin Breathing in Amphibians (cutaneous versus pulmonary return)", href: "https://api.pageplace.de/preview/DT0400.9780511332166_A23677261/preview-9780511332166_A23677261.pdf" },
     { label: "NMC / NTA, NEET-UG 2026 Biology syllabus, Unit 2: Structural Organisation in Animals and Plants", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
     { label: "NCERT Class 11 Biology, Chapter 7: Structural Organisation in Animals (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/kebo107.pdf" },
   ],
@@ -2889,6 +2959,40 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "dihybrid-crosses-and-probability": {
+  "heading": "Hold the phenotype order constant while changing the mate",
+  "intro": "All rows use independent assortment, complete dominance at each locus and no phenotype-altering interaction. Read across to check that each row totals one.",
+  "columns": [
+    "Cross",
+    "A_B_",
+    "A_bb",
+    "aaB_",
+    "aabb"
+  ],
+  "rows": [
+    [
+      "AaBb x AaBb",
+      "9/16",
+      "3/16",
+      "3/16",
+      "1/16"
+    ],
+    [
+      "AaBb x Aabb",
+      "3/8",
+      "3/8",
+      "1/8",
+      "1/8"
+    ],
+    [
+      "AaBb x aabb",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ]
+  ]
+},
   "gel-electrophoresis-and-dna-band-reading": {
   "heading": "Audit the claim attached to a band",
   "intro": "These readings assume comparable linear DNA samples on the same gel. The final column supplies a specific countercheck before accepting a stronger claim.",
@@ -3408,6 +3512,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "dihybrid-crosses-and-probability": {
+  "heading": "Label the level of every fraction",
+  "paragraphs": [
+    "One quarter can describe an AB gamete, an AaBb offspring, or a phenotype class in different calculations. The numerical value alone cannot identify its meaning. Write the event and the parental cross beside each fraction; otherwise a correct gamete probability can be carried into the wrong offspring calculation."
+  ]
+},
   "gel-electrophoresis-and-dna-band-reading": {
   "heading": "Keep an observation ledger",
   "paragraphs": [

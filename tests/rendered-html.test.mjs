@@ -571,7 +571,7 @@ test("publishes frog systems and evolutionary evidence guides with distinct lear
   const cases = [
     {
       slug: "frog-organ-systems-and-structural-map",
-      image: "frog-organ-systems-and-structural-map-v1.webp",
+      image: "frog-organ-systems-and-structural-map-v2.webp",
       source: "kebo107.pdf",
       markers: ["two atria and one ventricle", "moist skin", "urinary bladder", "carnivorous diet"],
       links: ["blood-and-circulation", "structural-organisation-in-animals", "animal-kingdom"],

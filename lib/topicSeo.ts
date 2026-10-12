@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "dihybrid-crosses-and-probability": {
+  "focus": [
+    "Construct each parent's permitted gametes before predicting offspring.",
+    "Combine independent single-locus distributions and distinguish genotype from phenotype targets.",
+    "Use disjoint alternatives and complements to avoid double-counting."
+  ],
+  "traps": [
+    "AaBb specifies one parent's genotype; it does not by itself justify a 9:3:3:1 ratio.",
+    "Aabb cannot contribute a B allele, so its gamete list has two types in this model.",
+    "A_ includes AA and Aa under complete dominance; it is not a synonym for Aa.",
+    "Equal segregation at each locus does not by itself establish independent joint gamete frequencies."
+  ]
+},
   "gel-electrophoresis-and-dna-band-reading": {
   "focus": [
     "Orient the gel from wells to the positive electrode before ranking migration distances.",
