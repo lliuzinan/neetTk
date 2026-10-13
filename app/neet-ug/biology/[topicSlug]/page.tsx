@@ -15,6 +15,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "pollen-development-and-male-gametophyte": {
+  "src": "/images/biology/pollen-development-and-male-gametophyte-v1.webp",
+  "alt": "Two-celled pollen contains a vegetative nucleus and one enclosed generative cell; after generative division, three-celled pollen contains the vegetative nucleus and two male gametes.",
+  "caption": "Original cell-composition schematic: the arrow represents generative mitosis, not fusion or division of the whole pollen grain. The surrounding vegetative cell persists. Wall layers and germ pores are omitted; the drawings are not to scale.",
+  "width": 1600,
+  "height": 1000
+},
   "dihybrid-crosses-and-probability": {
   "src": "/images/biology/dihybrid-crosses-and-probability-v1.webp",
   "alt": "An AaBb gamete probability tree branches through A or a, each one half, to AB, Ab, aB and ab, each one quarter under independent assortment.",

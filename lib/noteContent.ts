@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "pollen-development-and-male-gametophyte",
   "dihybrid-crosses-and-probability",
   "gel-electrophoresis-and-dna-band-reading",
   "frog-organ-systems-and-structural-map",
@@ -86,6 +87,60 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "pollen-development-and-male-gametophyte": [
+  {
+    "heading": "A pollen grain is a small generation, not a single gamete",
+    "paragraphs": [
+      "A pollen grain can carry the cells needed to deliver two male gametes, yet it is not itself one of those gametes. That distinction becomes clear when pollen development is followed through two different kinds of division. Meiosis produces haploid microspores from a diploid mother cell. Subsequent mitotic development builds the male gametophyte and produces its male gametes.",
+      "This guide follows the ordinary diploid flowering-plant model in NCERT Class 12 Biology, Chapter 1, section 1.2.1: Stamen, Microsporangium and Pollen Grain. We focus on what exists before fertilisation. Tracking that stage separately prevents a pollen cell count from being mistaken for the chromosome-set count of a later embryo or endosperm."
+    ]
+  },
+  {
+    "heading": "The generative cell changes the contents of one grain",
+    "paragraphs": [
+      "A microspore undergoes an unequal mitotic division associated with formation of a large vegetative cell and a smaller generative cell. The generative cell is enclosed within the vegetative cell's cytoplasm. Their roles differ: the vegetative cell supports pollen-tube growth, whereas the generative cell gives rise to the two male gametes through another mitotic division.",
+      "The original comparison shows this change within the same pollen boundary. At the two-celled stage there is a vegetative cell and one generative cell. At the three-celled stage there is a vegetative cell and two male gametes. The large cell's nucleus remains distinct from the nuclei inside the smaller cells. None of these nuclei has fused merely because they share one pollen grain.",
+      "Use the figure to test the statement 'the vegetative cell divides into two sperm cells'. It assigns the division to the wrong cell. The two male gametes come from the generative lineage; the vegetative cell continues its supporting role. The cell identities explain the transition more clearly than changing a label from two to three."
+    ]
+  },
+  {
+    "heading": "The earlier reduction happens inside the anther",
+    "paragraphs": [
+      "Pollen development begins inside the anther's microsporangia. A pollen mother cell, also called a microspore mother cell, enters meiosis and produces a tetrad of four haploid microspores in the standard model. After separation, individual microspores develop as pollen. Microsporogenesis names this formation of microspores through meiosis; the later mitotic events must not be substituted for that reduction step.",
+      "The surrounding anther tissue and the developing pollen lineage are different compartments. The tapetum is the innermost microsporangial wall layer and nourishes developing pollen. It is not the generative cell inside a grain and is not one of the male gametes. When a statement names a supportive layer, first locate whether it belongs to the anther wall or to the pollen itself."
+    ]
+  },
+  {
+    "heading": "Shedding can occur on either side of generative division",
+    "paragraphs": [
+      "NCERT describes pollen release at a two-celled stage in many angiosperms, while other species release three-celled pollen after the generative cell has already divided. Thus pollen shedding does not identify one universal cell composition. A grain released with one generative cell can later form its two male gametes during pollen-tube development.",
+      "Imagine two observations: grain X is released with a vegetative cell plus a generative cell; grain Y is released with a vegetative cell plus two male gametes. Both can be normal observations for their respective species. It would be incorrect to declare Y diploid because more cells are present, or to declare X incapable of normal reproduction because the gametes have not yet formed. The observations locate different points in a developmental sequence."
+    ]
+  },
+  {
+    "heading": "A cohort ledger keeps grains, cells and nuclei separate",
+    "paragraphs": [
+      "Consider an invented cohort of 15 pollen mother cells from a diploid plant with 2n = 20. Assume ordinary meiosis, no microspore loss, complete maturation, and a species that sheds two-celled pollen. Each mother cell yields four microspores, so 15 x 4 = 60 microspores can develop into 60 pollen grains. The assumptions matter: the calculation is a developmental accounting exercise, not a measurement of pollen yield.",
+      "At shedding there are 60 vegetative cells and 60 generative cells, for 120 cells in the pollen cohort. In this simple model each cell has one nucleus, so there are also 120 nuclei at that stage. After every generative cell divides, the cohort has 60 vegetative cells and 120 male gametes, for 180 cells and nuclei. It still descends from 60 grains; producing two gametes per grain does not double the grain count.",
+      "Each haploid nucleus carries 10 chromosomes in the stated model. A two-celled grain does not contain one diploid nucleus of 20 chromosomes: it contains two separate haploid nuclei. Similarly, a three-celled stage does not become triploid by adding three separate nuclear counts. Ploidy describes the chromosome sets within the specified nucleus, not a sum taken across a container.",
+      "The wrong answer '30 pollen grains because each mother cell halves its chromosomes' mixes two quantities. Meiosis reduces the chromosome-set number per resulting nucleus while producing four microspores per mother cell. Halving chromosome sets is not halving the number of grains. Write the counted object beside 15, 60, 120 and 180 before comparing them."
+    ]
+  },
+  {
+    "heading": "Pollen walls protect; germ pores permit tube emergence",
+    "paragraphs": [
+      "The outer exine contains resistant sporopollenin, while the inner intine is associated with cellulose and pectin. Germ pores are regions where the exine lacks sporopollenin; pollen-tube emergence occurs through an aperture. These wall features concern protection and germination, not which internal cell produces the gametes.",
+      "A protective wall is not a guarantee of unlimited viability. Nor does a pore mean the grain has already germinated or reached an ovule. Distinguish a structure that permits a process from evidence that the process has occurred. Our cell-composition illustration omits detailed wall layers and apertures so that they cannot be confused with membranes surrounding the generative cell or male gametes."
+    ]
+  },
+  {
+    "heading": "Annotate two grains and defend the haploid label",
+    "paragraphs": [
+      "Sketch two large circles. In the first, draw one vegetative nucleus and a small enclosed generative cell with its nucleus. In the second, draw one vegetative nucleus and two small male gametes, each with its own nucleus. Count the cells rather than the outlines alone: the outer vegetative cell is a cell too. Label the nuclei n, and explain why neither drawing requires fusion.",
+      "Finish by changing only the cohort size to 11 mother cells, retaining all earlier assumptions. You should obtain 44 grains, 88 cells at the two-celled stage, and 88 male gametes after generative division; there are 132 total cells at that later stage. State aloud why 88 gametes do not mean 88 pollen grains. Then return to double fertilisation to see why the two delivered male gametes have different fusion partners."
+    ]
+  }
+],
   "dihybrid-crosses-and-probability": [
   {
     "heading": "Two loci do not identify the cross",
@@ -2680,6 +2735,16 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "pollen-development-and-male-gametophyte": [
+  {
+    "label": "NCERT Class 12 Biology, Chapter 1, section 1.2.1: Stamen, Microsporangium and Pollen Grain",
+    "href": "https://ncert.nic.in/textbook/pdf/lebo101.pdf"
+  },
+  {
+    "label": "OpenStax Biology 2e, 32.1: Reproductive Development and Structure - male gametophyte and alternation of generations",
+    "href": "https://openstax.org/books/biology-2e/pages/32-1-reproductive-development-and-structure"
+  }
+],
   "dihybrid-crosses-and-probability": [
   {
     "label": "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation - inheritance of two genes and independent assortment",
@@ -2959,6 +3024,48 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "pollen-development-and-male-gametophyte": {
+  "heading": "Count each developmental unit at its own stage",
+  "intro": "The entries describe the conventional diploid plant model before fertilisation. Cell counts refer to one named unit, not to the whole anther.",
+  "columns": [
+    "Unit being examined",
+    "Cell composition",
+    "Chromosome sets per nucleus",
+    "Transition to keep distinct"
+  ],
+  "rows": [
+    [
+      "One pollen mother cell before meiosis",
+      "One diploid precursor",
+      "2n",
+      "Meiosis produces four microspores"
+    ],
+    [
+      "One microspore after meiosis",
+      "One haploid cell",
+      "n",
+      "Mitosis establishes vegetative and generative cells"
+    ],
+    [
+      "One two-celled pollen grain",
+      "One vegetative plus one generative cell",
+      "n in each separate nucleus",
+      "Generative division makes two male gametes"
+    ],
+    [
+      "One three-celled pollen grain",
+      "One vegetative cell plus two male gametes",
+      "n in each separate nucleus",
+      "Delivery precedes gamete fusion"
+    ],
+    [
+      "One male gamete",
+      "One cell of the generative lineage",
+      "n",
+      "It is a component of the male gametophyte, not an entire pollen grain"
+    ]
+  ]
+},
   "dihybrid-crosses-and-probability": {
   "heading": "Hold the phenotype order constant while changing the mate",
   "intro": "All rows use independent assortment, complete dominance at each locus and no phenotype-altering interaction. Read across to check that each row totals one.",
@@ -3512,6 +3619,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "pollen-development-and-male-gametophyte": {
+  "heading": "Do not add nuclei to invent a ploidy",
+  "paragraphs": [
+    "A box holding two haploid nuclei is not automatically a diploid nucleus. Cell composition, nuclear number and chromosome sets are three separate observations. Whenever a statement changes from 'per nucleus' to 'per grain', pause and name the new unit before using the same number."
+  ]
+},
   "dihybrid-crosses-and-probability": {
   "heading": "Label the level of every fraction",
   "paragraphs": [

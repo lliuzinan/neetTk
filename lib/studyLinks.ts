@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "pollen-development-and-male-gametophyte": [
+  {
+    "slug": "mitosis-and-meiosis",
+    "reason": "Review how chromosome-set reduction differs from mitotic division before following pollen development."
+  },
+  {
+    "slug": "sexual-reproduction-in-flowering-plants",
+    "reason": "Continue from pollen-tube delivery to the two distinct fusion events in the embryo sac."
+  },
+  {
+    "slug": "seed-development-and-ploidy",
+    "reason": "Compare the separate haploid nuclei here with chromosome sets brought together during embryo and endosperm formation."
+  }
+],
   "dihybrid-crosses-and-probability": [
   {
     "slug": "mendelian-inheritance",
@@ -269,6 +283,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [
+    { slug: "pollen-development-and-male-gametophyte", reason: "Trace the pollen cells before tube growth and distinguish the gametophyte from its two male gametes." },
     { slug: "special-modes-of-reproduction-in-flowering-plants", reason: "Continue from the ordinary post-fertilisation route to apomixis, parthenocarpy and polyembryony." },
     { slug: "seed-development-and-ploidy", reason: "Trace the embryo, endosperm and maternal tissues separately and calculate their chromosome sets." },
     { slug: "morphology-of-flowering-plants", reason: "Review floral whorls, ovary position, fruit and seed landmarks before tracing reproductive events." },

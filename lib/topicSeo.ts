@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "pollen-development-and-male-gametophyte": {
+  "focus": [
+    "Locate the meiotic reduction before the mitotic development of pollen cells.",
+    "Compare the generative cell with the vegetative cell and the two male gametes.",
+    "Keep release stage, grain count and ploidy per nucleus on separate lines."
+  ],
+  "traps": [
+    "Pollen grains are male gametophytes; their male gametes are separate cells within that lineage.",
+    "Two-celled and three-celled pollen do not mean diploid and triploid pollen.",
+    "Microsporogenesis uses meiosis; the generative cell forms gametes by mitosis.",
+    "An anther's tapetum nourishes pollen; it is not a cell inside each pollen grain."
+  ]
+},
   "dihybrid-crosses-and-probability": {
   "focus": [
     "Construct each parent's permitted gametes before predicting offspring.",
