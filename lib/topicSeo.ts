@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "autogamy-geitonogamy-and-xenogamy": {
+  "focus": [
+    "Classify pollen movement using flower identity followed by individual-plant identity.",
+    "Explain why geitonogamy crosses flowers while remaining a same-plant transfer.",
+    "Separate floral arrangement and pollen compatibility from transport and fertilisation."
+  ],
+  "traps": [
+    "An insect-assisted transfer can be geitonogamous; the carrier does not identify the pollen donor.",
+    "Monoecy can prevent autogamy without eliminating geitonogamy.",
+    "Self-incompatibility can reject deposited pollen, so arrival does not establish successful fertilisation.",
+    "Sexual self-pollination can produce segregation; it is not guaranteed clonal reproduction."
+  ]
+},
   "pollen-development-and-male-gametophyte": {
   "focus": [
     "Locate the meiotic reduction before the mitotic development of pollen cells.",

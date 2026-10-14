@@ -15,6 +15,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "autogamy-geitonogamy-and-xenogamy": {
+  "src": "/images/biology/autogamy-geitonogamy-and-xenogamy-v1.webp",
+  "alt": "Two flowers share Plant A and a third belongs to Plant B: autogamy loops within one flower, geitonogamy links the flowers on A, and xenogamy links A to B.",
+  "caption": "Original identity map. Arrows represent anther-to-stigma pollen transfers, not tubes connecting flowers. Plant A and Plant B are separate individuals of the same species; flower anatomy and travel distances are schematic.",
+  "width": 1600,
+  "height": 1000
+},
   "pollen-development-and-male-gametophyte": {
   "src": "/images/biology/pollen-development-and-male-gametophyte-v1.webp",
   "alt": "Two-celled pollen contains a vegetative nucleus and one enclosed generative cell; after generative division, three-celled pollen contains the vegetative nucleus and two male gametes.",

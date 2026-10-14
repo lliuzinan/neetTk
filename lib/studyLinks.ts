@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "autogamy-geitonogamy-and-xenogamy": [
+  {
+    "slug": "pollen-development-and-male-gametophyte",
+    "reason": "Identify what a pollen grain contains before classifying how it moves between flowers."
+  },
+  {
+    "slug": "sexual-reproduction-in-flowering-plants",
+    "reason": "Follow compatible pollen beyond deposition to tube growth and double fertilisation."
+  },
+  {
+    "slug": "mendelian-inheritance",
+    "reason": "Explain how allele segregation can generate different offspring even when one plant supplies both sets of gametes."
+  }
+],
   "pollen-development-and-male-gametophyte": [
   {
     "slug": "mitosis-and-meiosis",
@@ -283,6 +297,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [
+    { slug: "autogamy-geitonogamy-and-xenogamy", reason: "Classify pollen transfer by its source flower and source plant before considering fertilisation." },
     { slug: "pollen-development-and-male-gametophyte", reason: "Trace the pollen cells before tube growth and distinguish the gametophyte from its two male gametes." },
     { slug: "special-modes-of-reproduction-in-flowering-plants", reason: "Continue from the ordinary post-fertilisation route to apomixis, parthenocarpy and polyembryony." },
     { slug: "seed-development-and-ploidy", reason: "Trace the embryo, endosperm and maternal tissues separately and calculate their chromosome sets." },

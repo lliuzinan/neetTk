@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "autogamy-geitonogamy-and-xenogamy",
   "pollen-development-and-male-gametophyte",
   "dihybrid-crosses-and-probability",
   "gel-electrophoresis-and-dna-band-reading",
@@ -87,6 +88,61 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "autogamy-geitonogamy-and-xenogamy": [
+  {
+    "heading": "Identify the donor before watching the carrier",
+    "paragraphs": [
+      "A bee moves pollen from one flower to another. Has cross-pollination occurred? The movement alone leaves an important detail unanswered: do those flowers belong to the same plant? In the NCERT classification, pollen source separates autogamy, geitonogamy and xenogamy. The carrier describes how pollen moved; it does not establish the donor's identity.",
+      "Use two successive checks. First ask whether donor and recipient are the same flower. If they are different flowers, ask whether they belong to the same individual plant. This guide develops that identity map from NCERT Class 12 Biology, Chapter 1, section 1.2.3, Pollination. Assume transfers between flowers of the same species, and keep successful fertilisation as a later question."
+    ]
+  },
+  {
+    "heading": "Crossing a flower boundary is different from crossing a plant boundary",
+    "paragraphs": [
+      "Autogamy transfers pollen to the stigma within its source flower. Geitonogamy moves pollen to another flower on the same individual. Xenogamy moves pollen between different individuals. The last two both involve different flowers, so stopping after 'another flower' cannot separate them.",
+      "The original diagram assigns two flowers to one rooted plant and a third flower to a separate plant. A loop within the first flower represents autogamy; an arrow to the second flower on its own plant represents geitonogamy; an arrow to the flower on the other plant represents xenogamy. Arrows stand for anther-to-stigma transfer, not for pollen tubes connecting flowers.",
+      "Geitonogamy requires transfer between flowers and is described by NCERT as functionally cross-pollination, while genetically resembling self-pollination because the pollen comes from the same plant. Both descriptions can be correct because they refer to different boundaries. An insect visiting two flowers on one plant has crossed the flower boundary without introducing a second parental individual."
+    ]
+  },
+  {
+    "heading": "A transfer log needs identities as well as arrows",
+    "paragraphs": [
+      "Consider an invented observation sheet containing 40 pollen-deposition events. Twelve begin and end in the same flower. Eighteen involve two flowers attached to the same plant. Ten connect separate individual plants. Applying the identity checks gives 12 autogamous, 18 geitonogamous and 10 xenogamous events: 30%, 45% and 25% of the recorded total.",
+      "The 28 events between different flowers are not all xenogamous. Only ten crossed a plant boundary. Likewise, describing all 40 events as insect-assisted would not change their source categories. The agent and the identity relation can be recorded in separate columns without one replacing the other.",
+      "Now inspect a flawed conclusion: '25% of the seeds must be cross-fertilised because 25% of transfers were xenogamous.' The denominator has changed from deposition events to seeds. Some pollen may be incompatible or fail to achieve fertilisation, and many deposits may occur on one stigma. The observation sheet did not count successful fertilisations or establish paternal contribution to each seed, so it cannot support that seed percentage."
+    ]
+  },
+  {
+    "heading": "Floral sex arrangement removes particular routes",
+    "paragraphs": [
+      "A unisexual flower lacks either the functional male or female component needed for within-flower autogamy. But separate male and female flowers can still occur on one individual plant. This monoecious arrangement, illustrated in NCERT by maize and castor, excludes autogamy while retaining the possibility of geitonogamy between flowers on that plant. Pollen can also arrive from another plant.",
+      "In a strictly dioecious arrangement, the male and female flowers occur on separate individuals. Within the usual model, neither autogamy nor geitonogamy supplies pollen to a female flower because its own plant has no male flowers. Suitable pollen must come from another individual. This predicts a route requirement, not a guarantee that pollen will arrive or be accepted.",
+      "The distinction is therefore about distribution of reproductive structures. 'Unisexual flowers' alone is incomplete information for excluding geitonogamy: you must also know how those flowers are distributed among plants. Drawing separate flowers on one stem and then on separate stems is a quick way to expose the missing fact."
+    ]
+  },
+  {
+    "heading": "Timing, position and recognition act at different steps",
+    "paragraphs": [
+      "Within a bisexual flower, pollen release and stigma receptivity may occur at different times. Anthers and stigma may also occupy positions that reduce contact between self-pollen and the stigma. These arrangements discourage within-flower self-pollination, but they do not automatically show that pollen from every other flower on the same plant is unavailable. That stronger conclusion would require information about the other flowers too.",
+      "Self-incompatibility addresses a different step: genetically controlled recognition can prevent self-pollen from achieving fertilisation by inhibiting germination or pollen-tube growth. Pollen can therefore reach the stigma and still be rejected. Moving it from a neighbouring flower of the same plant does not automatically evade that self-recognition system.",
+      "Contrast this with cleistogamous flowers, which remain closed. In the NCERT model, their enclosed anthers and stigma permit autogamy without an external pollinator. Examples include cleistogamous flowers of Viola, Oxalis and Commelina; these plants can also produce open flowers. Do not turn a statement about their closed flowers into a claim that every flower on every such plant is closed."
+    ]
+  },
+  {
+    "heading": "Selfing is not a synonym for producing a clone",
+    "paragraphs": [
+      "Source identity and genetic outcome should not be collapsed. Autogamy and geitonogamy use gametes from the same parental plant, but ordinary sexual reproduction still includes meiosis and fertilisation. A heterozygous plant can produce genetically different offspring through segregation. Self-pollination is therefore not equivalent to apomictic seed formation or guaranteed copying of the parental genotype.",
+      "Xenogamy introduces a second individual as pollen donor and provides an opportunity for combining genetic contributions from different plants. The route name alone does not calculate the offspring's genotype or establish how different the parents are at a particular locus. For that, the relevant parental genotypes and inheritance assumptions are needed. Keep a transfer classification separate from a genetic prediction."
+    ]
+  },
+  {
+    "heading": "Reassign one flower and explain which classification changes",
+    "paragraphs": [
+      "Draw two rooted plants. Put flowers P and Q on the first and flower R on the second. Record P-to-P, P-to-Q and P-to-R as autogamy, geitonogamy and xenogamy. Then redraw Q on the second plant while retaining its label. P-to-Q becomes xenogamy: the arrow still joins two flowers, but their plant membership has changed.",
+      "For a final explanation, keep the original drawing and suppose a bee performs every transfer. None of the three identity classifications changes. Then suppose self-pollen is rejected after deposition. The source labels still describe the routes, while the possible fertilisation outcomes change. A complete account should be able to name both the transfer and its biological limits."
+    ]
+  }
+],
   "pollen-development-and-male-gametophyte": [
   {
     "heading": "A pollen grain is a small generation, not a single gamete",
@@ -2735,6 +2791,16 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "autogamy-geitonogamy-and-xenogamy": [
+  {
+    "label": "NCERT Class 12 Biology, Chapter 1, section 1.2.3: Pollination, outbreeding devices and pollen-pistil interaction",
+    "href": "https://ncert.nic.in/textbook/pdf/lebo101.pdf"
+  },
+  {
+    "label": "OpenStax Biology 2e, 32.2: Pollination and Fertilization - self-pollination, cross-pollination and subsequent events",
+    "href": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+  }
+],
   "pollen-development-and-male-gametophyte": [
   {
     "label": "NCERT Class 12 Biology, Chapter 1, section 1.2.1: Stamen, Microsporangium and Pollen Grain",
@@ -3024,6 +3090,48 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "autogamy-geitonogamy-and-xenogamy": {
+  "heading": "Read flower identity and plant identity separately",
+  "intro": "These categories classify the stated pollen transfer. Transport and successful fertilisation need additional observations.",
+  "columns": [
+    "Identity check",
+    "Autogamy",
+    "Geitonogamy",
+    "Xenogamy"
+  ],
+  "rows": [
+    [
+      "Is the recipient flower also the source?",
+      "Yes",
+      "No",
+      "No"
+    ],
+    [
+      "Is the donor the same individual plant?",
+      "Yes",
+      "Yes",
+      "No"
+    ],
+    [
+      "Which boundary is crossed?",
+      "Neither flower nor plant boundary",
+      "Flower boundary only",
+      "Both flower and plant boundaries"
+    ],
+    [
+      "Can male and female flowers on one plant permit this route?",
+      "Not within an individual unisexual flower",
+      "Yes, between suitable flowers",
+      "Yes, if another individual supplies pollen"
+    ],
+    [
+      "Does the label prove fertilisation?",
+      "No",
+      "No",
+      "No"
+    ]
+  ]
+},
   "pollen-development-and-male-gametophyte": {
   "heading": "Count each developmental unit at its own stage",
   "intro": "The entries describe the conventional diploid plant model before fertilisation. Cell counts refer to one named unit, not to the whole anther.",
@@ -3619,6 +3727,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "autogamy-geitonogamy-and-xenogamy": {
+  "heading": "Write both identities beside a transfer",
+  "paragraphs": [
+    "A flower number is useful only when its plant membership is retained. Record a transfer as plant A, flower 1 to plant A, flower 2, rather than simply 1 to 2. The longer label carries the information needed to distinguish geitonogamy from xenogamy without guessing from distance or the visiting animal."
+  ]
+},
   "pollen-development-and-male-gametophyte": {
   "heading": "Do not add nuclei to invent a ploidy",
   "paragraphs": [
