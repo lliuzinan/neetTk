@@ -15,6 +15,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "testcross-and-unknown-genotypes": {
+  "src": "/images/biology/testcross-and-unknown-genotypes-v1.webp",
+  "alt": "An Aa parent supplies either A or a; each combines with an a allele from the aa tester to form Aa or aa offspring.",
+  "caption": "Original allele-contribution schematic. Blue marks the unknown parent\u2019s contributions and amber the fixed recessive tester contribution. The two routes are equally probable for an Aa parent under equal segregation; arrows summarise gamete union, not cell anatomy.",
+  "width": 1600,
+  "height": 1000
+},
   "autogamy-geitonogamy-and-xenogamy": {
   "src": "/images/biology/autogamy-geitonogamy-and-xenogamy-v1.webp",
   "alt": "Two flowers share Plant A and a third belongs to Plant B: autogamy loops within one flower, geitonogamy links the flowers on A, and xenogamy links A to B.",

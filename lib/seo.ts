@@ -8,6 +8,10 @@ export const LAST_UPDATED_DISPLAY = "September 11, 2026";
 export const DEFAULT_OG_IMAGE = absoluteUrl("/og?title=NEET-UG%20Biology%20Revision&subtitle=Independent%20study%20notes%20for%20Indian%20students");
 
 const topicDateMap: Record<string, { published: string; modified: string }> = {
+  "testcross-and-unknown-genotypes": {
+  "published": "2026-10-15",
+  "modified": "2026-10-15"
+},
   "autogamy-geitonogamy-and-xenogamy": {
   "published": "2026-10-14",
   "modified": "2026-10-14"

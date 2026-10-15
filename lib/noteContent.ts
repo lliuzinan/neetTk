@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "testcross-and-unknown-genotypes",
   "autogamy-geitonogamy-and-xenogamy",
   "pollen-development-and-male-gametophyte",
   "dihybrid-crosses-and-probability",
@@ -88,6 +89,60 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "testcross-and-unknown-genotypes": [
+  {
+    "heading": "One visible trait leaves two possible genotypes",
+    "paragraphs": [
+      "A plant with a dominant phenotype presents an identification problem: its appearance can fit either a homozygous dominant or a heterozygous genotype. Looking more carefully at the same trait does not resolve that ambiguity under complete dominance. A testcross changes the evidence available by examining the offspring produced with a deliberately chosen partner.",
+      "Use A for a dominant allele and a for its recessive alternative at one autosomal locus. The unknown plant is A_, meaning AA or Aa; the underscore records missing information, not a third allele. This guide assumes complete dominance, normal allele segregation, random fertilisation, reliable phenotype scoring and no difference in survival between offspring genotypes. These conditions let us reason from an offspring phenotype back to the allele contributed by the unknown parent."
+    ]
+  },
+  {
+    "heading": "The tester contributes the same allele every time",
+    "paragraphs": [
+      "Choose an aa partner. Every gamete it supplies carries a. If an offspring has the dominant phenotype, its genotype must therefore be Aa: the A came from the unknown parent. If an offspring has the recessive phenotype, it is aa, so the unknown parent must have supplied a as well. The tester makes the unknown contribution distinguishable because its own contribution does not vary.",
+      "An AA partner would obscure that distinction. Its A-bearing gametes ensure that both AA and Aa offspring have the dominant phenotype, whether the unknown parent supplied A or a. An Aa partner also introduces two possible contributions of its own. Such crosses can still contain information, but they are not the recessive-tester design used here. The original diagram below follows the two possible gametes from an Aa parent while holding the tester contribution fixed."
+    ]
+  },
+  {
+    "heading": "Two candidate parents predict different offspring distributions",
+    "paragraphs": [
+      "If the unknown parent is AA, it contributes only A, and AA x aa produces Aa offspring throughout the simple model. If it is Aa, equal segregation gives A and a gametes with probabilities of one half each. Aa x aa consequently predicts one half Aa and one half aa, giving equal expected proportions of the two phenotypes.",
+      "Notice that the all-dominant offspring of AA x aa are heterozygous, even though the unknown parent is homozygous. Parent and offspring genotypes must be written on separate lines. Another useful check is that no offspring from either testcross can be AA: the tester cannot contribute an A allele. A proposed result containing AA offspring signals an error in the cross or in its stated assumptions."
+    ]
+  },
+  {
+    "heading": "Read a progeny record as evidence, not an exact ratio",
+    "paragraphs": [
+      "Consider an invented plant record with 22 dominant and 18 recessive offspring from one unknown dominant plant crossed with aa. The total is 40. Under the Aa hypothesis, the expected counts are 20 and 20; the observed counts need not match them exactly. More decisively, each recessive offspring needs an a allele from both parents. Within our model, this rules out AA for the unknown plant and identifies it as Aa.",
+      "A tempting wrong answer is that 22:18 is not 1:1, so the parent cannot be heterozygous. A predicted ratio is a probability distribution, not a quota enforced in every family. The presence of the recessive class establishes the relevant allele contribution; a small departure from equal counts does not erase it. If the result were strongly skewed, one would also examine scoring, survival and segregation assumptions rather than inventing a new genotype from the ratio alone.",
+      "Keep records from separate unknown parents separate. Pooling an all-dominant family from an AA plant with a segregating family from an Aa plant would combine different crosses. The pooled proportions would no longer describe a test of one individual's genotype. Always identify which parent a family belongs to before interpreting its counts."
+    ]
+  },
+  {
+    "heading": "An absent recessive class is weaker evidence",
+    "paragraphs": [
+      "Now suppose a second unknown plant produces six offspring, all dominant. AA is consistent with that observation, but Aa is not impossible. If that parent is Aa, each offspring has probability one half of being dominant. Assuming independent offspring outcomes, the probability that all six are dominant is (1/2)^6 = 1/64, approximately 1.56%. This is a calculation under the heterozygote hypothesis, not the probability that the parent is heterozygous after seeing the record.",
+      "Increasing the sample makes an all-dominant run less likely under Aa, but a finite run does not become a logical proof of AA. In contrast, even one correctly identified recessive offspring contradicts AA under the stated model. The two observations therefore have different evidential force: presence can expose a recessive allele, while absence may simply reflect which gametes happened to be represented.",
+      "Do not turn 1/64 into a claimed 98.44% probability that the parent is AA. That would reverse the condition in the calculation. Assigning probabilities to parental hypotheses after observing data would require additional information, including their initial probabilities; that inference is outside this elementary testcross exercise."
+    ]
+  },
+  {
+    "heading": "A backcross names a relationship; a testcross names a design",
+    "paragraphs": [
+      "Start with AA x aa and its Aa first-generation hybrid. Crossing that hybrid to either parental genotype is a backcross. Aa x AA is a backcross to the dominant parent; Aa x aa is a backcross to the recessive parent and also a testcross. The overlap does not make the terms interchangeable. A recessive tester need not be the literal original parent of the individual being investigated.",
+      "The same revealing principle extends to multiple loci, but the interpretation then needs more information. A double-recessive tester can expose the gamete combinations from an AaBb individual. Equal frequencies of four classes require independent assortment; linkage can change those frequencies. Use the linked guides below for those extensions rather than importing a four-class ratio into this single-locus inference."
+    ]
+  },
+  {
+    "heading": "Write a verdict with its limiting assumption",
+    "paragraphs": [
+      "For active recall, make two family cards without looking above: family P has 15 dominant and 13 recessive offspring; family Q has eight dominant offspring and no recessive offspring. Both came from separate dominant plants crossed with aa. For each card, write the genotypes still possible, the allele contribution that matters and one sentence limiting the conclusion.",
+      "Check your work: P identifies Aa within the model because its recessive offspring require paternal and maternal a contributions. Q remains compatible with AA or Aa; an all-dominant set of eight has probability 1/256 under Aa. Finally, replace each tester with AA. Explain why the offspring's dominant appearance would then fail to reveal whether the unknown plant contributed a. That explanation demonstrates the purpose of the tester more clearly than memorising 1:1.",
+      "NCERT anchor: Class 12 Biology, Chapter 4, Principles of Inheritance and Variation, section 4.1, Inheritance of One Gene. The testcross discussion supplies the biological foundation; the family records and conditional-probability checks here are original teaching examples."
+    ]
+  }
+],
   "autogamy-geitonogamy-and-xenogamy": [
   {
     "heading": "Identify the donor before watching the carrier",
@@ -2791,6 +2846,16 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "testcross-and-unknown-genotypes": [
+  {
+    "label": "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.1",
+    "href": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+  },
+  {
+    "label": "OpenStax Biology 2e: Characteristics and Traits \u2014 Test Cross",
+    "href": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits"
+  }
+],
   "autogamy-geitonogamy-and-xenogamy": [
   {
     "label": "NCERT Class 12 Biology, Chapter 1, section 1.2.3: Pollination, outbreeding devices and pollen-pistil interaction",
@@ -3090,6 +3155,42 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "testcross-and-unknown-genotypes": {
+  "heading": "Which conclusion does this observation justify?",
+  "intro": "Apply these checks only to a correctly identified dominant parent crossed with aa under the stated single-locus model.",
+  "columns": [
+    "Offspring evidence",
+    "What the unknown parent supplied",
+    "Permitted inference",
+    "Limit to remember"
+  ],
+  "rows": [
+    [
+      "At least one recessive offspring",
+      "An a allele",
+      "The dominant parent is Aa",
+      "Depends on correct parentage and scoring"
+    ],
+    [
+      "Both phenotypes in near-equal numbers",
+      "Both A and a",
+      "Consistent with equal segregation from Aa",
+      "Exact equality is not required"
+    ],
+    [
+      "A small all-dominant family",
+      "Only A observed so far",
+      "AA and Aa both remain possible",
+      "Observed absence does not prove inability"
+    ],
+    [
+      "An offspring labelled AA",
+      "Would require tester to supply A",
+      "Incompatible with an aa tester",
+      "Recheck the cross or the genotype label"
+    ]
+  ]
+},
   "autogamy-geitonogamy-and-xenogamy": {
   "heading": "Read flower identity and plant identity separately",
   "intro": "These categories classify the stated pollen transfer. Transport and successful fertilisation need additional observations.",
@@ -3727,6 +3828,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "testcross-and-unknown-genotypes": {
+  "heading": "Keep the direction of probability visible",
+  "paragraphs": [
+    "Write P(all dominant | Aa) beside the six-offspring calculation. The condition after the vertical bar is the parental genotype assumed for that calculation. The observation goes before it. Reversing those positions asks a different question and cannot be done by subtracting the answer from one."
+  ]
+},
   "autogamy-geitonogamy-and-xenogamy": {
   "heading": "Write both identities beside a transfer",
   "paragraphs": [

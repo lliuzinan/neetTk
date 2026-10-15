@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "testcross-and-unknown-genotypes": {
+  "focus": [
+    "Explain why a homozygous recessive tester reveals the unknown parent's contribution.",
+    "Use recessive offspring to distinguish AA from Aa under a single-locus model.",
+    "Separate a finite sample from the expected phenotype distribution."
+  ],
+  "traps": [
+    "AA x aa makes heterozygous offspring, not AA offspring.",
+    "A testcross does not always produce a 1:1 ratio; that expectation requires a heterozygous unknown parent.",
+    "An all-dominant small family does not establish homozygosity with certainty.",
+    "A backcross to a dominant parent is not a recessive testcross."
+  ]
+},
   "autogamy-geitonogamy-and-xenogamy": {
   "focus": [
     "Classify pollen movement using flower identity followed by individual-plant identity.",

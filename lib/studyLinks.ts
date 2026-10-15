@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "testcross-and-unknown-genotypes": [
+  {
+    "slug": "mendelian-inheritance",
+    "reason": "Review allele segregation and complete dominance before working backwards from offspring."
+  },
+  {
+    "slug": "dihybrid-crosses-and-probability",
+    "reason": "Extend the tester logic to two independently assorting loci and distinguish joint outcomes."
+  },
+  {
+    "slug": "linkage-and-recombination-frequency",
+    "reason": "See why a double-recessive tester reveals unequal gamete frequencies when loci are linked."
+  }
+],
   "autogamy-geitonogamy-and-xenogamy": [
   {
     "slug": "pollen-development-and-male-gametophyte",
@@ -263,6 +277,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "cell-theory-and-cell-organelles", reason: "Connect an absorptive cell's membrane and internal machinery with nutrient transport." },
   ],
   "mendelian-inheritance": [
+    { slug: "testcross-and-unknown-genotypes", reason: "Use offspring observations to infer an unknown dominant parent’s genotype and recognise sampling limits." },
     { slug: "dihybrid-crosses-and-probability", reason: "Extend single-locus segregation into two-locus probabilities and compare crosses with different mates." },
     { slug: "incomplete-dominance-and-codominance", reason: "See why segregation can stay the same while the heterozygote changes the phenotype ratio." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Connect segregation of alleles with the movement of homologous chromosomes." },
