@@ -82,8 +82,8 @@ export default async function Home() {
             <h1>NEET Biology revision notes</h1>
             <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
             <div className="actions">
-              <Link href="/neet-ug/biology" className="primaryButton" prefetch={false}>Browse revision topics</Link>
-              <Link href="/neet-biology-pdf" className="secondaryButton" prefetch={false}>View free workbook sample</Link>
+              <Link href="/neet-ug/biology/learn/inheritance" className="primaryButton" prefetch={false}>Start the inheritance learning path</Link>
+              <Link href="/neet-ug/biology" className="secondaryButton" prefetch={false}>Browse revision topics</Link>
             </div>
             <div className="mobileQuickStart" aria-label="Start reading a revision guide">
               <p>Start reading</p>

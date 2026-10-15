@@ -39,6 +39,7 @@ export default async function BiologyTopicsPage() {
         <EditorialByline />
       </header>
       <section className="contentBand"><h2>How to use this library</h2><p>Read the corresponding NCERT chapter first. Then use a MedQGo guide to test whether you can explain the central process, separate similar terms, and recall key examples without looking back at the textbook.</p></section>
+      <section className="contentBand"><p className="eyebrow">LEARN → CHECK → REVISIT</p><h2><Link href="/neet-ug/biology/learn/inheritance">Inheritance learning path →</Link></h2><p>Follow five connected guides, try ten original concept checks, and save what you need to revisit in this browser. Start with the route or use the checks to identify a useful next read.</p></section>
       <div className="topicGrid">{topics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h2>{topic.name}</h2><p>Study focus, likely confusions, and an original revision routine.</p></Link>)}</div>
       <PdfCta source="biology_index" />
     </main>

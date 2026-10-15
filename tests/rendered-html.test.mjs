@@ -169,7 +169,7 @@ test("renders the independent revision home and topic library", async () => {
   assert.match(homeHtml, /fetchpriority="high"/i);
   assert.ok((homeSource.match(/prefetch=\{false\}/g) || []).length >= 4);
   assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
-  assert.match(homeHtml, /View free workbook sample/);
+  assert.match(homeHtml, /Start the inheritance learning path/);
   assert.match(homeHtml, /Build one connected topic at a time/);
   assert.match(homeHtml, /Inheritance and variation/);
   assert.match(homeHtml, /Start reading/);
@@ -601,4 +601,18 @@ test("publishes frog systems and evolutionary evidence guides with distinct lear
     assert.ok(sitemap.includes(`/neet-ug/biology/${item.slug}</loc>`));
     assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
   }
+});
+
+
+test("connects the inheritance route with accessible checks and a server-rendered answer key", async () => {
+ const html = await readFile(new URL("../.next/server/app/neet-ug/biology/learn/inheritance.html", import.meta.url), "utf8");
+ assert.match(html, /Ten original concept checks/);
+ assert.match(html, /No independent teacher review is claimed/);
+ assert.match(html, /Open the answer key/);
+ assert.match(html, /recombination-v1/);
+ assert.match(html, /local|browser/);
+ const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+ assert.match(sitemap, /biology\/learn\/inheritance/);
+ const privacy = await readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8");
+ assert.match(privacy, /Learning progress on your device/);
 });

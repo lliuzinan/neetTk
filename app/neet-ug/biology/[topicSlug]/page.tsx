@@ -1,3 +1,4 @@
+import { learningSteps, learningPath } from "@/lib/inheritanceLearning";
 import type { Metadata } from "next";
 import { studyLinks } from "@/lib/studyLinks";
 import { noteExercises } from "@/lib/noteExercises";
@@ -573,6 +574,7 @@ export default async function TopicPage({ params }: Props) {
         {relatedTopics.length > 0 && (
           <section>
             <h2>Related revision guides</h2>
+            {learningSteps.some(step => step.slug === topic.slug) && <p><Link href={learningPath}>Try the inheritance concept checks and save your revision progress →</Link></p>}
             <div className="relatedGuideGrid">
               {relatedTopics.map((related) => (
                 <Link href={`/neet-ug/biology/${related.slug}`} className="relatedGuide" key={related.id}>

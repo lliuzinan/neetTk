@@ -13,10 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const topics = allTopics.filter((topic) => topicSlugs.has(topic.slug));
   const libraryModified = new Date(`${topics.map((topic) => topicDates(topic.slug).modifiedIso).sort().at(-1) || LAST_UPDATED_ISO}T00:00:00.000Z`);
   return [
+    { url: absoluteUrl("/neet-ug/biology/learn/inheritance"), lastModified: new Date("2026-10-15T00:00:00Z"), changeFrequency: "monthly", priority: 0.9 },
     { url: absoluteUrl("/"), lastModified: libraryModified, changeFrequency: "weekly", priority: 1 },
     { url: absoluteUrl("/neet-ug/biology"), lastModified: libraryModified, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl("/neet-biology-pdf"), lastModified, changeFrequency: "weekly", priority: 0.8 },
     ...topics.map((topic) => ({ url: absoluteUrl(`/neet-ug/biology/${topic.slug}`), lastModified: new Date(`${topicDates(topic.slug).modifiedIso}T00:00:00.000Z`), changeFrequency: "monthly" as const, priority: 0.8 })),
-    ...trustPages.map((path) => ({ url: absoluteUrl(path), lastModified: path === "/privacy" ? new Date("2026-09-20T00:00:00Z") : lastModified, changeFrequency: "monthly" as const, priority: 0.4 })),
+    ...trustPages.map((path) => ({ url: absoluteUrl(path), lastModified: path === "/privacy" ? new Date("2026-10-15T00:00:00Z") : lastModified, changeFrequency: "monthly" as const, priority: 0.4 })),
   ];
 }
