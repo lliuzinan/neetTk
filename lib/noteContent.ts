@@ -23,6 +23,7 @@ export type NoteEditorialBlock = {
 };
 
 export const AUTHORED_NOTE_SLUGS = [
+  "polygenic-inheritance-and-pleiotropy",
   "testcross-and-unknown-genotypes",
   "autogamy-geitonogamy-and-xenogamy",
   "pollen-development-and-male-gametophyte",
@@ -89,6 +90,61 @@ export const AUTHORED_NOTE_SLUGS = [
 ] as const;
 
 const noteContent: Record<string, NoteSection[]> = {
+  "polygenic-inheritance-and-pleiotropy": [
+  {
+    "heading": "Count the relationships before counting the alleles",
+    "paragraphs": [
+      "A description involving several genes is not asking the same question as one involving several traits. In polygenic inheritance, contributions from multiple genes meet in one characteristic. In pleiotropy, variation in a single gene can influence more than one phenotypic characteristic. To distinguish them, first draw the genes on one side and the traits on the other; then follow the direction in which the connections spread.",
+      "Neither term is a replacement for segregation. Alleles still pass through gametes. What changes is the map from genetic contributions to observed features. NCERT discusses these relationships in Class 12 Biology, Chapter 4, sections 4.4 and 4.5. This guide uses an invented output score to make the additive idea checkable without pretending to predict a real person's appearance or health."
+    ]
+  },
+  {
+    "heading": "Converging and diverging arrows describe different effects",
+    "paragraphs": [
+      "For a polygenic characteristic, several loci contribute to the same outcome. Height is a familiar example of a trait influenced by many genes, with environmental influences also relevant. An additive teaching model assigns small contributions to alleles and combines them. It helps explain how several genetic inputs can produce intermediate values rather than a single dominant-versus-recessive split.",
+      "For pleiotropy, the starting point is one gene whose product participates in processes that affect multiple features. A change in the product can therefore have consequences along more than one downstream route. The effects need not be equally large, and the gene need not act directly on every visible feature. The figure compares connection patterns only; it does not imply that a real trait has no other genetic or environmental influences.",
+      "These patterns can coexist. A gene may influence several traits while one of those traits also receives contributions from other genes. The terms identify relationships in a biological system, not mutually exclusive boxes into which every organism must fit. Count which inputs and outputs the particular statement describes."
+    ]
+  },
+  {
+    "heading": "Build an additive ledger with six allele copies",
+    "paragraphs": [
+      "For an original calculation, imagine a laboratory trait called output score, determined by three loci A/a, B/b and C/c. In this deliberately simplified model, each uppercase allele adds one unit and each lowercase allele adds zero. The effects are equal and additive, and the environment is held constant. A diploid genotype contains two copies at each locus, so the possible score runs from zero to six.",
+      "Score AABbcc locus by locus: AA contributes two, Bb contributes one and cc contributes zero. The total is 3. AaBbCc also scores 3, through 1 + 1 + 1. By comparison, AAbbCC scores 4 through 2 + 0 + 2. Writing the three contributions prevents the mistake of counting only how many loci have an uppercase letter.",
+      "Do not import complete dominance into this score rule. At the A locus, AA contributes twice as much as Aa in this model. Uppercase lettering here marks a contributing allele; it does not make AA and Aa equivalent. If we instead declared those two genotypes indistinguishable, we would have changed the expression rule and would need to recalculate the output."
+    ]
+  },
+  {
+    "heading": "The same total can conceal different genetic routes",
+    "paragraphs": [
+      "A score of 3 cannot distinguish AABbcc from AaBbCc, even in this perfectly controlled model. Both totals are correct, but the allele arrangements differ. Their possible gametes differ as well: AABbcc can produce ABc or Abc, whereas AaBbCc can produce eight combinations when the loci assort independently. Matching scores therefore do not establish matching genotypes or matching offspring distributions.",
+      "A plausible wrong inference is that an intermediate score means heterozygosity at every locus. AaBbCc is one way to obtain the middle score, not the only way. AABbcc provides a direct counterexample: one locus is homozygous contributing, one is heterozygous and one is homozygous noncontributing. Test a claim of uniqueness by constructing a second genotype with the same total."
+    ]
+  },
+  {
+    "heading": "A cross adds probabilities to the contribution ledger",
+    "paragraphs": [
+      "Now cross AaBbCc with aabbcc within the invented score model. For this calculation, let the loci assort independently, let either allele enter a gamete equally often, and assume random fertilisation with equal offspring survival. The tester contributes only abc. At each locus, an offspring receives one contributing allele with probability one half, or none with probability one half. Consequently its total score can only be 0, 1, 2 or 3; it cannot reach 6 in this cross.",
+      "The heterozygote has eight equally probable gamete combinations. Only abc gives score 0. Abc, aBc and abC each give score 1. ABc, AbC and aBC each give score 2, and ABC gives score 3. The expected score distribution is therefore 1:3:3:1. Among 80 hypothetical offspring the expected counts are 10, 30, 30 and 10. Actual counts can differ because the model predicts probabilities rather than a quota.",
+      "This is not a universal ratio for polygenic inheritance. It follows from these parents, three equal contributions and independent loci. Change the parental genotypes, the contribution sizes or linkage assumptions and the distribution may change. The calculation extends the two-locus probability method, but groups outcomes by a combined score rather than by separate dominant phenotypes."
+    ]
+  },
+  {
+    "heading": "Real quantitative traits are not six-unit measuring scales",
+    "paragraphs": [
+      "The ledger is a teaching device, not a complete description of height or pigmentation. Many loci can contribute, their effects need not be equal, and environmental conditions can influence observed values. NCERT explicitly includes environmental influence in its discussion of polygenic inheritance. A phenotype is therefore not generally a direct counter of uppercase alleles.",
+      "A broad range of measurements can be compatible with many small genetic contributions, but a range alone does not prove a particular gene count or mechanism. Environmental variation can also spread measurements. Likewise, evidence that one gene affects two features supports pleiotropy without showing that either feature is controlled exclusively by that gene. Keep the model's assumptions attached to every numerical conclusion."
+    ]
+  },
+  {
+    "heading": "Explain three descriptions without borrowing a familiar ratio",
+    "paragraphs": [
+      "For active recall, draw three small maps: several loci contributing to one score; one gene product influencing two traits; and several allele forms existing at a single locus in a population. Label them polygenic inheritance, pleiotropy and multiple allelism, respectively. The third map concerns alternative versions of one locus, not several loci adding contributions.",
+      "Then hide the worked ledger and find two different genotypes that score 2 under its rule. One valid pair is AAbbcc and AaBbcc. State why their scores agree and why that does not make their gametes identical. Finally, recover the score-2 probability in AaBbCc x aabbcc: three eligible gametes out of eight give 3/8. Your explanation should name those gametes rather than just quote a ratio.",
+      "Use the inheritance learning path for the prerequisite checks on segregation and independent outcomes. Return here when you can explain those steps and want to examine how several contributions are combined into a trait."
+    ]
+  }
+],
   "testcross-and-unknown-genotypes": [
   {
     "heading": "One visible trait leaves two possible genotypes",
@@ -2846,6 +2902,16 @@ const defaultReferences: NoteReference[] = [
 ];
 
 const noteReferences: Record<string, NoteReference[]> = {
+  "polygenic-inheritance-and-pleiotropy": [
+  {
+    "label": "NCERT Class 12 Biology: Principles of Inheritance and Variation, sections 4.4 and 4.5",
+    "href": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
+  },
+  {
+    "label": "NHGRI: Polygenic Trait",
+    "href": "https://www.genome.gov/genetics-glossary/Polygenic-Trait"
+  }
+],
   "testcross-and-unknown-genotypes": [
   {
     "label": "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.1",
@@ -3155,6 +3221,42 @@ const noteReferences: Record<string, NoteReference[]> = {
 };
 
 const noteTables: Record<string, NoteComparisonTable> = {
+  "polygenic-inheritance-and-pleiotropy": {
+  "heading": "Identify what each description is counting",
+  "intro": "The wording of the relationship matters more than the presence of the word multiple.",
+  "columns": [
+    "Description being explained",
+    "Relevant concept",
+    "What is multiple?",
+    "A conclusion it does not establish"
+  ],
+  "rows": [
+    [
+      "Several loci contribute to one characteristic",
+      "Polygenic inheritance",
+      "Contributing genes",
+      "That all contributions are equal"
+    ],
+    [
+      "Variation in one gene affects several features",
+      "Pleiotropy",
+      "Phenotypic effects",
+      "That each feature has only this one cause"
+    ],
+    [
+      "A population has more than two forms of one locus",
+      "Multiple allelism",
+      "Alternative alleles",
+      "That a diploid individual carries all of them"
+    ],
+    [
+      "A heterozygote lies between two homozygote phenotypes",
+      "Incomplete dominance",
+      "No multigene requirement",
+      "That the alleles have blended permanently"
+    ]
+  ]
+},
   "testcross-and-unknown-genotypes": {
   "heading": "Which conclusion does this observation justify?",
   "intro": "Apply these checks only to a correctly identified dominant parent crossed with aa under the stated single-locus model.",
@@ -3828,6 +3930,12 @@ const noteTables: Record<string, NoteComparisonTable> = {
 };
 
 const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
+  "polygenic-inheritance-and-pleiotropy": {
+  "heading": "Keep a score column separate from a genotype column",
+  "paragraphs": [
+    "A total compresses information. Record AA | Bb | cc and 2 + 1 + 0 before writing 3. If you erase the contribution columns, you cannot reconstruct the genotype uniquely from the total. This information loss is why a numerical phenotype must not be treated as an allele sequence."
+  ]
+},
   "testcross-and-unknown-genotypes": {
   "heading": "Keep the direction of probability visible",
   "paragraphs": [

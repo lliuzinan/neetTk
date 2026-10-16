@@ -16,6 +16,19 @@ const defaultContent: TopicSeoContent = {
 };
 
 const topicContent: Record<string, TopicSeoContent> = {
+  "polygenic-inheritance-and-pleiotropy": {
+  "focus": [
+    "Distinguish converging gene contributions from diverging phenotypic effects.",
+    "Compute an additive score while keeping locus identity visible.",
+    "Limit probability claims to the stated cross and contribution model."
+  ],
+  "traps": [
+    "Multiple alleles at one locus do not mean multiple genes contribute to a trait.",
+    "An intermediate additive score does not require heterozygosity at every locus.",
+    "Uppercase letters in an additive ledger do not automatically imply complete dominance.",
+    "A broad phenotype range does not by itself reveal the number of contributing loci."
+  ]
+},
   "testcross-and-unknown-genotypes": {
   "focus": [
     "Explain why a homozygous recessive tester reveals the unknown parent's contribution.",

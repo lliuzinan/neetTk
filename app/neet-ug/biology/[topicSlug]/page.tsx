@@ -16,6 +16,13 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 interface Props { params: Promise<{ topicSlug: string }>; }
 
 const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+  "polygenic-inheritance-and-pleiotropy": {
+  "src": "/images/biology/polygenic-inheritance-and-pleiotropy-v1.webp",
+  "alt": "Several gene inputs converge on one trait in polygenic inheritance; one gene input branches to several traits in pleiotropy.",
+  "caption": "Original relationship map. Arrows indicate influences, not chromosome movement. The simplified panels isolate two patterns; they do not exclude additional genes or environmental effects, and the patterns can coexist.",
+  "width": 1600,
+  "height": 1000
+},
   "testcross-and-unknown-genotypes": {
   "src": "/images/biology/testcross-and-unknown-genotypes-v1.webp",
   "alt": "An Aa parent supplies either A or a; each combines with an a allele from the aa tester to form Aa or aa offspring.",
@@ -574,7 +581,7 @@ export default async function TopicPage({ params }: Props) {
         {relatedTopics.length > 0 && (
           <section>
             <h2>Related revision guides</h2>
-            {learningSteps.some(step => step.slug === topic.slug) && <p><Link href={learningPath}>Try the inheritance concept checks and save your revision progress →</Link></p>}
+            {(learningSteps.some(step => step.slug === topic.slug) || topic.slug === "polygenic-inheritance-and-pleiotropy") && <p><Link href={learningPath}>Try the inheritance concept checks and save your revision progress →</Link></p>}
             <div className="relatedGuideGrid">
               {relatedTopics.map((related) => (
                 <Link href={`/neet-ug/biology/${related.slug}`} className="relatedGuide" key={related.id}>

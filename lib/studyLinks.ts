@@ -1,6 +1,20 @@
 type StudyLink = { slug: string; reason: string };
 
 export const studyLinks: Record<string, StudyLink[]> = {
+  "polygenic-inheritance-and-pleiotropy": [
+  {
+    "slug": "incomplete-dominance-and-codominance",
+    "reason": "Separate the behaviour of alleles at one locus from the contributions of several loci."
+  },
+  {
+    "slug": "dihybrid-crosses-and-probability",
+    "reason": "Review independent gamete probabilities before grouping a three-locus cross by score."
+  },
+  {
+    "slug": "mutation-and-gene-expression",
+    "reason": "Trace how a gene product links genetic variation to downstream cellular effects."
+  }
+],
   "testcross-and-unknown-genotypes": [
   {
     "slug": "mendelian-inheritance",
@@ -102,6 +116,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "enzymes-and-enzyme-action", reason: "Connect polymerase catalysis and temperature tolerance with the requirements of repeated cycling." },
   ],
   "incomplete-dominance-and-codominance": [
+    { slug: "polygenic-inheritance-and-pleiotropy", reason: "Compare one-locus expression with multiple gene contributions and distinguish pleiotropy." },
     { slug: "mendelian-inheritance", reason: "Review segregation and gamete construction before changing the phenotype rule." },
     { slug: "chromosomal-basis-of-inheritance", reason: "Locate alleles on homologous chromosomes and keep one locus distinct from several genes." },
     { slug: "pedigree-analysis-and-inheritance-patterns", reason: "Carry the distinction between observed phenotype and possible genotype into family-pattern reasoning." },
