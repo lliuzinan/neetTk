@@ -14,7 +14,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
 },
   "testcross-and-unknown-genotypes": {
   "published": "2026-10-15",
-  "modified": "2026-10-15"
+  "modified": "2026-10-17"
 },
   "autogamy-geitonogamy-and-xenogamy": {
   "published": "2026-10-14",

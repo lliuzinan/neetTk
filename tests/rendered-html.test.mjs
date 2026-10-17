@@ -169,7 +169,7 @@ test("renders the independent revision home and topic library", async () => {
   assert.match(homeHtml, /fetchpriority="high"/i);
   assert.ok((homeSource.match(/prefetch=\{false\}/g) || []).length >= 4);
   assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
-  assert.match(homeHtml, /Start the inheritance learning path/);
+  assert.match(homeHtml, /Investigate an unknown plant/);
   assert.match(homeHtml, /Build one connected topic at a time/);
   assert.match(homeHtml, /Inheritance and variation/);
   assert.match(homeHtml, /Start reading/);
@@ -615,4 +615,16 @@ test("connects the inheritance route with accessible checks and a server-rendere
  assert.match(sitemap, /biology\/learn\/inheritance/);
  const privacy = await readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8");
  assert.match(privacy, /Learning progress on your device/);
+});
+
+test("testcross investigation retains its publication date and exposes a static case record", async () => {
+ const html = await readFile(new URL("../.next/server/app/neet-ug/biology/testcross-and-unknown-genotypes.html", import.meta.url), "utf8");
+ const article=jsonLdItems(html).find(x=>x['@type']==='Article');
+ assert.equal(article.datePublished,'2026-10-15');
+ assert.equal(article.dateModified,'2026-10-17');
+ assert.match(html,/Batch one: 4 dominant, 0 recessive/);
+ assert.match(html,/fixed, invented teaching record/);
+ assert.match(html,/1\/32/);
+ assert.match(html,/testcross-and-unknown-genotypes-v1.webp/);
+ assert.match(html,/Use reference crosses to challenge the observation process/);
 });

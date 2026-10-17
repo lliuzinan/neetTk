@@ -1,0 +1,13 @@
+# Testcross investigation revision — October 17, 2026
+
+Owner requested substantive originality rather than superficial exercise volume. Today’s work deepens the existing testcross article instead of creating a repetitive sibling. Publication remains October 15; modified October 17. Homepage now leads to the investigation rather than promoting a question count. Existing ten checks remain available as secondary learning material.
+
+Learning outcome: distinguish an allele-based exclusion from a ratio fit, and separate model inference from reliability of observations. Reviewed closest existing testcross, Mendelian and dihybrid material. Original contribution: one fixed staged family, an ordered-record versus count distinction, reference-family comparison, missing-denominator analysis, and a counterfactual that removes the decisive record. Introductory allele logic, comparison table and original allele-contribution illustration are retained rather than rewritten for length. No new decorative image needed.
+
+Sources: NCERT Class 12 Biology Chapter 4 section 4.1, local Reprint 2025-26 extraction; official link https://ncert.nic.in/textbook/pdf/lebo104.pdf. OpenStax Biology 2e 12.2 testcross subsection rechecked online. Source facts are the recessive tester and segregation model. Data and experimental-audit situations are explicitly invented teaching extensions, not real laboratory observations or copied questions. No independent teacher-review claim.
+
+Independent calculations: first four dominant under Aa x aa = 1/16. Exactly one recessive among eight = 8/256 = 1/32. Exact ordered sequence with R last = 1/256. Seven dominant with the eighth removed = 1/128. Derive these by enumerating binary offspring sequences, not by estimating genotype posterior probabilities.
+
+The note field is ephemeral component state, not submitted, persisted or graded. Static full-record disclosure is available without JavaScript. Observation colours also have D/R letter labels, and counts are available as accessible text. No learner-progress identifiers changed.
+
+Validation: production build and 31 tests passed, including preserved publication date, updated modification date, retained original figure and static case accessibility. Browser checks at 1440/390/320px passed staged counts, reset, note retention while closing the record, note clearing on reload, no script errors and no document overflow. JavaScript-disabled full record works. Screenshots of desktop/mobile case inspected. Independent enumeration confirms 8 sequences out of 256 have exactly one recessive. Related-guide URLs checked live. No changes to daily automation settings.

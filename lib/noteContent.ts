@@ -168,11 +168,27 @@ const noteContent: Record<string, NoteSection[]> = {
     ]
   },
   {
-    "heading": "Read a progeny record as evidence, not an exact ratio",
+    "heading": "Open one family record in two stages",
     "paragraphs": [
-      "Consider an invented plant record with 22 dominant and 18 recessive offspring from one unknown dominant plant crossed with aa. The total is 40. Under the Aa hypothesis, the expected counts are 20 and 20; the observed counts need not match them exactly. More decisively, each recessive offspring needs an a allele from both parents. Within our model, this rules out AA for the unknown plant and identifies it as Aa.",
-      "A tempting wrong answer is that 22:18 is not 1:1, so the parent cannot be heterozygous. A predicted ratio is a probability distribution, not a quota enforced in every family. The presence of the recessive class establishes the relevant allele contribution; a small departure from equal counts does not erase it. If the result were strongly skewed, one would also examine scoring, survival and segregation assumptions rather than inventing a new genotype from the ratio alone.",
-      "Keep records from separate unknown parents separate. Pooling an all-dominant family from an AA plant with a segregating family from an Aa plant would combine different crosses. The pooled proportions would no longer describe a test of one individual's genotype. Always identify which parent a family belongs to before interpreting its counts."
+      "Imagine that Plant U has the dominant phenotype, but its second allele is unknown. Before inspecting any offspring, write down two candidate genotypes, AA and Aa, and cross each on paper with the same aa tester. This separates prediction from observation: otherwise it is easy to invent an explanation after seeing the result.",
+      "The investigation below is an original, deliberately constructed family record. It is not a report of a laboratory experiment. Open the first batch, commit to a limited conclusion, and only then reveal the second. The purpose is to notice which new observation changes the genotype inference, rather than to chase a familiar numerical ratio."
+    ]
+  },
+  {
+    "heading": "A recessive offspring changes the argument, not just the ratio",
+    "paragraphs": [
+      "The first four offspring in the case are dominant. The second batch contains three dominant offspring and one recessive offspring, making the cumulative record 7:1. That is far from exact equality, yet the decisive observation is the recessive individual. It requires a from the tester and a from Plant U. Because Plant U itself has the dominant phenotype, the two pieces of evidence together identify Aa within the model.",
+      "This conclusion does not depend on treating 7:1 as a new inheritance ratio. Under Aa x aa, the expected proportion remains one half for each phenotype. The probability of exactly one recessive among eight independently scored offspring is 8 x (1/2)^8 = 1/32. There are eight possible positions for the recessive offspring. That calculation explains why a lopsided small family is possible; it does not establish that every lopsided record is trustworthy.",
+      "An important distinction is between the probability of the exact ordered record and the probability of its final counts. The sequence D,D,D,D,D,D,D,R is one of 256 equally probable sequences under Aa x aa. A total of seven D and one R includes eight sequences and therefore has probability 8/256. Here D and R label scored phenotypes, not alleles inside a gamete."
+    ]
+  },
+  {
+    "heading": "Use reference crosses to challenge the observation process",
+    "paragraphs": [
+      "A genotype inference is only as useful as its connection to the actual family. In a hypothetical investigation, known AA x aa plants provide a dominant-phenotype reference, while known aa x aa plants provide a recessive-phenotype reference. Score all families at a comparable developmental stage using the same trait definition. If the reference plants cannot be distinguished reliably, assigning a genotype to Plant U from those labels is premature.",
+      "A known Aa x aa family checks a different aspect of the design: under the same scoring and survival conditions, both phenotype classes are expected. Its finite counts do not have to be equal, and an all-dominant tiny reference family is possible. Such comparisons are checks on the interpretation, not a guarantee of correct parentage or proof that the model has no exceptions.",
+      "Keep each family labelled by both parents and record the denominator. Twelve offspring produced but only eight reaching the scoring stage is not the same record as eight produced and eight scored. If loss before scoring differs by genotype, the survivor proportions need not represent the original zygote proportions. Merely increasing the number of survivors does not repair that selection problem.",
+      "Likewise, unexplained pollen transfer, swapped labels or a scoring mistake could produce a misleading recessive observation. In a real study, an unexpected result is a reason to verify the experimental record. In the classroom model, these possibilities are excluded explicitly so that the allele deduction is valid. Stating that boundary is more informative than saying one observation proves a genotype under every circumstance."
     ]
   },
   {
@@ -191,11 +207,11 @@ const noteContent: Record<string, NoteSection[]> = {
     ]
   },
   {
-    "heading": "Write a verdict with its limiting assumption",
+    "heading": "Write an evidence statement someone else could audit",
     "paragraphs": [
-      "For active recall, make two family cards without looking above: family P has 15 dominant and 13 recessive offspring; family Q has eight dominant offspring and no recessive offspring. Both came from separate dominant plants crossed with aa. For each card, write the genotypes still possible, the allele contribution that matters and one sentence limiting the conclusion.",
-      "Check your work: P identifies Aa within the model because its recessive offspring require paternal and maternal a contributions. Q remains compatible with AA or Aa; an all-dominant set of eight has probability 1/256 under Aa. Finally, replace each tester with AA. Explain why the offspring's dominant appearance would then fail to reveal whether the unknown plant contributed a. That explanation demonstrates the purpose of the tester more clearly than memorising 1:1.",
-      "NCERT anchor: Class 12 Biology, Chapter 4, Principles of Inheritance and Variation, section 4.1, Inheritance of One Gene. The testcross discussion supplies the biological foundation; the family records and conditional-probability checks here are original teaching examples."
+      "Return to the case and write three lines: observation, deduction, limitation. A suitable observation is that one of eight scored offspring was recessive. The deduction is that Plant U contributed a and, because it shows the dominant phenotype, is Aa. The limitation names correct parentage, scoring and the stated single-locus inheritance model. Do not replace those three lines with the unsupported claim that the family obeys an exact 1:1 ratio.",
+      "Now alter one detail: suppose the recorded recessive plant belonged to a different family. Explain what remains established. Seven dominant offspring from Plant U no longer exclude Aa or AA. Under Aa, an all-dominant set of seven has probability 1/128, but that is not the probability that Plant U is Aa. This counterfactual checks whether the conclusion actually depends on the evidence claimed.",
+      "NCERT anchor: Class 12 Biology, Chapter 4, section 4.1, Inheritance of One Gene. The tester principle comes from that discussion. The staged record, reference-cross comparison and audit task are original teaching extensions; they are not past-paper material or a protocol for a real breeding study."
     ]
   }
 ],
