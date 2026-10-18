@@ -628,3 +628,12 @@ test("testcross investigation retains its publication date and exposes a static 
  assert.match(html,/testcross-and-unknown-genotypes-v1.webp/);
  assert.match(html,/Use reference crosses to challenge the observation process/);
 });
+
+test("linkage audit separates selective recovery from uniform record reduction", async () => {
+ const html=await readFile(new URL('../.next/server/app/neet-ug/biology/linkage-and-recombination-frequency.html',import.meta.url),'utf8');
+ const article=jsonLdItems(html).find(x=>x['@type']==='Article');
+ assert.equal(article.datePublished,'2026-09-28');assert.equal(article.dateModified,'2026-10-18');
+ for(const value of ['40/460','8.70%','40/250','27.59%','linkage-audit-caption','linkage-and-recombination-frequency-v1.webp']) assert.ok(html.includes(value),value);
+ assert.equal((40/460*100).toFixed(2),'8.70');assert.equal(40/250,.16);assert.equal((80/290*100).toFixed(2),'27.59');
+ const moduleHtml=await readFile(new URL('../.next/server/app/neet-ug/biology/learn/inheritance.html',import.meta.url),'utf8');assert.match(moduleHtml,/linkage-audit-caption/);
+});

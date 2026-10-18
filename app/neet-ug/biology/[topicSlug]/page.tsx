@@ -1,3 +1,4 @@
+import { LinkageRecordAudit } from "@/components/LinkageRecordAudit";
 import { TestcrossCase } from "@/components/TestcrossCase";
 import { learningSteps, learningPath } from "@/lib/inheritanceLearning";
 import type { Metadata } from "next";
@@ -552,6 +553,7 @@ export default async function TopicPage({ params }: Props) {
             {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
             {topic.slug === "testcross-and-unknown-genotypes" && section.heading === "Open one family record in two stages" && <TestcrossCase />}
+            {topic.slug === "linkage-and-recombination-frequency" && section.heading === "Audit two records before declaring stronger linkage" && <LinkageRecordAudit />}
             {articleSupplementalFigure?.afterHeading === section.heading && (
               <figure className="articleIllustration">
                 <img src={articleSupplementalFigure.src} alt={articleSupplementalFigure.alt} width={1600} height={1000} />

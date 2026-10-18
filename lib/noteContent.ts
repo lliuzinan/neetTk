@@ -894,6 +894,37 @@ const noteContent: Record<string, NoteSection[]> = {
       "For example, one crossover between two loci involving two of the four chromatids produces two recombinant chromatids and leaves two parental chromatids in that meiotic event. It would be wrong to describe every product as recombinant merely because the cell experienced a crossover. A testcross usually pools products from many meioses.",
       "Multiple exchanges can also leave the outer marker combination looking parental. Two-point offspring scoring does not reveal every exchange within the interval. For this reason, recombination is useful for relative genetic mapping, but an observed percentage is not a direct physical measurement of the DNA between two genes. No conversion to base pairs follows from these counts alone."
     ] },
+    {
+  "heading": "Audit two records before declaring stronger linkage",
+  "paragraphs": [
+    "A smaller recombinant percentage can look like evidence that two loci lie closer together. Before making that interpretation, ask whether the records represent comparable sets of offspring. A change in which classes are retained can change the measured percentage even when the underlying cross is unchanged.",
+    "Start with the invented 500-offspring record above: 210 AB-type, 210 ab-type, 40 Ab-type and 40 aB-type offspring. Now imagine a deliberately artificial record-processing error: every parental record is kept, but only half of each recombinant class reaches the final spreadsheet. This is a bookkeeping thought experiment, not a claim that a particular genotype has a biological survival rate of one half. The table follows what the filter does to both numerator and denominator."
+  ]
+},
+    {
+  "heading": "Losing half the recombinants does not halve the percentage",
+  "paragraphs": [
+    "After the selective filter, 20 + 20 = 40 recombinant records remain. The denominator is now 210 + 210 + 20 + 20 = 460. The observed fraction is 40/460, approximately 8.70%. The original record had 80/500 = 16%. Nothing in this construction changed the original allele combinations; only their representation in the retained record changed.",
+    "The tempting answer 8% divides the new numerator, 40, by the old denominator, 500. That mixes two different sets. Eight percent correctly describes retained recombinant records as a fraction of the original 500 records, but it is not the recombinant fraction among the 460 records still being scored. A denominator is a defined population of observations, not simply the largest number in the question.",
+    "Now halve every class instead. The remaining counts are 105, 105, 20 and 20, so the fraction is 40/250 = 16%. Removing the same proportion from all classes preserves the ratio in this exact constructed example. Randomly sampling half of a real family would not guarantee exactly half of each class; its estimate could fluctuate. Uniform representation and a smaller sample are different issues from selective under-representation."
+  ]
+},
+    {
+  "heading": "Write the recovery rule before using a map distance",
+  "paragraphs": [
+    "Let r be the recombinant fraction before filtering, sR the fraction of recombinant records retained and sP the fraction of parental records retained. If these two recovery factors apply uniformly within their respective categories, the retained recombinant fraction is r \u00d7 sR / [(1 \u2212 r) \u00d7 sP + r \u00d7 sR]. The numerator counts the retained recombinant share; the denominator adds both retained shares.",
+    "For the selective filter, substitute r = 0.16, sR = 0.5 and sP = 1. The result is 0.08 / (0.84 + 0.08), or about 0.087. For equal recovery, sR and sP cancel and the fraction remains r. This algebra is an optional explanation of the table, not another inheritance ratio to memorise.",
+    "The 8.70% figure therefore does not justify reporting an approximately 8.7-map-unit interval for the original cross. A mapping interpretation requires offspring representation to be suitable for estimating gamete combinations, as well as the usual limitations of two-point recombination. A precise calculation can describe a biased sample very precisely."
+  ]
+},
+    {
+  "heading": "A missing-data correction needs evidence outside the biased counts",
+  "paragraphs": [
+    "Because the recovery rule was supplied in our invented example, we can reverse it: divide each retained recombinant count of 20 by 0.5 to recover 40, while dividing each parental count of 210 by 1 leaves it unchanged. Reconstruct the total as 500, then recover 80/500 = 16%. Correcting only the numerator while leaving 460 as the denominator would be inconsistent.",
+    "In an actual record, the recovery factors are usually not handed to you. The observed 210/210/20/20 counts alone cannot tell you whether they came from a lower starting recombinant fraction with equal recovery or a higher starting fraction with selective loss. You would need independent information about recovery, scoring, developmental stage or record handling. Do not manufacture a correction just because the observed ratio looks inconvenient.",
+    "To check your understanding, retain all 80 recombinant records but only half of the 420 parental records. Calculate the new total and fraction before reading the check: 290 records remain, and 80/290 is about 27.59%. The apparent recombinant proportion rises even though the original record is unchanged. Explain the direction by identifying which category is under-represented, then write one sentence stating why no new chromosome distance follows from this exercise."
+  ]
+},
     { heading: "What a result near one half can and cannot show", paragraphs: [
       "Genes on different chromosome pairs are expected to assort independently, giving a recombinant fraction of one half in the usual two-locus model. Widely separated loci on the same chromosome can also behave as effectively unlinked in this test. A value near 50% therefore does not prove that the genes occupy different chromosomes.",
       "For relatively short intervals, 1% recombination is used as approximately one map unit, or one centimorgan. Our 16% exercise can support an approximate two-point genetic distance under the mapping assumptions. It does not establish a distance of sixteen nucleotides or an exact number of crossing-over events.",

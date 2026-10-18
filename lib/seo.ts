@@ -46,7 +46,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "c3-c4-pathways-and-photorespiration": { published: "2026-09-30", modified: "2026-09-30" },
   "carbohydrates-proteins-lipids-nucleic-acids": { published: "2026-09-29", modified: "2026-09-29" },
   "basic-genetic-diseases-as-inheritance-examples": { published: "2026-09-29", modified: "2026-09-29" },
-  "linkage-and-recombination-frequency": { published: "2026-09-28", modified: "2026-09-28" },
+  "linkage-and-recombination-frequency": { published: "2026-09-28", modified: "2026-10-18" },
   "sex-determination-systems": { published: "2026-09-28", modified: "2026-09-28" },
   "genetic-code-and-reading-frames": { published: "2026-09-28", modified: "2026-09-28" },
   "living-world-taxonomy-and-hierarchy": { published: "2026-09-26", modified: "2026-09-26" },

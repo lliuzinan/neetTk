@@ -1496,3 +1496,7 @@ h3 {
 .caseActions button { font:inherit; padding:10px 16px; border:1px solid #176b43; background:#176b43; color:white; border-radius:8px; cursor:pointer; }
 .testcrossCase summary { cursor:pointer; font-weight:bold; }
 .testcrossCase :focus-visible { outline:3px solid #bb8510; outline-offset:3px; }
+
+.linkageAudit {margin:24px 0;padding:18px;border:1px solid #b5cbbd;border-radius:12px;background:#f1f7ee;}
+.linkageAudit figcaption {line-height:1.6;margin-bottom:16px;}
+.linkageAudit p {margin-bottom:0;}
