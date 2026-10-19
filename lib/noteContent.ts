@@ -2210,6 +2210,39 @@ const noteContent: Record<string, NoteSection[]> = {
       ],
     },
     {
+  "heading": "A daughter changes which inheritance routes remain possible",
+  "paragraphs": [
+    "Consider an original fictional family with two parents who do not show a stated trait, a daughter who does show it, and a second child who does not. The trait is deliberately unnamed: this is an inheritance exercise, not a real medical history. Assume one locus, reliable observations and parentage, full penetrance, no new mutation and the usual XX/XY chromosome model. Full penetrance means that a genotype classified as expressing the trait actually shows it under the stated conditions.",
+    "Test an autosomal recessive explanation first. Use aa for the trait-present genotype and A for the allele that masks it in Aa. The daughter must have received a from each parent. Each parent is trait-absent, so neither is aa; both are therefore Aa. This explanation fits the family without assigning a unique genotype to the second child.",
+    "A fully penetrant autosomal dominant explanation, without new mutation, fails here: two trait-absent parents would lack the dominant trait allele and could not supply it to their daughter. An X-linked recessive explanation also fails under these assumptions. A daughter expressing that recessive trait would need the relevant allele on both X chromosomes, including the X received from her father. He would express the trait, contrary to the record.",
+    "The observation therefore distinguishes these candidate models, but it does not certify the cause of a real trait. If penetrance, mutation, phenotype recording or parentage assumptions change, the exclusions require re-examination. A short pedigree cannot substitute for investigating those assumptions."
+  ]
+},
+    {
+  "heading": "Remove the impossible genotype before calculating a carrier probability",
+  "paragraphs": [
+    "Within the autosomal recessive model, the inferred parental cross is Aa x Aa. For a child before observing its phenotype, the genotype probabilities are AA = 1/4, Aa = 1/2 and aa = 1/4. The second child is already known not to show the trait, so aa is excluded. The remaining probability mass is 3/4.",
+    "Among those trait-absent outcomes, the carrier share is (1/2) / (3/4) = 2/3. The noncarrier share is (1/4) / (3/4) = 1/3. A useful scratch diagram keeps the four equally likely allele combinations AA, Aa, aA and aa, crosses out aa, then recognises that two of the three surviving combinations are the same heterozygous genotype.",
+    "The tempting answer 1/2 ignores information already supplied: this child does not express the trait. Another tempting answer, definitely Aa, treats having a trait-present sibling as proof of carrying the allele. AA still fits. The probability 2/3 belongs to a child selected by the trait-absent condition; it is not the carrier probability for every child of the parents."
+  ]
+},
+    {
+  "heading": "Keep three different probability questions on separate lines",
+  "paragraphs": [
+    "For the next child of these same Aa parents, before its phenotype is known, the probability of expressing the recessive trait is still 1/4. Assuming independent fertilisations, the previously observed children do not use up a quota of aa outcomes. Their observations helped establish the parental genotypes, but do not change the next segregation event once those genotypes are fixed.",
+    "The three statements now have distinct targets: an unobserved child is Aa with probability 1/2; a child known to be trait-absent is Aa with probability 2/3; and an unobserved child is aa with probability 1/4. Write the target and the information given before selecting a fraction. No one fraction answers all three questions.",
+    "Suppose a reliable genotype result later identifies the second child as AA. That replaces the conditional uncertainty for this individual with a known genotype. It does not alter the parents\u2019 Aa genotypes or reduce the next child\u2019s aa probability. Evidence about one sibling and a changed mechanism of inheritance are different things."
+  ]
+},
+    {
+  "heading": "Change one family detail and reopen the excluded model",
+  "paragraphs": [
+    "For an active-recall counterfactual, change the trait-present daughter into a trait-present son while leaving both parents trait-absent. Explain why the X-linked recessive model can now fit: a carrier mother can contribute the relevant X allele, and the father contributes Y to a son. Autosomal recessive inheritance can also fit. The observation no longer separates those two models.",
+    "Write two columns headed observation and conclusion. In the original family, the daughter\u2019s phenotype and the father\u2019s absence of the trait conflict with the simple X-linked recessive route. In the altered family, that conflict disappears. Do not carry the original family\u2019s 2/3 carrier conclusion into a different model without rebuilding the possible genotypes.",
+    "NCERT anchor: Class 12 Biology, Chapter 4, section 4.8.1, Pedigree Analysis, with the segregation principles from section 4.1. The family, counterfactual and conditional calculation here are independently constructed teaching material. They do not estimate health risks for an actual family."
+  ]
+},
+    {
       heading: "A pedigree-reading routine that shows your reasoning",
       paragraphs: [
         "Cover any label that names the pattern. On paper, mark every affected person first. Next write one observation under the diagram: for example, 'unaffected parents have an affected child' or 'there is no father-to-son transmission'. Then cross out the models that contradict the observation before assigning possible genotypes.",

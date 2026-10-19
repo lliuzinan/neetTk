@@ -128,7 +128,7 @@ test("keeps article first publication and modification dates consistent across H
     const ld = jsonLdItems(html);
     const article = ld.find((item) => item["@type"] === "Article");
     assert.equal(article.datePublished, published, slug);
-    const modified = ["pedigree-analysis-and-inheritance-patterns", "molecular-tools-and-dna-analysis"].includes(slug) ? "2026-09-20" : "2026-09-18";
+    const modified = slug === "pedigree-analysis-and-inheritance-patterns" ? "2026-10-19" : slug === "molecular-tools-and-dna-analysis" ? "2026-09-20" : "2026-09-18";
     assert.equal(article.dateModified, modified, slug);
     const entry = sitemap.split("<url>").find((item) => item.includes(`/biology/${slug}</loc>`));
     assert.ok(entry?.includes(`${modified}T00:00:00.000Z`), slug);
@@ -636,4 +636,11 @@ test("linkage audit separates selective recovery from uniform record reduction",
  for(const value of ['40/460','8.70%','40/250','27.59%','linkage-audit-caption','linkage-and-recombination-frequency-v1.webp']) assert.ok(html.includes(value),value);
  assert.equal((40/460*100).toFixed(2),'8.70');assert.equal(40/250,.16);assert.equal((80/290*100).toFixed(2),'27.59');
  const moduleHtml=await readFile(new URL('../.next/server/app/neet-ug/biology/learn/inheritance.html',import.meta.url),'utf8');assert.match(moduleHtml,/linkage-audit-caption/);
+});
+
+
+test("pedigree worked family distinguishes conditional and next-child probabilities", async () => {
+ const html=await readFile(new URL('../.next/server/app/neet-ug/biology/pedigree-analysis-and-inheritance-patterns.html',import.meta.url),'utf8');
+ for(const text of ['A daughter changes which inheritance routes remain possible','(1/2) / (3/4) = 2/3','4.8.1','Change one family detail','pedigree-inheritance-clues-v1.png']) assert.ok(html.includes(text),text);
+ const combinations=['AA','Aa','aA','aa'];const absent=combinations.filter(x=>x!=='aa');assert.equal(absent.filter(x=>x==='Aa'||x==='aA').length/absent.length,2/3);assert.equal(combinations.filter(x=>x==='aa').length/combinations.length,1/4);
 });

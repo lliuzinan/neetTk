@@ -81,7 +81,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "animal-tissues": { published: "2026-08-13", modified: "2026-08-29" },
   // Authored revision guides first shipped in 4e31247, 9845779 and e90f71a.
   "molecular-tools-and-dna-analysis": { published: "2026-09-16", modified: "2026-09-20" },
-  "pedigree-analysis-and-inheritance-patterns": { published: "2026-09-16", modified: "2026-09-20" },
+  "pedigree-analysis-and-inheritance-patterns": { published: "2026-09-16", modified: "2026-10-19" },
   "biotechnology-applications": { published: "2026-09-16", modified: "2026-09-18" },
   "human-reproduction": { published: "2026-09-17", modified: "2026-09-18" },
   "reproductive-health": { published: "2026-09-17", modified: "2026-09-18" },
