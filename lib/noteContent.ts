@@ -1518,7 +1518,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Excretion: organise the chapter as a flow",
       paragraphs: [
-        "A reliable NEET revision route is to follow blood through the nephron: filtration at the glomerulus, selective reabsorption along the tubule, secretion of selected substances into tubular fluid, and final urine concentration in the collecting duct. Questions often test the sequence or ask which process explains a change in tubular fluid.",
+        "Start with two separate routes. Blood enters the glomerular capillaries through the afferent arteriole and leaves through the efferent arteriole, which supplies capillaries around the tubule. Filtrate enters Bowman's capsule and then travels through the proximal tubule, loop of Henle and distal tubule into a collecting duct. Blood does not flow through the tubular lumen.",
         "The kidney is not simply a filter that removes everything from blood. Useful substances and much of the water are selectively returned to circulation, while nitrogenous waste and excess ions are regulated through coordinated nephron processes.",
       ],
     },
@@ -1535,6 +1535,23 @@ const noteContent: Record<string, NoteSection[]> = {
         "Excretion: removal of the final urine from the body.",
       ],
     },
+    {
+  "heading": "An original solute ledger: account for what leaves",
+  "paragraphs": [
+    "Imagine a fictional solute X. During one steady observation interval, 100 units enter the tubular fluid by filtration, 70 units return to blood by reabsorption, and 10 additional units enter the tubule by secretion. Assume X is neither made nor destroyed in the kidney and there is no net accumulation. These are invented teaching quantities, not normal laboratory values.",
+    "Follow the tubular compartment: it gains 100, loses 70, and gains 10. The amount excreted is therefore 100 − 70 + 10 = 40 units. Reabsorption carries a minus sign because X leaves the fluid that will become urine. Secretion carries a plus sign because X enters that fluid.",
+    "The general balance is: amount excreted = amount filtered − amount reabsorbed + amount secreted. Compare amounts over the same interval, or rates with matching units. A concentration alone cannot be inserted into this ledger.",
+    "Now suppose only filtration and final excretion were measured: 100 units entered and 40 left. You could infer net removal of 60 units from the tubular fluid. You could not identify gross reabsorption and secretion separately: 60 reabsorbed with zero secreted gives the same result as 70 reabsorbed with 10 secreted. A net observation can hide opposing transfers."
+  ]
+},
+    {
+  "heading": "A concentration change does not prove secretion",
+  "paragraphs": [
+    "Consider a separate simplified tube containing 20 units of a marker in 10 mL of water. Its concentration is 2 units/mL. If water leaves until 5 mL remains, while every marker unit stays, the concentration becomes 4 units/mL. The marker amount remains 20 units; no marker secretion was needed.",
+    "This distinction helps explain why water movement matters when reading a nephron diagram. A higher concentration can reflect less water, more solute, or both. To claim secretion, you need evidence of solute entering the tubular fluid, not merely a larger concentration number. The example isolates water loss; real tubular segments can transport several substances simultaneously.",
+    "Try reversing the calculation: a sample has 3 units/mL in 4 mL. Its amount is 12 units. If another sample has 6 units/mL in 2 mL, its amount is also 12 units. Concentration doubled, but the amount did not. Always recover amount by multiplying concentration by volume before comparing these samples."
+  ]
+},
     {
       heading: "Selective reabsorption and the nephron",
       paragraphs: [
@@ -3243,7 +3260,8 @@ const noteReferences: Record<string, NoteReference[]> = {
   "excretion-and-kidney-function": [
     { label: "NCERT Class 11 Biology, Chapter 16: Excretory Products and their Elimination", href: "https://ncert.nic.in/textbook/pdf/kebo116.pdf" },
     { label: "Khan Academy: Renal system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/renal-system" },
-    { label: "NCBI Bookshelf: Kidney physiology references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "OpenStax Anatomy and Physiology 2e, 25.4: Microscopic Anatomy of the Kidney", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-4-microscopic-anatomy-of-the-kidney" },
+    { label: "OpenStax Anatomy and Physiology 2e, 25.5: Physiology of Urine Formation", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-5-physiology-of-urine-formation" },
   ],
   "immunity-pathogens-vaccines": [
     { label: "NCERT Class 12 Biology, Chapter 7: Human Health and Disease", href: "https://ncert.nic.in/textbook/pdf/lebo107.pdf" },
@@ -4205,7 +4223,7 @@ const noteEditorialBlocks: Record<string, NoteEditorialBlock> = {
     heading: "Put arrows on every kidney fact",
     paragraphs: [
       "Kidney revision gets much cleaner when every process has an arrow. Filtration points from blood to capsule. Reabsorption points back to blood. Secretion points from blood into the tubule.",
-      "If you cannot draw the arrow, you probably do not own the concept yet. That is the moment to return to the nephron diagram instead of memorising another list blindly.",
+      "Correction, 20 October 2026: the opening previously conflated the blood route with the filtrate route. It now separates the vascular and tubular compartments. The diagram is a schematic of transport directions, not a complete vascular anatomy map. Source check: NCERT Chapter 16, sections 16.1–16.3, and the linked OpenStax sections.",
     ],
   },
   "neuron-nerve-impulse-synapse": {

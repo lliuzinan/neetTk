@@ -36,7 +36,7 @@ test("replaces legacy generic checkpoints with topic-specific reasoning and keep
     const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
     assert.doesNotMatch(html, /Before leaving this page|Exam-style checkpoints/);
     const article = jsonLdItems(html).find(item => item["@type"] === "Article");
-    assert.equal(article.dateModified, "2026-09-30");
+    assert.equal(article.dateModified, slug === "excretion-and-kidney-function" ? "2026-10-20" : "2026-09-30");
     assert.ok(article.datePublished < article.dateModified);
     assert.match(html, /Related revision guides/);
   }

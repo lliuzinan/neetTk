@@ -72,7 +72,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-09-30" },
   "neuron-nerve-impulse-synapse": { published: "2026-09-06", modified: "2026-09-30" },
   "human-respiration": { published: "2026-09-05", modified: "2026-09-30" },
-  "excretion-and-kidney-function": { published: "2026-09-05", modified: "2026-09-30" },
+  "excretion-and-kidney-function": { published: "2026-09-05", modified: "2026-10-20" },
   "human-reproductive-system-and-gametogenesis": { published: "2026-08-09", modified: "2026-08-25" },
   "plant-respiration": { published: "2026-09-11", modified: "2026-09-30" },
   "photosynthesis-in-higher-plants": { published: "2026-09-11", modified: "2026-09-30" },
