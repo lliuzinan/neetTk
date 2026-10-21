@@ -1500,3 +1500,11 @@ h3 {
 .linkageAudit {margin:24px 0;padding:18px;border:1px solid #b5cbbd;border-radius:12px;background:#f1f7ee;}
 .linkageAudit figcaption {line-height:1.6;margin-bottom:16px;}
 .linkageAudit p {margin-bottom:0;}
+
+/* Native disclosure and anchors keep long guides navigable without JavaScript. */
+.guideContents { border: 1px solid var(--line); border-radius: 8px; padding: 16px 24px; background: var(--panel); min-width: 0; }
+.guideContents summary { cursor: pointer; font-weight: 700; color: var(--brand); }
+.guideContents li { margin-block: 10px; overflow-wrap: anywhere; }
+.guideContents a { color: var(--brand); }
+.guideContents summary:focus-visible, .guideContents a:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
+.articleBody section[id] { scroll-margin-top: 24px; }

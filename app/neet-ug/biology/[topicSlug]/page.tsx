@@ -506,13 +506,23 @@ export default async function TopicPage({ params }: Props) {
         <p className="updatedStamp">Published: {dates.publishedDisplay} | Last updated: {dates.modifiedDisplay}</p>
         <EditorialByline lastUpdated={dates.modifiedDisplay} />
       </header>
-      <figure className="articleHeroImage">
-        <img src={heroImage} alt={`${topic.name} NEET Biology revision visual`} />
-        <figcaption>Independent revision visual for {topic.name}, prepared for NEET-UG Biology study.</figcaption>
-      </figure>
-      <section className="contentBand"><h2>Concept focus</h2><ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul></section>
+      <details className="guideContents">
+        <summary>On this page — jump to a section</summary>
+        <nav aria-label="Guide sections">
+          <ol>
+            {sections.flatMap((section, index) => [
+              <li key={section.heading}><a href={`#guide-section-${index + 1}`}>{section.heading}</a></li>,
+              ...(index === 1 ? [<li key="comparison"><a href="#guide-comparison">{comparisonTable.heading}</a></li>] : []),
+            ])}
+            <li><a href="#guide-references">References</a></li>
+            <li><a href="#guide-related">Related revision guides</a></li>
+          </ol>
+        </nav>
+        <h2>Concept focus</h2>
+        <ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul>
+      </details>
       <article className="articleBody">
-        {sections.slice(0, 2).map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        {sections.slice(0, 2).map((section, index) => <section id={`guide-section-${index + 1}`} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
         {articleIllustration && (
           <figure className="articleIllustration">
             <img src={articleIllustration.src} alt={articleIllustration.alt} width={articleIllustration.width ?? 1600} height={articleIllustration.height ?? 1000} />
@@ -531,7 +541,7 @@ export default async function TopicPage({ params }: Props) {
           {editorialBlock.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           {editorialBlock.bullets && <ul className="seoList">{editorialBlock.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
         </section>
-        <section>
+        <section id="guide-comparison">
           <h2>{comparisonTable.heading}</h2>
           <p>{comparisonTable.intro}</p>
           <div className="comparisonTableWrap">
@@ -547,8 +557,8 @@ export default async function TopicPage({ params }: Props) {
             </table>
           </div>
         </section>
-        {sections.slice(2).map((section) => (
-          <section key={section.heading}>
+        {sections.slice(2).map((section, index) => (
+          <section id={`guide-section-${index + 3}`} key={section.heading}>
             <h2>{section.heading}</h2>
             {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
@@ -572,7 +582,7 @@ export default async function TopicPage({ params }: Props) {
           <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Published by:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
           <p><strong>Disclaimer:</strong> This guide is a revision aid for NEET-UG aspirants and does not constitute medical advice. For clinical or health-related queries, consult a qualified medical professional.</p>
         </section>
-        <section>
+        <section id="guide-references">
           <h2>References</h2>
           <ul className="seoList referenceList">
             {references.map((reference) => (
@@ -583,7 +593,7 @@ export default async function TopicPage({ params }: Props) {
           </ul>
         </section>
         {relatedTopics.length > 0 && (
-          <section>
+          <section id="guide-related">
             <h2>Related revision guides</h2>
             {(learningSteps.some(step => step.slug === topic.slug) || topic.slug === "polygenic-inheritance-and-pleiotropy") && <p><Link href={learningPath}>Try the inheritance concept checks and save your revision progress →</Link></p>}
             <div className="relatedGuideGrid">
