@@ -169,7 +169,7 @@ test("renders the independent revision home and topic library", async () => {
   assert.match(homeHtml, /fetchpriority="high"/i);
   assert.ok((homeSource.match(/prefetch=\{false\}/g) || []).length >= 4);
   assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
-  assert.match(homeHtml, /Investigate an unknown plant/);
+  assert.match(homeHtml, /Explore the inheritance study centre/);
   assert.match(homeHtml, /Build one connected topic at a time/);
   assert.match(homeHtml, /Inheritance and variation/);
   assert.match(homeHtml, /Start reading/);

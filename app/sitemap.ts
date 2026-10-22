@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const topics = allTopics.filter((topic) => topicSlugs.has(topic.slug));
   const libraryModified = new Date(`${topics.map((topic) => topicDates(topic.slug).modifiedIso).sort().at(-1) || LAST_UPDATED_ISO}T00:00:00.000Z`);
   return [
-    { url: absoluteUrl("/neet-ug/biology/learn/inheritance"), lastModified: new Date("2026-10-15T00:00:00Z"), changeFrequency: "monthly", priority: 0.9 },
+    { url: absoluteUrl("/neet-ug/biology/learn/inheritance"), lastModified: new Date("2026-10-22T00:00:00Z"), changeFrequency: "monthly", priority: 0.9 },
     { url: absoluteUrl("/"), lastModified: libraryModified, changeFrequency: "weekly", priority: 1 },
     { url: absoluteUrl("/neet-ug/biology"), lastModified: libraryModified, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl("/neet-biology-pdf"), lastModified, changeFrequency: "weekly", priority: 0.8 },

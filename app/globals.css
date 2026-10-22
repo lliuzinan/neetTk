@@ -1508,3 +1508,7 @@ h3 {
 .guideContents a { color: var(--brand); }
 .guideContents summary:focus-visible, .guideContents a:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; }
 .articleBody section[id] { scroll-margin-top: 24px; }
+
+.inheritanceCaseGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px; margin-block: 24px; }
+.inheritanceCaseGrid article { min-width: 0; padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.inheritanceCaseGrid a { overflow-wrap: anywhere; }
