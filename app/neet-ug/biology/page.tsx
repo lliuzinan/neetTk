@@ -1,3 +1,4 @@
+import { LibraryExplorer } from "@/components/LibraryExplorer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -40,7 +41,7 @@ export default async function BiologyTopicsPage() {
       </header>
       <section className="contentBand"><h2>How to use this library</h2><p>Read the corresponding NCERT chapter first. Then use a MedQGo guide to test whether you can explain the central process, separate similar terms, and recall key examples without looking back at the textbook.</p></section>
       <section className="contentBand"><p className="eyebrow">LEARN → CHECK → REVISIT</p><h2><Link href="/neet-ug/biology/learn/inheritance">Inheritance learning path →</Link></h2><p>Follow five connected guides and three worked investigations. Choose an unknown-parent case, audit a recombination record, or separate family probabilities; each investigation links back to its prerequisite explanation.</p></section>
-      <div className="topicGrid">{topics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id}><span>{topic.ncertRef}</span><h2>{topic.name}</h2><p>Study focus, likely confusions, and an original revision routine.</p></Link>)}</div>
+      <LibraryExplorer guides={topics.map(topic => ({slug: topic.slug, name: topic.name, ncertRef: topic.ncertRef, description: notes.find(note => note.topicSlug === topic.slug)?.description ?? ""}))} />
       <PdfCta source="biology_index" />
     </main>
   );

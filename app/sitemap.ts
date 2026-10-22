@@ -11,7 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const notes = allNotes.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
   const topicSlugs = new Set(notes.map((note) => note.topicSlug));
   const topics = allTopics.filter((topic) => topicSlugs.has(topic.slug));
-  const libraryModified = new Date(`${topics.map((topic) => topicDates(topic.slug).modifiedIso).sort().at(-1) || LAST_UPDATED_ISO}T00:00:00.000Z`);
+  const libraryModified = new Date(`${["2026-10-22", ...topics.map((topic) => topicDates(topic.slug).modifiedIso)].sort().at(-1) || LAST_UPDATED_ISO}T00:00:00.000Z`);
   return [
     { url: absoluteUrl("/neet-ug/biology/learn/inheritance"), lastModified: new Date("2026-10-22T00:00:00Z"), changeFrequency: "monthly", priority: 0.9 },
     { url: absoluteUrl("/"), lastModified: libraryModified, changeFrequency: "weekly", priority: 1 },

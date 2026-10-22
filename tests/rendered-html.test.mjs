@@ -164,17 +164,17 @@ test("renders the independent revision home and topic library", async () => {
   ]);
   const homeSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
   assert.match(homeHtml, /NEET Biology revision notes/);
-  assert.match(homeHtml, /in-depth revision notes/);
+  assert.match(homeHtml, /published guides/);
   assert.match(homeHtml, /medqgo-biology-study-journey-v1\.webp/);
-  assert.match(homeHtml, /fetchpriority="high"/i);
+  assert.match(homeHtml, /Recently revised guides/);
   assert.ok((homeSource.match(/prefetch=\{false\}/g) || []).length >= 4);
   assert.match(homeHtml, /A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem/);
   assert.match(homeHtml, /Explore the inheritance study centre/);
   assert.match(homeHtml, /Build one connected topic at a time/);
-  assert.match(homeHtml, /Inheritance and variation/);
-  assert.match(homeHtml, /Start reading/);
-  assert.match(homeHtml, /Photosynthesis in higher plants/);
-  assert.match(homeHtml, /Digestion and absorption/);
+  assert.match(homeHtml, /Genetics &amp; evolution/);
+  assert.match(homeHtml, /START READING/);
+  assert.match(biologyHtml, /Photosynthesis in higher plants/);
+  assert.match(biologyHtml, /Digestion and absorption/);
   assert.doesNotMatch(homeHtml, /verified MCQs live/);
   assert.doesNotMatch(homeHtml, /Protein synthesis occurs in the/);
   assert.match(biologyHtml, /NEET Biology revision library/);
@@ -464,7 +464,7 @@ test("publishes connected flowering-plant morphology and anatomy guides", async 
     assert.match(html, /Published:\s*(?:<!-- -->)?September 21, 2026/);
   }
 
-  assert.match(homeHtml, /Plant structure and function/);
+  assert.match(homeHtml, /Plant physiology/);
   assert.match(sitemapXml, /morphology-of-flowering-plants/);
   assert.match(sitemapXml, /anatomy-of-flowering-plants/);
   assert.match(sitemapXml, /2026-09-21T00:00:00\.000Z/);
@@ -495,7 +495,7 @@ test("publishes biological classification and plant kingdom as a connected diver
     assert.match(html, /Published:\s*(?:<!-- -->)?September 22, 2026/);
   }
 
-  assert.match(homeHtml, /Diversity and plant groups/);
+  assert.match(homeHtml, /Cells &amp; diversity/);
   assert.match(sitemapXml, /five-kingdom-classification/);
   assert.match(sitemapXml, /plant-kingdom/);
   assert.match(sitemapXml, /2026-09-22T00:00:00\.000Z/);

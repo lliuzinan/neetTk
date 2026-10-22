@@ -1,137 +1,25 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { PdfCta } from "@/components/PdfCta";
-import { absoluteUrl, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
-import { AUTHORED_NOTE_SLUGS } from "@/lib/noteContent";
-import { LAST_UPDATED_ISO } from "@/lib/seo";
-
-export const metadata: Metadata = {
-  title: "NEET Biology Revision Notes",
-  description: "Independent NEET-UG Biology revision notes with NCERT-aligned concept maps, common confusions, and focused study routines.",
-  alternates: { canonical: "/" },
-};
-
-export default async function Home() {
-  const [topicList, noteList] = await Promise.all([getTopics(), getSeoNotes()]);
-  const notes = noteList.filter((note) => AUTHORED_NOTE_SLUGS.includes(note.slug as (typeof AUTHORED_NOTE_SLUGS)[number]));
-  const topics = topicList.filter((topic) => notes.some((note) => note.topicSlug === topic.slug));
-  const mobileQuickStartSlugs = ["photosynthesis-in-higher-plants", "mendelian-inheritance"];
-  const mobileQuickStartTopics = mobileQuickStartSlugs
-    .map((slug) => topics.find((topic) => topic.slug === slug))
-    .filter((topic): topic is (typeof topics)[number] => Boolean(topic));
-  const learningClusters = [
-    {
-      title: "Diversity and plant groups",
-      description: "Start with kingdom-level evidence, then compare the structural and reproductive transitions across the major plant groups.",
-      slugs: ["five-kingdom-classification", "plant-kingdom", "morphology-of-flowering-plants"],
-    },
-    {
-      title: "Inheritance and variation",
-      description: "Start with Mendel's patterns, then connect them to chromosome behaviour before moving into pedigree questions.",
-      slugs: ["mendelian-inheritance", "chromosomal-basis-of-inheritance", "pedigree-analysis-and-inheritance-patterns"],
-    },
-    {
-      title: "Biotechnology",
-      description: "Trace a gene-transfer workflow, identify the tools at each step, then explain the purpose of a biotechnology application.",
-      slugs: ["recombinant-dna-technology", "molecular-tools-and-dna-analysis", "biotechnology-applications"],
-    },
-    {
-      title: "Reproduction",
-      description: "Compare reproductive events in plants and humans, then use the human sequence to understand reproductive-health terminology.",
-      slugs: ["sexual-reproduction-in-flowering-plants", "human-reproduction", "reproductive-health"],
-    },
-    {
-      title: "Ecology",
-      description: "Begin with organisms in their habitats, then trace how energy and nutrients connect populations across an ecosystem.",
-      slugs: ["organisms-and-populations", "ecosystem-energy-flow-and-ecological-pyramids"],
-    },
-    {
-      title: "Plant structure and function",
-      description: "Identify the organ from external landmarks, read its internal tissues, then connect leaf structure with plant physiology.",
-      slugs: ["anatomy-of-flowering-plants", "photosynthesis-in-higher-plants", "c3-c4-pathways-and-photorespiration", "plant-respiration"],
-    },
-  ];
-  const clusteredSlugs = new Set(learningClusters.flatMap((cluster) => cluster.slugs));
-  const otherTopics = topics.filter((topic) => !clusteredSlugs.has(topic.slug));
-  const homeJsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      { "@type": "Organization", "@id": absoluteUrl("/#organization"), name: "MedQGo", url: absoluteUrl("/"), logo: absoluteUrl("/favicon.svg") },
-      { "@type": "WebSite", "@id": absoluteUrl("/#website"), name: "MedQGo", url: absoluteUrl("/"), description: siteConfig.description, inLanguage: "en-IN", publisher: { "@id": absoluteUrl("/#organization") } },
-      { "@type": "BreadcrumbList", "@id": absoluteUrl("/#breadcrumb"), itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }], dateModified: LAST_UPDATED_ISO },
-    ],
-  };
-
-  return (
-    <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
-      <section className="hero">
-        <nav className="nav">
-          <Link href="/" className="brand" prefetch={false}>MedQGo</Link>
-          <div className="navLinks">
-            <Link href="/neet-ug/biology" prefetch={false}>Revision library</Link>
-            <Link href="/neet-biology-pdf" prefetch={false}>Revision workbook</Link>
-            <Link href="/about" prefetch={false}>About</Link>
-            <Link href="/site-map" prefetch={false}>Sitemap</Link>
-          </div>
-        </nav>
-        <div className="heroGrid">
-          <div className="heroCopy">
-            <p className="eyebrow">NEET-UG Biology | Independent study resource</p>
-            <h1>NEET Biology revision notes</h1>
-            <p className="lede">Read NCERT-aligned concept maps, close comparisons, original teaching diagrams, and short recall routines for high-yield Biology topics.</p>
-            <div className="actions">
-              <Link href="/neet-ug/biology/learn/inheritance" className="primaryButton" prefetch={false}>Explore the inheritance study centre</Link>
-              <Link href="/neet-ug/biology" className="secondaryButton" prefetch={false}>Browse revision topics</Link>
-            </div>
-            <div className="mobileQuickStart" aria-label="Start reading a revision guide">
-              <p>Start reading</p>
-              <div>
-                {mobileQuickStartTopics.map((topic) => (
-                  <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id} prefetch={false}>{topic.name}</Link>
-                ))}
-              </div>
-            </div>
-          </div>
-          <figure className="heroVisual">
-            <Image
-              src="/images/biology/medqgo-biology-study-journey-v1.webp"
-              alt="A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem"
-              width={1440}
-              height={901}
-              sizes="(max-width: 520px) 90vw, (max-width: 760px) calc(100vw - 76px), (max-width: 1264px) 41vw, 512px"
-              quality={60}
-              fetchPriority="high"
-              priority
-            />
-            <figcaption>
-              <strong>Connect ideas across scales</strong>
-              <span>{notes.length} in-depth revision notes across {topics.length} focused Biology topics</span>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <section className="section">
-        <div className="sectionHeader"><p className="eyebrow">Study sequences</p><h2>Build one connected topic at a time</h2><p>These sequences make it easier to carry an idea from its starting point to a harder related chapter.</p></div>
-        <div className="clusterGrid">
-          {learningClusters.map((cluster) => {
-            const clusterTopics = cluster.slugs.map((slug) => topics.find((topic) => topic.slug === slug)).filter((topic): topic is (typeof topics)[number] => Boolean(topic));
-            return <section className="clusterPanel" key={cluster.title}><h3>{cluster.title}</h3><p>{cluster.description}</p><div>{clusterTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} key={topic.id} prefetch={false}>{topic.name}</Link>)}</div></section>;
-          })}
-        </div>
-      </section>
-      <section className="section">
-        <div className="sectionHeader"><p className="eyebrow">Revision library</p><h2>Explore other Biology guides</h2></div>
-        <div className="topicGrid">
-          {otherTopics.map((topic) => <Link href={`/neet-ug/biology/${topic.slug}`} className="topicCard" key={topic.id} prefetch={false}><span>{topic.ncertRef}</span><h3>{topic.name}</h3><p>Read a complete guide with a concept path, close comparisons, and a focused recall task.</p></Link>)}
-        </div>
-      </section>
-      <section className="section split">
-        <div><p className="eyebrow">Study with intent</p><h2>Read the NCERT section, then test your recall.</h2><p className="muted">Each guide is an independent learning aid, not official exam material. Check definitions and diagrams against your current NCERT textbook, then use the guide to explain the process without looking back.</p></div>
-        <div className="listPanel"><strong>New to the library?</strong><Link href="/neet-ug/biology/cell-theory-and-cell-organelles" prefetch={false}>Begin with cell organelles and protein routing</Link><Link href="/neet-ug/biology/mitosis-and-meiosis" prefetch={false}>Then connect chromosomes with cell division</Link><Link href="/neet-biology-pdf" prefetch={false}>Try the free workbook recall-sheet sample</Link></div>
-      </section>
-      <section className="section"><PdfCta source="home_midpage" /></section>
-    </main>
-  );
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { absoluteUrl, getSeoNotes, getTopics } from '@/lib/content';
+import { AUTHORED_NOTE_SLUGS } from '@/lib/noteContent';
+import { topicDates } from '@/lib/seo';
+import { librarySection, librarySections } from '@/lib/librarySections';
+export const metadata: Metadata = {title:'NEET Biology Revision Notes',description:'Explore biology through connected guides, original diagrams and worked investigations. Browse by knowledge area or start the inheritance study route.',alternates:{canonical:'/'}};
+const base='/neet-ug/biology';
+export default async function Home(){
+ const [allTopics,allNotes]=await Promise.all([getTopics(),getSeoNotes()]);
+ const notes=allNotes.filter(n=>(AUTHORED_NOTE_SLUGS as readonly string[]).includes(n.slug));
+ const topics=allTopics.filter(t=>notes.some(n=>n.topicSlug===t.slug));
+ const recent=[...topics].sort((a,b)=>topicDates(b.slug).modifiedIso.localeCompare(topicDates(a.slug).modifiedIso)).slice(0,4);
+ return <main className="homeEditorial">
+ <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@graph':[{'@type':'Organization','@id':absoluteUrl('/#organization'),name:'MedQGo',url:absoluteUrl('/'),logo:absoluteUrl('/favicon.svg')},{'@type':'WebSite','@id':absoluteUrl('/#website'),name:'MedQGo',url:absoluteUrl('/'),description:metadata.description,publisher:{'@id':absoluteUrl('/#organization')}}]})}}/>
+ <nav className="editorialNav" aria-label="Main navigation"><Link className="editorialBrand" href="/" prefetch={false}><span aria-hidden="true">m.</span>MedQGo</Link><div><Link href="#subjects" prefetch={false}>Subjects</Link><Link href={`${base}/learn/inheritance`} prefetch={false}>Study centre</Link><Link href="/neet-biology-pdf" prefetch={false}>Workbook sample</Link><Link href="/about" prefetch={false}>About</Link></div><Link className="navLibrary" href={base} prefetch={false}>Explore library ↗</Link></nav>
+ <header className="editorialHero"><div className="heroEditorialCopy"><p className="editorialKicker">THE BIOLOGY STUDY DESK / NEET–UG</p><h1>Learn the connections.<br/><em>Make biology make sense.</em></h1><p className="editorialLead">Independent NEET Biology revision notes that connect the explanation, the diagram and the evidence. Start with a question. Leave with reasoning you can explain.</p><div className="editorialActions"><Link href={`${base}/learn/inheritance`} className="editorialButton" prefetch={false}>Explore the inheritance study centre ↗</Link><Link href={base} prefetch={false}>Browse all guides →</Link></div><p className="editorialFootnote">Read alongside NCERT · No account needed · Sources linked in guides</p></div><aside className="deskCard"><p className="editorialKicker">START READING / A CONNECTED ROUTE</p><h2>Inheritance<br/>& variation</h2><p>From the alleles a parent carries to the evidence its offspring reveal.</p><ol><li><Link href={`${base}/mendelian-inheritance`}>01 <span>Build the allele model</span> ↗</Link></li><li><Link href={`${base}/testcross-and-unknown-genotypes`}>02 <span>Investigate an unknown parent</span> ↗</Link></li><li><Link href={`${base}/linkage-and-recombination-frequency`}>03 <span>Question the offspring record</span> ↗</Link></li></ol><Link href={`${base}/learn/inheritance`}>Open the complete study route →</Link></aside></header>
+ <div className="editorialStrip"><span>THE LIBRARY</span><p>{topics.length} published guides</p><p>7 knowledge areas</p><p>Original worked investigations</p><Link href="/editorial-policy">How we prepare content ↗</Link></div>
+ <section className="editorialSection" id="subjects"><div className="editorialSectionHeading"><div><p className="editorialKicker">01 / FIND YOUR SUBJECT</p><h2>Build one connected topic at a time</h2></div><Link href={base}>Search the revision library →</Link></div><div className="subjectDirectory">{librarySections.map((s,i)=><Link href={`${base}#${s.id}`} key={s.id}><span className="directoryNumber">0{i+1}</span><div><h3>{s.title}</h3><p>{s.subtitle}</p></div><span className="directoryCount">{topics.filter(t=>librarySection(t.ncertRef)===s.id).length} guides ↗</span></Link>)}</div></section>
+ <section className="editorialFeature"><div><p className="editorialKicker">02 / LEARN THROUGH EVIDENCE</p><h2>A result is only useful<br/>when you can explain it.</h2><p>Investigate an unknown plant, compare recombination records, or work through a fictional family. Each case links to the foundations you need and asks you to state what the evidence can—and cannot—establish.</p><Link className="editorialButton" href={`${base}/learn/inheritance#case-library`}>Choose a worked investigation ↗</Link></div><div className="caseStack"><Link href={`${base}/testcross-and-unknown-genotypes#case-title`}><span>CASE 01 / INFERENCE</span><h3>What would change your conclusion?</h3><p>Reveal an offspring record in stages.</p><b>Open Plant U →</b></Link><Link href={`${base}/pedigree-analysis-and-inheritance-patterns`}><span>CASE 02 / PROBABILITY</span><h3>Which family member are you asking about?</h3><p>Separate the evidence from the event you want to predict.</p><b>Work through the family →</b></Link></div></section>
+ <section className="editorialSection"><div className="editorialSectionHeading"><div><p className="editorialKicker">03 / FROM THE EDITORIAL DESK</p><h2>Recently revised guides</h2></div><p>Dates reflect article revisions.</p></div><div className="recentGuideGrid">{recent.map(t=><Link href={`${base}/${t.slug}`} key={t.slug}><time dateTime={topicDates(t.slug).modifiedIso}>{topicDates(t.slug).modifiedDisplay}</time><h3>{t.name}</h3><p>{notes.find(n=>n.topicSlug===t.slug)?.description}</p><b>Read the guide ↗</b></Link>)}</div></section>
+ <section className="editorialMethod"><Image src="/images/biology/medqgo-biology-study-journey-v1.webp" alt="A study journey connecting a eukaryotic cell, DNA, human physiology, and an ecosystem" width={1440} height={901} sizes="(max-width: 760px) 90vw, 480px"/><div><p className="editorialKicker">A SMALL ROUTINE, USED WELL</p><h2>Read. Explain.<br/>Return to the difficult part.</h2><p>Use the textbook for the chapter, a guide for the difficult relationship, and your own explanation to check what stayed with you.</p><Link href="/neet-biology-pdf">Try the free gene-expression workbook sample →</Link><p className="editorialFootnote">Independent learning material, not official NCERT or NTA assessment content.</p><Link href="/contact">Found an error? Send a correction ↗</Link></div></section>
+ </main>;
 }
