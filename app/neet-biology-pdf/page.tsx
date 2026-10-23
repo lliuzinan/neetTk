@@ -1,3 +1,4 @@
+import { PrintWorkbook } from "@/components/PrintWorkbook";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -20,10 +21,11 @@ export default function NeetBiologyPdfPage() {
     <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Revision workbook" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Revision workbook</p><h1>NEET Biology revision workbook</h1><p>Use the free recall-sheet sample below, then join early access for independently prepared printable revision checklists and topic-based study resources. No material is presented as official NCERT, NTA, or NEET content.</p><EditorialByline /></header>
     <section className="workbookSample" aria-labelledby="free-sample-title">
       <div className="workbookSampleIntro"><p className="eyebrow">Free sample</p><h2 id="free-sample-title">A 12-minute gene-expression recall sheet</h2><p>Use this after reading the relevant NCERT section. It is designed to reveal whether you can connect a sequence, its working copy, and the final product without relying on a memorised list.</p></div>
+      <PrintWorkbook />
       <div className="sampleSteps">
         <section><span>1</span><h3>Draw the information route</h3><p>On blank paper, write three boxes: DNA, RNA, and protein. Add arrows in the direction information is used. Say what is made at each arrow before checking your notes.</p></section>
         <section><span>2</span><h3>Separate the two jobs</h3><p>Write one sentence for transcription and one for translation. Your test is simple: each sentence must name both the starting material and the product.</p></section>
-        <section><span>3</span><h3>Use the comparison check</h3><table><thead><tr><th>Process</th><th>Template</th><th>Immediate product</th></tr></thead><tbody><tr><td>Transcription</td><td>DNA</td><td>RNA</td></tr><tr><td>Translation</td><td>mRNA</td><td>Polypeptide</td></tr></tbody></table></section>
+        <section><span>3</span><h3>Use the comparison check</h3><table><thead><tr><th scope="col">Process</th><th scope="col">Template</th><th scope="col">Immediate product</th></tr></thead><tbody><tr><td>Transcription</td><td>DNA</td><td>RNA</td></tr><tr><td>Translation</td><td>mRNA</td><td>Polypeptide</td></tr></tbody></table></section>
         <section><span>4</span><h3>Close with one explanation</h3><p>Explain aloud why changing a DNA sequence can affect a protein, while keeping in mind that not every change has the same outcome. Then compare your wording with the full revision guide.</p><Link href="/neet-ug/biology/dna-rna-replication-transcription-translation" className="textLink">Read the DNA, RNA and protein guide</Link></section>
       </div>
       <p className="sampleNote">This is an original MedQGo revision exercise. It is not an extract from NCERT, NTA, or a coaching resource.</p>

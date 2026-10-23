@@ -1543,3 +1543,29 @@ h3 {
 @media(max-width:900px){.editorialNav>div { gap:14px; }.navLibrary { display:none; }.editorialHero { gap:30px; }.editorialHero h1 { font-size:46px; }.recentGuideGrid { grid-template-columns:1fr 1fr; }.libraryGuideGrid { grid-template-columns:1fr 1fr; }.directoryCount { display:none; }}
 @media(max-width:640px){.editorialNav,.editorialHero,.editorialStrip,.editorialSection,.editorialFeature,.editorialMethod { padding-inline:22px; }.editorialNav { flex-wrap:wrap; padding-block:20px; gap:20px; }.editorialNav>div { margin:0; flex-wrap:wrap; font-size:12px; gap:16px; }.editorialHero { grid-template-columns:1fr; padding-block:42px; gap:35px; }.editorialHero h1 { font-size:43px; }.editorialLead { font-size:15px; }.editorialActions { gap:20px; }.editorialButton { padding:15px 18px; }.deskCard { padding:24px; }.editorialStrip { flex-wrap:wrap; justify-content:start; gap:16px 22px; }.editorialStrip>span { width:100%; }.editorialSection { padding-block:40px; }.editorialSectionHeading { display:block; }.editorialSectionHeading>a { display:inline-block; margin-top:20px; }.editorialSection h2 { font-size:30px; }.subjectDirectory { grid-template-columns:1fr; }.directoryCount { display:inline; }.editorialFeature,.editorialMethod { grid-template-columns:1fr; gap:25px; padding-block:40px; }.editorialFeature h2 { font-size:34px; }.recentGuideGrid { gap:25px; }.recentGuideGrid h3 { font-size:20px; }.libraryControls,.libraryGuideGrid { grid-template-columns:1fr; }.libraryControls { padding:18px; }}
 @media(prefers-reduced-motion:no-preference){.deskCard,.libraryGuide { transition:transform .18s ease; }.libraryGuide:hover { transform:translateY(-3px); }}
+
+/* Keep the free workbook usable on small screens and on paper. */
+.pdfLanding .sampleSteps, .pdfLanding .splitContent { min-width: 0; }
+.pdfLanding .sampleSteps > section, .pdfLanding .splitContent > div { min-width: 0; }
+.pdfLanding .sampleSteps table { table-layout: fixed; overflow-wrap: anywhere; }
+.workbookPrintAction { margin-block: 20px; }
+.workbookPrintAction button { background: var(--brand); color: white; padding: 12px 18px; border: 0; border-radius: 5px; cursor: pointer; font-weight: 700; }
+.workbookPrintAction p { margin-top: 10px; font-size: 13px; }
+@media(max-width: 480px) {
+ .pdfLanding .workbookSample { padding: 16px; }
+ .pdfLanding .sampleSteps { grid-template-columns: minmax(0, 1fr); }
+ .pdfLanding .sampleSteps > section { padding: 12px; }
+ .pdfLanding .sampleSteps th, .pdfLanding .sampleSteps td { padding: 8px 3px; font-size: 12px; }
+ .pdfLanding .splitContent { grid-template-columns: minmax(0, 1fr); }
+}
+@media print {
+ body:has(.pdfLanding) { background: white; color: black; }
+ body:has(.pdfLanding) > :not(main), .pdfLanding > :not(.workbookSample), .pdfLanding .workbookPrintAction { display: none !important; }
+ .pdfLanding { display: block; max-width: none; margin: 0; padding: 0; }
+ .pdfLanding .workbookSample { margin: 0; padding: 0; border: 0; box-shadow: none; }
+ .pdfLanding .sampleSteps { grid-template-columns: 1fr 1fr; gap: 14px; }
+ .pdfLanding .sampleSteps section { break-inside: avoid; }
+ .pdfLanding .workbookSample p, .pdfLanding .sampleSteps table { color: black; font-size: 11pt; }
+ .pdfLanding .sampleSteps section::after { content: ''; display: block; min-height: 45px; border-bottom: 1px dotted #aaa; margin-top: 12px; }
+ .pdfLanding .sampleNote { margin-top: 18px; }
+}
