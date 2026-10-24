@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { trackEvent } from "@/components/AnalyticsBeacon";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
@@ -12,11 +12,14 @@ type Props = {
 };
 
 export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionId = "" }: Props) {
+  const [ready, setReady] = useState(false);
+  useEffect(() => setReady(true), []);
   const [state, setState] = useState<SubmitState>("idle");
   const [message, setMessage] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!ready || state === "submitting") return;
     const formElement = event.currentTarget;
     setState("submitting");
     setMessage("");
@@ -56,19 +59,20 @@ export function WaitlistForm({ source = "pdf_landing", topicSlug = "", questionI
   }
 
   return (
-    <form className="waitlistForm" onSubmit={onSubmit}>
+    <form className="waitlistForm" method="post" action="/api/waitlist" onSubmit={onSubmit}>
+      {!ready && <p>Enable JavaScript and allow the form to finish loading to join early access. You can read and print the free sample without signing up.</p>}
       <label>
         Email
-        <input name="email" type="email" autoComplete="email" placeholder="you@example.com" required maxLength={180} />
+        <input name="email" disabled={!ready} type="email" autoComplete="email" placeholder="you@example.com" required maxLength={180} />
       </label>
       <label>
-        <input name="legalConsent" type="checkbox" required />
+        <input name="legalConsent" disabled={!ready} type="checkbox" required />
         <span>I agree to the processing of my email for revision-workbook early access, as described in the <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Use</a>.</span>
       </label>
-      <button type="submit" disabled={state === "submitting"}>
+      <button type="submit" disabled={!ready || state === "submitting"}>
         {state === "submitting" ? "Joining..." : "Join early access"}
       </button>
-      {message && <p className={state === "success" ? "formSuccess" : "formError"}>{message}</p>}
+      {message && <p role="status" className={state === "success" ? "formSuccess" : "formError"}>{message}</p>}
     </form>
   );
 }
