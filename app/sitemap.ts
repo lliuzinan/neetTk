@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const libraryModified = new Date(`${["2026-10-22", ...topics.map((topic) => topicDates(topic.slug).modifiedIso)].sort().at(-1) || LAST_UPDATED_ISO}T00:00:00.000Z`);
   return [
     { url: absoluteUrl("/neet-ug/biology/learn/inheritance"), lastModified: new Date("2026-10-22T00:00:00Z"), changeFrequency: "monthly", priority: 0.9 },
-    { url: absoluteUrl("/"), lastModified: libraryModified, changeFrequency: "weekly", priority: 1 },
+    { url: absoluteUrl("/"), lastModified: new Date(`${["2026-10-26", libraryModified.toISOString().slice(0, 10)].sort().at(-1)}T00:00:00Z`), changeFrequency: "weekly", priority: 1 },
     { url: absoluteUrl("/neet-ug/biology"), lastModified: libraryModified, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl("/neet-biology-pdf"), lastModified, changeFrequency: "weekly", priority: 0.8 },
     ...topics.map((topic) => ({ url: absoluteUrl(`/neet-ug/biology/${topic.slug}`), lastModified: new Date(`${topicDates(topic.slug).modifiedIso}T00:00:00.000Z`), changeFrequency: "monthly" as const, priority: 0.8 })),
