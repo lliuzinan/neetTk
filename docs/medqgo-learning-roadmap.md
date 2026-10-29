@@ -119,3 +119,18 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Evidence: `docs/audits/2026-10-28-public-content-inventory.json`, `docs/audits/2026-10-28-adsense-reassessment.md`, and `docs/audits/content-disposition.csv` (77 rows, editorial decisions still pending). Reusable script: `scripts/audit-public-content.mjs`.
 - Requested factual clarification of the named contributor's real role and actual review scope. Lack of an answer is not evidence of falsehood and does not block independent technical work.
 - No published content, ads/payment account configuration or production form was changed in this task; no deployment claimed. Next actionable content item: immunity correction with source and figure checks, prepared for real manual review; independent technical work can continue under existing publication authority.
+
+
+### October 28 — owner decision and scheduled start
+
+- Owner stated that the previously displayed individual identity or participation is uncertain and chose the actual publishing identity, MedQGo, for attribution. This is not a finding that any person or credential is false.
+- Owner requested that this audit recommendation be recorded in the remediation plan and implementation begin with the scheduled run on October 29 at 09:00 Beijing time. Today this is a planning update only; no website implementation or publication.
+- First scheduled task: correct unverified attribution and review claims across visible pages, navigation, sitemap and structured data; verify legacy links, build and mobile layouts, then publish under the existing authorization. Do not represent an organization attribution or automated review as human expert review. Continue the remaining quality roadmap after that.
+
+
+### October 29 — attribution correction, local verification
+
+- Owner requested the missed scheduled task be executed today. Changed visible attribution and article structured data to the MedQGo publishing entity, removed the unverified personal identity and instructor-role claims, and revised publishing/review disclosures without claiming independent review of all existing guides.
+- The old author URL now permanently redirects to the publishing and review page; removed its sitemap and navigation references. No Biology teaching material was rewritten.
+- Production build passed; 34 tests passed including all 64 guides' structured attribution. Browser checks at 320, 390 and 1440 pixels covered seven representative pages and the legacy redirect, without recorded horizontal overflow or old claims. Advertising and measurement calls were blocked during checks.
+- Next: assess immunity illustration and classification, with the actual-human-review gate for substantive educational changes. This log records local verification; deployment and production validation must be recorded separately.

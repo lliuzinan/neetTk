@@ -8,7 +8,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EditorialByline } from "@/components/EditorialByline";
-import { editorialReviewer, hasNamedAuthor } from "@/lib/editorialReviewer";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findTopic, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS, getNoteComparisonTable, getNoteContent, getNoteEditorialBlock, getNoteReferences } from "@/lib/noteContent";
@@ -481,9 +480,7 @@ export default async function TopicPage({ params }: Props) {
     .map((item) => item.topic);
   const pageUrl = absoluteUrl(`/neet-ug/biology/${topic.slug}`);
   const breadcrumbLd = { "@type": "BreadcrumbList", "@id": `${pageUrl}#breadcrumb`, itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "NEET-UG Biology", item: absoluteUrl("/neet-ug/biology") }, { "@type": "ListItem", position: 3, name: topic.name, item: pageUrl }] };
-  const articleAuthor = hasNamedAuthor()
-    ? { "@type": "Person", "@id": absoluteUrl("/authors/dongfeng#person"), name: editorialReviewer.authorName, url: absoluteUrl("/authors/dongfeng"), ...(editorialReviewer.authorRole ? { jobTitle: editorialReviewer.authorRole } : {}) }
-    : { "@id": absoluteUrl("/#organization") };
+  const articleAuthor = { "@type": "Organization", "@id": absoluteUrl("/#organization"), name: "MedQGo", url: absoluteUrl("/") };
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -579,7 +576,7 @@ export default async function TopicPage({ params }: Props) {
         </section>}
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>
-          <p><strong>Written by:</strong> <Link href="/authors/dongfeng">DongFeng</Link>. <strong>Published by:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
+          <p><strong>Published by:</strong> MedQGo. <strong>Last updated:</strong> {dates.modifiedDisplay}.</p>
           <p><strong>Disclaimer:</strong> This guide is a revision aid for NEET-UG aspirants and does not constitute medical advice. For clinical or health-related queries, consult a qualified medical professional.</p>
         </section>
         <section id="guide-references">

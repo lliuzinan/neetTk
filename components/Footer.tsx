@@ -24,7 +24,6 @@ export function Footer() {
           <PrivacySettingsButton />
           <Link href="/terms">Terms</Link>
           <Link href="/team">Editorial Team</Link>
-          <Link href="/authors/dongfeng">Author: DongFeng</Link>
           <Link href="/editorial-policy">Editorial Policy</Link>
           <Link href="/copyright">Copyright</Link>
         </nav>

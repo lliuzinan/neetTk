@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/authors/dongfeng", destination: "/team", permanent: true },
       {
         source: "/neet-ug/biology/:topicSlug/q/:questionId",
         destination: "/neet-ug/biology/:topicSlug",

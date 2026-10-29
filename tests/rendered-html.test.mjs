@@ -56,7 +56,8 @@ test("publishes the conservation and microbes guides with original assets and co
     const article = jsonLdItems(html).find((entry) => entry["@type"] === "Article");
     assert.equal(article.datePublished, "2026-09-23");
     assert.equal(article.dateModified, article.datePublished);
-    assert.equal(article.author.name, "DongFeng");
+    assert.equal(article.author.name, "MedQGo");
+    assert.equal(article.author["@type"], "Organization");
     assert.ok(html.includes(`src="/images/biology/${item.image}"`));
     assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
     assert.ok(html.includes(item.source));
@@ -93,7 +94,8 @@ test("publishes two distinct flowering-plant guides with original visuals and ch
     const article = jsonLdItems(html).find((entry) => entry["@type"] === "Article");
     assert.equal(article.datePublished, "2026-10-09");
     assert.equal(article.dateModified, article.datePublished);
-    assert.equal(article.author.name, "DongFeng");
+    assert.equal(article.author.name, "MedQGo");
+    assert.equal(article.author["@type"], "Organization");
     assert.ok(html.includes(`src="/images/biology/${item.image}"`));
     assert.ok((await readFile(new URL(`../public/images/biology/${item.image}`, import.meta.url))).length > 1000);
     assert.ok(html.includes(item.source));
@@ -226,7 +228,7 @@ test("renders the revision workbook with a free sample and optional early access
 });
 
 test("renders in-depth topic guides and the trust pages", async () => {
-  const [topicHtml, endocrineHtml, respirationHtml, excretionHtml, immunityHtml, neuronHtml, dnaHtml, cellHtml, mutationHtml, aboutHtml, privacyHtml, termsHtml, authorHtml] = await Promise.all([
+  const [topicHtml, endocrineHtml, respirationHtml, excretionHtml, immunityHtml, neuronHtml, dnaHtml, cellHtml, mutationHtml, aboutHtml, privacyHtml, termsHtml, teamHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology/endocrine-system-and-hormones.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology/human-respiration.html", import.meta.url), "utf8"),
@@ -239,7 +241,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
     readFile(new URL("../.next/server/app/about.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/privacy.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/terms.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/authors/dongfeng.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/team.html", import.meta.url), "utf8"),
   ]);
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
@@ -261,9 +263,8 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(endocrineHtml, /Endocrine glands are ductless/);
   assert.match(endocrineHtml, /National Institute of General Medical Sciences: What is a hormone/);
   assert.match(endocrineHtml, /kebo119\.pdf/);
-  assert.match(endocrineHtml, /Written by:.*DongFeng/);
-  assert.match(endocrineHtml, /authors\/dongfeng/);
-  assert.match(endocrineHtml, /University Biology Instructor/);
+  assert.match(endocrineHtml, /Published by:<\/strong> MedQGo/);
+  assert.doesNotMatch(endocrineHtml, /DongFeng|University Biology Instructor|authors\/dongfeng/);
   assert.match(endocrineHtml, /2026-09-30/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(respirationHtml, /human-respiration-gas-route-v1\.png/);
@@ -280,8 +281,8 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(privacyHtml, /Google&#x27;s My Ad Center/);
   assert.match(privacyHtml, /How Google uses information from sites or apps that use its services/);
   assert.match(termsHtml, /Educational Use/);
-  assert.match(authorHtml, /Role at MedQGo/);
-  assert.match(authorHtml, /does not invent degrees, institutional affiliations, endorsements, or student testimonials/);
+  assert.match(teamHtml, /Publishing responsibility/);
+  assert.match(teamHtml, /not claim that every existing guide has received independent human review/);
 });
 
 test("publishes four complete NCERT-aligned revision guides", async () => {
@@ -305,7 +306,7 @@ test("publishes four complete NCERT-aligned revision guides", async () => {
   assert.match(circulationHtml, /kebo115\.pdf/);
   assert.match(circulationHtml, /blood-double-circulation-v1\.png/);
   for (const html of [photosynthesisHtml, plantRespirationHtml, digestionHtml, circulationHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /A 15-minute recall routine/);
   }
@@ -318,7 +319,7 @@ test("publishes the cell cycle, mitosis and meiosis revision guide", async () =>
   assert.match(html, /cell-division-separation-v1\.png/);
   assert.match(html, /kebo110\.pdf/);
   assert.match(html, /Mitosis and meiosis: identify what separates/);
-  assert.match(html, /Written by:.*DongFeng/);
+  assert.match(html, /Published by:<\/strong> MedQGo/);
 });
 
 test("publishes three distinct NCERT Biology revision guides with original teaching visuals", async () => {
@@ -337,7 +338,7 @@ test("publishes three distinct NCERT Biology revision guides with original teach
   assert.match(recombinantHtml, /recombinant-dna-workflow-v1\.png/);
   assert.match(recombinantHtml, /lebo109\.pdf/);
   for (const html of [floweringPlantsHtml, mendelianHtml, recombinantHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /September 14, 2026/);
   }
 });
@@ -348,7 +349,7 @@ test("publishes the chromosomal basis of inheritance guide with its original lin
   assert.match(html, /chromosomal-linkage-crossing-over-v1\.png/);
   assert.match(html, /lebo104\.pdf/);
   assert.match(html, /The chromosome-first check/);
-  assert.match(html, /Written by:.*DongFeng/);
+  assert.match(html, /Published by:<\/strong> MedQGo/);
 });
 
 test("publishes three connected inheritance and biotechnology guides with original teaching visuals", async () => {
@@ -368,7 +369,7 @@ test("publishes three connected inheritance and biotechnology guides with origin
   assert.match(applicationsHtml, /biotechnology-applications-map-v1\.png/);
   assert.match(applicationsHtml, /lebo110\.pdf/);
   for (const html of [pedigreeHtml, molecularToolsHtml, applicationsHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published by:.*MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -395,7 +396,7 @@ test("publishes the connected reproduction and molecular-inheritance revision gu
   assert.match(molecularInheritanceHtml, /molecular-inheritance-information-routes-v1\.png/);
   assert.match(molecularInheritanceHtml, /lebo105\.pdf/);
   for (const html of [humanReproductionHtml, reproductiveHealthHtml, molecularInheritanceHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published by:.*MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -418,7 +419,7 @@ test("publishes evolution and population ecology guides with original comparison
   assert.match(populationsHtml, /organisms-populations-growth-v1\.png/);
   assert.match(populationsHtml, /lebo111\.pdf/);
   for (const html of [evolutionHtml, populationsHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published by:.*MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -461,7 +462,7 @@ test("publishes connected flowering-plant morphology and anatomy guides", async 
   assert.match(anatomyHtml, /kebo106\.pdf/);
 
   for (const html of [morphologyHtml, anatomyHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published by:.*MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -492,7 +493,7 @@ test("publishes biological classification and plant kingdom as a connected diver
   assert.match(plantKingdomHtml, /kebo103\.pdf/);
 
   for (const html of [classificationHtml, plantKingdomHtml]) {
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published by:.*MedQGo/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -510,7 +511,7 @@ test("publishes three distinct physiology guides with illustrations and learning
   for (const item of cases) {
     const html = await readFile(new URL("../.next/server/app/neet-ug/biology/" + item.slug + ".html", import.meta.url), "utf8");
     for (const token of [item.image, item.pdf, "NCERT anchor", "Related revision guides", ...item.links]) assert.ok(html.includes(token), item.slug + ": " + token);
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /September 23, 2026/);
     assert.ok(html.includes('datePublished'));
     assert.ok(html.includes('2026-09-23'));
@@ -532,7 +533,7 @@ test("publishes animal classification, tissue organisation and biotechnology pro
     assert.ok(html.includes(item.image), item.slug + ": image");
     assert.ok(html.includes(item.source), item.slug + ": source");
     assert.ok(html.includes(item.marker), item.slug + ": worked distinction");
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published:\s*(?:<!-- -->)?September 24, 2026/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -562,7 +563,7 @@ test("publishes biomolecules and inheritance-disorder examples as authored guide
     assert.ok(html.includes(item.image), item.slug + ": image");
     assert.ok(html.includes(item.source), item.slug + ": source");
     assert.ok(html.includes(item.marker), item.slug + ": editorial marker");
-    assert.match(html, /Written by:.*DongFeng/);
+    assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /Published:\s*(?:<!-- -->)?September 29, 2026/);
     assert.match(html, /Common confusions to check/);
     assert.match(html, /Related revision guides/);
@@ -647,4 +648,22 @@ test("pedigree worked family distinguishes conditional and next-child probabilit
  const html=await readFile(new URL('../.next/server/app/neet-ug/biology/pedigree-analysis-and-inheritance-patterns.html',import.meta.url),'utf8');
  for(const text of ['A daughter changes which inheritance routes remain possible','(1/2) / (3/4) = 2/3','4.8.1','Change one family detail','pedigree-inheritance-clues-v1.png']) assert.ok(html.includes(text),text);
  const combinations=['AA','Aa','aA','aa'];const absent=combinations.filter(x=>x!=='aa');assert.equal(absent.filter(x=>x==='Aa'||x==='aA').length/absent.length,2/3);assert.equal(combinations.filter(x=>x==='aa').length/combinations.length,1/4);
+});
+
+test("public guide attribution and metadata consistently identify the publisher", async () => {
+  const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
+  const urls = [...sitemap.matchAll(/<loc>(https:\/\/medqgo\.com\/neet-ug\/biology\/[^<]+)<\/loc>/g)].map(m => m[1]);
+  const guides = urls.filter(url => !url.includes("/learn/"));
+  assert.equal(guides.length, 64);
+  assert.doesNotMatch(sitemap, /\/authors\/dongfeng/);
+  for (const url of guides) {
+    const slug = url.split("/").at(-1);
+    const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
+    assert.doesNotMatch(html, /DongFeng|University Biology Instructor|authors\/dongfeng/i, slug);
+    const article = jsonLdItems(html).find(item => item["@type"] === "Article");
+    assert.equal(article.author["@type"], "Organization", slug);
+    assert.equal(article.author.name, "MedQGo", slug);
+  }
+  const redirects = await nextConfig.redirects();
+  assert.ok(redirects.some(r => r.source === "/authors/dongfeng" && r.destination === "/team" && r.permanent));
 });

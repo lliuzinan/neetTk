@@ -24,7 +24,7 @@ export default function AboutPage() {
         {
           title: "Editorial Process",
           body: [
-            "Every public guide has a named author, a publication date, a last-updated date, an NCERT reference, and a way for readers to report a correction. The author is responsible for the final explanatory text; MedQGo records editorial updates on the page.",
+            "MedQGo is the publisher of these guides. Readers can use the Contact page to report a factual concern or suggest a correction. Dates on guides describe their content updates.",
             "We publish focused study guides instead of reproducing past papers, textbook pages, or official examination content. Read the Editorial Policy and Copyright page for the way we handle sources, corrections, and rights-holder requests.",
           ],
         },
