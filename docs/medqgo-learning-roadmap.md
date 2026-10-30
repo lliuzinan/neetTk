@@ -2,13 +2,13 @@
 
 Owner-approved direction: October 26, 2026. Timezone: Asia/Shanghai.
 
-## Current execution priority — updated October 28
+## Current execution priority — updated October 30
 
-The owner requested a new policy-grounded route after supplying the low-value-content rejection. Read **[adsense-compliance-route.md](adsense-compliance-route.md)** first. Its priority board and publication/human-review gates supersede the dated sequence below; keep that table as historical planning and existing delivery evidence. Next: correct confirmed accuracy/reference issues and truthful attribution, then complete the all-library disposition and the inheritance learning journey. The optional official-practice companion must not block independent original work. No bulk article production.
+Read **[adsense-compliance-route.md](adsense-compliance-route.md)** for publication gates and **[medqgo-value-delivery-plan.md](medqgo-value-delivery-plan.md)** for the current work packages and acceptance criteria. The owner requested a concrete learning-value remediation plan on October 30. Attribution and immunity fixes are already deployed and verified; do not repeat them. Next: W1 reference fixes and assessment of the five inheritance guides, then deliver a complete explanation / reasoning / recording / review journey. The dated sequence below is historical, not the current task queue. Official-practice guidance is optional and must not block independent original work. No bulk article production.
 
 ## Objective
 
-Make the existing Biology library useful as a connected learning centre. Deliver one complete inheritance route, a source-traceable official-practice companion, and one genuinely downloadable original worksheet. Do not target article volume or promise AdSense approval.
+Make the existing Biology library useful as a connected learning centre. Deliver one complete inheritance route and one genuinely usable, downloadable original worksheet. A source-traceable official-practice companion is optional. Do not target article volume or promise AdSense approval.
 
 The homepage must first expose actual published learning resources. Preserve existing useful article URLs. Existing original cases must remain labelled as constructed teaching examples, not official questions or real research data. No new unverified AI-generated questions are required by this plan.
 
@@ -162,3 +162,29 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - The owner responded “审核过了” to the request to review the immunity revision. Reviewer identity, detailed review scope and findings were not supplied; do not invent them or claim professional credentials. The owner authorized publication of the local correction.
 - Preserve this confirmation and record deployment and online evidence separately. The prior entry describes the status before this confirmation.
+
+### October 30 — publication blocked
+
+- The owner reported “审核过了”; reviewer identity, scope and findings were not provided. The reviewed correction is committed locally as `e4acf92`; no reviewer credentials are claimed.
+- Fresh production build and all 34 tests passed. Two Git pushes and an HTTP/1.1 retry failed to complete within bounded waits. GitHub API independently reports `origin/main` at `ed4127792b3b0a434832470ab40dfbe7056710bd`; the new commit has not reached main as of this check. No Vercel deployment or online validation is claimed.
+- Next run: retry pushing the already-reviewed commit and verify the deployment and live guide before starting unrelated work. Avoid duplicating the content revision or claiming it is live.
+
+### October 30 — immunity release verified after retry
+
+- At the owner's request, retried the existing reviewed commit. Push succeeded: origin/main now contains `e4acf92df06de315c3c26b01ac327b485f81e890`. GitHub's Vercel status reports success (Deployment has completed).
+- Verified https://medqgo.com/neet-ug/biology/immunity-pathogens-vaccines in Chrome at 320, 390 and 1440px: HTTP 200, corrected “components of innate defence” explanation present, former mutually exclusive exercise absent, misleading illustration absent, and document width matched each viewport. Advertising and measurement requests were blocked.
+- This resolves the preceding push blocker and publishes the reviewed immunity correction only; remaining site-wide content and learning-product work is still outstanding. This verification entry is a local progress record, separate from the deployed commit.
+
+### October 30 — learning-value execution plan accepted
+
+- Owner requested that the learning-value direction be organized into an executable remediation plan. Added `docs/medqgo-value-delivery-plan.md`, covering content disposition, the five-step inheritance journey, explanation records, PDF/HTML delivery, navigation and real learner feedback.
+- Updated the current priority entry and compliance route to distinguish completed attribution/immunity releases from remaining work. Existing daily instructions already read these entry files; no scheduler configuration change is claimed or required for discovering the new plan.
+- Next: W1 focused reference checks and five-guide assessment; use W3 blank record-tool work if teaching revisions await actual review. Estimates are planning ranges, not an AdSense eligibility deadline.
+- Documentation only in this task; no new website changes, deployment or learner results claimed.
+
+### October 30 — explanation-record tool, local implementation
+
+- Owner requested a usable optimization release today. Delivered the independent W3 tool while W1 content/source review remains open: five topic-specific explanation records, browser autosave, JSON export/import with validation and replacement confirmation, per-topic clear confirmation and a full-text print view. No new teaching questions, worked answers or scientific-review claims were added.
+- Production build and 36 tests passed, including backup round-trip and invalid-file handling. Browser checks exercised refresh recovery, topic isolation, backup download/restore, malformed imports without data loss, reset/cancel, unavailable storage and no-JavaScript prompts. Widths 320/390/768/1440 showed no document overflow. Inspected mobile and print screenshots; found and fixed the analytics consent panel appearing in print.
+- This is a personal record tool, not an automated accuracy checker or mastery score. Notes stay in this browser; exported backups can move between devices. A standalone downloadable PDF and reviewed example remain W4 work, not claimed delivered here. W1 reference/guide assessment and all-library disposition remain next priorities.
+- Local implementation and verification only at this entry; deployment evidence follows separately.

@@ -1663,3 +1663,31 @@ h3 {
  .pdfLanding .sampleSteps section::after { content: ''; display: block; min-height: 45px; border-bottom: 1px dotted #aaa; margin-top: 12px; }
  .pdfLanding .sampleNote { margin-top: 18px; }
 }
+
+/* Personal explanation record: screen and complete-text print view. */
+.explanationRecord { border:1px solid #ccd9c6; border-radius:20px; padding:clamp(18px,3vw,36px); background:#f7faf3; }
+.recordPrivacy { max-width:76ch; color:#45513f; }
+.recordControls select { display:block; width:100%; max-width:540px; margin:8px 0 12px; padding:12px; border:1px solid #73836b; border-radius:8px; background:white; color:#17291d; font:inherit; }
+.recordFields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin:24px 0; }
+.recordFields label,.recordControls label { font-weight:700; }
+.recordFields p { margin:6px 0 10px; color:#45513f; }
+.recordFields textarea { box-sizing:border-box; width:100%; min-height:140px; resize:vertical; border:1px solid #73836b; border-radius:8px; padding:12px; background:white; color:#17291d; font:inherit; line-height:1.5; }
+.recordFields > div:last-child { grid-column:1/-1; }
+.recordActions { display:flex; flex-wrap:wrap; gap:10px; }
+.recordControls button { padding:10px 14px; border:1px solid #216543; border-radius:8px; background:white; color:#145436; font:inherit; cursor:pointer; }
+.recordControls button:disabled { opacity:.5; cursor:wait; }
+.recordConfirmation { padding:16px; margin-top:16px; border:1px solid #8a6a13; border-radius:8px; }
+.explanationRecord :focus-visible { outline:3px solid #aa7800; outline-offset:3px; }
+.recordPrintValue { display:none; }
+@media(max-width:700px) { .recordFields { grid-template-columns:minmax(0,1fr); } .recordActions button { flex:1 1 180px; } }
+@media print {
+ body:has(.explanationRecord) > :not(main),
+ body:has(.explanationRecord) header, body:has(.explanationRecord) footer, body:has(.explanationRecord) nav,
+ body:has(.explanationRecord) .learningPage > :not(.explanationRecord),
+ .explanationRecord .recordControls, .explanationRecord textarea { display:none !important; }
+ .explanationRecord { border:0; padding:0; background:white; color:black; }
+ .recordFields { display:block; }
+ .recordFields > div { margin:0 0 20px; }
+ .recordFields label { break-after:avoid; }
+ .recordPrintValue { display:block; white-space:pre-wrap; overflow-wrap:anywhere; border-bottom:1px solid #999; padding:8px 0; }
+}
