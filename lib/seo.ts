@@ -69,7 +69,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-30" },
   "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-20" },
   "endocrine-system-and-hormones": { published: "2026-09-06", modified: "2026-09-30" },
-  "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-09-30" },
+  "immunity-pathogens-vaccines": { published: "2026-09-05", modified: "2026-10-30" },
   "neuron-nerve-impulse-synapse": { published: "2026-09-06", modified: "2026-09-30" },
   "human-respiration": { published: "2026-09-05", modified: "2026-09-30" },
   "excretion-and-kidney-function": { published: "2026-09-05", modified: "2026-10-20" },

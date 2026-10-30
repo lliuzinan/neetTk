@@ -201,7 +201,7 @@ const topicContent: Record<string, TopicSeoContent> = {
     traps: ["A mutation is not automatically harmful or automatically visible in phenotype.", "An insertion or deletion can alter later codon grouping; a substitution does not necessarily do so.", "Gene regulation is not the same as a change in DNA sequence."],
   },
   "immunity-pathogens-vaccines": {
-    focus: ["The order from physical barriers to innate responses to antigen-specific acquired immunity.", "The difference between antigens, antibodies, B lymphocytes, and T lymphocytes.", "Why active and passive immunity produce different timing and memory patterns."],
+    focus: ["How physical barriers fit within innate immunity and interact with acquired immunity.", "The difference between antigens, antibodies, B lymphocytes, and T lymphocytes.", "Why active and passive immunity produce different timing and memory patterns."],
     traps: ["Fast does not automatically mean antigen-specific; innate immunity is fast and broadly protective.", "A pathogen, disease symptom, vector, reservoir, and transmission route are different categories.", "Passive immunity provides ready-made antibodies but does not create the same lasting memory as active immunity."],
   },
   "endocrine-system-and-hormones": {

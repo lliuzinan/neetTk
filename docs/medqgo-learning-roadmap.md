@@ -134,3 +134,31 @@ This addition records acceptance criteria only. It does not establish that a fre
 - The old author URL now permanently redirects to the publishing and review page; removed its sitemap and navigation references. No Biology teaching material was rewritten.
 - Production build passed; 34 tests passed including all 64 guides' structured attribution. Browser checks at 320, 390 and 1440 pixels covered seven representative pages and the legacy redirect, without recorded horizontal overflow or old claims. Advertising and measurement calls were blocked during checks.
 - Next: assess immunity illustration and classification, with the actual-human-review gate for substantive educational changes. This log records local verification; deployment and production validation must be recorded separately.
+
+
+### October 29 — attribution release verified
+
+- Committed `ed41277`, pushed to origin/main. Vercel commit status reported deployment success.
+- Verified production `/team`, `/editorial-policy`, and `/neet-ug/biology/mendelian-inheritance` returned HTTP 200, no longer displayed the previously unverified personal identity or instructor title, and the guide showed MedQGo as publisher. At 390px these pages had no horizontal overflow.
+- Production `/authors/dongfeng` redirected to `/team`. This resolves the attribution work, not the broader scientific accuracy, content quality or human-review backlog. Next: investigate the immunity classification and diagram and prepare substantive educational changes for actual human review.
+
+
+### October 30 — immunity correction draft
+
+- Inspected the existing immunity graphic and exercise. The graphic joins skin and airway features and its cilia leader points to the cell-body area; its sequence arrows can overstate a mandatory progression. The exercise incorrectly requires mutually exclusive categories for overlapping concepts.
+- Prepared `docs/drafts/2026-10-30-immunity-correction.md` with independently written proposed text, a relationship-based study task, original illustration brief and human review checklist. OpenStax respiratory anatomy and CDC active/passive immunity pages were opened; NCERT chapter timed out and NCBI returned a challenge. Those were not falsely recorded as verified.
+- Draft only: no site code, figure, build, tests, commit, push, deployment or online verification this run. Actual human subject review and NCERT version remain outstanding before any teaching revision is published.
+
+
+### October 30 — immunity local implementation awaiting review
+
+- At the owner's request, implemented the proposed immunity correction locally: clarified barriers as innate defence, replaced the mutually exclusive revision exercise with a relationship map, and removed the misleading in-body illustration from the rendered guide without overwriting its asset.
+- NCERT's official search-indexed 2026–27 chapter excerpt identifies section 7.2.1 and physical barriers; direct PDF retrieval still timed out. Do not claim the complete PDF was opened or the entire chapter was independently checked. CDC active/passive and OpenStax airway pages were opened.
+- Next.js production build and 34 tests passed. Local browser checks at 320/390/1440px returned 200 with no measured document overflow, the corrected explanation present and the old exclusive task absent.
+- No human subject review has been confirmed. Per the owner's existing content gate, the teaching change remains local and unpublished; the owner was asked for the actual reviewer, scope and findings. No commit, push or deployment. The misleading image remains on the existing public page until reviewed revision is released.
+
+
+### October 30 — owner confirms review
+
+- The owner responded “审核过了” to the request to review the immunity revision. Reviewer identity, detailed review scope and findings were not supplied; do not invent them or claim professional credentials. The owner authorized publication of the local correction.
+- Preserve this confirmation and record deployment and online evidence separately. The prior entry describes the status before this confirmation.

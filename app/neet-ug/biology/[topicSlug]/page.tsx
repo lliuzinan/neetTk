@@ -235,11 +235,6 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     alt: "Simplified nephron showing filtration, selective reabsorption, secretion, and urine flow directions",
     caption: "An original nephron direction map. The key is not the shape alone: name the two spaces and follow each transport arrow.",
   },
-  "immunity-pathogens-vaccines": {
-    src: "/images/biology/immunity-barrier-memory-v1.png",
-    alt: "Progression from physical barriers through innate and acquired immunity to vaccination-associated memory cells",
-    caption: "An original overview of the learning sequence from barriers to antigen-specific responses and immunological memory. It is a revision map, not a clinical treatment guide.",
-  },
   "neuron-nerve-impulse-synapse": {
     src: "/images/biology/neuron-signal-direction-v1.png",
     alt: "Simplified direction of nerve impulse from dendrite through axon and synapse to the next cell",
@@ -367,7 +362,7 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     heading: "Immunity: identify the kind of protection first",
     intro: "Before matching a cell or molecule to a statement, decide whether the prompt is about a barrier, a rapid broad response, or an antigen-specific response with memory.",
     points: [
-      "Physical barriers and innate responses are available without a previous encounter with one particular antigen.",
+      "Physical barriers such as skin and mucus are part of innate defence and are available without a previous encounter with one particular antigen.",
       "Acquired immunity is antigen-specific and can form immunological memory.",
       "Vaccination supports active acquired immunity because the body develops its own response after antigenic stimulation.",
       "Ready-made antibodies give passive immunity: the protection can be immediate, but the receiver does not build the same long-term memory from it.",

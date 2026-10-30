@@ -36,7 +36,7 @@ test("replaces legacy generic checkpoints with topic-specific reasoning and keep
     const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
     assert.doesNotMatch(html, /Before leaving this page|Exam-style checkpoints/);
     const article = jsonLdItems(html).find(item => item["@type"] === "Article");
-    assert.equal(article.dateModified, slug === "excretion-and-kidney-function" ? "2026-10-20" : "2026-09-30");
+    assert.equal(article.dateModified, slug === "excretion-and-kidney-function" ? "2026-10-20" : slug === "immunity-pathogens-vaccines" ? "2026-10-30" : "2026-09-30");
     assert.ok(article.datePublished < article.dateModified);
     assert.match(html, /Related revision guides/);
   }
@@ -269,7 +269,9 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
   assert.match(respirationHtml, /human-respiration-gas-route-v1\.png/);
   assert.match(excretionHtml, /excretion-nephron-arrows-v1\.png/);
-  assert.match(immunityHtml, /immunity-barrier-memory-v1\.png/);
+  assert.doesNotMatch(immunityHtml, /immunity-barrier-memory-v1\.png/);
+  assert.match(immunityHtml, /components of innate defence/);
+  assert.doesNotMatch(immunityHtml, /Place each NCERT term in one column/);
   assert.match(neuronHtml, /neuron-signal-direction-v1\.png/);
   assert.match(dnaHtml, /dna-rna-information-flow-v1\.png/);
   assert.match(cellHtml, /cell-organelles-protein-route-v1\.png/);

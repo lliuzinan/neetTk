@@ -1581,8 +1581,8 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Immunity: start with the body's lines of defence",
       paragraphs: [
-        "For NEET revision, arrange immunity from broad to specific. Physical barriers such as skin and mucous membranes form the first line. Innate responses act quickly and do not depend on a previous encounter with one particular antigen. Acquired immunity is antigen-specific and develops memory.",
-        "This sequence helps with close options. A response can be rapid without being specific, and it can be specific without being the first response to an infection. Identify whether the question is asking about a barrier, an innate cell-based response, or an acquired immune response.",
+        "Skin and mucus-coated respiratory surfaces help restrict entry and are components of innate defence. Other innate mechanisms include cells and soluble factors that act without prior exposure to a particular antigen. Acquired immunity involves antigen-specific responses and can form immunological memory. These systems interact rather than operating as isolated stages in a fixed order.",
+        "For each example, identify the mechanism before assigning a label. A barrier can be part of innate immunity, while prevention describes a purpose rather than a separate immune system.",
       ],
       bullets: [
         "Innate immunity: present from birth and broadly protective.",
@@ -1620,7 +1620,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "A 15-minute revision method",
       paragraphs: [
-        "Make four columns headed barrier, innate response, acquired response and prevention. Place each NCERT term in one column, then add one example and one common confusion. Finish by explaining active and passive immunity aloud without looking at notes.",
+        "Draw two branches for innate and acquired immunity. Under innate, place skin, mucus and an innate immune cell. Under acquired immunity, distinguish the body's own active response from the receipt of ready-made antibodies. Add vaccination as a preventive measure that can produce active acquired immunity. Explain why skin can be described as both a barrier and an innate defence.",
         "When reviewing your recall notes, mark whether the gap came from confusing a cell type, a pathogen, a route of transmission, or a type of immunity. That classification makes the next revision session targeted rather than repetitive.",
       ],
     },
