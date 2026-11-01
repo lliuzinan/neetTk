@@ -3255,7 +3255,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   "human-respiration": [
     { label: "NCERT Class 11 Biology, Chapter 14: Breathing and Exchange of Gases", href: "https://ncert.nic.in/textbook/pdf/kebo114.pdf" },
     { label: "Khan Academy: The respiratory system", href: "https://www.khanacademy.org/science/health-and-medicine/respiratory-system" },
-    { label: "NCBI Bookshelf: Respiratory physiology overview", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "NHLBI: What Breathing Does for the Body — ventilation and gas exchange", href: "https://www.nhlbi.nih.gov/health/lungs/breathing-benefits" },
   ],
   "excretion-and-kidney-function": [
     { label: "NCERT Class 11 Biology, Chapter 16: Excretory Products and their Elimination", href: "https://ncert.nic.in/textbook/pdf/kebo116.pdf" },
@@ -3277,7 +3277,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   "neuron-nerve-impulse-synapse": [
     { label: "NCERT Class 11 Biology, Chapter 18: Neural Control and Coordination", href: "https://ncert.nic.in/textbook/pdf/kebo118.pdf" },
     { label: "Khan Academy: Nervous system physiology", href: "https://www.khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor" },
-    { label: "NCBI Bookshelf: Neuroscience and synapse references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "Neuroscience, 2nd edition (2001): Chemical Synapses", href: "https://www.ncbi.nlm.nih.gov/books/NBK11009/" },
   ],
   "dna-rna-replication-transcription-translation": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
@@ -3291,7 +3291,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "mutation-and-gene-expression": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
-    { label: "NCBI Bookshelf: Genes and disease references", href: "https://www.ncbi.nlm.nih.gov/books/" },
+    { label: "NHGRI Genetics Glossary: Mutation — DNA sequence changes", href: "https://www.genome.gov/genetics-glossary/Mutation" },
     { label: "Khan Academy: Gene regulation", href: "https://www.khanacademy.org/science/biology/gene-regulation" },
   ],
   "morphology-of-flowering-plants": [

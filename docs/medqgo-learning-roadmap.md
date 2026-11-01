@@ -188,3 +188,23 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Production build and 36 tests passed, including backup round-trip and invalid-file handling. Browser checks exercised refresh recovery, topic isolation, backup download/restore, malformed imports without data loss, reset/cancel, unavailable storage and no-JavaScript prompts. Widths 320/390/768/1440 showed no document overflow. Inspected mobile and print screenshots; found and fixed the analytics consent panel appearing in print.
 - This is a personal record tool, not an automated accuracy checker or mastery score. Notes stay in this browser; exported backups can move between devices. A standalone downloadable PDF and reviewed example remain W4 work, not claimed delivered here. W1 reference/guide assessment and all-library disposition remain next priorities.
 - Local implementation and verification only at this entry; deployment evidence follows separately.
+
+### October 30 — explanation-record release blocked by GitHub connectivity
+
+- Committed the record tool and the previously requested plan updates as `b8c74bc`. Build, 36 tests, scoped ESLint, keyboard/guide-link and responsive/print checks passed; the print consent-panel fix was rechecked against the rebuilt app.
+- Three bounded push attempts failed: HTTPS low-speed timeout, HTTP/1.1 connection failure, and a 35-second retry timeout. GitHub API still reports main at `e4acf92df06de315c3c26b01ac327b485f81e890`. No deployment or production record-tool verification is claimed.
+- Local preview remains at http://localhost:3125/neet-ug/biology/learn/inheritance#explanation-record . Next run first retries the existing commit and verifies deployment and production; do not duplicate implementation. Then resume W1 source and guide assessment.
+
+### October 31 — explanation-record release verified
+
+- Retried the existing `b8c74bc` commit without changing application code. Push succeeded and GitHub's Vercel status reports deployment completed. The October 30 connection blocker is resolved.
+- Production https://medqgo.com/neet-ug/biology/learn/inheritance returned HTTP 200. Verified writing a browser-only note, reload recovery, JSON backup download, clear confirmation and restore. Verified no document overflow at 320/390/768/1440px; print uses complete note text and hides the analytics consent panel. Advertising/measurement requests were blocked; no server form was submitted and disposable test browser data was discarded.
+- Existing build and 36-test evidence applies to the unchanged deployed commit. No new build or scientific review claimed today. Updated the learning-centre disposition row and W3 release status; underlying teaching content assessment remains outstanding.
+- Next: W1 three broad references and the five-guide assessment; W4 standalone PDF/reviewed example still pending. These release-evidence updates are local documentation, separate from the deployed commit.
+
+### November 1 — three catalogue references repaired locally
+
+- Replaced three NCBI catalogue links with specific NHLBI gas-exchange, Neuroscience chemical-synapse and NHGRI mutation references. Changed reference labels/destinations only; no teaching prose or reviewer claims changed. Scope and source-access limits documented in `docs/audits/2026-11-01-reference-repair.md`.
+- Build and 36 tests passed. All three local guide routes returned 200, correct new destinations and no old catalogue link; 320/390/1440px had no overflow. NCBI direct reader access challenged; official indexed chapter content was used, not misreported as a full chapter read.
+- Updated the three disposition rows without marking full assessment complete. Noted separate neuron/mutation wording issues for future review. Updated existing automation to current work packages and remove completed attribution/immunity/tool tasks from its mandatory first steps; preserved schedule.
+- Next: five-guide inheritance assessment and bounded teaching-review packet. Deployment evidence follows; this entry does not claim publication.
