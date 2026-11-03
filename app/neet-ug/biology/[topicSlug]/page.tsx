@@ -584,6 +584,13 @@ export default async function TopicPage({ params }: Props) {
             ))}
           </ul>
         </section>
+        {learningSteps.filter(step => step.slug === topic.slug).map(step => (
+          <section className="learningSection" key={step.id} aria-label="Record your explanation">
+            <h2>Keep your explanation for your next review</h2>
+            <p>Write what you concluded, the evidence you used and what you still need to check. Your notes stay in this browser; you can download a backup.</p>
+            <Link className="secondaryButton" href={`${learningPath}?recordTopic=${step.id}#explanation-record`}>Write or revisit this topic’s explanation →</Link>
+          </section>
+        ))}
         {relatedTopics.length > 0 && (
           <section id="guide-related">
             <h2>Related revision guides</h2>

@@ -14,6 +14,10 @@ export function ExplanationRecords() {
   const [clear, setClear] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
   useEffect(() => {
+    const requestedTopic = new URLSearchParams(window.location.search).get("recordTopic");
+    // URL selection connects a guide directly to its corresponding record after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (learningSteps.some(step => step.id === requestedTopic)) setTopic(requestedTopic!);
     // Restore browser-only state after hydration so server-rendered prompts remain available.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     try { const raw = localStorage.getItem(recordKey); if (raw) setBook(parseRecordBook(raw)); setStatus(raw ? "Saved records restored from this browser." : "Ready for your first explanation."); }

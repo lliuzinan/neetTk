@@ -208,3 +208,23 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Build and 36 tests passed. All three local guide routes returned 200, correct new destinations and no old catalogue link; 320/390/1440px had no overflow. NCBI direct reader access challenged; official indexed chapter content was used, not misreported as a full chapter read.
 - Updated the three disposition rows without marking full assessment complete. Noted separate neuron/mutation wording issues for future review. Updated existing automation to current work packages and remove completed attribution/immunity/tool tasks from its mandatory first steps; preserved schedule.
 - Next: five-guide inheritance assessment and bounded teaching-review packet. Deployment evidence follows; this entry does not claim publication.
+
+### November 1 — reference repair released and verified
+
+- Commit `0210e06` pushed; Vercel reports deployment completed. Production human-respiration, neuron-nerve-impulse-synapse and mutation-and-gene-expression each returned HTTP 200 with the specific reference and without the old catalogue link; 320/390/1440px checks passed. Advertising/measurement requests were blocked.
+- This closes the three generic catalogue-link defects, not the entire source or content review. The NCBI chapter's reader-challenge limitation remains recorded. Next: five-guide inheritance assessment and bounded content-review packet; new teaching changes require actual review.
+
+### November 2 — five-guide editorial disposition and review-ready patch
+
+- Assessed the five core guides at prose/table/reference/editorial-note level, with focused arithmetic checks and nearest-guide comparisons. Four KEEP dispositions and one DEEPEN (Mendelian foundation); these are not full scientific/human approvals. Updated the five CSV rows with distinct reader tasks, reasons and unresolved checks.
+- Delivered `docs/audits/2026-11-02-inheritance-editorial-assessment.md` and exact English patch preview `docs/drafts/2026-11-02-mendelian-clarification.md`. Patch clarifies model assumptions and phenotype dominance without adding questions or duplicating neighbouring cases.
+- OpenStax 12.3 opened; NCERT chapter retrieval timed out. Current textbook section/version and real review remain outstanding. Images and interactive case components are not certified by this prose assessment.
+- No application code modified, no build/viewport rerun needed for these documents, no commit/push/deployment today. Existing online version remains unchanged. Owner or actual biology reviewer needs to check the specific draft and record scope/findings; earlier immunity approval does not extend to it.
+- While awaiting review, proceed with W4 original blank PDF and equivalent HTML. Do not repeat this assessment or use the waiting period to generate articles.
+
+### November 3 — guide-to-record navigation
+
+- Implemented a bounded non-teaching interface improvement from the November 2 retention assessment: each of the five core inheritance guides now links directly to its own explanation topic. The centre places the record form after the existing route and checks, retaining the direct hero shortcut for returning learners.
+- Validated requested topic IDs; invalid IDs fall back to the default without deleting records. Existing storage schema/backups unchanged. No teaching draft integrated and no new human-review claim.
+- Production build and 36 tests passed. Browser checks exercised all five actual guide links, selected topic, saved notes across reload, invalid-topic fallback, existing records retained, route-before-form ordering and 320/390/1440px overflow. Publication evidence recorded separately.
+- Remaining: homepage continuation card, review-date/summary workflow, W4 blank PDF/HTML, and actual review of the November 2 teaching draft. This is a navigation improvement, not demonstrated retention uplift.
