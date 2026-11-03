@@ -228,3 +228,15 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Validated requested topic IDs; invalid IDs fall back to the default without deleting records. Existing storage schema/backups unchanged. No teaching draft integrated and no new human-review claim.
 - Production build and 36 tests passed. Browser checks exercised all five actual guide links, selected topic, saved notes across reload, invalid-topic fallback, existing records retained, route-before-form ordering and 320/390/1440px overflow. Publication evidence recorded separately.
 - Remaining: homepage continuation card, review-date/summary workflow, W4 blank PDF/HTML, and actual review of the November 2 teaching draft. This is a navigation improvement, not demonstrated retention uplift.
+
+### November 3 — navigation release verified
+
+- Commit `3bb31a5` pushed; Vercel status success. Repeated all five guide-to-record flows on production: selected topic, write/reload recovery, invalid-topic fallback and previously saved records passed. Route precedes form; no overflow at 320/390/1440px. Advertising/measurement requests blocked; notes were confined to a disposable local browser context, not submitted to a server.
+- Live entry example: https://medqgo.com/neet-ug/biology/learn/inheritance?recordTopic=testcross#explanation-record . This log entry is local evidence after the deployed commit. Teaching review and remaining retention/PDF work remain open.
+
+### November 3 — returning-learner entry, local implementation
+
+- Owner explicitly requested the suggested retention improvements. Added a shared saved-topic section to homepage and inheritance centre: new visitors get one starting guide; returning visitors see nonempty saved topics, a short explanation excerpt and their own free-text review goal, with direct record/guide links.
+- Reads the existing validated backup schema; no invented timestamps, scheduled reminders, mastery scores or cloud sync. Same-tab save/clear/import notifications and cross-tab storage events refresh the list. Invalid records are not overwritten by this read-only summary.
+- Build and 36 tests passed; scoped lint has no errors (one pre-existing/redundant effect-suppression warning). Browser tests passed empty state, immediate summary update, homepage persistence, exact-topic continuation, clear synchronization, corrupt-data preservation, and 320/390/1440px on home/centre. Desktop screenshot inspected.
+- This is a return-entry improvement, not evidence of increased retention. Review-date scheduling, standalone PDF and human teaching review remain outstanding. Release evidence follows separately.

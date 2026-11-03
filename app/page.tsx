@@ -1,3 +1,4 @@
+import { ContinueLearning } from "@/components/ContinueLearning";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,6 +45,7 @@ export default async function Home() {
         <Link href="/neet-biology-pdf#free-sample-title" prefetch={false}><strong>Print the free recall sheet <span aria-hidden="true">→</span></strong><span>DNA, RNA and protein: a 12-minute exercise</span></Link>
       </div>
     </header>
+    <div className="studyWidth"><ContinueLearning /></div>
     <section className="studyRouteBand" aria-labelledby="route-heading">
       <div className="studyWidth studyRoute"><div>
         <p className="studyEyebrow">Chapter route / Genetics</p><h2 id="route-heading">Inheritance: from alleles to evidence</h2>

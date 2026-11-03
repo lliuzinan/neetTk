@@ -1,3 +1,4 @@
+import { ContinueLearning } from "@/components/ContinueLearning";
 import { ExplanationRecords } from "@/components/ExplanationRecords";
 import { InheritanceCaseLibrary } from "@/components/InheritanceCaseLibrary";
 import type { Metadata } from "next";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {title:"Inheritance Learning Path: Read, Check
 export default function InheritancePage(){return <main className="page learningPage">
  <Breadcrumbs items={[{href:"/",label:"Home"},{href:"/neet-ug/biology",label:"Biology"},{href:learningPath,label:"Inheritance learning path"}]}/>
  <header className="learningHero"><p className="eyebrow">GENETICS / STUDY CENTRE</p><h1>Inheritance: connect explanations to evidence.</h1><p>Move from allele segregation to testcrosses and linked genes. Find the step that needs another look, then return to the explanation that helps.</p><div className="learningBadges"><span>5 connected guides</span><span>3 worked investigations</span><span>No sign-up</span></div><div className="actions"><a className="primaryButton" href="#route">Start with the learning route</a><a className="secondaryButton" href="#case-library">Explore worked investigations</a><a className="secondaryButton" href="#explanation-record">Write or revisit my explanation</a></div></header>
+ <ContinueLearning/>
  <section className="learningIntro"><h2>Before you begin</h2><p><Link href="/neet-ug/biology/testcross-and-unknown-genotypes#case-title">Investigate Plant U: open a staged offspring record and explain when the evidence changes.</Link></p><p>You should recognise a gene, an allele and a homologous chromosome pair. If these are unfamiliar, begin with <Link href="/neet-ug/biology/chromosomal-basis-of-inheritance">the chromosome basis of inheritance</Link>. Read NCERT Class 12 Biology, Chapter 4 alongside this module.</p><p>By the end, aim to justify a cross from its gametes, separate expression from segregation, and explain which conclusions an offspring record permits. These checks cover selected concepts, not the entire chapter.</p></section>
  <InheritanceCaseLibrary/>
  <InheritanceLearning/>

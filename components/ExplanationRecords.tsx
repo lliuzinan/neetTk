@@ -26,7 +26,7 @@ export function ExplanationRecords() {
   }, []);
   function save(next: RecordBook) {
     setBook(next);
-    try { localStorage.setItem(recordKey, JSON.stringify(next)); setWarning(""); setStatus("Saved in this browser."); }
+    try { localStorage.setItem(recordKey, JSON.stringify(next)); setWarning(""); setStatus("Saved in this browser."); window.dispatchEvent(new Event("medqgo-records-changed")); }
     catch { setWarning("Browser storage is unavailable or full. Your changes are only in this tab. Download a backup before leaving."); setStatus("Not saved to this browser."); }
   }
   const current = book.records[topic] ?? emptyRecord();
