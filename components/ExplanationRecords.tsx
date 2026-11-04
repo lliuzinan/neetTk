@@ -42,6 +42,7 @@ export function ExplanationRecords() {
     <h2 id="record-heading">Turn your reading into a record you can return to</h2>
     <p>Choose a guide, write your reasoning, then return later to explain it again. These notes are yours; they are not graded or checked for scientific accuracy.</p>
     <p className="recordPrivacy">Autosaved only in this browser, with no account or cloud sync. Clearing browser data removes your records. Download a backup to keep a copy or move to another device. Avoid personal information.</p>
+    <p className="recordControls"><a href="/downloads/medqgo-explanation-record.pdf" download>Download the blank record sheet (PDF, 2 pages)</a> — print and write by hand. To print your saved text, use the print button below.</p>
     <noscript><p>Saving and restoring need JavaScript. You can still use the prompts below on paper or print this page as a blank worksheet.</p></noscript>
     <div className="recordControls"><label htmlFor="record-topic">Choose your guide</label><select id="record-topic" value={topic} disabled={!ready} onChange={e => { setTopic(e.target.value); setClear(false); }}>{learningSteps.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}</select><Link href={`/neet-ug/biology/${step.slug}`}>Read this guide →</Link></div>
     <h3 className="recordPrintTitle">{step.title}</h3>
