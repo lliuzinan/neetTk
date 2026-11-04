@@ -1700,3 +1700,7 @@ h3 {
 .continueCards a { display:block; padding:8px 0; color:#145436; text-decoration:underline; text-underline-offset:3px; }
 .continuePrivacy { font-size:14px; color:#45513f; }
 .continueLearning :focus-visible { outline:3px solid #aa7800; outline-offset:3px; }
+
+.reviewPlanner { padding:18px; margin:20px 0; border:1px solid #cbd9c9; border-radius:12px; background:white; }
+.reviewPlanner input[type=date] { display:block; max-width:100%; box-sizing:border-box; padding:10px; margin:8px 0 16px; font:inherit; color:#18352b; border:1px solid #73836b; border-radius:6px; }
+.reviewDue { padding:12px 16px; border-left:4px solid #96650d; background:#fff4d9; }

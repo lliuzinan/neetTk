@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { learningSteps } from "@/lib/inheritanceLearning";
-import { emptyBook, emptyRecord, parseRecordBook, recordFields, recordKey, type RecordBook, type RecordField } from "@/lib/explanationRecords";
+import { emptyBook, emptyRecord, localCalendarDate, isCalendarDate, parseRecordBook, recordFields, recordKey, type RecordBook, type RecordField } from "@/lib/explanationRecords";
 
 export function ExplanationRecords() {
   const [book, setBook] = useState<RecordBook>(emptyBook);
@@ -45,6 +45,24 @@ export function ExplanationRecords() {
     <p className="recordControls"><a href="/downloads/medqgo-explanation-record.pdf" download>Download the blank record sheet (PDF, 2 pages)</a> — print and write by hand. To print your saved text, use the print button below.</p>
     <noscript><p>Saving and restoring need JavaScript. You can still use the prompts below on paper or print this page as a blank worksheet.</p></noscript>
     <div className="recordControls"><label htmlFor="record-topic">Choose your guide</label><select id="record-topic" value={topic} disabled={!ready} onChange={e => { setTopic(e.target.value); setClear(false); }}>{learningSteps.map(s => <option key={s.id} value={s.id}>{s.title}</option>)}</select><Link href={`/neet-ug/biology/${step.slug}`}>Read this guide →</Link></div>
+    <div className="recordControls reviewPlanner">
+      <h3>Plan your next review</h3>
+      <p>Choose a date using your device’s calendar. Due topics appear on this site when you return; no email or browser notifications are sent.</p>
+      <label htmlFor="record-review-date">Next review date</label>
+      <input id="record-review-date" type="date" value={current.reviewDate || ""} disabled={!ready} onChange={e => {
+        const value = e.target.value;
+        if (value && !isCalendarDate(value)) return;
+        const record = { ...current }; if (value) record.reviewDate = value; else delete record.reviewDate;
+        save({ version: 1, records: { ...book.records, [topic]: record } });
+      }} />
+      {current.lastReviewed && <p>Last marked reviewed: {current.lastReviewed}</p>}
+      <button type="button" disabled={!ready} onClick={() => {
+        const record = { ...current, lastReviewed: localCalendarDate() }; delete record.reviewDate;
+        save({ version: 1, records: { ...book.records, [topic]: record } });
+        setStatus("Review marked for today. The previous due date was cleared; choose a new date when ready. This is your own record, not an accuracy check.");
+      }}>Mark reviewed today</button>
+      <p>Marking reviewed clears the due date and keeps your notes. It does not establish mastery.</p>
+    </div>
     <h3 className="recordPrintTitle">{step.title}</h3>
     <div className="recordFields">{recordFields.map(f => <div key={f.id}><label htmlFor={`record-${f.id}`}>{f.label}</label><p id={`hint-${f.id}`}>{f.hint}</p><textarea id={`record-${f.id}`} aria-describedby={`hint-${f.id}`} maxLength={8000} rows={4} value={current[f.id]} disabled={!ready} onChange={e => edit(f.id, e.target.value)} /><div className="recordPrintValue">{current[f.id] || "\u00a0\n\u00a0\n\u00a0"}</div></div>)}</div>
     <div className="recordControls">

@@ -9,3 +9,10 @@ test('backup round trip preserves multiline Unicode notes across topics',()=>{
 test('invalid imports fail instead of silently discarding existing records',()=>{
  for(const raw of ['{bad','null','{"version":2,"records":{}}','{"version":1,"records":[]}',JSON.stringify({version:1,records:{unknown:emptyRecord()}}),JSON.stringify({version:1,records:{segregation:{claim:'partial'}}}),JSON.stringify({version:1,records:{segregation:{...emptyRecord(),claim:'a'.repeat(8001)}}}),' '.repeat(500001)]) assert.throws(()=>parseRecordBook(raw));
 });
+
+test('optional review dates survive backups while legacy records remain valid',()=>{
+ const book={version:1,records:{testcross:{...emptyRecord(),reviewDate:'2026-11-04',lastReviewed:'2026-11-01'}}};
+ assert.deepEqual(parseRecordBook(JSON.stringify(book)),book);
+ assert.deepEqual(parseRecordBook(JSON.stringify({version:1,records:{testcross:emptyRecord()}})).records.testcross,emptyRecord());
+ for(const reviewDate of ['2026-02-30','2026-13-01','tomorrow',42,'']) assert.throws(()=>parseRecordBook(JSON.stringify({version:1,records:{testcross:{...emptyRecord(),reviewDate}}})));
+});

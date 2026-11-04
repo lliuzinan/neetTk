@@ -9,7 +9,7 @@ export const recordFields = [
   { id: "next", label: "Next review", hint: "Choose what to explain again and when to revisit it." },
 ] as const;
 export type RecordField = typeof recordFields[number]["id"];
-export type ExplanationRecord = Record<RecordField, string>;
+export type ExplanationRecord = Record<RecordField, string> & { reviewDate?: string; lastReviewed?: string };
 export type RecordBook = { version: 1; records: Record<string, ExplanationRecord> };
 export const recordTopics = ["segregation", "testcross", "dominance", "probability", "linkage"];
 export const emptyRecord = (): ExplanationRecord => Object.fromEntries(recordFields.map(f => [f.id, ""])) as ExplanationRecord;
@@ -27,7 +27,27 @@ export function parseRecordBook(raw: string): RecordBook {
       if (typeof text !== "string" || text.length > 8000) throw new Error("The backup contains missing or oversized fields.");
       record[field.id] = text;
     }
+    for (const key of ["reviewDate", "lastReviewed"] as const) {
+      const date = (item as Record<string, unknown>)[key];
+      if (date !== undefined) {
+        if (typeof date !== "string" || !isCalendarDate(date)) throw new Error("The backup contains an invalid review date.");
+        record[key] = date;
+      }
+    }
     records[topic] = record;
   }
   return { version: 1, records };
+}
+
+export function isCalendarDate(value: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(value + "T12:00:00Z");
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+export function localCalendarDate(now = new Date()): string {
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+export function reviewStatus(record: ExplanationRecord, today: string): string {
+  if (!record.reviewDate) return "No review date set";
+  return record.reviewDate < today ? "Overdue" : record.reviewDate === today ? "Due today" : "Scheduled";
 }
