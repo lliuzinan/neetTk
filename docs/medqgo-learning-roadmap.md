@@ -288,3 +288,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Prepared the exact short-page → biotechnology hub mapping, remaining old-link inventory and review/redirect gate. Prepared bounded mutation-scope replacement in `docs/drafts/2026-11-09-mutation-scope-correction.md`, supported by OpenStax, for actual subject review. The live teaching copy and the old URL are unchanged.
 - Adjusted `lib/studyLinks.ts` to route readers from the process hub to distinct PCR-counting and gel-evidence guides, and from tool/application overviews to the stronger process hub. Build and 37 tests passed. Local HTTP checks of five affected destinations returned 200. Chrome 390px viewport showed document width 375px and the two new hub links; screenshot inspected. This paragraph records local checks only; commit/deploy evidence must be added separately.
 - Remaining work: obtain actual reviewer acceptance and current NCERT edition/figure checks before substantive teaching rewrites or a redirect; continue the 60 pending historical rows. Do not present this pass as completed site-wide remediation or AdSense readiness.
+
+### November 9 — concentrated navigation release
+
+- Commit `8ae7821` pushed; Vercel status succeeded. Production HTTP 200 and expected changed links were confirmed on the biotechnology process hub, molecular-tools overview and biotechnology-applications guide. The former now offers direct PCR-counting and gel-evidence destinations; the latter two link to the process hub. The old recombinant-DNA page remains public and unredirected.
+- Only navigation links were released. The mutation draft and merge proposal are repository review material, not live teaching changes. No AdSense resubmission or account changes were made.
