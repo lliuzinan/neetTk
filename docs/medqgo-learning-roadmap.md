@@ -276,3 +276,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Assessed the first overlapping pair in `docs/audits/2026-11-09-biotechnology-disposition.md`: biotechnology-principles-and-processes is a DEEPEN hub, recombinant-dna-technology a MERGE_CANDIDATE. Updated both CSV rows with learner tasks, nearest comparison, proposed destination and checks. No content merge, redirect or deletion performed; that requires source, visual, inbound-link and actual subject review.
 - Production build, 37 tests and local browser route/3 viewport checks passed. This entry records local verification; release evidence follows.
 - Next: review and execute the biotechnology merge if accepted; continue independent per-page dispositions and the November 2 Mendelian review packet. Neither plan nor one typo fix closes the low-value-content issue.
+
+### November 9 — focused fix released
+
+- Commit `23d9d58` pushed; Vercel success. Production neuron guide returned HTTP 200 with corrected “write the reflex-arc pathway” wording and without the old “four steps” mismatch. Advertising/measurement calls blocked during the check.
+- Biotechnology merge remains a reviewable candidate only. The site-wide AdSense risk is not closed by this release.
