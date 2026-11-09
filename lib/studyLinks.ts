@@ -327,13 +327,11 @@ export const studyLinks: Record<string, StudyLink[]> = {
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [
-    { slug: "autogamy-geitonogamy-and-xenogamy", reason: "Classify pollen transfer by its source flower and source plant before considering fertilisation." },
+    { slug: "morphology-of-flowering-plants", reason: "Locate the anther, stigma, ovary and ovule before following the reproductive route." },
     { slug: "pollen-development-and-male-gametophyte", reason: "Trace the pollen cells before tube growth and distinguish the gametophyte from its two male gametes." },
-    { slug: "special-modes-of-reproduction-in-flowering-plants", reason: "Continue from the ordinary post-fertilisation route to apomixis, parthenocarpy and polyembryony." },
+    { slug: "autogamy-geitonogamy-and-xenogamy", reason: "Classify pollen transfer by its source flower and source plant before considering fertilisation." },
     { slug: "seed-development-and-ploidy", reason: "Trace the embryo, endosperm and maternal tissues separately and calculate their chromosome sets." },
-    { slug: "morphology-of-flowering-plants", reason: "Review floral whorls, ovary position, fruit and seed landmarks before tracing reproductive events." },
-    { slug: "human-reproduction", reason: "Compare gamete formation and fertilisation while keeping double fertilisation specific to flowering plants." },
-    { slug: "mitosis-and-meiosis", reason: "Track chromosome reduction and subsequent mitotic divisions." },
+    { slug: "special-modes-of-reproduction-in-flowering-plants", reason: "Continue from the usual route to apomixis, parthenocarpy and polyembryony." },
   ],
   "morphology-of-flowering-plants": [
     { slug: "five-plant-families-floral-identification", reason: "Apply floral-part and fruit terminology to the five families listed in the NEET-UG 2026 syllabus." },
@@ -377,9 +375,9 @@ export const studyLinks: Record<string, StudyLink[]> = {
   ],
   "ecosystem-energy-flow-and-ecological-pyramids": [
     { slug: "primary-productivity-and-biomass", reason: "Audit productivity units and distinguish net production from a change in standing biomass." },
+    { slug: "decomposition-and-mineralisation", reason: "Follow how organic matter is broken down and nutrients return without treating energy as a recycled material." },
     { slug: "biodiversity-and-conservation", reason: "Ask which species interactions and habitats conservation measures can retain." },
     { slug: "photosynthesis-in-higher-plants", reason: "Start with how producers capture light energy before tracing transfers through trophic levels." },
-    { slug: "plant-respiration", reason: "Compare energy captured by producers with the cellular release of stored chemical energy." },
     { slug: "organisms-and-populations", reason: "Use habitat and population ideas to place trophic roles in an ecological setting." },
   ],
 };

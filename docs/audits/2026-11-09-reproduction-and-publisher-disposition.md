@@ -1,0 +1,27 @@
+# Reproduction cluster and publisher pages: disposition pass
+
+Prepared November 9, 2026 from the checked-in guide sections, tables, source URLs, illustration declarations, study links and live publisher pages. This is a learner-task and trust-page assessment. It does not certify every biological or medical statement, the current NCERT edition, illustration accuracy or actual human teaching review. No teaching copy was changed in this pass.
+
+## Reproduction guides
+
+| Guide | Learner output and distinct evidence in the current page | Nearest comparison and disposition | Next check |
+| --- | --- | --- | --- |
+| `sexual-reproduction-in-flowering-plants` | Follow anther → stigma → pollen tube → embryo sac, distinguish the two fusions and locate seed/fruit formation; original route figure and location-to-outcome table. | **DEEPEN** as the short route hub. Pollen, seed and special-mode pages each perform a more specific inference. Keep a concise map rather than repeat their worked examples. | Review current NCERT Chapter 1, double-fertilisation labels and the figure before any substantive rewrite; make the next-step links task-led. |
+| `pollen-development-and-male-gametophyte` | Count mother cells, microspores, grains, cells and nuclei across stages; invented 15 → 60 cohort and two-/three-celled grain comparison. | **KEEP** against the route hub. Developmental accounting is independent of pollen transfer or fertilisation. | Verify 2n = 20 cohort assumptions, two-/three-cell figure and NCERT section. |
+| `autogamy-geitonogamy-and-xenogamy` | Classify transfer by flower and plant identity; invented 12/18/10 log and reassigned-flower check. | **KEEP** against the route hub. Donor identity and route classification are distinct from fusion. | Verify the monoecious/dioecious boundary, 30/45/25% arithmetic, diagram and source version. |
+| `seed-development-and-ploidy` | Assign embryo, endosperm and maternal tissue ancestry; invented 2n = 18 audit with 18/27/18/18 outputs. | **KEEP** against the route hub. Tissue origin and ploidy are not the same learning task as naming two fertilisations. | Recheck chromosome counts, perisperm and seed-coat boundaries, figure and NCERT version. |
+| `special-modes-of-reproduction-in-flowering-plants` | Separate apomictic seed, parthenocarpic fruit and multiple embryos with three independent descriptions. | **KEEP** against ordinary double fertilisation and seed ploidy. Exceptions change different parts of the usual route. | Verify syllabus version, citrus/nucellar example, comparison figure and exact NCERT/Exemplar source scope. Only source links are used; no official material is reproduced. |
+| `human-reproduction` | Place gamete formation, fertilisation, cleavage, implantation and placenta in a location-and-stage route. | **KEEP** against reproductive health: this page explains the ordinary biological sequence; the other compares interventions and prevention. It is not a continuation of the flowering-plant hub for most readers. | Review cycle/hormone claims, clinical wording, figure and edition with a responsible subject reviewer. |
+| `reproductive-health` | Separate pregnancy prevention from infection prevention and decode assisted-reproduction terms by material and transfer site. | **DEEPEN** as a syllabus-level comparison, not personal medical advice. It relies on the human-reproduction sequence but asks a distinct purpose/mechanism question. | Prioritise current NCERT/WHO accuracy, medical boundary, time-sensitive claims, figure and actual human review before any rewrite. |
+
+Every listed guide currently has a topic-specific comparison table, illustration declaration and source links in code; these presences are not factual or rights certification. There is no defensible merge among these seven on learner-task grounds alone. The short flowering-plant hub is worth tightening, not deleting. The next independent cluster is plant structure/classification; the current pass leaves those pages pending.
+
+## Publisher and review information
+
+The live `/authors/dongfeng` route returns a 308 to `/team` (followed destination HTTP 200). It is a legacy route, not a current personal-author page. Live `/team` and `/editorial-policy` both return HTTP 200, identify MedQGo as publisher and explicitly avoid claiming that every guide has independent human review. The policy discloses that digital tools including AI may assist, and asks readers to submit errors through Contact. No unsupported teacher title was present in the visible text sampled here.
+
+Disposition: **REDIRECTED_LEGACY** for the old author URL, **KEEP** for team and editorial policy. This resolves the stale P0 author-role flag for these specific public pages; it does not establish that every article was human-reviewed or that all page-level structured data has been re-audited today. Actual teaching review remains a separate field in the content CSV.
+
+## Navigational change and publication gate
+
+The broad flowering-plant guide currently lists seven related guides, including human reproduction and general mitosis/meiosis. Its immediate study path is more coherent with five topic-near links: floral morphology as prerequisite, pollen development and transfer identity, then seed ancestry and special outcomes. This is a link-order/pruning change only. Check that all five destinations are live, run build/tests and inspect mobile before release. A rewrite of the biological route or figures still requires the actual subject-review gate.

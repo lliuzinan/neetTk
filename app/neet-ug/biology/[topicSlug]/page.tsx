@@ -7,7 +7,6 @@ import { noteExercises } from "@/lib/noteExercises";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { EditorialByline } from "@/components/EditorialByline";
 import { PdfCta } from "@/components/PdfCta";
 import { absoluteUrl, findTopic, getSeoNotes, getTopics, siteConfig } from "@/lib/content";
 import { AUTHORED_NOTE_SLUGS, getNoteComparisonTable, getNoteContent, getNoteEditorialBlock, getNoteReferences } from "@/lib/noteContent";
@@ -496,7 +495,7 @@ export default async function TopicPage({ params }: Props) {
         <h1>{topic.name} revision guide</h1>
         <p>{note.description}</p>
         <p className="updatedStamp">Published: {dates.publishedDisplay} | Last updated: {dates.modifiedDisplay}</p>
-        <EditorialByline lastUpdated={dates.modifiedDisplay} />
+        <p className="editorialByline">Published by MedQGo</p>
       </header>
       <details className="guideContents">
         <summary>On this page — jump to a section</summary>
