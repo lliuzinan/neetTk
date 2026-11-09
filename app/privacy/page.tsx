@@ -11,11 +11,14 @@ export default function PrivacyPage() {
   return (
     <InfoPage
       eyebrow="Privacy"
-      lastUpdated="October 15, 2026"
+      lastUpdated="November 9, 2026"
       title="Privacy Policy"
       intro="This Privacy Policy explains how MedQGo collects and uses information when students browse NEET Biology revision pages or join the revision-workbook early access list."
       sections={[
-        { title: "Learning progress on your device", body: ["The inheritance module stores your latest exercise answers and reading marks in this browser. These records are not sent to our server by the module and do not sync across devices. Clear them using Clear my progress in the module or by clearing browser data. Other site analytics and consent choices are described below."] },
+        { title: "Learning progress on your device", body: [
+          "The inheritance checks save your selected answers and reading marks in this browser. Clear my progress removes that check progress. The explanation-record tool separately saves the text you enter for each of its five topics, plus any next-review and last-reviewed dates, in this browser. Its Clear this explanation control removes only the selected topic; clearing browser data removes both kinds of saved learning data.",
+          "These learning tools do not send your saved answers or explanation records to our server and do not sync them across devices. Download backup creates a JSON file on your device; Restore backup reads a file you choose in your browser and replaces the saved explanation records only after you confirm. Keep exported files private and avoid entering personal information into learning notes. Other site analytics and consent choices are described below.",
+        ] },
         {
           title: "Information We Collect",
           body: [
