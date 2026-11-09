@@ -259,8 +259,8 @@ export const studyLinks: Record<string, StudyLink[]> = {
   ],
   "biotechnology-principles-and-processes": [
     { slug: "molecular-basis-of-inheritance", reason: "Review DNA structure and replication before tracing a recombinant construct." },
-    { slug: "molecular-tools-and-dna-analysis", reason: "Match PCR and gel electrophoresis to the individual analysis tasks they perform." },
-    { slug: "recombinant-dna-technology", reason: "Follow the concept route through a focused workflow and selection logic." },
+    { slug: "pcr-amplification-and-copy-number", reason: "Check the assumptions and units behind a PCR copy-number estimate." },
+    { slug: "gel-electrophoresis-and-dna-band-reading", reason: "Interpret what a separated band can and cannot show after the workflow." },
     { slug: "biotechnology-applications", reason: "Separate the engineering method from a particular application and its evaluation." },
   ],
 "enzymes-and-enzyme-action": [{"slug":"molecular-tools-and-dna-analysis","reason":"Apply catalytic specificity to enzymes used in DNA workflows."},{"slug":"plant-respiration","reason":"Place catalysed reactions within energy-releasing pathways."},{"slug":"digestion-and-absorption","reason":"Compare reaction conditions in a physiological setting."}],
@@ -317,13 +317,13 @@ export const studyLinks: Record<string, StudyLink[]> = {
   "molecular-tools-and-dna-analysis": [
     { slug: "gel-electrophoresis-and-dna-band-reading", reason: "Practise reading a gel ladder and distinguish band evidence from sequence identification." },
     { slug: "pcr-amplification-and-copy-number", reason: "Work through ideal amplification counts and separate copied amount from evidence of sequence identity." },
-    { slug: "recombinant-dna-technology", reason: "Place each tool in the sequence from DNA isolation to expression." },
+    { slug: "biotechnology-principles-and-processes", reason: "Place cutting, joining, copying and separation within the broader process and its checkpoints." },
     { slug: "biotechnology-applications", reason: "See how amplification and gene transfer support different applications." },
     { slug: "molecular-basis-of-inheritance", reason: "Review complementary strands and template copying before studying PCR." },
   ],
   "biotechnology-applications": [
     { slug: "microbes-in-human-welfare", reason: "Compare engineered applications with the use of microbial communities in food, wastewater and soil." },
-    { slug: "recombinant-dna-technology", reason: "Trace how a desired gene can be introduced into a host." },
+    { slug: "biotechnology-principles-and-processes", reason: "Trace the process from a desired DNA fragment through host selection and recovery." },
     { slug: "molecular-tools-and-dna-analysis", reason: "Separate DNA detection, amplification and joining tools." },
   ],
   "sexual-reproduction-in-flowering-plants": [

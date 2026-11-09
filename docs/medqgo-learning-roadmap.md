@@ -281,3 +281,10 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - Commit `23d9d58` pushed; Vercel success. Production neuron guide returned HTTP 200 with corrected “write the reflex-arc pathway” wording and without the old “four steps” mismatch. Advertising/measurement calls blocked during the check.
 - Biotechnology merge remains a reviewable candidate only. The site-wide AdSense risk is not closed by this release.
+
+### November 9 — concentrated content disposition, local result
+
+- Assessed nine more priority guide rows by learner task and nearest overlap in `docs/audits/2026-11-09-molecular-cluster-disposition.md`; CSV now records 9 KEEP, 7 DEEPEN, 1 MERGE_CANDIDATE and 60 PENDING_ASSESSMENT across 77 historical rows. This is code-level editorial disposition, not a whole-library scientific or rights review.
+- Prepared the exact short-page → biotechnology hub mapping, remaining old-link inventory and review/redirect gate. Prepared bounded mutation-scope replacement in `docs/drafts/2026-11-09-mutation-scope-correction.md`, supported by OpenStax, for actual subject review. The live teaching copy and the old URL are unchanged.
+- Adjusted `lib/studyLinks.ts` to route readers from the process hub to distinct PCR-counting and gel-evidence guides, and from tool/application overviews to the stronger process hub. Build and 37 tests passed. Local HTTP checks of five affected destinations returned 200. Chrome 390px viewport showed document width 375px and the two new hub links; screenshot inspected. This paragraph records local checks only; commit/deploy evidence must be added separately.
+- Remaining work: obtain actual reviewer acceptance and current NCERT edition/figure checks before substantive teaching rewrites or a redirect; continue the 60 pending historical rows. Do not present this pass as completed site-wide remediation or AdSense readiness.
