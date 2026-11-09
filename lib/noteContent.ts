@@ -1742,7 +1742,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "A short revision routine before practice",
       paragraphs: [
-        "Sketch a neuron and a synapse from memory, then add arrows showing information flow. On a second line, write only four steps for a reflex arc: receptor, sensory neuron, central connection, motor neuron and effector. Finally, explain why a myelinated axon is faster without using the word 'faster' as the explanation itself.",
+        "Sketch a neuron and a synapse from memory, then add arrows showing information flow. On a second line, write the reflex-arc pathway: receptor, sensory neuron, central connection, motor neuron and effector. Finally, explain why a myelinated axon is faster without using the word 'faster' as the explanation itself.",
         "When you miss a question, sort the error into one of three groups: direction of signal flow, ionic change at the membrane, or role of a structure. The pattern usually becomes obvious after a few questions and tells you exactly what to revise from NCERT.",
       ],
     },

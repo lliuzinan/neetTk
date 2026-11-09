@@ -264,3 +264,15 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Homepage/centre show overdue, due today, scheduled or no date, sorted by earliest date; date-only records also appear. Calendar follows the visitor's device, refreshes on focus and each minute. No external notifications or inferred mastery. Marking reviewed preserves notes, clears the old due date and records today's date; user can choose the next date.
 - Build and 37 tests passed, scoped lint for new summary/schema clean. Browser workflow passed overdue/today/future states, priority ordering, mark-reviewed behavior, reload, backup restore including dates, date-only records and 320/390/1440px overflow checks. Planner screenshot inspected.
 - Teaching-review gate remains unchanged. Further substantive work should return to unresolved content disposition and a reviewed worked explanation; this workflow does not establish real retention improvement. Publication evidence follows.
+
+### November 4 — review workflow live
+
+- Commit `bffa454` pushed, Vercel success. Production end-to-end checks passed overdue/today/future states, earliest-date ordering, mark-reviewed retaining notes and clearing due date, reload and JSON backup restoration, date-only records, and 320/390/1440px.
+- Tests used disposable browser storage and blocked advertising/measurement requests. No external reminders or server form submissions. Live entry https://medqgo.com/neet-ug/biology/learn/inheritance#explanation-record . Remaining content review is not represented as complete.
+
+### November 9 — focused content disposition and editorial fix
+
+- After the fresh read-only AdSense audit, corrected the neuron guide's internal count mismatch: the prose had said four steps while listing five pathway elements. No scientific mechanism or exercise answer was changed.
+- Assessed the first overlapping pair in `docs/audits/2026-11-09-biotechnology-disposition.md`: biotechnology-principles-and-processes is a DEEPEN hub, recombinant-dna-technology a MERGE_CANDIDATE. Updated both CSV rows with learner tasks, nearest comparison, proposed destination and checks. No content merge, redirect or deletion performed; that requires source, visual, inbound-link and actual subject review.
+- Production build, 37 tests and local browser route/3 viewport checks passed. This entry records local verification; release evidence follows.
+- Next: review and execute the biotechnology merge if accepted; continue independent per-page dispositions and the November 2 Mendelian review packet. Neither plan nor one typo fix closes the low-value-content issue.
