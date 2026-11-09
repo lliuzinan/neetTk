@@ -322,3 +322,10 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - Commit `a189ccc` pushed; Vercel status succeeded. Production `/neet-biology-pdf` returned 200 with the available-resource wording, correct single-suffix page title and working blank PDF link (200, application/pdf). Production guide CTA, sitemap, About and homepage footer showed the revised resource/publisher wording. The optional waitlist remains secondary to available free resources. No new workbook was represented as available.
 - The 77-row task disposition is complete as a classification record, but the 18 DEEPEN decisions, one merge candidate, all source/figure checks and actual human review remain open. This is not full AdSense readiness.
+
+### November 9 — biotechnology overlap follow-up, local result
+
+- Visually compared the two checked-in recombinant-DNA figures. The short guide's final selection plate also labels a colony “Target product,” which could conflate selection with recovery. The longer guide's process figure ends at host introduction. These are review findings, not a completed figure or science sign-off; the short guide remains public.
+- Attempted the official NCERT Chapter 9 PDF, but the request timed out or failed TLS; current edition/section remains unverified. Opened OpenStax Biology 2e 17.1 as a supplementary source without reusing its text or figures. Recorded the unresolved checks in the biotechnology audit and both disposition rows.
+- Removed the longer hub's body recommendation to the overlapping short page and pointed readers to its already-linked PCR and gel specialists. No teaching mechanism changed. Local production build and 37 tests passed. The hub and short guide returned HTTP 200; Chrome at 320, 390 and 1440px showed no document-width overflow on either. This is local evidence pending release.
+- Actual subject review of wording and both figures, current NCERT source verification, external inbound-link/search evidence and a preservation/redirect decision remain necessary before a merge or teaching rewrite. The 18 DEEPEN pages are still work items, not completed improvements.
