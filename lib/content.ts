@@ -31,7 +31,7 @@ export const siteConfig = {
   exam: "NEET-UG",
   subject: "Biology",
   description:
-    "Independent NEET-UG Biology revision notes, topic guides, and early access learning resources for Indian students.",
+    "Independent NEET-UG Biology guides, connected study routes, and free explanation records for Indian students.",
 };
 
 export function getTopic(slug: string) {

@@ -194,7 +194,7 @@ test("publishes only revision URLs in the sitemap", async () => {
     readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8"),
   ]);
   assert.match(sitemapHtml, /NEET Biology revision sitemap/);
-  assert.match(sitemapHtml, /Revision workbook early access/);
+  assert.match(sitemapHtml, /Free explanation record and recall sheet/);
   assert.match(sitemapHtml, /Human respiration/);
   assert.doesNotMatch(sitemapHtml, /All MCQ pages/);
   assert.doesNotMatch(sitemapXml, /\/q\//);
@@ -212,9 +212,11 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
 });
 
-test("renders the revision workbook with a free sample and optional early access", async () => {
+test("renders available free resources with an optional future-resource list", async () => {
   const pdfHtml = await readFile(new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url), "utf8");
-  assert.match(pdfHtml, /NEET Biology revision workbook/);
+  assert.match(pdfHtml, /Free Biology explanation record and recall sheet/);
+  assert.match(pdfHtml, /medqgo-explanation-record\.pdf/);
+  assert.match(pdfHtml, /available now without registration/);
   assert.match(pdfHtml, /A 12-minute gene-expression recall sheet/);
   assert.match(pdfHtml, /Transcription/);
   assert.match(pdfHtml, /Translation/);
@@ -276,7 +278,8 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(dnaHtml, /dna-rna-information-flow-v1\.png/);
   assert.match(cellHtml, /cell-organelles-protein-route-v1\.png/);
   assert.match(mutationHtml, /mutation-expression-change-use-v2\.png/);
-  assert.match(aboutHtml, /independently prepared NEET-UG Biology revision notes/);
+  assert.match(aboutHtml, /independently prepared NEET-UG Biology guides/);
+  assert.match(privacyHtml, /explanation-record tool separately saves/);
   assert.match(privacyHtml, /Google Analytics 4/);
   assert.match(privacyHtml, /AdSense script while its site review is pending/);
   assert.match(privacyHtml, /even when no advertisement is visible/);

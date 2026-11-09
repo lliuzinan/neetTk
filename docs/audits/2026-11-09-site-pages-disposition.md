@@ -15,3 +15,7 @@ Prepared November 9, 2026 from live rendered pages and the current source. These
 | `/terms` | Read the independent educational-use, accuracy and contact boundaries. | **KEEP**; do not treat this as a substitute for accurate content or legal review. |
 
 The `content-disposition.csv` records these as page-purpose decisions with remaining checks. A separate November 9 pass covers `/team`, `/editorial-policy` and legacy `/authors/dongfeng`. Neither pass is an AdSense policy approval.
+
+## Resource-first copy follow-up
+
+After the disposition pass, the landing page heading and metadata were changed to name the two resources actually available: a blank PDF explanation record and a printable HTML recall sheet. Its former future-workbook feature list was replaced with instructions for using those resources. The optional waitlist remains explicitly for future printables, after the available resources. Guide calls to action, the sitemap, About page, footer and site description now point to available resources rather than presenting sign-up as the primary next step. No new workbook, filled example or teaching answer was created by these wording changes. Production evidence is recorded separately after deployment.

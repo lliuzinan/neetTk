@@ -11,13 +11,14 @@ export default function AboutPage() {
   return (
     <InfoPage
       eyebrow="About"
+      lastUpdated="November 9, 2026"
       title="About MedQGo"
       intro="MedQGo is an independent NEET-UG Biology revision resource for Indian students who want clear concept maps, common-confusion checks, and concise study routines."
       sections={[
         {
           title: "What We Publish",
           body: [
-            "MedQGo publishes independently prepared NEET-UG Biology revision notes, topic guides, and early-access learning resources. The public library focuses on concepts, comparisons, and study routines rather than reproducing exam or textbook material.",
+            "MedQGo publishes independently prepared NEET-UG Biology guides, connected study routes, and free explanation-record tools. The public library focuses on concepts, comparisons, and study routines rather than reproducing exam or textbook material.",
             "Our first subject focus is Biology because NEET-UG Biology rewards direct NCERT recall and careful reading. We organise each guide around a small set of concepts that a student can verify against the current NCERT textbook.",
           ],
         },

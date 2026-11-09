@@ -12,19 +12,19 @@ export function PdfCta({ source, topicSlug }: Props) {
   return (
     <section className="pdfCta">
       <div>
-        <p className="eyebrow">Revision workbook</p>
-        <h2>Get early access to the NEET Biology revision workbook.</h2>
+        <p className="eyebrow">Available now</p>
+        <h2>Keep a record of your explanation.</h2>
         <p>
-          Join the list for independently prepared revision checklists and printable study resources.
+          Download the free blank record or use its editable version in your browser. No sign-up is needed.
         </p>
       </div>
       <TrackedLink
         href={`/neet-biology-pdf?${params.toString()}`}
         className="ctaButton"
         eventName="pdf_cta_click"
-        eventParams={{ source, offer: "neet_biology_pdf", topic_slug: topicSlug || "" }}
+        eventParams={{ source, offer: "explanation_record", topic_slug: topicSlug || "" }}
       >
-        Join early access
+        Use free resources
       </TrackedLink>
     </section>
   );

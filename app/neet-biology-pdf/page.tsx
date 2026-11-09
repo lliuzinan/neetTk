@@ -7,18 +7,18 @@ import { WaitlistForm } from "@/components/WaitlistForm";
 import { absoluteUrl } from "@/lib/content";
 import { ogImage } from "@/lib/seo";
 
-const image = ogImage("NEET Biology Revision Workbook", "Independent revision checklists and study resources");
+const image = ogImage("Free Biology study resources", "Explanation record and printable recall sheet");
 export const metadata: Metadata = {
-  title: "Free Biology Explanation Record PDF | MedQGo",
+  title: "Free Biology Explanation Record and Recall Sheet",
   description: "Download a free two-page explanation record, use the editable HTML version, or print a Biology recall-sheet sample. No registration required.",
   alternates: { canonical: "/neet-biology-pdf" },
-  openGraph: { title: "NEET Biology Revision Workbook", description: "Independent revision checklists and study resources.", url: absoluteUrl("/neet-biology-pdf"), siteName: "MedQGo", type: "website", images: [{ url: image, width: 1200, height: 630, alt: "NEET Biology revision workbook" }] },
-  twitter: { card: "summary_large_image", title: "NEET Biology Revision Workbook", description: "Independent revision checklists and study resources.", images: [image] },
+  openGraph: { title: "Free Biology explanation record and recall sheet", description: "Download a blank explanation record and use a printable recall sheet.", url: absoluteUrl("/neet-biology-pdf"), siteName: "MedQGo", type: "website", images: [{ url: image, width: 1200, height: 630, alt: "Free Biology study resources" }] },
+  twitter: { card: "summary_large_image", title: "Free Biology explanation record and recall sheet", description: "Download a blank explanation record and use a printable recall sheet.", images: [image] },
 };
 
 export default function NeetBiologyPdfPage() {
   return <main className="page pdfLanding">
-    <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Revision workbook" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Revision workbook</p><h1>NEET Biology revision workbook</h1><p>Download the free explanation record or use the recall-sheet sample below. Core resources need no registration. No material is presented as official NCERT, NTA, or NEET content.</p><EditorialByline /></header>
+    <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Free study resources" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Available study resources</p><h1>Free Biology explanation record and recall sheet</h1><p>Download the blank two-page record, write in the editable version, or print the recall sheet below. These resources are available now without registration and are not official NCERT, NTA, or NEET material.</p><EditorialByline lastUpdated="November 9, 2026" /></header>
     <section className="contentBand" aria-labelledby="record-download-title">
       <p className="eyebrow">Available now / Free download</p><h2 id="record-download-title">Keep a record of your own explanation</h2>
       <p>A two-page blank worksheet for your conclusion, evidence, assumptions, reasoning, uncertainties, corrections and next review. Print it and write by hand; it does not contain answers or a scored assessment.</p>
@@ -36,6 +36,6 @@ export default function NeetBiologyPdfPage() {
       </div>
       <p className="sampleNote">This is an original MedQGo revision exercise. It is not an extract from NCERT, NTA, or a coaching resource.</p>
     </section>
-    <section className="splitContent"><div className="contentBand"><h2>What the workbook will add</h2><ul className="seoList"><li>Topic-based concept maps for Biology revision.</li><li>Common-confusion checklists to use alongside NCERT.</li><li>Short recall routines for a focused revision session.</li><li>Clear source and update information for every published resource.</li></ul></div><div className="contentBand"><h2>Join early access</h2><p>Use the free sample first. Early access is for readers who would like updates when more printable resources are ready.</p><WaitlistForm /></div></section>
+    <section className="splitContent"><div className="contentBand"><h2>Use what is here now</h2><ul className="seoList"><li>Print the blank PDF and write one explanation with its evidence, assumptions and limits.</li><li>Use the HTML record to save notes in this browser and download your own JSON backup.</li><li>Work through the recall sheet on this page after reading the relevant NCERT section; print the page if you prefer paper.</li><li>Return to the linked guide to check a missing step or correct your explanation.</li></ul></div><div className="contentBand"><h2>Updates on future resources</h2><p>The record and recall sheet above are already free. If you want updates when additional printable resources are ready, you can join the optional list.</p><WaitlistForm /></div></section>
   </main>;
 }
