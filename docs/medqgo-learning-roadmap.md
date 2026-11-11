@@ -356,3 +356,7 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - Added previous/next navigation to the five existing inheritance guides using the existing learningSteps sequence. Each guide shows its position, a route overview link and the next guide; the final guide returns to the explanation tool. Existing topic-specific record links remain available. No teaching claim or mastery state changed.
 - Production build and 37 tests passed. All five local routes returned valid previous/next destinations in server-rendered HTML, including the final record destination. Representative first/middle/last guides had no document overflow at 320/390/1440px. Publication evidence follows.
+
+### November 11 — route navigation pushed; partial production verification
+
+- Commit `10fb4e5` pushed after TLS failures; a per-command HTTP/1.1 retry succeeded. Production Mendelian guide rendered the new inheritanceRouteNav. GitHub status requests returned EOF and the final linkage guide verification repeatedly failed TLS; therefore deployment-status confirmation and final-step production verification remain outstanding. All five local link checks passed, but they do not substitute for those live checks. Next run should finish these checks before new work.
