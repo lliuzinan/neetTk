@@ -351,3 +351,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - Commit `a85a823` pushed; Vercel status succeeded. Production frog-organ-systems, gel-electrophoresis, and digestion-and-absorption guides returned HTTP 200. The first two no longer rendered the unsupported 2026-27 year; the third showed the checked 2025-26 Class XI contents wording. The remaining affected pages were covered by the build and targeted local checks, not individually fetched in production.
 - This removes a site-wide citation credibility defect across 22 existing guides. It is not a claim that their sections, figures, exercises or scientific explanations received human review. The P1 respiration figure and other teaching drafts remain unpublished pending actual content review.
+
+### November 11 — connected guide navigation, local result
+
+- Added previous/next navigation to the five existing inheritance guides using the existing learningSteps sequence. Each guide shows its position, a route overview link and the next guide; the final guide returns to the explanation tool. Existing topic-specific record links remain available. No teaching claim or mastery state changed.
+- Production build and 37 tests passed. All five local routes returned valid previous/next destinations in server-rendered HTML, including the final record destination. Representative first/middle/last guides had no document overflow at 320/390/1440px. Publication evidence follows.

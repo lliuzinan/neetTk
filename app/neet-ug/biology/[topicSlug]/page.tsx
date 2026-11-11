@@ -1,3 +1,4 @@
+import { InheritanceRouteNav } from "@/components/InheritanceRouteNav";
 import { LinkageRecordAudit } from "@/components/LinkageRecordAudit";
 import { TestcrossCase } from "@/components/TestcrossCase";
 import { learningSteps, learningPath } from "@/lib/inheritanceLearning";
@@ -590,6 +591,7 @@ export default async function TopicPage({ params }: Props) {
             <Link className="secondaryButton" href={`${learningPath}?recordTopic=${step.id}#explanation-record`}>Write or revisit this topic’s explanation →</Link>
           </section>
         ))}
+        <InheritanceRouteNav slug={topic.slug} />
         {relatedTopics.length > 0 && (
           <section id="guide-related">
             <h2>Related revision guides</h2>
