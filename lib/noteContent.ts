@@ -383,7 +383,7 @@ const noteContent: Record<string, NoteSection[]> = {
     "heading": "Read the measurement before naming the molecule",
     "paragraphs": [
       "Imagine two DNA samples producing bands at the same height on a gel. It is tempting to announce that both samples contain the same gene. Yet the picture has primarily compared how the molecules moved, not read their nucleotide sequences. A useful interpretation begins with the observation, adds the conditions that make it meaningful, and stops before claiming information the method has not supplied.",
-      "This guide concentrates on agarose-gel separation of linear double-stranded DNA fragments. Its chapter anchor is NCERT Class 12 Biology, Chapter 9, Biotechnology: Principles and Processes, in the 2026-27 reprint. The numerical lanes below are invented teaching examples. They practise how to reason about size separation; they are not experimental results or instructions for interpreting a person's test."
+      "This guide concentrates on agarose-gel separation of linear double-stranded DNA fragments. Its chapter anchor is NCERT Class 12 Biology, Chapter 9, Biotechnology: Principles and Processes. The numerical lanes below are invented teaching examples. They practise how to reason about size separation; they are not experimental results or instructions for interpreting a person's test."
     ]
   },
   {
@@ -467,7 +467,7 @@ const noteContent: Record<string, NoteSection[]> = {
       "Reproduction: separate sexes and external fertilisation in water in the NCERT model."
     ] },
     { heading: "A 12-minute redraw", paragraphs: [
-      "Spend four minutes drawing the five lanes from memory, four minutes checking the route endpoints against NCERT, and four minutes correcting only the arrows or organ roles you missed. Finish by explaining aloud why the liver is not part of the food canal, why the frog heart is not two-chambered, and why skin belongs in the respiratory answer. NCERT anchor: Class 11 Biology, Chapter 7, Structural Organisation in Animals, section 7.2, Reprint 2026-27."
+      "Spend four minutes drawing the five lanes from memory, four minutes checking the route endpoints against NCERT, and four minutes correcting only the arrows or organ roles you missed. Finish by explaining aloud why the liver is not part of the food canal, why the frog heart is not two-chambered, and why skin belongs in the respiratory answer. NCERT anchor: Class 11 Biology, Chapter 7, Structural Organisation in Animals, section 7.2."
     ] }
   ],
   "evolutionary-evidence-adaptive-radiation-and-human-lineage": [
@@ -784,7 +784,7 @@ const noteContent: Record<string, NoteSection[]> = {
     ] },
     { heading: "Rebuild the route using only six labels", paragraphs: [
       "Close the figure and draw two compartments. Use these labels once each: mesophyll, bundle sheath, PEP, four-carbon acid, released CO2 and Calvin cycle. Add an outward carrier arrow and a return arrow. Then place Rubisco at the reaction that uses released CO2, not at the first mesophyll capture step.",
-      "Check three results: the carrier has four carbons but the acceptor had three; the Calvin cycle still operates; and reduced oxygenation follows from CO2 concentration near Rubisco. Finally, rerun the six-round ledger and account separately for the six new atoms and eighteen recycled atoms. Read NCERT Class 11 Biology, Chapter 11, sections 11.8 and 11.9 in the 2026-27 reprint to verify the pathway and photorespiration comparison."
+      "Check three results: the carrier has four carbons but the acceptor had three; the Calvin cycle still operates; and reduced oxygenation follows from CO2 concentration near Rubisco. Finally, rerun the six-round ledger and account separately for the six new atoms and eighteen recycled atoms. Read the linked NCERT Class 11 Biology Chapter 11, sections 11.8 and 11.9 to verify the pathway and photorespiration comparison."
     ] },
   ],
   "carbohydrates-proteins-lipids-nucleic-acids": [
@@ -1006,7 +1006,7 @@ const noteContent: Record<string, NoteSection[]> = {
     { heading: "Audit a decoding answer in three passes", paragraphs: [
       "First check the input: RNA or DNA, coding or template, end labels and the stated start. Second mark triplets from that start and translate only complete in-frame codons up to termination. Third check the output count, distinguishing residues from peptide bonds and noting whether the provided fragment contains a stop.",
       "For recall, take the original fifteen bases and independently perform three edits: GCU to GCC, UAC to UAA, and insertion of C after AUG. Predict respectively unchanged peptide sequence, earlier termination and changed downstream grouping. Explain why the third fragment leaves final length unresolved. That explanation matters more than memorising the three mutation labels.",
-      "NCERT anchor: Molecular Basis of Inheritance, Reprint 2026-27, sections 5.6 through 5.7, especially Mutations and Genetic Code and tRNA as the adapter. The linked DNA/RNA overview supplies the transcription context; the protein guide explains the separate question of structure after synthesis."
+      "NCERT anchor: Molecular Basis of Inheritance, sections 5.6 through 5.7, especially Mutations and Genetic Code and tRNA as the adapter. The linked DNA/RNA overview supplies the transcription context; the protein guide explains the separate question of structure after synthesis."
     ] }
   ],
   "living-world-taxonomy-and-hierarchy": [
@@ -1043,7 +1043,7 @@ const noteContent: Record<string, NoteSection[]> = {
     { heading: "Reconstruct a label, then test its limits", paragraphs: [
       "Close the guide and write the seven standard ranks from narrowest to broadest. Beneath genus, add a named example and label which part is the rank and which is the taxon. Then write a complete binomial and identify its generic name and specific epithet. Finally give one conclusion allowed by shared genus and one conclusion not allowed by shared family.",
       "Check your last two statements against these criteria: common genus supports common family within the same classification; common family does not force common genus. This is a stronger check than repeating a rank mnemonic because it tests what the hierarchy lets you infer.",
-      "NCERT anchor: Class 11 Biology, The Living World, sections 1.1 and 1.2, Reprint 2026-27. This note focuses on names and nested categories. Kingdom characters and plant-group life cycles are separate study tasks linked below."
+      "NCERT anchor: Class 11 Biology, The Living World, sections 1.1 and 1.2. This note focuses on names and nested categories. Kingdom characters and plant-group life cycles are separate study tasks linked below."
     ] }
   ],
   "protein-structure-and-peptide-bonds": [
@@ -1083,7 +1083,7 @@ const noteContent: Record<string, NoteSection[]> = {
     ] },
     { heading: "Finish with a chain-count and evidence sketch", paragraphs: [
       "Draw two separate strings containing six and four residues. Mark their peptide connections, fold each without erasing any connection, and bring them together without drawing a new backbone bond. Your total should remain eight peptide bonds. Label residue order, local fold, whole-chain fold and between-chain arrangement beside the appropriate features.",
-      "NCERT anchor: Class 11 Biology, Biomolecules, sections 9.4 and 9.7, Reprint 2026-27. OpenStax's protein section provides a complementary explanation of folding and denaturation. The counting examples above are original simplified models; they are not reproduced examination questions or a simulation of cellular protein synthesis."
+      "NCERT anchor: Class 11 Biology, Biomolecules, sections 9.4 and 9.7. OpenStax's protein section provides a complementary explanation of folding and denaturation. The counting examples above are original simplified models; they are not reproduced examination questions or a simulation of cellular protein synthesis."
     ] }
   ],
   "decomposition-and-mineralisation": [
@@ -1193,7 +1193,7 @@ const noteContent: Record<string, NoteSection[]> = {
     ] },
     { heading: "Move outward, then rebuild from memory", paragraphs: [
       "Draw four boxes labelled epithelial, connective, muscular and nervous. Add one location, one structural clue and one function to each. Next, choose an organ and mark at least two tissues it contains. Your output should demonstrate that organs are mixed constructions, not oversized tissues.",
-      "NCERT anchor: Structural Organisation in Animals, section 7.1 in the 2026-27 reprint. Use animal kingdom for the broader phylum framework, and revisit cell theory and cell organelles to distinguish a cell from a tissue. This is a Biology revision resource, not guidance for interpreting symptoms or tissue samples."
+      "NCERT anchor: Structural Organisation in Animals, section 7.1. Use animal kingdom for the broader phylum framework, and revisit cell theory and cell organelles to distinguish a cell from a tissue. This is a Biology revision resource, not guidance for interpreting symptoms or tissue samples."
     ] }
   ],
   "biotechnology-principles-and-processes": [
@@ -1399,7 +1399,7 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "Choose the imagined woodland from the opening and write three sentences without looking back. First name one level of biodiversity at risk. Next identify the mechanism of loss. Finally name a protection measure and one thing that measure cannot achieve by itself. A checkable answer could link habitat destruction with ecological diversity, propose in situ protection, and recognise that enforcement and functioning interactions still matter.",
         "For the numerical part, explain why a sixteen-fold area change gave only a two-fold richness change in the practice model. If your explanation includes the exponent and the assumption of a shared C, you have reconstructed the calculation rather than memorised its answer.",
-        "NCERT reading anchor: Class 12 Biology, Chapter 13, Reprint 2026-27. Use section 13.1.2 for geographical and species-area patterns, 13.1.4 for causes of loss, and 13.2.2 for conservation approaches. Read those sections alongside the linked chapter rather than using this guide as a substitute for the textbook.",
+        "NCERT reading anchor: Class 12 Biology, Chapter 13. Use section 13.1.2 for geographical and species-area patterns, 13.1.4 for causes of loss, and 13.2.2 for conservation approaches. Read those sections alongside the linked chapter rather than using this guide as a substitute for the textbook.",
       ],
     },
   ],
@@ -1464,7 +1464,7 @@ const noteContent: Record<string, NoteSection[]> = {
       paragraphs: [
         "On blank paper, draw an aeration tank and a settling tank connected by a liquid arrow. Add a return arrow for some settled sludge and a separate branch to an anaerobic digester for the remainder. Label the oxygen condition in each biological compartment. Finally, write one sentence explaining why lower BOD does not certify potable water.",
         "Make four small entries headed food transformation, product synthesis, nutrient support and biocontrol. For each, supply one microbial example, its specific action and one nearby wrong interpretation. Check your reconstruction against the source chapter instead of treating the number of remembered names as your only measure of progress.",
-        "NCERT reading anchor: Class 12 Biology, Chapter 8, Reprint 2026-27. Section 8.3 explains sewage treatment and activated sludge; 8.4 connects anaerobic activity with biogas; 8.5 and 8.6 separate biocontrol from biofertilisers. Sections 8.1 and 8.2 supply the household and industrial context. The linked supplementary fermentation reading clarifies why acid, ethanol and gas are distinct outcomes.",
+        "NCERT reading anchor: Class 12 Biology, Chapter 8. Section 8.3 explains sewage treatment and activated sludge; 8.4 connects anaerobic activity with biogas; 8.5 and 8.6 separate biocontrol from biofertilisers. Sections 8.1 and 8.2 supply the household and industrial context. The linked supplementary fermentation reading clarifies why acid, ethanol and gas are distinct outcomes.",
       ],
     },
   ],
@@ -1960,7 +1960,7 @@ const noteContent: Record<string, NoteSection[]> = {
   "digestion-and-absorption": [
     {
       heading: "Where this supplementary guide fits",
-      paragraphs: ["Digestion and Absorption appeared as a separate chapter in older Class 11 NCERT editions. It is not a separate chapter in the 2026-27 contents. Use this guide as background human physiology alongside the current textbook and examination syllabus, rather than as a claim that every detail is currently examinable."],
+      paragraphs: ["Digestion and Absorption appeared as a separate chapter in older Class 11 NCERT editions. It is not a separate chapter in the verified 2025-26 Class XI contents. Use this guide as background human physiology alongside the current textbook and examination syllabus, rather than as a claim that every detail is currently examinable."],
     },
     {
       heading: "Use one food route before learning enzymes",
@@ -3055,7 +3055,7 @@ const noteReferences: Record<string, NoteReference[]> = {
 ],
   "gel-electrophoresis-and-dna-band-reading": [
   {
-    "label": "NCERT Class 12 Biology, Chapter 9: Biotechnology - Principles and Processes (2026-27), section 9.2.1",
+    "label": "NCERT Class 12 Biology, Chapter 9: Biotechnology - Principles and Processes, section 9.2.1",
     "href": "https://ncert.nic.in/textbook/pdf/lebo109.pdf"
   },
   {
@@ -3074,7 +3074,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   "frog-organ-systems-and-structural-map": [
     { label: "Cambridge University Press, Endothelial Biomedicine: Skin Breathing in Amphibians (cutaneous versus pulmonary return)", href: "https://api.pageplace.de/preview/DT0400.9780511332166_A23677261/preview-9780511332166_A23677261.pdf" },
     { label: "NMC / NTA, NEET-UG 2026 Biology syllabus, Unit 2: Structural Organisation in Animals and Plants", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
-    { label: "NCERT Class 11 Biology, Chapter 7: Structural Organisation in Animals (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/kebo107.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 7: Structural Organisation in Animals", href: "https://ncert.nic.in/textbook/pdf/kebo107.pdf" },
   ],
   "evolutionary-evidence-adaptive-radiation-and-human-lineage": [
     { label: "NMC / NTA, NEET-UG 2026 Biology syllabus, Unit 7: Genetics and Evolution", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
@@ -3083,17 +3083,17 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "special-modes-of-reproduction-in-flowering-plants": [
     { label: "National Medical Commission / NTA, NEET-UG 2026 Biology syllabus, Unit 6: Reproduction", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
-    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
     { label: "NCERT Class 12 Biology Exemplar, Chapter 2: Sexual Reproduction in Flowering Plants", href: "https://www.ncert.nic.in/pdf/publication/exemplarproblem/classXII/biology/leep402.pdf" },
   ],
   "five-plant-families-floral-identification": [
     { label: "National Medical Commission / NTA, NEET-UG 2026 Biology syllabus, Unit 2: Structural Organisation in Animals and Plants", href: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" },
-    { label: "NCERT Class 11 Biology, Chapter 5: Morphology of Flowering Plants (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/kebo105.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 5: Morphology of Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/kebo105.pdf" },
     { label: "Virginia Tech Extension: Botanical characteristics of Poaceae and other plant families", href: "https://www.pubs.ext.vt.edu/ANR/ANR-12/ANR-12.html" },
     { label: "Royal Botanic Gardens, Kew: Asteraceae flower heads and florets", href: "https://www.kew.org/read-and-watch/how-plants-have-adapted" },
   ],
   "cardiac-cycle-and-valve-pressure": [
-    { label: "NCERT Class 11 Biology, Chapter 15, sections 15.3.2-15.3.3: Cardiac Cycle and ECG (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 15, sections 15.3.2-15.3.3: Cardiac Cycle and ECG", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
     { label: "OpenStax Anatomy and Physiology 2e, 19.3: Cardiac Cycle", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle" },
     { label: "NHLBI: How the Heart Beats - electrical and pumping sequence", href: "https://www.nhlbi.nih.gov/health/heart/heart-beats" },
   ],
@@ -3112,7 +3112,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "Nature Education: The Hardy-Weinberg Principle (genotype proportions and mating assumptions)", href: "https://www.nature.com/scitable/knowledge/library/the-hardy-weinberg-principle-13235724/" },
   ],
   "lac-operon-and-induction": [
-    { label: "NCERT Class 12 Biology, Chapter 5, section 5.8.1: The Lac operon (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 5, section 5.8.1: The Lac operon", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "OpenStax Biology 2e, 16.2: Prokaryotic Gene Regulation (allolactose and glucose control)", href: "https://openstax.org/books/biology-2e/pages/16-2-prokaryotic-gene-regulation" },
   ],
   "seed-development-and-ploidy": [
@@ -3120,16 +3120,16 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e, 32.2: Pollination and Fertilization (seed development)", href: "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization" },
   ],
   "primary-productivity-and-biomass": [
-    { label: "NCERT Class 12 Biology, Chapter 12, section 12.2: Productivity (2026-27 reprint)", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 12, section 12.2: Productivity", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
     { label: "OpenStax Biology 2e, 46.2: Energy Flow through Ecosystems", href: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems" },
   ],
   "c3-c4-pathways-and-photorespiration": [
-    { label: "NCERT Class 11 Biology, Chapter 11, sections 11.8-11.9: The C4 Pathway and Photorespiration (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 11, sections 11.8-11.9: The C4 Pathway and Photorespiration", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
     { label: "Plant Physiology: C4 Photosynthesis (The CO2-Concentrating Mechanism and Photorespiration)", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC158949/" },
     { label: "Journal of Experimental Botany: C4 photosynthesis and water stress", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2707343/" },
   ],
   "carbohydrates-proteins-lipids-nucleic-acids": [
-    { label: "NCERT Class 11 Biology, Chapter 9: Biomolecules (Reprint 2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 9: Biomolecules", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
     { label: "OpenStax Biology 2e: Biological Macromolecules", href: "https://openstax.org/books/biology-2e/pages/3-introduction" },
   ],
   "basic-genetic-diseases-as-inheritance-examples": [
@@ -3146,15 +3146,15 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Characteristics and Traits, sex chromosomes", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" }
   ],
   "genetic-code-and-reading-frames": [
-    { label: "NCERT Molecular Basis of Inheritance, sections 5.6-5.7 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
+    { label: "NCERT Molecular Basis of Inheritance, sections 5.6-5.7", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "OpenStax Biology 2e: The Genetic Code", href: "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code" }
   ],
   "living-world-taxonomy-and-hierarchy": [
-    { label: "NCERT Class 11: The Living World, sections 1.1-1.2 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo101.pdf" },
+    { label: "NCERT Class 11: The Living World, sections 1.1-1.2", href: "https://ncert.nic.in/textbook/pdf/kebo101.pdf" },
     { label: "OpenStax Biology 2e: Organizing Life on Earth", href: "https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth" },
   ],
   "protein-structure-and-peptide-bonds": [
-    { label: "NCERT Class 11: Biomolecules, sections 9.4 and 9.7 (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
+    { label: "NCERT Class 11: Biomolecules, sections 9.4 and 9.7", href: "https://ncert.nic.in/textbook/pdf/kebo109.pdf" },
     { label: "OpenStax Biology 2e: Proteins", href: "https://openstax.org/books/biology-2e/pages/3-4-proteins" },
   ],
   "decomposition-and-mineralisation": [
@@ -3168,29 +3168,29 @@ const noteReferences: Record<string, NoteReference[]> = {
 "plant-growth-and-development": [{"label":"NCERT Plant Growth and Development, 2025-26 reprint: sections 13.1-13.4","href":"https://ncert.nic.in/textbook/pdf/kebo113.pdf"},{"label":"OpenStax Biology 2e: 30.6 Plant sensory systems and responses","href":"https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses"}],
 "locomotion-and-movement": [{"label":"NCERT Locomotion and Movement, 2025-26 reprint: sections 17.2 and 17.4","href":"https://ncert.nic.in/textbook/pdf/kebo117.pdf"},{"label":"OpenStax Anatomy and Physiology 2e: 10.3 Muscle fiber contraction and relaxation","href":"https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"}],
   "biodiversity-and-conservation": [
-    { label: "NCERT Class 12 Biology, Chapter 13 (Reprint 2026-27): sections 13.1.2, 13.1.4 and 13.2.2", href: "https://ncert.nic.in/textbook/pdf/lebo113.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 13: sections 13.1.2, 13.1.4 and 13.2.2", href: "https://ncert.nic.in/textbook/pdf/lebo113.pdf" },
     { label: "OpenStax Biology 2e, 47.3: Threats to Biodiversity", href: "https://openstax.org/books/biology-2e/pages/47-3-threats-to-biodiversity" },
     { label: "OpenStax Biology 2e, 47.4: Preserving Biodiversity", href: "https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity" },
   ],
   "microbes-in-human-welfare": [
-    { label: "NCERT Class 12 Biology, Chapter 8 (Reprint 2026-27): sections 8.1-8.6, especially sewage treatment in 8.3", href: "https://www.ncert.nic.in/textbook/pdf/lebo108.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 8: sections 8.1-8.6, especially sewage treatment in 8.3", href: "https://www.ncert.nic.in/textbook/pdf/lebo108.pdf" },
     { label: "OpenStax Microbiology, 8.4: Fermentation", href: "https://openstax.org/books/microbiology/pages/8-4-fermentation" },
     { label: "OpenStax Microbiology, 4.6: Archaea and methanogens", href: "https://openstax.org/books/microbiology/pages/4-6-archaea" },
   ],
   "chromosomal-basis-of-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal theory and genetic linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" },
   ],
   "sexual-reproduction-in-flowering-plants": [
-    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
     { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
   ],
   "mendelian-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Laws of inheritance", href: "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance" },
   ],
   "recombinant-dna-technology": [
-    { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology: Principles and Processes (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
     { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
   ],
   "pedigree-analysis-and-inheritance-patterns": [
@@ -3228,7 +3228,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Environmental limits to population growth", href: "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth" },
   ],
   "ecosystem-energy-flow-and-ecological-pyramids": [
-    { label: "NCERT Class 12 Biology, Chapter 12: Ecosystem (2026-27)", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 12: Ecosystem", href: "https://ncert.nic.in/textbook/pdf/lebo112.pdf" },
     { label: "OpenStax Biology 2e: Energy flow through ecosystems", href: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems" },
   ],
   "mitosis-and-meiosis": [
@@ -3249,7 +3249,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Anatomy and Physiology: Chemical digestion and absorption", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look" },
   ],
   "blood-and-circulation": [
-    { label: "NCERT Class 11 Biology, Chapter 15: Body Fluids and Circulation (2026-27)", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
+    { label: "NCERT Class 11 Biology, Chapter 15: Body Fluids and Circulation", href: "https://ncert.nic.in/textbook/pdf/kebo115.pdf" },
     { label: "OpenStax Anatomy and Physiology: Blood flow and blood pressure", href: "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance" },
   ],
   "human-respiration": [
