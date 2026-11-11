@@ -20,3 +20,7 @@ Run build/tests, check at least one Class XI and one Class XII affected route pl
 ## Local verification
 
 `npm test` completed a production build and 37 passing tests. Local production routes for `frog-organ-systems-and-structural-map`, `gel-electrophoresis-and-dna-band-reading`, and `digestion-and-absorption` returned HTTP 200. The first two no longer rendered “2026-27”; the third rendered the checked 2025-26 Class XI contents wording. Chrome viewport checks at 320, 390 and 1440px showed no horizontal document overflow on these three routes. CSV parsing confirmed 77 historical URL rows and all 18 expected columns after updating the affected source-version cells. These are local checks, not deployment or scientific approval.
+
+## Production release evidence
+
+Commit `a85a823` was pushed and GitHub's Vercel status returned success. Production requests with a browser user agent returned HTTP 200 for the same three routes. The frog and gel pages no longer contained the former 2026-27 source-year label; the Digestion and Absorption page contained the checked 2025-26 Class XI contents wording. A transient TLS failure on one gel request was resolved on retry; this check does not assert that all 22 routes were independently fetched. No teaching diagram, exercise or AdSense account setting was changed.
