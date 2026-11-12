@@ -386,3 +386,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 - Owner confirmed “人工核验完了上线” for the presented full guide. Recorded only that scope, without inventing reviewer identity or qualifications.
 - Integrated full guide, four-pairing table, model-limit image caption and inspected reference links at the existing URL; modification date November 12, original publication date retained.
 - Build + 39 tests pass; seven internal guide links return 200; 320/390/1440 browser checks pass without horizontal overflow; mobile table visually checked. Production verification pending. Other content dispositions remain open.
+
+
+### Production verification — November 12
+
+Commit `b646ec8` pushed; Vercel status success. Live browser displays the November 12 date, constructed 12/17/11 example, loaded illustration and new pairing table. No horizontal overflow at 320/390/1440; production 390px table screenshot visually checked. URL: https://medqgo.com/neet-ug/biology/mendelian-inheritance . This is one reviewed guide release, not completion of all site remediation.

@@ -36,3 +36,8 @@ Owner explicitly replied “人工核验完了上线” after receiving this ful
 Integrated the reviewed teaching text, four-pairing table and caption at the existing URL; updated modification date and links to inspected OpenStax/NHGRI sources. Kept original publication date and publisher attribution. NCERT direct request again failed TLS; no current reprint/section verification claim is made. Prior draft metadata is retained as historical evidence, superseded by this entry.
 
 Build and 39 tests pass. Seven local guide links return 200. Chrome checks at 320/390/1440 show no horizontal overflow, updated date/example and loaded illustration; 390px table screenshot visually inspected. Twelve-word overlap scan against other guide source found only allele/table-symbol repetition, no prose match. Existing in-repository illustration retained, no third-party asset added. Production verification pending below.
+
+
+### Production verification — November 12
+
+Commit `b646ec8` pushed; Vercel status success. Live browser displays the November 12 date, constructed 12/17/11 example, loaded illustration and new pairing table. No horizontal overflow at 320/390/1440; production 390px table screenshot visually checked. URL: https://medqgo.com/neet-ug/biology/mendelian-inheritance . This is one reviewed guide release, not completion of all site remediation.
