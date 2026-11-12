@@ -1,3 +1,5 @@
+// Covers all five topics at the existing field limits, including UTF-8 and JSON escapes.
+export const recordBackupMaxBytes = 2_000_000;
 export const recordKey = "medqgo-explanation-records-v1";
 export const recordFields = [
   { id: "claim", label: "My conclusion", hint: "State what you think follows from the information." },
@@ -15,7 +17,7 @@ export const recordTopics = ["segregation", "testcross", "dominance", "probabili
 export const emptyRecord = (): ExplanationRecord => Object.fromEntries(recordFields.map(f => [f.id, ""])) as ExplanationRecord;
 export const emptyBook = (): RecordBook => ({ version: 1, records: {} });
 export function parseRecordBook(raw: string): RecordBook {
-  if (raw.length > 500000) throw new Error("This backup is too large.");
+  if (raw.length > recordBackupMaxBytes || new TextEncoder().encode(raw).byteLength > recordBackupMaxBytes) throw new Error("This backup is too large.");
   const value = JSON.parse(raw);
   if (!value || value.version !== 1 || !value.records || typeof value.records !== "object" || Array.isArray(value.records)) throw new Error("Choose a MedQGo explanation-record backup (version 1).");
   const records: Record<string, ExplanationRecord> = {};

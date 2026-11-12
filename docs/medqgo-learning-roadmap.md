@@ -365,3 +365,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 
 - Resolved yesterday's production-verification gap: GitHub reports Vercel success for `10fb4e5`. All five live inheritance guide requests succeeded, and their server-rendered navigation contained the expected previous/next links. The last guide points to the explanation-record tool. The live inheritance centre returned both route and explanation-record anchors.
 - Updated the five disposition rows with actual live verification. No application code changed today, so the previous build, 37 tests and mobile checks apply to the same deployed application commit; no fresh scientific review or new learning outcome is claimed. Source/figure review and teaching drafts remain open as previously reported.
+
+### November 12 — backup restore capacity fix, local result
+
+- Found a reproducible data-portability defect: all five topics can hold valid notes whose UTF-8 or JSON-escaped export exceeds the former 500 KB import limit. Unified file and parser limits at 2 MB while preserving every 8000-code-unit field limit, supported-topic validation and explicit replacement confirmation. The limit accommodates the worst-case escaped output for all existing fields.
+- Build and 39 tests passed, including full-capacity Chinese and escaped-control-character round trips plus oversized multibyte rejection. Browser imported an approximately 840 KB five-topic file, confirmed replacement and restored all five topics after reload, each checked field retaining 8000 characters. No document overflow at 320/390/1440px. Disposable test records cleared. These are local results; release verification follows.
