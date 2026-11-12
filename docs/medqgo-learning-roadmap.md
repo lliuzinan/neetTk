@@ -360,3 +360,8 @@ This addition records acceptance criteria only. It does not establish that a fre
 ### November 11 — route navigation pushed; partial production verification
 
 - Commit `10fb4e5` pushed after TLS failures; a per-command HTTP/1.1 retry succeeded. Production Mendelian guide rendered the new inheritanceRouteNav. GitHub status requests returned EOF and the final linkage guide verification repeatedly failed TLS; therefore deployment-status confirmation and final-step production verification remain outstanding. All five local link checks passed, but they do not substitute for those live checks. Next run should finish these checks before new work.
+
+### November 12 — five-guide navigation verified live
+
+- Resolved yesterday's production-verification gap: GitHub reports Vercel success for `10fb4e5`. All five live inheritance guide requests succeeded, and their server-rendered navigation contained the expected previous/next links. The last guide points to the explanation-record tool. The live inheritance centre returned both route and explanation-record anchors.
+- Updated the five disposition rows with actual live verification. No application code changed today, so the previous build, 37 tests and mobile checks apply to the same deployed application commit; no fresh scientific review or new learning outcome is claimed. Source/figure review and teaching drafts remain open as previously reported.
