@@ -374,3 +374,15 @@ This addition records acceptance criteria only. It does not establish that a fre
 ### November 12 — backup capacity fix live
 
 - Commit `54208f4` pushed; Vercel success. Production browser import/confirmation/reload retained five topics and the 8000-character field content from the approximately 840 KB Unicode backup. Production 320/390/1440px checks showed no horizontal overflow. Advertising/measurement requests were blocked and disposable test records removed. Live tool: https://medqgo.com/neet-ug/biology/learn/inheritance#explanation-record . No teaching content or subject-review status changed.
+
+### November 12 — complete Mendelian rewrite prepared, not published
+
+- Prepared a full replacement guide and standalone HTML preview covering gamete probabilities, ordered pairings, genotype/phenotype grouping, and constructed expected-versus-observed counts. This replaces the scope of the earlier two-clarification draft without adding a competing public page.
+- Arithmetic checked; OpenStax 12.2 and NHGRI opened. Official NCERT request failed and molecular-expression source check remains incomplete. Browser preview checks failed; mobile/desktop layout is not certified. Existing figure requires provenance/label review.
+- See docs/audits/2026-11-12-mendelian-full-review.md for exact gates and reviewer scope. No actual human review, application integration, build or publication claimed. Mendelian disposition remains DEEPEN.
+
+### November 12 — Owner-reviewed Mendelian guide integrated
+
+- Owner confirmed “人工核验完了上线” for the presented full guide. Recorded only that scope, without inventing reviewer identity or qualifications.
+- Integrated full guide, four-pairing table, model-limit image caption and inspected reference links at the existing URL; modification date November 12, original publication date retained.
+- Build + 39 tests pass; seven internal guide links return 200; 320/390/1440 browser checks pass without horizontal overflow; mobile table visually checked. Production verification pending. Other content dispositions remain open.

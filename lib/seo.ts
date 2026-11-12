@@ -65,7 +65,7 @@ const topicDateMap: Record<string, { published: string; modified: string }> = {
   "cell-theory-and-cell-organelles": { published: "2026-09-08", modified: "2026-09-30" },
   "mitosis-and-meiosis": { published: "2026-09-13", modified: "2026-09-30" },
   "sexual-reproduction-in-flowering-plants": { published: "2026-09-14", modified: "2026-09-20" },
-  "mendelian-inheritance": { published: "2026-09-14", modified: "2026-09-20" },
+  "mendelian-inheritance": { published: "2026-09-14", modified: "2026-11-12" },
   "recombinant-dna-technology": { published: "2026-09-14", modified: "2026-09-30" },
   "chromosomal-basis-of-inheritance": { published: "2026-09-15", modified: "2026-09-20" },
   "endocrine-system-and-hormones": { published: "2026-09-06", modified: "2026-09-30" },

@@ -2109,34 +2109,51 @@ const noteContent: Record<string, NoteSection[]> = {
   ],
   "mendelian-inheritance": [
     {
-      heading: "Inheritance questions begin with alleles entering gametes",
-      paragraphs: [
-        "Mendelian crosses are not ratio-recitation exercises. Start with the genotype of each parent and ask what alleles can appear in its gametes. An individual with genotype Aa carries two alleles for the same gene, but a gamete receives only one of them after segregation.",
-        "This is the practical meaning of the law of segregation: paired alleles separate during gamete formation, so each gamete carries one allele of a gene. Fertilisation then brings one allele from each parent together in an offspring. Build this route before drawing any Punnett square.",
-      ],
+        "heading": "Begin with what each parent can contribute",
+        "paragraphs": [
+            "A cross starts with two parental genotypes. For a single autosomal locus in a diploid organism, Aa means that the individual carries A and a. A gamete receives one allele at this locus after segregation. The gamete is therefore A or a, not Aa. Fertilisation combines one contribution from each parent into an offspring genotype.",
+            "Keep the two operations separate: segregation determines the contributions; fertilisation combines them. A phenotype rule is needed only when you translate an offspring genotype into the trait category being scored. Drawing the phenotype first can conceal which alleles actually travelled through the cross."
+        ]
     },
     {
-      heading: "Genotype, phenotype, dominant and recessive answer different questions",
-      paragraphs: [
-        "A genotype is an allele combination, such as AA, Aa, or aa. A phenotype is the observable expression associated with that genotype in the stated inheritance pattern. With complete dominance, AA and Aa can share a phenotype even though their genotypes differ; aa expresses the recessive phenotype.",
-        "Do not use dominant to mean common, stronger, healthier, or more important. In a standard Mendelian context, it describes which allele is expressed in a heterozygote. The allele frequency in a population is a separate question.",
-      ],
+        "heading": "State the model before assigning probabilities",
+        "paragraphs": [
+            "Consider Aa × Aa. For this simplified model, assume equal allele segregation and random fertilisation. Each parent's gametes contribute A with probability 1/2 and a with probability 1/2. To compare the predicted proportions with counted surviving offspring, also assume that the genotype classes have equal survival and are scored reliably.",
+            "These assumptions explain why each pairing below has probability 1/4. A square is a way to organise those pairings; the number of boxes by itself does not establish equal probabilities.",
+            "There are two routes to Aa because the A allele can come from either parent. For this ordinary autosomal model, those two ordered contributions belong to the same heterozygous genotype class. Add their probabilities: 1/4 + 1/4 = 1/2. The genotype expectations are therefore 1/4 AA, 1/2 Aa and 1/4 aa. Check that the three probabilities sum to one."
+        ]
     },
     {
-      heading: "Use the Punnett square as a probability map, not a memory card",
-      paragraphs: [
-        "For Aa x Aa, each parent can produce A and a gametes. Combining the two gamete sets gives AA, Aa, Aa, and aa as the four equally likely genotype combinations in the usual simple model. This yields a 1:2:1 genotype ratio and, under complete dominance, a 3:1 phenotype ratio.",
-        "The ratios are consequences of the gamete combinations. If a question changes the parental genotypes or the dominance relationship, the familiar 3:1 pattern may no longer apply. Rebuild the gametes instead of forcing a remembered ratio onto a different cross.",
-      ],
+        "heading": "Group phenotypes only after the genotype calculation",
+        "paragraphs": [
+            "Now specify complete dominance for the trait being scored: AA and Aa are assigned to the same phenotype category, while aa belongs to the recessive category. The dominant-category probability is 1/4 + 1/2 = 3/4. The recessive-category probability is 1/4. This gives the familiar 3:1 expected phenotype ratio.",
+            "The 1:2:1 genotype result and the 3:1 phenotype result answer different questions. Complete dominance groups two genotypes into one visible category. It does not remove a from an Aa individual or establish whether that allele is transcribed. Nor does the word dominant tell you that A is common, advantageous or associated with a healthier organism.",
+            "Appearance alone therefore cannot distinguish AA from Aa in this model. Investigating an unknown parent is the separate task developed in the existing testcross guide."
+        ]
     },
     {
-      heading: "A two-minute cross check before choosing an answer",
-      paragraphs: [
-        "Write three lines: parent genotypes, possible gametes, and offspring combinations. Only after those lines are complete should you count genotypes or phenotypes. For a dihybrid context, keep the two gene pairs visibly separate until you have listed the allowed gametes.",
-        "A useful final check is to ask whether the question wants a genotype, a phenotype, a carrier status, or a probability. Those four requests can produce different correct answers from the same cross, and confusing the requested output is more common than a drawing error.",
-      ],
+        "heading": "Expected counts are not a quota",
+        "paragraphs": [
+            "Use an invented batch of 40 offspring from the stated Aa × Aa model. Multiplying 40 by each genotype probability gives expected counts of 10 AA, 20 Aa and 10 aa. Grouping the first two classes gives an expectation of 30 dominant-category and 10 recessive-category offspring.",
+            "Suppose a fictional scored batch instead contains 12 AA, 17 Aa and 11 aa. The counts still total 40, and the phenotype totals are 29 and 11. This record differs from the expectations. That difference alone neither disproves segregation nor validates every model assumption. Real observations require attention to sampling, scoring and survival; deciding whether a discrepancy is statistically unusual requires an appropriate analysis, not a demand that the ratio match exactly.",
+            "A useful correction to “40 offspring must contain exactly 10 aa” is: “The model predicts an expected aa count of 10; a particular sample can differ.” Keep the prediction and the observed count in separate columns in your notes."
+        ]
     },
-  ],
+    {
+        "heading": "Diagnose the step that produced an incorrect answer",
+        "paragraphs": [
+            "If Aa appears in your gamete list, you kept both alleles together. Return to segregation. If you obtain only one route to Aa, you lost the pairing in which the second parent supplies A. If you report 3:1 when asked for genotypes, you grouped phenotype categories too early. If you infer AA from dominant appearance alone, you discarded Aa without evidence.",
+            "Do not repair these errors by memorising more ratios. Locate the operation that needs correcting, then rebuild the same cross. Changing the parents or the phenotype rule requires checking the calculation again."
+        ]
+    },
+    {
+        "heading": "Leave a short explanation you can revisit",
+        "paragraphs": [
+            "Without looking at the table, write the two parental genotypes, each parent's gamete probabilities, the four pairings, and the grouped genotype and phenotype probabilities. Beside the phenotype result, state the complete-dominance assumption. Beside any expected count, write the sample size used.",
+            "In your explanation record, keep one conclusion, the pairing calculation supporting it, and one limit: this model does not determine an unknown parent's genotype from appearance or force a finite sample to match its expected counts. Continue to the testcross guide for unknown-parent inference, or compare the expression rule in the incomplete-dominance and codominance guide."
+        ]
+    }
+],
   "recombinant-dna-technology": [
     {
       heading: "Recombinant DNA is a controlled sequence, not a single tool",
@@ -3186,8 +3203,9 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
   ],
   "mendelian-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
-    { label: "OpenStax Biology 2e: Laws of inheritance", href: "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance" },
+    { label: "NCERT Class 12 Biology: Principles of Inheritance and Variation (chapter reference)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "OpenStax Biology 2e 12.2: Characteristics and traits — genotype, phenotype and Punnett probabilities", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
+    { label: "NHGRI: Mendelian inheritance", href: "https://www.genome.gov/genetics-glossary/Mendelian-Inheritance" },
   ],
   "recombinant-dna-technology": [
     { label: "NCERT Class 12 Biology, Chapter 9: Biotechnology: Principles and Processes", href: "https://ncert.nic.in/textbook/pdf/lebo109.pdf" },
@@ -3789,11 +3807,41 @@ const noteTables: Record<string, NoteComparisonTable> = {
     rows: [["Anther", "Produces pollen grains", "Male gametophyte available for transfer", "Stigma"], ["Stigma and style", "Receives pollen and supports tube growth", "Pollen tube travels toward an ovule", "Fertilisation site"], ["Embryo sac", "One male gamete fuses with egg", "Diploid zygote, then embryo", "Primary endosperm nucleus"], ["Central cell of embryo sac", "Other male gamete fuses with polar nuclei", "Typically triploid primary endosperm nucleus", "Zygote"]],
   },
   "mendelian-inheritance": {
-    heading: "One cross, four different things a question may ask",
-    intro: "For Aa x Aa under complete dominance, do not stop after one familiar ratio. Identify the requested output first.",
-    columns: ["Requested output", "Result from Aa x Aa", "How it is obtained", "Common error"],
-    rows: [["Possible gametes", "A and a from each parent", "Segregation of paired alleles", "Putting Aa itself into a gamete"], ["Genotype ratio", "1 AA : 2 Aa : 1 aa", "Four combinations in the square", "Writing the phenotype ratio"], ["Phenotype ratio", "3 dominant : 1 recessive", "Complete dominance only", "Using it for every inheritance pattern"], ["Probability of aa", "1 in 4", "One aa outcome among four equal combinations", "Calling every recessive-phenotype individual a carrier"]],
-  },
+    "heading": "Four pairings, three genotype classes",
+    "intro": "For Aa \u00d7 Aa, equal allele segregation and random fertilisation give each ordered pairing probability 1/4. The two Aa rows are distinct parental contributions to the same genotype class.",
+    "columns": [
+        "First parent's contribution",
+        "Second parent's contribution",
+        "Offspring genotype",
+        "Probability"
+    ],
+    "rows": [
+        [
+            "A",
+            "A",
+            "AA",
+            "1/4"
+        ],
+        [
+            "A",
+            "a",
+            "Aa",
+            "1/4"
+        ],
+        [
+            "a",
+            "A",
+            "Aa",
+            "1/4"
+        ],
+        [
+            "a",
+            "a",
+            "aa",
+            "1/4"
+        ]
+    ]
+},
   "recombinant-dna-technology": {
     heading: "Recombinant DNA workflow: tool, action, checkpoint",
     intro: "The terms are most useful when attached to an action in the workflow rather than learned as a flat list.",

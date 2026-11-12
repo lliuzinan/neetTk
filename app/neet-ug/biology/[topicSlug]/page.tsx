@@ -148,7 +148,7 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
   "mendelian-inheritance": {
     src: "/images/biology/mendelian-segregation-v1.png",
     alt: "Alleles A and a separating into gametes before fertilisation, followed by AA, Aa, Aa, and aa offspring combinations",
-    caption: "An original segregation map. Build the gametes first, then combine them to obtain genotype combinations rather than memorising a ratio alone.",
+    caption: "Two gamete classes, not all products of one meiosis. The square combines contributions from two Aa parents; chromosome detail is simplified.",
   },
   "recombinant-dna-technology": {
     src: "/images/biology/recombinant-dna-workflow-v1.png",
@@ -543,7 +543,7 @@ export default async function TopicPage({ params }: Props) {
               </thead>
               <tbody>
                 {comparisonTable.rows.map((row) => (
-                  <tr key={row.join("|")}>{row.map((cell, index) => <td data-label={comparisonTable.columns[index]} key={cell}>{cell}</td>)}</tr>
+                  <tr key={row.join("|")}>{row.map((cell, index) => <td data-label={comparisonTable.columns[index]} key={index}>{cell}</td>)}</tr>
                 ))}
               </tbody>
             </table>

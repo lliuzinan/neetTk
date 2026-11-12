@@ -336,7 +336,7 @@ test("publishes three distinct NCERT Biology revision guides with original teach
   assert.match(floweringPlantsHtml, /Double fertilisation has two fusion events and two products/);
   assert.match(floweringPlantsHtml, /flowering-plant-double-fertilisation-v1\.png/);
   assert.match(floweringPlantsHtml, /lebo101\.pdf/);
-  assert.match(mendelianHtml, /Inheritance questions begin with alleles entering gametes/);
+  assert.match(mendelianHtml, /Begin with what each parent can contribute/);
   assert.match(mendelianHtml, /mendelian-segregation-v1\.png/);
   assert.match(mendelianHtml, /lebo104\.pdf/);
   assert.match(recombinantHtml, /Recombinant DNA is a controlled sequence, not a single tool/);
