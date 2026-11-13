@@ -81,7 +81,7 @@ export const studyLinks: Record<string, StudyLink[]> = {
     "reason": "Connect a post-PCR band to the separate process that increased the number of target copies."
   },
   {
-    "slug": "recombinant-dna-technology",
+    "slug": "biotechnology-principles-and-processes",
     "reason": "Place fragment separation within the larger sequence of constructing and introducing recombinant DNA."
   }
 ],

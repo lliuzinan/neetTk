@@ -15,12 +15,12 @@ export const noteExercises: Record<string, NoteSection> = {
       "The common wrong answer is 'both wings fly, so they are homologous'. Replace it with the evidence: compare construction and origin, then name function. For a separate fossil claim, a specimen in a lower undisturbed stratum supports older relative placement, not a direct parent-child relationship with a specimen above it. NCERT anchor: Class 12 Biology, Chapter 6, Evolution; the current NEET-UG 2026 Unit 7 also lists paleontological, comparative-anatomy, embryological and molecular evidence."
     ],
   },
-  "recombinant-dna-technology": {
+  "biotechnology-principles-and-processes": {
     heading: "A selected colony is evidence of a marker, not proof of an insert",
     paragraphs: [
       "In an invented paper model, a plasmid carries an antibiotic-resistance marker outside its cloning site. Two candidate plasmids retain that marker: one has the intended insert and one has closed again without the insert. If either enters a suitable susceptible host and the marker functions, its host can survive the matching selection condition. Survival alone does not distinguish the two plasmids.",
       "The incorrect conclusion is 'every selected colony contains the desired recombinant DNA'. The selection asks whether the relevant marker is functional, while a separate screen must distinguish the insert-bearing construct from the empty vector. This model assumes that the insert does not disrupt the resistance marker; insertional inactivation changes the logic and must be stated explicitly.",
-      "Connect this distinction to Cloning Vectors and Insertional Inactivation in NCERT's Biotechnology: Principles and Processes. The broader process guide covers the full production sequence; here the useful output is a narrower evidence statement: what did this selection establish, and what remains untested? This is a conceptual comparison, not a laboratory protocol."
+      "Connect this distinction to Cloning Vectors and Insertional Inactivation in NCERT's Biotechnology: Principles and Processes. Within this process, the useful output is a narrower evidence statement: what did this selection establish, and what remains untested? This is a conceptual comparison, not a laboratory protocol."
     ],
   },
   "plant-respiration": {

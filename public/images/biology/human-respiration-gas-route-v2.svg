@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">The gas route in human respiration</title>
+  <desc id="description">Four stages run left to right: ventilation, alveolar exchange, blood transport and tissue exchange. Blue arrows show oxygen moving from alveolus to blood and then tissue. Amber arrows show carbon dioxide moving from tissue to blood and then alveolus. The transport panel puts oxygen on haemoglobin in a red blood cell and bicarbonate in surrounding plasma.</desc>
+  <rect width="1600" height="900" fill="#f8faf6"/>
+  <text x="88" y="105" fill="#173c43" font-family="Arial, sans-serif" font-size="54" font-weight="700">The gas route in human respiration</text>
+  <g font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173c43">
+    <text x="93" y="226">1  Ventilation</text>
+    <text x="475" y="226">2  Alveolar exchange</text>
+    <text x="900" y="226">3  Blood transport</text>
+    <text x="1270" y="226">4  Tissue exchange</text>
+  </g>
+  <g fill="#fff" stroke="#d7e5df" stroke-width="3">
+    <rect x="65" y="258" width="325" height="520" rx="26"/>
+    <rect x="455" y="258" width="350" height="520" rx="26"/>
+    <rect x="870" y="258" width="335" height="520" rx="26"/>
+    <rect x="1260" y="258" width="275" height="520" rx="26"/>
+  </g>
+  <g stroke="#b7c9c7" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 345,520 H 424"/><path d="M 760,520 H 838"/><path d="M 1163,520 H 1230"/>
+  </g>
+  <g fill="#b7c9c7"><path d="M 425,520 l -24,-20 v 40 z"/><path d="M 840,520 l -24,-20 v 40 z"/><path d="M 1230,520 l -24,-20 v 40 z"/></g>
+  <!-- Ventilation: air enters an airway that branches to alveolar sacs. -->
+  <g stroke="#739a9d" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 229,336 V 473 M 229,463 L 163,526 M 229,463 L 295,526"/>
+  </g>
+  <g fill="#e7f1ed" stroke="#739a9d" stroke-width="5">
+    <circle cx="158" cy="561" r="35"/><circle cx="204" cy="579" r="35"/><circle cx="291" cy="561" r="35"/><circle cx="249" cy="579" r="35"/>
+  </g>
+  <path d="M 229,347 V 420" stroke="#187daa" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 229,435 l -18,-27 h 36 z" fill="#187daa"/>
+  <!-- Alveolar exchange: oxygen enters blood, carbon dioxide enters alveolus. -->
+  <circle cx="566" cy="508" r="90" fill="#e7f1ed" stroke="#739a9d" stroke-width="7"/>
+  <rect x="711" y="364" width="55" height="302" rx="26" fill="#f9e5de" stroke="#c17f78" stroke-width="5"/>
+  <path d="M 606,476 H 710" stroke="#187daa" stroke-width="15" stroke-linecap="round"/>
+  <path d="M 710,476 l -25,-18 v 36 z" fill="#187daa"/>
+  <path d="M 711,562 H 608" stroke="#dd8c16" stroke-width="15" stroke-linecap="round"/>
+  <path d="M 606,562 l 25,-18 v 36 z" fill="#dd8c16"/>
+  <!-- Blood transport: oxygen in the cell, bicarbonate in plasma. -->
+  <rect x="904" y="375" width="267" height="286" rx="105" fill="#e8f3ef" stroke="#8bb0af" stroke-width="5"/>
+  <ellipse cx="1030" cy="486" rx="91" ry="67" fill="#e9a29b" stroke="#bb655f" stroke-width="6"/>
+  <ellipse cx="1030" cy="486" rx="44" ry="25" fill="#f8c9c1"/>
+  <circle cx="1096" cy="602" r="14" fill="#dd8c16"/><circle cx="1137" cy="579" r="14" fill="#dd8c16"/>
+  <text x="893" y="705" fill="#173c43" font-family="Arial, sans-serif" font-size="22" font-weight="700">O₂: Hb in RBC</text>
+  <text x="893" y="737" fill="#173c43" font-family="Arial, sans-serif" font-size="22" font-weight="700">CO₂: HCO₃⁻ in plasma</text>
+  <!-- Tissue exchange: oxygen leaves blood and carbon dioxide enters it. -->
+  <rect x="1283" y="364" width="54" height="302" rx="26" fill="#f9e5de" stroke="#c17f78" stroke-width="5"/>
+  <g fill="#e7f1ed" stroke="#739a9d" stroke-width="5">
+    <circle cx="1447" cy="438" r="38"/><circle cx="1474" cy="548" r="38"/><circle cx="1414" cy="623" r="38"/>
+  </g>
+  <path d="M 1336,479 H 1408" stroke="#187daa" stroke-width="15" stroke-linecap="round"/>
+  <path d="M 1418,479 l -25,-18 v 36 z" fill="#187daa"/>
+  <path d="M 1415,567 H 1337" stroke="#dd8c16" stroke-width="15" stroke-linecap="round"/>
+  <path d="M 1336,567 l 25,-18 v 36 z" fill="#dd8c16"/>
+  <g fill="#187daa"><circle cx="1310" cy="472" r="12"/><circle cx="724" cy="471" r="12"/><circle cx="1000" cy="479" r="12"/></g>
+  <g fill="#dd8c16"><circle cx="732" cy="558" r="12"/><circle cx="1309" cy="562" r="12"/></g>
+</svg>

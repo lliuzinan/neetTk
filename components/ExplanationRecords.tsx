@@ -40,6 +40,7 @@ export function ExplanationRecords() {
   return <section id="explanation-record" className="learningSection explanationRecord" aria-labelledby="record-heading">
     <p className="eyebrow">YOUR EXPLANATION / KEEP AND REVISIT</p>
     <h2 id="record-heading">Turn your reading into a record you can return to</h2>
+    <p>Not sure what belongs in each field? <Link href="/neet-biology-pdf#filled-example">Read a complete seven-field example</Link>, then write in your own words.</p>
     <p>Choose a guide, write your reasoning, then return later to explain it again. These notes are yours; they are not graded or checked for scientific accuracy.</p>
     <p className="recordPrivacy">Autosaved only in this browser, with no account or cloud sync. Clearing browser data removes your records. Download a backup to keep a copy or move to another device. Avoid personal information.</p>
     <p className="recordControls"><a href="/downloads/medqgo-explanation-record.pdf" download>Download the blank record sheet (PDF, 2 pages)</a> — print and write by hand. To print your saved text, use the print button below.</p>

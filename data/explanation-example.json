@@ -1,0 +1,55 @@
+{
+  "title": "Expected counts are not a quota",
+  "intro": "An original filled example showing how to use the seven record fields. Not a real learner record, experiment, answer key or official exam material.",
+  "fields": [
+    {
+      "label": "My conclusion",
+      "value": "For the stated Aa x Aa model, the probability of aa is 1/4. In 40 offspring, the expected aa count is 10; it is not a promise of exactly 10 in every batch.",
+      "hint": "State the prediction and its limits, not just a ratio."
+    },
+    {
+      "label": "Evidence and source",
+      "value": "This is a constructed learning example, not an experiment. Both parents are Aa. The MedQGo Mendelian guide explains the gamete combinations. A fictional observed batch contains 12 AA, 17 Aa and 11 aa. These numbers are invented for comparison with the prediction.",
+      "hint": "Separate the given model, the reference and the invented observations."
+    },
+    {
+      "label": "Assumptions",
+      "value": "At this autosomal locus, each parent contributes A or a with probability 1/2; fertilisation is random. To compare predicted genotype proportions with surviving offspring, assume equal survival and reliable scoring. Complete dominance is needed for the phenotype grouping, not for the 1:2:1 genotype calculation.",
+      "hint": "Name the conditions your calculation uses."
+    },
+    {
+      "label": "Reasoning or calculation",
+      "value": "The four ordered pairings are A+A, A+a, a+A and a+a, each with probability 1/4. The two middle pairings give Aa, so genotype probabilities are 1/4 AA, 1/2 Aa and 1/4 aa. Multiplying by 40 gives 10, 20 and 10 expected offspring. Under complete dominance, AA and Aa share the dominant phenotype: expected totals are 30 and 10. The invented observed totals are 12+17=29 dominant and 11 recessive.",
+      "hint": "Show the route from gametes to genotypes before grouping phenotypes."
+    },
+    {
+      "label": "Limits and uncertainties",
+      "value": "The invented batch does not establish a biological result. An observed 11 aa instead of an expected 10 does not by itself disprove segregation or prove all assumptions. A statistical assessment would require an appropriate analysis. Dominant appearance alone cannot distinguish AA from Aa.",
+      "hint": "Do not turn a small discrepancy or an appearance into proof."
+    },
+    {
+      "label": "What I changed",
+      "value": "Illustrative correction: I replaced “40 offspring must include 10 aa” with “10 is the expected aa count under this model; an individual batch can differ.” This is a model revision entry, not a report of an actual learner's mistake.",
+      "hint": "Explain why the old statement was too strong."
+    },
+    {
+      "label": "Next review",
+      "value": "At my next study session, I will hide this sample and rebuild the four pairings. I will explain why Aa has two paths, state the dominance assumption, and separate expected counts from observed counts. I will choose a review date in my own record.",
+      "hint": "Specify something you will produce or explain; copying this record is not proof of understanding."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Reviewed parent guide (released November 12)",
+      "href": "https://medqgo.com/neet-ug/biology/mendelian-inheritance"
+    },
+    {
+      "label": "OpenStax Biology 2e 12.2: conceptual reference",
+      "href": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits"
+    },
+    {
+      "label": "Blank personal record tool",
+      "href": "https://medqgo.com/neet-ug/biology/learn/inheritance#explanation-record"
+    }
+  ]
+}

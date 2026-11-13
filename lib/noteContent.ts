@@ -69,7 +69,6 @@ export const AUTHORED_NOTE_SLUGS = [
   "digestion-and-absorption",
   "blood-and-circulation",
   "mendelian-inheritance",
-  "recombinant-dna-technology",
   "sexual-reproduction-in-flowering-plants",
   "chromosomal-basis-of-inheritance",
   "pedigree-analysis-and-inheritance-patterns",
@@ -1228,7 +1227,7 @@ const noteContent: Record<string, NoteSection[]> = {
     ] },
     { heading: "Use a dependency map to audit your explanation", paragraphs: [
       "Draw six boxes: target DNA, cutting, vector, joining, host, recovery. Add an arrow only when the earlier box supplies something required by the next. Then write a short explanation of why a marker belongs near the host-selection stage and why purification belongs after production. This map makes missing dependencies visible.",
-      "NCERT anchor: Biotechnology: Principles and Processes, sections 9.1-9.3 in the 2025-26 reprint. Follow it with biotechnology applications to distinguish a method from its use, and with molecular basis of inheritance to refresh DNA structure and replication. This is an independent educational overview, not a lab manual or a claim of official NCERT status."
+      "Read the linked NCERT chapter, Biotechnology: Principles and Processes, alongside this conceptual account. Follow it with biotechnology applications to distinguish a method from its use, and with molecular basis of inheritance to refresh DNA structure and replication. This is an independent educational overview, not a lab manual or a claim of official NCERT status."
     ] }
   ],
   "enzymes-and-enzyme-action": [
@@ -1728,7 +1727,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "At the synapse, the signal changes form",
       paragraphs: [
-        "Most NEET questions use the chemical synapse model. When an impulse reaches the presynaptic terminal, neurotransmitter is released into the synaptic cleft. It binds receptors on the postsynaptic membrane and can start a new electrical change in the next neuron or target cell.",
+        "In a chemical synapse, when an impulse reaches the presynaptic terminal, neurotransmitter is released into the synaptic cleft. It binds receptors on the postsynaptic membrane and can start a new electrical change in the next neuron or target cell.",
         "The synaptic cleft is not a direct electrical wire. This is why chemical synapses normally pass information in one direction: neurotransmitter is released from the presynaptic side and the relevant receptors are concentrated on the postsynaptic side. Keep the names of the two sides separate in close options.",
       ],
     },
@@ -1751,7 +1750,7 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "Build the chapter around information flow",
       paragraphs: [
-        "The most useful starting point is a simple direction map: DNA stores hereditary information, a gene is expressed through an RNA intermediate, and translation uses that RNA information to assemble a protein. This map is not a substitute for the details, but it prevents the common mistake of treating replication, transcription and translation as unrelated lists of terms.",
+        "The most useful starting point is a simple direction map: DNA stores hereditary information. For a protein-coding gene, transcription supplies RNA and translation uses the messenger RNA to assemble a polypeptide. Other genes produce functional RNAs that are not translated. This map is not a substitute for the details, but it prevents the common mistake of treating replication, transcription and translation as unrelated lists of terms.",
         "Before revising individual enzymes or molecules, identify the input, output, main location and purpose of each process. Replication makes a new DNA copy before cell division. Transcription produces RNA from a DNA template. Translation reads the information carried by messenger RNA to make a polypeptide. A close comparison is easier when these four anchors are clear.",
       ],
     },
@@ -1850,12 +1849,12 @@ const noteContent: Record<string, NoteSection[]> = {
     {
       heading: "What a mutation changes",
       paragraphs: [
-        "A mutation is a heritable alteration in genetic material. It can involve a change in the nucleotide sequence of a gene or a larger change involving chromosome structure or chromosome number. The effect depends on where the change occurs and how it affects a gene product or chromosome behaviour; a mutation is not automatically harmful, beneficial or visible.",
+        "A mutation is a change in genetic material that can persist when a cell lineage divides. In a sexually reproducing organism, a mutation in a body cell is not automatically passed to offspring; transmission to offspring requires the change to enter the reproductive lineage. It can involve a change in the nucleotide sequence of a gene or a larger change involving chromosome structure or chromosome number. The effect depends on where the change occurs and how it affects a gene product or chromosome behaviour; a mutation is not automatically harmful, beneficial or visible.",
         "When revising mutation types, separate the level at which the change occurs. Gene-level changes affect a DNA sequence within a gene. Chromosomal changes concern larger segments or number. Mixing these levels is a common source of confusion because both can influence inherited traits.",
       ],
       bullets: [
         "Substitution changes one base pair for another.",
-        "Insertion or deletion can alter the reading frame when the number of added or removed bases is not a multiple of three.",
+        "Within a protein-coding sequence, an insertion or deletion that changes the number of bases by a value not divisible by three can shift the downstream codon reading frame.",
         "A mutation may change a protein sequence, have little apparent effect, or affect regulation depending on context.",
         "Mutagens are factors that can increase the chance of mutation; they are not the same as a mutation itself.",
       ],
@@ -1864,7 +1863,7 @@ const noteContent: Record<string, NoteSection[]> = {
       heading: "From DNA change to protein consequence",
       paragraphs: [
         "To reason through a gene mutation, follow a sequence: DNA information is transcribed into RNA, RNA codons are read during translation, and the resulting amino-acid sequence contributes to protein structure and function. A change in DNA does not guarantee a dramatic phenotype, because the genetic code has redundancy and because the position of the change matters.",
-        "A frameshift is especially important as a concept because inserting or deleting bases can change how later codons are grouped. By contrast, a substitution changes one position without necessarily shifting the downstream grouping. Draw the codons in groups of three to make this distinction visible.",
+        "In a protein-coding sequence, adding or removing bases in a number not divisible by three shifts the grouping of downstream codons. A three-base insertion or deletion changes the sequence but does not shift that downstream grouping by itself. By contrast, a substitution changes one position without necessarily shifting the downstream grouping. Draw the codons in groups of three to make this distinction visible.",
       ],
     },
     {
@@ -3200,7 +3199,7 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "sexual-reproduction-in-flowering-plants": [
     { label: "NCERT Class 12 Biology, Chapter 1: Sexual Reproduction in Flowering Plants", href: "https://ncert.nic.in/textbook/pdf/lebo101.pdf" },
-    { label: "OpenStax Biology 2e: Sexual reproduction", href: "https://openstax.org/books/biology-2e/pages/11-2-sexual-reproduction" },
+    {"label": "OpenStax Biology 2e 32.2: Pollination and fertilization", "href": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"},
   ],
   "mendelian-inheritance": [
     { label: "NCERT Class 12 Biology: Principles of Inheritance and Variation (chapter reference)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
@@ -3252,14 +3251,17 @@ const noteReferences: Record<string, NoteReference[]> = {
   "mitosis-and-meiosis": [
     { label: "NCERT Class 11 Biology, Chapter 10: Cell Cycle and Cell Division", href: "https://ncert.nic.in/textbook/pdf/kebo110.pdf" },
     { label: "OpenStax Biology 2e: The cell cycle", href: "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle" },
+    {"label": "OpenStax Biology 2e 11.1: The process of meiosis", "href": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"},
   ],
   "photosynthesis-in-higher-plants": [
     { label: "NCERT Class 11 Biology, Chapter 11: Photosynthesis in Higher Plants", href: "https://ncert.nic.in/textbook/pdf/kebo111.pdf" },
     { label: "OpenStax Biology 2e: Overview of photosynthesis", href: "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis" },
+    {"label": "OpenStax Biology 2e 8.3: Calvin-cycle carbon accounting", "href": "https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules"},
   ],
   "plant-respiration": [
     { label: "NCERT Class 11 Biology, Chapter 12: Respiration in Plants", href: "https://ncert.nic.in/textbook/pdf/kebo112.pdf" },
     { label: "OpenStax Biology 2e: Glycolysis", href: "https://openstax.org/books/biology-2e/pages/7-2-glycolysis" },
+    {"label": "OpenStax Biology 2e 7.5: Metabolism without oxygen", "href": "https://openstax.org/books/biology-2e/pages/7-5-metabolism-without-oxygen"},
   ],
   "digestion-and-absorption": [
     { label: "NCERT Class 11 Biology: current contents (digestion is supplementary reading)", href: "https://ncert.nic.in/textbook/pdf/kebo1ps.pdf" },
@@ -3299,18 +3301,17 @@ const noteReferences: Record<string, NoteReference[]> = {
   ],
   "dna-rna-replication-transcription-translation": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
-    { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
-    { label: "Khan Academy: Central dogma", href: "https://www.khanacademy.org/science/biology/gene-expression-central-dogma" },
+    { label: "OpenStax Biology 2e 15.1: The genetic code", href: "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code" },
   ],
   "cell-theory-and-cell-organelles": [
     { label: "NCERT Class 11 Biology, Chapter 8: Cell: The Unit of Life", href: "https://ncert.nic.in/textbook/pdf/kebo108.pdf" },
-    { label: "NCBI Bookshelf: Molecular Biology of the Cell", href: "https://www.ncbi.nlm.nih.gov/books/NBK21054/" },
-    { label: "Khan Academy: Cell structures", href: "https://www.khanacademy.org/science/biology/structure-of-a-cell" },
+    {"label": "OpenStax Biology 2e 4.4: Endomembrane system and proteins", "href": "https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins"},
   ],
   "mutation-and-gene-expression": [
     { label: "NCERT Class 12 Biology, Chapter 5: Molecular Basis of Inheritance", href: "https://ncert.nic.in/textbook/pdf/lebo105.pdf" },
     { label: "NHGRI Genetics Glossary: Mutation — DNA sequence changes", href: "https://www.genome.gov/genetics-glossary/Mutation" },
     { label: "Khan Academy: Gene regulation", href: "https://www.khanacademy.org/science/biology/gene-regulation" },
+    {"label": "OpenStax Biology 2e 14.6: DNA repair and mutation types", "href": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"},
   ],
   "morphology-of-flowering-plants": [
     { label: "NCERT Class 11 Biology, Chapter 5: Morphology of Flowering Plants (2025-26)", href: "https://www.ncert.nic.in/textbook/pdf/kebo105.pdf" },

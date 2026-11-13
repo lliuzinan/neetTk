@@ -31,12 +31,12 @@ test("publishes the C4 shuttle guide with its original diagram and connected stu
 });
 
 test("replaces legacy generic checkpoints with topic-specific reasoning and keeps publication history", async () => {
-  const slugs = ["plant-respiration", "photosynthesis-in-higher-plants", "blood-and-circulation", "human-respiration", "excretion-and-kidney-function", "mitosis-and-meiosis", "dna-rna-replication-transcription-translation", "mutation-and-gene-expression", "cell-theory-and-cell-organelles", "endocrine-system-and-hormones", "immunity-pathogens-vaccines", "neuron-nerve-impulse-synapse", "recombinant-dna-technology"];
+  const slugs = ["plant-respiration", "photosynthesis-in-higher-plants", "blood-and-circulation", "human-respiration", "excretion-and-kidney-function", "mitosis-and-meiosis", "dna-rna-replication-transcription-translation", "mutation-and-gene-expression", "cell-theory-and-cell-organelles", "endocrine-system-and-hormones", "immunity-pathogens-vaccines", "neuron-nerve-impulse-synapse", "biotechnology-principles-and-processes"];
   for (const slug of slugs) {
     const html = await readFile(new URL(`../.next/server/app/neet-ug/biology/${slug}.html`, import.meta.url), "utf8");
     assert.doesNotMatch(html, /Before leaving this page|Exam-style checkpoints/);
     const article = jsonLdItems(html).find(item => item["@type"] === "Article");
-    assert.equal(article.dateModified, slug === "excretion-and-kidney-function" ? "2026-10-20" : slug === "immunity-pathogens-vaccines" ? "2026-10-30" : "2026-09-30");
+    assert.equal(article.dateModified, ["plant-respiration", "photosynthesis-in-higher-plants", "human-respiration", "mitosis-and-meiosis", "dna-rna-replication-transcription-translation", "mutation-and-gene-expression", "cell-theory-and-cell-organelles", "biotechnology-principles-and-processes", "neuron-nerve-impulse-synapse"].includes(slug) ? "2026-11-13" : slug === "excretion-and-kidney-function" ? "2026-10-20" : slug === "immunity-pathogens-vaccines" ? "2026-10-30" : "2026-09-30");
     assert.ok(article.datePublished < article.dateModified);
     assert.match(html, /Related revision guides/);
   }
@@ -207,7 +207,8 @@ test("publishes only revision URLs in the sitemap", async () => {
   assert.match(sitemapXml, /mitosis-and-meiosis/);
   assert.match(sitemapXml, /sexual-reproduction-in-flowering-plants/);
   assert.match(sitemapXml, /mendelian-inheritance/);
-  assert.match(sitemapXml, /recombinant-dna-technology/);
+  assert.doesNotMatch(sitemapXml, /recombinant-dna-technology/);
+  assert.match(sitemapXml, /biotechnology-principles-and-processes/);
   assert.match(sitemapXml, /chromosomal-basis-of-inheritance/);
   assert.match(sitemapXml, /carbohydrates-proteins-lipids-nucleic-acids/);
 });
@@ -248,7 +249,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.match(topicHtml, /Human respiration: the high-yield sequence/);
   assert.match(topicHtml, /How to use this guide/);
   assert.match(topicHtml, /Published: .*September 5, 2026/);
-  assert.match(topicHtml, /Last updated: .*September 30, 2026/);
+  assert.match(topicHtml, /Last updated: .*November 13, 2026/);
   assert.match(topicHtml, /Related revision guides/);
   assert.match(topicHtml, /Equal minute ventilation can hide different useful airflow/);
   assert.doesNotMatch(topicHtml, /Before leaving this page/);
@@ -269,7 +270,7 @@ test("renders in-depth topic guides and the trust pages", async () => {
   assert.doesNotMatch(endocrineHtml, /DongFeng|University Biology Instructor|authors\/dongfeng/);
   assert.match(endocrineHtml, /2026-09-30/);
   assert.doesNotMatch(endocrineHtml, /MCQ practice, and answer explanations/);
-  assert.match(respirationHtml, /human-respiration-gas-route-v1\.png/);
+  assert.match(respirationHtml, /human-respiration-gas-route-v2\.svg/);
   assert.match(excretionHtml, /excretion-nephron-arrows-v1\.png/);
   assert.doesNotMatch(immunityHtml, /immunity-barrier-memory-v1\.png/);
   assert.match(immunityHtml, /components of innate defence/);
@@ -331,7 +332,7 @@ test("publishes three distinct NCERT Biology revision guides with original teach
   const [floweringPlantsHtml, mendelianHtml, recombinantHtml] = await Promise.all([
     readFile(new URL("../.next/server/app/neet-ug/biology/sexual-reproduction-in-flowering-plants.html", import.meta.url), "utf8"),
     readFile(new URL("../.next/server/app/neet-ug/biology/mendelian-inheritance.html", import.meta.url), "utf8"),
-    readFile(new URL("../.next/server/app/neet-ug/biology/recombinant-dna-technology.html", import.meta.url), "utf8"),
+    readFile(new URL("../.next/server/app/neet-ug/biology/biotechnology-principles-and-processes.html", import.meta.url), "utf8"),
   ]);
   assert.match(floweringPlantsHtml, /Double fertilisation has two fusion events and two products/);
   assert.match(floweringPlantsHtml, /flowering-plant-double-fertilisation-v1\.png/);
@@ -339,10 +340,10 @@ test("publishes three distinct NCERT Biology revision guides with original teach
   assert.match(mendelianHtml, /Begin with what each parent can contribute/);
   assert.match(mendelianHtml, /mendelian-segregation-v1\.png/);
   assert.match(mendelianHtml, /lebo104\.pdf/);
-  assert.match(recombinantHtml, /Recombinant DNA is a controlled sequence, not a single tool/);
-  assert.match(recombinantHtml, /recombinant-dna-workflow-v1\.png/);
+  assert.match(recombinantHtml, /A biotechnology product is the end of a chain, not the beginning/);
+  assert.match(recombinantHtml, /biotechnology-recombinant-dna-order-v1\.webp/);
   assert.match(recombinantHtml, /lebo109\.pdf/);
-  for (const html of [floweringPlantsHtml, mendelianHtml, recombinantHtml]) {
+  for (const html of [floweringPlantsHtml, mendelianHtml]) {
     assert.match(html, /Published by:<\/strong> MedQGo/);
     assert.match(html, /September 14, 2026/);
   }
@@ -659,7 +660,7 @@ test("public guide attribution and metadata consistently identify the publisher"
   const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
   const urls = [...sitemap.matchAll(/<loc>(https:\/\/medqgo\.com\/neet-ug\/biology\/[^<]+)<\/loc>/g)].map(m => m[1]);
   const guides = urls.filter(url => !url.includes("/learn/"));
-  assert.equal(guides.length, 64);
+  assert.equal(guides.length, 63);
   assert.doesNotMatch(sitemap, /\/authors\/dongfeng/);
   for (const url of guides) {
     const slug = url.split("/").at(-1);
@@ -671,4 +672,28 @@ test("public guide attribution and metadata consistently identify the publisher"
   }
   const redirects = await nextConfig.redirects();
   assert.ok(redirects.some(r => r.source === "/authors/dongfeng" && r.destination === "/team" && r.permanent));
+});
+
+
+test("consolidates recombinant workflow without losing its unique selection case", async () => {
+ const redirects = await nextConfig.redirects();
+ const redirect = redirects.find(r => r.source === "/neet-ug/biology/recombinant-dna-technology");
+ assert.equal(redirect.destination, "/neet-ug/biology/biotechnology-principles-and-processes");
+ assert.equal(redirect.permanent, true);
+ const html = await readFile(new URL("../.next/server/app/neet-ug/biology/biotechnology-principles-and-processes.html", import.meta.url), "utf8");
+ assert.match(html, /A selected colony is evidence of a marker, not proof of an insert/);
+ assert.match(html, /href="#worked-example"/);
+ const frog = await readFile(new URL("../.next/server/app/neet-ug/biology/frog-organ-systems-and-structural-map.html", import.meta.url), "utf8");
+ assert.match(frog, /href="\/neet-ug\/biology\/blood-and-circulation">blood and circulation<\/a>/);
+});
+
+test("filled record has seven static fields and links back to the learner's own record", async () => {
+ const html = await readFile(new URL("../.next/server/app/neet-biology-pdf.html", import.meta.url), "utf8");
+ assert.match(html, /id="filled-example"/);
+ assert.match(html, /medqgo-explanation-example.pdf/);
+ assert.match(html.replace(/<!--.*?-->/g, ""), /7. Next review/);
+ assert.match(html, /recordTopic=segregation/);
+ assert.doesNotMatch(html, /DRAFT FOR CONTENT REVIEW/);
+ const pdf = await readFile(new URL("../public/downloads/medqgo-explanation-example.pdf", import.meta.url));
+ assert.equal(pdf.subarray(0,5).toString(), "%PDF-");
 });

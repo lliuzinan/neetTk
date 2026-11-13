@@ -1,3 +1,4 @@
+import { InlineStudyText } from "@/components/InlineStudyText";
 import { InheritanceRouteNav } from "@/components/InheritanceRouteNav";
 import { LinkageRecordAudit } from "@/components/LinkageRecordAudit";
 import { TestcrossCase } from "@/components/TestcrossCase";
@@ -16,7 +17,7 @@ import { getTopicSeoContent } from "@/lib/topicSeo";
 
 interface Props { params: Promise<{ topicSlug: string }>; }
 
-const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number }> = {
+const articleIllustrations: Record<string, { src: string; alt: string; caption: string; width?: number; height?: number; mobileSrc?: string }> = {
   "polygenic-inheritance-and-pleiotropy": {
   "src": "/images/biology/polygenic-inheritance-and-pleiotropy-v1.webp",
   "alt": "Several gene inputs converge on one trait in polygenic inheritance; one gene input branches to several traits in pleiotropy.",
@@ -226,9 +227,11 @@ const articleIllustrations: Record<string, { src: string; alt: string; caption: 
     caption: "An original double-circulation map. Read the arrows as two connected loops: pulmonary circulation through lungs and systemic circulation through body tissues.",
   },
   "human-respiration": {
-    src: "/images/biology/human-respiration-gas-route-v1.png",
-    alt: "Four-stage route showing ventilation, alveolar gas exchange, blood transport, and tissue exchange",
-    caption: "An original route map: air enters alveoli, oxygen and carbon dioxide cross the respiratory surface in opposite directions, blood transports the gases, and exchange continues at tissues.",
+    src: "/images/biology/human-respiration-gas-route-v2.svg",
+    mobileSrc: "/images/biology/human-respiration-gas-route-v2-mobile.svg",
+    width: 1600, height: 900,
+    alt: "Oxygen moves from alveolus to blood to tissue; carbon dioxide moves toward alveolar air. Oxygen is shown on haemoglobin in a red blood cell and bicarbonate in plasma.",
+    caption: "Blue arrows trace oxygen into blood and tissues; amber arrows trace carbon dioxide toward alveolar air. Oxygen travels mainly on haemoglobin in red blood cells. Much carbon dioxide becomes bicarbonate in red blood cells and is then carried in plasma. Chloride exchange and minor transport forms are omitted.",
   },
   "excretion-and-kidney-function": {
     src: "/images/biology/excretion-nephron-arrows-v1.png",
@@ -413,7 +416,7 @@ const articleStudyNotes: Record<string, { heading: string; intro: string; points
     intro: "The shortest reliable distinction is this: mutation changes genetic information or its arrangement; gene regulation changes when, where, or how much information is used.",
     points: [
       "A substitution changes one base-pair position and may or may not change the resulting amino-acid sequence.",
-      "An insertion or deletion can alter downstream codon grouping when it changes the reading frame.",
+      "Within a coding sequence, an insertion or deletion can shift downstream codon grouping when its length is not divisible by three.",
       "Gene expression follows the route from DNA information to RNA and, for protein-coding genes, to a polypeptide product.",
       "A visible trait depends on context; a DNA change is not automatically a disease statement.",
     ],
@@ -506,6 +509,7 @@ export default async function TopicPage({ params }: Props) {
               <li key={section.heading}><a href={`#guide-section-${index + 1}`}>{section.heading}</a></li>,
               ...(index === 1 ? [<li key="comparison"><a href="#guide-comparison">{comparisonTable.heading}</a></li>] : []),
             ])}
+            {noteExercises[topic.slug] && <li><a href="#worked-example">{noteExercises[topic.slug].heading}</a></li>}
             <li><a href="#guide-references">References</a></li>
             <li><a href="#guide-related">Related revision guides</a></li>
           </ol>
@@ -514,10 +518,10 @@ export default async function TopicPage({ params }: Props) {
         <ul className="seoList">{seoContent.focus.map((item) => <li key={item}>{item}</li>)}</ul>
       </details>
       <article className="articleBody">
-        {sections.slice(0, 2).map((section, index) => <section id={`guide-section-${index + 1}`} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
+        {sections.slice(0, 2).map((section, index) => <section id={`guide-section-${index + 1}`} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map((paragraph) => <p key={paragraph}><InlineStudyText text={paragraph} /></p>)}{section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}</section>)}
         {articleIllustration && (
           <figure className="articleIllustration">
-            <img src={articleIllustration.src} alt={articleIllustration.alt} width={articleIllustration.width ?? 1600} height={articleIllustration.height ?? 1000} />
+            <picture>{articleIllustration.mobileSrc && <source media="(max-width: 600px)" srcSet={articleIllustration.mobileSrc} width={900} height={1800} />}<img src={articleIllustration.src} alt={articleIllustration.alt} width={articleIllustration.width ?? 1600} height={articleIllustration.height ?? 1000} /></picture>
             <figcaption>{articleIllustration.caption}</figcaption>
           </figure>
         )}
@@ -530,7 +534,7 @@ export default async function TopicPage({ params }: Props) {
         )}
         <section className="editorialAside">
           <h2>{editorialBlock.heading}</h2>
-          {editorialBlock.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {editorialBlock.paragraphs.map((paragraph) => <p key={paragraph}><InlineStudyText text={paragraph} /></p>)}
           {editorialBlock.bullets && <ul className="seoList">{editorialBlock.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
         </section>
         <section id="guide-comparison">
@@ -552,7 +556,7 @@ export default async function TopicPage({ params }: Props) {
         {sections.slice(2).map((section, index) => (
           <section id={`guide-section-${index + 3}`} key={section.heading}>
             <h2>{section.heading}</h2>
-            {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {section.paragraphs?.map((paragraph) => <p key={paragraph}><InlineStudyText text={paragraph} /></p>)}
             {section.bullets && <ul className="seoList">{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
             {topic.slug === "testcross-and-unknown-genotypes" && section.heading === "Open one family record in two stages" && <TestcrossCase />}
             {topic.slug === "linkage-and-recombination-frequency" && section.heading === "Audit two records before declaring stronger linkage" && <LinkageRecordAudit />}
@@ -565,9 +569,9 @@ export default async function TopicPage({ params }: Props) {
           </section>
         ))}
         <section><h2>Common confusions to check</h2><ul className="seoList">{seoContent.traps.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        {noteExercises[topic.slug] && <section>
+        {noteExercises[topic.slug] && <section id="worked-example">
           <h2>{noteExercises[topic.slug].heading}</h2>
-          {noteExercises[topic.slug].paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {noteExercises[topic.slug].paragraphs?.map((paragraph) => <p key={paragraph}><InlineStudyText text={paragraph} /></p>)}
         </section>}
         <section className="articleMetaBox">
           <h2>Editorial note and disclaimer</h2>

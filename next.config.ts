@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/neet-ug/biology/recombinant-dna-technology", destination: "/neet-ug/biology/biotechnology-principles-and-processes", permanent: true },
       { source: "/authors/dongfeng", destination: "/team", permanent: true },
       {
         source: "/neet-ug/biology/:topicSlug/q/:questionId",

@@ -1,3 +1,4 @@
+import { ExplanationExample } from "@/components/ExplanationExample";
 import { PrintWorkbook } from "@/components/PrintWorkbook";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -18,13 +19,14 @@ export const metadata: Metadata = {
 
 export default function NeetBiologyPdfPage() {
   return <main className="page pdfLanding">
-    <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Free study resources" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Available study resources</p><h1>Free Biology explanation record and recall sheet</h1><p>Download the blank two-page record, write in the editable version, or print the recall sheet below. These resources are available now without registration and are not official NCERT, NTA, or NEET material.</p><EditorialByline lastUpdated="November 9, 2026" /></header>
+    <header className="pageHeader"><Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/neet-biology-pdf", label: "Free study resources" }]} /><Link href="/" className="backLink">Home</Link><p className="eyebrow">Available study resources</p><h1>Free Biology explanation record and recall sheet</h1><p>Download the blank two-page record, write in the editable version, or print the recall sheet below. These resources are available now without registration and are not official NCERT, NTA, or NEET material.</p><EditorialByline lastUpdated="November 13, 2026" /></header>
     <section className="contentBand" aria-labelledby="record-download-title">
       <p className="eyebrow">Available now / Free download</p><h2 id="record-download-title">Keep a record of your own explanation</h2>
       <p>A two-page blank worksheet for your conclusion, evidence, assumptions, reasoning, uncertainties, corrections and next review. Print it and write by hand; it does not contain answers or a scored assessment.</p>
       <p><a className="primaryButton" href="/downloads/medqgo-explanation-record.pdf" download>Download blank record (PDF, 2 pages)</a></p>
       <p><Link href="/neet-ug/biology/learn/inheritance#explanation-record">Use the same prompts in editable HTML →</Link> Save in this browser, back up your notes, or print your completed explanation.</p>
     </section>
+    <ExplanationExample />
     <section className="workbookSample" aria-labelledby="free-sample-title">
       <div className="workbookSampleIntro"><p className="eyebrow">Free sample</p><h2 id="free-sample-title">A 12-minute gene-expression recall sheet</h2><p>Use this after reading the relevant NCERT section. It is designed to reveal whether you can connect a sequence, its working copy, and the final product without relying on a memorised list.</p></div>
       <PrintWorkbook />
