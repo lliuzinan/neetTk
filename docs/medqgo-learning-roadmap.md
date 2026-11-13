@@ -391,3 +391,9 @@ This addition records acceptance criteria only. It does not establish that a fre
 ### Production verification — November 12
 
 Commit `b646ec8` pushed; Vercel status success. Live browser displays the November 12 date, constructed 12/17/11 example, loaded illustration and new pairing table. No horizontal overflow at 320/390/1440; production 390px table screenshot visually checked. URL: https://medqgo.com/neet-ug/biology/mendelian-inheritance . This is one reviewed guide release, not completion of all site remediation.
+
+### November 13 — filled explanation-record example prepared for review
+
+- W4: created a complete seven-field filled example from the released Mendelian model, with an explanation of each field's purpose; two-page PDF and equivalent static HTML share source data. Explicitly labels fictional counts and illustrative correction; no learner feedback invented.
+- Both PDF pages rendered and visually checked; all seven values/notes extracted intact. HTML checked at 320/390/768/1440, no overflow, mobile visually inspected. Python requests for production source/tool returned 403; fresh browser link checks remain at integration.
+- Review packet: docs/audits/2026-11-13-filled-example-review.md. Actual review of the new adaptation pending; yesterday's guide confirmation is not expanded. No app code, public download, or deployed page changed. Existing mutation/respiration review drafts remain open.
