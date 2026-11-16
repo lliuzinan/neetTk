@@ -3,14 +3,20 @@ import { useState } from "react";
 import Link from "next/link";
 import { cross, genotypes, percent, crossSummary, appendCross, type Genotype } from "@/lib/monohybrid";
 import { recordKey, parseRecordBook, emptyBook, emptyRecord } from "@/lib/explanationRecords";
+import { getRecessiveCross } from "@/lib/pedigree";
 import styles from "./MonohybridExplorer.module.css";
-export function MonohybridExplorer() {
-  const [p1, setP1] = useState<Genotype>("Aa"), [p2, setP2] = useState<Genotype>("Aa");
+export function MonohybridExplorer({ example }: { example?: ReturnType<typeof getRecessiveCross> }) {
+  const [p1, setP1] = useState<Genotype>(example?.parents[0] ?? "Aa");
+  const [p2, setP2] = useState<Genotype>(example?.parents[1] ?? "Aa");
+  const [showExample, setShowExample] = useState(Boolean(example));
   const [selected, setSelected] = useState(0), [status, setStatus] = useState("");
   const [saved, setSaved] = useState("");
   const result = cross(p1, p2), cell = result.cells[selected] ?? result.cells[0];
   const signature = `${p1}-${p2}`;
-  function change(a: Genotype, b: Genotype) { setP1(a); setP2(b); setSelected(0); setStatus(""); }
+  function change(a: Genotype, b: Genotype) {
+    if (a !== p1 || b !== p2) setShowExample(false);
+    setP1(a); setP2(b); setSelected(0); setStatus("");
+  }
   function save() {
     try {
       const raw = localStorage.getItem(recordKey), book = raw ? parseRecordBook(raw) : emptyBook();
@@ -27,6 +33,11 @@ export function MonohybridExplorer() {
     setStatus("Download requested. The file includes the reasoning and model limits.");
   }
   return <div className={styles.explorer}>
+    {showExample && example && <section className={styles.panel} aria-label="Fictional pedigree starting point">
+      <h2>{example.pair} under the autosomal recessive model</h2>
+      <p>{example.child} is aa under this hypothesis, so both unaffected parents must carry a. The cross shows expected offspring probabilities for the assumed Aa × Aa pair.</p>
+      <Link href="/neet-ug/biology/tools/pedigree-analysis">Return to the competing pedigree hypotheses →</Link>
+    </section>}
     <noscript><p className={styles.noScript}>JavaScript is needed to change the parents and save a record. The Aa × Aa example and its explanation remain readable.</p></noscript>
     <section className={styles.setup} aria-labelledby="parents-title">
       <div className={styles.sectionLabel}>01 <span>Set the model</span></div>
