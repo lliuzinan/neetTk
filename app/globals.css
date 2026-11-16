@@ -1497,6 +1497,52 @@ h3 {
 .testcrossCase summary { cursor:pointer; font-weight:bold; }
 .testcrossCase :focus-visible { outline:3px solid #bb8510; outline-offset:3px; }
 
+.testcrossComparator { margin:28px 0; padding:clamp(18px,3vw,30px); border:1px solid #b5cbbd; border-radius:16px; background:#f1f7ee; line-height:1.7; }
+.testcrossComparator h2 { font-size:clamp(22px,3vw,30px); line-height:1.2; margin:8px 0 16px; }
+.testcrossInputs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:22px 0; }
+.testcrossInputs label { display:grid; gap:8px; font-weight:700; }
+.testcrossInputs input { width:100%; box-sizing:border-box; font:inherit; padding:10px 12px; border:1px solid #829b89; border-radius:8px; background:#fff; color:#172019; }
+.testcrossResults { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.testcrossResults article { min-width:0; background:#fff; border:1px solid #dce7d6; border-radius:12px; padding:16px; display:flex; flex-direction:column; }
+.testcrossResults h3 { margin:0 0 8px; }
+.testcrossResults strong { font-size:clamp(24px,4vw,34px); color:#176b43; overflow-wrap:anywhere; }
+.testcrossResults span { font-size:14px; color:#526358; }
+.testcrossInterpretation { border-left:4px solid #176b43; background:#fff; padding:4px 16px; margin:18px 0; }
+.testcrossBoundary { color:#405348; font-size:14px; }
+.testcrossComparator summary { cursor:pointer; font-weight:700; }
+.testcrossComparator :focus-visible { outline:3px solid #bb8510; outline-offset:3px; }
+@media(max-width:600px) { .testcrossInputs,.testcrossResults { grid-template-columns:minmax(0,1fr); } }
+
+.dominanceExplorer { margin:28px 0; padding:clamp(18px,3vw,30px); border:1px solid #b5cbbd; border-radius:16px; background:#f1f7ee; line-height:1.7; }
+.dominanceExplorer h2 { font-size:clamp(22px,3vw,30px); line-height:1.2; margin:8px 0 16px; }
+.dominanceParents { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:end; gap:16px; max-width:620px; margin:22px 0; }
+.dominanceParents label { display:grid; gap:8px; font-weight:700; }
+.dominanceParents select { width:100%; font:inherit; padding:10px 12px; border:1px solid #829b89; border-radius:8px; background:#fff; color:#172019; }
+.dominanceModes { border:1px solid #cbd9c8; border-radius:12px; padding:16px; background:#fff; }
+.dominanceModes legend { padding:0 6px; font-weight:700; }
+.dominanceModes label { display:inline-flex; align-items:center; gap:8px; border:1px solid #cbd9c8; border-radius:8px; padding:10px 12px; margin:4px; cursor:pointer; }
+.dominanceModes label.selected { border-color:#176b43; background:#eaf4e5; }
+.dominanceModes input { accent-color:#176b43; }
+.dominanceResults { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:18px 0; }
+.dominanceResults > section { min-width:0; background:#fff; border:1px solid #dce7d6; border-radius:12px; padding:16px; }
+.dominanceResults h3 { font-size:18px; margin:0 0 14px; }
+.dominanceGenotypes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.dominanceGenotypes > div { display:grid; justify-items:center; gap:4px; background:#f5f8f2; border-radius:8px; padding:10px 4px; }
+.dominanceGenotypes strong,.dominancePhenotypes strong { color:#176b43; font-size:20px; }
+.dominancePhenotypes { list-style:none; padding:0; margin:0; }
+.dominancePhenotypes li { display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e2e9df; padding:8px 0; }
+.dominancePhenotypes li span { overflow-wrap:anywhere; }
+.dominanceMatrix { border:1px solid #cbd9c8; border-radius:10px; background:#fff; padding:14px 16px; }
+.dominanceMatrix summary { cursor:pointer; font-weight:700; }
+.dominanceTableWrap { overflow-x:auto; }
+.dominanceMatrix table { border-collapse:collapse; width:100%; min-width:340px; text-align:center; }
+.dominanceMatrix caption { padding:12px; font-weight:700; }
+.dominanceMatrix th,.dominanceMatrix td { border:1px solid #dce7d6; padding:10px; }
+.dominanceMatrix td span { display:block; color:#526358; font-size:14px; }
+.dominanceLimits { margin:18px 0; padding:12px 16px; border-left:4px solid #176b43; background:#fff; }
+.dominanceExplorer :focus-visible { outline:3px solid #bb8510; outline-offset:3px; }
+@media(max-width:650px) { .dominanceResults { grid-template-columns:minmax(0,1fr); } .dominanceModes label { display:flex; } }
+
 .linkageAudit {margin:24px 0;padding:18px;border:1px solid #b5cbbd;border-radius:12px;background:#f1f7ee;}
 .linkageAudit figcaption {line-height:1.6;margin-bottom:16px;}
 .linkageAudit p {margin-bottom:0;}

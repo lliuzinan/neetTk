@@ -26,6 +26,20 @@ const tools = [
     href: "/neet-ug/biology/tools/pedigree-analysis",
   },
   {
+    title: "Test-Cross Evidence Comparator",
+    question: "No recessive offspring appeared. What does that evidence mean?",
+    detail: "Compare the probability of the same observed count under AA and Aa, with sample size and model limits visible.",
+    action: "Compare evidence",
+    href: "/neet-ug/biology/tools/testcross-evidence",
+  },
+  {
+    title: "Dominance Pattern Explorer",
+    question: "Why can one genotype distribution produce different phenotype ratios?",
+    detail: "Keep parent genotypes and cross probabilities fixed while comparing complete dominance, incomplete dominance and codominance.",
+    action: "Compare phenotype models",
+    href: "/neet-ug/biology/tools/dominance-patterns",
+  },
+  {
     title: "Explanation Record",
     question: "I want to write or revisit my reasoning.",
     detail: "Record your conclusion, evidence and assumptions. Restore your work in this browser or download a backup.",
