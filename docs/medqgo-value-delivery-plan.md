@@ -75,3 +75,7 @@ W5不要求等全部77页评估完才交付遗传工具；但全库明显问题�
 ## 2026-11-16 — Owner confirmed batch review; release authorized
 
 Owner explicitly stated “核对完了 推送” in the batch review context. This confirms actual review of the November 13 consolidated candidate d334f48, including changed teaching text, respiration figure/caption, merged example and filled PDF/HTML. Record the reviewer as Owner (self-reported confirmation); no named expert, qualification or independent scientific certification is inferred. Earlier pending-review instructions for this batch are superseded by this confirmation. Production build and 41 tests passed again on November 16. Push and live verification are recorded separately in docs/2026-11-16-deployment.md. Account-side checks and real learner evidence remain outside this approval.
+
+### November 16 — released and verified
+
+The reviewed consolidated batch is now live via 40a014b; Vercel success and production browser checks confirmed. See [deployment evidence](2026-11-16-deployment.md). The November 13 batch-review wait is resolved; do not repeat it. Remaining account-side consent/eligibility checks, source-edition limits and real learner feedback are not certified by this release.
