@@ -32,7 +32,7 @@ export default function DominancePatternsPage() {
           <li><a href="https://ncert.nic.in/textbook/pdf/lebo104.pdf">NCERT Class 12 Biology, Principles of Inheritance and Variation</a> — curriculum reference.</li>
           <li><a href="https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits">OpenStax Biology 2e, Characteristics and Traits</a> — factual cross-check for complete dominance, incomplete dominance and codominance.</li>
         </ul>
-        <p>No source questions, figures or tables are reproduced. This new instructional comparison is a local draft awaiting actual content review of its model definitions, probability display and wording.</p>
+        <p>No source questions, figures or tables are reproduced. The Owner confirmed manual review of this dominance-pattern comparison on November 16, 2026; no independent teacher review or reviewer credentials are claimed.</p>
       </section>
       <nav className="learningRoute" aria-label="Continue learning">
         <h2>Continue learning</h2>

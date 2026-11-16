@@ -32,7 +32,7 @@ export default function TestcrossEvidencePage() {
           <li><a href="https://ncert.nic.in/textbook/pdf/lebo104.pdf">NCERT Class 12 Biology, Principles of Inheritance and Variation</a> — curriculum reference for the test-cross and segregation context.</li>
           <li><a href="https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance">OpenStax Biology 2e, Laws of Inheritance</a> — factual cross-check for segregation and probability-based inheritance models.</li>
         </ul>
-        <p>Sources inform the underlying concepts; no source questions, figures or tables are reproduced. This new teaching interaction is a local draft awaiting actual review of the calculation, assumptions and interpretation.</p>
+        <p>Sources inform the underlying concepts; no source questions, figures or tables are reproduced. The Owner confirmed manual review of T1–T3 on November 16, 2026. This teaching tool is not experimental data or a real-family risk calculator.</p>
       </section>
       <nav className="learningRoute" aria-label="Continue learning">
         <h2>Continue the investigation</h2>
