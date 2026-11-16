@@ -72,6 +72,10 @@ W5不要求等全部77页评估完才交付遗传工具；但全库明显问题�
 
 不批量新增文章或AI题库；不重做全部视觉作为内容整改替代；不先扩展生物技术等第二个中心；不复制官方题目、选项、教材图或PDF；不虚构专家身份、审阅、学习成绩或用户评价；不新增付费订阅、购买题库、修改广告/支付账户或发送外部邀请。
 
+## 2026-11-16 遗传工具工作包
+
+今天先交付单基因杂交推演器的本地候选，任务拆分、验收门槛和家系分析边界见 [遗传工具计划](medqgo-genetics-tools-plan.md)。家系分析不作为今天的占位页面发布；它将在推演器完成实际核验后，以虚构家系和“信息不足”结果为核心单独设计。
+
 ## 2026-11-16 — Owner confirmed batch review; release authorized
 
 Owner explicitly stated “核对完了 推送” in the batch review context. This confirms actual review of the November 13 consolidated candidate d334f48, including changed teaching text, respiration figure/caption, merged example and filled PDF/HTML. Record the reviewer as Owner (self-reported confirmation); no named expert, qualification or independent scientific certification is inferred. Earlier pending-review instructions for this batch are superseded by this confirmation. Production build and 41 tests passed again on November 16. Push and live verification are recorded separately in docs/2026-11-16-deployment.md. Account-side checks and real learner evidence remain outside this approval.

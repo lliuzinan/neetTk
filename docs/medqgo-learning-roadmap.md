@@ -412,3 +412,7 @@ Owner explicitly stated “核对完了 推送” in the batch review context. T
 ### November 16 — released and verified
 
 The reviewed consolidated batch is now live via 40a014b; Vercel success and production browser checks confirmed. See [deployment evidence](2026-11-16-deployment.md). The November 13 batch-review wait is resolved; do not repeat it. Remaining account-side consent/eligibility checks, source-edition limits and real learner feedback are not certified by this release.
+
+### November 16 — genetics tool candidate (local, not published)
+
+Prepared a noindex monohybrid cross explorer linked from the inheritance learning centre. It traces known `AA`, `Aa`, or `aa` parents through gametes, a selectable cross grid, genotype totals, complete-dominance phenotype totals, model assumptions, a text export, and an append-only handoff to the existing segregation record. Forty-four tests pass including nine parent combinations and the existing suite; the route is not deployed. A fictional pedigree analyser is planned separately and must preserve uncertainty rather than output real-family risk.
