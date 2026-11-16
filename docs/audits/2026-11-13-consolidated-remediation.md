@@ -45,3 +45,7 @@ Actual content reviewer must check the changed text, respiration diagram/caption
 Account-side advertising eligibility, regional CMP deployment and Search Console performance have not been verified in this pass; do not infer these from the existence of privacy prose or ad script. Owner must check the current AdSense policy-centre/site status and applicable consent-message setup before resubmission. No account settings or ad requests were changed or used for testing. Do not automatically resubmit.
 
 Do not mark all historical DEEPEN rows closed just because the local package is complete. Preserved guides have their independent learning-task rationale recorded above, with detailed human-review/edition limits still explicit. No article-count, word-count or traffic minimum is asserted.
+
+## 2026-11-16 — Owner confirmed batch review; release authorized
+
+Owner explicitly stated “核对完了 推送” in the batch review context. This confirms actual review of the November 13 consolidated candidate d334f48, including changed teaching text, respiration figure/caption, merged example and filled PDF/HTML. Record the reviewer as Owner (self-reported confirmation); no named expert, qualification or independent scientific certification is inferred. Earlier pending-review instructions for this batch are superseded by this confirmation. Production build and 41 tests passed again on November 16. Push and live verification are recorded separately in docs/2026-11-16-deployment.md. Account-side checks and real learner evidence remain outside this approval.

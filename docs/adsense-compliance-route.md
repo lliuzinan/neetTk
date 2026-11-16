@@ -101,3 +101,7 @@ NCERT、Exemplar、NTA、CBSE 不混称；官方题导读才需要匹配题号/�
 ## 2026-11-13 当前执行入口：整批待核验
 
 整批本地候选已准备，见 [集中整改记录](audits/2026-11-13-consolidated-remediation.md) 和 `docs/drafts/2026-11-13-batch-review/index.html`。不要重复创建相同修订，也不要把已存在的案例误判为缺失后继续堆文。新教学改写、图示、合并案例和填写示范尚待实际人工核验；本批不得在后续定时任务中被无意推送发布。用户确认本批实际审核后，核对最终版本、测试与链接，再按已有授权统一部署。仍需区分网站代码验收、科学内容审阅、广告账户及区域同意设置和 Google 最终审核。
+
+## 2026-11-16 — Owner confirmed batch review; release authorized
+
+Owner explicitly stated “核对完了 推送” in the batch review context. This confirms actual review of the November 13 consolidated candidate d334f48, including changed teaching text, respiration figure/caption, merged example and filled PDF/HTML. Record the reviewer as Owner (self-reported confirmation); no named expert, qualification or independent scientific certification is inferred. Earlier pending-review instructions for this batch are superseded by this confirmation. Production build and 41 tests passed again on November 16. Push and live verification are recorded separately in docs/2026-11-16-deployment.md. Account-side checks and real learner evidence remain outside this approval.
