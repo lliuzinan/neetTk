@@ -2,6 +2,8 @@
 
 Updated November 16, 2026. This is a product and review plan, not an AdSense approval promise.
 
+Monohybrid explorer redesign is pending design handoff. See the [redesign brief](medqgo-monohybrid-redesign-brief.md) for design deliverables and implementation acceptance criteria.
+
 ## User problem
 
 A learner can read the inheritance guides but needs a visible way to connect a parental genotype to gametes, offspring combinations, probabilities, and the limits of the conclusion. A second need is learning how to reason from a fictional pedigree without turning incomplete information into a diagnosis or a real-family risk estimate.
