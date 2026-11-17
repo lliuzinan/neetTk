@@ -109,3 +109,7 @@ Owner explicitly stated “核对完了 推送” in the batch review context. T
 ### November 16 — released and verified
 
 The reviewed consolidated batch is now live via 40a014b; Vercel success and production browser checks confirmed. See [deployment evidence](2026-11-16-deployment.md). The November 13 batch-review wait is resolved; do not repeat it. Remaining account-side consent/eligibility checks, source-edition limits and real learner feedback are not certified by this release.
+
+## 2026-11-17 — Limited inheritance source/claim audit
+
+Official NCERT contents verify the 2025–26 reprint and Chapter 4 location, but the current chapter PDF could not be retrieved. A limited local-claim/arithmetic spot-check for the five inheritance guides is recorded in [the audit note](audits/2026-11-17-inheritance-source-audit.md). No guide text or site code changed; no scientific sign-off is inferred. Exact NCERT subsection/figure mapping and actual human review for four guides remain open. Next: obtain and inspect the official chapter itself, then prepare guide-specific review packets; do not publish teaching edits until reviewed.

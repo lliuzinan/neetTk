@@ -417,9 +417,13 @@ The reviewed consolidated batch is now live via 40a014b; Vercel success and prod
 
 Prepared a noindex monohybrid cross explorer linked from the inheritance learning centre. It traces known `AA`, `Aa`, or `aa` parents through gametes, a selectable cross grid, genotype totals, complete-dominance phenotype totals, model assumptions, a text export, and an append-only handoff to the existing segregation record. Forty-four tests pass including nine parent combinations and the existing suite; the route is not deployed. A fictional pedigree analyser is planned separately and must preserve uncertainty rather than output real-family risk.
 
-### November 16 — genetics tools reviewed; release candidate
+### November 16 — genetics tools reviewed and released
 
 - Owner confirmed manual review of T1–T3 and then T4 in this task. T1–T4 status is recorded in `docs/medqgo-genetics-tools-plan.md`; this confirmation does not claim independent subject credentials.
 - T1 cross explorer, T2 fictional pedigree handoff, T3 test-cross likelihood comparison, and T4 dominance pattern explorer are included in the release candidate. T3 and T4 are linked from the dedicated tool directory; the inheritance learning centre links into the suite.
 - `npm test`: production build succeeded and all 47 tests passed. Targeted ESLint on changed tool files passed. Full `npm run lint` still fails on pre-existing errors in unrelated site-map, learning, waitlist and work/check scripts; none are in the changed tool files.
-- Release and production-route verification are recorded separately after push. No AdSense outcome is inferred.
+- Commits `e7f436c` and `a56f0ba` were pushed to `origin/main`; Vercel reports success for `a56f0ba`. Production returned HTTP 200 for the tools directory, all four tools and the inheritance learning centre. Expected titles and owner-review disclosures were present; obsolete “local draft awaiting review” copy was absent. No AdSense outcome is inferred.
+
+## November 17 — W1 source/claim spot-check (local only)
+
+Created [the five-guide inheritance audit](audits/2026-11-17-inheritance-source-audit.md). It confirms the 2025–26 NCERT chapter location from the official contents PDF, records the current chapter PDF retrieval failure, and documents bounded arithmetic/claim checks for all five guides. It explicitly does not claim scientific approval. No public content/code changed, and nothing was tested, committed, pushed or deployed. W1 remains open for exact official subsection/figure mapping and human review of four guides; next action is to obtain and inspect the official chapter, not repeat this spot-check.
