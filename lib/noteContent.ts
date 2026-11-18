@@ -926,7 +926,7 @@ const noteContent: Record<string, NoteSection[]> = {
 },
     { heading: "What a result near one half can and cannot show", paragraphs: [
       "Genes on different chromosome pairs are expected to assort independently, giving a recombinant fraction of one half in the usual two-locus model. Widely separated loci on the same chromosome can also behave as effectively unlinked in this test. A value near 50% therefore does not prove that the genes occupy different chromosomes.",
-      "For relatively short intervals, 1% recombination is used as approximately one map unit, or one centimorgan. Our 16% exercise can support an approximate two-point genetic distance under the mapping assumptions. It does not establish a distance of sixteen nucleotides or an exact number of crossing-over events.",
+      "For this simplified classroom exercise, the 16% recombinant fraction may be read as about 16 cM using the 1% ≈ 1 cM approximation. It is not an exact distance: the relationship depends on the mapping model, and two-point offspring scoring can miss multiple crossovers between the markers. The result gives neither a physical DNA length nor an exact crossover count.",
       "Expected two-point recombination fractions range up to 50%. Sampling fluctuation can put a raw estimate slightly above one half; a large excess should prompt a check of phase, class assignment and experimental assumptions. It should not be interpreted as evidence that greater than half is the usual expectation for increasingly distant loci."
     ] },
     { heading: "Rebuild the record from a blank page", paragraphs: [
