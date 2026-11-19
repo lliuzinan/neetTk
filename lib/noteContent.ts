@@ -210,7 +210,7 @@ const noteContent: Record<string, NoteSection[]> = {
     "paragraphs": [
       "Return to the case and write three lines: observation, deduction, limitation. A suitable observation is that one of eight scored offspring was recessive. The deduction is that Plant U contributed a and, because it shows the dominant phenotype, is Aa. The limitation names correct parentage, scoring and the stated single-locus inheritance model. Do not replace those three lines with the unsupported claim that the family obeys an exact 1:1 ratio.",
       "Now alter one detail: suppose the recorded recessive plant belonged to a different family. Explain what remains established. Seven dominant offspring from Plant U no longer exclude Aa or AA. Under Aa, an all-dominant set of seven has probability 1/128, but that is not the probability that Plant U is Aa. This counterfactual checks whether the conclusion actually depends on the evidence claimed.",
-      "NCERT anchor: Class 12 Biology, Chapter 4, section 4.1, Inheritance of One Gene. The tester principle comes from that discussion. The staged record, reference-cross comparison and audit task are original teaching extensions; they are not past-paper material or a protocol for a real breeding study."
+      "NCERT anchor: Class 12 Biology, Chapter 4, section 4.2, Inheritance of One Gene (Reprint 2026–27). The tester principle comes from that discussion. The staged record, reference-cross comparison and audit task are original teaching extensions; they are not past-paper material or a protocol for a real breeding study."
     ]
   }
 ],
@@ -3027,7 +3027,7 @@ const noteReferences: Record<string, NoteReference[]> = {
 ],
   "testcross-and-unknown-genotypes": [
   {
-    "label": "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.1",
+    "label": "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.2 (Reprint 2026–27)",
     "href": "https://ncert.nic.in/textbook/pdf/lebo104.pdf"
   },
   {
