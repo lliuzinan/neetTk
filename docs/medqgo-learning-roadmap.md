@@ -436,4 +436,11 @@ Prepared a bounded reviewer packet for the published linkage guide: checked the 
 
 Retrieved and inspected the official NCERT Class XII Chapter 4 PDF in Chrome. The contents page identifies section 4.2 as “Inheritance of One Gene”; the test-cross explanation is on printed page 58. Corrected the guide's erroneous section 4.1 citation, recorded exact edition/section evidence, and deployed commit `66bca3e`. `npm test` passed with 47 tests; production page HTTP 200 shows the corrected anchor and official NCERT link, with 320/390/1440px no-overflow checks. See [deployment evidence](2026-11-19-deployment.md) and the [source audit](audits/2026-11-19-testcross-ncert-reference-check.md). The testcross guide's actual human subject review and figure/interactive verification remain open; other inheritance guides' source and review work is not complete.
 
-Next W1 action: use the now-reachable official chapter PDF to resolve exact section/edition mappings for the remaining core inheritance guides, then prepare the next bounded human-review packet. Do not treat this one citation fix as full-guide review or full-site completion.
+Next W1 action: continue exact source/section checks for the remaining core inheritance guides and prepare the next bounded human-review packet. Citation fixes do not count as full-guide scientific review.
+
+
+## 2026-11-20 — Incomplete-dominance citation mapped and verified live
+
+Inspected the official NCERT Class XII Chapter 4 PDF, Reprint 2026–27. Printed p. 60 identifies §4.2.2.1, Incomplete Dominance, and Figure 4.6; printed p. 61 identifies §4.2.2.2, Co-dominance. Added both section numbers and the edition to the guide's visible source label without changing instructional prose. `npm test` passed (build plus 47 tests); local and production pages returned HTTP 200 and showed the citation and source link; 320/390/1440px production checks had no horizontal overflow. Commit `5aac869` is live; see [deployment evidence](2026-11-20-deployment.md) and [citation audit](audits/2026-11-20-incomplete-dominance-ncert-reference-check.md). The guide's actual subject review and its own figure/interactive review remain open.
+
+Next W1 item: verify the exact NCERT anchors for the remaining inheritance guides, then prepare a concrete review packet for the earliest guide without human review. The Nov 19 testcross and Nov 20 incomplete-dominance reference fixes are complete and should not be repeated.
