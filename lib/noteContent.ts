@@ -3118,7 +3118,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "NHGRI: Polymerase Chain Reaction Fact Sheet", href: "https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet" },
   ],
   "incomplete-dominance-and-codominance": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation - incomplete dominance and co-dominance", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology, Chapter 4: sections 4.2.2.1 Incomplete Dominance and 4.2.2.2 Co-dominance (Reprint 2026–27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e, 12.2: Characteristics and Traits - alternatives to dominance and recessiveness", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
     { label: "National Human Genome Research Institute: Codominance", href: "https://www.genome.gov/genetics-glossary/Codominance" },
   ],
