@@ -932,7 +932,7 @@ const noteContent: Record<string, NoteSection[]> = {
     { heading: "Rebuild the record from a blank page", paragraphs: [
       "Write AB/ab x ab/ab, then make four rows headed AB, ab, Ab and aB. Without looking back, add the offspring genotypes, mark parental or recombinant and recover the 16% calculation. Change only the heterozygote to Ab/aB and repeat the labels. Your percentage should remain 16% only if the corresponding class frequencies are also rearranged as described above.",
       "Finish with a sentence that the data support and a sentence they do not support. 'Recombinant offspring constitute 16% of this scored sample' is supported. 'Sixteen percent of meiotic cells had exactly one crossover' is not. That final distinction is the point of the exercise: a correct arithmetic result still needs a correctly limited biological interpretation.",
-      "NCERT anchor: Principles of Inheritance and Variation, subsection Linkage and Recombination. Use the chromosome-basis guide below for the meiotic mechanism and the Mendelian guide for why a tester reveals gamete contributions."
+      "NCERT anchor: Class 12 Biology, Chapter 4, section 4.3.3, Linkage and Recombination (Reprint 2026–27; Figure 4.11). Use the chromosome-basis guide below for the meiotic mechanism and the Mendelian guide for why a tester reveals gamete contributions."
     ] }
   ],
   "sex-determination-systems": [
@@ -3154,7 +3154,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "MedlinePlus Genetics: Inheritance Patterns", href: "https://medlineplus.gov/genetics/understanding/inheritance/inheritancepatterns/" },
   ],
   "linkage-and-recombination-frequency": [
-    { label: "NCERT: Principles of Inheritance and Variation, Linkage and Recombination", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.3.3 Linkage and Recombination, Figure 4.11 (Reprint 2026–27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal Theory and Genetic Linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" }
   ],
   "sex-determination-systems": [
