@@ -3202,7 +3202,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     {"label": "OpenStax Biology 2e 32.2: Pollination and fertilization", "href": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"},
   ],
   "mendelian-inheritance": [
-    { label: "NCERT Class 12 Biology: Principles of Inheritance and Variation (chapter reference)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology: Principles of Inheritance and Variation, section 4.2 Inheritance of One Gene, including 4.2.1 Law of Dominance and 4.2.2 Law of Segregation (Reprint 2026–27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e 12.2: Characteristics and traits — genotype, phenotype and Punnett probabilities", href: "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits" },
     { label: "NHGRI: Mendelian inheritance", href: "https://www.genome.gov/genetics-glossary/Mendelian-Inheritance" },
   ],
