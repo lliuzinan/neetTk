@@ -3211,7 +3211,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Biology 2e: Biotechnology", href: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
   ],
   "pedigree-analysis-and-inheritance-patterns": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology: Chapter 4, sections 4.8.1 Pedigree Analysis and 4.2.2 Law of Segregation (Reprint 2026–27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "MedlinePlus Genetics: Understanding genetic conditions and inheritance", href: "https://medlineplus.gov/genetics/understanding/inheritance/" },
   ],
   "molecular-tools-and-dna-analysis": [
