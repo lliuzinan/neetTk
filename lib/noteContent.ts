@@ -2272,7 +2272,7 @@ const noteContent: Record<string, NoteSection[]> = {
   "paragraphs": [
     "For an active-recall counterfactual, change the trait-present daughter into a trait-present son while leaving both parents trait-absent. Explain why the X-linked recessive model can now fit: a carrier mother can contribute the relevant X allele, and the father contributes Y to a son. Autosomal recessive inheritance can also fit. The observation no longer separates those two models.",
     "Write two columns headed observation and conclusion. In the original family, the daughter\u2019s phenotype and the father\u2019s absence of the trait conflict with the simple X-linked recessive route. In the altered family, that conflict disappears. Do not carry the original family\u2019s 2/3 carrier conclusion into a different model without rebuilding the possible genotypes.",
-    "NCERT anchor: Class 12 Biology, Chapter 4, section 4.8.1, Pedigree Analysis, with the segregation principles from section 4.1. The family, counterfactual and conditional calculation here are independently constructed teaching material. They do not estimate health risks for an actual family."
+    "NCERT anchor: Class 12 Biology, Chapter 4, sections 4.8.1 Pedigree Analysis (printed p. 72) and 4.2.2 Law of Segregation (printed p. 59), Reprint 2026–27. The family, counterfactual and conditional calculation here are independently constructed teaching material. They do not estimate health risks for an actual family."
   ]
 },
     {
@@ -3194,7 +3194,7 @@ const noteReferences: Record<string, NoteReference[]> = {
     { label: "OpenStax Microbiology, 4.6: Archaea and methanogens", href: "https://openstax.org/books/microbiology/pages/4-6-archaea" },
   ],
   "chromosomal-basis-of-inheritance": [
-    { label: "NCERT Class 12 Biology, Chapter 4: Principles of Inheritance and Variation", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
+    { label: "NCERT Class 12 Biology: Chapter 4, sections 4.8.1 Pedigree Analysis and 4.2.2 Law of Segregation (Reprint 2026–27)", href: "https://ncert.nic.in/textbook/pdf/lebo104.pdf" },
     { label: "OpenStax Biology 2e: Chromosomal theory and genetic linkage", href: "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage" },
   ],
   "sexual-reproduction-in-flowering-plants": [
