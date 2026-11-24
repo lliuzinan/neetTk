@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {emptyBook, emptyRecord, parseRecordBook, recordBackupMaxBytes, recordTopics, recordFields} from '../lib/explanationRecords.ts';
+import {emptyBook, emptyRecord, mergeRecordBooks, parseRecordBook, recordBackupMaxBytes, recordTopics, recordFields} from '../lib/explanationRecords.ts';
 test('backup round trip preserves multiline Unicode notes across topics',()=>{
  const book={version:1,records:{segregation:{...emptyRecord(),claim:'A → a\nMy explanation'},linkage:{...emptyRecord(),next:'复习 tomorrow'}}};
  assert.deepEqual(parseRecordBook(JSON.stringify(book)),book);
@@ -32,4 +32,17 @@ test('byte limit also rejects oversized multibyte input before parsing',()=>{
  const raw='汉'.repeat(700000);
  assert.ok(raw.length<recordBackupMaxBytes);
  assert.throws(()=>parseRecordBook(raw),/too large/);
+});
+
+test('backup merge preserves existing non-empty notes and fills blanks without dropping topics',()=>{
+ const current={version:1,records:{segregation:{...emptyRecord(),claim:'Keep this local conclusion',evidence:'',reviewDate:'2026-11-12'},linkage:{...emptyRecord(),working:'Existing linkage work'}}};
+ const incoming={version:1,records:{segregation:{...emptyRecord(),claim:'Do not overwrite',evidence:'Imported source note',reviewDate:'2026-11-20',lastReviewed:'2026-11-10'},testcross:{...emptyRecord(),next:'Revisit the likelihood distinction'}}};
+ const merged=mergeRecordBooks(current,incoming);
+ assert.equal(merged.records.segregation.claim,'Keep this local conclusion');
+ assert.equal(merged.records.segregation.evidence,'Imported source note');
+ assert.equal(merged.records.segregation.reviewDate,'2026-11-12');
+ assert.equal(merged.records.segregation.lastReviewed,'2026-11-10');
+ assert.equal(merged.records.linkage.working,'Existing linkage work');
+ assert.equal(merged.records.testcross.next,'Revisit the likelihood distinction');
+ assert.deepEqual(current.records.segregation.evidence,'');
 });

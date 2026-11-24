@@ -41,6 +41,28 @@ export function parseRecordBook(raw: string): RecordBook {
   return { version: 1, records };
 }
 
+/** Merge a backup without replacing any non-empty field already in this browser. */
+export function mergeRecordBooks(current: RecordBook, incoming: RecordBook): RecordBook {
+  const records: Record<string, ExplanationRecord> = { ...current.records };
+  for (const topic of recordTopics) {
+    const existing = records[topic];
+    const imported = incoming.records[topic];
+    if (!imported) continue;
+    if (!existing) {
+      records[topic] = { ...imported };
+      continue;
+    }
+    const merged = { ...existing };
+    for (const field of recordFields) {
+      if (!merged[field.id].trim() && imported[field.id].trim()) merged[field.id] = imported[field.id];
+    }
+    if (!merged.reviewDate && imported.reviewDate) merged.reviewDate = imported.reviewDate;
+    if (!merged.lastReviewed && imported.lastReviewed) merged.lastReviewed = imported.lastReviewed;
+    records[topic] = merged;
+  }
+  return { version: 1, records };
+}
+
 export function isCalendarDate(value: string): boolean {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
   const date = new Date(value + "T12:00:00Z");
