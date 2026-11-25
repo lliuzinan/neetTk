@@ -24,10 +24,10 @@ export function ExplanationRecords() {
     catch { setWarning("Saved records could not be read. Existing browser data has not been changed. Export anything you write before leaving; editing will try to replace the saved copy."); setStatus("Working in this tab."); }
     setReady(true);
   }, []);
-  function save(next: RecordBook) {
+  function save(next: RecordBook): boolean {
     setBook(next);
-    try { localStorage.setItem(recordKey, JSON.stringify(next)); setWarning(""); setStatus("Saved in this browser."); window.dispatchEvent(new Event("medqgo-records-changed")); }
-    catch { setWarning("Browser storage is unavailable or full. Your changes are only in this tab. Download a backup before leaving."); setStatus("Not saved to this browser."); }
+    try { localStorage.setItem(recordKey, JSON.stringify(next)); setWarning(""); setStatus("Saved in this browser."); window.dispatchEvent(new Event("medqgo-records-changed")); return true; }
+    catch { setWarning("Browser storage is unavailable or full. Your changes are only in this tab. Download a backup before leaving."); setStatus("Not saved to this browser."); return false; }
   }
   const current = book.records[topic] ?? emptyRecord();
   const step = learningSteps.find(s => s.id === topic)!;
@@ -59,8 +59,7 @@ export function ExplanationRecords() {
       {current.lastReviewed && <p>Last marked reviewed: {current.lastReviewed}</p>}
       <button type="button" disabled={!ready} onClick={() => {
         const record = { ...current, lastReviewed: localCalendarDate() }; delete record.reviewDate;
-        save({ version: 1, records: { ...book.records, [topic]: record } });
-        setStatus("Review marked for today. The previous due date was cleared; choose a new date when ready. This is your own record, not an accuracy check.");
+        if (save({ version: 1, records: { ...book.records, [topic]: record } })) setStatus("Review marked for today. The previous due date was cleared; choose a new date when ready. This is your own record, not an accuracy check.");
       }}>Mark reviewed today</button>
       <p>Marking reviewed clears the due date and keeps your notes. It does not establish mastery.</p>
     </div>
@@ -70,7 +69,7 @@ export function ExplanationRecords() {
       <p role="status" aria-live="polite">{status}</p>{warning && <p role="alert">{warning}</p>}
       <div className="recordActions"><button type="button" disabled={!ready} onClick={download}>Download backup</button><button type="button" disabled={!ready} onClick={() => fileInput.current?.click()}>Restore backup</button><button type="button" disabled={!ready} onClick={() => window.print()}>Print this explanation</button><button type="button" disabled={!ready} onClick={() => setClear(true)}>Clear this explanation</button></div>
       <input ref={fileInput} type="file" accept=".json,application/json" hidden onChange={async e => { const file = e.target.files?.[0]; e.target.value = ""; if (!file) return; setPending(null); try { if (file.size > recordBackupMaxBytes) throw new Error("This backup is too large."); setPending(parseRecordBook(await file.text())); setStatus("Backup checked. Choose a merge or replacement option below."); } catch { setStatus("Could not restore this file. Use a valid MedQGo JSON backup up to 2 MB. Your current records are unchanged."); } }} />
-      {pending && <div className="recordConfirmation"><p>Choose how to restore this backup. Merge keeps every non-empty field already in this browser and fills only blank fields from the backup. Replace overwrites all current topics; topics absent from the backup become empty.</p><button type="button" onClick={() => { save(mergeRecordBooks(book, pending)); setPending(null); setStatus("Backup merged. Existing non-empty fields were kept; blank fields were filled where the backup had a value."); }}>Merge missing fields</button> <button type="button" onClick={() => { save(pending); setPending(null); setStatus("Backup restored. Current records were replaced."); }}>Replace all records</button> <button type="button" onClick={() => { setPending(null); setStatus("Restore cancelled. Records unchanged."); }}>Cancel restore</button></div>}
+      {pending && <div className="recordConfirmation"><p>Choose how to restore this backup. Merge keeps every non-empty field already in this browser and fills only blank fields from the backup. Replace overwrites all current topics; topics absent from the backup become empty.</p><button type="button" onClick={() => { const saved = save(mergeRecordBooks(book, pending)); setPending(null); if (saved) setStatus("Backup merged and saved in this browser. Existing non-empty fields were kept; blank fields were filled where the backup had a value."); }}>Merge missing fields</button> <button type="button" onClick={() => { const saved = save(pending); setPending(null); if (saved) setStatus("Backup restored and saved in this browser. Current records were replaced."); }}>Replace all records</button> <button type="button" onClick={() => { setPending(null); setStatus("Restore cancelled. Records unchanged."); }}>Cancel restore</button></div>}
       {clear && <div className="recordConfirmation"><p>Clear only “{step.title}”? Other topics will be kept.</p><button type="button" onClick={() => { const records = { ...book.records }; delete records[topic]; save({ version: 1, records }); setClear(false); }}>Confirm clear</button> <button type="button" onClick={() => setClear(false)}>Cancel clear</button></div>}
       <p>The JSON backup contains all five topics. Printing includes only the selected explanation. You can also copy text directly from any field.</p>
     </div>
