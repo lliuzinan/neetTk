@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MonohybridExplorer } from "@/components/MonohybridExplorer";
 import { modelAssumptions } from "@/lib/monohybrid";
 import { getRecessiveCross } from "@/lib/pedigree";
-export const metadata: Metadata = { title: "Monohybrid Cross Explorer | MedQGo", description: "Trace parental alleles through gametes, a Punnett square and offspring probabilities. Save the reasoning alongside your own explanation.", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "Monohybrid Cross Calculator — Punnett Square & Probabilities | MedQGo", description: "Trace parental alleles through gametes, a Punnett square and offspring probabilities. Save the reasoning alongside your own explanation.", alternates: { canonical: "https://medqgo.com/neet-ug/biology/tools/monohybrid-cross" }, robots: { index: true, follow: true } };
 export default async function CrossPage({ searchParams }: { searchParams: Promise<{ pedigree?: string | string[] }> }) {
   const { pedigree } = await searchParams;
   const example = getRecessiveCross(pedigree);

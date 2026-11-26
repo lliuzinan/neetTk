@@ -22,6 +22,7 @@ export default function PrivacyPage() {
         {
           title: "Information We Collect",
           body: [
+            "With optional analytics allowed, the monohybrid tool records actions such as changing the model, inspecting a route, saving a calculation and requesting a download. These events do not include your genotypes, explanation text or saved notes. A download request does not prove that a file was saved or read.",
             "When you browse MedQGo, we may collect basic analytics information such as page views, device category, country or region, referring pages, and engagement events through Google Analytics 4.",
             "When you join the revision-workbook early-access form, we collect the email address you submit, the source page, referrer, and browser user agent. This is used to manage early access and understand which pages produce student interest.",
           ],

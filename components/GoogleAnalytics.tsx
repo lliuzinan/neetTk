@@ -27,6 +27,11 @@ export function GoogleAnalytics({ gaId }: { gaId: string }) {
 
   useEffect(() => {
     const w = window as AnalyticsWindow;
+    // Preview and automated local checks must not count as production visitors.
+    if (!["medqgo.com", "www.medqgo.com"].includes(location.hostname)) {
+      w.medqgoAnalyticsAllowed = false;
+      return;
+    }
     function apply(allowed: boolean) {
       w.medqgoAnalyticsAllowed = allowed;
       if (!allowed) {

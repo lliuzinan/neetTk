@@ -659,7 +659,7 @@ test("pedigree worked family distinguishes conditional and next-child probabilit
 test("public guide attribution and metadata consistently identify the publisher", async () => {
   const sitemap = await readFile(new URL("../.next/server/app/sitemap.xml.body", import.meta.url), "utf8");
   const urls = [...sitemap.matchAll(/<loc>(https:\/\/medqgo\.com\/neet-ug\/biology\/[^<]+)<\/loc>/g)].map(m => m[1]);
-  const guides = urls.filter(url => !url.includes("/learn/"));
+  const guides = urls.filter(url => !url.includes("/learn/") && !url.includes("/tools/"));
   assert.equal(guides.length, 63);
   assert.doesNotMatch(sitemap, /\/authors\/dongfeng/);
   for (const url of guides) {
